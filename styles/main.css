@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Circular Pro Book';
+    src: url("../fonts/Book/lineto-circular-pro-book.eot?") format("embedded-opentype");
+    src: url("../fonts/Book/lineto-circular-pro-book.woff2?") format("woff2");
+    src: url("../fonts/Book/lineto-circular-pro-book.woff?") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Pro Bold';
+    src: url("../fonts/Bold/lineto-circular-pro-bold.eot?") format("embedded-opentype");
+    src: url("../fonts/Bold/lineto-circular-pro-bold.woff2?") format("woff2");
+    src: url("../fonts/Bold/lineto-circular-pro-bold.woff?") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Pro Black';
+    src: url("../fonts/Black/lineto-circular-pro-black.eot?") format("embedded-opentype");
+    src: url("../fonts/Black/lineto-circular-pro-black.woff2?") format("woff2");
+    src: url("../fonts/Black/lineto-circular-pro-black.woff?") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circular Pro Medium';
+    src: url("../fonts/Medium/lineto-circular-pro-medium.eot?") format("embedded-opentype");
+    src: url("../fonts/Medium/lineto-circular-pro-medium.woff2?") format("woff2");
+    src: url("../fonts/Medium/lineto-circular-pro-medium.woff?") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: 'Circular Pro Book', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    height: 100%;
+    color: #404040;
+    font-size: 16px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+    font-family: 'Circular Pro Black', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+p {
+    margin: 0 0 15px 0; 
+}
+
+article h1 {
+    font-size: 2.4em;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+article h2 {
+    font-size: 1.65em;  
+}
+
+article h3 {
+    font-size: 1.25em;  
+}
+
+article h4 {
+    font-size: 1.2em; 
+    border: none; 
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 8px;
+    margin-top: 45px;
+}
+
+button,
+a {
+  color: #ff055e;
+  cursor: pointer;
+}
+
+article a{
+    text-decoration: underline;
+}
+
+code {
+    font-size: 16px;
+    color: #261c4c;
+    word-break: break-word;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 3px;
+    border-radius: 3px;
+    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+}
+
+pre {
+    font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+    font-size: 13px;
+    overflow-x: scroll;
+    word-break: normal;
+}
+
+pre code {
+    white-space: pre;  
+}
+
+.toc .nav > li.active > a {
+    color: #ff055e;
+}
+
+.toc .nav > li.active > a:hover {
+    color: #404040
+}
+
+.affix > ul > li.active > a, .affix > ul > li.active > a:before {
+    color: #ff055e;
+}
+
+blockquote {
+    font-size: 16px;
+    width: 100%;
+    margin: 20px auto;
+    color: #605d58;
+    padding:20px 80px 15px 30px;
+    border-left:4px solid #ff055e;
+    line-height:1.7;
+    position: relative;
+    background:#ffebf3;
+    border-radius: 0px 18px 18px 0px;
+
+    @include media(">=large") {
+        font-size:18px;
+        margin:30px auto;
+    }
+}
+
+span.note-header {
+    display: block;
+    margin-bottom:10px;
+    color: #605d58;
+    font-size: 17px;
+    font-family: 'Circular Pro Black';
+    font-weight: bold;
+}
+
+ol {
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+ol pre, ul pre {
+    margin: 15px 0 25px 0; 
+}
+
+pre {
+    margin: 20px 0 25px 0;
+    border: none;
+}
+.navbar-inverse {
+    background-color: #fff;
+    border-bottom: solid 3px #ff055e;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #ff055e;
+    background-color: transparent;
+    font-weight: bold;
+    padding: 0 0 4px 0;
+    margin: 19px 15px 11px 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #ff055e;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text {
+    color: #333;
+    margin-top: 4px;
+}
+
+.navbar-inverse .navbar-brand {
+    padding-top: 6px;
+}
+
+.replaced-svg {
+    width: 91.69px !important;
+    height: 40px !important;
+    margin-top: 4px;
+}
+
+.navbar {
+    height: 52px;
+}
+
+.subnav {
+    font-size: 10pt;
+    height: 40px;
+}
+
+
+
+/* Front Page Styles */
+
+div.index-container {
+    border: 1px solid #ff055e;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    width: 100%;
+    grid-column-gap: 0%;
+}
+
+div.index-button {
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 1px solid #333;
+    height: 100px;
+}
+
+div.button-element {
+    border: 1px solid #333;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+
+div.button-element p {
+    margin: 0;
+}
+
+/* SDK Ref Styles*/
+
+div.inheritedMembers, div.inheritance, div.implements {
+    font-size: 12px;
+}
+
+div.inheritedMembers h5, div.inheritance h5, div.implements h5, h5.returns, h5.parameters, h5.declaration {
+    font-family: 'Circular Pro Black', 'Segoe UI', Tahoma, Helvetica, sans-serif;
+    border-bottom: none;
+    padding-bottom: 1.5px;
+    padding-top: 5px;
+}
+
+h3#constructors, h3#methods {
+    margin-top: 40px;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+article span.small.pull-right {
+    display: none;
+}
+
+/*ul.navbar-nav li.active {
+    position: relative;
+    display: inline-block;
+}
+
+ul.navbar-nav li ul.level2 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1; 
+    margin: -5px 0 0 0;
+}
+
+ul.navbar-nav li:hover ul.level2 {
+    display: block;
+}*/
