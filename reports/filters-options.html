@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Filters and Options </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Filters and Options ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" src="../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="filters-and-options">Filters and Options</h1>
+
+<p>By default, reports display all available data. Filters enable you to get a more granular view of your data by selecting the specific data that you want to view. For example, you might filter the <strong>Volumes by Carrier</strong> report so that it only shows consignments shipped by UPS and DPD, rather than all of your carriers.</p>
+<h2 id="filters">Filters</h2>
+<p>The PRO reports use two types of filter, report-wide and visualisation</p>
+<ul>
+<li><strong>Report-wide</strong> filters can be selected from the panel on the left-hand side. They affect all visualisations on the report.</li>
+<li><strong>Visualisation</strong> filters can be applied by clicking a filter and selecting options from the <strong>Filters</strong> panel on the right-hand side. They only apply to the selected visualisation.</li>
+</ul>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>The list of filters available differs between reports and visualisations. For information on a report's specific filters, see that report's documentation page.</p>
+</blockquote>
+<p>You can combine filters in any way you choose. For example, say you want to see a graph charting how many shipments you sent with DPD and UPS between 30/07/2019 and 30/08/2019. To do this you could:</p>
+<ol>
+<li><p>Open the <strong>Volumes by Carrier</strong> report.</p>
+ <a href="../images/reports/by-carrier.png" target="_blank">
+ <img src="../images/reports/by-carrier.png">
+ </a>
+</li>
+<li><p>Use the <strong>Date Shipped</strong> selector on the left-hand panel to select only consignments shipped between 30/07/2019 and 30/08/2019. The report filters all visualisations so that only data from between those dates is displayed.</p>
+ <a href="../images/reports/by-carrier-date-filter.png" target="_blank">
+ <img src="../images/reports/by-carrier-date-filter.png">
+ </a>
+</li>
+<li><p>Select the <strong>Consignments Shipped by Carrier Over Time</strong> chart and click the <strong>Carrier</strong> drop-down on the right-hand <strong>Filters</strong> panel. A list of available carriers is displayed.</p>
+ <a href="../images/reports/carrier-filters-panel.png" target="_blank">
+ <img src="../images/reports/carrier-filters-panel.png">
+ </a>
+</li>
+<li><p>Select the carriers that you want to filter the visualisation by (in this case, UPS and DPD). The report filters the chart so that only those two carriers are displayed.</p>
+ <a href="../images/reports/filtered-carrier-chart.png" target="_blank">
+ <img src="../images/reports/filtered-carrier-chart.png">
+ </a>  
+</li>
+</ol>
+<p>Note that while the report-wide date filter affects all of the report's visualisations, the visualisation-specific carrier filter only applies to the <strong>Consignments Shipped by Carrier Over Time</strong> chart.</p>
+<p>To reset a report's filters back to default, click the <strong>Reset to Default</strong> button on Power BI's top toolbar.</p>
+<a href="../images/reports/reset-to-default.png" target="_blank">
+    <img src="../images/reports/reset-to-default.png">
+</a>
+<h3 id="filtering-visualisations">Filtering Visualisations</h3>
+<p>Different visualisation fields use different types of filter, depending on the nature of the data being filtered. There are four visualisation filter types in the PRO reports:</p>
+<ul>
+<li><strong>Numerical</strong> - Used on numerical fields, enables you to specify a number range.</li>
+<li><strong>Basic</strong> - Used on text fields, enables you to select simple values (such as carrier names) from a list.</li>
+<li><strong>Advanced</strong> - Used on text fields, enables you to select values based on custom selection criteria.</li>
+<li><strong>Relative Date</strong> - Used on date fields, enables you to specify a range of dates you want to view data for.</li>
+</ul>
+<h4 id="using-numerical-filters">Using Numerical Filters</h4>
+<p>Numerical filters enable you to specify a number range to a particular numerical field. Once applied, the visualisation is filtered so that it only displays records in which the value of the filtered field meets the criteria you specified.</p>
+<p>For example, suppose that you are viewing the data table on the <strong>Shipped Consignments by Destination Country</strong> report, but you are only interested in countries to which you have shipped more than 1000 consignments. You could apply a numerical filter to the <strong>Consignments</strong> field so that the table only shows records where the value of <strong>Consignments</strong> (that is, the total number of consignments shipped to that particular country) was above 1000.</p>
+<p>To apply a numerical filter to a visualisation:</p>
+<ol>
+<li><p>Ensure that the <strong>Filters</strong> panel is displayed and select the visualisation. A list of available filters is displayed</p>
+ <a href="../images/reports/num-filter-1.png" target="_blank">
+ <img src="../images/reports/num-filter-1.png">
+ </a>
+</li>
+<li><p>Click the drop-down menu for the numerical field you want to filter. Editable filter options are displayed.</p>
+ <a href="../images/reports/num-filter-2.png" target="_blank">
+ <img src="../images/reports/num-filter-2.png">
+ </a>
+</li>
+<li><p>Select an operator and enter a value. The following operators are available:</p>
+<ul>
+<li>Is Less Than</li>
+<li>Is Less Than or Equal To</li>
+<li>Is Greater Than</li>
+<li>Is Greater Than or Equal To</li>
+<li>Is</li>
+<li>Is Not</li>
+<li>Is Blank</li>
+<li>Is Not Blank</li>
+</ul>
+ <a href="../images/reports/num-filter-3.png" target="_blank">
+ <img src="../images/reports/num-filter-3.png">
+ </a>    
+</li>
+<li><p>If required, select either <strong>And</strong> or <strong>Or</strong> radio button and repeat step 3 to add a secondary filter. If you do not want to add a secondary filter, leave the value box blank.</p>
+ <a href="../images/reports/num-filter-4.png" target="_blank">
+ <img src="../images/reports/num-filter-4.png">
+ </a>
+</li>
+<li><p>Click <strong>Apply Filter</strong> to save your changes.</p>
+</li>
+</ol>
+<p>Using the example given earlier, if you wanted to filter the <strong>Shipped Consignments by Destination Country</strong> report's <strong>Consignments</strong> field so that only countries to which you have shipped 1000 or more consignments were displayed, you would select <strong>Is Greater Than or Equal To</strong> from the operator drop-down and enter 1000 into the value box.</p>
+<p>If you wanted to modify that filter so that only countries to which you have shipped between 1000 and 2000 consignments were displayed, you would select the <strong>And</strong> radio button and enter <strong>Is Less Than or Equal To</strong> / <strong>2000</strong> from the secondary filter.</p>
+<h4 id="using-basic-filters">Using Basic Filters</h4>
+<p>Basic filters enable you to select discrete text values. Once applied, the visualisation is filtered so that it only displays records in which the value of the filtered field meets the criteria you specified.</p>
+<p>For example, suppose that you are viewing the <strong>Delivery Type by Carrier</strong> visualisation on the <strong>Delivery Experience</strong> report, but you only want to view the delivery types used in shipments by DPD and UPS, rather than your entire suite of carriers. You could use basic filtering to select those two carriers specifically.</p>
+<p>To apply basic filtering to a visualisation:</p>
+<ol>
+<li><p>Ensure that the <strong>Filters</strong> panel is displayed and select the visualisation. A list of available filters is displayed.</p>
+ <a href="../images/reports/basic-filter-1.png" target="_blank">
+ <img src="../images/reports/basic-filter-1.png">
+ </a>
+</li>
+<li><p>Click the drop-down menu for the text field you want to filter.</p>
+</li>
+<li><p>Ensure that <strong>Basic Filtering</strong> is selected from the <strong>Filter Type</strong> drop-down menu. A list of selectable values is displayed.</p>
+ <a href="../images/reports/basic-filter-2.png" target="_blank">
+ <img src="../images/reports/basic-filter-2.png">
+ </a>
+</li>
+<li><p>Use the check boxes to select the values that you want to filter by. Power BI filters the visualisation automatically.</p>
+ <a href="../images/reports/basic-filter-3.png" target="_blank">
+ <img src="../images/reports/basic-filter-3.png">
+ </a>
+</li>
+</ol>
+<h4 id="using-advanced-filters">Using Advanced Filters</h4>
+<p>Advanced filters enable you to select all text values that meet certain criteria, rather than selecting individual values themselves.</p>
+<p>For example, suppose that you are viewing the <strong>% of Total Consignments by Carrier Service</strong> visualisation on the <strong>Shipping Consignments by Carrier Service</strong> report. However, rather than viewing data for all of your carrier services, you only want to view your UPS carrier services. In this case you could use an Advanced filter on the <em>Carrier Service</em> field to filter out all carrier services other than those whose names start with &quot;UPS&quot;.</p>
+<p>To apply advanced filtering to a visualisation:</p>
+<ol>
+<li><p>Ensure that the <strong>Filters</strong> panel is displayed and select the visualisation. A list of available filters is displayed.</p>
+ <a href="../images/reports/adv-filter-1.png" target="_blank">
+ <img src="../images/reports/adv-filter-1.png">
+ </a>
+</li>
+<li><p>Click the drop-down menu for the field you want to filter and select <strong>Advanced filtering</strong> from the <strong>Filter Type</strong> drop-down menu. The panel displays filter controls.</p>
+ <a href="../images/reports/adv-filter-2.png" target="_blank">
+ <img src="../images/reports/adv-filter-2.png">
+ </a>
+</li>
+<li><p>Select an operator from the <strong>Show items when the value:</strong> drop-down menu. The following operators are available:</p>
+<ul>
+<li>Contains</li>
+<li>Does Not Contain</li>
+<li>Starts With</li>
+<li>Does Not Start With</li>
+<li>Is</li>
+<li>Is Not</li>
+<li>Is Blank</li>
+<li>Is Not Blank</li>
+</ul>
+ <a href="../images/reports/adv-filter-3.png" target="_blank">
+ <img src="../images/reports/adv-filter-3.png">
+ </a>
+</li>
+<li><p>Enter a value into the text box. Returning to the previous example, you would need to select <em>Starts with</em> from the drop-down menu and then enter <em>UPS</em> into the text box in order to filter out all carrier services other than those whose names start with &quot;UPS&quot;</p>
+ <a href="../images/reports/adv-filter-4.png" target="_blank">
+ <img src="../images/reports/adv-filter-4.png">
+ </a>
+</li>
+<li><p>If required, select either <strong>And</strong> or <strong>Or</strong> radio button and repeat steps 4 and 5 to enter additional criteria.</p>
+ <a href="../images/reports/adv-filter-4.png" target="_blank">
+ <img src="../images/reports/adv-filter-4.png">
+ </a>
+</li>
+<li><p>Click <strong>Apply Filter</strong> to save your changes.</p>
+</li>
+</ol>
+<h4 id="using-relative-date-filters">Using Relative Date Filters</h4>
+<p>Relative date filtering is only available on date fields. It enables you to filter visualisations by providing a date range that is relative to the current date and time (that is, a certain period of time before or after now).</p>
+<p>For example, suppose that you are viewing the <strong>Consignments Shipped By Carrier Over Time</strong> visualisation of the <strong>Shipped Consignments by Carrier</strong> report, but you only want to view data for the late two weeks. You could use a relative date filter on the <code>DateShippedOnly</code> field to select only those consignments that were shipped in the last two weeks.</p>
+<p>To apply a relative date filter:</p>
+<ol>
+<li><p>Ensure that the <strong>Filters</strong> panel is displayed and select the visualisation. A list of available filters is displayed.</p>
+ <a href="../images/reports/date-filter-1.png" target="_blank">
+ <img src="../images/reports/date-filter-1.png">
+ </a>
+</li>
+<li><p>Click the drop-down menu for the field you want to filter and select <strong>Relative date filtering</strong> from the <strong>Filter Type</strong> drop-down menu. The panel displays date controls.</p>
+ <a href="../images/reports/date-filter-2.png" target="_blank">
+ <img src="../images/reports/date-filter-2.png">
+ </a>
+</li>
+<li><p>Enter your filter criteria:</p>
+<ol>
+<li>Select an operator from the <strong>Show items when the value:</strong> drop-down menu. The available options are <strong>Is In The Last</strong>, <strong>Is In This</strong>, and <strong>Is In The Next</strong>.</li>
+<li>Enter a value into the text box.</li>
+<li>Select a unit from the bottom drop-down box. The available options are <strong>Days</strong>, <strong>Weeks</strong>, <strong>Calendar Weeks</strong>, <strong>Months</strong>, <strong>Calendar Months</strong>, <strong>Years</strong>, and <strong>Calendar Years</strong>.</li>
+<li>If required, select the <strong>Include Today</strong> check box to include the current date in your calculations.</li>
+</ol>
+</li>
+<li><p>Click <strong>Apply Filter</strong> to save your changes.</p>
+</li>
+</ol>
+<p>Using the example given earlier, if you wanted to filter the <strong>Consignments Shipped By Carrier Over Time</strong> visualisation of the <strong>Shipped Consignments by Carrier</strong> report to only display consignments shipped in the last two weeks, you would select <em>Is In The Last</em>, <em>14</em>, and <em>Days</em> when filtering the <code>DateShippedOnly</code> field.</p>
+<h2 id="visualisation-options">Visualisation Options</h2>
+<p>Each visualisation has a <strong>More Options</strong> drop-down menu, enabling you to perform additional actions relating to its data. To access the <strong>More Options</strong> menu, select a visualisation and click the <strong>More Options</strong> button in the top-right of the panel.</p>
+<a href="../images/reports/more-options.png" target="_blank">
+    <img src="../images/reports/more-options.png">
+</a>
+<p>The following options are available:</p>
+<h3 id="open-comments">Open Comments</h3>
+<p>Opens Power BI''s <strong>Comments</strong> panel, from where you and your team can leave comments on individual visualisations.</p>
+<a href="../images/reports/open-comments.png" target="_blank">
+    <img src="../images/reports/open-comments.png">
+</a> 
+<blockquote>
+<p><span class="note-header">More information:</span></p>
+<p>For more information on using Power BI's <strong>Comments</strong> panel, see the <a href="https://docs.microsoft.com/en-us/power-bi/consumer/end-user-comment">Power BI docs</a>.</p>
+</blockquote>
+<h3 id="export-data">Export Data</h3>
+<p>Enables you to save a visualisation's underlying data as a .CSV or .XLSX file.</p>
+<a href="../images/reports/export-data.png" target="_blank">
+    <img src="../images/reports/export-data.png">
+</a> 
+<blockquote>
+<p><span class="note-header">More information:</span></p>
+<p>For more information on exporting data from Power BI, see the <a href="https://docs.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-export-data">Power BI docs</a>.</p>
+</blockquote>
+<h3 id="show-data">Show Data</h3>
+<p>Displays the dataset that was used to generate that particular visual.</p>
+<a href="../images/reports/show-data.png" target="_blank">
+    <img src="../images/reports/show-data.png">
+</a> 
+<h3 id="spotlight">Spotlight</h3>
+<p>Highlights the selected visualisation on the page.</p>
+<a href="../images/reports/spotlight.png" target="_blank">
+    <img src="../images/reports/spotlight.png">
+</a>
+<h3 id="sort-descending--ascending--sort-by">Sort (Descending / Ascending / Sort By)</h3>
+<p>Enables you to specify how the visualisation's data should be sorted.</p>
+<a href="../images/reports/sort-by.png" target="_blank">
+    <img src="../images/reports/sort-by.png">
+</a>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>Not all options are available to all visualisations. For information on a visualisation's specific options, see that report's documentation page.</p>
+</blockquote>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/reports/filters-options.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

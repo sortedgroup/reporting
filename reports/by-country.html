@@ -67,10 +67,15 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="shipped-consignments-by-destination-country">Shipped Consignments by Destination Country</h1>
 
-<p>The <strong>Shipped Consignments by Destination Country</strong> report enables you to see how many consignments you have sent to each of your destination countries in a particular date range. It comprises a table listing consignment and package data, a <strong>Consignment Volumes</strong> by country chart with the shipment data plotted on a map, and a <strong>Top 10 Countries by Shipment Volume</strong> bar chart.</p>
+<p>The <strong>Shipped Consignments by Destination Country</strong> report enables you to see how many consignments you have sent to each of your destination countries. It comprises a table listing consignment and package data, a <strong>Consignment Volumes By Country</strong> chart with the shipment data plotted on a map, and a <strong>% of Consignment Volume by Destination Country</strong> bar chart.</p>
 <a href="../images/reports/by-country.png" target="_blank">
     <img src="../images/reports/by-country.png">
 </a>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>In order for the data in this chart to be accurate, your consignments must have a destination country correctly recorded. Specifically, they must have a valid <code>Address</code> object that has an <code>AddressType</code> of <code>Destination</code> and the relevant two-letter country code in the <code>Address.Country.IsoCode.TwoLetterCode</code> field.</p>
+<p>For more information on recording consignment data in PRO, see the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> page of the API reference.</p>
+</blockquote>
 <h2 id="report-filters">Report Filters</h2>
 <p>The <strong>Shipped Consignments by Destination Country</strong> report offers the following report-wide filters:</p>
 <ul>
@@ -82,10 +87,16 @@
 <li><strong>Delivery Type</strong> - enables you to select only those consignments that were shipped as a particular delivery type (i.e. <em>Delivery</em> or <em>Click and Collect</em>).</li>
 </ul>
 <h2 id="data-table">Data Table</h2>
+<p>The data table shows how many consignments and packages were shipped to each of your destination countries (with any report filters taken into account:</p>
 <a href="../images/reports/by-country-table.png" target="_blank">
     <img src="../images/reports/by-country-table.png">
 </a>
 <h3 id="visualisation-filters">Visualisation Filters</h3>
+<ul>
+<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>Destination Country</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+<li><strong>Packages</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+</ul>
 <h3 id="more-options">More Options</h3>
 <p>The data table has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
@@ -98,10 +109,16 @@
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Destination Country / Consignments / Packages</li>
 </ul>
 <h2 id="consignment-volumes-by-country">Consignment Volumes by Country</h2>
+<p>The <strong>Consignment Volumes by Country</strong> chart displays the countries your organisation has shipped to on a map. The countries you ship to most frequently are displayed in blue, while your least frequently shipped-to countries are displayed in green.</p>
 <a href="../images/reports/by-country-volumes.png" target="_blank">
     <img src="../images/reports/by-country-volumes.png">
 </a>
+<p>If required, you can search for countries and locations using the search bar at the top of the panel.</p>
 <h3 id="visualisation-filters-1">Visualisation Filters</h3>
+<ul>
+<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>MapBox</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+</ul>
 <h3 id="more-options-1">More Options</h3>
 <p>The <strong>Consignment Volumes by Country</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
@@ -110,13 +127,17 @@
 <li><a href="/reports/reports.html#show-data">Show Data</a></li>
 <li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
 </ul>
-<h2 id="top-10-countries-by-shipment-volume">Top 10 Countries by Shipment Volume</h2>
+<h2 id="-of-consignment-volume-by-destination-country">% of Consignment Volume by Destination Country</h2>
+<p>The <strong>% of Consignment Volume by Destination Country</strong> bar chart shows each destination country's share of your total shipments. Click on a bar to view the corresponding country on the <strong>Consignment Volumes by Country</strong> map.</p>
 <a href="../images/reports/by-country-top-10.png" target="_blank">
     <img src="../images/reports/by-country-top-10.png">
 </a>
 <h3 id="visualisation-filters-2">Visualisation Filters</h3>
+<ul>
+<li><strong>%GT Count of ConsignmentReference</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+</ul>
 <h3 id="more-options-2">More Options</h3>
-<p>The <strong>Top 10 Countries by Shipment Volume</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<p>The <strong>% of Consignment Volume by Destination Country</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
 <li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
 <li><a href="/reports/reports.html#export-data">Export Data</a></li>
@@ -134,7 +155,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/report-docs/docfx_project/reports/by-country.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/reports/by-country.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

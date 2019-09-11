@@ -67,7 +67,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="carrier-performance">Carrier Performance</h1>
 
-<p>The <strong>Carrier Performance</strong> report enables you to get an overview of late and failed deliveries, as well as seeing how many of your deliveries succeeded first time. It comprises a <strong>Delivery Failure Volumes</strong> bar chart, a <strong>First Time Delivery by Carrier</strong> bar chart, a <strong>Carrier Was Late %</strong> bar chart, a <strong>Late Consignments Over Time</strong> line graph, and a <strong>Late Consignments by Destination</strong> map.</p>
+<p>The <strong>Carrier Performance</strong> report enables you to get an overview of your delivery failure rates and late consignments. It comprises a <strong>Delivery Failure Volumes</strong>  chart, a <strong>Late Consignments by Destination</strong> map, a <strong>Delivery Success</strong> chart, and a <strong>Consignments by Date Delivered Only and Carrier</strong> line graph.</p>
 <a href="../images/reports/performance.png" target="_blank">
     <img src="../images/reports/performance.png">
 </a>
@@ -82,10 +82,15 @@
 <li><strong>Delivery Type</strong> - enables you to select only those consignments that were created with a particular delivery type (i.e. <em>Delivery</em> or <em>Click and Collect</em>).</li>
 </ul>
 <h2 id="delivery-failure-volumes">Delivery Failure Volumes</h2>
+<p>The <strong>Delivery Failure Volumes</strong> chart shows the total number of failed consignments (that is, those consignments in a state of <em>Damaged</em>, <em>Delivery Failed</em>, <em>Delivery Failed Card Left</em>, and <em>Return To Sender</em>) for each carrier.</p>
 <a href="../images/reports/performance-failure.png" target="_blank">
     <img src="../images/reports/performance-failure.png">
 </a>
 <h3 id="visualisation-filters">Visualisation Filters</h3>
+<ul>
+<li><strong>Carrier</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+</ul>
 <h3 id="more-options">More Options</h3>
 <p>The <strong>Delivery Failure Volumes</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
@@ -97,13 +102,42 @@
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Carrier / Consignments</li>
 </ul>
-<h2 id="first-time-delivery-by-carrier">First Time Delivery by Carrier</h2>
-<a href="../images/reports/performance-first-time.png" target="_blank">
-    <img src="../images/reports/performance-first-time.png">
+<h2 id="late-consignments-by-destination">Late Consignments by Destination</h2>
+<p>The <strong>Late Consignments by Destination</strong> visualisation shows the destinations of your late consignments, plotted on a map. Areas where late consignments occur more frequently are displayed in red.</p>
+<a href="../images/reports/performance-late-destination.png" target="_blank">
+    <img src="../images/reports/performance-late-destination.png">
 </a>
+<p>If required, you can search for countries and locations using the search bar at the top of the panel.</p>
 <h3 id="visualisation-filters-1">Visualisation Filters</h3>
+<ul>
+<li><strong>Count of ConsignmentReference</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>DestinationTownLatitude</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+<li><strong>DestinationTownLongitude</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+</ul>
 <h3 id="more-options-1">More Options</h3>
-<p>The <strong>First Time Delivery by Carrier</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<p>The <strong>Late Consignments by Destination</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<ul>
+<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
+<li><a href="/reports/reports.html#export-data">Export Data</a></li>
+<li><a href="/reports/reports.html#show-data">Show Data</a></li>
+<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
+</ul>
+<h2 id="delivery-success">Delivery Success</h2>
+<p>The <strong>Delivery Success</strong> chart shows the proportion your consignments that assumed each of the &quot;final states&quot; (that is, <em>Delivered</em>, <em>Damaged</em>, <em>Delivery Failed</em>, <em>Delivery Failed Card Left</em>, and <em>Return To Sender</em>). This information is broken down by carrier.</p>
+<a href="../images/reports/performance-success.png" target="_blank">
+    <img src="../images/reports/performance-success.png">
+</a>
+<p>Hover your mouse pointer over the chart to view the total number of that carrier's consignments that assumed the selected final state.</p>
+<a href="../images/reports/performance-success-highlight.png" target="_blank">
+    <img src="../images/reports/performance-success-highlight.png">
+</a>
+<h3 id="visualisation-filters-2">Visualisation Filters</h3>
+<ul>
+<li><strong>Carrier</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+</ul>
+<h3 id="more-options-2">More Options</h3>
+<p>The <strong>Delivery Success</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
 <li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
 <li><a href="/reports/reports.html#export-data">Export Data</a></li>
@@ -111,39 +145,25 @@
 <li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Carrier / Delivery Success</li>
+<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Carrier / Consignments</li>
 </ul>
-<h2 id="carrier-was-late-">Carrier Was Late %</h2>
-<a href="../images/reports/performance-late.png" target="_blank">
-    <img src="../images/reports/performance-late.png">
+<h2 id="consignments-by-date-delivered-only-and-carrier">Consignments by Date Delivered Only and Carrier</h2>
+<p>The <strong>Consignments by Date Delivered Only and Carrier</strong> chart shows how many consignments were delivered per day by each carrier over time.</p>
+<a href="../images/reports/performance-date-delivered.png" target="_blank">
+    <img src="../images/reports/performance-date-delivered.png">
 </a>
-<h3 id="visualisation-filters-2">Visualisation Filters</h3>
-<h3 id="more-options-2">More Options</h3>
-<p>The <strong>Carrier Was Late %</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
-<ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
-</ul>
-<h2 id="late-consignments-over-time">Late Consignments over Time</h2>
-<a href="../images/reports/performance-late-over-time.png" target="_blank">
-    <img src="../images/reports/performance-late-over-time.png">
+<p>Hover your mouse pointer over a particular point in the chart to view how many consignments that particular carrier delivered on that day.</p>
+<a href="../images/reports/performance-date-delivered-highlight.png" target="_blank">
+    <img src="../images/reports/performance-date-delivered-highlight.png">
 </a>
 <h3 id="visualisation-filters-3">Visualisation Filters</h3>
-<h3 id="more-options-3">More Options</h3>
-<p>The <strong>Late Consignments over Time</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#export-data">Export Data</a></li>
-<li><a href="/reports/reports.html#show-data">Show Data</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
+<li><strong>Carrier</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>Date Delivered Only</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a>, <a href="/reports/reports.html#using-advanced-filters">Advanced</a>, and <a href="/reports/reports.html#using-relative-date-filters">Relative Date</a>)</li>
 </ul>
-<h2 id="late-consignments-by-destination">Late Consignments by Destination</h2>
-<a href="../images/reports/performance-late-destination.png" target="_blank">
-    <img src="../images/reports/performance-late-destination.png">
-</a>
-<h3 id="visualisation-filters-4">Visualisation Filters</h3>
-<h3 id="more-options-4">More Options</h3>
-<p>The <strong>Late Consignments by Destination</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<h3 id="more-options-3">More Options</h3>
+<p>The <strong>Consignments by Date Delivered Only and Carrier</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
 <li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
 <li><a href="/reports/reports.html#export-data">Export Data</a></li>
@@ -158,7 +178,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/report-docs/docfx_project/reports/performance.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/reports/performance.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

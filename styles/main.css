@@ -70,8 +70,7 @@ article h3 {
 
 article h4 {
     font-size: 1.2em; 
-    border: none; 
-    border-bottom: solid 1px #ddd;
+    border:none;
     padding-bottom: 8px;
     margin-top: 45px;
 }
@@ -260,6 +259,20 @@ article span.small.pull-right {
     display: none;
 }
 
+@media (width: 768px) {
+    #sidetoggle.collapse {
+      display: none;
+    }
+    #sidetoggle.collapse[aria-expanded="true"] {
+      display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    #sidetoggle.collapse {
+      display: block;
+    }
+}
 /*ul.navbar-nav li.active {
     position: relative;
     display: inline-block;

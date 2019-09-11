@@ -67,7 +67,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="api-overview">API Overview</h1>
 
-<p>The <strong>API Overview</strong> enables you to get an overview of your organisation's API calls, including call volume and common response codes. It comprises a data table, a <strong>Back End Response Code</strong> pie chart, and <strong>API Request by Company</strong> bar chart, and an <strong>APi Request Over Time</strong> line graph.</p>
+<p>The <strong>API Overview</strong> enables you to get an overview of your organisation's API calls, including call volumes and ATUs used. It comprises a data table, an <strong>API Requests by Customer Name</strong> bar chart, an <strong>ATU Total Company</strong> pie chart, and an <strong>API Requests by IntervalDate and CustomerName</strong> line graph.</p>
 <a href="../images/reports/api.png" target="_blank">
     <img src="../images/reports/api.png">
 </a>
@@ -77,41 +77,18 @@
 <li><strong>API Calls</strong> - enables you to select only those calls that were made within a given date range.</li>
 <li><strong>Company Name</strong> - where applicable, enables you to select only those calls that were made by a particular company within your group. You can select multiple companies if required.</li>
 </ul>
-<h2 id="data-table">Data Table</h2>
-<a href="../images/reports/api-table.png" target="_blank">
-    <img src="../images/reports/api-table.png">
+<h2 id="api-requests-by-customer-name">API Requests by Customer Name</h2>
+<p>The <strong>API Requests by Customer Name</strong> chart shows how many requests each of your companies has made, in line with any report filters you may have selected.</p>
+<a href="../images/reports/api-custname.png" target="_blank">
+    <img src="../images/reports/api-custname.png">
 </a>
 <h3 id="visualisation-filters">Visualisation Filters</h3>
+<ul>
+<li><strong>API Requests</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>CustomerName</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+</ul>
 <h3 id="more-options">More Options</h3>
-<p>The data table has the following options available from its <strong>More Options</strong> menu:</p>
-<ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#export-data">Export Data</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
-</ul>
-<h2 id="back-end-response-code">Back End Response Code</h2>
-<a href="../images/reports/api-response-code.png" target="_blank">
-    <img src="../images/reports/api-response-code.png">
-</a>
-<h3 id="visualisation-filters-1">Visualisation Filters</h3>
-<h3 id="more-options-1">More Options</h3>
-<p>The <strong>Back End Response Code</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
-<ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#export-data">Export Data</a></li>
-<li><a href="/reports/reports.html#show-data">Show Data</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> BackendResponseCode / API Requests</li>
-</ul>
-<h2 id="api-request-by-company">API Request by Company</h2>
-<a href="../images/reports/api-by-company.png" target="_blank">
-    <img src="../images/reports/api-by-company.png">
-</a>
-<h3 id="visualisation-filters-2">Visualisation Filters</h3>
-<h3 id="more-options-2">More Options</h3>
-<p>The <strong>API Request by Company</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<p>The <strong>API Requests by Customer Name</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
 <li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
 <li><a href="/reports/reports.html#export-data">Export Data</a></li>
@@ -121,13 +98,48 @@
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> CustomerName / API Requests</li>
 </ul>
-<h2 id="api-request-over-time">API Request Over Time</h2>
-<a href="../images/reports/api-over-time.png" target="_blank">
-    <img src="../images/reports/api-over-time.png">
+<h2 id="atu-total-company">ATU Total Company</h2>
+<p>The <strong>ATU Total Company</strong> chart shows the percentage of your total ATUs used by each of your companies.</p>
+<a href="../images/reports/api-atu.png" target="_blank">
+    <img src="../images/reports/api-atu.png">
 </a>
-<h3 id="visualisation-filters-3">Visualisation Filters</h3>
-<h3 id="more-options-3">More Options</h3>
-<p>The <strong>API Request Over Time</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<p>Hoover your mouse pointer over the chart to view the ATUs used by each individual company.</p>
+<a href="../images/reports/api-atu-highlight.png" target="_blank">
+    <img src="../images/reports/api-atu-highlight.png">
+</a>
+<h3 id="visualisation-filters-1">Visualisation Filters</h3>
+<ul>
+<li><strong>ATU Total</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>CustomerName</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+</ul>
+<h3 id="more-options-1">More Options</h3>
+<p>The <strong>ATU Total Company</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<ul>
+<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
+<li><a href="/reports/reports.html#export-data">Export Data</a></li>
+<li><a href="/reports/reports.html#show-data">Show Data</a></li>
+<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
+<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
+<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
+<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> CustomerName / ATU Total</li>
+</ul>
+<h2 id="api-requests-by-intervaldate-and-customername">API Requests by IntervalDate and CustomerName</h2>
+<p>The <strong>API Requests by IntervalDate and CustomerName</strong> chart shows how the total number of API requests made by each of your companies has changed over time. Each line represents one of your companies.</p>
+<a href="../images/reports/api-requests.png" target="_blank">
+    <img src="../images/reports/api-requests.png">
+</a>
+<p>Hover your mouse over the chart to view the total number of API requests made by each company for a given <code>IntervalDate</code>.</p>
+<a href="../images/reports/api-requests-highlight.png" target="_blank">
+    <img src="../images/reports/api-requests-highlight.png">
+</a>
+<h3 id="visualisation-filters-2">Visualisation Filters</h3>
+<ul>
+<li><strong>API Requests</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>CustomerName</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a></li>
+<li><strong>IntervalDate</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a>, <a href="/reports/reports.html#using-advanced-filters">Advanced</a>, and <a href="/reports/reports.html#using-relative-date-filters">Relative Date</a>)</li>
+</ul>
+<h3 id="more-options-2">More Options</h3>
+<p>The <strong>API Requests by IntervalDate and CustomerName</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
 <ul>
 <li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
 <li><a href="/reports/reports.html#export-data">Export Data</a></li>
@@ -142,7 +154,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/report-docs/docfx_project/reports/api.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/reports/api.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
