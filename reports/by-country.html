@@ -67,27 +67,28 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="shipped-consignments-by-destination-country">Shipped Consignments by Destination Country</h1>
 
-<p>The <strong>Shipped Consignments by Destination Country</strong> report enables you to see how many consignments you have sent to each of your destination countries. It comprises a table listing consignment and package data, a <strong>Consignment Volumes By Country</strong> chart with the shipment data plotted on a map, and a <strong>% of Consignment Volume by Destination Country</strong> bar chart.</p>
+<p>The <strong>Shipped Consignments by Destination Country</strong> report enables you to see the volume of consignments you have shipped to each of your destination countries.</p>
+<p>It comprises a table listing consignment and package data, a <strong>Consignment Volumes By Country</strong> chart with the shipment data plotted on a map, and a <strong>% of Consignment Volume by Destination Country</strong> bar chart.</p>
 <a href="../images/reports/by-country.png" target="_blank">
     <img src="../images/reports/by-country.png">
 </a>
 <blockquote>
 <p><span class="note-header">Note:</span></p>
-<p>In order for the data in this chart to be accurate, your consignments must have a destination country correctly recorded. Specifically, they must have a valid <code>Address</code> object that has an <code>AddressType</code> of <code>Destination</code> and the relevant two-letter country code in the <code>Address.Country.IsoCode.TwoLetterCode</code> field.</p>
+<p>In order for the data in this chart to be accurate, your consignments must have a destination country recorded. Specifically, they must have a valid <code>Address</code> object that has an <code>AddressType</code> of <code>Destination</code> and the relevant two-letter country code in the <code>Address.Country.IsoCode.TwoLetterCode</code> field.</p>
 <p>For more information on recording consignment data in PRO, see the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> page of the API reference.</p>
 </blockquote>
 <h2 id="report-filters">Report Filters</h2>
 <p>The <strong>Shipped Consignments by Destination Country</strong> report offers the following report-wide filters:</p>
 <ul>
-<li><strong>Date Shipped</strong> - enables you to select only those consignments that were shipped within a given date range.</li>
-<li><strong>Company Name</strong> - where applicable, enables you to select only those consignments that were shipped by a particular company within your group. You can select multiple companies if required.</li>
-<li><strong>Shipping Location</strong> - where applicable, enables you to select only those consignments that were shipped from a particular shipping location.</li>
-<li><strong>Carrier</strong> - enables you to select only those consignments that were shipped via a particular carrier.</li>
-<li><strong>Carrier Service</strong> - enables you to select only those consignments that were shipped via a particular carrier service.</li>
-<li><strong>Delivery Type</strong> - enables you to select only those consignments that were shipped as a particular delivery type (i.e. <em>Delivery</em> or <em>Click and Collect</em>).</li>
+<li><strong>Date Shipped</strong> - enables you to select consignments that were shipped within a given date range.</li>
+<li><strong>Company Name</strong> - where applicable, enables you to select consignments that were shipped by a particular company within your group. You can select multiple companies if required.</li>
+<li><strong>Shipping Location</strong> - where applicable, enables you to select consignments that were shipped from a particular shipping location.</li>
+<li><strong>Carrier</strong> - enables you to select consignments that were shipped via a particular carrier.</li>
+<li><strong>Carrier Service</strong> - enables you to select consignments that were shipped via a particular carrier service.</li>
+<li><strong>Delivery Type</strong> - enables you to select consignments that were shipped as a particular delivery type (i.e. <em>Delivery</em> or <em>Click and Collect</em>).</li>
 </ul>
 <h2 id="data-table">Data Table</h2>
-<p>The data table shows how many consignments and packages were shipped to each of your destination countries (with any report filters taken into account:</p>
+<p>The data table shows how many consignments and packages were shipped to each of your destination countries (with any report filters taken into account):</p>
 <a href="../images/reports/by-country-table.png" target="_blank">
     <img src="../images/reports/by-country-table.png">
 </a>
@@ -109,7 +110,7 @@
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Destination Country / Consignments / Packages</li>
 </ul>
 <h2 id="consignment-volumes-by-country">Consignment Volumes by Country</h2>
-<p>The <strong>Consignment Volumes by Country</strong> chart displays the countries your organisation has shipped to on a map. The countries you ship to most frequently are displayed in blue, while your least frequently shipped-to countries are displayed in green.</p>
+<p>The <strong>Consignment Volumes by Country</strong> chart displays the countries your organisation has shipped to on a map. The countries you ship to most frequently are displayed in blue tones, while your least frequently shipped-to countries are displayed in green tones.</p>
 <a href="../images/reports/by-country-volumes.png" target="_blank">
     <img src="../images/reports/by-country-volumes.png">
 </a>
