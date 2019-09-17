@@ -72,7 +72,7 @@ article h4 {
     font-size: 1.2em; 
     border:none;
     padding-bottom: 8px;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 button,
@@ -121,7 +121,7 @@ pre code {
 blockquote {
     font-size: 16px;
     width: 100%;
-    margin: 20px auto;
+    margin: 15px auto 20px auto;
     color: #605d58;
     padding:20px 80px 15px 30px;
     border-left:4px solid #ff055e;
@@ -153,6 +153,18 @@ ol {
 ul {
     margin-top: 10px;
     padding-left: 20px;
+}
+
+ol ol, ul ol {
+    list-style-type: lower-roman;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+ol ul, ul ul {
+    list-style-type: circle;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 ol pre, ul pre {
@@ -273,6 +285,16 @@ article span.small.pull-right {
       display: block;
     }
 }
+
+img {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.affix ul > li.active > a {
+    color: #ff055e;
+}
+
 /*ul.navbar-nav li.active {
     position: relative;
     display: inline-block;
