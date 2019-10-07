@@ -1,0 +1,2337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SortedHttpClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SortedHttpClient
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Shared_SortedHttpClient" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient" class="text-break">Class SortedHttpClient
+  </h1>
+  <div class="markdown level0 summary"><p>An implementation of IHttpClient that uses the .NET HttpClient internally for
+all public calls.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SortedHttpClient</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.html">IHttpClient</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Shared.html">Sorted.PRO.SDK.Shared</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Shared.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Shared_SortedHttpClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SortedHttpClient : IHttpClient, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-44">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient__ctor_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient__ctor_System_Net_Http_HttpClient_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.#ctor(System.Net.Http.HttpClient)">SortedHttpClient(HttpClient)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Sorted.PRO.SDK.Shared.SortedHttpClient.html">SortedHttpClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SortedHttpClient(HttpClient client)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpClient</span></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>The client.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-21">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_BaseAddress_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.BaseAddress*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_BaseAddress" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.BaseAddress">BaseAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri BaseAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-19">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_DefaultRequestHeaders_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DefaultRequestHeaders*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_DefaultRequestHeaders" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DefaultRequestHeaders">DefaultRequestHeaders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRequestHeaders DefaultRequestHeaders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.Headers.HttpRequestHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-33">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_MaxResponseContentBufferSize_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.MaxResponseContentBufferSize*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_MaxResponseContentBufferSize" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.MaxResponseContentBufferSize">MaxResponseContentBufferSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long MaxResponseContentBufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-27">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_Timeout_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.Timeout*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_Timeout" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Timeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-250">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_CancelPendingRequests_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.CancelPendingRequests*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_CancelPendingRequests" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.CancelPendingRequests">CancelPendingRequests()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CancelPendingRequests()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-199">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync(System.String)">DeleteAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; DeleteAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The request message was already sent by the <span class="xref">System.Net.Http.HttpClient</span> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-211">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)">DeleteAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; DeleteAsync(string requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-205">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync(System.Uri)">DeleteAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; DeleteAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-217">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_DeleteAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)">DeleteAsync(Uri, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; DeleteAsync(Uri requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-50">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_Dispose_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.Dispose*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_Dispose" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-92">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.String)">GetAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-105">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_String_System_Net_Http_HttpCompletionOption_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)">GetAsync(String, HttpCompletionOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri, HttpCompletionOption completionOption)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-131">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_String_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">GetAsync(String, HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-118">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_String_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.String,System.Threading.CancellationToken)">GetAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-99">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.Uri)">GetAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-112">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_Uri_System_Net_Http_HttpCompletionOption_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)">GetAsync(Uri, HttpCompletionOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri, HttpCompletionOption completionOption)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-137">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_Uri_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">GetAsync(Uri, HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-125">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)">GetAsync(Uri, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-68">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetByteArrayAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetByteArrayAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetByteArrayAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetByteArrayAsync(System.String)">GetByteArrayAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte[]&gt; GetByteArrayAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-74">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetByteArrayAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetByteArrayAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetByteArrayAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetByteArrayAsync(System.Uri)">GetByteArrayAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;byte[]&gt; GetByteArrayAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-80">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStreamAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStreamAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStreamAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStreamAsync(System.String)">GetStreamAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Stream&gt; GetStreamAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-86">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStreamAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStreamAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStreamAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStreamAsync(System.Uri)">GetStreamAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Stream&gt; GetStreamAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-56">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStringAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStringAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStringAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStringAsync(System.String)">GetStringAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetStringAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-62">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStringAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStringAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_GetStringAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.GetStringAsync(System.Uri)">GetStringAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetStringAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-144">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_System_String_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)">PostAsync(String, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PostAsync(string requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-158">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_System_String_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PostAsync(String, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PostAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-151">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)">PostAsync(Uri, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PostAsync(Uri requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-165">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PostAsync(Uri, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-171">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_System_String_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync(System.String,System.Net.Http.HttpContent)">PutAsync(String, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PutAsync(string requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-184">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_System_String_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PutAsync(String, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PutAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-177">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_System_Uri_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)">PutAsync(Uri, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PutAsync(Uri requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-191">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_PutAsync_System_Uri_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PutAsync(Uri, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; PutAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">requestUri</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-225">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync(System.Net.Http.HttpRequestMessage)">SendAsync(HttpRequestMessage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">request</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The request message was already sent by the <span class="xref">System.Net.Http.HttpClient</span> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-239">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)">SendAsync(HttpRequestMessage, HttpCompletionOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-245">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">SendAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-233">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_SortedHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.SortedHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">SendAsync(HttpRequestMessage, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">request</code> was null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>The request message was already sent by the <span class="xref">System.Net.Http.HttpClient</span> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestException</span></td>
+        <td><p>The request failed due to an underlying issue such as network connectivity, DNS failure, server certificate validation or timeout.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.html">IHttpClient</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/SortedHttpClient.cs#lines-15" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

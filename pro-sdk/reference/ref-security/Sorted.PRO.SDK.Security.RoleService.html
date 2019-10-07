@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RoleService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RoleService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Security.RoleService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Security_RoleService" data-uid="Sorted.PRO.SDK.Security.RoleService" class="text-break">Class RoleService
+  </h1>
+  <div class="markdown level0 summary"><p>Service for managing user roles</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html">BaseService</a></div>
+    <div class="level2"><span class="xref">RoleService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Sorted.PRO.SDK.Interfaces.Security.IRoleService.html">IRoleService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_VERSION">BaseService.VERSION</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Rest">BaseService.Rest</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Log">BaseService.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_GetRestConfig_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_System_String_">BaseService.GetRestConfig(String, IEndpoints, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod__1_System_Func___0__">BaseService.CallAsyncMethod&lt;TReturn&gt;(Func&lt;TReturn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_System_Action_">BaseService.CallAsyncMethod(Action)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Security.html">Sorted.PRO.SDK.Security</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Security.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Security_RoleService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RoleService : BaseService, IRoleService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-29">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService__ctor_" data-uid="Sorted.PRO.SDK.Security.RoleService.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService__ctor_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_Sorted_PRO_SDK_Shared_Interfaces_IHttpClientFactory_Sorted_PRO_SDK_Shared_Interfaces_ILogger_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Security.RoleService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})">RoleService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Sorted.PRO.SDK.Security.RoleService.html">RoleService</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoleService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary&lt;string, string&gt; optionalHeaders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IEndpoints.html">IEndpoints</a></td>
+        <td><span class="parametername">endpoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.html">IHttpClientFactory</a></td>
+        <td><span class="parametername">httpClientFactory</span></td>
+        <td><p>Used to provide a re-usable instance of <span class="xref">System.Net.Http.HttpClient</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-109">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_AddAccountToRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.AddAccountToRole*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_AddAccountToRole_System_Guid_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.AddAccountToRole(System.Guid,System.Guid)">AddAccountToRole(Guid, Guid)</h4>
+  <div class="markdown level1 summary"><p>Add the specified account to the specified role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Add Account to Role&quot;, &quot;Adds the specified account to the role.&quot;, &quot;Roles&quot;, &quot;/roles/{roleReference:string}/accounts/{accountReference:string}&quot;, &quot;PUT&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void AddAccountToRole(Guid roleReference, Guid accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-185">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_AddAccountToRoleAsync_" data-uid="Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_AddAccountToRoleAsync_System_Guid_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync(System.Guid,System.Guid)">AddAccountToRoleAsync(Guid, Guid)</h4>
+  <div class="markdown level1 summary"><p>Add account to role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddAccountToRoleAsync(Guid roleReference, Guid accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td><p>The role reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The account reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-38">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_CreateCustomRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.CreateCustomRole*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_CreateCustomRole_Sorted_PRO_SDK_DataTypes_Role_NewRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)">CreateCustomRole(NewRole)</h4>
+  <div class="markdown level1 summary"><p>Create a new custom role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Create Custom Role&quot;, &quot;Creates a new custom role with a set of permissions.&quot;, &quot;Roles&quot;, typeof(NewRole), typeof(Role), &quot;/roles/custom&quot;, &quot;POST&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public Role CreateCustomRole(NewRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Role.NewRole.html">NewRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Security.Role.html">Role</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-144">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_CreateCustomRoleAsync_" data-uid="Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_CreateCustomRoleAsync_Sorted_PRO_SDK_DataTypes_Role_NewRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)">CreateCustomRoleAsync(NewRole)</h4>
+  <div class="markdown level1 summary"><p>Create custom role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Role&gt; CreateCustomRoleAsync(NewRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Role.NewRole.html">NewRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>The role.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Security.Role.html">Role</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-56">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_DeleteRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.DeleteRole*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_DeleteRole_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.DeleteRole(System.Guid)">DeleteRole(Guid)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Delete Role&quot;, &quot;Deletes the specified role.&quot;, &quot;Roles&quot;, &quot;/roles/{roleReference:string}&quot;, &quot;DELETE&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void DeleteRole(Guid roleReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-154">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_DeleteRoleAsync_" data-uid="Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_DeleteRoleAsync_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync(System.Guid)">DeleteRoleAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Delete Role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task DeleteRoleAsync(Guid roleReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td><p>The role reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-91">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_GetAccountsWithinRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_GetAccountsWithinRole_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole(System.Guid)">GetAccountsWithinRole(Guid)</h4>
+  <div class="markdown level1 summary"><p>Gets the accounts within role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Accounts in Role&quot;, &quot;Returns all the accounts within a role.&quot;, &quot;Roles&quot;, typeof(List&lt;Account&gt;), &quot;/roles/{roleReference:string}/accounts&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;Account&gt; GetAccountsWithinRole(Guid roleReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td><p>The role reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Account</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-174">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_GetAccountsWithinRoleAsync_" data-uid="Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_GetAccountsWithinRoleAsync_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync(System.Guid)">GetAccountsWithinRoleAsync(Guid)</h4>
+  <div class="markdown level1 summary"><p>Get accounts within role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Account&gt;&gt; GetAccountsWithinRoleAsync(Guid roleReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td><p>The role reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Account</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-126">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_RemoveAccountFromRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_RemoveAccountFromRole_System_Guid_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole(System.Guid,System.Guid)">RemoveAccountFromRole(Guid, Guid)</h4>
+  <div class="markdown level1 summary"><p>Remove the specified account from the role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Remove Account From Role&quot;, &quot;Removes the specified account from the role.&quot;, &quot;Roles&quot;, &quot;/roles/{roleReference:string}/accounts/{accountReference:string}&quot;, &quot;DELETE&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void RemoveAccountFromRole(Guid roleReference, Guid accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-196">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_RemoveAccountFromRoleAsync_" data-uid="Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_RemoveAccountFromRoleAsync_System_Guid_System_Guid_" data-uid="Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)">RemoveAccountFromRoleAsync(Guid, Guid)</h4>
+  <div class="markdown level1 summary"><p>Remove account from role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveAccountFromRoleAsync(Guid roleReference, Guid accountReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">roleReference</span></td>
+        <td><p>The role reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">accountReference</span></td>
+        <td><p>The account reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-72">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_UpdateRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.UpdateRole*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_UpdateRole_Sorted_PRO_SDK_DataTypes_Role_UpdateRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)">UpdateRole(UpdateRole)</h4>
+  <div class="markdown level1 summary"><p>Update the specified role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Update Role&quot;, &quot;Updates the specified role with new properties.&quot;, &quot;Roles&quot;, typeof(UpdateRole), null, &quot;/roles&quot;, &quot;PUT&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void UpdateRole(UpdateRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Role.UpdateRole.html">UpdateRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-164">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Security_RoleService_UpdateRoleAsync_" data-uid="Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Security_RoleService_UpdateRoleAsync_Sorted_PRO_SDK_DataTypes_Role_UpdateRole_" data-uid="Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)">UpdateRoleAsync(UpdateRole)</h4>
+  <div class="markdown level1 summary"><p>Update role</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UpdateRoleAsync(UpdateRole role)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Role.UpdateRole.html">UpdateRole</a></td>
+        <td><span class="parametername">role</span></td>
+        <td><p>The role.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Sorted.PRO.SDK.Interfaces.Security.IRoleService.html">IRoleService</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Security/RoleService.cs#lines-17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

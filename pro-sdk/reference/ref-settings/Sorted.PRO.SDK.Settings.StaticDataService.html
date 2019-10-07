@@ -1,0 +1,814 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StaticDataService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StaticDataService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Settings.StaticDataService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Settings_StaticDataService" data-uid="Sorted.PRO.SDK.Settings.StaticDataService" class="text-break">Class StaticDataService
+  </h1>
+  <div class="markdown level0 summary"><p>Provides access to static data such as lookup tables</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html">BaseService</a></div>
+    <div class="level2"><span class="xref">StaticDataService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.html">IStaticDataService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_VERSION">BaseService.VERSION</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Rest">BaseService.Rest</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Log">BaseService.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_GetRestConfig_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_System_String_">BaseService.GetRestConfig(String, IEndpoints, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod__1_System_Func___0__">BaseService.CallAsyncMethod&lt;TReturn&gt;(Func&lt;TReturn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_System_Action_">BaseService.CallAsyncMethod(Action)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Settings.html">Sorted.PRO.SDK.Settings</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Settings.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Settings_StaticDataService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StaticDataService : BaseService, IStaticDataService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-35">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService__ctor_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService__ctor_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_Sorted_PRO_SDK_Shared_Interfaces_IHttpClientFactory_Sorted_PRO_SDK_Shared_Interfaces_ILogger_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})">StaticDataService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Sorted.PRO.SDK.Settings.StaticDataService.html">StaticDataService</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StaticDataService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IEndpoints.html">IEndpoints</a></td>
+        <td><span class="parametername">endpoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.html">IHttpClientFactory</a></td>
+        <td><span class="parametername">httpClientFactory</span></td>
+        <td><p>Used to provide a re-usable instance of <span class="xref">System.Net.Http.HttpClient</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-81">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllBuiltInRoles_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllBuiltInRoles" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles">GetAllBuiltInRoles()</h4>
+  <div class="markdown level1 summary"><p>Gets all built in roles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Built In Roles&quot;, &quot;Returns all non-configurable (built-in) Electio roles.&quot;, &quot;Static Data&quot;, typeof(List&lt;Role&gt;), &quot;/security/staticdata/builtinroles&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;Role&gt; GetAllBuiltInRoles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-security/Sorted.PRO.SDK.DataTypes.Security.Role.html">Role</a>&gt;</td>
+        <td><p>List of 'BuiltIn' roles</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-236">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllBuiltInRolesAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllBuiltInRolesAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync">GetAllBuiltInRolesAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Role&gt;&gt; GetAllBuiltInRolesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-security/Sorted.PRO.SDK.DataTypes.Security.Role.html">Role</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-60">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllPermissions_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllPermissions" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions">GetAllPermissions()</h4>
+  <div class="markdown level1 summary"><p>Gets all permissions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get All Permissions&quot;, &quot;Returns all available Electio permissions.&quot;, &quot;Static Data&quot;, typeof(List&lt;PermissionGroup&gt;), &quot;/security/permissions&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;PermissionGroup&gt; GetAllPermissions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-security/Sorted.PRO.SDK.DataTypes.Security.PermissionGroup.html">PermissionGroup</a>&gt;</td>
+        <td><p>List of Permissions</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-230">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllPermissionsAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetAllPermissionsAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync">GetAllPermissionsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets all permissions asynchronous.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public Task&lt;List&lt;PermissionGroup&gt;&gt; GetAllPermissionsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-security/Sorted.PRO.SDK.DataTypes.Security.PermissionGroup.html">PermissionGroup</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-212">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetDimensionUnits_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetDimensionUnits" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits">GetDimensionUnits()</h4>
+  <div class="markdown level1 summary"><p>Get all dimensions units</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Dimension Units&quot;, &quot;Gets all supported dimensions units.&quot;, &quot;Static Data&quot;, typeof(List&lt;Unit&gt;), &quot;/rates/management/static/dimensionunits&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;Unit&gt; GetDimensionUnits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-rates/Sorted.PRO.SDK.DataTypes.Rates.Unit.html">Unit</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-309">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetDimensionUnitsAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetDimensionUnitsAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync">GetDimensionUnitsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the dimension units.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Unit&gt;&gt; GetDimensionUnitsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-rates/Sorted.PRO.SDK.DataTypes.Rates.Unit.html">Unit</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-156">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCountries_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCountries" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries">GetSupportedCountries()</h4>
+  <div class="markdown level1 summary"><p>Get all supported countries</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Countries&quot;, &quot;Returns all supported countries.&quot;, &quot;Static Data&quot;, typeof(List&lt;Country&gt;), &quot;/security/staticdata/countries&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;Country&gt; GetSupportedCountries()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Country</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-276">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCountriesAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCountriesAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync">GetSupportedCountriesAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the supported countries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Country&gt;&gt; GetSupportedCountriesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Country</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-138">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCurrencies_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCurrencies" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies">GetSupportedCurrencies()</h4>
+  <div class="markdown level1 summary"><p>Get all supported currencies</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Currencies&quot;, &quot;Returns all supported currencies.&quot;, &quot;Static Data&quot;, typeof(List&lt;Currency&gt;), &quot;/security/staticdata/currencies&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;Currency&gt; GetSupportedCurrencies()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Currency</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-266">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCurrenciesAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedCurrenciesAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync">GetSupportedCurrenciesAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the supported currencies.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Currency&gt;&gt; GetSupportedCurrenciesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Currency</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-174">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedRegions_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedRegions" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions">GetSupportedRegions()</h4>
+  <div class="markdown level1 summary"><p>Get all supported regions</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Regions&quot;, &quot;Returns all supported regions.&quot;, &quot;Static Data&quot;, typeof(List&lt;Region&gt;), &quot;/security/staticdata/regions&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public Dictionary&lt;string, List&lt;Region&gt;&gt; GetSupportedRegions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Region</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-286">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedRegionsAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedRegionsAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync">GetSupportedRegionsAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the supported regions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Dictionary&lt;string, List&lt;Region&gt;&gt;&gt; GetSupportedRegionsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.Region</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-102">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTimeZones_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTimeZones" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones">GetSupportedTimeZones()</h4>
+  <div class="markdown level1 summary"><p>Gets the supported time zones.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Timezones&quot;, &quot;Returns all supported timezones.&quot;, &quot;Static Data&quot;, typeof(HashSet&lt;TimeZone&gt;), &quot;/security/staticdata/timezones&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public HashSet&lt;TimeZone&gt; GetSupportedTimeZones()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.TimeZone</span>&gt;</td>
+        <td><p>Set of supported timezones.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-246">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTimeZonesAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTimeZonesAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync">GetSupportedTimeZonesAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the supported time zones.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;HashSet&lt;TimeZone&gt;&gt; GetSupportedTimeZonesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.HashSet</span>&lt;<span class="xref">System.TimeZone</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-120">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTitles_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTitles" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles">GetSupportedTitles()</h4>
+  <div class="markdown level1 summary"><p>Get supported titles</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Titles&quot;, &quot;Gets all supported titles.&quot;, &quot;Static Data&quot;, typeof(IList&lt;string&gt;), &quot;/security/staticdata/titles&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;string&gt; GetSupportedTitles()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-256">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTitlesAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetSupportedTitlesAsync" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync">GetSupportedTitlesAsync()</h4>
+  <div class="markdown level1 summary"><p>Gets the supported titles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;string&gt;&gt; GetSupportedTitlesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-195">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetTaxRates_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetTaxRates_System_String_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates(System.String)">GetTaxRates(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the Tax rates configured for the specified country.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Get Tax Rates&quot;, &quot;Returns all supported Tax rates.&quot;, &quot;Static Data&quot;, &quot;/rates/management/static/tax/{countryIsoCode:string}&quot;, &quot;GET&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;TaxRate&gt; GetTaxRates(string countryIsoCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">countryIsoCode</span></td>
+        <td><p>The country ISO code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.TaxRate</span>&gt;</td>
+        <td><p>List of supported Tax rates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-299">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Settings_StaticDataService_GetTaxRatesAsync_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Settings_StaticDataService_GetTaxRatesAsync_System_String_" data-uid="Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync(System.String)">GetTaxRatesAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the VAT rates configured for the specified country.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;TaxRate&gt;&gt; GetTaxRatesAsync(string countryIsoCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">countryIsoCode</span></td>
+        <td><p>The country ISO code.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.TaxRate</span>&gt;&gt;</td>
+        <td><p>List of supported VAT rates</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.html">IStaticDataService</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Settings/StaticDataService.cs#lines-19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

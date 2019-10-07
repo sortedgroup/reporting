@@ -1,0 +1,1629 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IRestConsumer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IRestConsumer
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer" class="text-break">Interface IRestConsumer
+  </h1>
+  <div class="markdown level0 summary"><p>Implementing class provides methods which will allow the caller to interact with RESTful API's</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.html">Sorted.PRO.SDK.Shared.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Shared.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRestConsumer</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-280">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})">BuildQueryString(Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Builds a query string by concatenating name/value pairs. This method will
+URLEncode all entries so you do not need to handle encoding before calling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string BuildQueryString(Dictionary&lt;string, string&gt; queryStringItems)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">queryStringItems</span></td>
+        <td><p>The query string items to create a querystring for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>URL Encoded QueryString ready for use.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-259">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Delete_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Delete_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Delete(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a DELETE to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Delete(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-239">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Delete_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Delete__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Delete&lt;T&gt;(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a DELETE to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Delete&lt;T&gt;(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>ApiResponse containing true on success, false on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-270">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_DeleteAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">DeleteAsync(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous DELETE to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteAsync(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>ApiResponse containing true on success, false on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-251">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_DeleteAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">DeleteAsync&lt;T&gt;(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous DELETE to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;T&gt; DeleteAsync&lt;T&gt;(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>ApiResponse containing true on success, false on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-37">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Get_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Get_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Get(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a GET to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Get(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-17">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Get_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Get__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Get&lt;T&gt;(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a GET to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">T Get&lt;T&gt;(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type that we will deserialise the response into</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-48">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_GetAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">GetAsync(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous GET to the specified requestUri. The requestUri should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task GetAsync(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task for awaiting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-29">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_GetAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">GetAsync&lt;T&gt;(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous GET to the specified requestUri. The requestUri&quot; should contain the route part
+of the request (not the endpoint) and should include any QueryString parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;T&gt; GetAsync&lt;T&gt;(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;T&gt;</td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type that we will deserialise the response into</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-219">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Patch_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Patch_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Patch(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a PATCH to the specified requestUri</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Patch(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-198">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Patch_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Patch__1___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Patch&lt;T&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a PATCH to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Patch&lt;T&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PATCH request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PATCH request as its body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-172">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Patch_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Patch__2___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Patch&lt;T, TOut&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a PATCH to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TOut Patch&lt;T, TOut&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PATCH request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TOut</span></td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PATCH request as its body</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOut</span></td>
+        <td><p>The type that we will return within the API Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-227">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PatchAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PatchAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PatchAsync(String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous PATCH to the specified requestUri</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PatchAsync(string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task for awaiting</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-212">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PatchAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PatchAsync__1___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PatchAsync&lt;T&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous PATCH to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PatchAsync&lt;T&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PATCH request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task for awaiting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PATCH request as its body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-187">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PatchAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PatchAsync__2___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PatchAsync&lt;T, TOut&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous PATCH to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TOut&gt; PatchAsync&lt;T, TOut&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PATCH request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TOut&gt;</td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PATCH request as its body</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOut</span></td>
+        <td><p>The type that we will return within the API Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-90">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Post_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Post__1___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Post&lt;T&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a POST to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Post&lt;T&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the POST request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the POST request as its body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-64">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Post_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Post__2___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Post&lt;T, TOut&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a POST to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TOut Post&lt;T, TOut&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the POST request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TOut</span></td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the POST request as its body</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOut</span></td>
+        <td><p>The type that we will return within the API Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-104">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PostAsync__1___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PostAsync&lt;T&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous POST to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PostAsync&lt;T&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the POST request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task for awaiting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the POST request as its body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-79">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PostAsync__2___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PostAsync&lt;T, TOut&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous POST to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TOut&gt; PostAsync&lt;T, TOut&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the POST request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TOut&gt;</td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the POST request as its body</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOut</span></td>
+        <td><p>The type that we will return within the API Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-143">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Put_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Put__1___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Put&lt;T&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a PUT to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Put&lt;T&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PUT request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PUT request as its body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-119">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Put_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_Put__2___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">Put&lt;T, TOut&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues a PUT to the specified requestUri sending the serialised content of model as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TOut Put&lt;T, TOut&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PUT request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TOut</span></td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PUT request as its body</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOut</span></td>
+        <td><p>The type that we will return within the API Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-157">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PutAsync__1___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PutAsync&lt;T&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous PUT to the specified requestUri sending the serialised content of model  as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task PutAsync&lt;T&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PUT request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task for awaiting.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PUT request as its body</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-132">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_PutAsync__2___0_System_String_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">PutAsync&lt;T, TOut&gt;(T, String, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Issues an asynchronous PUT to the specified requestUri sending the serialised content of model as the body of the request.
+The requestUri should contain the route part of the request (not the endpoint) and should include any QueryString
+parameters created using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;TOut&gt; PutAsync&lt;T, TOut&gt;(T model, string requestUri, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">model</span></td>
+        <td><p>The model that we are serializing and passing with the PUT request as its body.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td><p>The route part of the request. This should not include the endpoint but should include a QueryString built using <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html#Sorted_PRO_SDK_Shared_Interfaces_IRestConsumer_BuildQueryString_System_Collections_Generic_Dictionary_System_String_System_String__">BuildQueryString(Dictionary&lt;String, String&gt;)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Any optional headers which should be added to the request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TOut&gt;</td>
+        <td><p>ApiResponse containing a deserialised instance of type T or an Error object on failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the model that we are passing with the PUT request as its body</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOut</span></td>
+        <td><p>The type that we will return within the API Response.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs#lines-7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

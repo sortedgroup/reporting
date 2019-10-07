@@ -1,0 +1,748 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IServiceGroupsService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IServiceGroupsService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService" class="text-break">Interface IServiceGroupsService
+  </h1>
+  <div class="markdown level0 summary"><p>Interface for interacting with MPD Carrier Service Groups.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Interfaces.Settings.html">Sorted.PRO.SDK.Interfaces.Settings</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Interfaces.Settings.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IServiceGroupsService</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-32">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_CreateServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_CreateServiceGroup_Sorted_PRO_SDK_DataTypes_Common_MpdCarrierServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)">CreateServiceGroup(MpdCarrierServiceGroup)</h4>
+  <div class="markdown level1 summary"><p>Creates a new MPD Carrier Service group containing all of the MPD
+Carrier Services defined in the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MpdCarrierServiceGroup CreateServiceGroup(MpdCarrierServiceGroup serviceGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td><span class="parametername">serviceGroup</span></td>
+        <td><p>The service group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td><p>The created MPD Carrier Service Group</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-40">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_CreateServiceGroupAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_CreateServiceGroupAsync_Sorted_PRO_SDK_DataTypes_Common_MpdCarrierServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)">CreateServiceGroupAsync(MpdCarrierServiceGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MpdCarrierServiceGroup&gt; CreateServiceGroupAsync(MpdCarrierServiceGroup serviceGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td><span class="parametername">serviceGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-34">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_DeleteServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_DeleteServiceGroup_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)">DeleteServiceGroup(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DeleteServiceGroup(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-42">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_DeleteServiceGroupAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_DeleteServiceGroupAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)">DeleteServiceGroupAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteServiceGroupAsync(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-23">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroup_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)">GetServiceGroup(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the MPD Carrier Service group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MpdCarrierServiceGroup GetServiceGroup(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td><p>The service group reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td><p>MPDCarrierServiceGroup</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-37">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)">GetServiceGroupAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MpdCarrierServiceGroup&gt; GetServiceGroupAsync(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-16">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroups_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroups" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups">GetServiceGroups()</h4>
+  <div class="markdown level1 summary"><p>Gets a list of all MPD Carrier Service groups.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MpdCarrierServiceGroup&gt; GetServiceGroups()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;</td>
+        <td><p>List of MPD Carrier Service Groups</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-35">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupsAsync" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync">GetServiceGroupsAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;MpdCarrierServiceGroup&gt;&gt; GetServiceGroupsAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-17">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummaries_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummaries" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries">GetServiceGroupSummaries()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;MpdCarrierServiceGroup&gt; GetServiceGroupSummaries()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-36">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummariesAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummariesAsync" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync">GetServiceGroupSummariesAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;MpdCarrierServiceGroup&gt;&gt; GetServiceGroupSummariesAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-24">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummary_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummary_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)">GetServiceGroupSummary(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">MpdCarrierServiceGroup GetServiceGroupSummary(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-38">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummaryAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_GetServiceGroupSummaryAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)">GetServiceGroupSummaryAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MpdCarrierServiceGroup&gt; GetServiceGroupSummaryAsync(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-25">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_IsServiceGroupReferenceAvailable_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_IsServiceGroupReferenceAvailable_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)">IsServiceGroupReferenceAvailable(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsServiceGroupReferenceAvailable(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-39">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_IsServiceGroupReferenceAvailableAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_IsServiceGroupReferenceAvailableAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)">IsServiceGroupReferenceAvailableAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;bool&gt; IsServiceGroupReferenceAvailableAsync(string serviceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-33">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_UpdateServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_UpdateServiceGroup_System_String_Sorted_PRO_SDK_DataTypes_Common_MpdCarrierServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)">UpdateServiceGroup(String, MpdCarrierServiceGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void UpdateServiceGroup(string serviceGroupReference, MpdCarrierServiceGroup serviceGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td><span class="parametername">serviceGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-41">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_UpdateServiceGroupAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Settings_IServiceGroupsService_UpdateServiceGroupAsync_System_String_Sorted_PRO_SDK_DataTypes_Common_MpdCarrierServiceGroup_" data-uid="Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)">UpdateServiceGroupAsync(String, MpdCarrierServiceGroup)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateServiceGroupAsync(string serviceGroupReference, MpdCarrierServiceGroup serviceGroup)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">serviceGroupReference</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup</span></td>
+        <td><span class="parametername">serviceGroup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Settings/IServiceGroupsService.cs#lines-10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -177,7 +177,7 @@ pre {
 }
 .navbar-inverse {
     background-color: #fff;
-    border-bottom: solid 3px #ff055e;
+    border-bottom: solid 3px #e7e7e7;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
@@ -215,6 +215,7 @@ pre {
 .subnav {
     font-size: 10pt;
     height: 40px;
+    border-bottom: solid 1px #b7b7b7;    
 }
 
 
@@ -286,7 +287,7 @@ article span.small.pull-right {
     }
 }
 
-img {
+article img {
     border: 1px solid #ccc;
     margin-bottom: 15px;
 }
@@ -295,22 +296,46 @@ img {
     color: #ff055e;
 }
 
-/*ul.navbar-nav li.active {
-    position: relative;
-    display: inline-block;
+.sidetoc {
+    background-color: #fff;
+    border-left: none;
 }
 
-ul.navbar-nav li ul.level2 {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1; 
-    margin: -5px 0 0 0;
+div.toc {
+    margin: 0;
+    padding: 5px 0 15px 0;
+    background-color: #fff;
 }
 
-ul.navbar-nav li:hover ul.level2 {
-    display: block;
-}*/
+.toc .level1 > li.active {
+    background-color: #fff;
+}
+
+ul.level1 {
+    margin-left: 0;
+}
+
+.toc .nav > li.active > a {
+    color: #ff055e;
+}
+
+.toc .level1 > li {
+    padding: 5px 0;
+    margin-top: 5px;
+}
+
+.sidefilter {
+    background-color: #f8f8f8;
+    border-top: none;
+    border-left: 1px solid #b7b7b7;
+    border-bottom: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;        
+    z-index: 1000;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
+}
+
+.toc-filter {
+    border: 1px solid #b7b7b7;
+    
+}

@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Enum ConsignmentState
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Enum ConsignmentState
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState">
+  
+  
+  <h1 id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState" class="text-break">Enum ConsignmentState
+  </h1>
+  <div class="markdown level0 summary"><p>The current state of the <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Enums.html">Sorted.PRO.SDK.DataTypes.Consignments.Enums</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.DataTypes.Consignments.dll</h6>
+  <h5 id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+[DataContractType(&quot;Consignment State&quot;, &quot;The current state of the consignment.&quot;)]
+public enum ConsignmentState</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    <thead>
+    <tbody>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_ActionRequired">ActionRequired</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Allocated">Allocated</td>
+        <td><p>Successfully Allocated with an MPD Carrier Service. Labels are available but the
+consignment has not yet been manifested with the Carrier.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Allocating">Allocating</td>
+        <td><p>In the process of being allocated with an MPD Carrier Service in response
+to a request to Allocate.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_AllocationFailed">AllocationFailed</td>
+        <td><p>Previously attempted to allocate with an MPD Carrier Service but the allocation
+failed. The FailedAllocation will contain details of why the allocate attempt failed.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_AtCollectionPoint">AtCollectionPoint</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_AtCustoms">AtCustoms</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_AtDropOffPoint">AtDropOffPoint</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Cancelled">Cancelled</td>
+        <td><p>Cancelled and de-allocated with the Carrier if previously Allocated or Manifested.
+No further action can be performed on a Consignment in this state.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Cancelling">Cancelling</td>
+        <td><p>In the process of being cancelled in response to a request to Cancel.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_CarrierUnableToCollect">CarrierUnableToCollect</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Collected">Collected</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_CollectionFailed">CollectionFailed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Damaged">Damaged</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Delayed">Delayed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Delivered">Delivered</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_DeliveredDamaged">DeliveredDamaged</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_DeliveryFailed">DeliveryFailed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_DeliveryFailedCardLeft">DeliveryFailedCardLeft</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Dispatched">Dispatched</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_ExchangeFailed">ExchangeFailed</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_HeldByCarrier">HeldByCarrier</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_InTransit">InTransit</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_InTransitWaiting">InTransitWaiting</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Lost">Lost</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Manifested">Manifested</td>
+        <td><p>Successfully manifested with all Carriers within the Consignment's journey.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_ManifestFailed">ManifestFailed</td>
+        <td><p>Previously attempted to manifest with the allocated Carrier but
+Manifest did not complete successfully.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Manifesting">Manifesting</td>
+        <td><p>In the process of being manifested with an MPD Carrier Service in response
+to a request to Manifest.</p>
+</td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Missing">Missing</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_OutForDelivery">OutForDelivery</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_PartiallyDelivered">PartiallyDelivered</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_ReadyToShip">ReadyToShip</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_ReturnToSender">ReturnToSender</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState_Unallocated">Unallocated</td>
+        <td><p>Unallocated - Not allocated to any MPD Carrier Service</p>
+</td>
+      </tr>
+    </tbody>
+  </thead></thead></table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentState.cs#lines-11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

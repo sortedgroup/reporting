@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ItemsService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ItemsService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Consignments.ItemsService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Consignments_ItemsService" data-uid="Sorted.PRO.SDK.Consignments.ItemsService" class="text-break">Class ItemsService
+  </h1>
+  <div class="markdown level0 summary"><p>Service for managing items.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html">BaseService</a></div>
+    <div class="level2"><span class="xref">ItemsService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.html">IItemsService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_VERSION">BaseService.VERSION</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Rest">BaseService.Rest</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Log">BaseService.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_GetRestConfig_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_System_String_">BaseService.GetRestConfig(String, IEndpoints, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod__1_System_Func___0__">BaseService.CallAsyncMethod&lt;TReturn&gt;(Func&lt;TReturn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_System_Action_">BaseService.CallAsyncMethod(Action)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Consignments.html">Sorted.PRO.SDK.Consignments</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Consignments.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Consignments_ItemsService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ItemsService : BaseService, IItemsService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-28">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService__ctor_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService__ctor_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_Sorted_PRO_SDK_Shared_Interfaces_IHttpClientFactory_Sorted_PRO_SDK_Shared_Interfaces_ILogger_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})">ItemsService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initialize the items service</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ItemsService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>The api key of the user making the request</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IEndpoints.html">IEndpoints</a></td>
+        <td><span class="parametername">endpoints</span></td>
+        <td><p>An implementation of <span class="xref">Sorted.PRO.SDK.Interfaces.IEndpoints</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.html">IHttpClientFactory</a></td>
+        <td><span class="parametername">httpClientFactory</span></td>
+        <td><p>Used to provide a re-usable instance of <span class="xref">System.Net.Http.HttpClient</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>A logger implementing <span class="xref">Sorted.PRO.SDK.Interfaces.ILogger</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-57">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_AddItemAsync_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.AddItemAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_AddItemAsync_Sorted_PRO_SDK_DataTypes_Consignments_AddItemRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.AddItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)">AddItemAsync(AddItemRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously add a new item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddItemAsync(AddItemRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest.html">AddItemRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest.html">AddItemRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-68">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_AddItems_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.AddItems*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_AddItems_Sorted_PRO_SDK_DataTypes_Consignments_AddItemsRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.AddItems(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)">AddItems(AddItemsRequest)</h4>
+  <div class="markdown level1 summary"><p>Add one or more new items</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Add Items&quot;, &quot;Add one or more new items to an existing package.&quot;, &quot;Items&quot;, typeof(AddItemsRequest), null, &quot;/items/additems&quot;, &quot;PUT&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;Item&gt; AddItems(AddItemsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest.html">AddItemsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest.html">AddItemsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Item.html">Item</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-85">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_AddItemsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.AddItemsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_AddItemsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AddItemsRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.AddItemsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)">AddItemsAsync(AddItemsRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously add one or more new items</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;Item&gt;&gt; AddItemsAsync(AddItemsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest.html">AddItemsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest.html">AddItemsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Item.html">Item</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-128">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_MoveItem_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.MoveItem*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_MoveItem_Sorted_PRO_SDK_DataTypes_Consignments_MoveItemRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.MoveItem(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)">MoveItem(MoveItemRequest)</h4>
+  <div class="markdown level1 summary"><p>Move an item to the specified package
+<remarks>
+This removes the item from its current containing package and transfers it to the specified target package
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Move Item&quot;, &quot;Removes an item from its current containing package and transfers it to the specified target package.&quot;, &quot;Items&quot;, typeof(MoveItemRequest), null, &quot;/items/move&quot;, &quot;PUT&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void MoveItem(MoveItemRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest.html">MoveItemRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest.html">MoveItemRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-150">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_MoveItemAsync_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.MoveItemAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_MoveItemAsync_Sorted_PRO_SDK_DataTypes_Consignments_MoveItemRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.MoveItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)">MoveItemAsync(MoveItemRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously move an item to the specified package
+<remarks>
+This removes the item from its current containing package and transfers it to the specified target package
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task MoveItemAsync(MoveItemRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest.html">MoveItemRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest.html">MoveItemRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-96">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_RemoveItem_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.RemoveItem*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_RemoveItem_System_String_System_String_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.RemoveItem(System.String,System.String)">RemoveItem(String, String)</h4>
+  <div class="markdown level1 summary"><p>Remove the specified item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Remove Item&quot;, &quot;Removes the specified item from the package.&quot;, &quot;Items&quot;, &quot;/items/{packageReference:string}/{itemReference:string}&quot;, &quot;DELETE&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void RemoveItem(string packageReference, string itemReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The reference of the package containing the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemReference</span></td>
+        <td><p>The reference of the item to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-114">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_RemoveItemAsync_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.RemoveItemAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_RemoveItemAsync_System_String_System_String_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.RemoveItemAsync(System.String,System.String)">RemoveItemAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously removed the specified item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task RemoveItemAsync(string packageReference, string itemReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The reference of the package containing the item</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">itemReference</span></td>
+        <td><p>The reference of the item to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-161">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_SetCustomerProvidedReferenceViaLabelBarCode_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.SetCustomerProvidedReferenceViaLabelBarCode*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_SetCustomerProvidedReferenceViaLabelBarCode_System_String_Sorted_PRO_SDK_DataTypes_Consignments_ReferenceProvidedByCustomerRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.SetCustomerProvidedReferenceViaLabelBarCode(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)">SetCustomerProvidedReferenceViaLabelBarCode(String, ReferenceProvidedByCustomerRequest)</h4>
+  <div class="markdown level1 summary"><p>Set the reference provided by customer on the FIRST item in the package with the supplied label bar code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Set Customer Reference Via Label Bar Code&quot;, &quot;Sets the reference provided by customer on the first item in the package with the supplied label barcode.&quot;, &quot;Items&quot;, typeof(ReferenceProvidedByCustomerRequest), null, &quot;/items/{labelBarCode:string}/setcustomerprovidedreference&quot;, &quot;PUT&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public void SetCustomerProvidedReferenceViaLabelBarCode(string labelBarCode, ReferenceProvidedByCustomerRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">labelBarCode</span></td>
+        <td><p>The bar code of the label.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest.html">ReferenceProvidedByCustomerRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-181">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_SetCustomerProvidedReferenceViaLabelBarCodeAsync_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_SetCustomerProvidedReferenceViaLabelBarCodeAsync_System_String_Sorted_PRO_SDK_DataTypes_Consignments_ReferenceProvidedByCustomerRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)">SetCustomerProvidedReferenceViaLabelBarCodeAsync(String, ReferenceProvidedByCustomerRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously set the reference provided by customer on the FIRST item in the package with the supplied label bar code.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task SetCustomerProvidedReferenceViaLabelBarCodeAsync(string labelBarCode, ReferenceProvidedByCustomerRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">labelBarCode</span></td>
+        <td><p>The bar code of the label.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest.html">ReferenceProvidedByCustomerRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-37">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ItemsService_Sorted_PRO_SDK_Interfaces_Consignments_IItemsService_AddItem_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.Sorted#PRO#SDK#Interfaces#Consignments#IItemsService#AddItem*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ItemsService_Sorted_PRO_SDK_Interfaces_Consignments_IItemsService_AddItem_Sorted_PRO_SDK_DataTypes_Consignments_AddItemRequest_" data-uid="Sorted.PRO.SDK.Consignments.ItemsService.Sorted#PRO#SDK#Interfaces#Consignments#IItemsService#AddItem(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)">IItemsService.AddItem(AddItemRequest)</h4>
+  <div class="markdown level1 summary"><p>Add a new item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Add Item&quot;, &quot;Add a new item to an existing package.&quot;, &quot;Items&quot;, typeof(AddItemRequest), null, &quot;/items/{packageReference:string}&quot;, &quot;PUT&quot;, null)]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void IItemsService.AddItem(AddItemRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest.html">AddItemRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest.html">AddItemRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.html">IItemsService</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ItemsService.cs#lines-16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

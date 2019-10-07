@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>About the SDK </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="About the SDK ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="about-the-sdk">About the SDK</h1>
+
+<p>Welcome to the SortedPRO SDK! Here you’ll find a brief overview of the SDK and what you can do with it.</p>
+<p>If you just want to get integrating, check out the <a href="https://docs.sorted.com/react/quick-start/">Quick Start</a> guide.</p>
+<hr>
+<h2 id="sdk-architecture">SDK Architecture</h2>
+<p>The SortedPRO SDK is a .Net Standard 2.x library that enables you to use PRO's functionality in your applications. It is split into a series of services, of which each publishes its own data contracts and &quot;mini-SDK&quot;. As such, you only need to reference the packages that you specifically require for your project, helping you to keep your dependency trees small.</p>
+<h3 id="service-list">Service List</h3>
+<p>The full list of services in the SDK is:</p>
+<ul>
+<li><strong>Consignments</strong> - Enables you to manage consignments, including creating, deleting, updating, and allocating to a carrier.</li>
+<li><strong>Labels</strong> - Enables you to get consignment and packages labels</li>
+<li><strong>Orders</strong> - Enables you to manage PRO orders, including, creating, deleting, updating, and packing into consignments,</li>
+<li><strong>Quotes</strong> - Enables you to get quotes based on a consignment reference or specific details.</li>
+<li><strong>Rates</strong> - Enables you to reset the Rates cache.</li>
+<li><strong>Reconciliation</strong> - Enables you to get a list of invoices for a particular customer</li>
+<li><strong>Security</strong> - Enables you to manage user accounts and configure roles.</li>
+<li><strong>Settings</strong> - Enables you to administer your organisation's carriers, carrier services, collection calendars, packages sizes, service groups, and shipping locations.</li>
+<li><strong>Shared</strong> - Contains shared components used by all PRO mini-SDKs.</li>
+<li><strong>Tracking</strong> - Enables you to get tracking events for your consignments.</li>
+<li><strong>Webhooks</strong> - Enables you to configure push tracking notifications via webhook.</li>
+<li><strong>XmlValidation</strong> - Enables you to get the embedded XML schema.</li>
+</ul>
+<p>When referencing a particular service, you must also reference its <code>DataTypes</code> (i.e. the data contract for that service) and <code>Interfaces</code>. For example, to use <code>Consignments</code> functionality you would need to reference the following:</p>
+<ul>
+<li><code>Sorted.PRO.SDK.Consignments</code></li>
+<li><code>Sorted.PRO.SDK.Consignments.Interfaces</code></li>
+<li><code>Sorted.PRO.SDK.Consignments.DataTypes</code></li>
+</ul>
+<p>Alternatively, you can reference the master package set, <code>Sorted.PRO.SDK</code>. This package set references all of PRO's &quot;mini-SDKs&quot;, enabling you to consume the SDK with minimal package references and without requiring knowledge of the individual services.</p>
+<h3 id="common-dependencies">Common Dependencies</h3>
+<p>Many of the &quot;mini-SDK&quot; packages are dependent on a common SDK, which can be referenced at <code>Sorted.PRO.SDK.Shared</code> and <code>Sorted.PRO.SDK.DataTypes.Common</code>. See the SDK reference documentation for specific dependency information.</p>
+<p>The following dependencies are common to almost all of the services in the PRO SDK. They are located in the <code>Sorted.Pro.SDK.Shard.Interfaces</code> package:</p>
+<ul>
+<li><p><code>ILogger</code> - Responsible for logging diagnostic information. Implementing <code>ILogger</code> enables you to connect to PRO's inbuilt logging. For example, you could provide an implementation that writes PRO logging messages into your own logging pipeline. Alternatively, you can use the provided <code>SdkReferenceLogger</code>, which logs to the console.</p>
+</li>
+<li><p><code>IHttpClientFactory</code> - Responsible for efficient re-use of HTTP connections. The SDK' <code>Sorted.PRO.SDK.Shared</code> package includes a default implementation called <code>HttpClientFactory</code>. We recommend that you use the provided implementation, rather than implementing this interface yourself.</p>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>The PRO SDK's <code>IHttpClientFactory</code> is distinct from the interface and implementation of the same name that is now available within .NET Core. The PRO <code>IHttpClientFaactory</code> was added to the SDK a result of a high-impact performance improvement that Sorted undertook in order to make the system's use of HTTP connections more efficient.</p>
+</blockquote>
+</li>
+<li><p><code>IEndpoints</code> - Enables you to specify the locations that the SDK sends HTTP requests to. For example, you might want to implementing <code>IEndpoints</code> yourself in order to have PRO send requests to your own internal systems for testing purposes. The SDK includes default implementations for production (<code>Production.Instance</code>) and sandbox (<code>Sandbox.Instance</code>) environments.</p>
+</li>
+</ul>
+<h2 id="dependency-injection">Dependency Injection</h2>
+<p>The PRO SDK is designed to be used with a dependency injection framework. All services have a corresponding interface, named with the <code>I{serviceName}</code> convention. For example, to create consignments you would use the <code>IConsignmentService</code> interface, which is in turn implemented by the concrete <code>ConsignmentService</code> class.</p>
+<h2 id="asynchronous-methods">Asynchronous Methods</h2>
+<p>The SDK includes both synchronous and asynchronous methods. We strongly recommend that you only utilise the asynchronous methods, as this will enable you to achieve far higher throughput on your own systems. The synchronous methods are only included to support scenarios where it is not possible for you to use asynchronous code.</p>
+<h2 id="api-docs">API Docs</h2>
+<p>For further information on PRO's APIs, see the <a href="https://docs.electioapp.com/#/api">API Reference</a> and PRO Call Flow documentation.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/sdk/docfx_project/pro-sdk/articles/about-the-sdk.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

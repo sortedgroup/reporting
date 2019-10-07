@@ -1,0 +1,649 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Order
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Order
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order">
+  
+  
+  <h1 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order" class="text-break">Class Order
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Order</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.DataTypes.Orders.Order.html">Sorted.PRO.SDK.DataTypes.Orders.Order</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.DataTypes.Orders.dll</h6>
+  <h5 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+[DataContractType(&quot;Order&quot;, &quot;Details of an existing order&quot;)]
+public class Order</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-107">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Addresses_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Addresses*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Addresses" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Addresses">Addresses</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The addresses for the order, e.g. origin and destination.&quot;, true, PropertyCollectionType.Collection)]
+public List&lt;Address&gt; Addresses { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.Address.html">Address</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-111">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_CustomsDocumentation_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.CustomsDocumentation*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_CustomsDocumentation" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.CustomsDocumentation">CustomsDocumentation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The customs documentation of this order&quot;, false, PropertyCollectionType.Single)]
+public CustomsDocumentation CustomsDocumentation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.CustomsDocumentation.html">CustomsDocumentation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-39">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_DateCreated_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.DateCreated*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_DateCreated" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.DateCreated">DateCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The date and time at which the order was created.&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset DateCreated { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-31">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_DeliveryOptionReference_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.DeliveryOptionReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_DeliveryOptionReference" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.DeliveryOptionReference">DeliveryOptionReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference of the delivery option used to create this order (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string DeliveryOptionReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-115">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Direction_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Direction*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Direction" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Direction">Direction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Direction of travel for order&quot;, false, PropertyCollectionType.Single)]
+[JsonConverter(typeof(StringEnumConverter))]
+public ConsignmentDirection Direction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentDirection.html">ConsignmentDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-66">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_EarliestDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.EarliestDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_EarliestDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.EarliestDeliveryDate">EarliestDeliveryDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContractItem(&quot;Earliest delivery date for the order (if applicable)&quot;, false, PropertyCollectionType.Single)]
+[DataMember]
+public DateTimeOffset? EarliestDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-80">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_LatestDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.LatestDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_LatestDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.LatestDeliveryDate">LatestDeliveryDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Latest delivery date for the order (if applicable)&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? LatestDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-61">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_MetaData_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.MetaData*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_MetaData" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.MetaData">MetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Optional metadata relating to the order&quot;, PropertyCollectionType.Collection)]
+[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+public List&lt;MetaData&gt; MetaData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MetaData</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-23">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_OrderReference_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.OrderReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_OrderReference" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.OrderReference">OrderReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference of the order (assigned by Electio).&quot;, false, PropertyCollectionType.Single)]
+public string OrderReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-27">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_OrderReferenceProvidedByCustomer_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.OrderReferenceProvidedByCustomer*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_OrderReferenceProvidedByCustomer" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.OrderReferenceProvidedByCustomer">OrderReferenceProvidedByCustomer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Optional order reference provided by customer.&quot;, false, PropertyCollectionType.Single)]
+public string OrderReferenceProvidedByCustomer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-35">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Packages_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Packages*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Packages" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Packages">Packages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The package(s) in this order&quot;, PropertyCollectionType.Collection)]
+public List&lt;Package&gt; Packages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.html">Package</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-53">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_RequiredDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.RequiredDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_RequiredDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.RequiredDeliveryDate">RequiredDeliveryDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The requested delivery date&quot;, false, PropertyCollectionType.Single)]
+public RequestedDeliveryDate RequiredDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.RequestedDeliveryDate.html">RequestedDeliveryDate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-57">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_ShippingDate_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.ShippingDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_ShippingDate" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.ShippingDate">ShippingDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The shipping date&quot;, false, PropertyCollectionType.Single)]
+public DateTime? ShippingDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-98">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Source_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Source*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Source" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Source">Source</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The source of this order, e.g. API for order created using the Electio API.&quot;, true, PropertyCollectionType.Single)]
+[JsonConverter(typeof(StringEnumConverter))]
+public Source Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.Enums.Source.html">Source</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-120">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Tags_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Tags*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Tags" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Tags">Tags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The tags for this order&quot;, false, PropertyCollectionType.Single)]
+public List&lt;string&gt; Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-103">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Value_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Value*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Value" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Value">Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The monetary value of the order&quot;, true, PropertyCollectionType.Single)]
+public Money Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.Money</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-94">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Weight_" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Weight*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Orders_Order_Order_Weight" data-uid="Sorted.PRO.SDK.DataTypes.Orders.Order.Order.Weight">Weight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The total weight of the order&quot;, true, PropertyCollectionType.Single)]
+public Weight Weight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.Weight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/Order/Order.cs#lines-18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PackOrderRequest
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PackOrderRequest
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest">
+  
+  
+  <h1 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest" class="text-break">Class PackOrderRequest
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PackOrderRequest</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.DataTypes.PackOrders.html">Sorted.PRO.SDK.DataTypes.PackOrders</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.DataTypes.Orders.dll</h6>
+  <h5 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+[DataContractType(&quot;Pack Order Request&quot;, &quot;Used to pack orders. If the same request is provided then duplicate consignments will be created.&quot;)]
+public class PackOrderRequest</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-38">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_CustomsDocumentation_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.CustomsDocumentation*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_CustomsDocumentation" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.CustomsDocumentation">CustomsDocumentation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Information to be used in the generation of customs declaration documents.&quot;, false, PropertyCollectionType.Single)]
+public CustomsDocumentation CustomsDocumentation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.CustomsDocumentation.html">CustomsDocumentation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-25">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_GenerateReturn_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.GenerateReturn*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_GenerateReturn" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.GenerateReturn">GenerateReturn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Indicates whether to generate a return consignment at the same time as packing this consignment.&quot;, false, PropertyCollectionType.Single)]
+public bool GenerateReturn { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-33">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_MetaData_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.MetaData*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_MetaData" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.MetaData">MetaData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Optional metadata relating to the order.&quot;, PropertyCollectionType.Collection)]
+[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+public List&lt;MetaData&gt; MetaData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Sorted.PRO.SDK.DataTypes.Common.MetaData</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-17">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_OrderReference_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.OrderReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_OrderReference" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.OrderReference">OrderReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference of the order to pack.&quot;, false, PropertyCollectionType.Single)]
+public string OrderReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-21">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_OrderReferenceProvidedByCustomer_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.OrderReferenceProvidedByCustomer*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_OrderReferenceProvidedByCustomer" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.OrderReferenceProvidedByCustomer">OrderReferenceProvidedByCustomer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Optional order reference to add as a reference to the consignment created as a result of this order. This will override any previously defined OrderReferenceProvidedByCustomer.&quot;, false, PropertyCollectionType.Single)]
+public string OrderReferenceProvidedByCustomer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-29">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_Packages_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.Packages*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_Packages" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.Packages">Packages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Details of the packages to pack. You must provide details of one or more package.&quot;, PropertyCollectionType.Collection)]
+public List&lt;Package&gt; Packages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.PackOrders.Package.html">Package</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-45">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_Tags_" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.Tags*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_PackOrders_PackOrderRequest_Tags" data-uid="Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest.Tags">Tags</h4>
+  <div class="markdown level1 summary"><p>list of tags which if set will be used to filter out carrierservices without matching tags</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;used to filter which services will be used when allocating this order. (passing a non-null collection will override any tags placed on the Order)&quot;, false, PropertyCollectionType.Single)]
+public List&lt;string&gt; Tags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/PackOrderRequest.cs#lines-12" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

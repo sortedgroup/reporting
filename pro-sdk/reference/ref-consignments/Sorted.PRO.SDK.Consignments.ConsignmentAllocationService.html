@@ -1,0 +1,1177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConsignmentAllocationService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConsignmentAllocationService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService" class="text-break">Class ConsignmentAllocationService
+  </h1>
+  <div class="markdown level0 summary"><p>Service for allocating consignments to carrier services using various criteria</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html">BaseService</a></div>
+    <div class="level2"><span class="xref">ConsignmentAllocationService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentAllocationService.html">IConsignmentAllocationService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_VERSION">BaseService.VERSION</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Rest">BaseService.Rest</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_Log">BaseService.Log</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_GetRestConfig_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_System_String_">BaseService.GetRestConfig(String, IEndpoints, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod__1_System_Func___0__">BaseService.CallAsyncMethod&lt;TReturn&gt;(Func&lt;TReturn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.BaseService.html#Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_System_Action_">BaseService.CallAsyncMethod(Action)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Consignments.html">Sorted.PRO.SDK.Consignments</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Consignments.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConsignmentAllocationService : BaseService, IConsignmentAllocationService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-32">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService__ctor_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService__ctor_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_Sorted_PRO_SDK_Shared_Interfaces_IHttpClientFactory_Sorted_PRO_SDK_Shared_Interfaces_ILogger_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})">ConsignmentAllocationService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.html">ConsignmentAllocationService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConsignmentAllocationService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary&lt;string, string&gt; optionalHeaders = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>The API key of the user making the request</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IEndpoints.html">IEndpoints</a></td>
+        <td><span class="parametername">endpoints</span></td>
+        <td><p>An instance of <span class="xref">Sorted.PRO.SDK.Interfaces.IEndpoints</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.html">IHttpClientFactory</a></td>
+        <td><span class="parametername">httpClientFactory</span></td>
+        <td><p>Provides a re-usable instance of <span class="xref">System.Net.Http.HttpClient</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>A logger implementing <span class="xref">Sorted.PRO.SDK.Interfaces.ILogger</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td><p>Represents a collection of keys and values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-283">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignment_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignment_System_String_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignment(System.String)">AllocateConsignment(String)</h4>
+  <div class="markdown level1 summary"><p>Allocates the consignment to the cheapest service that meets the default allocation rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate Consignment&quot;, &quot;Allocates the specified consignment using default rules.&quot;, &quot;Allocation&quot;, &quot;allocation/{consignmentReference:string}/allocatewithcheapestquote&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignment(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service that the consignment was allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-318">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignment_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignment_System_String_System_Guid_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignment(System.String,System.Guid)">AllocateConsignment(String, Guid)</h4>
+  <div class="markdown level1 summary"><p>Allocates the consignment with the specfied quote.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate With Quote&quot;, &quot;Allocates the consignment with the specified quote.&quot;, &quot;Allocation&quot;, &quot;/allocation/{consignmentReference:string}/allocatewithquote/{quoteReference:Guid}}&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignment(string consignmentReference, Guid quoteReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">quoteReference</span></td>
+        <td><p>The quote reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service that the consignment was allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-355">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignment_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignment_System_String_System_String_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignment(System.String,System.String)">AllocateConsignment(String, String)</h4>
+  <div class="markdown level1 summary"><p>Allocates the consignment to the cheapest eligible service in the specified carrier service group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate With Service Group&quot;, &quot;Allocates the specified consignment with the specified Carrier Service Group.&quot;, &quot;Allocation&quot;, &quot;/allocation/{consignmentReference:string}/allocatewithservicegroup/{mpdCarrierServiceGroupReference:string}&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignment(string consignmentReference, string mpdCarrierServiceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mpdCarrierServiceGroupReference</span></td>
+        <td><p>The MPD Carrier Service Group Reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service that the consignment was allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-304">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentAsync_System_String_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentAsync(System.String)">AllocateConsignmentAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Allocates the consignment to the cheapest service that meets the default allocation rules. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service that the consignment was allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-340">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentAsync_System_String_System_Guid_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentAsync(System.String,System.Guid)">AllocateConsignmentAsync(String, Guid)</h4>
+  <div class="markdown level1 summary"><p>Allocates the consignment with the specfied quote. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentAsync(string consignmentReference, Guid quoteReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Guid</span></td>
+        <td><span class="parametername">quoteReference</span></td>
+        <td><p>The quote reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service that the consignment was allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-378">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentAsync_System_String_System_String_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentAsync(System.String,System.String)">AllocateConsignmentAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Allocates the consignment to the cheapest eligible service in the specified carrier service group. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentAsync(string consignmentReference, string mpdCarrierServiceGroupReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">mpdCarrierServiceGroupReference</span></td>
+        <td><p>The MPD Carrier Service Group Reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service that the consignment was allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-80">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateAllConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest)">AllocateConsignments(AllocateAllConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates all unallocated consignments due to be shipped before the specified date/time to the cheapest eligible carrier service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate All Unallocated Consignments&quot;, &quot;Allocates all unallocated consignments due to be shipped before the specified date/time.&quot;, &quot;Allocation&quot;, typeof(AllocateAllConsignmentsRequest), typeof(List&lt;AllocationSummary&gt;), &quot;/allocation/allocate/{shipByDate=date}&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateAllConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.html">AllocateAllConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-152">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateAllConsignmentsWithCarrierServiceRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithCarrierServiceRequest)">AllocateConsignments(AllocateAllConsignmentsWithCarrierServiceRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates all unallocated consignments that are due to be shipped before the specified date/time to the specified carrier service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate All With Carrier Service&quot;, &quot;Allocates all unallocated consignments due to be shipped before the specified date/time with the specified carrier service.&quot;, &quot;Allocation&quot;, typeof(AllocateAllConsignmentsWithCarrierServiceRequest), typeof(List&lt;AllocationSummary&gt;), &quot;/allocation/allocatewithcarrierservice/{shipByDate=date}&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateAllConsignmentsWithCarrierServiceRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithCarrierServiceRequest.html">AllocateAllConsignmentsWithCarrierServiceRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-246">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateAllConsignmentsWithServiceGroupRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest)">AllocateConsignments(AllocateAllConsignmentsWithServiceGroupRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates all unallocated consignments that are due to be shipped before the specified date/time to the cheapest eligible service in the specified carrier service group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate All With Service Group&quot;, &quot;Allocates all unallocated consignments due to be shipped before the specified date/time within the specified carrier service group.&quot;, &quot;Allocation&quot;, typeof(AllocateAllConsignmentsWithServiceGroupRequest), typeof(List&lt;AllocationSummary&gt;), &quot;/allocation/allocatewithservicegroup/{shipByDate=date}&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateAllConsignmentsWithServiceGroupRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.html">AllocateAllConsignmentsWithServiceGroupRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-44">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsRequest)">AllocateConsignments(AllocateConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates each specified consignment to the cheapest available service that meets the default allocation rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate Using Default Rules&quot;, &quot;Allocates the specified consignments using your default rules.&quot;, &quot;Allocation&quot;, typeof(AllocateConsignmentsRequest), typeof(List&lt;AllocationSummary&gt;), &quot;/allocation/allocate&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsRequest.html">AllocateConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-116">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsWithCarrierServiceRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithCarrierServiceRequest)">AllocateConsignments(AllocateConsignmentsWithCarrierServiceRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates the specified consignments to the specific carrier service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate With Carrier Service&quot;, &quot;Allocates the specified consignments with the specified carrier service.&quot;, &quot;Allocation&quot;, typeof(AllocateConsignmentsWithCarrierServiceRequest), typeof(List&lt;AllocationSummary&gt;), &quot;/allocation/allocatewithcarrierservice&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateConsignmentsWithCarrierServiceRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithCarrierServiceRequest.html">AllocateConsignmentsWithCarrierServiceRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-187">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsWithServiceFiltersRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithServiceFiltersRequest)">AllocateConsignments(AllocateConsignmentsWithServiceFiltersRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates the specified consignments using service filters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate with service filters&quot;, &quot;Allocates the consignments with service filters&quot;, &quot;Allocation&quot;, typeof(AllocateConsignmentsWithServiceFiltersRequest), typeof(List&lt;AllocationSummary&gt;), &quot;allocation/allocateConsignmentsWithServiceFilters&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateConsignmentsWithServiceFiltersRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithServiceFiltersRequest.html">AllocateConsignmentsWithServiceFiltersRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-210">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsWithServiceGroupRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithServiceGroupRequest)">AllocateConsignments(AllocateConsignmentsWithServiceGroupRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates the specified consignments to the cheapest eligible service in the specified carrier service group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ApiEndpoint(&quot;Allocate With Service Group&quot;, &quot;Allocates the consignments using the specified carrier service group.&quot;, &quot;Allocation&quot;, typeof(AllocateConsignmentsWithServiceGroupRequest), typeof(List&lt;AllocationSummary&gt;), &quot;/allocation/allocatewithservicegroup&quot;, &quot;PUT&quot;, new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.Accepted, HttpStatusCode.BadRequest})]
+[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+public List&lt;AllocationSummary&gt; AllocateConsignments(AllocateConsignmentsWithServiceGroupRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithServiceGroupRequest.html">AllocateConsignmentsWithServiceGroupRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-103">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AllocateAllConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest)">AllocateConsignmentsAsync(AllocateAllConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates all unallocated consignments due to be shipped before the specified date/time to the cheapest eligible carrier service. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentsAsync(AllocateAllConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.html">AllocateAllConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-175">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AllocateAllConsignmentsWithCarrierServiceRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithCarrierServiceRequest)">AllocateConsignmentsAsync(AllocateAllConsignmentsWithCarrierServiceRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates all unallocated consignments that are due to be shipped before the specified date/time to the specified carrier service. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentsAsync(AllocateAllConsignmentsWithCarrierServiceRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithCarrierServiceRequest.html">AllocateAllConsignmentsWithCarrierServiceRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-269">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AllocateAllConsignmentsWithServiceGroupRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest)">AllocateConsignmentsAsync(AllocateAllConsignmentsWithServiceGroupRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates all unallocated consignments that are due to be shipped before the specified date/time to the cheapest eligible service in the specified carrier service group. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentsAsync(AllocateAllConsignmentsWithServiceGroupRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.html">AllocateAllConsignmentsWithServiceGroupRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-67">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsRequest)">AllocateConsignmentsAsync(AllocateConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates each specified consignment to the cheapest available service that meets the default allocation rules. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentsAsync(AllocateConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsRequest.html">AllocateConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-139">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsWithCarrierServiceRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithCarrierServiceRequest)">AllocateConsignmentsAsync(AllocateConsignmentsWithCarrierServiceRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates the specified consignments to the specific carrier service. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentsAsync(AllocateConsignmentsWithCarrierServiceRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithCarrierServiceRequest.html">AllocateConsignmentsWithCarrierServiceRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-233">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Consignments_ConsignmentAllocationService_AllocateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_AllocateConsignmentsWithServiceGroupRequest_" data-uid="Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.AllocateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithServiceGroupRequest)">AllocateConsignmentsAsync(AllocateConsignmentsWithServiceGroupRequest)</h4>
+  <div class="markdown level1 summary"><p>Allocates consignments to the cheapest eligible service in the specified carrier service group. Asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;List&lt;AllocationSummary&gt;&gt; AllocateConsignmentsAsync(AllocateConsignmentsWithServiceGroupRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsWithServiceGroupRequest.html">AllocateConsignmentsWithServiceGroupRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.AllocationSummary.html">AllocationSummary</a>&gt;&gt;</td>
+        <td><p>Details of the service(s) that the consignments were allocated to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentAllocationService.html">IConsignmentAllocationService</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><span class="xref">Sorted.PRO.SDK.Services.BaseService</span></div>
+      <div><span class="xref">Sorted.PRO.SDK.Interfaces.Services.IConsignmentAllocationService</span></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Consignments/ConsignmentAllocationService.cs#lines-18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

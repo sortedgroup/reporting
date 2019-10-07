@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConsignmentPayload
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConsignmentPayload
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload">
+  
+  
+  <h1 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload" class="text-break">Class ConsignmentPayload
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConsignmentPayload</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.DataTypes.Webhooks.html">Sorted.PRO.SDK.DataTypes.Webhooks</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.DataTypes.Webhooks.dll</h6>
+  <h5 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+[DataContractType(&quot;Consignment Payload&quot;, &quot;Provides details relating to a consignment. Sent as a webhook.&quot;)]
+public class ConsignmentPayload</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-47">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_CarrierServiceName_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_CarrierServiceName" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName">CarrierServiceName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The name of the carrier service this consignment is allocated with (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string CarrierServiceName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-43">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_CarrierServiceReference_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_CarrierServiceReference" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference">CarrierServiceReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference of the carrier service this consignment is allocated with (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string CarrierServiceReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-39">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentLegs_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentLegs" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs">ConsignmentLegs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The legs in the consignment. Includes details of the carrier service for each leg.&quot;, false, PropertyCollectionType.Single)]
+public List&lt;ConsignmentLeg&gt; ConsignmentLegs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg.html">ConsignmentLeg</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-18">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentReference_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentReference" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference">ConsignmentReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference of the consignment, e.g. 'EC-000-001-2AD'.&quot;, true, PropertyCollectionType.Single)]
+public string ConsignmentReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-22">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentReferenceProvidedByCustomer_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentReferenceProvidedByCustomer" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer">ConsignmentReferenceProvidedByCustomer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference you provided for the consignment.&quot;, false, PropertyCollectionType.Single)]
+public string ConsignmentReferenceProvidedByCustomer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-30">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentState_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentState" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState">ConsignmentState</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The current state of the consignment.&quot;, true, PropertyCollectionType.Single)]
+[JsonConverter(typeof(StringEnumConverter))]
+public ConsignmentState ConsignmentState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState.html">ConsignmentState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-26">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentTrackingReference_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_ConsignmentTrackingReference" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference">ConsignmentTrackingReference</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The carrier's tracking reference for this consignment.&quot;, false, PropertyCollectionType.Single)]
+public string ConsignmentTrackingReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-59">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_DateDelivered_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_DateDelivered" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered">DateDelivered</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The date and time that the consignment was delivered (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? DateDelivered { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-51">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_EarliestDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_EarliestDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate">EarliestDeliveryDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The earliest delivery date (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? EarliestDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-55">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_LatestDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_LatestDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate">LatestDeliveryDate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The latest delivery date (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? LatestDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-35">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_Packages_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_Packages" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages">Packages</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The packages in the consignment.&quot;, false, PropertyCollectionType.Single)]
+public List&lt;PackagePayload&gt; Packages { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload.html">PackagePayload</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-63">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_PickupCode_" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Webhooks_ConsignmentPayload_PickupCode" data-uid="Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode">PickupCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The pickup code for this consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string PickupCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs#lines-13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1362 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConsignmentSummary
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConsignmentSummary
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary">
+  
+  
+  <h1 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary" class="text-break">Class ConsignmentSummary
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConsignmentSummary</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.html">Sorted.PRO.SDK.DataTypes.Consignments</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.DataTypes.Consignments.dll</h6>
+  <h5 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataContract]
+[DataContractType(&quot;Consignment Summary&quot;, &quot;A summary view of a consignment record.&quot;)]
+public sealed class ConsignmentSummary</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-118">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_AllocationDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_AllocationDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate">AllocationDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the  allocation date - the date on which the consignment was allocated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 8)]
+[DataContractItem(&quot;The date that the consignment was allocated (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? AllocationDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The active allocation date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-512">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ApiLink_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ApiLink" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink">ApiLink</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the API link.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Link to the full consignment details.&quot;, false, PropertyCollectionType.Single)]
+public ApiLink ApiLink { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../ref-shared/Sorted.PRO.SDK.DataTypes.Common.ApiLink.html">ApiLink</a></td>
+        <td><p>The API link.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-471">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_AttemptedDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_AttemptedDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate">AttemptedDeliveryDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the attempted delivery date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The attempted delivery date of the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? AttemptedDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The attempted delivery date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-450">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_CollectionDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_CollectionDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate">CollectionDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the collection date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The collection date of the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? CollectionDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The collection date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-35">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ConsignmentReferenceProvidedByCustomer_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ConsignmentReferenceProvidedByCustomer" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer">ConsignmentReferenceProvidedByCustomer</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the reference provided by customer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 2)]
+[DataContractItem(&quot;The consignment reference provided by the customer.&quot;, false, PropertyCollectionType.Single)]
+public string ConsignmentReferenceProvidedByCustomer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The reference provided by customer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-45">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DateCreated_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DateCreated" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated">DateCreated</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the date created.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 3)]
+[DataContractItem(&quot;The date and time that the consignment was created.&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset DateCreated { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeOffset</span></td>
+        <td><p>The date created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-292">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DateLabelsWereFirstPrinted_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DateLabelsWereFirstPrinted" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted">DateLabelsWereFirstPrinted</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the date labels were first printed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The date and time that labels were first printed (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? DateLabelsWereFirstPrinted { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The date labels were first printed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-429">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate">DeliveryDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the delivery date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The delivery date of the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? DeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The delivery date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-231">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressCountry_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressCountry" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry">DestinationAddressCountry</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the destination address country.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The destination address country.&quot;, false, PropertyCollectionType.Single)]
+public string DestinationAddressCountry { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The destination address country.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-201">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressLine1_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressLine1" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1">DestinationAddressLine1</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the destination address line1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The destination address line 1.&quot;, false, PropertyCollectionType.Single)]
+public string DestinationAddressLine1 { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The destination address line1.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-221">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressPostcode_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressPostcode" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode">DestinationAddressPostcode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the destination address postcode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The destination address postcode.&quot;, false, PropertyCollectionType.Single)]
+public string DestinationAddressPostcode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The destination address postcode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-211">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressTown_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationAddressTown" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown">DestinationAddressTown</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the destination address town.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The destination address town.&quot;, false, PropertyCollectionType.Single)]
+public string DestinationAddressTown { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The destination address town.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-241">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationShippingLocationReference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_DestinationShippingLocationReference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference">DestinationShippingLocationReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the destination shipping location reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The destination address shipping location reference (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string DestinationShippingLocationReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The destination shipping location reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-313">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_EstimatedDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_EstimatedDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate">EstimatedDeliveryDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the estimated delivery date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The estimated delivery date (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? EstimatedDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The estimated delivery date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-348">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationAttemptedAllocationDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationAttemptedAllocationDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate">FailedAllocationAttemptedAllocationDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the failed allocation attempted allocation date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The attempted date of failed allocation - only applicable when allocation has been attempted but was not successful.&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? FailedAllocationAttemptedAllocationDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The failed allocation attempted allocation date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-369">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMessage_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMessage" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage">FailedAllocationMessage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the failed allocation message.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The failed allocation message - only applicable when allocation has been attempted but was not successful.&quot;, false, PropertyCollectionType.Single)]
+public string FailedAllocationMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The failed allocation message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-389">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceGroupName_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceGroupName" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName">FailedAllocationMpdCarrierServiceGroupName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the failed alloc MPD carrier service group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The service group name of the failed allocation - only applicable when allocation has been attempted with a service group was not successful.&quot;, false, PropertyCollectionType.Single)]
+public string FailedAllocationMpdCarrierServiceGroupName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the failed alloc MPD carrier service group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-399">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceGroupReference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceGroupReference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference">FailedAllocationMpdCarrierServiceGroupReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the failed allocation MPD carrier service group reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The service group reference of the failed allocation - only applicable when allocation has been attempted with a service group but was not successful.&quot;, false, PropertyCollectionType.Single)]
+public string FailedAllocationMpdCarrierServiceGroupReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The failed allocation MPD carrier service group reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-409">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceName_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceName" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName">FailedAllocationMpdCarrierServiceName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the failed allocation MPD carrier service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The carrier service name of the failed allocation - only applicable when allocation has been attempted but was not successful.&quot;, false, PropertyCollectionType.Single)]
+public string FailedAllocationMpdCarrierServiceName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the failed allocation MPD carrier service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-379">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceReference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedAllocationMpdCarrierServiceReference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference">FailedAllocationMpdCarrierServiceReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the failed allocation MPD carrier service reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The carrier service reference of the failed allocation - only applicable when allocation has been attempted but was not successful.&quot;, false, PropertyCollectionType.Single)]
+public string FailedAllocationMpdCarrierServiceReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The failed allocation MPD carrier service reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-519">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedManifestMessage_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedManifestMessage" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage">FailedManifestMessage</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the reason for a failed manifest</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Message for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.&quot;, false, PropertyCollectionType.Single)]
+public string FailedManifestMessage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-526">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedManifestTimeStamp_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_FailedManifestTimeStamp" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp">FailedManifestTimeStamp</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the failed manifest date</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Date and time for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? FailedManifestTimeStamp { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-419">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_IsLate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_IsLate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate">IsLate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this instance is late.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Indicates whether the consignment is late.&quot;, false, PropertyCollectionType.Single)]
+public bool IsLate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if this instance is late; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-282">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_LabelsPrinted_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_LabelsPrinted" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted">LabelsPrinted</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether labels have been printed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Indicates whether labels have ever been printed.&quot;, false, PropertyCollectionType.Single)]
+public bool LabelsPrinted { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p><code>true</code> if labels have been printed otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-98">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierReference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierReference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference">MpdCarrierReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the MPD carrier reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 6)]
+[DataContractItem(&quot;The reference of the carrier associated with the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string MpdCarrierReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The MPD carrier reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-180">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceGroupName_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceGroupName" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName">MpdCarrierServiceGroupName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the MPD carrier service group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The name of the service group the consignment was allocated with (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string MpdCarrierServiceGroupName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the MPD carrier service group.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-190">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceGroupReference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceGroupReference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference">MpdCarrierServiceGroupReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the MPD carrier service group reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The reference of the service group the consignment was allocated with (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string MpdCarrierServiceGroupReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The MPD carrier service group reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-170">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceName_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceName" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName">MpdCarrierServiceName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the name of the MPD carrier service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The name of the carrier service associated with the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string MpdCarrierServiceName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The name of the MPD carrier service.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-108">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceReference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_MpdCarrierServiceReference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference">MpdCarrierServiceReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the MPD carrier service reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 7)]
+[DataContractItem(&quot;The reference of the carrier service associated with the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public string MpdCarrierServiceReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The MPD carrier service reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-25">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Reference_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Reference" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference">Reference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the Electio Consignment reference (EC-xxx-xxx-xxx)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 1)]
+[DataContractItem(&quot;The reference of the consignment.&quot;, false, PropertyCollectionType.Single)]
+public string Reference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-251">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_RequestedDeliveryDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_RequestedDeliveryDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate">RequestedDeliveryDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the requested delivery date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The requested delivery date, if supplied.&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? RequestedDeliveryDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The requested delivery date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-272">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified">RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the requested delivery date is to be exactly on the date specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;Flag indicating whether the requested delivery date was to be exact (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public bool? RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>The requested delivery date is to be exactly on the date specified.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-139">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ShippedDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ShippedDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate">ShippedDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the date on which the consignment was shipped</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 9)]
+[DataContractItem(&quot;The date that the consignment was shipped (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? ShippedDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The shipped date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-77">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ShippingDate_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ShippingDate" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate">ShippingDate</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the requested shipping date.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 5)]
+[DataContractItem(&quot;The shipping date of the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+public DateTimeOffset? ShippingDate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTimeOffset</span>&gt;</td>
+        <td><p>The shipping date.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-334">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ShippingTerms_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_ShippingTerms" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms">ShippingTerms</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the shipping terms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The shipping terms for the consignment (if applicable).&quot;, false, PropertyCollectionType.Single)]
+[JsonConverter(typeof(StringEnumConverter))]
+public ShippingTerms? ShippingTerms { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms.html">ShippingTerms</a>&gt;</td>
+        <td><p>The shipping terms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-160">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Source_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Source" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source">Source</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the source of the creation of the consignment - API or Electio website.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The source of the consignment, e.g. \&quot;Web\&quot;, \&quot;API\&quot;.&quot;, false, PropertyCollectionType.Single)]
+public string Source { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The source.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-66">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_State_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_State" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State">State</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the state of the Consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember(Order = 4)]
+[JsonConverter(typeof(StringEnumConverter))]
+[DataContractItem(&quot;The current state of the consignment.&quot;, false, PropertyCollectionType.Single)]
+public ConsignmentState State { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState.html">ConsignmentState</a></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-492">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Value_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Value" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the monetary value of the Consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The value of the consignment.&quot;, false, PropertyCollectionType.Single)]
+public Money Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.Money</span></td>
+        <td><p>The value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-502">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Weight_" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight*"></a>
+  <h4 id="Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSummary_Weight" data-uid="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight">Weight</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the weight of the Consignment in Kgs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DataMember]
+[DataContractItem(&quot;The weight of the consignment.&quot;, false, PropertyCollectionType.Single)]
+public Weight Weight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.Weight</span></td>
+        <td><p>The weight.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs#lines-14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

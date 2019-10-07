@@ -1,0 +1,2884 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IConsignmentService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IConsignmentService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService" class="text-break">Interface IConsignmentService
+  </h1>
+  <div class="markdown level0 summary"><p>Consignment Service</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Interfaces.Consignments.html">Sorted.PRO.SDK.Interfaces.Consignments</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Interfaces.Consignments.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IConsignmentService</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-87">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_AddPackageToConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.AddPackageToConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_AddPackageToConsignment_System_String_Sorted_PRO_SDK_DataTypes_Consignments_UpdatePackageRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.AddPackageToConsignment(System.String,Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)">AddPackageToConsignment(String, UpdatePackageRequest)</h4>
+  <div class="markdown level1 summary"><p>Add a new package to the specified consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+Package AddPackageToConsignment(string consignmentReference, UpdatePackageRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment to add the package to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest.html">UpdatePackageRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>An <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest.html">UpdatePackageRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Package.html">Package</a></td>
+        <td><p>The details of the added package. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Package.html">Package</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-318">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_AddPackageToConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.AddPackageToConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_AddPackageToConsignmentAsync_System_String_Sorted_PRO_SDK_DataTypes_Consignments_UpdatePackageRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.AddPackageToConsignmentAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)">AddPackageToConsignmentAsync(String, UpdatePackageRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously add a package to the specified consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Package&gt; AddPackageToConsignmentAsync(string consignmentReference, UpdatePackageRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment to add the package to</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest.html">UpdatePackageRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest.html">UpdatePackageRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Package.html">Package</a>&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-70">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CancelConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CancelConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CancelConsignment_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CancelConsignment(System.String)">CancelConsignment(String)</h4>
+  <div class="markdown level1 summary"><p>Cancels the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void CancelConsignment(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-277">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CancelConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CancelConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CancelConsignmentAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CancelConsignmentAsync(System.String)">CancelConsignmentAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Cancels the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task CancelConsignmentAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-285">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CancelConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CancelConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CancelConsignmentsAsync_System_Collections_Generic_List_System_String__" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CancelConsignmentsAsync(System.Collections.Generic.List{System.String})">CancelConsignmentsAsync(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Cancels the consignments asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;WithMessage&lt;string&gt;&gt;&gt; CancelConsignmentsAsync(List&lt;string&gt; consignmentReferences)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">consignmentReferences</span></td>
+        <td><p>The consignment references.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td><p>Task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-78">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CreateConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CreateConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CreateConsignment_Sorted_PRO_SDK_DataTypes_Consignments_CreateConsignmentRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CreateConsignment(Sorted.PRO.SDK.DataTypes.Consignments.CreateConsignmentRequest)">CreateConsignment(CreateConsignmentRequest)</h4>
+  <div class="markdown level1 summary"><p>Creates a new consignment within Electio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+List&lt;ApiLink&gt; CreateConsignment(CreateConsignmentRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.CreateConsignmentRequest.html">CreateConsignmentRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.DataTypes.Common.ApiLink.html">ApiLink</a>&gt;</td>
+        <td><p>ApiLink to newly created consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-309">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CreateConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CreateConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_CreateConsignmentAsync_Sorted_PRO_SDK_DataTypes_Consignments_CreateConsignmentRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.CreateConsignmentAsync(Sorted.PRO.SDK.DataTypes.Consignments.CreateConsignmentRequest)">CreateConsignmentAsync(CreateConsignmentRequest)</h4>
+  <div class="markdown level1 summary"><p>Creates the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;ApiLink&gt;&gt; CreateConsignmentAsync(CreateConsignmentRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.CreateConsignmentRequest.html">CreateConsignmentRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.DataTypes.Common.ApiLink.html">ApiLink</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-63">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DeallocateConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DeallocateConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DeallocateConsignment_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DeallocateConsignment(System.String)">DeallocateConsignment(String)</h4>
+  <div class="markdown level1 summary"><p>Deallocates the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void DeallocateConsignment(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-261">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DeallocateConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DeallocateConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DeallocateConsignmentAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DeallocateConsignmentAsync(System.String)">DeallocateConsignmentAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Deallocates the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeallocateConsignmentAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p>Task</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-269">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DeallocateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DeallocateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DeallocateConsignmentsAsync_System_Collections_Generic_List_System_String__" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DeallocateConsignmentsAsync(System.Collections.Generic.List{System.String})">DeallocateConsignmentsAsync(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Deallocates a list of consignments asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;WithMessage&lt;string&gt;&gt;&gt; DeallocateConsignmentsAsync(List&lt;string&gt; consignmentReferences)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">consignmentReferences</span></td>
+        <td><p>The list of consignment references to deallocate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-125">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DispatchConsignments_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DispatchConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DispatchConsignments_Sorted_PRO_SDK_DataTypes_Consignments_DispatchConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DispatchConsignments(Sorted.PRO.SDK.DataTypes.Consignments.DispatchConsignmentsRequest)">DispatchConsignments(DispatchConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Dispatch a list of consignments
+<remarks>
+To Dispatch a single consignment, provide a list with 1 consignment reference
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+List&lt;DispatchResponse&gt; DispatchConsignments(DispatchConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.DispatchConsignmentsRequest.html">DispatchConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.DispatchConsignmentsRequest.html">DispatchConsignmentsRequest</a> containing the list of consignment references</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.DispatchResponse.html">DispatchResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-367">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DispatchConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DispatchConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_DispatchConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_DispatchConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.DispatchConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.DispatchConsignmentsRequest)">DispatchConsignmentsAsync(DispatchConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously Dispatch consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;DispatchResponse&gt;&gt; DispatchConsignmentsAsync(DispatchConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.DispatchConsignmentsRequest.html">DispatchConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A list of consignment references. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.DispatchConsignmentsRequest.html">DispatchConsignmentsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.DispatchResponse.html">DispatchResponse</a>&gt;&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-103">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetAuditMessages_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetAuditMessages*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetAuditMessages_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetAuditMessages(System.String)">GetAuditMessages(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the audit messages for the specified consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+List&lt;ConsignmentAuditMessage&gt; GetAuditMessages(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.html">ConsignmentAuditMessage</a>&gt;</td>
+        <td><p>List of audit messages</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-334">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetAuditMessagesAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetAuditMessagesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetAuditMessagesAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetAuditMessagesAsync(System.String)">GetAuditMessagesAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the audit messages for the given consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;ConsignmentAuditMessage&gt;&gt; GetAuditMessagesAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.html">ConsignmentAuditMessage</a>&gt;&gt;</td>
+        <td><p>List of audit messages</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-32">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignment_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignment(System.String)">GetConsignment(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+Consignment GetConsignment(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a></td>
+        <td><p>Consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-229">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentAsync(System.String)">GetConsignmentAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Consignment&gt; GetConsignmentAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a>&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-48">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentOnly_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentOnly*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentOnly_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentOnly(System.String)">GetConsignmentOnly(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the consignment without any associated metadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+Consignment GetConsignmentOnly(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-237">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentOnlyAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentOnlyAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentOnlyAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentOnlyAsync(System.String)">GetConsignmentOnlyAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get the consignment without including metadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Consignment&gt; GetConsignmentOnlyAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment to retrieve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a>&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-40">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentWithMetaData_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentWithMetaData*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentWithMetaData_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentWithMetaData(System.String)">GetConsignmentWithMetaData(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the consignment with all associated meta data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+Consignment GetConsignmentWithMetaData(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a></td>
+        <td><p>Consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-245">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentWithMetaDataAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentWithMetaDataAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetConsignmentWithMetaDataAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetConsignmentWithMetaDataAsync(System.String)">GetConsignmentWithMetaDataAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get consignment with metadata asynchronously</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Consignment&gt; GetConsignmentWithMetaDataAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a>&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-56">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCountOfConsignmentsInState_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCountOfConsignmentsInState*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCountOfConsignmentsInState_System_Nullable_Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState__" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCountOfConsignmentsInState(System.Nullable{Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState})">GetCountOfConsignmentsInState(Nullable&lt;ConsignmentState&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the state of the count of consignments in the specified state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+int GetCountOfConsignmentsInState(ConsignmentState? state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState.html">ConsignmentState</a>&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>Count of the number of consignments</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-253">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCountOfConsignmentsInStateAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCountOfConsignmentsInStateAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCountOfConsignmentsInStateAsync_System_Nullable_Sorted_PRO_SDK_DataTypes_Consignments_Enums_ConsignmentState__" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCountOfConsignmentsInStateAsync(System.Nullable{Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState})">GetCountOfConsignmentsInStateAsync(Nullable&lt;ConsignmentState&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the count of the number of consignments in the specified state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; GetCountOfConsignmentsInStateAsync(ConsignmentState? state)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState.html">ConsignmentState</a>&gt;</td>
+        <td><span class="parametername">state</span></td>
+        <td><p>The state.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><p>Number of consignments</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-180">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifest*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifest_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifest(System.String)">GetCustomerManifest(String)</h4>
+  <div class="markdown level1 summary"><p>Get the specified customer manifest</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+byte[] GetCustomerManifest(string manifestReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">manifestReference</span></td>
+        <td><p>The reference of the manifest to retrieve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-456">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestAsync(System.String)">GetCustomerManifestAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously retrieve the specified manifest</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetCustomerManifestAsync(string manifestReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">manifestReference</span></td>
+        <td><p>The reference of the manifest</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td><p>A byte array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-212">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestFileSentToCarrier_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestFileSentToCarrier*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestFileSentToCarrier_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestFileSentToCarrier(System.String)">GetCustomerManifestFileSentToCarrier(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+byte[] GetCustomerManifestFileSentToCarrier(string manifestReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">manifestReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-495">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestFileSentToCarrierAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestFileSentToCarrierAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestFileSentToCarrierAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestFileSentToCarrierAsync(System.String)">GetCustomerManifestFileSentToCarrierAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously retrieve the specified manifest file sent to the carrier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetCustomerManifestFileSentToCarrierAsync(string manifestReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">manifestReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-164">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifests_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifests*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifests" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifests">GetCustomerManifests()</h4>
+  <div class="markdown level1 summary"><p>Get a list of customer manifests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ManifestsView GetCustomerManifests()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestsView.html">ManifestsView</a></td>
+        <td><p><span class="xref">System.Collections.Generic.List&lt;T&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-173">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifests_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifests*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifests_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifests(System.String)">GetCustomerManifests(String)</h4>
+  <div class="markdown level1 summary"><p>Get a list of customer manifests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ManifestsView GetCustomerManifests(string shippingLocationReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shippingLocationReference</span></td>
+        <td><p>The shipping location reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestsView.html">ManifestsView</a></td>
+        <td><p><span class="xref">System.Collections.Generic.List&lt;T&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-420">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestsAsync_System_Int32_System_Int32_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestsAsync(System.Int32,System.Int32)">GetCustomerManifestsAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously get a list of customer manifests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ManifestsView&gt; GetCustomerManifestsAsync(int take, int skip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">take</span></td>
+        <td><p>Number of records to take</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>Number of records to skip</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestsView.html">ManifestsView</a>&gt;</td>
+        <td><p><span class="xref">System.Collections.Generic.List&lt;T&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-439">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestsAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestsAsync(System.String)">GetCustomerManifestsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously get a list of customer manifests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ManifestsView&gt; GetCustomerManifestsAsync(string shippingLocationReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">shippingLocationReference</span></td>
+        <td><p>The shipping location reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestsView.html">ManifestsView</a>&gt;</td>
+        <td><p><span class="xref">System.Collections.Generic.List&lt;T&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-428">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestsFilteredAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestsFilteredAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomerManifestsFilteredAsync_Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentManifestsFilterRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomerManifestsFilteredAsync(Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentManifestsFilterRequest)">GetCustomerManifestsFilteredAsync(ConsignmentManifestsFilterRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously get a list of filtered customer manifests</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ManifestsView&gt; GetCustomerManifestsFilteredAsync(ConsignmentManifestsFilterRequest consignmentManifestsFilterRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentManifestsFilterRequest.html">ConsignmentManifestsFilterRequest</a></td>
+        <td><span class="parametername">consignmentManifestsFilterRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestsView.html">ManifestsView</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-209">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocument_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocument*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocument_Sorted_PRO_SDK_DataTypes_Common_Enums_CustomsDocType_System_String_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocument(Sorted.PRO.SDK.DataTypes.Common.Enums.CustomsDocType,System.String,System.String)">GetCustomsDocument(CustomsDocType, String, String)</h4>
+  <div class="markdown level1 summary"><p>Get the document of requested <span class="xref">Sorted.PRO.SDK.DataTypes.Common.Enums.CustomsDocType</span> for supplied package within supplied consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+byte[] GetCustomsDocument(CustomsDocType customsDocType, string consignmentReference, string packageReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.Enums.CustomsDocType</span></td>
+        <td><span class="parametername">customsDocType</span></td>
+        <td><p>Defines the type of customs document</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the manifest to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The reference of the manifest to retrieve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The custom document of requested <span class="xref">Sorted.PRO.SDK.DataTypes.Common.Enums.CustomsDocType</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-483">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocumentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocumentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocumentAsync_Sorted_PRO_SDK_DataTypes_Common_Enums_CustomsDocType_System_String_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocumentAsync(Sorted.PRO.SDK.DataTypes.Common.Enums.CustomsDocType,System.String,System.String)">GetCustomsDocumentAsync(CustomsDocType, String, String)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously get the document for supplied package within supplied consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetCustomsDocumentAsync(CustomsDocType customsDocType, string consignmentReference, string packageReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Sorted.PRO.SDK.DataTypes.Common.Enums.CustomsDocType</span></td>
+        <td><span class="parametername">customsDocType</span></td>
+        <td><p>Customs document type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the manifest to retrieve</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The reference of the manifest to retrieve</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-485">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocumentation_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocumentation*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocumentation_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocumentation(System.String)">GetCustomsDocumentation(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">GetCustomsDocumentationResponse GetCustomsDocumentation(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.GetCustomsDocumentationResponse.html">GetCustomsDocumentationResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-487">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocumentationAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocumentationAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetCustomsDocumentationAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetCustomsDocumentationAsync(System.String)">GetCustomsDocumentationAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;GetCustomsDocumentationResponse&gt; GetCustomsDocumentationAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.GetCustomsDocumentationResponse.html">GetCustomsDocumentationResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-149">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetLateConsignments_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetLateConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetLateConsignments_Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSearchTerms_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetLateConsignments(Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms)">GetLateConsignments(ConsignmentSearchTerms)</h4>
+  <div class="markdown level1 summary"><p>Get a summary of late consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+LateConsignmentsResponse GetLateConsignments(ConsignmentSearchTerms searchTerms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></td>
+        <td><span class="parametername">searchTerms</span></td>
+        <td><p>Search filters. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.LateConsignmentsResponse.html">LateConsignmentsResponse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-400">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetLateConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetLateConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetLateConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSearchTerms_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetLateConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms)">GetLateConsignmentsAsync(ConsignmentSearchTerms)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously get late consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;LateConsignmentsResponse&gt; GetLateConsignmentsAsync(ConsignmentSearchTerms searchTerms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></td>
+        <td><span class="parametername">searchTerms</span></td>
+        <td><p>Consignment search terms. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.LateConsignmentsResponse.html">LateConsignmentsResponse</a>&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-448">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetManifestDetailsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetManifestDetailsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetManifestDetailsAsync_System_String_System_Int32_System_Int32_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetManifestDetailsAsync(System.String,System.Int32,System.Int32)">GetManifestDetailsAsync(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Asychronously get a list of manifest items</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ManifestItemsView&gt; GetManifestDetailsAsync(string manifestReference, int take, int skip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">manifestReference</span></td>
+        <td><p>The reference of the manifest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">take</span></td>
+        <td><p>Number of records to take</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td><p>Number of records to skip</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestItemsView.html">ManifestItemsView</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-24">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetStatus_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetStatus*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetStatus_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetStatus(System.String)">GetStatus(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the status of the given consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+ConsignmentStatusResponse GetStatus(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.html">ConsignmentStatusResponse</a></td>
+        <td><p>Consignment status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-221">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetStatusAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetStatusAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_GetStatusAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.GetStatusAsync(System.String)">GetStatusAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the status of the specified consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ConsignmentStatusResponse&gt; GetStatusAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.html">ConsignmentStatusResponse</a>&gt;</td>
+        <td><p>Consignment status</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-114">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_ManifestConsignments_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.ManifestConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_ManifestConsignments_Sorted_PRO_SDK_DataTypes_Consignments_ManifestConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.ManifestConsignments(Sorted.PRO.SDK.DataTypes.Consignments.ManifestConsignmentsRequest)">ManifestConsignments(ManifestConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Manifest a list of consignments
+<remarks>
+To manifest a single consignment provide a list of 1 consignment reference
+</remarks></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+List&lt;WithMessage&lt;string&gt;&gt; ManifestConsignments(ManifestConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestConsignmentsRequest.html">ManifestConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestConsignmentsRequest.html">ManifestConsignmentsRequest</a> containing the list of consignment references</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-342">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_ManifestConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.ManifestConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_ManifestConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_ManifestConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.ManifestConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.ManifestConsignmentsRequest)">ManifestConsignmentsAsync(ManifestConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously manifest consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;WithMessage&lt;string&gt;&gt;&gt; ManifestConsignmentsAsync(ManifestConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestConsignmentsRequest.html">ManifestConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A list of consignment references. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestConsignmentsRequest.html">ManifestConsignmentsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-359">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_ManifestConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.ManifestConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_ManifestConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_ManifestFromQueryRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.ManifestConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.ManifestFromQueryRequest)">ManifestConsignmentsAsync(ManifestFromQueryRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously manifest consignments from query</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;ManifestFromQueryResponse&gt; ManifestConsignmentsAsync(ManifestFromQueryRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestFromQueryRequest.html">ManifestFromQueryRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A query to manifest all consignments that match the query parameters. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestFromQueryRequest.html">ManifestFromQueryRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ManifestFromQueryResponse.html">ManifestFromQueryResponse</a>&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-95">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_RemovePackageFromConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.RemovePackageFromConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_RemovePackageFromConsignment_System_String_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.RemovePackageFromConsignment(System.String,System.String)">RemovePackageFromConsignment(String, String)</h4>
+  <div class="markdown level1 summary"><p>Remove the specified package from the consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void RemovePackageFromConsignment(string consignmentReference, string packageReferenceForAllLegsAssignedByMpd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment to remove the package from</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReferenceForAllLegsAssignedByMpd</span></td>
+        <td><p>The reference of the package to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-326">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_RemovePackageFromConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.RemovePackageFromConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_RemovePackageFromConsignmentAsync_System_String_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.RemovePackageFromConsignmentAsync(System.String,System.String)">RemovePackageFromConsignmentAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Remove the specified package from the consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task RemovePackageFromConsignmentAsync(string consignmentReference, string packageReferenceForAllLegsAssignedByMpd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReferenceForAllLegsAssignedByMpd</span></td>
+        <td><p>The reference of the package to remove</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-384">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SearchConsignmentReferencesAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SearchConsignmentReferencesAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SearchConsignmentReferencesAsync_Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSearchTerms_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SearchConsignmentReferencesAsync(Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms)">SearchConsignmentReferencesAsync(ConsignmentSearchTerms)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously search for consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;string&gt;&gt; SearchConsignmentReferencesAsync(ConsignmentSearchTerms searchTerms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></td>
+        <td><span class="parametername">searchTerms</span></td>
+        <td><p>Consignment search terms. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-141">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SearchConsignments_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SearchConsignments*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SearchConsignments_Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSearchTerms_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SearchConsignments(Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms)">SearchConsignments(ConsignmentSearchTerms)</h4>
+  <div class="markdown level1 summary"><p>Searches the consignments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+MatchingConsignmentsResponse SearchConsignments(ConsignmentSearchTerms searchTerms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></td>
+        <td><span class="parametername">searchTerms</span></td>
+        <td><p>The search terms.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.MatchingConsignmentsResponse.html">MatchingConsignmentsResponse</a></td>
+        <td><p>Matching consignments</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-392">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SearchConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SearchConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SearchConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_ConsignmentSearchTerms_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SearchConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms)">SearchConsignmentsAsync(ConsignmentSearchTerms)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously search for consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;MatchingConsignmentsResponse&gt; SearchConsignmentsAsync(ConsignmentSearchTerms searchTerms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></td>
+        <td><span class="parametername">searchTerms</span></td>
+        <td><p>Consignment search terms. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSearchTerms.html">ConsignmentSearchTerms</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.MatchingConsignmentsResponse.html">MatchingConsignmentsResponse</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-133">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentDetails_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentDetails*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentDetails_System_String_Sorted_PRO_SDK_DataTypes_Consignments_SetConsignmentDetailsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentDetails(System.String,Sorted.PRO.SDK.DataTypes.Consignments.SetConsignmentDetailsRequest)">SetConsignmentDetails(String, SetConsignmentDetailsRequest)</h4>
+  <div class="markdown level1 summary"><p>Update specified details of the consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void SetConsignmentDetails(string consignmentReference, SetConsignmentDetailsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment to set details for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.SetConsignmentDetailsRequest.html">SetConsignmentDetailsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.SetConsignmentDetailsRequest.html">SetConsignmentDetailsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-376">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentDetailsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentDetailsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentDetailsAsync_System_String_Sorted_PRO_SDK_DataTypes_Consignments_SetConsignmentDetailsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentDetailsAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.SetConsignmentDetailsRequest)">SetConsignmentDetailsAsync(String, SetConsignmentDetailsRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously set the details of the specified consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetConsignmentDetailsAsync(string consignmentReference, SetConsignmentDetailsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.SetConsignmentDetailsRequest.html">SetConsignmentDetailsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.SetConsignmentDetailsRequest.html">SetConsignmentDetailsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-301">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentsNotReadyToShipAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentsNotReadyToShipAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentsNotReadyToShipAsync_System_Collections_Generic_List_System_String__" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentsNotReadyToShipAsync(System.Collections.Generic.List{System.String})">SetConsignmentsNotReadyToShipAsync(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Set consignments back as Allocated from Not Ready To Ship state asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;WithMessage&lt;string&gt;&gt;&gt; SetConsignmentsNotReadyToShipAsync(List&lt;string&gt; consignmentReferences)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">consignmentReferences</span></td>
+        <td><p>The consignment references.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-293">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentsReadyToShipAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentsReadyToShipAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetConsignmentsReadyToShipAsync_System_Collections_Generic_List_System_String__" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetConsignmentsReadyToShipAsync(System.Collections.Generic.List{System.String})">SetConsignmentsReadyToShipAsync(List&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Set consignments as Ready To Ship asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;WithMessage&lt;string&gt;&gt;&gt; SetConsignmentsReadyToShipAsync(List&lt;string&gt; consignmentReferences)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">consignmentReferences</span></td>
+        <td><p>The consignment references.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-188">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetCustomerProvidedReference_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetCustomerProvidedReference*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetCustomerProvidedReference_System_String_Sorted_PRO_SDK_DataTypes_Consignments_ReferenceProvidedByCustomerRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)">SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)</h4>
+  <div class="markdown level1 summary"><p>Set the reference provided by customer on the specified consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void SetCustomerProvidedReference(string consignmentReference, ReferenceProvidedByCustomerRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest.html">ReferenceProvidedByCustomerRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-465">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetCustomerProvidedReferenceAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetCustomerProvidedReferenceAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_SetCustomerProvidedReferenceAsync_System_String_Sorted_PRO_SDK_DataTypes_Consignments_ReferenceProvidedByCustomerRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)">SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously set the reference provided by customer on the specified consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetCustomerProvidedReferenceAsync(string consignmentReference, ReferenceProvidedByCustomerRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest.html">ReferenceProvidedByCustomerRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>The request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-350">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_TryManifestConsignmentsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.TryManifestConsignmentsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_TryManifestConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_TryManifestConsignmentsRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.TryManifestConsignmentsAsync(Sorted.PRO.SDK.DataTypes.Consignments.TryManifestConsignmentsRequest)">TryManifestConsignmentsAsync(TryManifestConsignmentsRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously manifest consignments</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated - Use ManifestConsignmentsAsync&quot;)]
+Task&lt;List&lt;WithMessage&lt;string&gt;&gt;&gt; TryManifestConsignmentsAsync(TryManifestConsignmentsRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.TryManifestConsignmentsRequest.html">TryManifestConsignmentsRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A list of consignment references to manifest. <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.TryManifestConsignmentsRequest.html">TryManifestConsignmentsRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.Shared.WithMessage-1.html">WithMessage</a>&lt;<span class="xref">System.String</span>&gt;&gt;&gt;</td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-198">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignment_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignment*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignment_Sorted_PRO_SDK_DataTypes_Consignments_UpdateConsignmentRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignment(Sorted.PRO.SDK.DataTypes.Consignments.UpdateConsignmentRequest)">UpdateConsignment(UpdateConsignmentRequest)</h4>
+  <div class="markdown level1 summary"><p>Updates the specified consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+List&lt;ApiLink&gt; UpdateConsignment(UpdateConsignmentRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdateConsignmentRequest.html">UpdateConsignmentRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdateConsignmentRequest.html">UpdateConsignmentRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.DataTypes.Common.ApiLink.html">ApiLink</a>&gt;</td>
+        <td><p>The details of the updated <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment.html">Consignment</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-157">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignmentAddress_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignmentAddress*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignmentAddress_System_String_Sorted_PRO_SDK_DataTypes_Consignments_Address_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignmentAddress(System.String,Sorted.PRO.SDK.DataTypes.Consignments.Address)">UpdateConsignmentAddress(String, Address)</h4>
+  <div class="markdown level1 summary"><p>Update the specified address of the consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+void UpdateConsignmentAddress(string consignmentReference, Address address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment to update the address of</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Address.html">Address</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-411">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignmentAddressAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignmentAddressAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignmentAddressAsync_System_String_Sorted_PRO_SDK_DataTypes_Consignments_Address_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignmentAddressAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.Address)">UpdateConsignmentAddressAsync(String, Address)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously update the consignment address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task UpdateConsignmentAddressAsync(string consignmentReference, Address address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The reference of the consignment</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.Address.html">Address</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td><p><span class="xref">System.Threading.Tasks.Task</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-473">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignmentAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignmentAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Consignments_IConsignmentService_UpdateConsignmentAsync_Sorted_PRO_SDK_DataTypes_Consignments_UpdateConsignmentRequest_" data-uid="Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentService.UpdateConsignmentAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdateConsignmentRequest)">UpdateConsignmentAsync(UpdateConsignmentRequest)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously update the specified consignment</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;List&lt;ApiLink&gt;&gt; UpdateConsignmentAsync(UpdateConsignmentRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdateConsignmentRequest.html">UpdateConsignmentRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td><p>A <a class="xref" href="Sorted.PRO.SDK.DataTypes.Consignments.UpdateConsignmentRequest.html">UpdateConsignmentRequest</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="../ref-shared/Sorted.PRO.SDK.DataTypes.Common.ApiLink.html">ApiLink</a>&gt;&gt;</td>
+        <td><p>A <span class="xref">System.Threading.Tasks.Task&lt;TResult&gt;</span></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Consignments/IConsignmentService.cs#lines-17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

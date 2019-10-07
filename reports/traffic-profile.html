@@ -10,7 +10,7 @@
     <meta name="title" content="Traffic Profile ">
     <meta name="generator" content="docfx 2.43.3.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="..//myfavicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -71,21 +71,35 @@
 <a href="../images/reports/traffic-profile.png" target="_blank">
     <img src="../images/reports/traffic-profile.png">
 </a>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+In the context of PRO, the term &quot;consignment&quot; refers to a collection of one or more packages that are shipped from the same origin address, to the same destination address, on behalf of the same Sorted customer, using the same carrier service, on the same day.</p>
+<p>A package is an item or a collection of items, wrapped or contained together for shipment. Each package can contain one or more items.</p>
+<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. As such, this sales order would break down to:</p>
+<ul>
+<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
+<li>A single consignment corresponding to everything on the order.</li>
+</ul>
+</blockquote>
 <h2 id="report-filters">Report Filters</h2>
 <p>The <strong>Traffic Profile</strong> report offers the following report-wide filters:</p>
 <ul>
-<li><strong>Consignments Manifested</strong> - enables you to select consignments that were manifested within a given date range.</li>
-<li><strong>Company Name</strong> - where applicable, enables you to select consignments that were manifested by a particular company within your group. You can select multiple companies if required.</li>
+<li><strong>Date Manifested</strong> - enables you to select consignments that were manifested within a given date range.</li>
+<li><strong>Company</strong> - where applicable, enables you to select consignments that were manifested by a particular company within your group. You can select multiple companies if required.</li>
 <li><strong>Shipping Location</strong> - where applicable, enables you to select consignments that were manifested from a particular shipping location.</li>
 <li><strong>Carrier</strong> - enables you to select consignments that were manifested to a particular carrier.</li>
 <li><strong>Carrier Service</strong> - enables you to select consignments that were manifested to a particular carrier service.</li>
 <li><strong>Delivery Type</strong> - enables you to select consignments that were used a particular delivery type (i.e. <em>Delivery</em> or <em>Click and Collect</em>).</li>
 </ul>
-<h2 id="data-table">Data Table</h2>
+<a href="../images/reports/traffic-profile-left-filter.png" target="_blank">
+    <img src="../images/reports/traffic-profile-left-filter.png">
+</a>
+<h2 id="consignments-table">Consignments Table</h2>
 <a href="../images/reports/traffic-profile-table.png" target="_blank">
     <img src="../images/reports/traffic-profile-table.png">
 </a>
-<p>The data table visualisation lists the following information for each carrier (with any report filters taken into account):</p>
+<p>The consignment data table visual lists the following information for each carrier (with any report filters taken into account):</p>
 <ul>
 <li><strong>Consignments</strong> - Number of consignments manifested.</li>
 <li><strong>Packages</strong> - Number of packages manifested.</li>
@@ -93,7 +107,7 @@
 <li><strong>Average Weight, KG</strong> - The average weight, in kilograms, of the consignments shipped.</li>
 <li><strong>Average Weight, Volumetric</strong> - The average volumetric weight of the consignments shipped.</li>
 </ul>
-<h3 id="visualisation-filters">Visualisation Filters</h3>
+<h3 id="visual-filters">Visual Filters</h3>
 <p>The data table offers the following filters:</p>
 <ul>
 <li><strong>Average Packages Per Consignment</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
@@ -115,12 +129,12 @@
 <li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Company / Consignments / Packages / Average Packages per Consignment / Avg Weight, Kg / Avg Weight, Volumetric</li>
 </ul>
 <h2 id="consignment-volume-distribution-by-absolute-weight-chart">Consignment Volume Distribution by Absolute Weight Chart</h2>
-<p>The <strong>Consignment Volume Distribution by Absolute Weight</strong> chart displays the weight distribution of your manifested consignments. It is intended to help you identify trends in the weights of the consignments you manifest.</p>
+<p>The <strong>Consignment Volume Distribution by Absolute Weight</strong> chart displays the weight distribution of your manifested consignments.</p>
 <a href="../images/reports/traffic-profile-weight.png" target="_blank">
     <img src="../images/reports/traffic-profile-weight.png">
 </a>
 <p>In the example above, the company in question has shipped 53,324 consignments that were between 0 and 4.75kg in weight, 10,306 parcels that were between 4.76 and 9.52 kg in weight, and so on.</p>
-<h3 id="visualisation-filters-1">Visualisation Filters</h3>
+<h3 id="visual-filters-1">Visual Filters</h3>
 <ul>
 <li><strong>Count of ConsignmentReference</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
 <li><strong>Kilograms</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
@@ -133,13 +147,23 @@
 <li><a href="/reports/reports.html#show-data">Show Data</a></li>
 <li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
 </ul>
+<h3 id="viewing-data">Viewing Data</h3>
+<a href="../images/reports/traffic-profile-weight-data.png" target="_blank">
+    <img src="../images/reports/traffic-profile-weight-data.png">
+</a>
+<p>The <strong>Consignment Volume Distribution by Absolute Weight</strong> chart's <strong>Show Data</strong> option displays a table of absolute weights in kilograms (rounded to the nearest 10 grams), and a count of how many consignments met each weight. For example, the sample image shows that the customer shipped 266 consignments with a total weight of 0.14 kg (i.e. 140 grams), and 39 consignments with a total weight of 0.25 kg (250 grams).</p>
 <h2 id="consignment-volume-distribution-by-volumetric-weight-chart">Consignment Volume Distribution by Volumetric Weight Chart</h2>
-<p>The <strong>Consignment Volume Distribution by Volumetric Weight</strong> chart displays the volumetric weight distribution of your manifested consignments. It is intended to help you identify trends in the weights of the consignments you manifest.</p>
+<p>The <strong>Consignment Volume Distribution by Volumetric Weight</strong> chart displays the volumetric weight distribution of your manifested consignments.</p>
 <a href="../images/reports/traffic-profile-vol-weight.png" target="_blank">
     <img src="../images/reports/traffic-profile-vol-weight.png">
 </a>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>Volumetric weight is a method of estimating a parcel's weight using its dimensions. It is usually calculated as the parcel's length x weight x height (all in cm) / 5000, although exact calculations can vary between carriers.</p>
+<p>For example, a 10cm cube would have a volumetric weight of 10 x 10 x 10 / 5000 = 0.2 kg</p>
+</blockquote>
 <p>In the example above, the company in question has shipped 65,091 consignments that were between 0 and 9.26kg in volumetric weight, 7,550 parcels that were between 9.72 and 18.53 kg in volumetric weight, and so on.</p>
-<h3 id="visualisation-filters-2">Visualisation Filters</h3>
+<h3 id="visual-filters-2">Visual Filters</h3>
 <ul>
 <li><strong>Count of ConsignmentReference</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
 <li><strong>Kilograms</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
@@ -152,6 +176,11 @@
 <li><a href="/reports/reports.html#show-data">Show Data</a></li>
 <li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
 </ul>
+<h3 id="viewing-data-1">Viewing Data</h3>
+<a href="../images/reports/traffic-profile-vol-weight-data.png" target="_blank">
+    <img src="../images/reports/traffic-profile-vol-weight-data.png">
+</a>
+<p>The <strong>Consignment Volume Distribution by Volumetric Weight</strong> chart's <strong>Show Data</strong> option displays a table of volumetric weights in kilograms (rounded to the nearest 10 grams), and a count of how many consignments met each weight. For example, the sample image shows that the customer shipped 266 consignments with a total weight of 0.14 kg (i.e. 140 grams), and 39 consignments with a total weight of 0.25 kg (250 grams).</p>
 </article>
           </div>
           
@@ -160,7 +189,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/reports/traffic-profile.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/more-info/docfx_project/reports/traffic-profile.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

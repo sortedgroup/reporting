@@ -1,0 +1,553 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ILegacyLabelService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ILegacyLabelService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService" class="text-break">Interface ILegacyLabelService
+  </h1>
+  <div class="markdown level0 summary"><p>The interface for <a href="Sorted.PRO.SDK.Labels.LegacyLabelService.html">LegacyLabelService</a>. Retrieves package and consignment labels.</p> 
+<p><strong>Note:</strong> This service is <em>now deprecated</em>. Please use <a href="Sorted.PRO.SDK.Labels.LabelService.html">LabelService</a> instead.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Interfaces.Labels.html">Sorted.PRO.SDK.Interfaces.Labels</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Interfaces.Labels.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use ILabelService&quot;)]
+public interface ILegacyLabelService</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-52">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabel_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabel_System_String_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String)">GetLabel(String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the label for an individual package within the specified consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+GetLabelsResponse GetLabel(string consignmentReference, string packageReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference the package belongs to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The package reference to retrieve a label for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a></td>
+        <td><p>Label data for the selected package</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-62">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabel_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabel_System_String_System_String_Sorted_PRO_SDK_DataTypes_Labels_LegacyLabelFormat_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)">GetLabel(String, String, LegacyLabelFormat)</h4>
+  <div class="markdown level1 summary"><p>Returns the label for an individual package within the specified consignment, in the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+GetLabelsResponse GetLabel(string consignmentReference, string packageReference, LegacyLabelFormat labelFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference the package belongs to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The package reference to retrieve a label for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.html">LegacyLabelFormat</a></td>
+        <td><span class="parametername">labelFormat</span></td>
+        <td><p>The format to output the label in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a></td>
+        <td><p>Label data for the selected package</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-71">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelAsync_System_String_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String)">GetLabelAsync(String, String)</h4>
+  <div class="markdown level1 summary"><p>Returns the label for an individual package within the specified consignment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;GetLabelsResponse&gt; GetLabelAsync(string consignmentReference, string packageReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference the package belongs to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The package reference to retrieve a label for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a>&gt;</td>
+        <td><p>Label data for the selected package</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-80">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelAsync_System_String_System_String_Sorted_PRO_SDK_DataTypes_Labels_LegacyLabelFormat_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)">GetLabelAsync(String, String, LegacyLabelFormat)</h4>
+  <div class="markdown level1 summary"><p>Returns the label for an individual package within the specified consignment, in the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;GetLabelsResponse&gt; GetLabelAsync(string consignmentReference, string packageReference, LegacyLabelFormat labelFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference the package belongs to</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">packageReference</span></td>
+        <td><p>The package reference to retrieve a label for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.html">LegacyLabelFormat</a></td>
+        <td><span class="parametername">labelFormat</span></td>
+        <td><p>The format to output the label in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a>&gt;</td>
+        <td><p>Label data for the selected package</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-19">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabels_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabels_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String)">GetLabels(String)</h4>
+  <div class="markdown level1 summary"><p>Returns labels for the specified consignment reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+GetLabelsResponse GetLabels(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference to retrieve labels for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a></td>
+        <td><p>Label data for all packages in the consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-28">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabels_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabels_System_String_Sorted_PRO_SDK_DataTypes_Labels_LegacyLabelFormat_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)">GetLabels(String, LegacyLabelFormat)</h4>
+  <div class="markdown level1 summary"><p>Returns labels for the specified consignment reference, in the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Deprecated Use Async equivalent&quot;)]
+GetLabelsResponse GetLabels(string consignmentReference, LegacyLabelFormat labelFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference to retrieve labels for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.html">LegacyLabelFormat</a></td>
+        <td><span class="parametername">labelFormat</span></td>
+        <td><p>The format to output the labels in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a></td>
+        <td><p>Label data for all packages in the consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-36">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelsAsync_System_String_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String)">GetLabelsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Returns labels for the specified consignment reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;GetLabelsResponse&gt; GetLabelsAsync(string consignmentReference)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference to retrieve labels for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a>&gt;</td>
+        <td><p>Label data for all packages in the consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-44">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelsAsync_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Interfaces_Labels_ILegacyLabelService_GetLabelsAsync_System_String_Sorted_PRO_SDK_DataTypes_Labels_LegacyLabelFormat_" data-uid="Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)">GetLabelsAsync(String, LegacyLabelFormat)</h4>
+  <div class="markdown level1 summary"><p>Returns labels for the specified consignment reference, in the specified format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;GetLabelsResponse&gt; GetLabelsAsync(string consignmentReference, LegacyLabelFormat labelFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td><p>The consignment reference to retrieve labels for</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.html">LegacyLabelFormat</a></td>
+        <td><span class="parametername">labelFormat</span></td>
+        <td><p>The format to output the labels in.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelsResponse</a>&gt;</td>
+        <td><p>Label data for all packages in the consignment</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs#lines-11" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

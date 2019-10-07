@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseService
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseService
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Shared.BaseService">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Shared_BaseService" data-uid="Sorted.PRO.SDK.Shared.BaseService" class="text-break">Class BaseService
+  </h1>
+  <div class="markdown level0 summary"><p>Base class from which all services should inherit.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BaseService</span></div>
+      <div class="level2"><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.Consignments.AllocationService.html">AllocationService</a></div>
+      <div class="level2"><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.Consignments.ConsignmentAllocationService.html">ConsignmentAllocationService</a></div>
+      <div class="level2"><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.Consignments.ConsignmentService.html">ConsignmentService</a></div>
+      <div class="level2"><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.Consignments.ItemsService.html">ItemsService</a></div>
+      <div class="level2"><a class="xref" href="../ref-consignments/Sorted.PRO.SDK.Consignments.PackagesService.html">PackagesService</a></div>
+      <div class="level2"><a class="xref" href="../ref-labels/Sorted.PRO.SDK.Labels.LabelService.html">LabelService</a></div>
+      <div class="level2"><a class="xref" href="../ref-labels/Sorted.PRO.SDK.Labels.LegacyLabelService.html">LegacyLabelService</a></div>
+      <div class="level2"><a class="xref" href="../ref-orders/Sorted.PRO.SDK.Orders.OrderService.html">OrderService</a></div>
+      <div class="level2"><a class="xref" href="../ref-quotes/Sorted.PRO.SDK.Quotes.QuoteService.html">QuoteService</a></div>
+      <div class="level2"><a class="xref" href="../ref-rates/Sorted.PRO.SDK.Rates.RatesService.html">RatesService</a></div>
+      <div class="level2"><a class="xref" href="../ref-reconciliation/Sorted.PRO.SDK.Reconciliation.InvoiceService.html">InvoiceService</a></div>
+      <div class="level2"><a class="xref" href="../ref-security/Sorted.PRO.SDK.Security.RoleService.html">RoleService</a></div>
+      <div class="level2"><a class="xref" href="../ref-security/Sorted.PRO.SDK.Security.SecurityService.html">SecurityService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.CarrierServiceService.html">CarrierServiceService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.CarriersService.html">CarriersService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.CollectionCalendarService.html">CollectionCalendarService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.PackageSizeService.html">PackageSizeService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.ServiceGroupsService.html">ServiceGroupsService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.html">ShippingLocationsServiceService</a></div>
+      <div class="level2"><a class="xref" href="../ref-settings/Sorted.PRO.SDK.Settings.StaticDataService.html">StaticDataService</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Shared.html">Sorted.PRO.SDK.Shared</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Shared.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Shared_BaseService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseService</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-56">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_BaseService__ctor_" data-uid="Sorted.PRO.SDK.Shared.BaseService.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService__ctor_Sorted_PRO_SDK_Shared_Interfaces_ILogger_" data-uid="Sorted.PRO.SDK.Shared.BaseService.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)">BaseService(ILogger)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Sorted.PRO.SDK.Shared.BaseService.html">BaseService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseService(ILogger log)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>The log.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-40">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_BaseService__ctor_" data-uid="Sorted.PRO.SDK.Shared.BaseService.#ctor*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService__ctor_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_System_String_Sorted_PRO_SDK_Shared_Interfaces_IHttpClientFactory_Sorted_PRO_SDK_Shared_Interfaces_ILogger_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="Sorted.PRO.SDK.Shared.BaseService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})">BaseService(String, IEndpoints, String, IHttpClientFactory, ILogger, Dictionary&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Sorted.PRO.SDK.Shared.BaseService.html">BaseService</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BaseService(string apiKey, IEndpoints endpoints, string baseUri, IHttpClientFactory httpClientFactory, ILogger log, Dictionary&lt;string, string&gt; optionalHeaders)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>The API key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IEndpoints.html">IEndpoints</a></td>
+        <td><span class="parametername">endpoints</span></td>
+        <td><p>The endpoints.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>The base URI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.html">IHttpClientFactory</a></td>
+        <td><span class="parametername">httpClientFactory</span></td>
+        <td><p>Used to provide a re-usable instance of <span class="xref">System.Net.Http.HttpClient</span></p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td><span class="parametername">log</span></td>
+        <td><p>The log.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">optionalHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>endpoints</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>You must supply an api key;apiKey</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-27">View Source</a>
+  </span>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService_Log" data-uid="Sorted.PRO.SDK.Shared.BaseService.Log">Log</h4>
+  <div class="markdown level1 summary"><p>The log</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ILogger Log</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.ILogger.html">ILogger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-21">View Source</a>
+  </span>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService_Rest" data-uid="Sorted.PRO.SDK.Shared.BaseService.Rest">Rest</h4>
+  <div class="markdown level1 summary"><p>Default IRestConsumer for the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IRestConsumer Rest</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.html">IRestConsumer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-16">View Source</a>
+  </span>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService_VERSION" data-uid="Sorted.PRO.SDK.Shared.BaseService.VERSION">VERSION</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected const string VERSION = &quot;1.1&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-125">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_" data-uid="Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_System_Action_" data-uid="Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)">CallAsyncMethod(Action)</h4>
+  <div class="markdown level1 summary"><p>Calls the asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void CallAsyncMethod(Action asyncCall)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">asyncCall</span></td>
+        <td><p>The asynchronous call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>A delegate callback throws an exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.AggregateException</span></td>
+        <td><p>Condition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-94">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod_" data-uid="Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService_CallAsyncMethod__1_System_Func___0__" data-uid="Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})">CallAsyncMethod&lt;TReturn&gt;(Func&lt;TReturn&gt;)</h4>
+  <div class="markdown level1 summary"><p>Calls the asynchronous method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TReturn CallAsyncMethod&lt;TReturn&gt;(Func&lt;TReturn&gt; asyncCall)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;TReturn&gt;</td>
+        <td><span class="parametername">asyncCall</span></td>
+        <td><p>The asynchronous call.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TReturn</span></td>
+        <td><p>Type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TReturn</span></td>
+        <td><p>The type of the return.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>A delegate callback throws an exception.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Error.ApiException.html">ApiException</a></td>
+        <td><p>Condition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-70">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_BaseService_GetRestConfig_" data-uid="Sorted.PRO.SDK.Shared.BaseService.GetRestConfig*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_BaseService_GetRestConfig_System_String_Sorted_PRO_SDK_Shared_Interfaces_IEndpoints_System_String_" data-uid="Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)">GetRestConfig(String, IEndpoints, String)</h4>
+  <div class="markdown level1 summary"><p>Gets the rest configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RestConsumerConfiguration GetRestConfig(string apiKey, IEndpoints endpoints, string baseUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">apiKey</span></td>
+        <td><p>The API key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.IEndpoints.html">IEndpoints</a></td>
+        <td><span class="parametername">endpoints</span></td>
+        <td><p>The endpoints.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">baseUri</span></td>
+        <td><p>The base URI.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Sorted.PRO.SDK.Shared.RestConsumerConfiguration.html">RestConsumerConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>You must supply an api key</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/BaseService.cs#lines-14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

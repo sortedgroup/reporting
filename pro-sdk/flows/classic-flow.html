@@ -1,0 +1,462 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Classic Flow </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Classic Flow ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="classic-flow">Classic Flow</h1>
+
+<p><img src="../../images/Flow1.png" alt="Flow1"></p>
+<p>Creating a new consignment, allocating it to a suitable carrier service, and then adding it to that service's manifest is perhaps PRO's most basic use case. The <strong>Classic</strong> call flow offers the lightest integration design of all PRO flows, making it easy for your organisation to manage deliveries across multiple carriers.</p>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>This guide assumes that you have already consumed the PRO SDK packages and performed the initial setup steps. If you have not done so, please see the <strong>LINK HERE</strong> page before continuing.</p>
+</blockquote>
+<p>The <strong>Classic</strong> flow is most useful to your business if:</p>
+<ul>
+<li>You have a single warehouse / fulfilment centre.</li>
+<li>You use a static delivery promise (e.g. Next day delivery before 5pm).</li>
+<li>You want to keep your business logic and technology architecture as simple as possible.</li>
+</ul>
+<p>There are four steps to the flow:</p>
+<ol>
+<li><strong>Create the consignment</strong> - Use the <code>ConsignmentService.CreateConsignmentAsync</code> method to record the details of your new consignment.</li>
+<li><strong>Allocate the consignment</strong> - Use one of the allocation methods in the <code>ConsignmentAllocationService</code> to select the carrier service that your consignment will use. You can nominate a specific service, ask PRO to determine the best service to use from a pre-defined group, or allocate based on pre-set allocation rules.</li>
+<li><strong>Get the consignment's labels</strong> - Use the <code>LabelService.GetConsignmentLabelsAsync</code> method to get the delivery label for your consignment.</li>
+<li><strong>Manifest the consignment</strong> - Use the <code>ConsignmentService.ManifestConsignmentsAsync</code> method to to confirm the consignment with the selected carrier. At this point, the consignment is ready to ship.</li>
+</ol>
+<h2 id="creating-a-consignment">Creating a Consignment</h2>
+<p>The first step toward manifesting a consignment is to create that consignment in SortedPRO.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span></p>
+<p>In the context of PRO, the term <strong>&quot;consignment&quot;</strong> refers to a collection of one or more packages that are shipped from the same origin address, to the same destination address, on behalf of the same Sorted customer, using the same carrier service, on the same day.</p>
+<p>A <strong>package</strong> is an <strong>item</strong> or a collection of items, wrapped or contained together for shipment. Each package can contain one or more items.</p>
+<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. As such, this sales order would break down to:</p>
+<ul>
+<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
+<li>A single consignment corresponding to everything on the order.</li>
+</ul>
+</blockquote>
+<p>You can create a consignment by using the <code>ConsignmentService.CreateConsignmentAsync</code> method to send a <a href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.CreateConsignmentRequest.html">CreateConsignmentRequest</a> to PRO's <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignments</a> API. PRO uses the information in the <code>CreateConsignmentRequest</code> to generate a consignment and return an <a href="/../pro-sdk/ref-shared/Sorted.PRO.SDK.DataTypes.Common.ApiLink.html">APILink</a> object, which contains the new consignment's <code>{consignmentReference}</code>.</p>
+<h3 id="example-implementation">Example Implementation</h3>
+<p>The examples below how the PRO SDK sample app handles consignment creation. The sample app has a <code>CreateConsignment</code> task class performs three main functions: using a <code>BuildCreateConsignmentrequest</code> method to generate a new <code>CreateConsiognmentRequest</code>, sending that request to the API endpoint via <code>consignmentService.CreateConsignmentAsync</code>, and extracting the <code>{consignmtnReference}</code> from the information returned by using an <code>ExtractConsignmentReference</code> method.</p>
+<pre><code class="lang-c#">/// &lt;summary&gt;
+/// Creates a new consignment and returns the Sorted-generated reference
+/// &lt;remarks&gt;
+/// Sorted.PRO consignment references have the format EC-XXX-XXX-XXX
+/// &lt;/remarks&gt;
+/// &lt;/summary&gt;
+/// &lt;returns&gt;The reference of the generated consignment&lt;/returns&gt;
+public async Task&lt;string&gt; CreateConsignment(string postcode)
+{
+    return await OperationHelper.Execute(async () =&gt;
+    {
+        var request = BuildCreateConsignmentRequest(postcode);
+        JsonSampler.SummariseToJson(request);
+        var result = await _consignmentService.CreateConsignmentAsync(request);
+        JsonSampler.SummariseToJson(result);
+
+        var apiLink = result.FirstOrDefault();
+        var reference = ExtractConsignmentReference(apiLink);
+        Console.WriteLine($&quot;Created consignment with reference: {reference}&quot;);
+        return reference;
+    });
+}
+</code></pre>
+<h3 id="building-the-request">Building The Request</h3>
+<p>In the below example, we have added origin address, destination address (denoted by the <code>AddressType</code> property), and package dimensions as part of the <code>CreateConsignmentRequest</code>. This is the minimum amount of information that PRO requires to create a consignment.</p>
+<pre><code class="lang-c#">/// &lt;summary&gt;
+/// Builds a new &lt;see cref=&quot;CreateConsignmentRequest&quot;/&gt;
+/// &lt;/summary&gt;
+/// &lt;returns&gt;A populated &lt;see cref=&quot;CreateConsignmentRequest&quot;/&gt;&lt;/returns&gt;
+
+public CreateConsignmentRequest BuildCreateConsignmentRequest(string postcode)
+{   
+    var createConsignmentRequest = new CreateConsignmentRequest
+    {
+        Direction = ConsignmentDirection.Outbound,
+        Addresses = new List&lt;Address&gt; //all consignments must have at least 2 addresses
+        {
+            new Address
+            {
+                ShippingLocationReference = _configuration.ShippingLocationReference,
+                AddressType = ConsignmentAddressType.Origin //must include an origin address
+            },
+            new Address
+            {
+                AddressType = ConsignmentAddressType.Destination, //must include a destination address
+                AddressLine1 = &quot;123 Some Street&quot;,
+                Town = &quot;Manchester&quot;,
+                Region = &quot;Greater Manchester&quot;,
+                Postcode = postcode,
+                Country = new Country(&quot;GB&quot;),
+                Contact = new Contact()
+                {
+                    Title = &quot;Mr&quot;,
+                    FirstName = &quot;Tester&quot;,
+                    LastName = &quot;McTest&quot;,
+                    Email = &quot;tester.mctest@sorted.com&quot;,
+                    Telephone = &quot;0161123456&quot;
+                }
+            }
+        },
+        Packages = new List&lt;Package&gt;
+        {
+            new Package
+            {
+                Weight = new Weight(1.5M),
+                Dimensions = new Dimensions(10,10,10),
+                Description = &quot;A sample package&quot;,
+                Value = new Money(new Currency(&quot;GBP&quot;), 2.99M),
+                PackageReferenceProvidedByCustomer = Guid.NewGuid().ToString()
+            }
+        },
+        ConsignmentReferenceProvidedByCustomer = &quot;my_reference&quot;
+    };
+
+    return createConsignmentRequest;
+}
+</code></pre>
+<p>However, there are lots of other properties you can send when creating a consignment, including:</p>
+<ul>
+<li>Your own consignment reference.</li>
+<li>The consignment's source.</li>
+<li>Shipping and delivery dates.</li>
+<li>Customs documentation.</li>
+<li>The consignment's direction of travel.</li>
+<li>Metadata. PRO metadata enables you to us custom fields to record additional data about a consignment. For more information on using metadata in PRO, see [LINK HERE].</li>
+<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment could be allocated to. For more information on allocation tags, see [LINK HERE]].</li>
+</ul>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Create Consignment</strong> endpoint, including a list of all properties accepted by the endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> page of the API reference.</p>
+</blockquote>
+<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. You can get a list of your organisation's <code>ShippingLocationReferences</code> using the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> API endpoint.</p>
+<h3 id="processing-the-response">Processing the Response</h3>
+<p>The following example shows an <code>APILink</code> object that has been generated as a result of a <code>CreateConsignmentRequest</code>:</p>
+<pre><code class="lang-json">[
+  {
+    &quot;Rel&quot;: &quot;Link&quot;,
+    &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-087-01A&quot;
+  }
+]
+</code></pre>
+<p>The example <code>ExtractConsignmentReference</code>method show below reads this object and returns the new consignment's <code>consignmentReference</code> property. The <code>{consignmentReference}</code> is a unique identifier for that consignment within PRO, and is a required parameter for many of PRO's API requests. Each PRO <code>{consignmentReference}</code> takes the format <code>EC-xxx-xxx-xxx</code>.</p>
+<pre><code class="lang-c#">/// &lt;summary&gt;
+/// Uses a regular expression to extract the generated consignment reference from the response
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;apiLink&quot;&gt;The link that points to the generated consignment&lt;/param&gt;
+/// &lt;returns&gt;The consignment reference in the format EC-XXX-XXX-XXX&lt;/returns&gt;
+/// &lt;exception cref=&quot;Exception&quot;&gt;Thrown if no valid reference is matched&lt;/exception&gt;
+private static string ExtractConsignmentReference(ApiLink apiLink)
+{
+    var href = apiLink.Href;
+    var regex = new Regex(&quot;EC-[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}$&quot;);
+    var match = regex.Match(href);
+    if (!match.Success)
+    {
+        throw new Exception($&quot;Could not extract consignment reference from apiLink {href}&quot;);
+    }
+
+    return match.Value;
+}
+</code></pre>
+<p>Now that the consignment has been created and its <code>consignmentReference</code> obtained, it is ready to be allocated.</p>
+<h2 id="allocating-a-consignment">Allocating a Consignment</h2>
+<p>Once you've created a consignment, it must be allocated to a carrier service. In the context of SortedPRO, <strong>allocation</strong> is the process of selecting the carrier service that will be used to deliver the consignment.</p>
+<p>PRO has multiple allocation endpoints, giving you the flexibility to allocate to carriers using whatever criteria suits you best. This example flow uses the <code>consignmentAllocationService.AllocateConsignmentAsync(consignmentReference)</code> method, which allocates the selected consignment using pre-configured default allocation rules. For information on other ways to use the <code>consignmentAllocationService.AllocateConsignmentAsync</code> method, see the <a href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.Interfaces.Consignments.IConsignmentAllocationService.html">IAllocationService</a> interface reference.</p>
+<h3 id="request">Request</h3>
+<p>When you pass a <code>consignmentReference</code> to the <code>consignmentAllocationService.AllocateConsignmentAsync</code> method, PRO generates an <a href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsRequest.html">AllocateConsignmentsRequest</a> and sends it to the <a href="https://docs.electioapp.com/#/api/AllocateUsingDefaultRules">Allocate Using Default Rules</a> endpoint. PRO then allocates the consignment to the cheapest available service that meets your organisation's allocation rules.</p>
+<blockquote>
+<p><span class="note-header">Note:</span></p>
+<p>PRO allocation rules enable you to configure business rules - such as physical package size, consignment value, and geographical availability - against individual carrier services. You can configure them via the <a href="https://www.electioapp.com/Configuration/EditCarrierService/acceptanceTestCarrier_f8fe">Manage Carrier Service Rules</a> page of the PRO UI.</p>
+<p>For more information on configuring allocation rules, see the <em>Configure Allocation Rules</em> section of the PRO Admin Portal User Guide.</p>
+</blockquote>
+<h3 id="response">Response</h3>
+<p>Once the consignment has been allocated, PRO returns an <a href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.DataTypes.Consignments.AllocateConsignmentsRequest.html">AllocationSummary</a>. The <code>AllocationSummary</code> contains links to the consignment resource that was allocated, a summary of the carrier service that the consignment was allocated to, a link to the relevant package labels, and a <code>ConsignmentLegs</code> array indicating how many legs the shipment will need. Where a shipment would need multiple legs to complete, the <code>ConsignmentLegs</code> array shows tracking details for each individual leg.</p>
+<p>Example Allocation Summary Response</p>
+<pre><code class="lang-json">[
+    {
+        &quot;StatusCode&quot;: 200,
+        &quot;ApiLinks&quot;: [
+            {
+                &quot;Rel&quot;: &quot;detail&quot;,
+                &quot;Href&quot;: &quot;https://apisandbox.electioapp.com/consignments/EC-000-05B-MMA&quot;
+            },
+            {
+                &quot;Rel&quot;: &quot;label&quot;,
+                &quot;Href&quot;: &quot;https://apisandbox.electioapp.com/labels/EC-000-05B-MMA&quot;
+            }
+        ],
+        &quot;Description&quot;: &quot;Consignment EC-000-05B-MMA has been successfully allocated with Carrier X Next Day Super for shipping on 14/06/2019 17:00:00 +00:00&quot;,
+        &quot;ConsignmentLegs&quot;: [
+            {
+                &quot;Leg&quot;: 1,
+                &quot;TrackingReferences&quot;: [
+                    &quot;TRK00009823&quot;
+                ],
+                &quot;CarrierReference&quot;: &quot;CARRIER_X&quot;,
+                &quot;CarrierServiceReference&quot;: null,
+                &quot;CarrierName&quot;: &quot;Carrier X&quot;
+            }
+        ],
+        &quot;CarrierReference&quot;: &quot;CARRIER_X&quot;,
+        &quot;CarrierName&quot;: &quot;Carrier X&quot;,
+        &quot;CarrierServiceReference&quot;: &quot;CX_NDS&quot;,
+        &quot;CarrierServiceName&quot;: &quot;Next Day Super&quot;
+    }
+]
+</code></pre>
+<p>Once allocated, the consignment's status changes to <em>Allocated</em>, enabling you to retrieve its package labels and (where applicable) customs documentation.</p>
+<h3 id="example-implementation-1">Example Implementation</h3>
+<p>The example below shows how the SDK sample app allocates consignments.</p>
+<pre><code class="lang-c#">public async Task&lt;AllocationSummary&gt; AllocateConsignment(string consignmentReference)
+{
+    return await OperationHelper.Execute(async () =&gt;
+    {
+        var allocationResult =
+            await _consignmentAllocationService.AllocateConsignmentAsync(consignmentReference);
+        JsonSampler.SummariseToJson(allocationResult);
+        var first = allocationResult.FirstOrDefault();
+        WriteAllocationSummary(first);
+        return first;
+    });
+}
+
+private static void WriteAllocationSummary(AllocationSummary summary)
+{
+    WriteProperty(&quot;Carrier name&quot;, summary.CarrierName);
+    WriteProperty(&quot;Carrier reference&quot;, summary.CarrierReference);
+    WriteProperty(&quot;Carrier service&quot;, summary.CarrierServiceName);
+    WriteProperty(&quot;Carrier service reference&quot;, summary.CarrierServiceReference);
+    WriteProperty(&quot;Description&quot;, summary.Description);
+}
+
+private static void WriteProperty(string property, string value)
+{
+    Console.WriteLine($&quot;Property '{property}' has value '{value}'&quot;);
+}
+</code></pre>
+<p>In this example, the <code>AllocateConsignment</code> task class handles the allocation request and then uses additional <code>WriteAllocationSummary</code> and <code>WriteProperty</code> methods to generate a summary of the allocated service, which can then be output to the console.</p>
+<h2 id="getting-a-consignments-labels">Getting a Consignment's Labels</h2>
+<p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The next step in the process is to retrieve those delivery labels via the <code>LabelService.GetConsignmentLabelsAsync</code> method, so that they can be printed and physically applied to the relevant packages.</p>
+<p>The <code>LabelService.GetConsignmentLabelsAsync</code> method takes a <code>consignmentReference</code>, a <code>labelFormat</code>, and a <code>resolution</code> as parameters, uses them to create a <a href="/../pro-sdk/ref-labels/Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.html">LabelsRequest</a>, and then sends that request to PRO's Labels API.</p>
+<p>PRO then returns a <a href="/../pro-sdk/ref-labels/Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.html">GetLabelResponse</a>, containing all package labels associated with that consignment as a base64-encoded byte array in the format and resolution requested.</p>
+<p>Valid <code>LabelFormat</code>s can be found in the <a href="/../pro-sdk/ref-labels/Sorted.PRO.SDK.DataTypes.Labels.LabelFormat.html">LabelFormat</a> enum.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Get Labels in Format</strong> endpoint of PRO's Labels API, see the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="example-implementation-2">Example Implementation</h3>
+<p>The example below shows how the SDK sample app makes label requests. The <code>GetLabels</code> task class makes the <code>GetConsignmentLabelsAsync</code> call (in this example for a PDF label at 203 DPI resolution), and uses and <code>OpenLabel</code> method to automatically open the returned label, ready for printing:</p>
+<pre><code class="lang-c#">public async Task GetLabels(string consignmentReference, bool open = true)
+{
+    await OperationHelper.Execute(async () =&gt;
+    {
+        var labelData = await _labelService.GetConsignmentLabelsAsync(consignmentReference, LabelFormat.PDF, 203);
+        SummariseLabels(labelData);
+        JsonSampler.SummariseToJson(labelData);
+        if (open)
+        {
+            OpenLabel(labelData, consignmentReference);
+        }
+    });
+}
+</code></pre>
+<p>The <code>OpenLabel</code> method itself validates the returned file to confirm that it is a PDF, saves the file to disk by way of an additional <code>SaveFile</code> method, and opens the file.</p>
+<pre><code class="lang-c#">        /// &lt;summary&gt;
+        /// Opens a label
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;response&quot;&gt;The &lt;see cref=&quot;GetLabelsResponse&quot;/&gt; containing the label data&lt;/param&gt;
+        /// &lt;param name=&quot;consignmentReference&quot;&gt;The reference of the consignment this label relates to&lt;/param&gt;
+        private static void OpenLabel(GetLabelsResponse response, string consignmentReference)
+        {
+            if (!response.ContentType.Contains(&quot;pdf&quot;))
+            {
+                Console.WriteLine($&quot;This method only supports PDF labels. The provided type was '{response.ContentType}'&quot;);
+                return;
+            }
+
+            var filePath = SaveFile(response.File, consignmentReference);
+            Console.WriteLine($&quot;File saved to {filePath}&quot;);
+            Process.Start(new ProcessStartInfo(filePath)
+            {
+                UseShellExecute = true
+            });
+        }
+
+        /// &lt;summary&gt;
+        /// Saves the raw file data to disk
+        /// &lt;/summary&gt;
+        /// &lt;param name=&quot;contents&quot;&gt;The file contents &lt;see cref=&quot;Byte[]&quot;/&gt;&lt;/param&gt;
+        /// &lt;param name=&quot;consignmentReference&quot;&gt;The reference of the related consignment&lt;/param&gt;
+        /// &lt;returns&gt;The file path of the saved file&lt;/returns&gt;
+        private static string SaveFile(byte[] contents, string consignmentReference)
+        {
+            try
+            {
+                var path = System.IO.Path.GetTempPath();
+                var fileName = $&quot;{Guid.NewGuid():N}-{consignmentReference}.pdf&quot;;
+                var filePath = System.IO.Path.Combine(path, fileName);
+                System.IO.File.WriteAllBytes(filePath, contents);
+                return filePath;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+</code></pre>
+<h2 id="manifesting-a-consignment">Manifesting a Consignment</h2>
+<p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're ready to manifest it. In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the consignment in question needs to be collected from the shipper. To manifest a consignment, use the <a href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.Consignments.ConsignmentService.html#Sorted_PRO_SDK_Consignments_ConsignmentService_ManifestConsignmentsAsync_Sorted_PRO_SDK_DataTypes_Consignments_ManifestConsignmentsRequest_"><code>ConsignmentService.ManifestConsignmentsAsync</code></a> method.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+In this example flow we will look at manifesting consignments by simply supplying <code>ManifestConsignmentsAsync</code> with a list of consignment references. However, it is also possible to manifest consignments by providing <code>ManifestConsignmentsAsync</code> with a set of query parameters.</p>
+<p>For more information on using <code>ManifestConsignmentsAsync</code>, see the <a href="/../pro-sdk/ref-consignments/index.html">Consignments SDK Reference</a></p>
+</blockquote>
+<h3 id="request-1">Request</h3>
+<p>INFO IN HERE</p>
+<h3 id="response-1">Response</h3>
+<p>Once PRO has attempted to add the consignments to the manifest queue, the <strong>Manifest Consignments From Query</strong> endpoint returns a <code>Message</code> indicating how many consignments met the terms of the query and how many it was able to queue. It also returns a <code>FailedConsignments</code> array listing the <code>consignmentReferences</code> of those consignments that PRO was unable to queue for manifest.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the Consignments API's <strong>Manifest Consignments From Query</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> page of the API Reference.</p>
+</blockquote>
+<h3 id="example-implementation-3">Example Implementation</h3>
+<p>The example below shows how the SDK sample app manifests consignments.</p>
+<pre><code class="lang-c#">/// &lt;summary&gt;
+/// Manifests the specified consignment
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;consignmentReference&quot;&gt;The reference of the consignment to manifest&lt;/param&gt;
+public async Task ManifestConsignment(string consignmentReference)
+{
+    await OperationHelper.Execute(async () =&gt;
+    {
+        var result = await _consignmentService.ManifestConsignmentsAsync(new ManifestConsignmentsRequest()
+        {
+            ConsignmentReferences = new List&lt;string&gt;
+            {
+                consignmentReference
+            }
+        });
+        PrintResults(result);
+        JsonSampler.SummariseToJson(result);
+    });
+}    
+
+
+/// &lt;summary&gt;
+/// Summarise the results of the operation
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;manifestResponse&quot;&gt;The &lt;see cref=&quot;IEnumerable{WithMessage{string}}&quot;/&gt; to summarise&lt;/param&gt;
+private static void PrintResults(IEnumerable&lt;WithMessage&lt;string&gt;&gt; manifestResponse)
+{
+    foreach (var result in manifestResponse)
+    {
+        Console.WriteLine($&quot;Manifested: {result.IsSuccess}. Message: {result.Message}&quot;);
+    }
+}
+</code></pre>
+<p>In this example, the <code>ManifestConsignment</code> task class handles the manifest request, passing a single <code>consignmentReference</code> to PRO. The task then makes use of an additional <code>PrintResults</code> method to display the results of the operation via the console.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/sdk/docfx_project/pro-sdk/flows/classic-flow.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

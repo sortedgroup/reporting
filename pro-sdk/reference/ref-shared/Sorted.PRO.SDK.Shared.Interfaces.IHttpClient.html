@@ -1,0 +1,1700 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IHttpClient
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IHttpClient
+   ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../fusion/toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient">
+  
+  
+  <h1 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient" class="text-break">Interface IHttpClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.IDisposable.Dispose()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Sorted.PRO.SDK.Shared.Interfaces.html">Sorted.PRO.SDK.Shared.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: Sorted.PRO.SDK.Shared.dll</h6>
+  <h5 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IHttpClient : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-13">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_BaseAddress_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_BaseAddress" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress">BaseAddress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Uri BaseAddress { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-12">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DefaultRequestHeaders_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DefaultRequestHeaders" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders">DefaultRequestHeaders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">HttpRequestHeaders DefaultRequestHeaders { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.Headers.HttpRequestHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-15">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_MaxResponseContentBufferSize_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_MaxResponseContentBufferSize" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize">MaxResponseContentBufferSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long MaxResponseContentBufferSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-14">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_Timeout_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_Timeout" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TimeSpan Timeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.TimeSpan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-47">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_CancelPendingRequests_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_CancelPendingRequests" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests">CancelPendingRequests()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CancelPendingRequests()</code></pre>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-39">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String)">DeleteAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; DeleteAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-41">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_System_String_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)">DeleteAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; DeleteAsync(string requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-40">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri)">DeleteAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; DeleteAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-42">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_DeleteAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)">DeleteAsync(Uri, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; DeleteAsync(Uri requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-23">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String)">GetAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-25">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_String_System_Net_Http_HttpCompletionOption_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)">GetAsync(String, HttpCompletionOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri, HttpCompletionOption completionOption)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-29">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_String_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">GetAsync(String, HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-27">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_String_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Threading.CancellationToken)">GetAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(string requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-24">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri)">GetAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-26">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_Uri_System_Net_Http_HttpCompletionOption_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)">GetAsync(Uri, HttpCompletionOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri, HttpCompletionOption completionOption)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-30">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_Uri_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">GetAsync(Uri, HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-28">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetAsync_System_Uri_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)">GetAsync(Uri, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; GetAsync(Uri requestUri, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-19">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetByteArrayAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetByteArrayAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.String)">GetByteArrayAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetByteArrayAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-20">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetByteArrayAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetByteArrayAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.Uri)">GetByteArrayAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;byte[]&gt; GetByteArrayAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Byte</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-21">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStreamAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStreamAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.String)">GetStreamAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Stream&gt; GetStreamAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-22">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStreamAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStreamAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.Uri)">GetStreamAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Stream&gt; GetStreamAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.IO.Stream</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-17">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStringAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStringAsync_System_String_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.String)">GetStringAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetStringAsync(string requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-18">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStringAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_GetStringAsync_System_Uri_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.Uri)">GetStringAsync(Uri)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;string&gt; GetStringAsync(Uri requestUri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-31">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_System_String_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)">PostAsync(String, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PostAsync(string requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-33">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_System_String_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PostAsync(String, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PostAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-32">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)">PostAsync(Uri, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PostAsync(Uri requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-34">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PostAsync_System_Uri_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PostAsync(Uri, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-35">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_System_String_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent)">PutAsync(String, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PutAsync(string requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-37">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_System_String_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PutAsync(String, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PutAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-36">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_System_Uri_System_Net_Http_HttpContent_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)">PutAsync(Uri, HttpContent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PutAsync(Uri requestUri, HttpContent content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-38">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_PutAsync_System_Uri_System_Net_Http_HttpContent_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)">PutAsync(Uri, HttpContent, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; PutAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Uri</span></td>
+        <td><span class="parametername">requestUri</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpContent</span></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-43">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage)">SendAsync(HttpRequestMessage)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-45">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)">SendAsync(HttpRequestMessage, HttpCompletionOption)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-46">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpCompletionOption_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)">SendAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpCompletionOption</span></td>
+        <td><span class="parametername">completionOption</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-44">View Source</a>
+  </span>
+  <a id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*"></a>
+  <h4 id="Sorted_PRO_SDK_Shared_Interfaces_IHttpClient_SendAsync_System_Net_Http_HttpRequestMessage_System_Threading_CancellationToken_" data-uid="Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">SendAsync(HttpRequestMessage, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;HttpResponseMessage&gt; SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.Http.HttpRequestMessage</span></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Net.Http.HttpResponseMessage</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://bitbucket.org/mpdelectio/sorted.pro.sdk/src/doc-comments/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs#lines-10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
