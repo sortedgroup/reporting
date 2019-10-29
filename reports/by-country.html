@@ -10,7 +10,7 @@
     <meta name="title" content="Shipped Consignments by Destination Country ">
     <meta name="generator" content="docfx 2.43.3.0">
     
-    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="shortcut icon" href="..//myfavicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
@@ -68,86 +68,97 @@
 <h1 id="shipped-consignments-by-destination-country">Shipped Consignments by Destination Country</h1>
 
 <p>The <strong>Shipped Consignments by Destination Country</strong> report enables you to see the volume of consignments you have shipped to each of your destination countries.</p>
-<p>It comprises a table listing consignment and package data, a <strong>Consignment Volumes By Country</strong> chart with the shipment data plotted on a map, and a <strong>% of Consignment Volume by Destination Country</strong> bar chart.</p>
+<p>It comprises a consignment data table, a <strong>Consignment Volumes By Country</strong> chart with the shipment data plotted on a map, and a <strong>% of Consignment Volume by Destination Country</strong> bar chart.</p>
 <a href="../images/reports/by-country.png" target="_blank">
     <img src="../images/reports/by-country.png">
 </a>
 <blockquote>
 <p><span class="note-header">Note:</span></p>
-<p>In order for the data in this chart to be accurate, your consignments must have a destination country recorded. Specifically, they must have a valid <code>Address</code> object that has an <code>AddressType</code> of <code>Destination</code> and the relevant two-letter country code in the <code>Address.Country.IsoCode.TwoLetterCode</code> field.</p>
+<p>In order for the data in this chart to be accurate, your consignments must have the correct destination country recorded.</p>
 <p>For more information on recording consignment data in PRO, see the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> page of the API reference.</p>
 </blockquote>
 <h2 id="report-filters">Report Filters</h2>
 <p>The <strong>Shipped Consignments by Destination Country</strong> report offers the following report-wide filters:</p>
 <ul>
 <li><strong>Date Shipped</strong> - enables you to select consignments that were shipped within a given date range.</li>
-<li><strong>Company Name</strong> - where applicable, enables you to select consignments that were shipped by a particular company within your group. You can select multiple companies if required.</li>
+<li><strong>Company</strong> - where applicable, enables you to select consignments that were shipped by a particular company within your group. You can select multiple companies if required.</li>
 <li><strong>Shipping Location</strong> - where applicable, enables you to select consignments that were shipped from a particular shipping location.</li>
 <li><strong>Carrier</strong> - enables you to select consignments that were shipped via a particular carrier.</li>
 <li><strong>Carrier Service</strong> - enables you to select consignments that were shipped via a particular carrier service.</li>
 <li><strong>Delivery Type</strong> - enables you to select consignments that were shipped as a particular delivery type (i.e. <em>Delivery</em> or <em>Click and Collect</em>).</li>
 </ul>
-<h2 id="data-table">Data Table</h2>
-<p>The data table shows how many consignments and packages were shipped to each of your destination countries (with any report filters taken into account):</p>
+<a href="../images/reports/by-country-left-filter.png" target="_blank">
+    <img src="../images/reports/by-country-left-filter.png">
+</a>
+<h2 id="consignments-table">Consignments Table</h2>
+<p>The consignments table shows how many consignments and packages were shipped to each of your destination countries (with any report filters taken into account):</p>
 <a href="../images/reports/by-country-table.png" target="_blank">
     <img src="../images/reports/by-country-table.png">
 </a>
-<h3 id="visualisation-filters">Visualisation Filters</h3>
+<h3 id="visual-filters">Visual Filters</h3>
+<p>You can filter the list of countries displayed on the consignments table using the following filters:</p>
 <ul>
-<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
-<li><strong>Destination Country</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
-<li><strong>Packages</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
+<li><strong>Consignments</strong> (<a href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by number of consignments shipped. For example, if you were to filter on <em>is greater than 5000</em>, then only those countries to which you had shipped 5001 or more consignments would be displayed.</li>
+<li><strong>Destination Country</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a> and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>) - enables you to select a specific country or countries to view.</li>
+<li><strong>Packages</strong> (<a href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by number of packages shipped. For example, if you were to filter on <em>is greater than 5000</em>, then only those countries to which you had shipped 5001 or more packages would be displayed.</li>
 </ul>
 <h3 id="more-options">More Options</h3>
-<p>The data table has the following options available from its <strong>More Options</strong> menu:</p>
+<p>The following options are available from the <strong>More Options</strong> menu:</p>
 <ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#export-data">Export Data</a></li>
-<li><a href="/reports/reports.html#show-data">Show Data</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Destination Country / Consignments / Packages</li>
+<li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
+<li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
+<li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
+<li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
+<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
+<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
+<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort by</a> Destination Country / Consignments / Packages</li>
 </ul>
 <h2 id="consignment-volumes-by-country">Consignment Volumes by Country</h2>
-<p>The <strong>Consignment Volumes by Country</strong> chart displays the countries your organisation has shipped to on a map. The countries you ship to most frequently are displayed in blue tones, while your least frequently shipped-to countries are displayed in green tones.</p>
+<p>The <strong>Consignment Volumes by Country</strong> chart displays the countries your organisation has shipped to on a map. The countries you ship to most frequently are displayed in blue tones, while the countries you ship to least frequently are displayed in green tones.</p>
 <a href="../images/reports/by-country-volumes.png" target="_blank">
     <img src="../images/reports/by-country-volumes.png">
 </a>
 <p>If required, you can search for countries and locations using the search bar at the top of the panel.</p>
-<h3 id="visualisation-filters-1">Visualisation Filters</h3>
+<h3 id="visual-filters-1">Visual Filters</h3>
+<p>You can filter the countries displayed on the <strong>Consignment Volumes by Country</strong> chart via the following filters:</p>
 <ul>
-<li><strong>Consignments</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
-<li><strong>MapBox</strong> (<a href="/reports/reports.html#using-basic-filters">Basic</a> and <a href="/reports/reports.html#using-advanced-filters">Advanced</a>)</li>
+<li><strong>Consignments</strong> (<a href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by number of consignments shipped. For example, if you were to filter on <em>is greater than 5000</em>, then only those countries to which you had shipped 5001 or more consignments would be displayed.</li>
+<li><strong>MapBox</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a> and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>) - enables you to select a specific country or countries to view.</li>
 </ul>
 <h3 id="more-options-1">More Options</h3>
-<p>The <strong>Consignment Volumes by Country</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<p>The following options are available from the <strong>More Options</strong> menu:</p>
 <ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#export-data">Export Data</a></li>
-<li><a href="/reports/reports.html#show-data">Show Data</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
+<li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
+<li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
+<li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
+<li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
 </ul>
+<h3 id="viewing-data">Viewing Data</h3>
+<a href="../images/reports/by-country-volumes-data.png" target="_blank">
+    <img src="../images/reports/by-country-volumes-data.png">
+</a>
+<p>The <strong>Consignment Volumes by Country</strong> chart's <strong>View Data</strong> option shows the number of consignments that you shipped to each destination country.</p>
 <h2 id="-of-consignment-volume-by-destination-country">% of Consignment Volume by Destination Country</h2>
 <p>The <strong>% of Consignment Volume by Destination Country</strong> bar chart shows each destination country's share of your total shipments. Click on a bar to view the corresponding country on the <strong>Consignment Volumes by Country</strong> map.</p>
 <a href="../images/reports/by-country-top-10.png" target="_blank">
     <img src="../images/reports/by-country-top-10.png">
 </a>
-<h3 id="visualisation-filters-2">Visualisation Filters</h3>
-<ul>
-<li><strong>%GT Count of ConsignmentReference</strong> (<a href="/reports/reports.html#using-numerical-filters">Numerical</a>)</li>
-</ul>
 <h3 id="more-options-2">More Options</h3>
-<p>The <strong>% of Consignment Volume by Destination Country</strong> chart has the following options available from its <strong>More Options</strong> menu:</p>
+<p>The following options are available from the <strong>More Options</strong> menu:</p>
 <ul>
-<li><a href="/reports/reports.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/reports.html#export-data">Export Data</a></li>
-<li><a href="/reports/reports.html#show-data">Show Data</a></li>
-<li><a href="/reports/reports.html#spotlight">Spotlight</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
-<li><a href="/reports/reports.html#sort-descending--ascending--sort-by">Sort by</a> Country / %GT Count of ConsignmentReference</li>
+<li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
+<li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
+<li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
+<li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
+<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
+<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
+<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort by</a> Country / %GT Count of ConsignmentReference</li>
 </ul>
+<h3 id="viewing-data-1">Viewing Data</h3>
+<a href="../images/reports/by-country-top-10-data.png" target="_blank">
+    <img src="../images/reports/by-country-top-10-data.png">
+</a>
+<p>The <strong>% of Consignment Volume by Destination Country</strong> chart's <strong>View Data</strong> option shows each destination country's percentage share of your total shipments.</p>
 </article>
           </div>
           
@@ -156,7 +167,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/sdk/docfx_project/reports/by-country.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/reports/by-country.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
