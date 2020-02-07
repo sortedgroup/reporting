@@ -1,0 +1,172 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.IResetCache
+  commentId: T:Sorted.PRO.SDK.Shared.IResetCache
+  id: IResetCache
+  parent: Sorted.PRO.SDK.Shared
+  children:
+  - Sorted.PRO.SDK.Shared.IResetCache.ResetCache(System.Guid,System.String)
+  - Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync(System.Guid,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IResetCache
+  nameWithType: IResetCache
+  fullName: Sorted.PRO.SDK.Shared.IResetCache
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IResetCache.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IResetCache
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IResetCache.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nInterface for Resetting Caches.\n"
+  example: []
+  syntax:
+    content: public interface IResetCache
+    content.vb: Public Interface IResetCache
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Shared.IResetCache.ResetCache(System.Guid,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.IResetCache.ResetCache(System.Guid,System.String)
+  id: ResetCache(System.Guid,System.String)
+  parent: Sorted.PRO.SDK.Shared.IResetCache
+  langs:
+  - csharp
+  - vb
+  name: ResetCache(Guid, String)
+  nameWithType: IResetCache.ResetCache(Guid, String)
+  fullName: Sorted.PRO.SDK.Shared.IResetCache.ResetCache(System.Guid, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IResetCache.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ResetCache
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IResetCache.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nResets the cache.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void ResetCache(Guid secretKey, string customerReference)
+    parameters:
+    - id: secretKey
+      type: System.Guid
+      description: The secret key.
+    - id: customerReference
+      type: System.String
+      description: The customer Reference.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub ResetCache(secretKey As Guid, customerReference As String)
+  overload: Sorted.PRO.SDK.Shared.IResetCache.ResetCache*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync(System.Guid,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync(System.Guid,System.String)
+  id: ResetCacheAsync(System.Guid,System.String)
+  parent: Sorted.PRO.SDK.Shared.IResetCache
+  langs:
+  - csharp
+  - vb
+  name: ResetCacheAsync(Guid, String)
+  nameWithType: IResetCache.ResetCacheAsync(Guid, String)
+  fullName: Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync(System.Guid, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IResetCache.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ResetCacheAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IResetCache.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nResets the cache.\n"
+  example: []
+  syntax:
+    content: Task ResetCacheAsync(Guid secretKey, string customerReference)
+    parameters:
+    - id: secretKey
+      type: System.Guid
+      description: The secret key.
+    - id: customerReference
+      type: System.String
+      description: The customer Reference.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Task to await.
+    content.vb: Function ResetCacheAsync(secretKey As Guid, customerReference As String) As Task
+  overload: Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync*
+references:
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Shared.IResetCache.ResetCache*
+  commentId: Overload:Sorted.PRO.SDK.Shared.IResetCache.ResetCache
+  name: ResetCache
+  nameWithType: IResetCache.ResetCache
+  fullName: Sorted.PRO.SDK.Shared.IResetCache.ResetCache
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync
+  name: ResetCacheAsync
+  nameWithType: IResetCache.ResetCacheAsync
+  fullName: Sorted.PRO.SDK.Shared.IResetCache.ResetCacheAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

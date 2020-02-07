@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  id: GetLabelsResponse
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  children:
+  - Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType
+  - Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File
+  langs:
+  - csharp
+  - vb
+  name: GetLabelsResponse
+  nameWithType: GetLabelsResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/GetLabelsResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabelsResponse
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/GetLabelsResponse.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  summary: "\nThe response recieved when making label requests.\n"
+  example:
+  - >-
+    <pre><code>    {
+            &quot;File&quot;: &quot;SlZCRVSUNpOUV... [data truncated for brevity]... aWE5qWlc1VaMn==&quot;,
+            &quot;ContentType&quot;: &quot;application/pdf&quot;
+        }</code></pre>
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Get Labels Response", "Contains the file contents and content type.")]
+
+      public class GetLabelsResponse
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Get Labels Response", "Contains the file contents and content type.")>
+
+      Public Class GetLabelsResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Get Labels Response
+    - type: System.String
+      value: Contains the file contents and content type.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File
+  id: File
+  parent: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: GetLabelsResponse.File
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/GetLabelsResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: File
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/GetLabelsResponse.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  summary: "\nA base64-encoded byte array representing the file content.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A base64-encoded byte array representing the file content.", false, PropertyCollectionType.Single)]
+
+      public byte[] File { get; set; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A base64-encoded byte array representing the file content.", False, PropertyCollectionType.Single)>
+
+      Public Property File As Byte()
+  overload: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A base64-encoded byte array representing the file content.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType
+  id: ContentType
+  parent: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: GetLabelsResponse.ContentType
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/GetLabelsResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ContentType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/GetLabelsResponse.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  summary: "\nThe content type of the file, e.g. application/pdf.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The content type of the file, e.g.\"application/pdf\".", false, PropertyCollectionType.Single)]
+
+      public string ContentType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The content type of the file, e.g.""application/pdf"".", False, PropertyCollectionType.Single)>
+
+      Public Property ContentType As String
+  overload: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The content type of the file, e.g."application/pdf".
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Labels
+  commentId: N:Sorted.PRO.SDK.DataTypes.Labels
+  name: Sorted.PRO.SDK.DataTypes.Labels
+  nameWithType: Sorted.PRO.SDK.DataTypes.Labels
+  fullName: Sorted.PRO.SDK.DataTypes.Labels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File
+  name: File
+  nameWithType: GetLabelsResponse.File
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.File
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType
+  name: ContentType
+  nameWithType: GetLabelsResponse.ContentType
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse.ContentType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

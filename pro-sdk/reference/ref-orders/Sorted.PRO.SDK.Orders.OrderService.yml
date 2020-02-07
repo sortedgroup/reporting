@@ -1,0 +1,3305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Orders.OrderService
+  commentId: T:Sorted.PRO.SDK.Orders.OrderService
+  id: OrderService
+  parent: Sorted.PRO.SDK.Orders
+  children:
+  - Sorted.PRO.SDK.Orders.OrderService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.GetOrder(System.String)
+  - Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync(System.String)
+  - Sorted.PRO.SDK.Orders.OrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  - Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  langs:
+  - csharp
+  - vb
+  name: OrderService
+  nameWithType: OrderService
+  fullName: Sorted.PRO.SDK.Orders.OrderService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OrderService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nOrder Service\n"
+  example: []
+  syntax:
+    content: 'public class OrderService : BaseService, IOrderService'
+    content.vb: >-
+      Public Class OrderService
+          Inherits BaseService
+          Implements IOrderService
+  seealso:
+  - linkId: Sorted.PRO.SDK.Services.BaseService
+    commentId: T:Sorted.PRO.SDK.Services.BaseService
+  - linkId: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+    commentId: T:Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Orders.OrderService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: OrderService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: OrderService.OrderService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.OrderService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Orders.OrderService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public OrderService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: The HTTP client factory.
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Orders.OrderService.#ctor*
+  nameWithType.vb: OrderService.OrderService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Orders.OrderService.OrderService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: OrderService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Orders.OrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  id: PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: PackOrder(PackOrderRequest)
+  nameWithType: OrderService.PackOrder(PackOrderRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackOrder
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 47
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nPacks a consignment from an order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Pack Order", "Packs a consignment from an order", new string[]{"Orders"}, typeof(PackOrderRequest), typeof(PackOrderResponse), "/orders/{orderReference:string}/pack", "POST", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public PackOrderResponse PackOrder(PackOrderRequest packOrderRequest)
+    parameters:
+    - id: packOrderRequest
+      type: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+      description: The request.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+      description: "\nApiLinks to newly created consignment and (if required) return consignment\n"
+    content.vb: >-
+      <ApiEndpoint("Pack Order", "Packs a consignment from an order", New String() {"Orders"}, GetType(PackOrderRequest), GetType(PackOrderResponse), "/orders/{orderReference:string}/pack", "POST", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function PackOrder(packOrderRequest As PackOrderRequest) As PackOrderResponse
+  overload: Sorted.PRO.SDK.Orders.OrderService.PackOrder*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetOrder(System.String)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.GetOrder(System.String)
+  id: GetOrder(System.String)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: GetOrder(String)
+  nameWithType: OrderService.GetOrder(String)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetOrder(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetOrder
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 71
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nGets an order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Order", "Retrieve the details of the specified order", "Orders", typeof(Order), "/orders/{orderReference:string}", "GET", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public Order GetOrder(string orderReference)
+    parameters:
+    - id: orderReference
+      type: System.String
+      description: The order reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+      description: "\nOrder\n"
+    content.vb: >-
+      <ApiEndpoint("Get Order", "Retrieve the details of the specified order", "Orders", GetType(Order), "/orders/{orderReference:string}", "GET", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetOrder(orderReference As String) As Order
+  overload: Sorted.PRO.SDK.Orders.OrderService.GetOrder*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: A delegate callback throws an exception.
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  id: UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrder(UpdateOrderRequest)
+  nameWithType: OrderService.UpdateOrder(UpdateOrderRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrder
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 91
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nUpdates an Order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Update Order", "Updates the details of the specified order", "Orders", typeof(UpdateOrderRequest), typeof(List<ApiLink>), "/orders/{orderReference:string}", "PUT", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<ApiLink> UpdateOrder(UpdateOrderRequest updateOrderRequest)
+    parameters:
+    - id: updateOrderRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Update Order", "Updates the details of the specified order", "Orders", GetType(UpdateOrderRequest), GetType(List(Of ApiLink)), "/orders/{orderReference:string}", "PUT", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function UpdateOrder(updateOrderRequest As UpdateOrderRequest) As List(Of ApiLink)
+  overload: Sorted.PRO.SDK.Orders.OrderService.UpdateOrder*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  id: CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: CreateOrder(CreateOrderRequest)
+  nameWithType: OrderService.CreateOrder(CreateOrderRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateOrder
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 114
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nCreate an Order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Create Order", "Creates an order", new string[]{"Orders"}, typeof(CreateOrderRequest), typeof(List<ApiLink>), "/orders", "POST", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<ApiLink> CreateOrder(CreateOrderRequest createOrderRequest)
+    parameters:
+    - id: createOrderRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+      description: The request.
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+      description: "\nApiLinks to newly created order\n"
+    content.vb: >-
+      <ApiEndpoint("Create Order", "Creates an order", New String() {"Orders"}, GetType(CreateOrderRequest), GetType(List(Of ApiLink)), "/orders", "POST", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function CreateOrder(createOrderRequest As CreateOrderRequest) As List(Of ApiLink)
+  overload: Sorted.PRO.SDK.Orders.OrderService.CreateOrder*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  id: AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: AddOrderPackages(AddUpdateOrderPackagesRequest)
+  nameWithType: OrderService.AddOrderPackages(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddOrderPackages
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 135
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nAdds packages to an Order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Add Order Packages", "Adds packages to an order", new string[]{"Orders"}, typeof(AddUpdateOrderPackagesRequest), typeof(bool), "orders/addorderpackages", "POST", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool AddOrderPackages(AddUpdateOrderPackagesRequest addOrderPackagesRequest)
+    parameters:
+    - id: addOrderPackagesRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Add Order Packages", "Adds packages to an order", New String() {"Orders"}, GetType(AddUpdateOrderPackagesRequest), GetType(Boolean), "orders/addorderpackages", "POST", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function AddOrderPackages(addOrderPackagesRequest As AddUpdateOrderPackagesRequest) As Boolean
+  overload: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  id: UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderPackages(AddUpdateOrderPackagesRequest)
+  nameWithType: OrderService.UpdateOrderPackages(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrderPackages
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 157
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nUpdates packages on an Order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Updates Order Packages", "Updates a package from an order", new string[]{"Orders"}, typeof(AddUpdateOrderPackagesRequest), typeof(bool), "orders/updateorderpackages", "PUT", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool UpdateOrderPackages(AddUpdateOrderPackagesRequest updateOrderPackagesRequest)
+    parameters:
+    - id: updateOrderPackagesRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Updates Order Packages", "Updates a package from an order", New String() {"Orders"}, GetType(AddUpdateOrderPackagesRequest), GetType(Boolean), "orders/updateorderpackages", "PUT", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function UpdateOrderPackages(updateOrderPackagesRequest As AddUpdateOrderPackagesRequest) As Boolean
+  overload: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  id: AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: AddOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  nameWithType: OrderService.AddOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddOrderPackageItems
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 178
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nAdds Items to an Order Package.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Add Order Package Items", "Adds items to packages in an order", new string[]{"Orders"}, typeof(AddUpdateOrderPackageItemsRequest), typeof(bool), "orders/addorderpackageitems", "POST", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool AddOrderPackageItems(AddUpdateOrderPackageItemsRequest addOrderPackagesItemsRequest)
+    parameters:
+    - id: addOrderPackagesItemsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Add Order Package Items", "Adds items to packages in an order", New String() {"Orders"}, GetType(AddUpdateOrderPackageItemsRequest), GetType(Boolean), "orders/addorderpackageitems", "POST", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function AddOrderPackageItems(addOrderPackagesItemsRequest As AddUpdateOrderPackageItemsRequest) As Boolean
+  overload: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  id: UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  nameWithType: OrderService.UpdateOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrderPackageItems
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 199
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nUpdates items in an Order Package.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Update Order Package Items", "Updates items in a package from an order", new string[]{"Orders"}, typeof(AddUpdateOrderPackageItemsRequest), typeof(bool), "orders/updateorderpackageitems", "PUT", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool UpdateOrderPackageItems(AddUpdateOrderPackageItemsRequest updateOrderPackageItemsRequest)
+    parameters:
+    - id: updateOrderPackageItemsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Update Order Package Items", "Updates items in a package from an order", New String() {"Orders"}, GetType(AddUpdateOrderPackageItemsRequest), GetType(Boolean), "orders/updateorderpackageitems", "PUT", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function UpdateOrderPackageItems(updateOrderPackageItemsRequest As AddUpdateOrderPackageItemsRequest) As Boolean
+  overload: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  id: DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackages(DeleteOrderPackagesRequest)
+  nameWithType: OrderService.DeleteOrderPackages(DeleteOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteOrderPackages
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 220
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nDeletes packages from an Order.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Order Packages", "Deletes packages from an order", new string[]{"Orders"}, typeof(DeleteOrderPackagesRequest), typeof(bool), "orders/deleteorderpackages", "POST", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool DeleteOrderPackages(DeleteOrderPackagesRequest deleteOrderPackagesRequest)
+    parameters:
+    - id: deleteOrderPackagesRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Delete Order Packages", "Deletes packages from an order", New String() {"Orders"}, GetType(DeleteOrderPackagesRequest), GetType(Boolean), "orders/deleteorderpackages", "POST", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function DeleteOrderPackages(deleteOrderPackagesRequest As DeleteOrderPackagesRequest) As Boolean
+  overload: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  id: DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackageItems(DeleteOrderPackageItemsRequest)
+  nameWithType: OrderService.DeleteOrderPackageItems(DeleteOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteOrderPackageItems
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 241
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nDeletes items from an Order Package.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Order Package Items", "Deletes packages items from an order", new string[]{"Orders"}, typeof(DeleteOrderPackageItemsRequest), typeof(bool), "orders/deleteorderpackageitems", "POST", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool DeleteOrderPackageItems(DeleteOrderPackageItemsRequest deleteOrderPackageItemsRequest)
+    parameters:
+    - id: deleteOrderPackageItemsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Delete Order Package Items", "Deletes packages items from an order", New String() {"Orders"}, GetType(DeleteOrderPackageItemsRequest), GetType(Boolean), "orders/deleteorderpackageitems", "POST", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function DeleteOrderPackageItems(deleteOrderPackageItemsRequest As DeleteOrderPackageItemsRequest) As Boolean
+  overload: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  id: GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentsForOrders(OrderConsignmentsRequest)
+  nameWithType: OrderService.GetConsignmentsForOrders(OrderConsignmentsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentsForOrders
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 262
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nGets consignments associated with Orders.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Consignments For Orders", "Gets associated consignments for orders", new string[]{"Orders"}, typeof(OrderConsignmentsRequest), typeof(OrderConsignmentsResponse), "orders/consignments", "PUT", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.Ambiguous, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public OrderConsignmentsResponse GetConsignmentsForOrders(OrderConsignmentsRequest orderConsignmentsRequest)
+    parameters:
+    - id: orderConsignmentsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+      description: ''
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Consignments For Orders", "Gets associated consignments for orders", New String() {"Orders"}, GetType(OrderConsignmentsRequest), GetType(OrderConsignmentsResponse), "orders/consignments", "PUT", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.Ambiguous, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetConsignmentsForOrders(orderConsignmentsRequest As OrderConsignmentsRequest) As OrderConsignmentsResponse
+  overload: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  id: GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentsForOrdersAsync(OrderConsignmentsRequest)
+  nameWithType: OrderService.GetConsignmentsForOrdersAsync(OrderConsignmentsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentsForOrdersAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 278
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nGets consignments associated with Orders.\n"
+  example: []
+  syntax:
+    content: public Task<OrderConsignmentsResponse> GetConsignmentsForOrdersAsync(OrderConsignmentsRequest orderConsignmentsRequest)
+    parameters:
+    - id: orderConsignmentsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+      description: The order consignments request.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+    content.vb: Public Function GetConsignmentsForOrdersAsync(orderConsignmentsRequest As OrderConsignmentsRequest) As Task(Of OrderConsignmentsResponse)
+  overload: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  id: PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: PackOrderAsync(PackOrderRequest)
+  nameWithType: OrderService.PackOrderAsync(PackOrderRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackOrderAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 284
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nPacks a consignment from an order.\n"
+  example: []
+  syntax:
+    content: public Task<PackOrderResponse> PackOrderAsync(PackOrderRequest packOrderRequest)
+    parameters:
+    - id: packOrderRequest
+      type: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref> which includes ApiLinks to newly created consignment and (if required) return consignment\n"
+    content.vb: Public Function PackOrderAsync(packOrderRequest As PackOrderRequest) As Task(Of PackOrderResponse)
+  overload: Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync(System.String)
+  id: GetOrderAsync(System.String)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: GetOrderAsync(String)
+  nameWithType: OrderService.GetOrderAsync(String)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetOrderAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 290
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nGets an order.\n"
+  example: []
+  syntax:
+    content: public Task<Order> GetOrderAsync(string orderReference)
+    parameters:
+    - id: orderReference
+      type: System.String
+      description: The order reference.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Orders.Order.Order}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+    content.vb: Public Function GetOrderAsync(orderReference As String) As Task(Of Order)
+  overload: Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  id: CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: CreateOrderAsync(CreateOrderRequest)
+  nameWithType: OrderService.CreateOrderAsync(CreateOrderRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateOrderAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 296
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nCreate an Order.\n"
+  example: []
+  syntax:
+    content: public Task<List<ApiLink>> CreateOrderAsync(CreateOrderRequest createOrderRequest)
+    parameters:
+    - id: createOrderRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}}
+      description: "\n<xref href=\"Task%7bList%7bApiLink%7d%7d\" data-throw-if-not-resolved=\"false\"></xref> ApiLinks to newly created order\n"
+    content.vb: Public Function CreateOrderAsync(createOrderRequest As CreateOrderRequest) As Task(Of List(Of ApiLink))
+  overload: Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  id: UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderAsync(UpdateOrderRequest)
+  nameWithType: OrderService.UpdateOrderAsync(UpdateOrderRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrderAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 302
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nUpdates an Order.\n"
+  example: []
+  syntax:
+    content: public Task<List<ApiLink>> UpdateOrderAsync(UpdateOrderRequest updateOrderRequest)
+    parameters:
+    - id: updateOrderRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}}
+      description: "\n<xref href=\"Task%7bList%7bApiLink%7d%7d\" data-throw-if-not-resolved=\"false\"></xref> ApiLinks to updated order\n"
+    content.vb: Public Function UpdateOrderAsync(updateOrderRequest As UpdateOrderRequest) As Task(Of List(Of ApiLink))
+  overload: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  id: DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackageItemsAsync(DeleteOrderPackageItemsRequest)
+  nameWithType: OrderService.DeleteOrderPackageItemsAsync(DeleteOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteOrderPackageItemsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 308
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nDeletes items from an Order Package.\n"
+  example: []
+  syntax:
+    content: public Task<bool> DeleteOrderPackageItemsAsync(DeleteOrderPackageItemsRequest deleteOrderPackageItemsRequest)
+    parameters:
+    - id: deleteOrderPackageItemsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref> <code>true</code> if deleted successfully, otherwise <code>false</code>\n"
+    content.vb: Public Function DeleteOrderPackageItemsAsync(deleteOrderPackageItemsRequest As DeleteOrderPackageItemsRequest) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  id: DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackagesAsync(DeleteOrderPackagesRequest)
+  nameWithType: OrderService.DeleteOrderPackagesAsync(DeleteOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteOrderPackagesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 314
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nDeletes packages from an Order.\n"
+  example: []
+  syntax:
+    content: public Task<bool> DeleteOrderPackagesAsync(DeleteOrderPackagesRequest deleteOrderPackagesRequest)
+    parameters:
+    - id: deleteOrderPackagesRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+      description: The delete order packages request.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref> <code>true</code> if deleted successfully, otherwise <code>false</code>\n"
+    content.vb: Public Function DeleteOrderPackagesAsync(deleteOrderPackagesRequest As DeleteOrderPackagesRequest) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  id: UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  nameWithType: OrderService.UpdateOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrderPackageItemsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 320
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nUpdates items in an Order Package.\n"
+  example: []
+  syntax:
+    content: public Task<bool> UpdateOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest updateOrderPackageItemsRequest)
+    parameters:
+    - id: updateOrderPackageItemsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref> <code>true</code> updated successfully, otherwise <code>false</code>\n"
+    content.vb: Public Function UpdateOrderPackageItemsAsync(updateOrderPackageItemsRequest As AddUpdateOrderPackageItemsRequest) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  id: AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: AddOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  nameWithType: OrderService.AddOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddOrderPackageItemsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 326
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nAdds Items to an Order Package.\n"
+  example: []
+  syntax:
+    content: public Task<bool> AddOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest addOrderPackagesItemsRequest)
+    parameters:
+    - id: addOrderPackagesItemsRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\n<xref href=\"System.Threading.Tasks.Task%601\" data-throw-if-not-resolved=\"false\"></xref> <code>true</code> if added successfully, otherwise <code>false</code>\n"
+    content.vb: Public Function AddOrderPackageItemsAsync(addOrderPackagesItemsRequest As AddUpdateOrderPackageItemsRequest) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  id: AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: AddOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  nameWithType: OrderService.AddOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddOrderPackagesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 332
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nAdds packages to an Order.\n"
+  example: []
+  syntax:
+    content: public Task<bool> AddOrderPackagesAsync(AddUpdateOrderPackagesRequest addOrderPackagesRequest)
+    parameters:
+    - id: addOrderPackagesRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> <code>true</code> if updated successfully, otherwise <code>false</code>
+    content.vb: Public Function AddOrderPackagesAsync(addOrderPackagesRequest As AddUpdateOrderPackagesRequest) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  id: UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Orders.OrderService
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  nameWithType: OrderService.UpdateOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Orders/OrderService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrderPackagesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Orders/OrderService.cs
+    startLine: 338
+  assemblies:
+  - Sorted.PRO.SDK.Orders
+  namespace: Sorted.PRO.SDK.Orders
+  summary: "\nUpdates packages on an Order.\n"
+  example: []
+  syntax:
+    content: public Task<bool> UpdateOrderPackagesAsync(AddUpdateOrderPackagesRequest updateOrderPackagesRequest)
+    parameters:
+    - id: updateOrderPackagesRequest
+      type: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <xref href="System.Threading.Tasks.Task%601" data-throw-if-not-resolved="false"></xref> <code>true</code> if updated successfully, otherwise <code>false</code>
+    content.vb: Public Function UpdateOrderPackagesAsync(updateOrderPackagesRequest As AddUpdateOrderPackagesRequest) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Services.BaseService
+  commentId: T:Sorted.PRO.SDK.Services.BaseService
+  isExternal: true
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  parent: Sorted.PRO.SDK.Interfaces.Services
+  name: IOrderService
+  nameWithType: IOrderService
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+- uid: Sorted.PRO.SDK.Orders
+  commentId: N:Sorted.PRO.SDK.Orders
+  name: Sorted.PRO.SDK.Orders
+  nameWithType: Sorted.PRO.SDK.Orders
+  fullName: Sorted.PRO.SDK.Orders
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.Services
+  commentId: N:Sorted.PRO.SDK.Interfaces.Services
+  name: Sorted.PRO.SDK.Interfaces.Services
+  nameWithType: Sorted.PRO.SDK.Interfaces.Services
+  fullName: Sorted.PRO.SDK.Interfaces.Services
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService
+  commentId: T:Sorted.PRO.SDK.Orders.OrderService
+  name: OrderService
+  nameWithType: OrderService
+  fullName: Sorted.PRO.SDK.Orders.OrderService
+- uid: Sorted.PRO.SDK.Orders.OrderService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.#ctor
+  name: OrderService
+  nameWithType: OrderService.OrderService
+  fullName: Sorted.PRO.SDK.Orders.OrderService.OrderService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Orders.OrderService.PackOrder*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.PackOrder
+  name: PackOrder
+  nameWithType: OrderService.PackOrder
+  fullName: Sorted.PRO.SDK.Orders.OrderService.PackOrder
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: PackOrder(PackOrderRequest)
+  nameWithType: IOrderService.PackOrder(PackOrderRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+    name: PackOrder
+    nameWithType: IOrderService.PackOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+    name: PackOrderRequest
+    nameWithType: PackOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+    name: PackOrder
+    nameWithType: IOrderService.PackOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+    name: PackOrderRequest
+    nameWithType: PackOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders
+  name: PackOrderRequest
+  nameWithType: PackOrderRequest
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders
+  name: PackOrderResponse
+  nameWithType: PackOrderResponse
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders
+  commentId: N:Sorted.PRO.SDK.DataTypes.PackOrders
+  name: Sorted.PRO.SDK.DataTypes.PackOrders
+  nameWithType: Sorted.PRO.SDK.DataTypes.PackOrders
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetOrder*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.GetOrder
+  name: GetOrder
+  nameWithType: OrderService.GetOrder
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetOrder
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  isExternal: true
+  name: GetOrder(String)
+  nameWithType: IOrderService.GetOrder(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder(System.String)
+    name: GetOrder
+    nameWithType: IOrderService.GetOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder(System.String)
+    name: GetOrder
+    nameWithType: IOrderService.GetOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: Order
+  nameWithType: Order
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order
+  commentId: N:Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: Sorted.PRO.SDK.DataTypes.Orders.Order
+  nameWithType: Sorted.PRO.SDK.DataTypes.Orders.Order
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrder*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.UpdateOrder
+  name: UpdateOrder
+  nameWithType: OrderService.UpdateOrder
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrder
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: UpdateOrder(UpdateOrderRequest)
+  nameWithType: IOrderService.UpdateOrder(UpdateOrderRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+    name: UpdateOrder
+    nameWithType: IOrderService.UpdateOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+    name: UpdateOrderRequest
+    nameWithType: UpdateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+    name: UpdateOrder
+    nameWithType: IOrderService.UpdateOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+    name: UpdateOrderRequest
+    nameWithType: UpdateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: UpdateOrderRequest
+  nameWithType: UpdateOrderRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ApiLink>
+  nameWithType: List<ApiLink>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ApiLink>
+  nameWithType.vb: List(Of ApiLink)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ApiLink)
+  name.vb: List(Of ApiLink)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.CreateOrder*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.CreateOrder
+  name: CreateOrder
+  nameWithType: OrderService.CreateOrder
+  fullName: Sorted.PRO.SDK.Orders.OrderService.CreateOrder
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: CreateOrder(CreateOrderRequest)
+  nameWithType: IOrderService.CreateOrder(CreateOrderRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+    name: CreateOrder
+    nameWithType: IOrderService.CreateOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+    name: CreateOrderRequest
+    nameWithType: CreateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+    name: CreateOrder
+    nameWithType: IOrderService.CreateOrder
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrder
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+    name: CreateOrderRequest
+    nameWithType: CreateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: CreateOrderRequest
+  nameWithType: CreateOrderRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages
+  name: AddOrderPackages
+  nameWithType: OrderService.AddOrderPackages
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackages
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: AddOrderPackages(AddUpdateOrderPackagesRequest)
+  nameWithType: IOrderService.AddOrderPackages(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: AddOrderPackages
+    nameWithType: IOrderService.AddOrderPackages
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: AddOrderPackages
+    nameWithType: IOrderService.AddOrderPackages
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  name: AddUpdateOrderPackagesRequest
+  nameWithType: AddUpdateOrderPackagesRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  commentId: N:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  name: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  nameWithType: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages
+  name: UpdateOrderPackages
+  nameWithType: OrderService.UpdateOrderPackages
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackages
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: UpdateOrderPackages(AddUpdateOrderPackagesRequest)
+  nameWithType: IOrderService.UpdateOrderPackages(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: UpdateOrderPackages
+    nameWithType: IOrderService.UpdateOrderPackages
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: UpdateOrderPackages
+    nameWithType: IOrderService.UpdateOrderPackages
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems
+  name: AddOrderPackageItems
+  nameWithType: OrderService.AddOrderPackageItems
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItems
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: AddOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  nameWithType: IOrderService.AddOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: AddOrderPackageItems
+    nameWithType: IOrderService.AddOrderPackageItems
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: AddOrderPackageItems
+    nameWithType: IOrderService.AddOrderPackageItems
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+  name: AddUpdateOrderPackageItemsRequest
+  nameWithType: AddUpdateOrderPackageItemsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+  commentId: N:Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+  name: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+  nameWithType: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems
+  name: UpdateOrderPackageItems
+  nameWithType: OrderService.UpdateOrderPackageItems
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItems
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: UpdateOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  nameWithType: IOrderService.UpdateOrderPackageItems(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: UpdateOrderPackageItems
+    nameWithType: IOrderService.UpdateOrderPackageItems
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: UpdateOrderPackageItems
+    nameWithType: IOrderService.UpdateOrderPackageItems
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages
+  name: DeleteOrderPackages
+  nameWithType: OrderService.DeleteOrderPackages
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackages
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: DeleteOrderPackages(DeleteOrderPackagesRequest)
+  nameWithType: IOrderService.DeleteOrderPackages(DeleteOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+    name: DeleteOrderPackages
+    nameWithType: IOrderService.DeleteOrderPackages
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+    name: DeleteOrderPackagesRequest
+    nameWithType: DeleteOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+    name: DeleteOrderPackages
+    nameWithType: IOrderService.DeleteOrderPackages
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackages
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+    name: DeleteOrderPackagesRequest
+    nameWithType: DeleteOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  name: DeleteOrderPackagesRequest
+  nameWithType: DeleteOrderPackagesRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems
+  name: DeleteOrderPackageItems
+  nameWithType: OrderService.DeleteOrderPackageItems
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItems
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: DeleteOrderPackageItems(DeleteOrderPackageItemsRequest)
+  nameWithType: IOrderService.DeleteOrderPackageItems(DeleteOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+    name: DeleteOrderPackageItems
+    nameWithType: IOrderService.DeleteOrderPackageItems
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+    name: DeleteOrderPackageItemsRequest
+    nameWithType: DeleteOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+    name: DeleteOrderPackageItems
+    nameWithType: IOrderService.DeleteOrderPackageItems
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItems
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+    name: DeleteOrderPackageItemsRequest
+    nameWithType: DeleteOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem
+  name: DeleteOrderPackageItemsRequest
+  nameWithType: DeleteOrderPackageItemsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders
+  name: GetConsignmentsForOrders
+  nameWithType: OrderService.GetConsignmentsForOrders
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrders
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: GetConsignmentsForOrders(OrderConsignmentsRequest)
+  nameWithType: IOrderService.GetConsignmentsForOrders(OrderConsignmentsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+    name: GetConsignmentsForOrders
+    nameWithType: IOrderService.GetConsignmentsForOrders
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+    name: OrderConsignmentsRequest
+    nameWithType: OrderConsignmentsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+    name: GetConsignmentsForOrders
+    nameWithType: IOrderService.GetConsignmentsForOrders
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrders
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+    name: OrderConsignmentsRequest
+    nameWithType: OrderConsignmentsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: OrderConsignmentsRequest
+  nameWithType: OrderConsignmentsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: OrderConsignmentsResponse
+  nameWithType: OrderConsignmentsResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync
+  name: GetConsignmentsForOrdersAsync
+  nameWithType: OrderService.GetConsignmentsForOrdersAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetConsignmentsForOrdersAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: GetConsignmentsForOrdersAsync(OrderConsignmentsRequest)
+  nameWithType: IOrderService.GetConsignmentsForOrdersAsync(OrderConsignmentsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+    name: GetConsignmentsForOrdersAsync
+    nameWithType: IOrderService.GetConsignmentsForOrdersAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+    name: OrderConsignmentsRequest
+    nameWithType: OrderConsignmentsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest)
+    name: GetConsignmentsForOrdersAsync
+    nameWithType: IOrderService.GetConsignmentsForOrdersAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetConsignmentsForOrdersAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+    name: OrderConsignmentsRequest
+    nameWithType: OrderConsignmentsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OrderConsignmentsResponse>
+  nameWithType: Task<OrderConsignmentsResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse>
+  nameWithType.vb: Task(Of OrderConsignmentsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse)
+  name.vb: Task(Of OrderConsignmentsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+    name: OrderConsignmentsResponse
+    nameWithType: OrderConsignmentsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+    name: OrderConsignmentsResponse
+    nameWithType: OrderConsignmentsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.OrderConsignmentsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync
+  name: PackOrderAsync
+  nameWithType: OrderService.PackOrderAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.PackOrderAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: PackOrderAsync(PackOrderRequest)
+  nameWithType: IOrderService.PackOrderAsync(PackOrderRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+    name: PackOrderAsync
+    nameWithType: IOrderService.PackOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+    name: PackOrderRequest
+    nameWithType: PackOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync(Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest)
+    name: PackOrderAsync
+    nameWithType: IOrderService.PackOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.PackOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+    name: PackOrderRequest
+    nameWithType: PackOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PackOrderResponse>
+  nameWithType: Task<PackOrderResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse>
+  nameWithType.vb: Task(Of PackOrderResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse)
+  name.vb: Task(Of PackOrderResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+    name: PackOrderResponse
+    nameWithType: PackOrderResponse
+    fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+    name: PackOrderResponse
+    nameWithType: PackOrderResponse
+    fullName: Sorted.PRO.SDK.DataTypes.PackOrders.PackOrderResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync
+  name: GetOrderAsync
+  nameWithType: OrderService.GetOrderAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.GetOrderAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  isExternal: true
+  name: GetOrderAsync(String)
+  nameWithType: IOrderService.GetOrderAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync(System.String)
+    name: GetOrderAsync
+    nameWithType: IOrderService.GetOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync(System.String)
+    name: GetOrderAsync
+    nameWithType: IOrderService.GetOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.GetOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Orders.Order.Order}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Orders.Order.Order}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Order>
+  nameWithType: Task<Order>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Orders.Order.Order>
+  nameWithType.vb: Task(Of Order)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Orders.Order.Order)
+  name.vb: Task(Of Order)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+    name: Order
+    nameWithType: Order
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+    name: Order
+    nameWithType: Order
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.Order
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync
+  name: CreateOrderAsync
+  nameWithType: OrderService.CreateOrderAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.CreateOrderAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: CreateOrderAsync(CreateOrderRequest)
+  nameWithType: IOrderService.CreateOrderAsync(CreateOrderRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+    name: CreateOrderAsync
+    nameWithType: IOrderService.CreateOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+    name: CreateOrderRequest
+    nameWithType: CreateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest)
+    name: CreateOrderAsync
+    nameWithType: IOrderService.CreateOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.CreateOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+    name: CreateOrderRequest
+    nameWithType: CreateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.CreateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<ApiLink>>
+  nameWithType: Task<List<ApiLink>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ApiLink>>
+  nameWithType.vb: Task(Of List(Of ApiLink))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ApiLink))
+  name.vb: Task(Of List(Of ApiLink))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync
+  name: UpdateOrderAsync
+  nameWithType: OrderService.UpdateOrderAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: UpdateOrderAsync(UpdateOrderRequest)
+  nameWithType: IOrderService.UpdateOrderAsync(UpdateOrderRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+    name: UpdateOrderAsync
+    nameWithType: IOrderService.UpdateOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+    name: UpdateOrderRequest
+    nameWithType: UpdateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync(Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest)
+    name: UpdateOrderAsync
+    nameWithType: IOrderService.UpdateOrderAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+    name: UpdateOrderRequest
+    nameWithType: UpdateOrderRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync
+  name: DeleteOrderPackageItemsAsync
+  nameWithType: OrderService.DeleteOrderPackageItemsAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackageItemsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: DeleteOrderPackageItemsAsync(DeleteOrderPackageItemsRequest)
+  nameWithType: IOrderService.DeleteOrderPackageItemsAsync(DeleteOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+    name: DeleteOrderPackageItemsAsync
+    nameWithType: IOrderService.DeleteOrderPackageItemsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+    name: DeleteOrderPackageItemsRequest
+    nameWithType: DeleteOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest)
+    name: DeleteOrderPackageItemsAsync
+    nameWithType: IOrderService.DeleteOrderPackageItemsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackageItemsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+    name: DeleteOrderPackageItemsRequest
+    nameWithType: DeleteOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.DeleteOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync
+  name: DeleteOrderPackagesAsync
+  nameWithType: OrderService.DeleteOrderPackagesAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.DeleteOrderPackagesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: DeleteOrderPackagesAsync(DeleteOrderPackagesRequest)
+  nameWithType: IOrderService.DeleteOrderPackagesAsync(DeleteOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+    name: DeleteOrderPackagesAsync
+    nameWithType: IOrderService.DeleteOrderPackagesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+    name: DeleteOrderPackagesRequest
+    nameWithType: DeleteOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest)
+    name: DeleteOrderPackagesAsync
+    nameWithType: IOrderService.DeleteOrderPackagesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.DeleteOrderPackagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+    name: DeleteOrderPackagesRequest
+    nameWithType: DeleteOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync
+  name: UpdateOrderPackageItemsAsync
+  nameWithType: OrderService.UpdateOrderPackageItemsAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackageItemsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: UpdateOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  nameWithType: IOrderService.UpdateOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: UpdateOrderPackageItemsAsync
+    nameWithType: IOrderService.UpdateOrderPackageItemsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: UpdateOrderPackageItemsAsync
+    nameWithType: IOrderService.UpdateOrderPackageItemsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackageItemsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync
+  name: AddOrderPackageItemsAsync
+  nameWithType: OrderService.AddOrderPackageItemsAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackageItemsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: AddOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  nameWithType: IOrderService.AddOrderPackageItemsAsync(AddUpdateOrderPackageItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: AddOrderPackageItemsAsync
+    nameWithType: IOrderService.AddOrderPackageItemsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest)
+    name: AddOrderPackageItemsAsync
+    nameWithType: IOrderService.AddOrderPackageItemsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackageItemsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+    name: AddUpdateOrderPackageItemsRequest
+    nameWithType: AddUpdateOrderPackageItemsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.AddUpdateOrderPackageItemsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync
+  name: AddOrderPackagesAsync
+  nameWithType: OrderService.AddOrderPackagesAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.AddOrderPackagesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: AddOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  nameWithType: IOrderService.AddOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: AddOrderPackagesAsync
+    nameWithType: IOrderService.AddOrderPackagesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: AddOrderPackagesAsync
+    nameWithType: IOrderService.AddOrderPackagesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.AddOrderPackagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync
+  name: UpdateOrderPackagesAsync
+  nameWithType: OrderService.UpdateOrderPackagesAsync
+  fullName: Sorted.PRO.SDK.Orders.OrderService.UpdateOrderPackagesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Services.IOrderService
+  name: UpdateOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  nameWithType: IOrderService.UpdateOrderPackagesAsync(AddUpdateOrderPackagesRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: UpdateOrderPackagesAsync
+    nameWithType: IOrderService.UpdateOrderPackagesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync(Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest)
+    name: UpdateOrderPackagesAsync
+    nameWithType: IOrderService.UpdateOrderPackagesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Services.IOrderService.UpdateOrderPackagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+    name: AddUpdateOrderPackagesRequest
+    nameWithType: AddUpdateOrderPackagesRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.AddUpdateOrderPackagesRequest
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,761 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  id: FlattenedEventViewModel
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  children:
+  - Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code
+  - Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description
+  - Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location
+  - Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy
+  - Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp
+  langs:
+  - csharp
+  - vb
+  name: FlattenedEventViewModel
+  nameWithType: FlattenedEventViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FlattenedEventViewModel
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Flattened Event View Model", "Represents a tracking event.")]
+
+      public class FlattenedEventViewModel
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Flattened Event View Model", "Represents a tracking event.")>
+
+      Public Class FlattenedEventViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Flattened Event View Model
+    - type: System.String
+      value: Represents a tracking event.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp
+  id: TimeStamp
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  langs:
+  - csharp
+  - vb
+  name: TimeStamp
+  nameWithType: FlattenedEventViewModel.TimeStamp
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: TimeStamp
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The timestamp of the tracking event.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset TimeStamp { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The timestamp of the tracking event.", False, PropertyCollectionType.Single)>
+
+      Public Property TimeStamp As DateTimeOffset
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The timestamp of the tracking event.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code
+  id: Code
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: FlattenedEventViewModel.Code
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Code
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The code for this tracking event.", false, PropertyCollectionType.Single)]
+
+      public string Code { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The code for this tracking event.", False, PropertyCollectionType.Single)>
+
+      Public Property Code As String
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The code for this tracking event.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description
+  id: Description
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: FlattenedEventViewModel.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Description
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A description for this tracking event.", false, PropertyCollectionType.Single)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A description for this tracking event.", False, PropertyCollectionType.Single)>
+
+      Public Property Description As String
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A description for this tracking event.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy
+  id: SignedBy
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  langs:
+  - csharp
+  - vb
+  name: SignedBy
+  nameWithType: FlattenedEventViewModel.SignedBy
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SignedBy
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the person that signed for the package (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string SignedBy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the person that signed for the package (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property SignedBy As String
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the person that signed for the package (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location
+  id: Location
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: FlattenedEventViewModel.Location
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Location
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The location of the tracking event.", false, PropertyCollectionType.Single)]
+
+      public string Location { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The location of the tracking event.", False, PropertyCollectionType.Single)>
+
+      Public Property Location As String
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The location of the tracking event.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName
+  id: CarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceName
+  nameWithType: FlattenedEventViewModel.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/FlattenedEventViewModel.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the carrier service to which this event applies.", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the carrier service to which this event applies.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the carrier service to which this event applies.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Tracking
+  commentId: N:Sorted.PRO.SDK.DataTypes.Tracking
+  name: Sorted.PRO.SDK.DataTypes.Tracking
+  nameWithType: Sorted.PRO.SDK.DataTypes.Tracking
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp
+  name: TimeStamp
+  nameWithType: FlattenedEventViewModel.TimeStamp
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.TimeStamp
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code
+  name: Code
+  nameWithType: FlattenedEventViewModel.Code
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Code
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description
+  name: Description
+  nameWithType: FlattenedEventViewModel.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Description
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy
+  name: SignedBy
+  nameWithType: FlattenedEventViewModel.SignedBy
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.SignedBy
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location
+  name: Location
+  nameWithType: FlattenedEventViewModel.Location
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.Location
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName
+  name: CarrierServiceName
+  nameWithType: FlattenedEventViewModel.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedEventViewModel.CarrierServiceName

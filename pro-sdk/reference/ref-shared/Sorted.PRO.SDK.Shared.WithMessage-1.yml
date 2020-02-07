@@ -1,0 +1,893 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1
+  commentId: T:Sorted.PRO.SDK.Shared.WithMessage`1
+  id: WithMessage`1
+  parent: Sorted.PRO.SDK.Shared
+  children:
+  - Sorted.PRO.SDK.Shared.WithMessage`1.#ctor
+  - Sorted.PRO.SDK.Shared.WithMessage`1.#ctor(`0,System.Boolean,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink},System.String)
+  - Sorted.PRO.SDK.Shared.WithMessage`1.ApiLinks
+  - Sorted.PRO.SDK.Shared.WithMessage`1.Data
+  - Sorted.PRO.SDK.Shared.WithMessage`1.IsSuccess
+  - Sorted.PRO.SDK.Shared.WithMessage`1.Message
+  - Sorted.PRO.SDK.Shared.WithMessage`1.ToString
+  langs:
+  - csharp
+  - vb
+  name: WithMessage<T>
+  nameWithType: WithMessage<T>
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: WithMessage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("With Message<type>", "A generic response containing a message of the type specified.")]
+
+      public class WithMessage<T>
+    typeParameters:
+    - id: T
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("With Message<type>", "A generic response containing a message of the type specified.")>
+
+      Public Class WithMessage(Of T)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: With Message<type>
+    - type: System.String
+      value: A generic response containing a message of the type specified.
+  nameWithType.vb: WithMessage(Of T)
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T)
+  name.vb: WithMessage(Of T)
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.IsSuccess
+  commentId: P:Sorted.PRO.SDK.Shared.WithMessage`1.IsSuccess
+  id: IsSuccess
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: IsSuccess
+  nameWithType: WithMessage<T>.IsSuccess
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.IsSuccess
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsSuccess
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nGets a value indicating whether this instance is success.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether the operation was successful.", false, PropertyCollectionType.Single)]
+
+      public bool IsSuccess { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is success; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether the operation was successful.", False, PropertyCollectionType.Single)>
+
+      Public Property IsSuccess As Boolean
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.IsSuccess*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether the operation was successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  nameWithType.vb: WithMessage(Of T).IsSuccess
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).IsSuccess
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.Message
+  commentId: P:Sorted.PRO.SDK.Shared.WithMessage`1.Message
+  id: Message
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: WithMessage<T>.Message
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.Message
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Message
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nGets the message.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The message property.", false, PropertyCollectionType.Single)]
+
+      public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe message.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The message property.", False, PropertyCollectionType.Single)>
+
+      Public Property Message As String
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.Message*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The message property.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  nameWithType.vb: WithMessage(Of T).Message
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).Message
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.Data
+  commentId: P:Sorted.PRO.SDK.Shared.WithMessage`1.Data
+  id: Data
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: WithMessage<T>.Data
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.Data
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Data
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nGets the data.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A generic type of data providing more details.", false, PropertyCollectionType.Single)]
+
+      public T Data { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+      description: "\nThe data.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A generic type of data providing more details.", False, PropertyCollectionType.Single)>
+
+      Public Property Data As T
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.Data*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A generic type of data providing more details.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  nameWithType.vb: WithMessage(Of T).Data
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).Data
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.ApiLinks
+  commentId: P:Sorted.PRO.SDK.Shared.WithMessage`1.ApiLinks
+  id: ApiLinks
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: ApiLinks
+  nameWithType: WithMessage<T>.ApiLinks
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.ApiLinks
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ApiLinks
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 47
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A collection of API links for affected resources.", PropertyCollectionType.Collection)]
+
+      public List<ApiLink> ApiLinks { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A collection of API links for affected resources.", PropertyCollectionType.Collection)>
+
+      Public Property ApiLinks As List(Of ApiLink)
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.ApiLinks*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A collection of API links for affected resources.
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  nameWithType.vb: WithMessage(Of T).ApiLinks
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).ApiLinks
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.#ctor
+  commentId: M:Sorted.PRO.SDK.Shared.WithMessage`1.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: WithMessage()
+  nameWithType: WithMessage<T>.WithMessage()
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.WithMessage()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 52
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public WithMessage()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.#ctor*
+  nameWithType.vb: WithMessage(Of T).WithMessage()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).WithMessage()
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.#ctor(`0,System.Boolean,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink},System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.WithMessage`1.#ctor(`0,System.Boolean,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink},System.String)
+  id: '#ctor(`0,System.Boolean,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink},System.String)'
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: WithMessage(T, Boolean, List<ApiLink>, String)
+  nameWithType: WithMessage<T>.WithMessage(T, Boolean, List<ApiLink>, String)
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.WithMessage(T, System.Boolean, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ApiLink>, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 63
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\n\n"
+  example: []
+  syntax:
+    content: public WithMessage(T data, bool isSuccess, List<ApiLink> apiLinks, string explanation)
+    parameters:
+    - id: data
+      type: '{T}'
+      description: ''
+    - id: isSuccess
+      type: System.Boolean
+      description: ''
+    - id: apiLinks
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+      description: ''
+    - id: explanation
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(data As T, isSuccess As Boolean, apiLinks As List(Of ApiLink), explanation As String)
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.#ctor*
+  nameWithType.vb: WithMessage(Of T).WithMessage(T, Boolean, List(Of ApiLink), String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).WithMessage(T, System.Boolean, System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ApiLink), System.String)
+  name.vb: WithMessage(T, Boolean, List(Of ApiLink), String)
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.ToString
+  commentId: M:Sorted.PRO.SDK.Shared.WithMessage`1.ToString
+  id: ToString
+  parent: Sorted.PRO.SDK.Shared.WithMessage`1
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: WithMessage<T>.ToString()
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.ToString()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/WithMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ToString
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/WithMessage.cs
+    startLine: 72
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Object.ToString
+  overload: Sorted.PRO.SDK.Shared.WithMessage`1.ToString*
+  nameWithType.vb: WithMessage(Of T).ToString()
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).ToString()
+references:
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.IsSuccess*
+  commentId: Overload:Sorted.PRO.SDK.Shared.WithMessage`1.IsSuccess
+  name: IsSuccess
+  nameWithType: WithMessage<T>.IsSuccess
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.IsSuccess
+  nameWithType.vb: WithMessage(Of T).IsSuccess
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).IsSuccess
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.Message*
+  commentId: Overload:Sorted.PRO.SDK.Shared.WithMessage`1.Message
+  name: Message
+  nameWithType: WithMessage<T>.Message
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.Message
+  nameWithType.vb: WithMessage(Of T).Message
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.Data*
+  commentId: Overload:Sorted.PRO.SDK.Shared.WithMessage`1.Data
+  name: Data
+  nameWithType: WithMessage<T>.Data
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.Data
+  nameWithType.vb: WithMessage(Of T).Data
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).Data
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.ApiLinks*
+  commentId: Overload:Sorted.PRO.SDK.Shared.WithMessage`1.ApiLinks
+  name: ApiLinks
+  nameWithType: WithMessage<T>.ApiLinks
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.ApiLinks
+  nameWithType.vb: WithMessage(Of T).ApiLinks
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).ApiLinks
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ApiLink>
+  nameWithType: List<ApiLink>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ApiLink>
+  nameWithType.vb: List(Of ApiLink)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ApiLink)
+  name.vb: List(Of ApiLink)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Shared.WithMessage`1.#ctor
+  name: WithMessage
+  nameWithType: WithMessage<T>.WithMessage
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.WithMessage
+  nameWithType.vb: WithMessage(Of T).WithMessage
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).WithMessage
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.WithMessage`1.ToString*
+  commentId: Overload:Sorted.PRO.SDK.Shared.WithMessage`1.ToString
+  name: ToString
+  nameWithType: WithMessage<T>.ToString
+  fullName: Sorted.PRO.SDK.Shared.WithMessage<T>.ToString
+  nameWithType.vb: WithMessage(Of T).ToString
+  fullName.vb: Sorted.PRO.SDK.Shared.WithMessage(Of T).ToString

@@ -1,0 +1,1230 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  id: UpdateOrderRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order
+  children:
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate
+  - Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags
+  langs:
+  - csharp
+  - vb
+  name: UpdateOrderRequest
+  nameWithType: UpdateOrderRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateOrderRequest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Update Order Request", "Used to update an existing order.")]
+
+      public class UpdateOrderRequest
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Update Order Request", "Used to update an existing order.")>
+
+      Public Class UpdateOrderRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Update Order Request
+    - type: System.String
+      value: Used to update an existing order.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference
+  id: OrderReference
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: OrderReference
+  nameWithType: UpdateOrderRequest.OrderReference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OrderReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the order to be updated.", true, PropertyCollectionType.Single)]
+
+      public string OrderReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the order to be updated.", True, PropertyCollectionType.Single)>
+
+      Public Property OrderReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the order to be updated.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  id: OrderReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: OrderReferenceProvidedByCustomer
+  nameWithType: UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OrderReferenceProvidedByCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The order reference provided by the customer.", false, PropertyCollectionType.Single)]
+
+      public string OrderReferenceProvidedByCustomer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The order reference provided by the customer.", False, PropertyCollectionType.Single)>
+
+      Public Property OrderReferenceProvidedByCustomer As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The order reference provided by the customer.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate
+  id: RequiredDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: RequiredDeliveryDate
+  nameWithType: UpdateOrderRequest.RequiredDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RequiredDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The required delivery date", false, PropertyCollectionType.Single)]
+
+      public RequestedDeliveryDate RequiredDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.RequestedDeliveryDate
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The required delivery date", False, PropertyCollectionType.Single)>
+
+      Public Property RequiredDeliveryDate As RequestedDeliveryDate
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The required delivery date
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate
+  id: ShippingDate
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: ShippingDate
+  nameWithType: UpdateOrderRequest.ShippingDate
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The shipping date for the order", false, PropertyCollectionType.Single)]
+
+      public DateTime? ShippingDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The shipping date for the order", False, PropertyCollectionType.Single)>
+
+      Public Property ShippingDate As Date?
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The shipping date for the order
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation
+  id: CustomsDocumentation
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: CustomsDocumentation
+  nameWithType: UpdateOrderRequest.CustomsDocumentation
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CustomsDocumentation
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Information to be used in the generation of customs declaration documents", false, PropertyCollectionType.Single)]
+
+      public CustomsDocumentation CustomsDocumentation { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.CustomsDocumentation
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Information to be used in the generation of customs declaration documents", False, PropertyCollectionType.Single)>
+
+      Public Property CustomsDocumentation As CustomsDocumentation
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Information to be used in the generation of customs declaration documents
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses
+  id: Addresses
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: Addresses
+  nameWithType: UpdateOrderRequest.Addresses
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Addresses
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The addresses for this order. Must include origin and destination addresses as a minimum", true, PropertyCollectionType.Collection)]
+
+      public List<Address> Addresses { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Address}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The addresses for this order. Must include origin and destination addresses as a minimum", True, PropertyCollectionType.Collection)>
+
+      Public Property Addresses As List(Of Address)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The addresses for this order. Must include origin and destination addresses as a minimum
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData
+  id: MetaData
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: MetaData
+  nameWithType: UpdateOrderRequest.MetaData
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MetaData
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Optional metadata relating to the order", PropertyCollectionType.Collection)]
+
+      public List<MetaData> MetaData { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Optional metadata relating to the order", PropertyCollectionType.Collection)>
+
+      Public Property MetaData As List(Of MetaData)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Optional metadata relating to the order
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction
+  id: Direction
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: UpdateOrderRequest.Direction
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Direction
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Direction of travel for order", true, PropertyCollectionType.Single)]
+
+      public ConsignmentDirection Direction { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentDirection
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Direction of travel for order", True, PropertyCollectionType.Single)>
+
+      Public Property Direction As ConsignmentDirection
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Direction of travel for order
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags
+  id: Tags
+  parent: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: UpdateOrderRequest.Tags
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Tags
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/Order/UpdateOrderRequest.cs
+    startLine: 53
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.Order
+  summary: "\nlist of tags which if set will be used to filter out carrierservices without matching tags\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Used to filter which services will be used when allocating this order. (passing a non-null collection will override any tags placed on the Order)", false, PropertyCollectionType.Single)]
+
+      public List<string> Tags { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Used to filter which services will be used when allocating this order. (passing a non-null collection will override any tags placed on the Order)", False, PropertyCollectionType.Single)>
+
+      Public Property Tags As List(Of String)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Used to filter which services will be used when allocating this order. (passing a non-null collection will override any tags placed on the Order)
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order
+  commentId: N:Sorted.PRO.SDK.DataTypes.Orders.Order
+  name: Sorted.PRO.SDK.DataTypes.Orders.Order
+  nameWithType: Sorted.PRO.SDK.DataTypes.Orders.Order
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference
+  name: OrderReference
+  nameWithType: UpdateOrderRequest.OrderReference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  name: OrderReferenceProvidedByCustomer
+  nameWithType: UpdateOrderRequest.OrderReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.OrderReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate
+  name: RequiredDeliveryDate
+  nameWithType: UpdateOrderRequest.RequiredDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.RequiredDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.RequestedDeliveryDate
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.RequestedDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: RequestedDeliveryDate
+  nameWithType: RequestedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.RequestedDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate
+  name: ShippingDate
+  nameWithType: UpdateOrderRequest.ShippingDate
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.ShippingDate
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation
+  name: CustomsDocumentation
+  nameWithType: UpdateOrderRequest.CustomsDocumentation
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.CustomsDocumentation
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.CustomsDocumentation
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.CustomsDocumentation
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: CustomsDocumentation
+  nameWithType: CustomsDocumentation
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.CustomsDocumentation
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses
+  name: Addresses
+  nameWithType: UpdateOrderRequest.Addresses
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Addresses
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Address}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Address}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Address>
+  nameWithType: List<Address>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Address>
+  nameWithType.vb: List(Of Address)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Address)
+  name.vb: List(Of Address)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Address
+    name: Address
+    nameWithType: Address
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Address
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Address
+    name: Address
+    nameWithType: Address
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Address
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData
+  name: MetaData
+  nameWithType: UpdateOrderRequest.MetaData
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.MetaData
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MetaData>
+  nameWithType: List<MetaData>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.MetaData>
+  nameWithType.vb: List(Of MetaData)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.MetaData)
+  name.vb: List(Of MetaData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MetaData
+    name: MetaData
+    nameWithType: MetaData
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MetaData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MetaData
+    name: MetaData
+    nameWithType: MetaData
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MetaData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction
+  name: Direction
+  nameWithType: UpdateOrderRequest.Direction
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Direction
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentDirection
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentDirection
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentDirection
+  nameWithType: ConsignmentDirection
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentDirection
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags
+  name: Tags
+  nameWithType: UpdateOrderRequest.Tags
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.Order.UpdateOrderRequest.Tags
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

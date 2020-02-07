@@ -1,0 +1,633 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  commentId: T:Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  id: Item
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders
+  children:
+  - Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity
+  - Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference
+  - Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku
+  langs:
+  - csharp
+  - vb
+  name: Item
+  nameWithType: Item
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Item
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+    startLine: 6
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.PackOrders
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Item", "Represents the details of the items from an order to include in the created package.")]
+
+      public class Item
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Item", "Represents the details of the items from an order to include in the created package.")>
+
+      Public Class Item
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Item
+    - type: System.String
+      value: Represents the details of the items from an order to include in the created package.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku
+  commentId: P:Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku
+  id: Sku
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  langs:
+  - csharp
+  - vb
+  name: Sku
+  nameWithType: Item.Sku
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Sku
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+    startLine: 11
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.PackOrders
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The SKU of the item to select. Required if ItemReference or ItemReferenceProvidedByCustomer are not provided.", false, PropertyCollectionType.Single)]
+
+      public string Sku { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The SKU of the item to select. Required if ItemReference or ItemReferenceProvidedByCustomer are not provided.", False, PropertyCollectionType.Single)>
+
+      Public Property Sku As String
+  overload: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The SKU of the item to select. Required if ItemReference or ItemReferenceProvidedByCustomer are not provided.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference
+  commentId: P:Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference
+  id: Reference
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: Item.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Reference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.PackOrders
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the item to include. Required if SKU or ItemReferenceProvidedByCustomer are not provided.", false, PropertyCollectionType.Single)]
+
+      public string Reference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the item to include. Required if SKU or ItemReferenceProvidedByCustomer are not provided.", False, PropertyCollectionType.Single)>
+
+      Public Property Reference As String
+  overload: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the item to include. Required if SKU or ItemReferenceProvidedByCustomer are not provided.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer
+  id: ItemReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  langs:
+  - csharp
+  - vb
+  name: ItemReferenceProvidedByCustomer
+  nameWithType: Item.ItemReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ItemReferenceProvidedByCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.PackOrders
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the item provided by the customer to include. Required if SKU or ItemReference are not provided.", false, PropertyCollectionType.Single)]
+
+      public string ItemReferenceProvidedByCustomer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the item provided by the customer to include. Required if SKU or ItemReference are not provided.", False, PropertyCollectionType.Single)>
+
+      Public Property ItemReferenceProvidedByCustomer As String
+  overload: Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the item provided by the customer to include. Required if SKU or ItemReference are not provided.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity
+  commentId: P:Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity
+  id: Quantity
+  parent: Sorted.PRO.SDK.DataTypes.PackOrders.Item
+  langs:
+  - csharp
+  - vb
+  name: Quantity
+  nameWithType: Item.Quantity
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Quantity
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/PackOrders/Item.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.PackOrders
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Quantity of items being provided.", false, PropertyCollectionType.Single)]
+
+      public int Quantity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Quantity of items being provided.", False, PropertyCollectionType.Single)>
+
+      Public Property Quantity As Integer
+  overload: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Quantity of items being provided.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders
+  commentId: N:Sorted.PRO.SDK.DataTypes.PackOrders
+  name: Sorted.PRO.SDK.DataTypes.PackOrders
+  nameWithType: Sorted.PRO.SDK.DataTypes.PackOrders
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku
+  name: Sku
+  nameWithType: Item.Sku
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Sku
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference
+  name: Reference
+  nameWithType: Item.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Reference
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer
+  name: ItemReferenceProvidedByCustomer
+  nameWithType: Item.ItemReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.ItemReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity
+  name: Quantity
+  nameWithType: Item.Quantity
+  fullName: Sorted.PRO.SDK.DataTypes.PackOrders.Item.Quantity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

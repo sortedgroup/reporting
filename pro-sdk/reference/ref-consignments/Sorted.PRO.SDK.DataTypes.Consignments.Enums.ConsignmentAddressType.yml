@@ -1,0 +1,352 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  id: ConsignmentAddressType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Destination
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Importer
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Origin
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Recipient
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Return
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Sender
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentAddressType
+  nameWithType: ConsignmentAddressType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentAddressType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nDefines the purpose of the Consignment Contact Address\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [Flags]
+
+      [DataContractType("Consignment Address Type", "Indicates the type of address.")]
+
+      public enum ConsignmentAddressType
+    content.vb: >-
+      <DataContract>
+
+      <Flags>
+
+      <DataContractType("Consignment Address Type", "Indicates the type of address.")>
+
+      Public Enum ConsignmentAddressType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Address Type
+    - type: System.String
+      value: Indicates the type of address.
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Origin
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Origin
+  id: Origin
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: ConsignmentAddressType.Origin
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Origin
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Origin
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nOrigin contact address.\nThis is the ORIGIN of the consignment as far as the carrier is concerned\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Origin = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <EnumMember>
+
+      Origin = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Destination
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Destination
+  id: Destination
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  langs:
+  - csharp
+  - vb
+  name: Destination
+  nameWithType: ConsignmentAddressType.Destination
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Destination
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Destination
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nDestination contact address.\nThis is the final desintation of the consignment as far as the carrier is concerned.\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Destination = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <EnumMember>
+
+      Destination = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Return
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Return
+  id: Return
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  langs:
+  - csharp
+  - vb
+  name: Return
+  nameWithType: ConsignmentAddressType.Return
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Return
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Return
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe return address of the contact address.\nThis is where the consignment will/could be sent if say the consignment could not be delivered and the\ncarrier supports a return address.\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Return = 4
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <EnumMember>
+
+      Return = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Sender
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Sender
+  id: Sender
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  langs:
+  - csharp
+  - vb
+  name: Sender
+  nameWithType: ConsignmentAddressType.Sender
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Sender
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Sender
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe contact address of the sender.\nE.g. For a drop off, this could be the contact address of the party dropping off the consignment at the &apos;Origin&apos; address\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Sender = 8
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <EnumMember>
+
+      Sender = 8
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Recipient
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Recipient
+  id: Recipient
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  langs:
+  - csharp
+  - vb
+  name: Recipient
+  nameWithType: ConsignmentAddressType.Recipient
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Recipient
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Recipient
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe receiver of the consignment\nE.g. For a pick up, this could be the party who picks up the consingment from it&apos;s &apos;Destination&apos; address\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Recipient = 16
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <EnumMember>
+
+      Recipient = 16
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Importer
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Importer
+  id: Importer
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  langs:
+  - csharp
+  - vb
+  name: Importer
+  nameWithType: ConsignmentAddressType.Importer
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType.Importer
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Importer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentAddressType.cs
+    startLine: 51
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThis is the party liable for the payment of duties on the consignment.\nIn the case of a multi-leg shipment, this could be the carrier.\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Importer = 32
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <EnumMember>
+
+      Importer = 32
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentAddressType
+  nameWithType: ConsignmentAddressType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType

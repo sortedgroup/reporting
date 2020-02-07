@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>More Information </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="More Information ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="more-information">More Information</h1>
+
+<h2 id="metadata">Metadata</h2>
+<p>PRO's Consignments object (and its related objects - Delivery Options, Pickup Options and Orders) includes a <code>MetaData</code> array. This array can be used to record additional data about the consignment in custom fields.</p>
+<p>The <code>MetaData</code> array has two parts - the <code>KeyValue</code> and the metadata values. The <code>KeyValue</code> is the name of the property, while the metadata values are the data items themselves. The fields that should be used to store this data varies depending on the data types being stored.</p>
+<p>Metadata values can be stored in the following fields:</p>
+<ul>
+<li><code>StringValue</code> - used to store data as a string.</li>
+<li><code>IntValue</code> - used to store data as an integer.</li>
+<li><code>DecimalValue</code> - used to store data as a decimal.</li>
+<li><code>DateTimeValue</code> - used to store data as a DateTimeOffset.</li>
+<li><code>BoolValue</code> - used to store data as a Boolean (true/false).</li>
+</ul>
+<p>Each metadata object can contain multiple data items, but can only contain one data item of each type. For example, a <code>MetaData</code> array containing a <code>StringValue</code> and a <code>BoolValue</code> would be valid, but a <code>MetaData</code> array containing two <code>StringValue</code> keys would not.</p>
+<h3 id="metadata-example">Metadata Example</h3>
+<p>The example shows a <code>MetaData</code> array that is being used to store a consignment's picking data. The <code>StringValue</code> property is being used to record the name of the picker, and the <code>DateTimeValue</code> is being used to record the date and time that the consignment was picked.</p>
+<div class="tab">
+    <button class="staticTabButton">Example MetaData array</button>
+    <div class="copybutton" onclick="CopyToClipboard('metadataExample')">Click to Copy</div>
+</div>
+<div id="metadataExample" class="staticTabContent" onclick="CopyToClipboard('metadataExample')">
+<pre><code class="lang-json">&quot;MetaData&quot;: [
+   {
+      &quot;KeyValue&quot;: &quot;Picked_On&quot;,
+      &quot;StringValue&quot;: &quot;Josh Allen&quot;,
+      &quot;DateTimeValue&quot;: &quot;2019-06-04T00:00:00+01:00&quot;
+   }
+]
+</code></pre>
+</div>
+<h2 id="tags">Tags</h2>
+<p>Allocation tags enable you to filter out carrier services that would not be suitable for a particular consignment. Tagged shipments can only be allocated to those carrier services that have a matching tag. You can still allocate untagged shipments to a carrier service that has tags.</p>
+<p>To associate tags with carrier services, use the <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/carrierservices/">Carrier Services</a> &gt; [select carrier service] &gt; Allocation Rules &gt; Allocation Filtering Tags</strong> panel of the SortedPRO UI.</p>
+<p>For example, a retailer might use the UI to add a <code>Flammables</code> tag to all the carrier services that they wanted to use for flammable products. They would then add the <code>Flammables</code> tag to all consignments containing flammable products. PRO would only allocate those consignments tagged as <code>Flammables</code> to a consignment in the pre-approved <code>Flammables</code> list.</p>
+<h3 id="scenarios">Scenarios</h3>
+<p>Suppose that you set your carrier services up in the following way:</p>
+<ul>
+<li>You tag Carrier Service A with <code>Alcohol</code></li>
+<li>You tag Carrier Service B with <code>Flammables</code></li>
+<li>You tag Carrier Service C with <code>Alcohol</code> and <code>Flammables</code></li>
+<li>You tag Carrier Service D with <code>Oil</code></li>
+<li>You don't add any tags to Carrier Service E</li>
+</ul>
+<p>This configuration would produce the following results:</p>
+<ul>
+<li><strong>Consignment with no tags</strong> - A B C D and E are returned</li>
+<li><strong>Consignment tagged with</strong> <code>Alcohol</code> - A and C are returned</li>
+<li><strong>Consignment tagged with</strong> <code>Flammables</code> - B and C are returned</li>
+<li><strong>Consignment tagged with</strong> <code>Alcohol</code> <strong>and</strong> <code>Flammables</code> - C is returned</li>
+<li><strong>Consignment tagged with</strong> <code>Alcohol</code><strong>,</strong> <code>Flammables</code><strong>, and</strong> <code>Oil</code> - No services are returned</li>
+</ul>
+<h3 id="tags-example">Tags Example</h3>
+<p>The example shows a <code>tags</code> property for a consignment that contains flammable materials, oil and alcohol.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Tags array</button>
+    <div class="copybutton" onclick="CopyToClipboard('tagsExample')">Click to Copy</div>
+</div>
+<div id="tagsExample" class="staticTabContent" onclick="CopyToClipboard('tagsExample')">
+<pre><code class="lang-json">&quot;Tags&quot;: [
+   &quot;Flammables&quot;,
+   &quot;Oil&quot;,
+   &quot;Alcohol&quot;
+]
+</code></pre>
+</div>
+<h2 id="updating-consignments">Updating Consignments</h2>
+<div class="tab">
+    <button class="staticTabButton">Update Consignment Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('updateConsEndpoint')">Click to Copy</div>
+</div>
+<div id="updateConsEndpoint" class="staticTabContent" onclick="CopyToClipboard('updateConsEndpoint')">
+<pre><code>PUT https://api.electioapp.com/consignments/
+</code></pre>
+</div>
+<p>The <strong>Update Consignment</strong> endpoint enables you to update an existing consignment. When you make an <strong>Update Consignment</strong> request for a particular consignment, SortedPRO overwrites the existing consignment's details with new details provided in the body of the request.</p>
+<p>The structure of the <strong>Update Consignment</strong> request is identical to that of the <strong>Create Consignment</strong> request. PRO uses the following rules when updating consignment properties:</p>
+<ul>
+<li><code>{Reference}</code> - Required property. Cannot be updated.</li>
+<li><code>{Source}</code> - Ignored. Cannot be updated.</li>
+<li><code>{ShippingDate}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{RequestedDeliveryDate}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{ConsignmentReferenceProvidedByCustomer}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{CustomsDocumentation}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{MetaData}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{Addresses}</code>	- PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted. You cannot update addresses after a consignment has been allocated.</li>
+<li><code>{Packages}</code> - If any values are provided, then PRO attempts to replace the entire property with the updated values. You cannot update packages after a consignment has been allocated. If no values are provided, PRO makes no changes to the consignment.</li>
+<li><code>{Tags}</code> - If any values are provided, then PRO replaces the entire property with the updated values. If no values are provided, PRO makes no changes to the consignment.</li>
+</ul>
+<aside class="note">
+  For full reference information on the <strong>Update Consignment</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/UpdateConsignment">Update Consignment</a></strong> page of the API reference.
+</aside>
+<h3 id="update-consignments-example">Update Consignments Example</h3>
+<p>The example shows an  <strong>Update Consignment</strong> request for a single shipment that has a <code>{ConsignmentReference}</code> of <em>EC-000-087-01A</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Update Consignment Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('updateConsRequest')">Click to Copy</div>
+</div>
+<div id="updateConsRequest" class="staticTabContent" onclick="CopyToClipboard('updateConsRequest')">
+<pre><code class="lang-json">{
+  &quot;ShippingDate&quot;: &quot;2019-06-02T00:00:00+01:00&quot;,
+  &quot;Reference&quot;: &quot;EC-000-087-01A&quot;,
+  &quot;RequestedDeliveryDate&quot;: {
+    &quot;Date&quot;: &quot;2019-06-05T00:00:00+01:00&quot;,
+    &quot;IsToBeExactlyOnTheDateSpecified&quot;: false
+  },
+  &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;Your Reference&quot;,
+  &quot;CustomsDocumentation&quot;: {
+    &quot;DesignatedPersonResponsible&quot;: &quot;Peter McPetersson&quot;,
+    &quot;ImportersVatNumber&quot;: &quot;02345555&quot;,
+    &quot;CategoryType&quot;: &quot;Other&quot;,
+    &quot;ShipperCustomsReference&quot;: &quot;CREF0001&quot;,
+    &quot;ImportersTaxCode&quot;: &quot;TC001&quot;,
+    &quot;ImportersTelephone&quot;: &quot;0161123456&quot;,
+    &quot;ImportersFax&quot;: &quot;01611124547&quot;,
+    &quot;ImportersEmail&quot;: &quot;peter.mcpetersson@test.com&quot;,
+    &quot;CN23Comments&quot;: &quot;Comments&quot;,
+    &quot;ReferencesOfAttachedInvoices&quot;: [
+      &quot;INV001&quot;
+    ],
+    &quot;ReferencesOfAttachedCertificates&quot;: [
+      &quot;CERT001&quot;
+    ],
+    &quot;ReferencesOfAttachedLicences&quot;: [
+      &quot;LIC001&quot;
+    ],
+    &quot;CategoryTypeExplanation&quot;: &quot;Explanation&quot;,
+    &quot;DeclarationDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;,
+    &quot;OfficeOfPosting&quot;: &quot;Manchester&quot;,
+    &quot;ReasonForExport&quot;: &quot;Sale&quot;,
+    &quot;ShippingTerms&quot;: &quot;CFR&quot;,
+    &quot;ShippersVatNumber&quot;: &quot;874541414&quot;,
+    &quot;ReceiversTaxCode&quot;: &quot;TC5454&quot;,
+    &quot;ReceiversVatNumber&quot;: &quot;8745474&quot;,
+    &quot;InvoiceDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;
+  },
+  &quot;Addresses&quot;: [
+    {
+      &quot;AddressType&quot;: &quot;Origin&quot;,
+      &quot;ShippingLocationReference&quot;: &quot;Shipping_Location_Reference&quot;,
+      &quot;IsCached&quot;: false
+    },
+    {
+      &quot;AddressType&quot;: &quot;Destination&quot;,
+      &quot;Contact&quot;: {
+        &quot;Title&quot;: &quot;Mr&quot;,
+        &quot;FirstName&quot;: &quot;Peter&quot;,
+        &quot;LastName&quot;: &quot;McPetersson&quot;,
+        &quot;Telephone&quot;: &quot;07702123456&quot;,
+        &quot;Mobile&quot;: &quot;07702123456&quot;,
+        &quot;LandLine&quot;: &quot;0161544123&quot;,
+        &quot;Email&quot;: &quot;peter.mcpetersson@test.com&quot;
+      },
+      &quot;CompanyName&quot;: &quot;Test Company (UK) Ltd.&quot;,
+      &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+      &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+      &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+      &quot;Town&quot;: &quot;Manchester&quot;,
+      &quot;Region&quot;: &quot;Greater Manchester&quot;,
+      &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+      &quot;Country&quot;: {
+        &quot;Name&quot;: &quot;Great Britain&quot;,
+        &quot;IsoCode&quot;: {
+          &quot;TwoLetterCode&quot;: &quot;GB&quot;
+        }
+      },
+      &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+      &quot;LatLong&quot;: {
+        &quot;Latitude&quot;: 53.474220,
+        &quot;Longitude&quot;: -2.246049
+      },
+      &quot;IsCached&quot;: false
+    }
+  ],
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;Updated_Key&quot;,
+      &quot;StringValue&quot;: &quot;Updated_Value&quot;
+    }
+  ],
+  &quot;Packages&quot;: [
+    {
+      &quot;Items&quot;: [
+        {
+          &quot;Reference&quot;: &quot;3385728cb8594c739dccb2cf63454101&quot;,
+          &quot;Sku&quot;: &quot;SKU_Updated&quot;,
+          &quot;Model&quot;: &quot;Updated Model&quot;,
+          &quot;Description&quot;: &quot;Updated Description&quot;,
+          &quot;CountryOfOrigin&quot;: {
+            &quot;IsoCode&quot;: {
+              &quot;TwoLetterCode&quot;: &quot;GB&quot;
+            }
+          },
+          &quot;HarmonisationCode&quot;: &quot;NewCode&quot;,
+          &quot;Weight&quot;: {
+            &quot;Value&quot;: 0.5,
+            &quot;Unit&quot;: &quot;Kg&quot;
+          },
+          &quot;Dimensions&quot;: {
+            &quot;Unit&quot;: &quot;Cm&quot;,
+            &quot;Width&quot;: 10.0,
+            &quot;Length&quot;: 10.0,
+            &quot;Height&quot;: 10.0
+          },
+          &quot;Value&quot;: {
+            &quot;Amount&quot;: 5.99,
+            &quot;Currency&quot;: {
+              &quot;IsoCode&quot;: &quot;GBP&quot;
+            }
+          },
+          &quot;ItemReferenceProvidedByCustomer&quot;: &quot;UpdatedItemReference&quot;,
+          &quot;Barcode&quot;: {
+            &quot;Code&quot;: &quot;09887-091221&quot;,
+            &quot;BarcodeType&quot;: &quot;Code39&quot;
+          },
+          &quot;MetaData&quot;: [
+            {
+              &quot;KeyValue&quot;: &quot;NewMetadata&quot;,
+              &quot;StringValue&quot;: &quot;NewValue&quot;
+            }
+          ],
+          &quot;Quantity&quot;: 1,
+          &quot;Unit&quot;: &quot;Box&quot;,
+          &quot;HarmonisationKeyWords&quot;: [
+            &quot;Keyword1&quot;,
+            &quot;Keyword2&quot;
+          ]
+        }
+      ],
+      &quot;Reference&quot;: &quot;EP-000-045-9FD&quot;,
+      &quot;PackageReferenceProvidedByCustomer&quot;: &quot;UpdatedReference&quot;,
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 0.5,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 10.0,
+        &quot;Length&quot;: 10.0,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Description&quot;: &quot;Updated Description&quot;,
+      &quot;Value&quot;: {
+        &quot;Amount&quot;: 5.99,
+        &quot;Currency&quot;: {
+          &quot;IsoCode&quot;: &quot;GBP&quot;
+        }
+      },
+      &quot;Barcode&quot;: {
+        &quot;Code&quot;: &quot;09887-091221&quot;,
+        &quot;BarcodeType&quot;: &quot;Code39&quot;
+      },
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;New_Metadata&quot;,
+          &quot;StringValue&quot;: &quot;New Value&quot;
+        }
+      ]
+    }
+  ],
+  &quot;Tags&quot;: [
+    &quot;TagC&quot;
+  ]
+}
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Update Consignment Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('updateConsResponse')">Click to Copy</div>
+</div>
+<div id="updateConsResponse" class="staticTabContent" onclick="CopyToClipboard('updateConsResponse')">
+<pre><code class="lang-json">[
+  {
+    &quot;Rel&quot;: &quot;Link&quot;,
+    &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-087-01A&quot;
+  }
+]
+</code></pre>
+</div>
+<h2 id="updating-orders">Updating Orders</h2>
+<div class="tab">
+    <button class="staticTabButton">Update Order Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('updateOrdEndpoint')">Click to Copy</div>
+</div>
+<div id="updateOrdEndpoint" class="staticTabContent" onclick="CopyToClipboard('updateOrdEndpoint')">
+<pre><code>PUT https://api.electioapp.com/orders/{orderReference}
+</code></pre>
+</div>
+<p>The <strong>Update Order</strong> endpoint enables you to update an existing order. When you make an <strong>Update Order</strong> request for a particular order, SortedPRO overwrites the existing order's details with new details provided in the body of the request.</p>
+<p>The structure of the <strong>Update Order</strong> request is identical to that of the <strong>Create Order</strong> request. PRO uses the following rules when updating order properties:</p>
+<ul>
+<li><code>{OrderReference}</code> - Required property. Cannot be updated.</li>
+<li><code>{OrderReferenceProvidedByCustomer}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{RequiredDeliveryDate}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{Source}</code> - Ignored. Cannot be updated.</li>
+<li><code>{ShippingDate}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{Packages}</code> - Ignored. Use the <strong><a href="https://docs.electioapp.com/#/api/PackOrder">Pack Order</a></strong> endpoint to manage an order's packages instead.</li>
+<li><code>{CustomsDocumentation}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{Addresses}</code>	- If any values are provided, then PRO replaces the entire property with the updated values. If no values are provided, PRO makes no changes to the order.</li>
+<li><code>{MetaData}</code> - PRO replaces the entire property with the updated values. If no value is provided, any existing value is deleted.</li>
+<li><code>{Direction}</code> - If any values are provided, then PRO replaces the entire property with the updated values. If no values are provided, PRO makes no changes to the order.</li>
+<li><code>{Tags}</code> - If any values are provided, then PRO replaces the entire property with the updated values. If no values are provided, PRO makes no changes to the order.</li>
+</ul>
+<aside class="note">
+  For full reference information on the <strong>Update Order</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/UpdateOrder">Update Order</a></strong> page of the API reference.
+</aside>
+<h3 id="update-orders-example">Update Orders Example</h3>
+<p>The example shows an  <strong>Update Order</strong> request for a single shipment that has a <code>{OrderReference}</code> of <em>EC-000-087-01A</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Update Order Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('updateOrdRequest')">Click to Copy</div>
+</div>
+<div id="updateOrdRequest" class="staticTabContent" onclick="CopyToClipboard('updateOrdRequest')">
+<pre><code>PUT https://api.electioapp.com/orders/EC-000-087-01A
+</code></pre>
+<pre><code class="lang-json">{
+  &quot;OrderReference&quot;: &quot;EC-000-087-01A&quot;,
+  &quot;OrderReferenceProvidedByCustomer&quot;: &quot;5e6127aa-fe42-49d8-a3a4-cd621e11b9ea&quot;,
+  &quot;RequiredDeliveryDate&quot;: {
+    &quot;Date&quot;: &quot;2019-06-05T00:00:00+01:00&quot;,
+    &quot;IsToBeExactlyOnTheDateSpecified&quot;: true
+  },
+  &quot;ShippingDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;,
+  &quot;CustomsDocumentation&quot;: {
+    &quot;DesignatedPersonResponsible&quot;: &quot;Peter McPetersson&quot;,
+    &quot;ImportersVatNumber&quot;: &quot;02345555&quot;,
+    &quot;CategoryType&quot;: &quot;Other&quot;,
+    &quot;ShipperCustomsReference&quot;: &quot;CREF0001&quot;,
+    &quot;ImportersTaxCode&quot;: &quot;TC001&quot;,
+    &quot;ImportersTelephone&quot;: &quot;0161123456&quot;,
+    &quot;ImportersFax&quot;: &quot;01611124547&quot;,
+    &quot;ImportersEmail&quot;: &quot;peter.mcpetersson@test.com&quot;,
+    &quot;CN23Comments&quot;: &quot;Comments&quot;,
+    &quot;ReferencesOfAttachedInvoices&quot;: [
+      &quot;INV001&quot;
+    ],
+    &quot;ReferencesOfAttachedCertificates&quot;: [
+      &quot;CERT001&quot;
+    ],
+    &quot;ReferencesOfAttachedLicences&quot;: [
+      &quot;LIC001&quot;
+    ],
+    &quot;CategoryTypeExplanation&quot;: &quot;Explanation&quot;,
+    &quot;DeclarationDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;,
+    &quot;OfficeOfPosting&quot;: &quot;Manchester&quot;,
+    &quot;ReasonForExport&quot;: &quot;Sale&quot;,
+    &quot;ShippingTerms&quot;: &quot;CFR&quot;,
+    &quot;ShippersVatNumber&quot;: &quot;874541414&quot;,
+    &quot;ReceiversTaxCode&quot;: &quot;TC5454&quot;,
+    &quot;ReceiversVatNumber&quot;: &quot;8745474&quot;,
+    &quot;InvoiceDate&quot;: &quot;2019-05-31T00:00:00+01:00&quot;
+  },
+  &quot;Addresses&quot;: [
+    {
+      &quot;AddressType&quot;: &quot;Origin&quot;,
+      &quot;ShippingLocationReference&quot;: &quot;Shipping_Location_Reference&quot;,
+      &quot;IsCached&quot;: false
+    },
+    {
+      &quot;AddressType&quot;: &quot;Destination&quot;,
+      &quot;Contact&quot;: {
+        &quot;Title&quot;: &quot;Mr&quot;,
+        &quot;FirstName&quot;: &quot;Peter&quot;,
+        &quot;LastName&quot;: &quot;McPetersson&quot;,
+        &quot;Telephone&quot;: &quot;07702123456&quot;,
+        &quot;Mobile&quot;: &quot;07702123456&quot;,
+        &quot;LandLine&quot;: &quot;0161544123&quot;,
+        &quot;Email&quot;: &quot;peter.mcpetersson@test.com&quot;
+      },
+      &quot;CompanyName&quot;: &quot;Test Company (UK) Ltd.&quot;,
+      &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+      &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+      &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+      &quot;Town&quot;: &quot;Manchester&quot;,
+      &quot;Region&quot;: &quot;Greater Manchester&quot;,
+      &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+      &quot;Country&quot;: {
+        &quot;Name&quot;: &quot;Great Britain&quot;,
+        &quot;IsoCode&quot;: {
+          &quot;TwoLetterCode&quot;: &quot;GB&quot;
+        }
+      },
+      &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+      &quot;LatLong&quot;: {
+        &quot;Latitude&quot;: 53.474220,
+        &quot;Longitude&quot;: -2.246049
+      },
+      &quot;IsCached&quot;: false
+    }
+  ],
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;Key1&quot;,
+      &quot;StringValue&quot;: &quot;Value1&quot;
+    },
+    {
+      &quot;KeyValue&quot;: &quot;Key2&quot;,
+      &quot;DecimalValue&quot;: 12.45
+    }
+  ],
+  &quot;Direction&quot;: &quot;Outbound&quot;,
+  &quot;Tags&quot;: [
+    &quot;TagC&quot;
+  ]
+}
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Update Order Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('updateOrdResponse')">Click to Copy</div>
+</div>
+<div id="updateOrdResponse" class="staticTabContent" onclick="CopyToClipboard('updateOrdResponse')">
+<pre><code class="lang-json">[
+  {
+    &quot;Rel&quot;: &quot;Link&quot;,
+    &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-087-01A&quot;
+  }
+]
+</code></pre>
+</div>
+<script src="../../scripts/requesttabs.js"></script>
+<script src="../../scripts/responsetabs.js"></script>
+<script src="../../scripts/copy.js"></script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/moreInfo.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

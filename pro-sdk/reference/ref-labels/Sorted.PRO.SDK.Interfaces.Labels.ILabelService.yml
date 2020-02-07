@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  id: ILabelService
+  parent: Sorted.PRO.SDK.Interfaces.Labels
+  children:
+  - Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ILabelService
+  nameWithType: ILabelService
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ILabelService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILabelService.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nThe interface for <a href=\"Sorted.PRO.SDK.Labels.LabelService.html\">LabelService</a>. Retrieves package and consignment labels.\n"
+  example: []
+  syntax:
+    content: public interface ILabelService
+    content.vb: Public Interface ILabelService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  id: GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentLabelsAsync(String, LabelFormat, Int32)
+  nameWithType: ILabelService.GetConsignmentLabelsAsync(String, LabelFormat, Int32)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String, Sorted.PRO.SDK.DataTypes.Labels.LabelFormat, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILabelService.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns the labels for all packages in the specified consignment, in the specified format and resolution.\n"
+  example:
+  - "\n<pre><code>var labelData = await _labelService.GetConsignmentLabelsAsync(consignmentReference, LabelFormat.PDF, 203);</code></pre>\n"
+  syntax:
+    content: Task<GetLabelsResponse> GetConsignmentLabelsAsync(string consignmentReference, LabelFormat labelFormat, int resolution)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference to retrieve labels for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+      description: The format to output the labels in. Must be a valid LabelFormat
+    - id: resolution
+      type: System.Int32
+      description: The label resolution required
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: "\nLabel data for all packages in the consignment\n"
+    content.vb: Function GetConsignmentLabelsAsync(consignmentReference As String, labelFormat As LabelFormat, resolution As Integer) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  id: GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  langs:
+  - csharp
+  - vb
+  name: GetPackageLabelAsync(String, String, LabelFormat, Int32)
+  nameWithType: ILabelService.GetPackageLabelAsync(String, String, LabelFormat, Int32)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.Labels.LabelFormat, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetPackageLabelAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILabelService.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns the label for an individual package within the specified consignment, in the specified format and resolution.\n"
+  example:
+  - "\n<pre><code>var labelData = await _labelService.GetPackageLabelsAsync(consignmentReference, packageReference, LabelFormat.PDF, 203);</code></pre>\n"
+  syntax:
+    content: Task<GetLabelsResponse> GetPackageLabelAsync(string consignmentReference, string packageReference, LabelFormat labelFormat, int resolution)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference that the package belongs to
+    - id: packageReference
+      type: System.String
+      description: The package reference to retrieve a label for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+      description: The format to output the labels in
+    - id: resolution
+      type: System.Int32
+      description: The label resolution required
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: "\nLabel data for the selected package\n"
+    content.vb: Function GetPackageLabelAsync(consignmentReference As String, packageReference As String, labelFormat As LabelFormat, resolution As Integer) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Labels
+  commentId: N:Sorted.PRO.SDK.Interfaces.Labels
+  name: Sorted.PRO.SDK.Interfaces.Labels
+  nameWithType: Sorted.PRO.SDK.Interfaces.Labels
+  fullName: Sorted.PRO.SDK.Interfaces.Labels
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync
+  name: GetConsignmentLabelsAsync
+  nameWithType: ILabelService.GetConsignmentLabelsAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: LabelFormat
+  nameWithType: LabelFormat
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetLabelsResponse>
+  nameWithType: Task<GetLabelsResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse>
+  nameWithType.vb: Task(Of GetLabelsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse)
+  name.vb: Task(Of GetLabelsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+    name: GetLabelsResponse
+    nameWithType: GetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+    name: GetLabelsResponse
+    nameWithType: GetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Labels
+  commentId: N:Sorted.PRO.SDK.DataTypes.Labels
+  name: Sorted.PRO.SDK.DataTypes.Labels
+  nameWithType: Sorted.PRO.SDK.DataTypes.Labels
+  fullName: Sorted.PRO.SDK.DataTypes.Labels
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync
+  name: GetPackageLabelAsync
+  nameWithType: ILabelService.GetPackageLabelAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync

@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  commentId: T:Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  id: StringExtensions
+  parent: Sorted.PRO.SDK.Shared.Extensions
+  children:
+  - Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.DateTimeOffset)
+  - Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.Nullable{System.DateTimeOffset})
+  - Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601(System.String)
+  - Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: StringExtensions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+    startLine: 5
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601(System.String)
+  id: ParseAsIso8601(System.String)
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ParseAsIso8601(String)
+  nameWithType: StringExtensions.ParseAsIso8601(String)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ParseAsIso8601
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  example: []
+  syntax:
+    content: public static DateTimeOffset ParseAsIso8601(this string source)
+    parameters:
+    - id: source
+      type: System.String
+    return:
+      type: System.DateTimeOffset
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ParseAsIso8601(source As String) As DateTimeOffset
+  overload: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code data-dev-comment-type="paramref" class="paramref">source</code> includes an undefined <xref href="System.Globalization.DateTimeStyles" data-throw-if-not-resolved="false"></xref> value.   -or-  <xref href="System.Globalization.DateTimeStyles.NoCurrentDateDefault" data-throw-if-not-resolved="false"></xref> is not supported.   -or-  <code data-dev-comment-type="paramref" class="paramref">styles</code> includes mutually exclusive <xref href="System.Globalization.DateTimeStyles" data-throw-if-not-resolved="false"></xref> values.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601(System.String)
+  id: ParseAsNullableIso8601(System.String)
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ParseAsNullableIso8601(String)
+  nameWithType: StringExtensions.ParseAsNullableIso8601(String)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ParseAsNullableIso8601
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  summary: "\nAllows parsing of string to <xref href=\"System.Nullable%601\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public static DateTimeOffset? ParseAsNullableIso8601(this string source)
+    parameters:
+    - id: source
+      type: System.String
+      description: The date as a string
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: <xref href="System.Nullable%601" data-throw-if-not-resolved="false"></xref>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ParseAsNullableIso8601(source As String) As DateTimeOffset?
+  overload: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: <code data-dev-comment-type="paramref" class="paramref">source</code> includes an undefined <xref href="System.Globalization.DateTimeStyles" data-throw-if-not-resolved="false"></xref> value.   -or-  <xref href="System.Globalization.DateTimeStyles.NoCurrentDateDefault" data-throw-if-not-resolved="false"></xref> is not supported.   -or-  <code data-dev-comment-type="paramref" class="paramref">styles</code> includes mutually exclusive <xref href="System.Globalization.DateTimeStyles" data-throw-if-not-resolved="false"></xref> values.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.DateTimeOffset)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.DateTimeOffset)
+  id: FormatAsIso8601(System.DateTimeOffset)
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FormatAsIso8601(DateTimeOffset)
+  nameWithType: StringExtensions.FormatAsIso8601(DateTimeOffset)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.DateTimeOffset)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FormatAsIso8601
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+    startLine: 41
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  summary: "\nFormats as iso8601.\n"
+  example: []
+  syntax:
+    content: public static string FormatAsIso8601(this DateTimeOffset source)
+    parameters:
+    - id: source
+      type: System.DateTimeOffset
+      description: The source.
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FormatAsIso8601(source As DateTimeOffset) As String
+  overload: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601*
+  exceptions:
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The length of <code data-dev-comment-type="paramref" class="paramref">source</code> is one, and it is not one of the standard format specifier characters defined for <xref href="System.Globalization.DateTimeFormatInfo" data-throw-if-not-resolved="false"></xref>.   -or-  <code data-dev-comment-type="paramref" class="paramref">source</code> does not contain a valid custom format pattern.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The date and time is outside the range of dates supported by the calendar used by the current culture.
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.Nullable{System.DateTimeOffset})
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.Nullable{System.DateTimeOffset})
+  id: FormatAsIso8601(System.Nullable{System.DateTimeOffset})
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: FormatAsIso8601(Nullable<DateTimeOffset>)
+  nameWithType: StringExtensions.FormatAsIso8601(Nullable<DateTimeOffset>)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.Nullable<System.DateTimeOffset>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FormatAsIso8601
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/StringExtensions.cs
+    startLine: 54
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  summary: "\nFormats as iso8601.\n"
+  example: []
+  syntax:
+    content: public static string FormatAsIso8601(this DateTimeOffset? source)
+    parameters:
+    - id: source
+      type: System.Nullable{System.DateTimeOffset}
+      description: The source datetime.
+    return:
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FormatAsIso8601(source As DateTimeOffset?) As String
+  overload: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: The <xref href="System.Nullable%601.HasValue" data-throw-if-not-resolved="false"></xref> property is false.
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: The length of <code data-dev-comment-type="paramref" class="paramref">source</code> is one, and it is not one of the standard format specifier characters defined for <xref href="System.Globalization.DateTimeFormatInfo" data-throw-if-not-resolved="false"></xref>.   -or-  <code data-dev-comment-type="paramref" class="paramref">source</code> does not contain a valid custom format pattern.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: The date and time is outside the range of dates supported by the calendar used by the current culture.
+  nameWithType.vb: StringExtensions.FormatAsIso8601(Nullable(Of DateTimeOffset))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601(System.Nullable(Of System.DateTimeOffset))
+  name.vb: FormatAsIso8601(Nullable(Of DateTimeOffset))
+references:
+- uid: Sorted.PRO.SDK.Shared.Extensions
+  commentId: N:Sorted.PRO.SDK.Shared.Extensions
+  name: Sorted.PRO.SDK.Shared.Extensions
+  nameWithType: Sorted.PRO.SDK.Shared.Extensions
+  fullName: Sorted.PRO.SDK.Shared.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Globalization.DateTimeStyles
+  commentId: T:System.Globalization.DateTimeStyles
+  isExternal: true
+- uid: System.Globalization.DateTimeStyles.NoCurrentDateDefault
+  commentId: F:System.Globalization.DateTimeStyles.NoCurrentDateDefault
+  isExternal: true
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601
+  name: ParseAsIso8601
+  nameWithType: StringExtensions.ParseAsIso8601
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsIso8601
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601
+  name: ParseAsNullableIso8601
+  nameWithType: StringExtensions.ParseAsNullableIso8601
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.ParseAsNullableIso8601
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Globalization.DateTimeFormatInfo
+  commentId: T:System.Globalization.DateTimeFormatInfo
+  isExternal: true
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+- uid: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601
+  name: FormatAsIso8601
+  nameWithType: StringExtensions.FormatAsIso8601
+  fullName: Sorted.PRO.SDK.Shared.Extensions.StringExtensions.FormatAsIso8601
+- uid: System.Nullable`1.HasValue
+  commentId: P:System.Nullable`1.HasValue
+  isExternal: true
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true

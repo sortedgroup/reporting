@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Examples ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<div class="tab">
+    <button class="staticTabButton">Create Consignment Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('createConEndpoint')">Click to Copy</div>
+</div>
+<div id="createConEndpoint" class="staticTabContent" onclick="CopyToClipboard('createConEndpoint')">
+<pre><code>POST https://api.electioapp.com/consignments
+</code></pre>
+</div>
+<p>The first step toward manifesting a consignment is to create that consignment in SortedPRO.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+In the context of PRO, the term <strong>&quot;consignment&quot;</strong> refers to a collection of one or more packages that are shipped from the same origin address, to the same destination address, on behalf of the same    Sorted customer, using the same carrier service, on the same day.</p>
+<p>A <strong>package</strong> is an <strong>item</strong> or a collection of items, wrapped or contained together for shipment. Each package can contain one or more items.</p>
+<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. As such, this sales order would break down to:</p>
+<ul>
+<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
+<li>A single consignment corresponding to everything on the order.</li>
+</ul>
+</blockquote>
+<p>Consignments are created using the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> endpoint, which takes information about new consignments, adds them to the database, and returns a link to the newly-created consignment, including its <code>{consignmentReference}</code>.</p>
+<p>The <code>{consignmentReference}</code> is a unique identifier for that consignment within PRO, and is a required parameter for many of PRO's API requests. Each PRO <code>{consignmentReference}</code> takes the format <code>EC-xxx-xxx-xxx</code>, where <code>x</code> is an alphanumeric character.</p>
+<p>As a minimum, the <strong>Create Consignments</strong> endpoint requires you to send package weights and dimensions, origin address, and destination address data. You can either specify package weights and dimension via the <code>Weight</code> and <code>Dimensions</code> properties, or by supplying a <code>PackageSizeReference</code>.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+A <code>PackageSizeReference</code> is a unique identifier for a pre-defined, standardised package size. To configure standard package sizes, use the <strong><a href="https://www.electioapp.com/Configuration/packagingsizes">Configuration &gt; Packaging Sizes</a></strong> page of the PRO UI.</p>
+</blockquote>
+<p>However, there are lots of other properties you can send when creating a consignment, including:</p>
+<ul>
+<li>Your own consignment reference.</li>
+<li>The consignment's source.</li>
+<li>Shipping and delivery dates.</li>
+<li>Customs documentation.</li>
+<li>The consignment's direction of travel.</li>
+<li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For more information on using metadata in PRO, see the <strong><a href="/api/flows/moreInfo.html#metadata">Metadata</a></strong> section of the <strong>More Information</strong> page.</li>
+<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment could be allocated to. For more information on allocation tags, see the <strong><a href="/api/flows/moreInfo.html#tags">Tags</a></strong> section of the <strong>More Information</strong> page.</li>
+</ul>
+<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your organisation's shipping locations, see the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page of the API reference.</p>
+<p>To edit an existing order, use the <strong><a href="https://docs.electioapp.com/#/api/UpdateOrder">Update Orders</a></strong> endpoint. For more information on updating orders, see the <strong><a href="/api/flows/moreInfo.html#updating-orders">Updating Orders</a></strong> section of the <strong>More Information</strong> page.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+For full reference information on the <strong>Create Consignment</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="examples">Examples</h3>
+<p>These examples show the creation of a fairly standard consignment. In this case, we have an outbound consignment comprising a single package with a single item inside it.</p>
+<div class="tab">
+    <button class="staticTabButton">Request Example</button>
+    <div class="copybutton" onclick="CopyToClipboard('createConRequest')">Click to Copy</div>
+</div>
+<div id="createConRequest" class="staticTabContent" onclick="CopyToClipboard('createConRequest')">
+<pre><code class="lang-json">{
+  &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;MYCONS-098998&quot;,
+  &quot;Source&quot;: &quot;Api&quot;,
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;Restock_Date&quot;,
+      &quot;DateTimeValue&quot;: &quot;2019-06-18T00:00:00+00:00&quot;
+    }
+  ],
+  &quot;Packages&quot;: [
+    {
+      &quot;Items&quot;: [
+        {
+          &quot;Sku&quot;: &quot;SKU093434&quot;,
+          &quot;Model&quot;: &quot;ITM-002&quot;,
+          &quot;Description&quot;: &quot;Striped Bamboo Red/White&quot;,
+          &quot;CountryOfOrigin&quot;: {
+            &quot;IsoCode&quot;: {
+              &quot;TwoLetterCode&quot;: &quot;GB&quot;
+            }
+          },
+          &quot;HarmonisationCode&quot;: &quot;Harmonisation_Code&quot;,
+          &quot;Weight&quot;: {
+            &quot;Value&quot;: 0.5,
+            &quot;Unit&quot;: &quot;Kg&quot;
+          },
+          &quot;Dimensions&quot;: {
+            &quot;Unit&quot;: &quot;Cm&quot;,
+            &quot;Width&quot;: 10.0,
+            &quot;Length&quot;: 10.0,
+            &quot;Height&quot;: 10.0
+          },
+          &quot;Value&quot;: {
+            &quot;Amount&quot;: 5.99,
+            &quot;Currency&quot;: {
+              &quot;IsoCode&quot;: &quot;GBP&quot;
+            }
+          },
+          &quot;ItemReferenceProvidedByCustomer&quot;: &quot;ITEMREF-098&quot;,
+          &quot;Barcode&quot;: {
+            &quot;Code&quot;: &quot;09887-091221&quot;,
+            &quot;BarcodeType&quot;: &quot;Code39&quot;
+          },
+          &quot;MetaData&quot;: [
+            {
+              &quot;KeyValue&quot;: &quot;Picker&quot;,
+              &quot;StringValue&quot;: &quot;David Thomas&quot;
+            }
+          ],
+          &quot;Quantity&quot;: 1,
+          &quot;Unit&quot;: &quot;Box&quot;,
+          &quot;HarmonisationKeyWords&quot;: [
+            &quot;Keyword1&quot;
+          ],
+          &quot;ContentClassification&quot;: &quot;Unrestricted&quot;,
+          &quot;ContentClassificationDetails&quot;: &quot;NotSpecified&quot;
+        }
+      ],
+      &quot;PackageReferenceProvidedByCustomer&quot;: &quot;MYPACK-00923&quot;,
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 0.5,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 10.0,
+        &quot;Length&quot;: 10.0,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Description&quot;: &quot;Socks&quot;,
+      &quot;Value&quot;: {
+        &quot;Amount&quot;: 5.99,
+        &quot;Currency&quot;: {
+          &quot;IsoCode&quot;: &quot;GBP&quot;
+        }
+      },
+      &quot;Barcode&quot;: {
+        &quot;Code&quot;: &quot;09887-091221&quot;,
+        &quot;BarcodeType&quot;: &quot;Code39&quot;
+      },
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;WMS-REF&quot;,
+          &quot;IntValue&quot;: 77656555
+        }
+      ]
+    }
+  ],
+  &quot;CustomsDocumentation&quot;: {
+    &quot;DesignatedPersonResponsible&quot;: &quot;Peter McPetersson&quot;,
+    &quot;ImportersVatNumber&quot;: &quot;02345555&quot;,
+    &quot;CategoryType&quot;: &quot;Other&quot;,
+    &quot;ShipperCustomsReference&quot;: &quot;CREF0001&quot;,
+    &quot;ImportersTaxCode&quot;: &quot;TC001&quot;,
+    &quot;ImportersTelephone&quot;: &quot;0161123456&quot;,
+    &quot;ImportersFax&quot;: &quot;01611124547&quot;,
+    &quot;ImportersEmail&quot;: &quot;peter.mcpetersson@test.com&quot;,
+    &quot;CN23Comments&quot;: &quot;Comments&quot;,
+    &quot;ReferencesOfAttachedInvoices&quot;: [
+      &quot;INV001&quot;
+    ],
+    &quot;ReferencesOfAttachedCertificates&quot;: [
+      &quot;CERT001&quot;
+    ],
+    &quot;ReferencesOfAttachedLicences&quot;: [
+      &quot;LIC001&quot;
+    ],
+    &quot;CategoryTypeExplanation&quot;: &quot;Explanation&quot;,
+    &quot;DeclarationDate&quot;: &quot;2019-06-14T00:00:00+00:00&quot;,
+    &quot;OfficeOfPosting&quot;: &quot;Manchester&quot;,
+    &quot;ReasonForExport&quot;: &quot;Sale&quot;,
+    &quot;ShippingTerms&quot;: &quot;CFR&quot;,
+    &quot;ShippersVatNumber&quot;: &quot;874541414&quot;,
+    &quot;ReceiversTaxCode&quot;: &quot;TC5454&quot;,
+    &quot;ReceiversVatNumber&quot;: &quot;8745474&quot;,
+    &quot;InvoiceDate&quot;: &quot;2019-06-14T00:00:00+00:00&quot;
+  },
+  &quot;Addresses&quot;: [
+    {
+      &quot;AddressType&quot;: &quot;Origin&quot;,
+      &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+      &quot;IsCached&quot;: false
+    },
+    {
+      &quot;AddressType&quot;: &quot;Destination&quot;,
+      &quot;Contact&quot;: {
+        &quot;Title&quot;: &quot;Mr&quot;,
+        &quot;FirstName&quot;: &quot;Peter&quot;,
+        &quot;LastName&quot;: &quot;McPetersson&quot;,
+        &quot;Telephone&quot;: &quot;07702123456&quot;,
+        &quot;Mobile&quot;: &quot;07702123456&quot;,
+        &quot;LandLine&quot;: &quot;0161544123&quot;,
+        &quot;Email&quot;: &quot;peter.mcpetersson@test.com&quot;
+      },
+      &quot;CompanyName&quot;: &quot;Test Company (UK) Ltd.&quot;,
+      &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+      &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+      &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+      &quot;Town&quot;: &quot;Manchester&quot;,
+      &quot;Region&quot;: &quot;Greater Manchester&quot;,
+      &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+      &quot;Country&quot;: {
+        &quot;Name&quot;: &quot;Great Britain&quot;,
+        &quot;IsoCode&quot;: {
+          &quot;TwoLetterCode&quot;: &quot;GB&quot;
+        }
+      },
+      &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+      &quot;LatLong&quot;: {
+        &quot;Latitude&quot;: 53.474220,
+        &quot;Longitude&quot;: -2.246049
+      },
+      &quot;IsCached&quot;: false
+    }
+  ],
+  &quot;Direction&quot;: &quot;Outbound&quot;
+}
+</code></pre>
+</div>   
+<p>After receiving the request, PRO returns a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. At this point, you should store the <code>{consignmentReference}</code>, as many of PRO's endpoints take <code>{consignmentReference}</code> as a parameter.</p>
+<div class="tab">
+    <button class="staticTabButton">Request Example</button>
+    <div class="copybutton" onclick="CopyToClipboard('createConResponse')">Click to Copy</div>
+</div>
+<div id="createConResponse" class="staticTabContent" onclick="CopyToClipboard('createConResponse')">
+<pre><code class="lang-json">[
+  {
+    &quot;Rel&quot;: &quot;Link&quot;,
+    &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-05B-MMA&quot;
+  }
+]
+</code></pre>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/includes/_create_consignments.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

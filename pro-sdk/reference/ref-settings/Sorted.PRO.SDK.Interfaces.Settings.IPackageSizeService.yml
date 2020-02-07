@@ -1,0 +1,830 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  id: IPackageSizeService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  children:
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize(System.String)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync(System.String)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize(System.String)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync(System.String)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  - Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  langs:
+  - csharp
+  - vb
+  name: IPackageSizeService
+  nameWithType: IPackageSizeService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IPackageSizeService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nInterface for Package Size operations.\n\nPackage Sizes are pre-configured package dimensions that can be used during\ncreation of consignments instead of supplying the dimensions and weight with\nevery request.\n"
+  example: []
+  syntax:
+    content: public interface IPackageSizeService
+    content.vb: Public Interface IPackageSizeService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes
+  id: GetPackageSizes
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: GetPackageSizes()
+  nameWithType: IPackageSizeService.GetPackageSizes()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetPackageSizes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nRetrieves a list of all configured Package Sizes.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      List<PackageSize> GetPackageSizes()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.PackageSize}
+      description: List of Package Sizes
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetPackageSizes As List(Of PackageSize)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  id: CreatePackageSize(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: CreatePackageSize(PackageSize)
+  nameWithType: IPackageSizeService.CreatePackageSize(PackageSize)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreatePackageSize
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nCreates a new Package Size\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void CreatePackageSize(PackageSize packageSize)
+    parameters:
+    - id: packageSize
+      type: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+      description: Size of the package.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub CreatePackageSize(packageSize As PackageSize)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize(System.String)
+  id: DeletePackageSize(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: DeletePackageSize(String)
+  nameWithType: IPackageSizeService.DeletePackageSize(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeletePackageSize
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 32
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nDeletes a Package Size\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void DeletePackageSize(string packageSizeReference)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+      description: The package size reference.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub DeletePackageSize(packageSizeReference As String)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  id: UpdatePackageSize(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: UpdatePackageSize(String, PackageSize)
+  nameWithType: IPackageSizeService.UpdatePackageSize(String, PackageSize)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize(System.String, Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdatePackageSize
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nUpdates an existing Package Size\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void UpdatePackageSize(string packageSizeReference, PackageSize packageSize)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+      description: The package size reference.
+    - id: packageSize
+      type: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+      description: Size of the package.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub UpdatePackageSize(packageSizeReference As String, packageSize As PackageSize)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize(System.String)
+  id: SetDefaultPackageSize(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultPackageSize(String)
+  nameWithType: IPackageSizeService.SetDefaultPackageSize(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetDefaultPackageSize
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nSets a specific package size as the default.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void SetDefaultPackageSize(string packageSizeReference)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+      description: The package size reference.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub SetDefaultPackageSize(packageSizeReference As String)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize
+  id: GetDefaultPackageSize
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultPackageSize()
+  nameWithType: IPackageSizeService.GetDefaultPackageSize()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetDefaultPackageSize
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 51
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nGets the default Package Size.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      PackageSize GetDefaultPackageSize()
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+      description: ''
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetDefaultPackageSize As PackageSize
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync
+  id: GetPackageSizesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: GetPackageSizesAsync()
+  nameWithType: IPackageSizeService.GetPackageSizesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetPackageSizesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 53
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: Task<List<PackageSize>> GetPackageSizesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.PackageSize}}
+    content.vb: Function GetPackageSizesAsync As Task(Of List(Of PackageSize))
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  id: CreatePackageSizeAsync(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: CreatePackageSizeAsync(PackageSize)
+  nameWithType: IPackageSizeService.CreatePackageSizeAsync(PackageSize)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync(Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreatePackageSizeAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 54
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: Task CreatePackageSizeAsync(PackageSize packageSize)
+    parameters:
+    - id: packageSize
+      type: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CreatePackageSizeAsync(packageSize As PackageSize) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync(System.String)
+  id: DeletePackageSizeAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: DeletePackageSizeAsync(String)
+  nameWithType: IPackageSizeService.DeletePackageSizeAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeletePackageSizeAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: Task DeletePackageSizeAsync(string packageSizeReference)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeletePackageSizeAsync(packageSizeReference As String) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  id: UpdatePackageSizeAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: UpdatePackageSizeAsync(String, PackageSize)
+  nameWithType: IPackageSizeService.UpdatePackageSizeAsync(String, PackageSize)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync(System.String, Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdatePackageSizeAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 56
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: Task UpdatePackageSizeAsync(string packageSizeReference, PackageSize packageSize)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+    - id: packageSize
+      type: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdatePackageSizeAsync(packageSizeReference As String, packageSize As PackageSize) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync(System.String)
+  id: SetDefaultPackageSizeAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultPackageSizeAsync(String)
+  nameWithType: IPackageSizeService.SetDefaultPackageSizeAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetDefaultPackageSizeAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 57
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: Task SetDefaultPackageSizeAsync(string packageSizeReference)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetDefaultPackageSizeAsync(packageSizeReference As String) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync
+  id: GetDefaultPackageSizeAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService
+  langs:
+  - csharp
+  - vb
+  name: GetDefaultPackageSizeAsync()
+  nameWithType: IPackageSizeService.GetDefaultPackageSizeAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetDefaultPackageSizeAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/IPackageSizeService.cs
+    startLine: 58
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: Task<PackageSize> GetDefaultPackageSizeAsync()
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.PackageSize}
+    content.vb: Function GetDefaultPackageSizeAsync As Task(Of PackageSize)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes
+  name: GetPackageSizes
+  nameWithType: IPackageSizeService.GetPackageSizes
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizes
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.PackageSize}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.PackageSize}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PackageSize>
+  nameWithType: List<PackageSize>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.PackageSize>
+  nameWithType.vb: List(Of PackageSize)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  name.vb: List(Of PackageSize)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    name: PackageSize
+    nameWithType: PackageSize
+    fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    name: PackageSize
+    nameWithType: PackageSize
+    fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize
+  name: CreatePackageSize
+  nameWithType: IPackageSizeService.CreatePackageSize
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSize
+- uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: PackageSize
+  nameWithType: PackageSize
+  fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize
+  name: DeletePackageSize
+  nameWithType: IPackageSizeService.DeletePackageSize
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize
+  name: UpdatePackageSize
+  nameWithType: IPackageSizeService.UpdatePackageSize
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSize
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize
+  name: SetDefaultPackageSize
+  nameWithType: IPackageSizeService.SetDefaultPackageSize
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSize
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize
+  name: GetDefaultPackageSize
+  nameWithType: IPackageSizeService.GetDefaultPackageSize
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSize
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync
+  name: GetPackageSizesAsync
+  nameWithType: IPackageSizeService.GetPackageSizesAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetPackageSizesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.PackageSize}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.PackageSize}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<PackageSize>>
+  nameWithType: Task<List<PackageSize>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.PackageSize>>
+  nameWithType.vb: Task(Of List(Of PackageSize))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.PackageSize))
+  name.vb: Task(Of List(Of PackageSize))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    name: PackageSize
+    nameWithType: PackageSize
+    fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    name: PackageSize
+    nameWithType: PackageSize
+    fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync
+  name: CreatePackageSizeAsync
+  nameWithType: IPackageSizeService.CreatePackageSizeAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.CreatePackageSizeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync
+  name: DeletePackageSizeAsync
+  nameWithType: IPackageSizeService.DeletePackageSizeAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.DeletePackageSizeAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync
+  name: UpdatePackageSizeAsync
+  nameWithType: IPackageSizeService.UpdatePackageSizeAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.UpdatePackageSizeAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync
+  name: SetDefaultPackageSizeAsync
+  nameWithType: IPackageSizeService.SetDefaultPackageSizeAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.SetDefaultPackageSizeAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync
+  name: GetDefaultPackageSizeAsync
+  nameWithType: IPackageSizeService.GetDefaultPackageSizeAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IPackageSizeService.GetDefaultPackageSizeAsync
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.PackageSize}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.PackageSize}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PackageSize>
+  nameWithType: Task<PackageSize>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.PackageSize>
+  nameWithType.vb: Task(Of PackageSize)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.PackageSize)
+  name.vb: Task(Of PackageSize)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    name: PackageSize
+    nameWithType: PackageSize
+    fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+    name: PackageSize
+    nameWithType: PackageSize
+    fullName: Sorted.PRO.SDK.DataTypes.Common.PackageSize
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,472 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  id: ConsignmentOperationResult
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocated
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocationFailed
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreated
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreationFailed
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationFailed
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationPartialSuccess
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationSucceed
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocated
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocationFailed
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreated
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreationFailed
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.Unknown
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentOperationResult
+  nameWithType: ConsignmentOperationResult
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentOperationResult
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Operation Result", "The result of an operation to create, update, pack or allocate consignments or orders.")]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public enum ConsignmentOperationResult
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Operation Result", "The result of an operation to create, update, pack or allocate consignments or orders.")>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Enum ConsignmentOperationResult
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Operation Result
+    - type: System.String
+      value: The result of an operation to create, update, pack or allocate consignments or orders.
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.Unknown
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.Unknown
+  id: Unknown
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: ConsignmentOperationResult.Unknown
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.Unknown
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Unknown
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: Unknown = 0
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreated
+  id: ConsignmentCreated
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentCreated
+  nameWithType: ConsignmentOperationResult.ConsignmentCreated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentCreated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ConsignmentCreated = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocated
+  id: ConsignmentAllocated
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentAllocated
+  nameWithType: ConsignmentOperationResult.ConsignmentAllocated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentAllocated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ConsignmentAllocated = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocationFailed
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocationFailed
+  id: ConsignmentAllocationFailed
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentAllocationFailed
+  nameWithType: ConsignmentOperationResult.ConsignmentAllocationFailed
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentAllocationFailed
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentAllocationFailed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ConsignmentAllocationFailed = 3
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreationFailed
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreationFailed
+  id: ConsignmentCreationFailed
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentCreationFailed
+  nameWithType: ConsignmentOperationResult.ConsignmentCreationFailed
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ConsignmentCreationFailed
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentCreationFailed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ConsignmentCreationFailed = 4
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationFailed
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationFailed
+  id: OperationFailed
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: OperationFailed
+  nameWithType: ConsignmentOperationResult.OperationFailed
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationFailed
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OperationFailed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: OperationFailed = 5
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationSucceed
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationSucceed
+  id: OperationSucceed
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: OperationSucceed
+  nameWithType: ConsignmentOperationResult.OperationSucceed
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationSucceed
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OperationSucceed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: OperationSucceed = 6
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationPartialSuccess
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationPartialSuccess
+  id: OperationPartialSuccess
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: OperationPartialSuccess
+  nameWithType: ConsignmentOperationResult.OperationPartialSuccess
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.OperationPartialSuccess
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OperationPartialSuccess
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 21
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: OperationPartialSuccess = 7
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreated
+  id: ReturnConsignmentCreated
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ReturnConsignmentCreated
+  nameWithType: ConsignmentOperationResult.ReturnConsignmentCreated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ReturnConsignmentCreated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ReturnConsignmentCreated = 8
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocated
+  id: ReturnConsignmentAllocated
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ReturnConsignmentAllocated
+  nameWithType: ConsignmentOperationResult.ReturnConsignmentAllocated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ReturnConsignmentAllocated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ReturnConsignmentAllocated = 9
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocationFailed
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocationFailed
+  id: ReturnConsignmentAllocationFailed
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ReturnConsignmentAllocationFailed
+  nameWithType: ConsignmentOperationResult.ReturnConsignmentAllocationFailed
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentAllocationFailed
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ReturnConsignmentAllocationFailed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ReturnConsignmentAllocationFailed = 10
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreationFailed
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreationFailed
+  id: ReturnConsignmentCreationFailed
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  langs:
+  - csharp
+  - vb
+  name: ReturnConsignmentCreationFailed
+  nameWithType: ConsignmentOperationResult.ReturnConsignmentCreationFailed
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult.ReturnConsignmentCreationFailed
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ReturnConsignmentCreationFailed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentOperationResult.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: ReturnConsignmentCreationFailed = 11
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentOperationResult
+  nameWithType: ConsignmentOperationResult
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult

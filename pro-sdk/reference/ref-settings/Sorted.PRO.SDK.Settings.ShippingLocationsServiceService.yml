@@ -1,0 +1,2597 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  commentId: T:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  id: ShippingLocationsServiceService
+  parent: Sorted.PRO.SDK.Settings
+  children:
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  langs:
+  - csharp
+  - vb
+  name: ShippingLocationsServiceService
+  nameWithType: ShippingLocationsServiceService
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingLocationsServiceService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nManage shipping locations\n"
+  example: []
+  syntax:
+    content: 'public class ShippingLocationsServiceService : BaseService, IShippingLocationsService'
+    content.vb: >-
+      Public Class ShippingLocationsServiceService
+          Inherits BaseService
+          Implements IShippingLocationsService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: ShippingLocationsServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: ShippingLocationsServiceService.ShippingLocationsServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationsServiceService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 32
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nInstantiates a new <xref href=\"Sorted.PRO.SDK.Settings.ShippingLocationsServiceService\" data-throw-if-not-resolved=\"false\"></xref><remarks>\nThis service is used to manage Shipping Locations\n</remarks>\n"
+  example: []
+  syntax:
+    content: public ShippingLocationsServiceService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API Key of the current user
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The configured endpoints
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.#ctor*
+  nameWithType.vb: ShippingLocationsServiceService.ShippingLocationsServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationsServiceService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: ShippingLocationsServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations
+  id: GetShippingLocations
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetShippingLocations()
+  nameWithType: ShippingLocationsServiceService.GetShippingLocations()
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetShippingLocations
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 41
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet the full list of shipping locations for the current company, including those to which the current user has not been linked\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Shipping Locations", "Returns all shipping locations for the current company, including those to which the current user has not been linked.", "Shipping Locations", typeof(List<ShippingLocation>), "/shippinglocations", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<ShippingLocation> GetShippingLocations()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+      description: A list of <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref>
+    content.vb: >-
+      <ApiEndpoint("Get Shipping Locations", "Returns all shipping locations for the current company, including those to which the current user has not been linked.", "Shipping Locations", GetType(List(Of ShippingLocation)), "/shippinglocations", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetShippingLocations As List(Of ShippingLocation)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer(System.String)
+  id: GetShippingLocationsForCustomer(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetShippingLocationsForCustomer(String)
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationsForCustomer(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetShippingLocationsForCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 63
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet the full list of shipping locations for a company\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<ShippingLocation> GetShippingLocationsForCustomer(string customerReference)
+    parameters:
+    - id: customerReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+      description: "\nA list of <xref href=\"Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation\" data-throw-if-not-resolved=\"false\"></xref>\n"
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetShippingLocationsForCustomer(customerReference As String) As List(Of ShippingLocation)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations
+  id: GetAssignedShippingLocations
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAssignedShippingLocations()
+  nameWithType: ShippingLocationsServiceService.GetAssignedShippingLocations()
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAssignedShippingLocations
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 74
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the list of shipping locations for your company to which your account has been linked\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Assigned Shipping Locations", "Returns the list of shipping location with which the current user's account has been linked.", "Shipping Locations", typeof(List<ShippingLocation>), "/shippinglocations/assigned", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<ShippingLocation> GetAssignedShippingLocations()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+      description: A list of <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref>
+    content.vb: >-
+      <ApiEndpoint("Get Assigned Shipping Locations", "Returns the list of shipping location with which the current user's account has been linked.", "Shipping Locations", GetType(List(Of ShippingLocation)), "/shippinglocations/assigned", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetAssignedShippingLocations As List(Of ShippingLocation)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation(System.String)
+  id: GetShippingLocation(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetShippingLocation(String)
+  nameWithType: ShippingLocationsServiceService.GetShippingLocation(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetShippingLocation
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 95
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet a specific <xref href=\"Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation\" data-throw-if-not-resolved=\"false\"></xref> by its reference\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Shipping Location", "Returns the specified shipping location details.", "Shipping Locations", typeof(ShippingLocation), "/shippinglocations/{shippingLocationReference:string}", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public ShippingLocation GetShippingLocation(string shippingLocationReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The reference of the shipping location to retrieve
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+      description: "\nThe matching <xref href=\"Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation\" data-throw-if-not-resolved=\"false\"></xref>\n"
+    content.vb: >-
+      <ApiEndpoint("Get Shipping Location", "Returns the specified shipping location details.", "Shipping Locations", GetType(ShippingLocation), "/shippinglocations/{shippingLocationReference:string}", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetShippingLocation(shippingLocationReference As String) As ShippingLocation
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable(System.String)
+  id: ShippingLocationReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: ShippingLocationReferenceAvailable(String)
+  nameWithType: ShippingLocationsServiceService.ShippingLocationReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingLocationReferenceAvailable
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 119
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCheck whether the specified shipping location reference is available.\n<remarks>\nA reference will be deemed unavailable when it has previously been used for an existing shipping location\n</remarks>\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Reference Is Available", "Indicates whether the specified reference is available. This is useful to call before attempting to create a new shipping location.", "Shipping Locations", typeof(bool), "/shippinglocations/{shippingLocationReference:string}/available", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool ShippingLocationReferenceAvailable(string shippingLocationReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference to check
+    return:
+      type: System.Boolean
+      description: "\n<code>True</code> if the reference is available, otherwise <code>False</code>\n"
+    content.vb: >-
+      <ApiEndpoint("Reference Is Available", "Indicates whether the specified reference is available. This is useful to call before attempting to create a new shipping location.", "Shipping Locations", GetType(Boolean), "/shippinglocations/{shippingLocationReference:string}/available", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function ShippingLocationReferenceAvailable(shippingLocationReference As String) As Boolean
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  id: CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: CreateShippingLocation(ShippingLocation)
+  nameWithType: ShippingLocationsServiceService.CreateShippingLocation(ShippingLocation)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateShippingLocation
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 137
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCreates a new Shipping Location with the given properties\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Create Shipping Location", "Create a new shipping location.", "Shipping Locations", typeof(ShippingLocation), null, "/shippinglocations", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void CreateShippingLocation(ShippingLocation shippingLocation)
+    parameters:
+    - id: shippingLocation
+      type: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+      description: The <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref> object to created
+    content.vb: >-
+      <ApiEndpoint("Create Shipping Location", "Create a new shipping location.", "Shipping Locations", GetType(ShippingLocation), Nothing, "/shippinglocations", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub CreateShippingLocation(shippingLocation As ShippingLocation)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  id: UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: UpdateShippingLocation(String, ShippingLocation)
+  nameWithType: ShippingLocationsServiceService.UpdateShippingLocation(String, ShippingLocation)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation(System.String, Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateShippingLocation
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 157
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nUpdate an existing shipping location\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Update Shipping Location", "Update an existing shipping location.", "Shipping Locations", typeof(ShippingLocation), null, "/shippinglocations/{shippingLocationReference:string}", "PUT", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void UpdateShippingLocation(string shippingLocationReference, ShippingLocation shippingLocation)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The reference of the location to update
+    - id: shippingLocation
+      type: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+      description: The full <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref> including modified and unmodified properties
+    content.vb: >-
+      <ApiEndpoint("Update Shipping Location", "Update an existing shipping location.", "Shipping Locations", GetType(ShippingLocation), Nothing, "/shippinglocations/{shippingLocationReference:string}", "PUT", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub UpdateShippingLocation(shippingLocationReference As String, shippingLocation As ShippingLocation)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation(System.String)
+  id: DeleteShippingLocation(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: DeleteShippingLocation(String)
+  nameWithType: ShippingLocationsServiceService.DeleteShippingLocation(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteShippingLocation
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 175
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDelete the specified shipping location\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Shipping Location", "Deletes the specified shipping location.", "Shipping Locations", "/shippinglocations/{shippingLocationReference:string}", "DELETE", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void DeleteShippingLocation(string shippingLocationReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The reference of the shipping location to remove
+    content.vb: >-
+      <ApiEndpoint("Delete Shipping Location", "Deletes the specified shipping location.", "Shipping Locations", "/shippinglocations/{shippingLocationReference:string}", "DELETE", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub DeleteShippingLocation(shippingLocationReference As String)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync(System.String)
+  id: GetShippingLocationsForCustomerAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetShippingLocationsForCustomerAsync(String)
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetShippingLocationsForCustomerAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 193
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the full list of shipping locations for the current company, including those to which the current user has not been linked\n"
+  example: []
+  syntax:
+    content: public Task<List<ShippingLocation>> GetShippingLocationsForCustomerAsync(string customerReference)
+    parameters:
+    - id: customerReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}}
+      description: "\nA list of <xref href=\"Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation\" data-throw-if-not-resolved=\"false\"></xref>\n"
+    content.vb: Public Function GetShippingLocationsForCustomerAsync(customerReference As String) As Task(Of List(Of ShippingLocation))
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync
+  id: GetShippingLocationsAsync
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetShippingLocationsAsync()
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationsAsync()
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetShippingLocationsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 220
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the full list of shipping locations for the current company, including those to which the current user has not been linked\n"
+  example: []
+  syntax:
+    content: public Task<List<ShippingLocation>> GetShippingLocationsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}}
+      description: "\nA list of <xref href=\"Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation\" data-throw-if-not-resolved=\"false\"></xref>\n"
+    content.vb: Public Function GetShippingLocationsAsync As Task(Of List(Of ShippingLocation))
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync
+  id: GetAssignedShippingLocationsAsync
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAssignedShippingLocationsAsync()
+  nameWithType: ShippingLocationsServiceService.GetAssignedShippingLocationsAsync()
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAssignedShippingLocationsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 245
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the list of shipping locations for your company to which your account has been linked\n"
+  example: []
+  syntax:
+    content: public Task<List<ShippingLocation>> GetAssignedShippingLocationsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}}
+      description: A list of <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetAssignedShippingLocationsAsync As Task(Of List(Of ShippingLocation))
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync(System.String)
+  id: GetShippingLocationAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetShippingLocationAsync(String)
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetShippingLocationAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 269
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet a specific <xref href=\"Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation\" data-throw-if-not-resolved=\"false\"></xref> by its reference\n"
+  example: []
+  syntax:
+    content: public Task<ShippingLocation> GetShippingLocationAsync(string shippingLocationReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The reference of the shipping location to retrieve
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+      description: The matching <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetShippingLocationAsync(shippingLocationReference As String) As Task(Of ShippingLocation)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync(System.String)
+  id: ShippingLocationReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: ShippingLocationReferenceAvailableAsync(String)
+  nameWithType: ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingLocationReferenceAvailableAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 295
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCheck whether the specified shipping location reference is available.\n<remarks>\nA reference will be deemed unavailable when it has previously been used for an existing shipping location \n</remarks>\n"
+  example: []
+  syntax:
+    content: public Task<bool> ShippingLocationReferenceAvailableAsync(string shippingLocationReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference to check
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> if the reference is available, otherwise <code>False</code>
+    content.vb: Public Function ShippingLocationReferenceAvailableAsync(shippingLocationReference As String) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  id: CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: CreateShippingLocationAsync(ShippingLocation)
+  nameWithType: ShippingLocationsServiceService.CreateShippingLocationAsync(ShippingLocation)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateShippingLocationAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 306
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCreates a new Shipping Location with the given properties\n"
+  example: []
+  syntax:
+    content: public Task CreateShippingLocationAsync(ShippingLocation shippingLocation)
+    parameters:
+    - id: shippingLocation
+      type: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+      description: The <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref> object to created
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function CreateShippingLocationAsync(shippingLocation As ShippingLocation) As Task
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  id: UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: UpdateShippingLocationAsync(String, ShippingLocation)
+  nameWithType: ShippingLocationsServiceService.UpdateShippingLocationAsync(String, ShippingLocation)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync(System.String, Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateShippingLocationAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 318
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nUpdate an existing shipping location\n"
+  example: []
+  syntax:
+    content: public Task UpdateShippingLocationAsync(string shippingLocationReference, ShippingLocation shippingLocation)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The reference of the location to update
+    - id: shippingLocation
+      type: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+      description: The full <xref href="Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation" data-throw-if-not-resolved="false"></xref> including modified and unmodified properties
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function UpdateShippingLocationAsync(shippingLocationReference As String, shippingLocation As ShippingLocation) As Task
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync(System.String)
+  id: DeleteShippingLocationAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  langs:
+  - csharp
+  - vb
+  name: DeleteShippingLocationAsync(String)
+  nameWithType: ShippingLocationsServiceService.DeleteShippingLocationAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteShippingLocationAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ShippingLocationsServiceService.cs
+    startLine: 329
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDelete the specified shipping location\n"
+  example: []
+  syntax:
+    content: public Task DeleteShippingLocationAsync(string shippingLocationReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The reference of the shipping location to remove
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function DeleteShippingLocationAsync(shippingLocationReference As String) As Task
+  overload: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Settings
+  commentId: N:Sorted.PRO.SDK.Settings
+  name: Sorted.PRO.SDK.Settings
+  nameWithType: Sorted.PRO.SDK.Settings
+  fullName: Sorted.PRO.SDK.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  name: IShippingLocationsService
+  nameWithType: IShippingLocationsService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  commentId: T:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  name: ShippingLocationsServiceService
+  nameWithType: ShippingLocationsServiceService
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.#ctor
+  name: ShippingLocationsServiceService
+  nameWithType: ShippingLocationsServiceService.ShippingLocationsServiceService
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationsServiceService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation
+  commentId: T:Sorted.PRO.SDK.DataTypes.Profile.ShippingLocation
+  isExternal: true
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations
+  name: GetShippingLocations
+  nameWithType: ShippingLocationsServiceService.GetShippingLocations
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocations
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  name: GetShippingLocations()
+  nameWithType: IShippingLocationsService.GetShippingLocations()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+    name: GetShippingLocations
+    nameWithType: IShippingLocationsService.GetShippingLocations
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+    name: GetShippingLocations
+    nameWithType: IShippingLocationsService.GetShippingLocations
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocations
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ShippingLocation>
+  nameWithType: List<ShippingLocation>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ShippingLocation>
+  nameWithType.vb: List(Of ShippingLocation)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  name.vb: List(Of ShippingLocation)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer
+  name: GetShippingLocationsForCustomer
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationsForCustomer
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomer
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: GetShippingLocationsForCustomer(String)
+  nameWithType: IShippingLocationsService.GetShippingLocationsForCustomer(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer(System.String)
+    name: GetShippingLocationsForCustomer
+    nameWithType: IShippingLocationsService.GetShippingLocationsForCustomer
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer(System.String)
+    name: GetShippingLocationsForCustomer
+    nameWithType: IShippingLocationsService.GetShippingLocationsForCustomer
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations
+  name: GetAssignedShippingLocations
+  nameWithType: ShippingLocationsServiceService.GetAssignedShippingLocations
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocations
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  name: GetAssignedShippingLocations()
+  nameWithType: IShippingLocationsService.GetAssignedShippingLocations()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+    name: GetAssignedShippingLocations
+    nameWithType: IShippingLocationsService.GetAssignedShippingLocations
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+    name: GetAssignedShippingLocations
+    nameWithType: IShippingLocationsService.GetAssignedShippingLocations
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocations
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation
+  name: GetShippingLocation
+  nameWithType: ShippingLocationsServiceService.GetShippingLocation
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocation
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: GetShippingLocation(String)
+  nameWithType: IShippingLocationsService.GetShippingLocation(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation(System.String)
+    name: GetShippingLocation
+    nameWithType: IShippingLocationsService.GetShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation(System.String)
+    name: GetShippingLocation
+    nameWithType: IShippingLocationsService.GetShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: ShippingLocation
+  nameWithType: ShippingLocation
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable
+  name: ShippingLocationReferenceAvailable
+  nameWithType: ShippingLocationsServiceService.ShippingLocationReferenceAvailable
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailable
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: ShippingLocationReferenceAvailable(String)
+  nameWithType: IShippingLocationsService.ShippingLocationReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable(System.String)
+    name: ShippingLocationReferenceAvailable
+    nameWithType: IShippingLocationsService.ShippingLocationReferenceAvailable
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable(System.String)
+    name: ShippingLocationReferenceAvailable
+    nameWithType: IShippingLocationsService.ShippingLocationReferenceAvailable
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation
+  name: CreateShippingLocation
+  nameWithType: ShippingLocationsServiceService.CreateShippingLocation
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocation
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  name: CreateShippingLocation(ShippingLocation)
+  nameWithType: IShippingLocationsService.CreateShippingLocation(ShippingLocation)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: CreateShippingLocation
+    nameWithType: IShippingLocationsService.CreateShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: CreateShippingLocation
+    nameWithType: IShippingLocationsService.CreateShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation
+  name: UpdateShippingLocation
+  nameWithType: ShippingLocationsServiceService.UpdateShippingLocation
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocation
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: UpdateShippingLocation(String, ShippingLocation)
+  nameWithType: IShippingLocationsService.UpdateShippingLocation(String, ShippingLocation)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation(System.String, Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: UpdateShippingLocation
+    nameWithType: IShippingLocationsService.UpdateShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: UpdateShippingLocation
+    nameWithType: IShippingLocationsService.UpdateShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation
+  name: DeleteShippingLocation
+  nameWithType: ShippingLocationsServiceService.DeleteShippingLocation
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocation
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: DeleteShippingLocation(String)
+  nameWithType: IShippingLocationsService.DeleteShippingLocation(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation(System.String)
+    name: DeleteShippingLocation
+    nameWithType: IShippingLocationsService.DeleteShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation(System.String)
+    name: DeleteShippingLocation
+    nameWithType: IShippingLocationsService.DeleteShippingLocation
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocation
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync
+  name: GetShippingLocationsForCustomerAsync
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsForCustomerAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: GetShippingLocationsForCustomerAsync(String)
+  nameWithType: IShippingLocationsService.GetShippingLocationsForCustomerAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync(System.String)
+    name: GetShippingLocationsForCustomerAsync
+    nameWithType: IShippingLocationsService.GetShippingLocationsForCustomerAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync(System.String)
+    name: GetShippingLocationsForCustomerAsync
+    nameWithType: IShippingLocationsService.GetShippingLocationsForCustomerAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsForCustomerAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<ShippingLocation>>
+  nameWithType: Task<List<ShippingLocation>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ShippingLocation>>
+  nameWithType.vb: Task(Of List(Of ShippingLocation))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ShippingLocation))
+  name.vb: Task(Of List(Of ShippingLocation))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync
+  name: GetShippingLocationsAsync
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationsAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  name: GetShippingLocationsAsync()
+  nameWithType: IShippingLocationsService.GetShippingLocationsAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+    name: GetShippingLocationsAsync
+    nameWithType: IShippingLocationsService.GetShippingLocationsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+    name: GetShippingLocationsAsync
+    nameWithType: IShippingLocationsService.GetShippingLocationsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync
+  name: GetAssignedShippingLocationsAsync
+  nameWithType: ShippingLocationsServiceService.GetAssignedShippingLocationsAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetAssignedShippingLocationsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  name: GetAssignedShippingLocationsAsync()
+  nameWithType: IShippingLocationsService.GetAssignedShippingLocationsAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+    name: GetAssignedShippingLocationsAsync
+    nameWithType: IShippingLocationsService.GetAssignedShippingLocationsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+    name: GetAssignedShippingLocationsAsync
+    nameWithType: IShippingLocationsService.GetAssignedShippingLocationsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetAssignedShippingLocationsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync
+  name: GetShippingLocationAsync
+  nameWithType: ShippingLocationsServiceService.GetShippingLocationAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.GetShippingLocationAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: GetShippingLocationAsync(String)
+  nameWithType: IShippingLocationsService.GetShippingLocationAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync(System.String)
+    name: GetShippingLocationAsync
+    nameWithType: IShippingLocationsService.GetShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync(System.String)
+    name: GetShippingLocationAsync
+    nameWithType: IShippingLocationsService.GetShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.GetShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.ShippingLocation}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ShippingLocation>
+  nameWithType: Task<ShippingLocation>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.ShippingLocation>
+  nameWithType.vb: Task(Of ShippingLocation)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  name.vb: Task(Of ShippingLocation)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync
+  name: ShippingLocationReferenceAvailableAsync
+  nameWithType: ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.ShippingLocationReferenceAvailableAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: ShippingLocationReferenceAvailableAsync(String)
+  nameWithType: IShippingLocationsService.ShippingLocationReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync(System.String)
+    name: ShippingLocationReferenceAvailableAsync
+    nameWithType: IShippingLocationsService.ShippingLocationReferenceAvailableAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync(System.String)
+    name: ShippingLocationReferenceAvailableAsync
+    nameWithType: IShippingLocationsService.ShippingLocationReferenceAvailableAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.ShippingLocationReferenceAvailableAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync
+  name: CreateShippingLocationAsync
+  nameWithType: ShippingLocationsServiceService.CreateShippingLocationAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.CreateShippingLocationAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  name: CreateShippingLocationAsync(ShippingLocation)
+  nameWithType: IShippingLocationsService.CreateShippingLocationAsync(ShippingLocation)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: CreateShippingLocationAsync
+    nameWithType: IShippingLocationsService.CreateShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync(Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: CreateShippingLocationAsync
+    nameWithType: IShippingLocationsService.CreateShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.CreateShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync
+  name: UpdateShippingLocationAsync
+  nameWithType: ShippingLocationsServiceService.UpdateShippingLocationAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.UpdateShippingLocationAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: UpdateShippingLocationAsync(String, ShippingLocation)
+  nameWithType: IShippingLocationsService.UpdateShippingLocationAsync(String, ShippingLocation)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync(System.String, Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: UpdateShippingLocationAsync
+    nameWithType: IShippingLocationsService.UpdateShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.ShippingLocation)
+    name: UpdateShippingLocationAsync
+    nameWithType: IShippingLocationsService.UpdateShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.UpdateShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+    name: ShippingLocation
+    nameWithType: ShippingLocation
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ShippingLocation
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync
+  name: DeleteShippingLocationAsync
+  nameWithType: ShippingLocationsServiceService.DeleteShippingLocationAsync
+  fullName: Sorted.PRO.SDK.Settings.ShippingLocationsServiceService.DeleteShippingLocationAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService
+  isExternal: true
+  name: DeleteShippingLocationAsync(String)
+  nameWithType: IShippingLocationsService.DeleteShippingLocationAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync(System.String)
+    name: DeleteShippingLocationAsync
+    nameWithType: IShippingLocationsService.DeleteShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync(System.String)
+    name: DeleteShippingLocationAsync
+    nameWithType: IShippingLocationsService.DeleteShippingLocationAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IShippingLocationsService.DeleteShippingLocationAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

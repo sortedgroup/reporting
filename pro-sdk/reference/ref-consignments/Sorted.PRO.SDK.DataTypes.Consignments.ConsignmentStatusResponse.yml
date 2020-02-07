@@ -1,0 +1,720 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  id: ConsignmentStatusResponse
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentStatusResponse
+  nameWithType: ConsignmentStatusResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentStatusResponse
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+    startLine: 11
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Status Response", "Indicates the status of a consignment.")]
+
+      public class ConsignmentStatusResponse
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Status Response", "Indicates the status of a consignment.")>
+
+      Public Class ConsignmentStatusResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Status Response
+    - type: System.String
+      value: Indicates the status of a consignment.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  id: ConsignmentReferenceForAllLegsAssignedByMpd
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReferenceForAllLegsAssignedByMpd
+  nameWithType: ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReferenceForAllLegsAssignedByMpd
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference for the consignment assigned by Electio.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentReferenceForAllLegsAssignedByMpd { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference for the consignment assigned by Electio.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReferenceForAllLegsAssignedByMpd As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference for the consignment assigned by Electio.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status
+  id: Status
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: ConsignmentStatusResponse.Status
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Status
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The status of the consignment.", false, PropertyCollectionType.Single)]
+
+      public string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The status of the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property Status As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The status of the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate
+  id: ExpectedDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  langs:
+  - csharp
+  - vb
+  name: ExpectedDeliveryDate
+  nameWithType: ConsignmentStatusResponse.ExpectedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ExpectedDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The expected delivery date of the consignment.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? ExpectedDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The expected delivery date of the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property ExpectedDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The expected delivery date of the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink
+  id: ApiLink
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse
+  langs:
+  - csharp
+  - vb
+  name: ApiLink
+  nameWithType: ConsignmentStatusResponse.ApiLink
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ApiLink
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentStatusResponse.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A link to the full consignment details.", false, PropertyCollectionType.Single)]
+
+      public ApiLink ApiLink { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A link to the full consignment details.", False, PropertyCollectionType.Single)>
+
+      Public Property ApiLink As ApiLink
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A link to the full consignment details.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  name: ConsignmentReferenceForAllLegsAssignedByMpd
+  nameWithType: ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ConsignmentReferenceForAllLegsAssignedByMpd
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status
+  name: Status
+  nameWithType: ConsignmentStatusResponse.Status
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.Status
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate
+  name: ExpectedDeliveryDate
+  nameWithType: ConsignmentStatusResponse.ExpectedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ExpectedDeliveryDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink
+  name: ApiLink
+  nameWithType: ConsignmentStatusResponse.ApiLink
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentStatusResponse.ApiLink
+- uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: ApiLink
+  nameWithType: ApiLink
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common

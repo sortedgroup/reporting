@@ -1,0 +1,597 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters
+  id: AllocationFilters
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection
+  langs:
+  - csharp
+  - vb
+  name: AllocationFilters
+  nameWithType: AllocationFilters
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocationFilters
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nFilters used to allocate consignments\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [Serializable]
+
+      [DataContractType("Allocation Filters", "Filters to apply when allocating consignments")]
+
+      public class AllocationFilters
+    content.vb: >-
+      <DataContract>
+
+      <Serializable>
+
+      <DataContractType("Allocation Filters", "Filters to apply when allocating consignments")>
+
+      Public Class AllocationFilters
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Allocation Filters
+    - type: System.String
+      value: Filters to apply when allocating consignments
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection
+  id: ServiceDirection
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters
+  langs:
+  - csharp
+  - vb
+  name: ServiceDirection
+  nameWithType: AllocationFilters.ServiceDirection
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ServiceDirection
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nThe direction of the service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      [DataContractItem("The service direction, e.g. Outbound", false, PropertyCollectionType.Single)]
+
+      public ServiceDirection ServiceDirection { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Enums.ServiceDirection
+    content.vb: >-
+      <DataMember>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      <DataContractItem("The service direction, e.g. Outbound", False, PropertyCollectionType.Single)>
+
+      Public Property ServiceDirection As ServiceDirection
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The service direction, e.g. Outbound
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup
+  id: IsPickup
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters
+  langs:
+  - csharp
+  - vb
+  name: IsPickup
+  nameWithType: AllocationFilters.IsPickup
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsPickup
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nIndicates whether the consignment will be picked up by the customer or delivered to the destination location.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether to include pickup services", false, PropertyCollectionType.Single)]
+
+      public bool IsPickup { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether to include pickup services", False, PropertyCollectionType.Single)>
+
+      Public Property IsPickup As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether to include pickup services
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff
+  id: IsDropOff
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters
+  langs:
+  - csharp
+  - vb
+  name: IsDropOff
+  nameWithType: AllocationFilters.IsDropOff
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsDropOff
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocationFilters.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nIndicates whether the consignment will be dropped off by the customer or collected at the origin location.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether to include drop off services", false, PropertyCollectionType.Single)]
+
+      public bool IsDropOff { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether to include drop off services", False, PropertyCollectionType.Single)>
+
+      Public Property IsDropOff As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether to include drop off services
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection
+  name: ServiceDirection
+  nameWithType: AllocationFilters.ServiceDirection
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.ServiceDirection
+- uid: Sorted.PRO.SDK.DataTypes.Common.Enums.ServiceDirection
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Enums.ServiceDirection
+  parent: Sorted.PRO.SDK.DataTypes.Common.Enums
+  name: ServiceDirection
+  nameWithType: ServiceDirection
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Enums.ServiceDirection
+- uid: Sorted.PRO.SDK.DataTypes.Common.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common.Enums
+  name: Sorted.PRO.SDK.DataTypes.Common.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup
+  name: IsPickup
+  nameWithType: AllocationFilters.IsPickup
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsPickup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff
+  name: IsDropOff
+  nameWithType: AllocationFilters.IsDropOff
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocationFilters.IsDropOff

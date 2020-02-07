@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  commentId: T:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  id: HttpClientExtensions
+  parent: Sorted.PRO.SDK.Shared.Extensions
+  children:
+  - Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths(System.String,System.String)
+  - Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.String)
+  - Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  - Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  langs:
+  - csharp
+  - vb
+  name: HttpClientExtensions
+  nameWithType: HttpClientExtensions
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: HttpClientExtensions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+    startLine: 7
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  syntax:
+    content: public static class HttpClientExtensions
+    content.vb: Public Module HttpClientExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.String)
+  id: PatchAsync(System.Net.Http.HttpClient,System.String)
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(HttpClient, String)
+  nameWithType: HttpClientExtensions.PatchAsync(HttpClient, String)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PatchAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  syntax:
+    content: public static Task<HttpResponseMessage> PatchAsync(this HttpClient client, string requestUri)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PatchAsync(client As HttpClient, requestUri As String) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  id: PatchAsync(System.Net.Http.HttpClient,System.String,System.Net.Http.HttpContent)
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(HttpClient, String, HttpContent)
+  nameWithType: HttpClientExtensions.PatchAsync(HttpClient, String, HttpContent)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient, System.String, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PatchAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  syntax:
+    content: public static Task<HttpResponseMessage> PatchAsync(this HttpClient client, string requestUri, HttpContent iContent)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: requestUri
+      type: System.String
+    - id: iContent
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PatchAsync(client As HttpClient, requestUri As String, iContent As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  id: PatchAsync(System.Net.Http.HttpClient,System.Uri,System.Net.Http.HttpContent)
+  isExtensionMethod: true
+  parent: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(HttpClient, Uri, HttpContent)
+  nameWithType: HttpClientExtensions.PatchAsync(HttpClient, Uri, HttpContent)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync(System.Net.Http.HttpClient, System.Uri, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PatchAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  syntax:
+    content: public static Task<HttpResponseMessage> PatchAsync(this HttpClient client, Uri requestUri, HttpContent iContent)
+    parameters:
+    - id: client
+      type: System.Net.Http.HttpClient
+    - id: requestUri
+      type: System.Uri
+    - id: iContent
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function PatchAsync(client As HttpClient, requestUri As Uri, iContent As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths(System.String,System.String)
+  id: CombinePaths(System.String,System.String)
+  parent: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions
+  langs:
+  - csharp
+  - vb
+  name: CombinePaths(String, String)
+  nameWithType: HttpClientExtensions.CombinePaths(String, String)
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CombinePaths
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Extensions/HttpClientExtensions.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Extensions
+  syntax:
+    content: public static string CombinePaths(string path1, string path2)
+    parameters:
+    - id: path1
+      type: System.String
+    - id: path2
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function CombinePaths(path1 As String, path2 As String) As String
+  overload: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Sorted.PRO.SDK.Shared.Extensions
+  commentId: N:Sorted.PRO.SDK.Shared.Extensions
+  name: Sorted.PRO.SDK.Shared.Extensions
+  nameWithType: Sorted.PRO.SDK.Shared.Extensions
+  fullName: Sorted.PRO.SDK.Shared.Extensions
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync
+  name: PatchAsync
+  nameWithType: HttpClientExtensions.PatchAsync
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.PatchAsync
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths
+  name: CombinePaths
+  nameWithType: HttpClientExtensions.CombinePaths
+  fullName: Sorted.PRO.SDK.Shared.Extensions.HttpClientExtensions.CombinePaths

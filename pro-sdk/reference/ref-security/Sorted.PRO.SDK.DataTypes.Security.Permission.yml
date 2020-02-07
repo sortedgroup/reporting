@@ -1,0 +1,765 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission
+  commentId: T:Sorted.PRO.SDK.DataTypes.Security.Permission
+  id: Permission
+  parent: Sorted.PRO.SDK.DataTypes.Security
+  children:
+  - Sorted.PRO.SDK.DataTypes.Security.Permission.Access
+  - Sorted.PRO.SDK.DataTypes.Security.Permission.Action
+  - Sorted.PRO.SDK.DataTypes.Security.Permission.Description
+  - Sorted.PRO.SDK.DataTypes.Security.Permission.Key
+  - Sorted.PRO.SDK.DataTypes.Security.Permission.Name
+  - Sorted.PRO.SDK.DataTypes.Security.Permission.Type
+  langs:
+  - csharp
+  - vb
+  name: Permission
+  nameWithType: Permission
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Permission
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataContract]
+
+      [Serializable]
+
+      [DataContractType("Permission", "Restricts or permits access to various areas of Electio.")]
+
+      public class Permission
+    content.vb: >-
+      <DataContract>
+
+      <Serializable>
+
+      <DataContractType("Permission", "Restricts or permits access to various areas of Electio.")>
+
+      Public Class Permission
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Permission
+    - type: System.String
+      value: Restricts or permits access to various areas of Electio.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Key
+  commentId: P:Sorted.PRO.SDK.DataTypes.Security.Permission.Key
+  id: Key
+  parent: Sorted.PRO.SDK.DataTypes.Security.Permission
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: Permission.Key
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Key
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Key
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The permission key.", false, PropertyCollectionType.Single)]
+
+      public string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The permission key.", False, PropertyCollectionType.Single)>
+
+      Public Property Key As String
+  overload: Sorted.PRO.SDK.DataTypes.Security.Permission.Key*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The permission key.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Name
+  commentId: P:Sorted.PRO.SDK.DataTypes.Security.Permission.Name
+  id: Name
+  parent: Sorted.PRO.SDK.DataTypes.Security.Permission
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Permission.Name
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Name
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Name
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The permission name.", false, PropertyCollectionType.Single)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The permission name.", False, PropertyCollectionType.Single)>
+
+      Public Property Name As String
+  overload: Sorted.PRO.SDK.DataTypes.Security.Permission.Name*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The permission name.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Action
+  commentId: P:Sorted.PRO.SDK.DataTypes.Security.Permission.Action
+  id: Action
+  parent: Sorted.PRO.SDK.DataTypes.Security.Permission
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: Permission.Action
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Action
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Action
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The Action permitted by this permission.", false, PropertyCollectionType.Single)]
+
+      public AccessActions Action { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.AccessActions
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The Action permitted by this permission.", False, PropertyCollectionType.Single)>
+
+      Public Property Action As AccessActions
+  overload: Sorted.PRO.SDK.DataTypes.Security.Permission.Action*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The Action permitted by this permission.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Access
+  commentId: P:Sorted.PRO.SDK.DataTypes.Security.Permission.Access
+  id: Access
+  parent: Sorted.PRO.SDK.DataTypes.Security.Permission
+  langs:
+  - csharp
+  - vb
+  name: Access
+  nameWithType: Permission.Access
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Access
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Access
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The Access permitted by this permission.", false, PropertyCollectionType.Single)]
+
+      public Access Access { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Security.Access
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The Access permitted by this permission.", False, PropertyCollectionType.Single)>
+
+      Public Property Access As Access
+  overload: Sorted.PRO.SDK.DataTypes.Security.Permission.Access*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The Access permitted by this permission.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Type
+  commentId: P:Sorted.PRO.SDK.DataTypes.Security.Permission.Type
+  id: Type
+  parent: Sorted.PRO.SDK.DataTypes.Security.Permission
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Permission.Type
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Type
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Type
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The type of permission.", false, PropertyCollectionType.Single)]
+
+      public string Type { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The type of permission.", False, PropertyCollectionType.Single)>
+
+      Public Property Type As String
+  overload: Sorted.PRO.SDK.DataTypes.Security.Permission.Type*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The type of permission.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Security.Permission.Description
+  id: Description
+  parent: Sorted.PRO.SDK.DataTypes.Security.Permission
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Permission.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Description
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Description
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Permission.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Description As String
+  overload: Sorted.PRO.SDK.DataTypes.Security.Permission.Description*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Security
+  commentId: N:Sorted.PRO.SDK.DataTypes.Security
+  name: Sorted.PRO.SDK.DataTypes.Security
+  nameWithType: Sorted.PRO.SDK.DataTypes.Security
+  fullName: Sorted.PRO.SDK.DataTypes.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Key*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Security.Permission.Key
+  name: Key
+  nameWithType: Permission.Key
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Key
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Name*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Security.Permission.Name
+  name: Name
+  nameWithType: Permission.Name
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Name
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Action*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Security.Permission.Action
+  name: Action
+  nameWithType: Permission.Action
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Action
+- uid: Sorted.PRO.SDK.DataTypes.Common.AccessActions
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.AccessActions
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: AccessActions
+  nameWithType: AccessActions
+  fullName: Sorted.PRO.SDK.DataTypes.Common.AccessActions
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Access*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Security.Permission.Access
+  name: Access
+  nameWithType: Permission.Access
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Access
+- uid: Sorted.PRO.SDK.DataTypes.Security.Access
+  commentId: T:Sorted.PRO.SDK.DataTypes.Security.Access
+  parent: Sorted.PRO.SDK.DataTypes.Security
+  name: Access
+  nameWithType: Access
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Access
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Type*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Security.Permission.Type
+  name: Type
+  nameWithType: Permission.Type
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Type
+- uid: Sorted.PRO.SDK.DataTypes.Security.Permission.Description*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Security.Permission.Description
+  name: Description
+  nameWithType: Permission.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Permission.Description

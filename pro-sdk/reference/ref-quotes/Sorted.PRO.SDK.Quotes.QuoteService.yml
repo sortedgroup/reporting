@@ -1,0 +1,1669 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Quotes.QuoteService
+  commentId: T:Sorted.PRO.SDK.Quotes.QuoteService
+  id: QuoteService
+  parent: Sorted.PRO.SDK.Quotes
+  children:
+  - Sorted.PRO.SDK.Quotes.QuoteService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  - Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(System.String)
+  - Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  - Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(System.String)
+  - Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  - Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes(System.Guid)
+  - Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: QuoteService
+  nameWithType: QuoteService
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: QuoteService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nDefault implementation of IQuoteService\n"
+  example: []
+  syntax:
+    content: 'public class QuoteService : BaseService, IQuoteService'
+    content.vb: >-
+      Public Class QuoteService
+          Inherits BaseService
+          Implements IQuoteService
+  seealso:
+  - linkId: Sorted.PRO.SDK.Shared.BaseService
+    commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  - linkId: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+    commentId: T:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: QuoteService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: QuoteService.QuoteService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.QuoteService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 32
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Quotes.QuoteService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public QuoteService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: endpoints
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: You must supply an api key;apiKey
+  nameWithType.vb: QuoteService.QuoteService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Quotes.QuoteService.QuoteService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: QuoteService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  id: CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotes(Consignment)
+  nameWithType: QuoteService.CreateQuotes(Consignment)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 44
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nGenerates quotes for the given consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Quotes", "Get quotes matching the request details.", "Quotes", typeof(Consignment), typeof(QuoteResult), "/quotes/", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public QuoteResult CreateQuotes(Consignment consignment)
+    parameters:
+    - id: consignment
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+      description: The consignment.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+      description: "\nQuotes\n"
+    content.vb: >-
+      <ApiEndpoint("Get Quotes", "Get quotes matching the request details.", "Quotes", GetType(Consignment), GetType(QuoteResult), "/quotes/", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function CreateQuotes(consignment As Consignment) As QuoteResult
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  id: CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotesAsync(Consignment)
+  nameWithType: QuoteService.CreateQuotesAsync(Consignment)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 67
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nGenerates quotes for the given consignment.\n"
+  example: []
+  syntax:
+    content: public Task<QuoteResult> CreateQuotesAsync(Consignment consignment)
+    parameters:
+    - id: consignment
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+      description: The consignment.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+      description: "\nTask to await\n"
+    content.vb: Public Function CreateQuotesAsync(consignment As Consignment) As Task(Of QuoteResult)
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  id: GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupQuotesAsync(Consignment)
+  nameWithType: QuoteService.GetServiceGroupQuotesAsync(Consignment)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 79
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nGenerates quotes for the given consignment, grouped by service group.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Service Group Quotes", "Get quotes matching the request details grouped by Service Group.", "Quotes", typeof(Consignment), typeof(List<ServiceGroupQuoteResult>), "/quotes/serviceGroups", "POST", new HttpStatusCode[]{HttpStatusCode.OK})]
+
+      public Task<List<ServiceGroupQuoteResult>> GetServiceGroupQuotesAsync(Consignment consignment)
+    parameters:
+    - id: consignment
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+      description: The consignment.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult}}
+      description: "\nTask to await\n"
+    content.vb: >-
+      <ApiEndpoint("Get Service Group Quotes", "Get quotes matching the request details grouped by Service Group.", "Quotes", GetType(Consignment), GetType(List(Of ServiceGroupQuoteResult)), "/quotes/serviceGroups", "POST", New HttpStatusCode() {HttpStatusCode.OK})>
+
+      Public Function GetServiceGroupQuotesAsync(consignment As Consignment) As Task(Of List(Of ServiceGroupQuoteResult))
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(System.String)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(System.String)
+  id: CreateQuotes(System.String)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotes(String)
+  nameWithType: QuoteService.CreateQuotes(String)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 105
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nGenerates quotes for the given consignment reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Quotes by Consignment Reference", "Returns quotes for an existing consignment identified by the provided reference.", "Quotes", typeof(QuoteResult), "/quotes/consignment/{consignmentReference:string}", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public QuoteResult CreateQuotes(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+      description: "\nList of Quotes\n"
+    content.vb: >-
+      <ApiEndpoint("Get Quotes by Consignment Reference", "Returns quotes for an existing consignment identified by the provided reference.", "Quotes", GetType(QuoteResult), "/quotes/consignment/{consignmentReference:string}", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function CreateQuotes(consignmentReference As String) As QuoteResult
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(System.String)
+  id: CreateQuotesAsync(System.String)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotesAsync(String)
+  nameWithType: QuoteService.CreateQuotesAsync(String)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 126
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nGenerates quotes for the given consignment reference.\n"
+  example: []
+  syntax:
+    content: public Task<QuoteResult> CreateQuotesAsync(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+      description: "\nTask to await.\n"
+    content.vb: Public Function CreateQuotesAsync(consignmentReference As String) As Task(Of QuoteResult)
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes(System.Guid)
+  id: PurgeQuotes(System.Guid)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: PurgeQuotes(Guid)
+  nameWithType: QuoteService.PurgeQuotes(Guid)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PurgeQuotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 136
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nPurges all quotes that have expired.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void PurgeQuotes(Guid secretKey)
+    parameters:
+    - id: secretKey
+      type: System.Guid
+      description: The secret key.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub PurgeQuotes(secretKey As Guid)
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync(System.Guid)
+  id: PurgeQuotesAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Quotes.QuoteService
+  langs:
+  - csharp
+  - vb
+  name: PurgeQuotesAsync(Guid)
+  nameWithType: QuoteService.PurgeQuotesAsync(Guid)
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Quotes/QuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PurgeQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Quotes/QuoteService.cs
+    startLine: 150
+  assemblies:
+  - Sorted.PRO.SDK.Quotes
+  namespace: Sorted.PRO.SDK.Quotes
+  summary: "\nPurges all quotes that have expired.\n"
+  example: []
+  syntax:
+    content: public Task PurgeQuotesAsync(Guid secretKey)
+    parameters:
+    - id: secretKey
+      type: System.Guid
+      description: The secret key.
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nTask to await\n"
+    content.vb: Public Function PurgeQuotesAsync(secretKey As Guid) As Task
+  overload: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  parent: Sorted.PRO.SDK.Interfaces.Quotes
+  name: IQuoteService
+  nameWithType: IQuoteService
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+- uid: Sorted.PRO.SDK.Quotes
+  commentId: N:Sorted.PRO.SDK.Quotes
+  name: Sorted.PRO.SDK.Quotes
+  nameWithType: Sorted.PRO.SDK.Quotes
+  fullName: Sorted.PRO.SDK.Quotes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Quotes
+  commentId: N:Sorted.PRO.SDK.Interfaces.Quotes
+  name: Sorted.PRO.SDK.Interfaces.Quotes
+  nameWithType: Sorted.PRO.SDK.Interfaces.Quotes
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Quotes.QuoteService
+  commentId: T:Sorted.PRO.SDK.Quotes.QuoteService
+  name: QuoteService
+  nameWithType: QuoteService
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Quotes.QuoteService.#ctor
+  name: QuoteService
+  nameWithType: QuoteService.QuoteService
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.QuoteService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes*
+  commentId: Overload:Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes
+  name: CreateQuotes
+  nameWithType: QuoteService.CreateQuotes
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotes
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  name: CreateQuotes(Consignment)
+  nameWithType: IQuoteService.CreateQuotes(Consignment)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+    name: CreateQuotes
+    nameWithType: IQuoteService.CreateQuotes
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+    name: Consignment
+    nameWithType: Consignment
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+    name: CreateQuotes
+    nameWithType: IQuoteService.CreateQuotes
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+    name: Consignment
+    nameWithType: Consignment
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: Consignment
+  nameWithType: Consignment
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  parent: Sorted.PRO.SDK.DataTypes.Quotes
+  name: QuoteResult
+  nameWithType: QuoteResult
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.DataTypes.Quotes
+  commentId: N:Sorted.PRO.SDK.DataTypes.Quotes
+  name: Sorted.PRO.SDK.DataTypes.Quotes
+  nameWithType: Sorted.PRO.SDK.DataTypes.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync
+  name: CreateQuotesAsync
+  nameWithType: QuoteService.CreateQuotesAsync
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.CreateQuotesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  name: CreateQuotesAsync(Consignment)
+  nameWithType: IQuoteService.CreateQuotesAsync(Consignment)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+    name: CreateQuotesAsync
+    nameWithType: IQuoteService.CreateQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+    name: Consignment
+    nameWithType: Consignment
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+    name: CreateQuotesAsync
+    nameWithType: IQuoteService.CreateQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+    name: Consignment
+    nameWithType: Consignment
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<QuoteResult>
+  nameWithType: Task<QuoteResult>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult>
+  nameWithType.vb: Task(Of QuoteResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult)
+  name.vb: Task(Of QuoteResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+    name: QuoteResult
+    nameWithType: QuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+    name: QuoteResult
+    nameWithType: QuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync
+  name: GetServiceGroupQuotesAsync
+  nameWithType: QuoteService.GetServiceGroupQuotesAsync
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.GetServiceGroupQuotesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  name: GetServiceGroupQuotesAsync(Consignment)
+  nameWithType: IQuoteService.GetServiceGroupQuotesAsync(Consignment)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+    name: GetServiceGroupQuotesAsync
+    nameWithType: IQuoteService.GetServiceGroupQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+    name: Consignment
+    nameWithType: Consignment
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+    name: GetServiceGroupQuotesAsync
+    nameWithType: IQuoteService.GetServiceGroupQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+    name: Consignment
+    nameWithType: Consignment
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<ServiceGroupQuoteResult>>
+  nameWithType: Task<List<ServiceGroupQuoteResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult>>
+  nameWithType.vb: Task(Of List(Of ServiceGroupQuoteResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult))
+  name.vb: Task(Of List(Of ServiceGroupQuoteResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+    name: ServiceGroupQuoteResult
+    nameWithType: ServiceGroupQuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+    name: ServiceGroupQuoteResult
+    nameWithType: ServiceGroupQuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  isExternal: true
+  name: CreateQuotes(String)
+  nameWithType: IQuoteService.CreateQuotes(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+    name: CreateQuotes
+    nameWithType: IQuoteService.CreateQuotes
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+    name: CreateQuotes
+    nameWithType: IQuoteService.CreateQuotes
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  isExternal: true
+  name: CreateQuotesAsync(String)
+  nameWithType: IQuoteService.CreateQuotesAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+    name: CreateQuotesAsync
+    nameWithType: IQuoteService.CreateQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+    name: CreateQuotesAsync
+    nameWithType: IQuoteService.CreateQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes*
+  commentId: Overload:Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes
+  name: PurgeQuotes
+  nameWithType: QuoteService.PurgeQuotes
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotes
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  isExternal: true
+  name: PurgeQuotes(Guid)
+  nameWithType: IQuoteService.PurgeQuotes(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+    name: PurgeQuotes
+    nameWithType: IQuoteService.PurgeQuotes
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+    name: PurgeQuotes
+    nameWithType: IQuoteService.PurgeQuotes
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync
+  name: PurgeQuotesAsync
+  nameWithType: QuoteService.PurgeQuotesAsync
+  fullName: Sorted.PRO.SDK.Quotes.QuoteService.PurgeQuotesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  isExternal: true
+  name: PurgeQuotesAsync(Guid)
+  nameWithType: IQuoteService.PurgeQuotesAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+    name: PurgeQuotesAsync
+    nameWithType: IQuoteService.PurgeQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+    name: PurgeQuotesAsync
+    nameWithType: IQuoteService.PurgeQuotesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

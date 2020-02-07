@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  commentId: T:Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  id: CustomerSubscriptionStatus
+  parent: Sorted.PRO.SDK.DataTypes.Security.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Available
+  - Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Disabled
+  - Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Enabled
+  - Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Requested
+  langs:
+  - csharp
+  - vb
+  name: CustomerSubscriptionStatus
+  nameWithType: CustomerSubscriptionStatus
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CustomerSubscriptionStatus
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security.Enums
+  summary: "\nDefines states for an MPD Carrier Service within the Customer&apos;s subscription.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContractType("Customer subscription status", "Indicates the state for an MPD Carrier Service within a customer's subscription.")]
+
+      [DataContract]
+
+      [Serializable]
+
+      public enum CustomerSubscriptionStatus
+    content.vb: >-
+      <DataContractType("Customer subscription status", "Indicates the state for an MPD Carrier Service within a customer's subscription.")>
+
+      <DataContract>
+
+      <Serializable>
+
+      Public Enum CustomerSubscriptionStatus
+  attributes:
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Customer subscription status
+    - type: System.String
+      value: Indicates the state for an MPD Carrier Service within a customer's subscription.
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Available
+  commentId: F:Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Available
+  id: Available
+  parent: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Available
+  nameWithType: CustomerSubscriptionStatus.Available
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Available
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Available
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security.Enums
+  summary: "\nAvailable to the Customer within their current subscription but not presently enabled.\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Available = 0
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+    content.vb: >-
+      <EnumMember>
+
+      Available = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Requested
+  commentId: F:Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Requested
+  id: Requested
+  parent: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Requested
+  nameWithType: CustomerSubscriptionStatus.Requested
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Requested
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Requested
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security.Enums
+  summary: "\nRequested by the Customer for inclusion within their subscription but not presently available.\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Requested = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+    content.vb: >-
+      <EnumMember>
+
+      Requested = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Disabled
+  commentId: F:Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Disabled
+  id: Disabled
+  parent: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: CustomerSubscriptionStatus.Disabled
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Disabled
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Disabled
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+    startLine: 29
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security.Enums
+  summary: "\nDisabled\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Disabled = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+    content.vb: >-
+      <EnumMember>
+
+      Disabled = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Enabled
+  commentId: F:Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Enabled
+  id: Enabled
+  parent: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: CustomerSubscriptionStatus.Enabled
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus.Enabled
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Enabled
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/Enums/CustomerSubscriptionStatus.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Security.Enums
+  summary: "\nEnabled an in use within the Customer&apos;s current subscription.\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Enabled = 3
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+    content.vb: >-
+      <EnumMember>
+
+      Enabled = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Security.Enums
+  name: Sorted.PRO.SDK.DataTypes.Security.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Security.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  commentId: T:Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus
+  parent: Sorted.PRO.SDK.DataTypes.Security.Enums
+  name: CustomerSubscriptionStatus
+  nameWithType: CustomerSubscriptionStatus
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Enums.CustomerSubscriptionStatus

@@ -1,0 +1,1370 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  id: ConsignmentPayload
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks
+  children:
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages
+  - Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentPayload
+  nameWithType: ConsignmentPayload
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentPayload
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Payload", "Provides details relating to a consignment. Sent as a webhook.")]
+
+      public class ConsignmentPayload
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Payload", "Provides details relating to a consignment. Sent as a webhook.")>
+
+      Public Class ConsignmentPayload
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Payload
+    - type: System.String
+      value: Provides details relating to a consignment. Sent as a webhook.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference
+  id: ConsignmentReference
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReference
+  nameWithType: ConsignmentPayload.ConsignmentReference
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the consignment, e.g. 'EC-000-001-2AD'.", true, PropertyCollectionType.Single)]
+
+      public string ConsignmentReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the consignment, e.g. 'EC-000-001-2AD'.", True, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the consignment, e.g. 'EC-000-001-2AD'.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  id: ConsignmentReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReferenceProvidedByCustomer
+  nameWithType: ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReferenceProvidedByCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 21
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference you provided for the consignment.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentReferenceProvidedByCustomer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference you provided for the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReferenceProvidedByCustomer As String
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference you provided for the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference
+  id: ConsignmentTrackingReference
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentTrackingReference
+  nameWithType: ConsignmentPayload.ConsignmentTrackingReference
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentTrackingReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The carrier's tracking reference for this consignment.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentTrackingReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The carrier's tracking reference for this consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentTrackingReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The carrier's tracking reference for this consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState
+  id: ConsignmentState
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentState
+  nameWithType: ConsignmentPayload.ConsignmentState
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentState
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 29
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The current state of the consignment.", true, PropertyCollectionType.Single)]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public ConsignmentState ConsignmentState { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The current state of the consignment.", True, PropertyCollectionType.Single)>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property ConsignmentState As ConsignmentState
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The current state of the consignment.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages
+  id: Packages
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: Packages
+  nameWithType: ConsignmentPayload.Packages
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Packages
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The packages in the consignment.", false, PropertyCollectionType.Single)]
+
+      public List<PackagePayload> Packages { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The packages in the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property Packages As List(Of PackagePayload)
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The packages in the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs
+  id: ConsignmentLegs
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentLegs
+  nameWithType: ConsignmentPayload.ConsignmentLegs
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentLegs
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The legs in the consignment. Includes details of the carrier service for each leg.", false, PropertyCollectionType.Single)]
+
+      public List<ConsignmentLeg> ConsignmentLegs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The legs in the consignment. Includes details of the carrier service for each leg.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentLegs As List(Of ConsignmentLeg)
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The legs in the consignment. Includes details of the carrier service for each leg.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference
+  id: CarrierServiceReference
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceReference
+  nameWithType: ConsignmentPayload.CarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the carrier service this consignment is allocated with (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the carrier service this consignment is allocated with (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the carrier service this consignment is allocated with (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName
+  id: CarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceName
+  nameWithType: ConsignmentPayload.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the carrier service this consignment is allocated with (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the carrier service this consignment is allocated with (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the carrier service this consignment is allocated with (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate
+  id: EarliestDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: EarliestDeliveryDate
+  nameWithType: ConsignmentPayload.EarliestDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: EarliestDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 50
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The earliest delivery date (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? EarliestDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The earliest delivery date (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property EarliestDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The earliest delivery date (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate
+  id: LatestDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: LatestDeliveryDate
+  nameWithType: ConsignmentPayload.LatestDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LatestDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 54
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The latest delivery date (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? LatestDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The latest delivery date (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property LatestDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The latest delivery date (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered
+  id: DateDelivered
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: DateDelivered
+  nameWithType: ConsignmentPayload.DateDelivered
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DateDelivered
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 58
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The date and time that the consignment was delivered (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? DateDelivered { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The date and time that the consignment was delivered (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property DateDelivered As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date and time that the consignment was delivered (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode
+  id: PickupCode
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  langs:
+  - csharp
+  - vb
+  name: PickupCode
+  nameWithType: ConsignmentPayload.PickupCode
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PickupCode
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/ConsignmentPayload.cs
+    startLine: 62
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The pickup code for this consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string PickupCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The pickup code for this consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property PickupCode As String
+  overload: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The pickup code for this consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks
+  commentId: N:Sorted.PRO.SDK.DataTypes.Webhooks
+  name: Sorted.PRO.SDK.DataTypes.Webhooks
+  nameWithType: Sorted.PRO.SDK.DataTypes.Webhooks
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference
+  name: ConsignmentReference
+  nameWithType: ConsignmentPayload.ConsignmentReference
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  name: ConsignmentReferenceProvidedByCustomer
+  nameWithType: ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference
+  name: ConsignmentTrackingReference
+  nameWithType: ConsignmentPayload.ConsignmentTrackingReference
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentTrackingReference
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState
+  name: ConsignmentState
+  nameWithType: ConsignmentPayload.ConsignmentState
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentState
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentState
+  nameWithType: ConsignmentState
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages
+  name: Packages
+  nameWithType: ConsignmentPayload.Packages
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.Packages
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PackagePayload>
+  nameWithType: List<PackagePayload>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload>
+  nameWithType.vb: List(Of PackagePayload)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload)
+  name.vb: List(Of PackagePayload)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload
+    name: PackagePayload
+    nameWithType: PackagePayload
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload
+    name: PackagePayload
+    nameWithType: PackagePayload
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.PackagePayload
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs
+  name: ConsignmentLegs
+  nameWithType: ConsignmentPayload.ConsignmentLegs
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.ConsignmentLegs
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ConsignmentLeg>
+  nameWithType: List<ConsignmentLeg>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg>
+  nameWithType.vb: List(Of ConsignmentLeg)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg)
+  name.vb: List(Of ConsignmentLeg)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+    name: ConsignmentLeg
+    nameWithType: ConsignmentLeg
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+    name: ConsignmentLeg
+    nameWithType: ConsignmentLeg
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference
+  name: CarrierServiceReference
+  nameWithType: ConsignmentPayload.CarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceReference
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName
+  name: CarrierServiceName
+  nameWithType: ConsignmentPayload.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.CarrierServiceName
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate
+  name: EarliestDeliveryDate
+  nameWithType: ConsignmentPayload.EarliestDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.EarliestDeliveryDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate
+  name: LatestDeliveryDate
+  nameWithType: ConsignmentPayload.LatestDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.LatestDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered
+  name: DateDelivered
+  nameWithType: ConsignmentPayload.DateDelivered
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.DateDelivered
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode
+  name: PickupCode
+  nameWithType: ConsignmentPayload.PickupCode
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload.PickupCode

@@ -1,0 +1,516 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  id: ICarrierServiceService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  children:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ICarrierServiceService
+  nameWithType: ICarrierServiceService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ICarrierServiceService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 6
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  syntax:
+    content: public interface ICarrierServiceService
+    content.vb: Public Interface ICarrierServiceService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  id: GetAvailableMpdCarrierServicesForSubscription
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableMpdCarrierServicesForSubscription()
+  nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableMpdCarrierServicesForSubscription
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nGets the available MPD carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      SubscriptionMpdCarrierServiceResponse GetAvailableMpdCarrierServicesForSubscription()
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+      description: A collection of MPD Carrier Services
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetAvailableMpdCarrierServicesForSubscription As SubscriptionMpdCarrierServiceResponse
+  overload: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  id: GetAvailableCarrierServicesForSubscription
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableCarrierServicesForSubscription()
+  nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscription()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableCarrierServicesForSubscription
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nGets the available underlying carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      SubscriptionCarrierServiceResponse GetAvailableCarrierServicesForSubscription()
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+      description: A collection of Carrier Services
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetAvailableCarrierServicesForSubscription As SubscriptionCarrierServiceResponse
+  overload: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  id: IsMpdCarrierServiceReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: IsMpdCarrierServiceReferenceAvailable(String)
+  nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsMpdCarrierServiceReferenceAvailable
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nCheck whether the MPD CarrierService reference is available.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      bool IsMpdCarrierServiceReferenceAvailable(string mpdCarrierServiceReference)
+    parameters:
+    - id: mpdCarrierServiceReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: <code>True</code> if the reference is available, otherwise <code>False</code>
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function IsMpdCarrierServiceReferenceAvailable(mpdCarrierServiceReference As String) As Boolean
+  overload: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  id: GetAvailableMpdCarrierServicesForSubscriptionAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableMpdCarrierServicesForSubscriptionAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 31
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nGets the available MPD carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: Task<SubscriptionMpdCarrierServiceResponse> GetAvailableMpdCarrierServicesForSubscriptionAsync()
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse}
+      description: A collection of MPD Carrier Services
+    content.vb: Function GetAvailableMpdCarrierServicesForSubscriptionAsync As Task(Of SubscriptionMpdCarrierServiceResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  id: GetAvailableCarrierServicesForSubscriptionAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableCarrierServicesForSubscriptionAsync()
+  nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableCarrierServicesForSubscriptionAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 36
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nGets the available underlying carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: Task<SubscriptionCarrierServiceResponse> GetAvailableCarrierServicesForSubscriptionAsync()
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse}
+      description: A collection of Carrier Services
+    content.vb: Function GetAvailableCarrierServicesForSubscriptionAsync As Task(Of SubscriptionCarrierServiceResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  id: IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: IsMpdCarrierServiceReferenceAvailableAsync(String)
+  nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsMpdCarrierServiceReferenceAvailableAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Settings/ICarrierServiceService.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Settings
+  namespace: Sorted.PRO.SDK.Interfaces.Settings
+  summary: "\nCheck whether the MPD CarrierService reference is available.\n"
+  example: []
+  syntax:
+    content: Task<bool> IsMpdCarrierServiceReferenceAvailableAsync(string mpdCarrierServiceReference)
+    parameters:
+    - id: mpdCarrierServiceReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> if the reference is available, otherwise <code>False</code>
+    content.vb: Function IsMpdCarrierServiceReferenceAvailableAsync(mpdCarrierServiceReference As String) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  name: GetAvailableMpdCarrierServicesForSubscription
+  nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+- uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: SubscriptionMpdCarrierServiceResponse
+  nameWithType: SubscriptionMpdCarrierServiceResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  name: GetAvailableCarrierServicesForSubscription
+  nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+- uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: SubscriptionCarrierServiceResponse
+  nameWithType: SubscriptionCarrierServiceResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+  name: IsMpdCarrierServiceReferenceAvailable
+  nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  name: GetAvailableMpdCarrierServicesForSubscriptionAsync
+  nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionMpdCarrierServiceResponse>
+  nameWithType: Task<SubscriptionMpdCarrierServiceResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse>
+  nameWithType.vb: Task(Of SubscriptionMpdCarrierServiceResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse)
+  name.vb: Task(Of SubscriptionMpdCarrierServiceResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+    name: SubscriptionMpdCarrierServiceResponse
+    nameWithType: SubscriptionMpdCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+    name: SubscriptionMpdCarrierServiceResponse
+    nameWithType: SubscriptionMpdCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  name: GetAvailableCarrierServicesForSubscriptionAsync
+  nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionCarrierServiceResponse>
+  nameWithType: Task<SubscriptionCarrierServiceResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse>
+  nameWithType.vb: Task(Of SubscriptionCarrierServiceResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse)
+  name.vb: Task(Of SubscriptionCarrierServiceResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+    name: SubscriptionCarrierServiceResponse
+    nameWithType: SubscriptionCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+    name: SubscriptionCarrierServiceResponse
+    nameWithType: SubscriptionCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+  name: IsMpdCarrierServiceReferenceAvailableAsync
+  nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

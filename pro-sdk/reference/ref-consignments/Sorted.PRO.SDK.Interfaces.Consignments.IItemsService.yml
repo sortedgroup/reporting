@@ -1,0 +1,752 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  id: IItemsService
+  parent: Sorted.PRO.SDK.Interfaces.Consignments
+  children:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem(System.String,System.String)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync(System.String,System.String)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  langs:
+  - csharp
+  - vb
+  name: IItemsService
+  nameWithType: IItemsService
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IItemsService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nRepresents available actions provided by the Items Service.\n"
+  example: []
+  syntax:
+    content: public interface IItemsService
+    content.vb: Public Interface IItemsService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  id: AddItem(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: AddItem(AddItemRequest)
+  nameWithType: IItemsService.AddItem(AddItemRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddItem
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAdd an item.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void AddItem(AddItemRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest
+      description: The request.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub AddItem(request As AddItemRequest)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  id: AddItems(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: AddItems(AddItemsRequest)
+  nameWithType: IItemsService.AddItems(AddItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddItems
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAdd one or more items.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      List<Item> AddItems(AddItemsRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest
+      description: The request.
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.Item}
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function AddItems(request As AddItemsRequest) As List(Of Item)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  id: AddItemsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: AddItemsAsync(AddItemsRequest)
+  nameWithType: IItemsService.AddItemsAsync(AddItemsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddItemsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAsynchronously add one or more items.\n"
+  example: []
+  syntax:
+    content: Task<List<Item>> AddItemsAsync(AddItemsRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.Item}}
+    content.vb: Function AddItemsAsync(request As AddItemsRequest) As Task(Of List(Of Item))
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  id: AddItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: AddItemAsync(AddItemRequest)
+  nameWithType: IItemsService.AddItemAsync(AddItemRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddItemAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 36
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAsynchronously add an item.\n"
+  example: []
+  syntax:
+    content: Task AddItemAsync(AddItemRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function AddItemAsync(request As AddItemRequest) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem(System.String,System.String)
+  id: RemoveItem(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: RemoveItem(String, String)
+  nameWithType: IItemsService.RemoveItem(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveItem
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 44
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nRemove the item with the supplied reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void RemoveItem(string packageReference, string itemReference)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: Reference the item belongs to.
+    - id: itemReference
+      type: System.String
+      description: Reference of item to remove.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub RemoveItem(packageReference As String, itemReference As String)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync(System.String,System.String)
+  id: RemoveItemAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: RemoveItemAsync(String, String)
+  nameWithType: IItemsService.RemoveItemAsync(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveItemAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 52
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAsynchronously remove the item with the supplied reference.\n"
+  example: []
+  syntax:
+    content: Task RemoveItemAsync(string packageReference, string itemReference)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: Reference the item belongs to.
+    - id: itemReference
+      type: System.String
+      description: Reference of item to remove.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function RemoveItemAsync(packageReference As String, itemReference As String) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  id: MoveItem(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: MoveItem(MoveItemRequest)
+  nameWithType: IItemsService.MoveItem(MoveItemRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MoveItem
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 58
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nMoves an item.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void MoveItem(MoveItemRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest
+      description: The request.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub MoveItem(request As MoveItemRequest)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  id: MoveItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: MoveItemAsync(MoveItemRequest)
+  nameWithType: IItemsService.MoveItemAsync(MoveItemRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync(Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MoveItemAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 65
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAsynchronously moves an item.\n"
+  example: []
+  syntax:
+    content: Task MoveItemAsync(MoveItemRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function MoveItemAsync(request As MoveItemRequest) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  id: SetCustomerProvidedReferenceViaLabelBarCode(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: SetCustomerProvidedReferenceViaLabelBarCode(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: IItemsService.SetCustomerProvidedReferenceViaLabelBarCode(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetCustomerProvidedReferenceViaLabelBarCode
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 72
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nSet the reference provided by customer on the FIRST item in the package with the supplied label bar code.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void SetCustomerProvidedReferenceViaLabelBarCode(string labelBarCode, ReferenceProvidedByCustomerRequest request)
+    parameters:
+    - id: labelBarCode
+      type: System.String
+      description: The bar code of the label.
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+      description: The request.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub SetCustomerProvidedReferenceViaLabelBarCode(labelBarCode As String, request As ReferenceProvidedByCustomerRequest)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  id: SetCustomerProvidedReferenceViaLabelBarCodeAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService
+  langs:
+  - csharp
+  - vb
+  name: SetCustomerProvidedReferenceViaLabelBarCodeAsync(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetCustomerProvidedReferenceViaLabelBarCodeAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IItemsService.cs
+    startLine: 81
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAsynchronously set the reference provided by customer on the FIRST item in the package with the supplied label bar code.\n"
+  example: []
+  syntax:
+    content: Task SetCustomerProvidedReferenceViaLabelBarCodeAsync(string labelBarCode, ReferenceProvidedByCustomerRequest request)
+    parameters:
+    - id: labelBarCode
+      type: System.String
+      description: The bar code of the label.
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function SetCustomerProvidedReferenceViaLabelBarCodeAsync(labelBarCode As String, request As ReferenceProvidedByCustomerRequest) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Consignments
+  commentId: N:Sorted.PRO.SDK.Interfaces.Consignments
+  name: Sorted.PRO.SDK.Interfaces.Consignments
+  nameWithType: Sorted.PRO.SDK.Interfaces.Consignments
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem
+  name: AddItem
+  nameWithType: IItemsService.AddItem
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItem
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: AddItemRequest
+  nameWithType: AddItemRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AddItemRequest
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems
+  name: AddItems
+  nameWithType: IItemsService.AddItems
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItems
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: AddItemsRequest
+  nameWithType: AddItemsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AddItemsRequest
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.Item}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.Item}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Item>
+  nameWithType: List<Item>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Consignments.Item>
+  nameWithType.vb: List(Of Item)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Consignments.Item)
+  name.vb: List(Of Item)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Item
+    name: Item
+    nameWithType: Item
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Item
+    name: Item
+    nameWithType: Item
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync
+  name: AddItemsAsync
+  nameWithType: IItemsService.AddItemsAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.Item}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.Item}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Item>>
+  nameWithType: Task<List<Item>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Consignments.Item>>
+  nameWithType.vb: Task(Of List(Of Item))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Consignments.Item))
+  name.vb: Task(Of List(Of Item))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Item
+    name: Item
+    nameWithType: Item
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Item
+    name: Item
+    nameWithType: Item
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync
+  name: AddItemAsync
+  nameWithType: IItemsService.AddItemAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.AddItemAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem
+  name: RemoveItem
+  nameWithType: IItemsService.RemoveItem
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItem
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync
+  name: RemoveItemAsync
+  nameWithType: IItemsService.RemoveItemAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.RemoveItemAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem
+  name: MoveItem
+  nameWithType: IItemsService.MoveItem
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItem
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: MoveItemRequest
+  nameWithType: MoveItemRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.MoveItemRequest
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync
+  name: MoveItemAsync
+  nameWithType: IItemsService.MoveItemAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.MoveItemAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode
+  name: SetCustomerProvidedReferenceViaLabelBarCode
+  nameWithType: IItemsService.SetCustomerProvidedReferenceViaLabelBarCode
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCode
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: ReferenceProvidedByCustomerRequest
+  nameWithType: ReferenceProvidedByCustomerRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync
+  name: SetCustomerProvidedReferenceViaLabelBarCodeAsync
+  nameWithType: IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IItemsService.SetCustomerProvidedReferenceViaLabelBarCodeAsync

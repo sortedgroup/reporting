@@ -1,0 +1,807 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.Rate
+  id: Rate
+  parent: Sorted.PRO.SDK.DataTypes.Rates
+  children:
+  - Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency
+  - Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross
+  - Sorted.PRO.SDK.DataTypes.Rates.Rate.Net
+  - Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate
+  - Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount
+  langs:
+  - csharp
+  - vb
+  name: Rate
+  nameWithType: Rate
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Rate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nRepresents a Price or Cost, including Net and Gross prices, VAT (tax) rates and amount\nand Currency.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Rate", "Represents a price or cost, including Net and Gross prices, VAT (tax) rates, amount and currency.")]
+
+      [Serializable]
+
+      public class Rate
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Rate", "Represents a price or cost, including Net and Gross prices, VAT (tax) rates, amount and currency.")>
+
+      <Serializable>
+
+      Public Class Rate
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Rate
+    - type: System.String
+      value: Represents a price or cost, including Net and Gross prices, VAT (tax) rates, amount and currency.
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.Net
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Rate.Net
+  id: Net
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  langs:
+  - csharp
+  - vb
+  name: Net
+  nameWithType: Rate.Net
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.Net
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Net
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the net price - the price exclusive of any tax (UK VAT or similar)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The Net amount - exclusive of any tax.", false, PropertyCollectionType.Single)]
+
+      public decimal? Net { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+      description: "\nThe net price.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The Net amount - exclusive of any tax.", False, PropertyCollectionType.Single)>
+
+      Public Property Net As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Rate.Net*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The Net amount - exclusive of any tax.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross
+  id: Gross
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  langs:
+  - csharp
+  - vb
+  name: Gross
+  nameWithType: Rate.Gross
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Gross
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+    startLine: 35
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the total gross price - Net Price + taxes.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The Gross amount - inclusive of relevant taxes.", false, PropertyCollectionType.Single)]
+
+      public decimal? Gross { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+      description: "\nThe gross price.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The Gross amount - inclusive of relevant taxes.", False, PropertyCollectionType.Single)>
+
+      Public Property Gross As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The Gross amount - inclusive of relevant taxes.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate
+  id: TaxRate
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  langs:
+  - csharp
+  - vb
+  name: TaxRate
+  nameWithType: Rate.TaxRate
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: TaxRate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the tax rate.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The tax Rate.", false, PropertyCollectionType.Single)]
+
+      public TaxRate TaxRate { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+      description: "\nThe tax rate.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The tax Rate.", False, PropertyCollectionType.Single)>
+
+      Public Property TaxRate As TaxRate
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The tax Rate.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount
+  id: VatAmount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  langs:
+  - csharp
+  - vb
+  name: VatAmount
+  nameWithType: Rate.VatAmount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: VatAmount
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the tax amount.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The VAT amount.", false, PropertyCollectionType.Single)]
+
+      public decimal? VatAmount { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+      description: "\nThe vat amount.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The VAT amount.", False, PropertyCollectionType.Single)>
+
+      Public Property VatAmount As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The VAT amount.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency
+  id: Currency
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Rate
+  langs:
+  - csharp
+  - vb
+  name: Currency
+  nameWithType: Rate.Currency
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Currency
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Rate.cs
+    startLine: 65
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the currency.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The currency for this rate.", false, PropertyCollectionType.Single)]
+
+      public Currency Currency { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Currency
+      description: "\nThe currency.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The currency for this rate.", False, PropertyCollectionType.Single)>
+
+      Public Property Currency As Currency
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The currency for this rate.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Rates
+  commentId: N:Sorted.PRO.SDK.DataTypes.Rates
+  name: Sorted.PRO.SDK.DataTypes.Rates
+  nameWithType: Sorted.PRO.SDK.DataTypes.Rates
+  fullName: Sorted.PRO.SDK.DataTypes.Rates
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.Net*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Rate.Net
+  name: Net
+  nameWithType: Rate.Net
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.Net
+- uid: System.Nullable{System.Decimal}
+  commentId: T:System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  nameWithType: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  nameWithType.vb: Nullable(Of Decimal)
+  fullName.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    nameWithType: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    nameWithType: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross
+  name: Gross
+  nameWithType: Rate.Gross
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.Gross
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate
+  name: TaxRate
+  nameWithType: Rate.TaxRate
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.TaxRate
+- uid: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.TaxRate
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: TaxRate
+  nameWithType: TaxRate
+  fullName: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount
+  name: VatAmount
+  nameWithType: Rate.VatAmount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.VatAmount
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency
+  name: Currency
+  nameWithType: Rate.Currency
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Rate.Currency
+- uid: Sorted.PRO.SDK.DataTypes.Common.Currency
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Currency
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Currency
+  nameWithType: Currency
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Currency

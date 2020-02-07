@@ -1,0 +1,892 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Consumer Options Flex Flow </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Consumer Options Flex Flow ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="consumer-options-flex-flow">Consumer Options Flex Flow</h1>
+
+<p>
+   <a href="../../images/Flow5.png" target="_blank">
+      <img src="../../images/Flow5.png" class="noborder">
+   </a>
+</p> 
+<p>Like the <strong>Consumer Options</strong> flow, the <strong>Consumer Options Flex</strong> flow enables you to provide delivery timeslots to your customer at point of purchase. However, rather than generating a single consignment from the options selected, this flow generates orders, which can then be packed into multiple consignments.</p>
+<p>The <strong>Consumer Options Flex</strong> flow can be used to provide front-end delivery options in circumstances where you cannot guarantee that the contents of your customer's online basket will map directly to a single consignment. For example, you might operate more than one warehouse and so may need to ship some orders in multiple consignments.</p>
+<p>The <strong>Consumer Options Flex</strong> flow is useful to your business if:</p>
+<ul>
+<li>You use a distributed business logic and technology architecture.</li>
+<li>You operate multiple warehouses / fulfilment centres.</li>
+<li>You want to present your customer with a dynamic checkout that offers delivery timeslot options.</li>
+</ul>
+<p>There are six steps to the flow:</p>
+<ol>
+<li><strong>Get delivery options</strong> - Use the <a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a> endpoint to request a list of available delivery options for the (as yet uncreated) consignment that the customer's purchase will generate.</li>
+<li><strong>Select option as an order</strong> -- Use the <a href="https://docs.electioapp.com/#/api/SelectDeliveryOptionasanOrder">Select Delivery Option as an Order</a> to generate an order from the selected delivery option.</li>
+<li><strong>Pack the order</strong> - Use the <a href="https://docs.electioapp.com/#/api/PackOrder">Pack Order</a> endpoint to create one or more consignments from the order.</li>
+<li><strong>Allocate the consignments</strong> - Use one of PRO's <a href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocation</a> endpoints to select the carrier service that your consignments will use. You can select a specific service, ask PRO to determine the best service to use from a pre-defined group of services, or allocate based on pre-set allocation rules.</li>
+<li><strong>Get the consignment's labels</strong> - Use the <a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a> endpoint to get the delivery label for your consignment.</li>
+<li><strong>Manifest the consignments</strong> - Use the <a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments from Query</a> endpoint to confirm the consignment with the selected carrier. At this point, the consignment is ready to ship.</li>
+</ol>
+<p>This section gives more detail on each step of the flow and provides worked examples.</p>
+<hr>
+<h2 id="step-1-getting-options">Step 1: Getting Options</h2>
+<div class="tab">
+    <button class="staticTabButton">Delivery Options Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('DelOptionsEndpoint')">Click to Copy</div>
+</div>
+<div id="DelOptionsEndpoint" class="staticTabContent" onclick="CopyToClipboard('DelOptionsEndpoint')">
+<pre><code>POST https://api.electioapp.com/deliveryoptions
+</code></pre>
+</div>  
+<p>The <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> endpoint takes the details of an as-yet-nonexistent consignment and returns a single available carrier service for each delivery option. PRO always returns the cheapest carrier service for each option, unless using the cheapest service would conflict with existing business rules. This data can be used to offer delivery promise choices (such as dates and timeslots) to your customer.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+In the context of SortedPRO, a &quot;delivery option&quot; refers to a combination of a carrier service, delivery date and time window.</p>
+<p>For example, suppose that you use the <strong>Delivery Options</strong> endpoint to request delivery options for a particular consignment, and the response indicates the following:</p>
+<ul>
+<li>Carrier X could deliver the consignment between 9 and 5 on Monday.</li>
+<li>Carrier Y could deliver the consignment on Monday between 9 and 12 or Tuesday between 9 and 12</li>
+<li>Carrier Z could deliver the consignment on Monday between 9 and 1 or Monday between 1 and 5</li>
+</ul>
+<p>In this case, there are five available delivery options: one for Carrier X and two each for Carriers Y and Z.</p>
+</blockquote>
+<p>At a minimum, PRO requires you to send package, origin address and destination address data in order to return delivery options. However, there are lots of other properties you can send when getting delivery options, including:</p>
+<ul>
+<li>Your own consignment reference.</li>
+<li>The consignment's source.</li>
+<li>Shipping and delivery dates.</li>
+<li>Customs documentation.</li>
+<li>The consignment's direction of travel.</li>
+<li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For more information on using metadata in PRO, see the <strong><a href="/api/flows/moreInfo.html#metadata">Metadata</a></strong> section of the <strong>More Information</strong> page.</li>
+<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment could be allocated to. For more information on allocation tags, see the <strong><a href="/api/flows/moreInfo.html#tags">Tags</a></strong> section of the <strong>More Information</strong> page.</li>
+</ul>
+<p>Providing extra information can help you to improve the relevance of the options returned.</p>
+<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your organisation's shipping locations, see the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page of the API reference.</p>
+<p>The <strong>Delivery Options</strong> endpoint returns an array of <code>{DeliveryOptions}</code> objects. Each <code>{DeliveryOptions}</code> object contains details of a particular delivery option that is available to take a consignment with the details you passed in the request, including:</p>
+<ul>
+<li><strong>Reference</strong> - A unique identifier for the delivery option, used when selecting delivery options in the next step.</li>
+<li><strong>Dates and Delivery Windows</strong></li>
+<li><strong>Carrier Service</strong></li>
+<li><strong>Price (cost)</strong></li>
+<li><strong>Allocation Cutoff</strong> - The option's expiry time. If the option is not used by this time, it is rendered invalid. This value is usually set by the carrier, but can be configured manually via the <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/ShippingLocations">Shipping Locations</a> &gt; [Select Location] &gt; Collection Calendar</strong> page of the PRO UI.</li>
+<li><strong>Operational Cutoff</strong> - 	The operational cut off date as specified by the fulfilling shipping location.</li>
+<li><strong>Service Direction</strong></li>
+</ul>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Delivery Options</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="get-delivery-options-example">Get Delivery Options Example</h3>
+<p>The example shows a request to get delivery options for a fairly standard consignment. The API has returned two delivery options, both for Carrier X: one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-19</em> and one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-20</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Delivery Options Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('DelOptionsRequest')">Click to Copy</div>
+</div>
+<div id="DelOptionsRequest" class="staticTabContent" onclick="CopyToClipboard('DelOptionsRequest')">
+<pre><code class="lang-json">{  
+  &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;Your Reference&quot;,
+  &quot;DeliveryDate&quot;: &quot;2019-06-19T00:00:00+00:00&quot;,
+  &quot;GuaranteedOnly&quot;: false,
+  &quot;ShippingDate&quot;: &quot;2019-06-17T00:00:00+00:00&quot;,
+  &quot;Packages&quot;: [
+    {
+      &quot;Items&quot;: [
+        {
+          &quot;Sku&quot;: &quot;SKU093434&quot;,
+          &quot;Model&quot;: &quot;ITM-002&quot;,
+          &quot;Description&quot;: &quot;Striped Bamboo Red/White&quot;,
+          &quot;CountryOfOrigin&quot;: {
+            &quot;IsoCode&quot;: {
+              &quot;TwoLetterCode&quot;: &quot;GB&quot;
+            }
+          },
+          &quot;HarmonisationCode&quot;: &quot;Harmonisation_Code&quot;,
+          &quot;Weight&quot;: {
+            &quot;Value&quot;: 0.5,
+            &quot;Unit&quot;: &quot;Kg&quot;
+          },
+          &quot;Dimensions&quot;: {
+            &quot;Unit&quot;: &quot;Cm&quot;,
+            &quot;Width&quot;: 10.0,
+            &quot;Length&quot;: 10.0,
+            &quot;Height&quot;: 10.0
+          },
+          &quot;Value&quot;: {
+            &quot;Amount&quot;: 5.99,
+            &quot;Currency&quot;: {
+              &quot;IsoCode&quot;: &quot;GBP&quot;
+            }
+          },
+          &quot;ItemReferenceProvidedByCustomer&quot;: &quot;ITEMREF-098&quot;,
+          &quot;Barcode&quot;: {
+            &quot;Code&quot;: &quot;09887-091221&quot;,
+            &quot;BarcodeType&quot;: &quot;Code39&quot;
+          },
+          &quot;MetaData&quot;: [
+            {
+              &quot;KeyValue&quot;: &quot;Picker&quot;,
+              &quot;StringValue&quot;: &quot;David Thomas&quot;
+            }
+          ],
+          &quot;Quantity&quot;: 1,
+          &quot;Unit&quot;: &quot;Box&quot;,
+          &quot;HarmonisationKeyWords&quot;: [
+            &quot;Keyword1&quot;
+          ],
+          &quot;ContentClassification&quot;: &quot;Unrestricted&quot;,
+          &quot;ContentClassificationDetails&quot;: &quot;NotSpecified&quot;
+        }
+      ],
+      &quot;PackageReferenceProvidedByCustomer&quot;: &quot;MYPACK-00923&quot;,
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 0.5,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 10.0,
+        &quot;Length&quot;: 10.0,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Description&quot;: &quot;Socks&quot;,
+      &quot;Value&quot;: {
+        &quot;Amount&quot;: 5.99,
+        &quot;Currency&quot;: {
+          &quot;IsoCode&quot;: &quot;GBP&quot;
+        }
+      },
+      &quot;Barcode&quot;: {
+        &quot;Code&quot;: &quot;09887-091221&quot;,
+        &quot;BarcodeType&quot;: &quot;Code39&quot;
+      },
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;WMS-REF&quot;,
+          &quot;IntValue&quot;: 77656555
+        }
+      ]
+    }
+  ],
+  &quot;CustomsDocumentation&quot;: {
+    &quot;DesignatedPersonResponsible&quot;: &quot;Peter McPetersson&quot;,
+    &quot;ImportersVatNumber&quot;: &quot;02345555&quot;,
+    &quot;CategoryType&quot;: &quot;Other&quot;,
+    &quot;ShipperCustomsReference&quot;: &quot;CREF0001&quot;,
+    &quot;ImportersTaxCode&quot;: &quot;TC001&quot;,
+    &quot;ImportersTelephone&quot;: &quot;0161123456&quot;,
+    &quot;ImportersFax&quot;: &quot;01611124547&quot;,
+    &quot;ImportersEmail&quot;: &quot;peter.mcpetersson@test.com&quot;,
+    &quot;CN23Comments&quot;: &quot;Comments&quot;,
+    &quot;ReferencesOfAttachedInvoices&quot;: [
+      &quot;INV001&quot;
+    ],
+    &quot;ReferencesOfAttachedCertificates&quot;: [
+      &quot;CERT001&quot;
+    ],
+    &quot;ReferencesOfAttachedLicences&quot;: [
+      &quot;LIC001&quot;
+    ],
+    &quot;CategoryTypeExplanation&quot;: &quot;Explanation&quot;,
+    &quot;DeclarationDate&quot;: &quot;2019-06-14T00:00:00+00:00&quot;,
+    &quot;OfficeOfPosting&quot;: &quot;Manchester&quot;,
+    &quot;ReasonForExport&quot;: &quot;Sale&quot;,
+    &quot;ShippingTerms&quot;: &quot;CFR&quot;,
+    &quot;ShippersVatNumber&quot;: &quot;874541414&quot;,
+    &quot;ReceiversTaxCode&quot;: &quot;TC5454&quot;,
+    &quot;ReceiversVatNumber&quot;: &quot;8745474&quot;,
+    &quot;InvoiceDate&quot;: &quot;2019-06-14T00:00:00+00:00&quot;
+  },
+  &quot;Addresses&quot;: [
+    {
+      &quot;AddressType&quot;: &quot;Origin&quot;,
+      &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+      &quot;IsCached&quot;: false
+    },
+    {
+      &quot;AddressType&quot;: &quot;Destination&quot;,
+      &quot;Contact&quot;: {
+        &quot;Title&quot;: &quot;Mr&quot;,
+        &quot;FirstName&quot;: &quot;Peter&quot;,
+        &quot;LastName&quot;: &quot;McPetersson&quot;,
+        &quot;Telephone&quot;: &quot;07702123456&quot;,
+        &quot;Mobile&quot;: &quot;07702123456&quot;,
+        &quot;LandLine&quot;: &quot;0161544123&quot;,
+        &quot;Email&quot;: &quot;peter.mcpetersson@test.com&quot;
+      },
+      &quot;CompanyName&quot;: &quot;Test Company (UK) Ltd.&quot;,
+      &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+      &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+      &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+      &quot;Town&quot;: &quot;Manchester&quot;,
+      &quot;Region&quot;: &quot;Greater Manchester&quot;,
+      &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+      &quot;Country&quot;: {
+        &quot;Name&quot;: &quot;Great Britain&quot;,
+        &quot;IsoCode&quot;: {
+          &quot;TwoLetterCode&quot;: &quot;GB&quot;
+        }
+      },
+      &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+      &quot;LatLong&quot;: {
+        &quot;Latitude&quot;: 53.474220,
+        &quot;Longitude&quot;: -2.246049
+      },
+      &quot;IsCached&quot;: false
+    }
+  ],
+  &quot;Direction&quot;: &quot;Outbound&quot;
+}
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Delivery Options Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('DelOptionsResponse')">Click to Copy</div>
+</div>
+<div id="DelOptionsResponse" class="staticTabContent" onclick="CopyToClipboard('DelOptionsResponse')">
+<pre><code class="lang-json">{
+    &quot;DeliveryOptions&quot;: [
+        {
+            &quot;Reference&quot;: &quot;EDO-000-6DX-6XP&quot;,
+            &quot;EstimatedDeliveryDate&quot;: {
+                &quot;Date&quot;: &quot;2019-06-19T00:00:00+00:00&quot;,
+                &quot;Guaranteed&quot;: true,
+                &quot;DayOfWeek&quot;: &quot;Wednesday&quot;
+            },
+            &quot;DeliveryWindow&quot;: {
+                &quot;Start&quot;: &quot;00:00:00&quot;,
+                &quot;End&quot;: &quot;23:59:00&quot;,
+                &quot;UtcOffset&quot;: &quot;+01:00&quot;
+            },
+            &quot;Carrier&quot;: &quot;Carrier X&quot;,
+            &quot;CarrierService&quot;: &quot;Tracked 48 Signed For&quot;,
+            &quot;CarrierServiceReference&quot;: &quot;MPD_T48CX&quot;,
+            &quot;CarrierServiceTypes&quot;: [
+                &quot;Standard&quot;
+            ],
+            &quot;Price&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;TaxRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;AllocationCutOff&quot;: &quot;2019-06-17T00:00:00+01:00&quot;,
+            &quot;OperationalCutOff&quot;: &quot;2019-06-17T00:00:00+01:00&quot;,
+            &quot;ServiceDirection&quot;: &quot;Inbound, Outbound&quot;
+        }
+        {
+            &quot;Reference&quot;: &quot;EDO-000-6DX-6XQ&quot;,
+            &quot;EstimatedDeliveryDate&quot;: {
+                &quot;Date&quot;: &quot;2019-06-20T00:00:00+00:00&quot;,
+                &quot;Guaranteed&quot;: true,
+                &quot;DayOfWeek&quot;: &quot;Wednesday&quot;
+            },
+            &quot;DeliveryWindow&quot;: {
+                &quot;Start&quot;: &quot;00:00:00&quot;,
+                &quot;End&quot;: &quot;23:59:00&quot;,
+                &quot;UtcOffset&quot;: &quot;+01:00&quot;
+            },
+            &quot;Carrier&quot;: &quot;Carrier X&quot;,
+            &quot;CarrierService&quot;: &quot;Tracked 48 Signed For&quot;,
+            &quot;CarrierServiceReference&quot;: &quot;MPD_T48CX&quot;,
+            &quot;CarrierServiceTypes&quot;: [
+                &quot;Standard&quot;
+            ],
+            &quot;Price&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;TaxRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;AllocationCutOff&quot;: &quot;2019-06-18T00:00:00+01:00&quot;,
+            &quot;OperationalCutOff&quot;: &quot;2019-06-18T00:00:00+01:00&quot;,
+            &quot;ServiceDirection&quot;: &quot;Inbound, Outbound&quot;
+        }
+    ]
+}    
+</code></pre>
+</div>  
+<p>Both of these options have a time window starting at 00:00 and ending at 23:59. In practice, the carrier is offering to make the delivery at some point on either the 19th or 20th of June (as selected by the customer), but isn't offering a more specific timeslot on that service.</p>
+<p>Note the <code>{Reference}</code> for each delivery option. When the customer selects their preferred delivery option you will need to pass the relevant <code>{Reference}</code> back to PRO via the <strong>Select Option</strong> endpoint.</p>
+<p>At this point, you would present some or all of the options returned to your customer via your site or app. In the next step, we'll see how to handle the choice the customer makes.</p>
+
+<blockquote>
+<p><span class="note-header">Note:</span>
+Although this guide focuses on generating an order from the <strong>Delivery Options</strong> endpoint, you can also generate orders from pickup options via the <strong>Pickup Options</strong> endpoint. For more information on the <strong>Pickup Options</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/PickupOptions">Pickup Options</a></strong> page of the API reference.</p>
+</blockquote>
+<hr>
+<h2 id="step-2-selecting-an-option-as-an-order">Step 2: Selecting an Option as an Order</h2>
+<div class="tab">
+    <button class="staticTabButton">Select Delivery Option as an Order Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('optAsOrderEndpoint')">Click to Copy</div>
+</div>
+<div id="optAsOrderEndpoint" class="staticTabContent" onclick="CopyToClipboard('optAsOrderEndpoint')">
+<pre><code>POST https://api.electioapp.com/deliveryoptions/selectorder
+</code></pre>
+</div>     
+<p>Once the customer has selected an available delivery option, you'll need to record their choice in SortedPRO via the <strong><a href="https://docs.electioapp.com/#/api/SelectDeliveryOptionasanOrder">Select Delivery Option as an Order</a></strong> endpoint. This endpoint takes the <code>{Reference}</code> of the selected option as a path parameter.</p>
+<p>Once it has received the <strong>Select Delivery Option as an Order</strong> request, PRO uses the details of the selected option to create an order and returns an object containing the associated <code>{orderReference}</code>. The reference will come in useful in the next step, when we pack the order into consignments.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Select Delivery Option as an Order</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/SelectDeliveryOptionasanOrder">Select Delivery Option as an Order</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="select-option-as-order-example">Select Option As Order Example</h3>
+<p>The example shows a request to select a delivery option that has a <code>{Reference}</code> of <em>EDO-000-6DX-6XP</em> as an order. PRO takes that delivery option's details and creates an order with an <code>{orderReference}</code> of <em>EO-000-002-0TT</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Select Delivery Option as an Order Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('optAsOrderRequest')">Click to Copy</div>
+</div>
+<div id="optAsOrderRequest" class="staticTabContent" onclick="CopyToClipboard('optAsOrderRequest')">
+<pre><code class="lang-json">{
+  &quot;DeliveryOptions&quot;: [
+    {
+      &quot;Reference&quot;: &quot;EDO-000-6DX-6XP&quot;,
+      &quot;OrderReferenceProvidedByCustomer&quot;: &quot;MYORDEREF001&quot;,
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;OrderReference&quot;,
+          &quot;StringValue&quot;: &quot;10045634343&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+</div>   
+<div class="tab">
+    <button class="staticTabButton">Example Select Delivery Option as an Order Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('optAsOrderResponse')">Click to Copy</div>
+</div>
+<div id="optAsOrderResponse" class="staticTabContent" onclick="CopyToClipboard('optAsOrderResponse')">
+<pre><code class="lang-json">{
+  &quot;SelectOrderResults&quot;: [
+    {
+      &quot;DeliveryOptionReference&quot;: &quot;EDO-000-6DX-6XP&quot;,
+      &quot;OrderReference&quot;: &quot;EO-000-002-0TT&quot;,
+      &quot;Status&quot;: 201,
+      &quot;Message&quot;: null,
+      &quot;Links&quot;: [
+        {
+          &quot;Rel&quot;: &quot;Detail&quot;,
+          &quot;Href&quot;: &quot;https://api.electioapp.com/orders/EEO-000-002-0TT&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+</div> 
+<hr>
+<h2 id="step-3-packing-the-order">Step 3: Packing the Order</h2>
+<div class="tab">
+    <button class="staticTabButton">Pack Order Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('packOrderEndpoint')">Click to Copy</div>
+</div>
+<div id="packOrderEndpoint" class="staticTabContent" onclick="CopyToClipboard('packOrderEndpoint')">
+<pre><code>POST https://api.electioapp.com/orders/{orderReference}/pack
+</code></pre>
+</div>
+<p>Once your order is created, you'll need to use the <strong><a href="https://docs.electioapp.com/#/api/PackOrder">Pack Order</a></strong> endpoint to create consignments from it.</p>
+<p>It's important to understand the difference between a consignment and an order when using <strong>Pack Order</strong>:</p>
+<ul>
+<li>An <strong>order</strong> is a collection of items that is to be transported to the same destination on behalf of the same customer.</li>
+<li>A <strong>consignment</strong> is a collection of packages that is to be transported to the same destination, on behalf of the same customer, <em>from the same origin, on the same day, and by the same carrier</em>.</li>
+</ul>
+<p>This means that orders can contain items that will not ship from the same location, but consignments cannot. Similarly, orders can contain items that will ship from the same location but at different times (for example, because one of the items a customer has purchased is out of stock).</p>
+<p>The <strong>Pack Order</strong> endpoint enables you to take those items on an order that share an origin and are to be shipped together, and generate a shippable consignment from them. You will need to send one <strong>Pack Order</strong> request per consignment that you want to create from the order.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. The necklace and bracelet are located in warehouse A, and the coat and hat in warehouse B. This would likely break down to:</p>
+<ul>
+<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
+<li>Two consignments - One with a single item for the package containing the necklace and bracelet, and another with separate packages for the coat and hat.</li>
+<li>A single order comprising the customer's entire purchase.</li>
+</ul>
+<p>In this example, you would need to run <strong>Pack Order</strong> twice - once for each consignment.</p>
+</blockquote>
+<p>To make a <strong>Pack Order</strong> request, send a GET request to <code>https://api.electioapp.com/orders/{orderReference}/pack</code>. The body of the request can contain various properties that are used when creating the consignment, but at a minimum should contain the <code>{orderReference}</code> of the associated order and details of at least one <code>{item}</code> (and its accompanying <code>{package}</code>). The items and packages listed make up the consignment.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+The <strong>Pack Order</strong> request's <code>OrderReferenceProvidedByCustomer</code> field enables you to provide a custom reference for the consignment that the request generates.</p>
+<p>If you add a custom reference to your <strong>Pack Order</strong> request, then PRO uses this value as the consignment's custom reference, as opposed to any <code>OrderReferenceProvidedByCustomer</code> you may have provided when creating the order.</p>
+<p>If you do not add a custom reference to your <strong>Pack Order</strong> request, then PRO uses the existing order's <code>OrderReferenceProvidedByCustomer</code> (where provided) as the consignment's custom reference.</p>
+</blockquote>
+<p>Once SortedPRO has received a <strong>Pack Order</strong> request, it creates the consignment and returns the relevant <code>{consignmentReference}</code>.</p>
+<h3 id="pack-order-example">Pack Order Example</h3>
+<p>The example shows a <strong>Pack Order</strong> request to create a consignment with one package containing a single item from order <em>EO-000-002-0TT</em>. PRO creates the consignment and responds with a <code>{consignmentReference}</code> of <em>EC-000-05B-MQ4</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Pack Order Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('packOrderRequest')">Click to Copy</div>
+</div>
+<div id="packOrderRequest" class="staticTabContent" onclick="CopyToClipboard('packOrderRequest')">
+<pre><code class="lang-json">{
+  &quot;OrderReference&quot;: &quot;EO-000-002-0TT&quot;,
+  &quot;OrderReferenceProvidedByCustomer&quot;: &quot;MyOrderRef001&quot;,
+  &quot;GenerateReturn&quot;: false,
+  &quot;Packages&quot;: [
+    {
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 15.4,
+        &quot;Length&quot;: 21.7,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 1.3,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;PackageSizeReference&quot;: &quot;&quot;,
+      &quot;Items&quot;: [
+        {
+          &quot;Sku&quot;: &quot;SKU093434&quot;,
+          &quot;Quantity&quot;: 1
+        }
+      ]
+    }
+  ],
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;SampleKey&quot;,
+      &quot;StringValue&quot;: &quot;SampleValue&quot;
+    }
+  ]
+}
+</code></pre>
+</div>   
+<div class="tab">
+    <button class="staticTabButton">Example Pack Order Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('packOrderResponse')">Click to Copy</div>
+</div>
+<div id="packOrderResponse" class="staticTabContent" onclick="CopyToClipboard('packOrderResponse')">
+<pre><code class="lang-json">{
+  &quot;Results&quot;: [
+    {
+      &quot;Result&quot;: &quot;ConsignmentCreated&quot;,
+      &quot;ApiLinks&quot;: [
+        {
+          &quot;Rel&quot;: &quot;Consignment&quot;,
+          &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-05B-MQ4&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+</div>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Pack Order</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/PackOrder">Pack Order</a></strong> page of the API reference.</p>
+</blockquote>
+<hr>
+<h2 id="step-4-allocating-the-consignment">Step 4: Allocating the Consignment</h2>
+<div class="tab">
+    <button class="staticTabButton">Allocation Endpoints</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationEndpoints')">Click to Copy</div>
+</div>
+<div id="allocationEndpoints" class="staticTabContent" onclick="CopyToClipboard('allocationEndpoints')">
+<pre><code>PUT https://api.electioapp.com/allocation/allocate
+PUT https://api.electioapp.com/allocation/{consignmentReference}/allocatewithservicegroup/{mpdCarrierServiceGroupReference}
+PUT https://api.electioapp.com/allocation/allocatewithcarrierservice
+</code></pre>
+</div>   
+<p>Once you've created a consignment, it must be allocated to a carrier service. PRO has multiple allocation endpoints, giving you the flexibility to allocate to carriers using whatever criteria suits you best. In this case you could allocate via:</p>
+<ul>
+<li><strong><a href="https://docs.electioapp.com/#/api/AllocateUsingDefaultRules">Allocate Using Default Rules</a></strong> - Allocates the consignment using pre-configured default rules.</li>
+<li><strong><a href="https://docs.electioapp.com/#/api/AllocateConsignmentWithServiceGroup">Allocate Consignment With Service Group</a></strong> - Allocates the consignment to the cheapest carrier service in the specified Carrier Service Group.</li>
+<li><strong><a href="https://docs.electioapp.com/#/api/AllocateWithCarrierService">Allocate With Carrier Service</a></strong> - Allocates the consignment to the specified carrier service.</li>
+</ul>
+<blockquote>
+<p><span class="note-header">Note:</span>
+In the context of SortedPRO, <strong>allocation</strong> is the process of selecting the carrier service that will be used to deliver the consignment.</p>
+</blockquote>
+<p>Once allocated, the consignment's status changes to <em>Allocated</em>, enabling you to retrieve its package labels and (where applicable) customs documentation.</p>
+<p>This section explains the circumstances in which you might choose to use each allocation endpoint, and gives worked examples.</p>
+<h3 id="the-allocation-summary-response">The Allocation Summary Response</h3>
+<p>All allocation endpoints return an Allocation Summary, either singularly or (where multiple consignments have been allocated at once) in an array. The Allocation Summary contains links to the consignment resource that was allocated, a summary of the carrier service that the consignment was allocated to, a link to the relevant package labels, and a <code>ConsignmentLegs</code> array indicating how many legs the shipment will need. Where a shipment would need multiple legs to complete, the <code>ConsignmentLegs</code> array shows tracking details for each individual leg.</p>
+<p>In the example, a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em> has been allocated to a (dummy) carrier service called <em>Carrier X Next Day Super</em>.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+Allocation tags enable you to filter the list of available carrier services on a per-consignment basis, no matter which allocation endpoint you use in your integration. For more information on using allocation tags, see the <strong><a href="/api/flows/moreInfo.html#tags">Tags</a></strong> section of the <strong>More Information</strong> page.</p>
+</blockquote>
+<div class="tab">
+    <button class="staticTabButton">Example Allocation Summary</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationSummary')">Click to Copy</div>
+</div>
+<div id="allocationSummary" class="staticTabContent" onclick="CopyToClipboard('allocationSummary')">
+<pre><code class="lang-json">[
+    {
+        &quot;StatusCode&quot;: 200,
+        &quot;ApiLinks&quot;: [
+            {
+                &quot;Rel&quot;: &quot;detail&quot;,
+                &quot;Href&quot;: &quot;https://apisandbox.electioapp.com/consignments/EC-000-05B-MMA&quot;
+            },
+            {
+                &quot;Rel&quot;: &quot;label&quot;,
+                &quot;Href&quot;: &quot;https://apisandbox.electioapp.com/labels/EC-000-05B-MMA&quot;
+            }
+        ],
+        &quot;Description&quot;: &quot;Consignment EC-000-05B-MMA has been successfully allocated with Carrier X Next Day Super for shipping on 14/06/2019 17:00:00 +00:00&quot;,
+        &quot;ConsignmentLegs&quot;: [
+            {
+                &quot;Leg&quot;: 1,
+                &quot;TrackingReferences&quot;: [
+                    &quot;TRK00009823&quot;
+                ],
+                &quot;CarrierReference&quot;: &quot;CARRIER_X&quot;,
+                &quot;CarrierServiceReference&quot;: null,
+                &quot;CarrierName&quot;: &quot;Carrier X&quot;
+            }
+        ],
+        &quot;CarrierReference&quot;: &quot;CARRIER_X&quot;,
+        &quot;CarrierName&quot;: &quot;Carrier X&quot;,
+        &quot;CarrierServiceReference&quot;: &quot;CX_NDS&quot;,
+        &quot;CarrierServiceName&quot;: &quot;Next Day Super&quot;
+    }
+]
+</code></pre>
+</div>
+
+<p>You'll need to allocate all of the consignments packed from your order. Bear in mind that <strong><a href="https://docs.electioapp.com/#/api/AllocateUsingDefaultRules">Allocate Using Default Rules</a></strong> and <strong><a href="https://docs.electioapp.com/#/api/AllocateWithCarrierService">Allocate With Carrier Service</a></strong> enable you to allocate multiple consignments at once, but you can only allocate one consignment at a time via <strong><a href="https://docs.electioapp.com/#/api/AllocateConsignmentWithServiceGroup">Allocate Consignment With Service Group</a></strong>. If you allocate via <strong>Allocate Consignment With Service Group</strong> you'll need to make one API call per consignment on the order.</p>
+<hr>
+<h2 id="step-4a-allocating-using-default-rules">Step 4a: Allocating using Default Rules</h2>
+<div class="tab">
+    <button class="staticTabButton">Allocation Using Default Rules Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationUDREndpoint')">Click to Copy</div>
+</div>
+<div id="allocationUDREndpoint" class="staticTabContent" onclick="CopyToClipboard('allocationUDREndpoint')">
+<pre><code>PUT https://api.electioapp.com/allocation/allocate
+</code></pre>
+</div>
+<p>To allocate one or more consignments based on your organisation's custom allocation rules, use the <strong><a href="https://docs.electioapp.com/#/api/AllocateUsingDefaultRules">Allocate Using Default Rules</a></strong> endpoint.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+PRO allocation rules enable you to configure business rules - such as physical package size, consignment value, and geographical availability - against individual carrier services. You can configure them via the  <a href="https://www.electioapp.com/Configuration/EditCarrierService/acceptanceTestCarrier_f8fe"><strong>Manage Carrier Service Rules</strong></a> page of the PRO UI.</p>
+<p>For more information on configuring allocation rules, see the <em>Configure Allocation Rules</em> section of the PRO Admin Portal User Guide.</p>
+</blockquote>
+<p>The <strong>Allocate Using Default Rules</strong> endpoint can be used to allocate multiple consignments simultaneously. The request body can contain an array of one or more <code>{consignmentReference}</code>s to be allocated.</p>
+<p>Once the request is received, SortedPRO takes each consignment in turn and allocates it to the cheapest eligible carrier, based on your default rules. It then returns an array of Allocation Summaries, one for each allocated consignment.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Allocate Using Default Rules</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/AllocateUsingDefaultRules">Allocate Using Default Rules</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="allocate-using-default-rules-example">Allocate Using Default Rules Example</h3>
+<p>The example shows a request to allocate three consignments via default rules.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Allocate Using Default Rules Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationUDRRequest')">Click to Copy</div>
+</div>
+<div id="allocationUDRRequest" class="staticTabContent" onclick="CopyToClipboard('allocationUDRRequest')">
+<pre><code class="lang-json">PUT https://api.electioapp.com/allocation/allocate
+
+{
+  &quot;ConsignmentReferences&quot;: [
+    &quot;EC-000-05B-MMA&quot;,
+    &quot;EC-000-083-45D&quot;,
+    &quot;EC-000-A04-0DV&quot;
+  ]
+}
+</code></pre>
+</div>
+<hr>
+<h2 id="step-4b-allocating-from-a-service-group">Step 4b: Allocating from a Service Group</h2>
+<div class="tab">
+    <button class="staticTabButton">Allocate Consignment With Service Group Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationUSGEndpoint')">Click to Copy</div>
+</div>
+<div id="allocationUSGEndpoint" class="staticTabContent" onclick="CopyToClipboard('allocationUSGEndpoint')">
+<pre><code>PUT https://api.electioapp.com/allocation/{consignmentReference}/allocatewithservicegroup/{mpdCarrierServiceGroupReference}
+</code></pre>
+</div>
+<p>SortedPRO carrier service groups are user-defined pools of carrier services that can be used in the allocation process. To allocate a consignment to the cheapest available carrier service in a particular carrier service group, use the <strong><a href="https://docs.electioapp.com/#/api/AllocateConsignmentWithServiceGroup">Allocate Consignment With Service Group</a></strong> endpoint.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+Carrier service groups are designed to help you allocate your consignments to the best possible service. For example, you might set up a group containing all services that will ship dangerous goods. You would then allocate within that group for all consignments involving dangerous items.</p>
+<p>To configure carrier service groups, use the <strong><a href="https://www.electioapp.com/Configuration/CarrierServiceGroups">Configuration - Carrier Service Groups</a></strong> UI page.</p>
+</blockquote>
+<p>The <strong>Allocate Consignment With Service Group</strong> endpoint takes the <code>{consignmentReference}</code> of the consignment you want to allocate and the <code>{mpdCarrierServiceGroupReference}</code> of the service group you want to allocate from as path parameters, and returns an Allocation Summary with details of the service that was allocated.</p>
+<p>The <code>{mpdCarrierServiceGroupReference}</code> is a unique identifier for each carrier service group. To find the <code>{mpdCarrierServiceGroupReference}</code> for a particular group, log in to the PRO UI, navigate to the <strong><a href="https://www.electioapp.com/Configuration/CarrierServiceGroups">Configuration - Carrier Service Groups</a></strong> page, and locate the tile for that group. The <code>{mpdCarrierServiceGroupReference}</code> is shown in the <strong>Code</strong> field.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Allocate Consignment With Service Group</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/AllocateConsignmentWithServiceGroup">Allocate Consignment With Service Group</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="allocate-with-service-group-example">Allocate With Service Group Example</h3>
+<p>The example shows a request to allocate a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em> to a carrier service within a group named <code>valuableGoods</code>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Allocate Consignment With Service Group Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationUSGRequest')">Click to Copy</div>
+</div>
+<div id="allocationUSGRequest" class="staticTabContent" onclick="CopyToClipboard('allocationUSGRequest')">
+<pre><code>PUT https://api.electioapp.com/allocation/EC-000-05B-MMA/allocatewithservicegroup/valuableGoods
+</code></pre>
+</div>
+<hr>
+<h2 id="step-4c-allocating-to-a-specific-carrier-service">Step 4c: Allocating to a Specific Carrier Service</h2>
+<div class="tab">
+    <button class="staticTabButton">Allocate With Carrier Service Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationUCSEndpoint')">Click to Copy</div>
+</div>
+<div id="allocationUCSEndpoint" class="staticTabContent" onclick="CopyToClipboard('allocationUCSEndpoint')">
+<pre><code>PUT https://api.electioapp.com/allocation/allocatewithcarrierservice
+</code></pre>
+</div>
+<p>To allocate one or more consignments to a specific carrier service, use the <strong><a href="https://docs.electioapp.com/#/api/AllocateWithCarrierService">Allocate With Carrier Service</a></strong> endpoint.</p>
+<p>The <strong>Allocate With Carrier Service</strong> request body contains an array of one or more <code>{consignmentReference}</code>s to be allocated and the <code>{MpdCarrierServiceReference}</code> of the carrier service that they should be allocated to.</p>
+<p>Once the request is received, SortedPRO attempts to allocate the consignments to the specified carrier service. It then returns an array of Allocation Summaries, one for each allocated consignment.</p>
+<p>If PRO is unable to allocate the consignment to the specified carrier service, it puts the consignment into a state of <em>Allocation Failed</em> and takes no further action. For information on dealing with failed allocations, see the <em>Manage NOT SHIPPED Consignments</em> section of the PRO UI User Manual.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Allocate With Carrier Service</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/AllocateWithCarrierService">Allocate With Carrier Service</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="allocate-with-carrier-service-example">Allocate With Carrier Service Example</h3>
+<p>The example shows a request to allocate three consignments to a carrier service with an <code>{MpdCarrierServiceReference}</code> of <em>Example-Carrier-Service</em> .</p>
+<div class="tab">
+    <button class="staticTabButton">Example Allocate With Carrier Service Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocationUCSRequest')">Click to Copy</div>
+</div>
+<div id="allocationUCSRequest" class="staticTabContent" onclick="CopyToClipboard('allocationUCSRequest')">
+<pre><code class="lang-json">PUT https://api.electioapp.com/allocation/allocatewithcarrierservice
+
+{
+  &quot;MpdCarrierServiceReference&quot;: &quot;Example-Carrier-Service&quot;,
+  &quot;ConsignmentReferences&quot;: [
+    &quot;EC-000-05A-Z6S&quot;,
+    &quot;EC-000-083-45D&quot;,
+    &quot;EC-000-A04-0DV&quot;
+  ]
+}
+</code></pre>
+</div>
+<hr>
+<h2 id="step-5-getting-shipment-labels">Step 5: Getting Shipment Labels</h2>
+<div class="tab">
+    <button class="staticTabButton">Get Labels in Format Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('GLFEndpoint')">Click to Copy</div>
+</div>
+<div id="GLFEndpoint" class="staticTabContent" onclick="CopyToClipboard('GLFEndpoint')">
+<pre><code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}
+</code></pre>
+</div>
+<p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The next step in the process is to retrieve those delivery labels via the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Label in Format</a></strong> endpoint.</p>
+<p>The <strong>Get Labels in Format</strong> endpoint takes a <code>{consignmentReference}</code> and <code>{labelFormat}</code> as path parameters. PRO returns all package labels associated with that consignment as a base64-encoded byte array in the format requested.</p>
+<p><strong>Get Labels in Format</strong> can return labels as <code>pdf</code>, <code>zpl</code> and <code>zplii</code> file types. We recommend that, when integrating PRO with your system, you make the <code>{labelFormat}</code> field a parameter, so you can easily return labels in an alternative format if required.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Get Labels in Format</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="get-labels-in-format-example">Get Labels in Format Example</h3>
+<p>The example shows a request to get PDF labels for a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. The file data in the response has been truncated for clarity.</p>
+<p>You would next need to decode the file's Base64 in order to view the label itself. If you are unsure how to do so, see the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN docs</a></strong> for more information.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Get Labels in Format Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('GLFRequest')">Click to Copy</div>
+</div>
+<div id="GLFRequest" class="staticTabContent" onclick="CopyToClipboard('GLFRequest')">
+<pre><code>GET https://api.electioapp.com/labels/EC-000-05B-MMA/pdf
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Get Labels in Format Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('GLFResponse')">Click to Copy</div>
+</div>
+<div id="GLFResponse" class="staticTabContent" onclick="CopyToClipboard('GLFResponse')">
+<pre><code class="lang-json">{
+  &quot;File&quot;: &quot;SlZCRVJpMHhMalFLSmRQcjZ ... TVRrNU9ERUtKU1ZGVDBZPQ==&quot;,
+  &quot;ContentType&quot;: &quot;application/pdf&quot;
+}
+</code></pre>
+</div>
+
+<blockquote>
+<p><span class="note-header">Note:</span>
+You'll need to make one <strong>Get Labels</strong> call per consignment on the order.</p>
+</blockquote>
+<hr>
+<h2 id="step-6-manifesting-the-consignment">Step 6: Manifesting the Consignment</h2>
+<div class="tab">
+    <button class="staticTabButton">Manifest Consignments From Query Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryEndpoint')">Click to Copy</div>
+</div>
+<div id="ManifestQueryEndpoint" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryEndpoint')">
+<pre><code>PUT https://api.electioapp.com/consignments/manifestFromQuery
+</code></pre>
+</div>
+<p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're ready to manifest it. To manifest a consignment, use the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> endpoint.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the consignment in question needs to be collected from the shipper.</p>
+</blockquote>
+<p>The <strong>Manifest Consignments From Query</strong> endpoint enables you to use a query to select consignments to be manifested. You can select consignments via the following criteria:</p>
+<ul>
+<li><code>ShippingLocationReference</code> - The shipping location that the consignment will ship from. For information on how to obtain a list of your organisation's shipping locations and their references, see the <a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a> page of the API reference.</li>
+<li><code>States</code> - The state that the consignments should be in. All the consignments you provide in the request should be in a state of either <em>Allocated</em> or <em>Manifest Failed</em>. If you attempt to manifest a consignment that is not in one of these states then PRO returns an error.</li>
+<li><code>Carriers</code> - The carriers that the consignments are allocated to.</li>
+<li><code>LabelsPrinted</code> - Whether or not the labels for the consignments have already been printed.</li>
+<li><code>ShippingDate</code> - The date that the consignment is scheduled to ship.</li>
+<li><code>ShippingDateRanges</code>- A range of scheduled shipping dates.</li>
+</ul>
+<p>Once PRO has attempted to add the consignments to the manifest queue, the <strong>Manifest Consignments From Query</strong> endpoint returns a <code>Message</code> indicating how many consignments met the terms of the query and how many it was able to queue. It also returns a <code>FailedConsignments</code> array listing the <code>consignmentReferences</code> of those consignments that PRO was unable to queue for manifest.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Manifest Consignments From Query</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> page of the API Reference.</p>
+</blockquote>
+<h3 id="manifest-consignments-from-query-example">Manifest Consignments From Query Example</h3>
+<p>The example shows a request to manifest all consignments that are allocated to Carrier X, shipping from a location with the <code>ShippingLocationReference</code> <em>Location1</em>, and have already had their labels printed. The response indicates that PRO found 10 consignments meeting these criteria, and that all 10 were successfully queued for manifest.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Manifest Consignments From Query Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryRequest')">Click to Copy</div>
+</div>
+<div id="ManifestQueryRequest" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryRequest')">
+<pre><code class="lang-json">{
+  &quot;ShippingLocationReferences&quot;: [
+    &quot;Location1&quot;
+  ],
+  &quot;States&quot;: [
+    &quot;Allocated&quot;
+  ],
+  &quot;Carriers&quot;: [
+    &quot;CARRIER_X&quot;
+  ],
+  &quot;LabelsPrinted&quot;: true
+}
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Manifest Consignments From Query Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryResponse')">Click to Copy</div>
+</div>
+<div id="ManifestQueryResponse" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryResponse')">
+<pre><code class="lang-json">{
+  &quot;Message&quot;: &quot;Query found 10 consignment(s). 10 successfully queued to manifest. 0 failed to be added to the queue&quot;
+}
+</code></pre>
+</div>
+
+<blockquote>
+<p><span class="note-header">Note:</span>
+You'll need to manifest all the consignments on the order.</p>
+</blockquote>
+<h3 id="next-steps">Next Steps</h3>
+<p>The final section explains how to set up a call flow that enables you to retrieve and select quotes manually.</p>
+<script src="../../scripts/requesttabs.js"></script>
+<script src="../../scripts/responsetabs.js"></script>
+<script src="../../scripts/copy.js"></script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/consumer_options_flex_flow.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest
+  id: GetLabelsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  children:
+  - Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint
+  langs:
+  - csharp
+  - vb
+  name: GetLabelsRequest
+  nameWithType: GetLabelsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/GetLabelsRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabelsRequest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/GetLabelsRequest.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  summary: "\nA request to retrieve labels.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Get Labels Request", "A request to retrieve labels.")]
+
+      public class GetLabelsRequest : LabelsRequest
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Get Labels Request", "A request to retrieve labels.")>
+
+      Public Class GetLabelsRequest
+          Inherits LabelsRequest
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  inheritedMembers:
+  - Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.MpdConsignmentReference
+  - Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.PageSize
+  - Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.CustomerReference
+  - Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.AccountReference
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Get Labels Request
+    - type: System.String
+      value: A request to retrieve labels.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint
+  id: AutoPrint
+  parent: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest
+  langs:
+  - csharp
+  - vb
+  name: AutoPrint
+  nameWithType: GetLabelsRequest.AutoPrint
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/GetLabelsRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AutoPrint
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/GetLabelsRequest.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  summary: "\nFlag indicating whether the retrieved file should automatically print.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Flag indicating whether the retrieved file should automatically print.", false, PropertyCollectionType.Single)]
+
+      public bool AutoPrint { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Flag indicating whether the retrieved file should automatically print.", False, PropertyCollectionType.Single)>
+
+      Public Property AutoPrint As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Flag indicating whether the retrieved file should automatically print.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Labels
+  commentId: N:Sorted.PRO.SDK.DataTypes.Labels
+  name: Sorted.PRO.SDK.DataTypes.Labels
+  nameWithType: Sorted.PRO.SDK.DataTypes.Labels
+  fullName: Sorted.PRO.SDK.DataTypes.Labels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: LabelsRequest
+  nameWithType: LabelsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.MpdConsignmentReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.MpdConsignmentReference
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  name: MpdConsignmentReference
+  nameWithType: LabelsRequest.MpdConsignmentReference
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.MpdConsignmentReference
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.PageSize
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.PageSize
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  name: PageSize
+  nameWithType: LabelsRequest.PageSize
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.PageSize
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.CustomerReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.CustomerReference
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  name: CustomerReference
+  nameWithType: LabelsRequest.CustomerReference
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.CustomerReference
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.AccountReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.AccountReference
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest
+  name: AccountReference
+  nameWithType: LabelsRequest.AccountReference
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelsRequest.AccountReference
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint
+  name: AutoPrint
+  nameWithType: GetLabelsRequest.AutoPrint
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsRequest.AutoPrint
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

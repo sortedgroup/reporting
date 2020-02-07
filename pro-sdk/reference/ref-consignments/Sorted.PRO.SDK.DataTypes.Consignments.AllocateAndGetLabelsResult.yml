@@ -1,0 +1,1309 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  id: AllocateAndGetLabelsResult
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode
+  langs:
+  - csharp
+  - vb
+  name: AllocateAndGetLabelsResult
+  nameWithType: AllocateAndGetLabelsResult
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateAndGetLabelsResult
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nThe individual result of an allocate and get label request.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Allocate and Get Labels Result", "This is the individual result of an Allocate And Get Label request.")]
+
+      public class AllocateAndGetLabelsResult
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Allocate and Get Labels Result", "This is the individual result of an Allocate And Get Label request.")>
+
+      Public Class AllocateAndGetLabelsResult
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Allocate and Get Labels Result
+    - type: System.String
+      value: This is the individual result of an Allocate And Get Label request.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType
+  id: LabelType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: LabelType
+  nameWithType: AllocateAndGetLabelsResult.LabelType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Identifies the type of label, e.g. \"Consignment\"", true, PropertyCollectionType.Single)]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public LabelType LabelType { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Identifies the type of label, e.g. ""Consignment""", True, PropertyCollectionType.Single)>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property LabelType As LabelType
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Identifies the type of label, e.g. "Consignment"
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode
+  id: StatusCode
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: AllocateAndGetLabelsResult.StatusCode
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: StatusCode
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The HTTP status code for the current operation, e.g. 200 (OK)", true, PropertyCollectionType.Single)]
+
+      public int StatusCode { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The HTTP status code for the current operation, e.g. 200 (OK)", True, PropertyCollectionType.Single)>
+
+      Public Property StatusCode As Integer
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The HTTP status code for the current operation, e.g. 200 (OK)
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent
+  id: LabelContent
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: LabelContent
+  nameWithType: AllocateAndGetLabelsResult.LabelContent
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelContent
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 29
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Base64-encoded label content that can be decoded to the provided LabelFormat.", false, PropertyCollectionType.Single)]
+
+      public string LabelContent { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Base64-encoded label content that can be decoded to the provided LabelFormat.", False, PropertyCollectionType.Single)>
+
+      Public Property LabelContent As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Base64-encoded label content that can be decoded to the provided LabelFormat.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType
+  id: LabelFileType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: LabelFileType
+  nameWithType: AllocateAndGetLabelsResult.LabelFileType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelFileType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The mime type/format of the label, e.g. \"application/pdf\".", false, PropertyCollectionType.Single)]
+
+      public string LabelFileType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The mime type/format of the label, e.g. ""application/pdf"".", False, PropertyCollectionType.Single)>
+
+      Public Property LabelFileType As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The mime type/format of the label, e.g. "application/pdf".
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result
+  id: Result
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: AllocateAndGetLabelsResult.Result
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Result
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates the success (or otherwise) of this element of the request.", true, PropertyCollectionType.Single)]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public ConsignmentOperationResult Result { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates the success (or otherwise) of this element of the request.", True, PropertyCollectionType.Single)>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property Result As ConsignmentOperationResult
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates the success (or otherwise) of this element of the request.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs
+  id: ConsignmentLegs
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentLegs
+  nameWithType: AllocateAndGetLabelsResult.ConsignmentLegs
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentLegs
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Includes details of carrier(s) and tracking reference(s) for this consignment.", true, PropertyCollectionType.Single)]
+
+      public List<ConsignmentLeg> ConsignmentLegs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Includes details of carrier(s) and tracking reference(s) for this consignment.", True, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentLegs As List(Of ConsignmentLeg)
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Includes details of carrier(s) and tracking reference(s) for this consignment.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference
+  id: CarrierReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: CarrierReference
+  nameWithType: AllocateAndGetLabelsResult.CarrierReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the carrier that this consignment has been allocated with.", false, PropertyCollectionType.Single)]
+
+      public string CarrierReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the carrier that this consignment has been allocated with.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the carrier that this consignment has been allocated with.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName
+  id: CarrierName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: CarrierName
+  nameWithType: AllocateAndGetLabelsResult.CarrierName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 50
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the carrier that this consignment has been allocated with.", false, PropertyCollectionType.Single)]
+
+      public string CarrierName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the carrier that this consignment has been allocated with.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the carrier that this consignment has been allocated with.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference
+  id: CarrierServiceReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceReference
+  nameWithType: AllocateAndGetLabelsResult.CarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 54
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the carrier service that this consignment has been allocated with.", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the carrier service that this consignment has been allocated with.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the carrier service that this consignment has been allocated with.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName
+  id: CarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceName
+  nameWithType: AllocateAndGetLabelsResult.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 58
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the carrier service that this consignment has been allocated with.", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the carrier service that this consignment has been allocated with.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the carrier service that this consignment has been allocated with.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message
+  id: Message
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: AllocateAndGetLabelsResult.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Message
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 62
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A message indicating the result.", false, PropertyCollectionType.Single)]
+
+      public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A message indicating the result.", False, PropertyCollectionType.Single)>
+
+      Public Property Message As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A message indicating the result.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks
+  id: ApiLinks
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult
+  langs:
+  - csharp
+  - vb
+  name: ApiLinks
+  nameWithType: AllocateAndGetLabelsResult.ApiLinks
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ApiLinks
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAndGetLabelsResult.cs
+    startLine: 66
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A list of API Links for new or related resources, e.g. Labels", PropertyCollectionType.Collection)]
+
+      public List<ApiLink> ApiLinks { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A list of API Links for new or related resources, e.g. Labels", PropertyCollectionType.Collection)>
+
+      Public Property ApiLinks As List(Of ApiLink)
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A list of API Links for new or related resources, e.g. Labels
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType
+  name: LabelType
+  nameWithType: AllocateAndGetLabelsResult.LabelType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelType
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: LabelType
+  nameWithType: LabelType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode
+  name: StatusCode
+  nameWithType: AllocateAndGetLabelsResult.StatusCode
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.StatusCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent
+  name: LabelContent
+  nameWithType: AllocateAndGetLabelsResult.LabelContent
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelContent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType
+  name: LabelFileType
+  nameWithType: AllocateAndGetLabelsResult.LabelFileType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.LabelFileType
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result
+  name: Result
+  nameWithType: AllocateAndGetLabelsResult.Result
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Result
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentOperationResult
+  nameWithType: ConsignmentOperationResult
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentOperationResult
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs
+  name: ConsignmentLegs
+  nameWithType: AllocateAndGetLabelsResult.ConsignmentLegs
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ConsignmentLegs
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ConsignmentLeg>
+  nameWithType: List<ConsignmentLeg>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg>
+  nameWithType.vb: List(Of ConsignmentLeg)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg)
+  name.vb: List(Of ConsignmentLeg)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+    name: ConsignmentLeg
+    nameWithType: ConsignmentLeg
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+    name: ConsignmentLeg
+    nameWithType: ConsignmentLeg
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentLeg
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference
+  name: CarrierReference
+  nameWithType: AllocateAndGetLabelsResult.CarrierReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName
+  name: CarrierName
+  nameWithType: AllocateAndGetLabelsResult.CarrierName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference
+  name: CarrierServiceReference
+  nameWithType: AllocateAndGetLabelsResult.CarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName
+  name: CarrierServiceName
+  nameWithType: AllocateAndGetLabelsResult.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.CarrierServiceName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message
+  name: Message
+  nameWithType: AllocateAndGetLabelsResult.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.Message
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks
+  name: ApiLinks
+  nameWithType: AllocateAndGetLabelsResult.ApiLinks
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResult.ApiLinks
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.ApiLink}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ApiLink>
+  nameWithType: List<ApiLink>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.ApiLink>
+  nameWithType.vb: List(Of ApiLink)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.ApiLink)
+  name.vb: List(Of ApiLink)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+    name: ApiLink
+    nameWithType: ApiLink
+    fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  - name: )
+    nameWithType: )
+    fullName: )

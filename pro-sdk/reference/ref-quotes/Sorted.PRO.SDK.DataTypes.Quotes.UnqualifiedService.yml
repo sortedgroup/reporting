@@ -1,0 +1,793 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  commentId: T:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  id: UnqualifiedService
+  parent: Sorted.PRO.SDK.DataTypes.Quotes
+  children:
+  - Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available
+  - Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference
+  - Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason
+  - Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService
+  - Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference
+  - Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates
+  langs:
+  - csharp
+  - vb
+  name: UnqualifiedService
+  nameWithType: UnqualifiedService
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UnqualifiedService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nRepresents an MPD Carrier Service for which a quote could not be obtained.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Unqualified Service", "Represents an MPD carrier service for which a quote could not be obtained.")]
+
+      [Serializable]
+
+      public class UnqualifiedService
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Unqualified Service", "Represents an MPD carrier service for which a quote could not be obtained.")>
+
+      <Serializable>
+
+      Public Class UnqualifiedService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Unqualified Service
+    - type: System.String
+      value: Represents an MPD carrier service for which a quote could not be obtained.
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available
+  id: Available
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  langs:
+  - csharp
+  - vb
+  name: Available
+  nameWithType: UnqualifiedService.Available
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Available
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets a value indicating whether this <xref href=\"Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService\" data-throw-if-not-resolved=\"false\"></xref> is available for the requested consignment\ndimensions and journey.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether the carrier reported that it had service availability for the requested consignment dimensions and journey.", false, PropertyCollectionType.Single)]
+
+      public bool Available { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if available; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether the carrier reported that it had service availability for the requested consignment dimensions and journey.", False, PropertyCollectionType.Single)>
+
+      Public Property Available As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether the carrier reported that it had service availability for the requested consignment dimensions and journey.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates
+  id: Rates
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  langs:
+  - csharp
+  - vb
+  name: Rates
+  nameWithType: UnqualifiedService.Rates
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Rates
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets a value indicating whether this <xref href=\"Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService\" data-throw-if-not-resolved=\"false\"></xref> has rates configured within Electio.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether there were any applicable rates configured for this service and consignment.", false, PropertyCollectionType.Single)]
+
+      public bool Rates { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if rates; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether there were any applicable rates configured for this service and consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property Rates As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether there were any applicable rates configured for this service and consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService
+  id: MpdCarrierService
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierService
+  nameWithType: UnqualifiedService.MpdCarrierService
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 43
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the MPD carrier service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The MPD carrier service name.", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierService { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe MPD carrier service.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The MPD carrier service name.", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierService As String
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The MPD carrier service name.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference
+  id: CarrierReference
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  langs:
+  - csharp
+  - vb
+  name: CarrierReference
+  nameWithType: UnqualifiedService.CarrierReference
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 53
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the carrier reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The carrier reference.", false, PropertyCollectionType.Single)]
+
+      public string CarrierReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe carrier reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The carrier reference.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The carrier reference.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference
+  id: MpdCarrierServiceReference
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceReference
+  nameWithType: UnqualifiedService.MpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 64
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the MPD carrier service reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The MPD carrier service reference.", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe MPD carrier service reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The MPD carrier service reference.", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The MPD carrier service reference.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason
+  id: ExclusionReason
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  langs:
+  - csharp
+  - vb
+  name: ExclusionReason
+  nameWithType: UnqualifiedService.ExclusionReason
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ExclusionReason
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/UnqualifiedService.cs
+    startLine: 74
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the exclusion reason.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reason that this service was excluded from the list of available services for a quote.", false, PropertyCollectionType.Single)]
+
+      public string ExclusionReason { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe exclusion reason.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reason that this service was excluded from the list of available services for a quote.", False, PropertyCollectionType.Single)>
+
+      Public Property ExclusionReason As String
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reason that this service was excluded from the list of available services for a quote.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Quotes
+  commentId: N:Sorted.PRO.SDK.DataTypes.Quotes
+  name: Sorted.PRO.SDK.DataTypes.Quotes
+  nameWithType: Sorted.PRO.SDK.DataTypes.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  commentId: T:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  name: UnqualifiedService
+  nameWithType: UnqualifiedService
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available
+  name: Available
+  nameWithType: UnqualifiedService.Available
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Available
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates
+  name: Rates
+  nameWithType: UnqualifiedService.Rates
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.Rates
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService
+  name: MpdCarrierService
+  nameWithType: UnqualifiedService.MpdCarrierService
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference
+  name: CarrierReference
+  nameWithType: UnqualifiedService.CarrierReference
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.CarrierReference
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference
+  name: MpdCarrierServiceReference
+  nameWithType: UnqualifiedService.MpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.MpdCarrierServiceReference
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason
+  name: ExclusionReason
+  nameWithType: UnqualifiedService.ExclusionReason
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService.ExclusionReason

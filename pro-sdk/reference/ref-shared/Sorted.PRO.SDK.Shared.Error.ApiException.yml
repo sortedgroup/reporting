@@ -1,0 +1,861 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException
+  commentId: T:Sorted.PRO.SDK.Shared.Error.ApiException
+  id: ApiException
+  parent: Sorted.PRO.SDK.Shared.Error
+  children:
+  - Sorted.PRO.SDK.Shared.Error.ApiException.#ctor(System.Net.HttpStatusCode,System.String,Sorted.PRO.SDK.Shared.Error.ApiError)
+  - Sorted.PRO.SDK.Shared.Error.ApiException.#ctor(System.String,System.Exception)
+  - Sorted.PRO.SDK.Shared.Error.ApiException.Error
+  - Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode
+  - Sorted.PRO.SDK.Shared.Error.ApiException.ToString
+  langs:
+  - csharp
+  - vb
+  name: ApiException
+  nameWithType: ApiException
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Error/ApiException.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ApiException
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Error/ApiException.cs
+    startLine: 7
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Error
+  syntax:
+    content: >-
+      [DataContract]
+
+      public class ApiException : Exception, ISerializable
+    content.vb: >-
+      <DataContract>
+
+      Public Class ApiException
+          Inherits Exception
+          Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  derivedClasses:
+  - Sorted.PRO.SDK.Shared.Error.ApiUnauthorizedException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - System.Exception.GetType
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.Error
+  commentId: P:Sorted.PRO.SDK.Shared.Error.ApiException.Error
+  id: Error
+  parent: Sorted.PRO.SDK.Shared.Error.ApiException
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: ApiException.Error
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.Error
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Error/ApiException.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Error
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Error/ApiException.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Error
+  syntax:
+    content: >-
+      [DataMember]
+
+      public ApiError Error { get; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.Shared.Error.ApiError
+    content.vb: >-
+      <DataMember>
+
+      Public ReadOnly Property Error As ApiError
+  overload: Sorted.PRO.SDK.Shared.Error.ApiException.Error*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode
+  commentId: P:Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode
+  id: FailureCode
+  parent: Sorted.PRO.SDK.Shared.Error.ApiException
+  langs:
+  - csharp
+  - vb
+  name: FailureCode
+  nameWithType: ApiException.FailureCode
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Error/ApiException.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailureCode
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Error/ApiException.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Error
+  syntax:
+    content: public HttpStatusCode? FailureCode { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Net.HttpStatusCode}
+    content.vb: Public ReadOnly Property FailureCode As HttpStatusCode?
+  overload: Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.#ctor(System.String,System.Exception)
+  commentId: M:Sorted.PRO.SDK.Shared.Error.ApiException.#ctor(System.String,System.Exception)
+  id: '#ctor(System.String,System.Exception)'
+  parent: Sorted.PRO.SDK.Shared.Error.ApiException
+  langs:
+  - csharp
+  - vb
+  name: ApiException(String, Exception)
+  nameWithType: ApiException.ApiException(String, Exception)
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.ApiException(System.String, System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Error/ApiException.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Error/ApiException.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Error
+  syntax:
+    content: public ApiException(string message, Exception innerException)
+    parameters:
+    - id: message
+      type: System.String
+    - id: innerException
+      type: System.Exception
+    content.vb: Public Sub New(message As String, innerException As Exception)
+  overload: Sorted.PRO.SDK.Shared.Error.ApiException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.#ctor(System.Net.HttpStatusCode,System.String,Sorted.PRO.SDK.Shared.Error.ApiError)
+  commentId: M:Sorted.PRO.SDK.Shared.Error.ApiException.#ctor(System.Net.HttpStatusCode,System.String,Sorted.PRO.SDK.Shared.Error.ApiError)
+  id: '#ctor(System.Net.HttpStatusCode,System.String,Sorted.PRO.SDK.Shared.Error.ApiError)'
+  parent: Sorted.PRO.SDK.Shared.Error.ApiException
+  langs:
+  - csharp
+  - vb
+  name: ApiException(HttpStatusCode, String, ApiError)
+  nameWithType: ApiException.ApiException(HttpStatusCode, String, ApiError)
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.ApiException(System.Net.HttpStatusCode, System.String, Sorted.PRO.SDK.Shared.Error.ApiError)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Error/ApiException.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Error/ApiException.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Error
+  syntax:
+    content: public ApiException(HttpStatusCode failureCode, string message, ApiError withError)
+    parameters:
+    - id: failureCode
+      type: System.Net.HttpStatusCode
+    - id: message
+      type: System.String
+    - id: withError
+      type: Sorted.PRO.SDK.Shared.Error.ApiError
+    content.vb: Public Sub New(failureCode As HttpStatusCode, message As String, withError As ApiError)
+  overload: Sorted.PRO.SDK.Shared.Error.ApiException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.ToString
+  commentId: M:Sorted.PRO.SDK.Shared.Error.ApiException.ToString
+  id: ToString
+  parent: Sorted.PRO.SDK.Shared.Error.ApiException
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ApiException.ToString()
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.ToString()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Error/ApiException.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ToString
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Error/ApiException.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Error
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString As String
+  overridden: System.Exception.ToString
+  overload: Sorted.PRO.SDK.Shared.Error.ApiException.ToString*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+references:
+- uid: Sorted.PRO.SDK.Shared.Error
+  commentId: N:Sorted.PRO.SDK.Shared.Error
+  name: Sorted.PRO.SDK.Shared.Error
+  nameWithType: Sorted.PRO.SDK.Shared.Error
+  fullName: Sorted.PRO.SDK.Shared.Error
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    nameWithType: Exception.GetBaseException
+    fullName: System.Exception.GetBaseException
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  parent: System.Exception
+  isExternal: true
+  name: GetObjectData(SerializationInfo, StreamingContext)
+  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
+  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  spec.csharp:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: Exception.GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+    name: GetObjectData
+    nameWithType: Exception.GetObjectData
+    fullName: System.Exception.GetObjectData
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Runtime.Serialization.SerializationInfo
+    name: SerializationInfo
+    nameWithType: SerializationInfo
+    fullName: System.Runtime.Serialization.SerializationInfo
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Runtime.Serialization.StreamingContext
+    name: StreamingContext
+    nameWithType: StreamingContext
+    fullName: System.Runtime.Serialization.StreamingContext
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    nameWithType: Exception.GetType
+    fullName: System.Exception.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.Error*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Error.ApiException.Error
+  name: Error
+  nameWithType: ApiException.Error
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.Error
+- uid: Sorted.PRO.SDK.Shared.Error.ApiError
+  commentId: T:Sorted.PRO.SDK.Shared.Error.ApiError
+  parent: Sorted.PRO.SDK.Shared.Error
+  name: ApiError
+  nameWithType: ApiError
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiError
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode
+  name: FailureCode
+  nameWithType: ApiException.FailureCode
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.FailureCode
+- uid: System.Nullable{System.Net.HttpStatusCode}
+  commentId: T:System.Nullable{System.Net.HttpStatusCode}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<HttpStatusCode>
+  nameWithType: Nullable<HttpStatusCode>
+  fullName: System.Nullable<System.Net.HttpStatusCode>
+  nameWithType.vb: Nullable(Of HttpStatusCode)
+  fullName.vb: System.Nullable(Of System.Net.HttpStatusCode)
+  name.vb: Nullable(Of HttpStatusCode)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    nameWithType: HttpStatusCode
+    fullName: System.Net.HttpStatusCode
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.HttpStatusCode
+    name: HttpStatusCode
+    nameWithType: HttpStatusCode
+    fullName: System.Net.HttpStatusCode
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Error.ApiException.#ctor
+  name: ApiException
+  nameWithType: ApiException.ApiException
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.ApiException
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Net.HttpStatusCode
+  commentId: T:System.Net.HttpStatusCode
+  parent: System.Net
+  isExternal: true
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: System.Net.HttpStatusCode
+- uid: System.Net
+  commentId: N:System.Net
+  isExternal: true
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    nameWithType: Exception.ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    nameWithType: Exception.ToString
+    fullName: System.Exception.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException.ToString*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Error.ApiException.ToString
+  name: ToString
+  nameWithType: ApiException.ToString
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException.ToString

@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  id: LabelType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Consignment
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Return
+  langs:
+  - csharp
+  - vb
+  name: LabelType
+  nameWithType: LabelType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/LabelType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/LabelType.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [DataContract]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      [DataContractType("Label Type", "Indicates the type of label, e.g. 'Consignment', 'Return'.")]
+
+      public enum LabelType
+    content.vb: >-
+      <DataContract>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      <DataContractType("Label Type", "Indicates the type of label, e.g. 'Consignment', 'Return'.")>
+
+      Public Enum LabelType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Label Type
+    - type: System.String
+      value: Indicates the type of label, e.g. 'Consignment', 'Return'.
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Consignment
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Consignment
+  id: Consignment
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  langs:
+  - csharp
+  - vb
+  name: Consignment
+  nameWithType: LabelType.Consignment
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Consignment
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/LabelType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Consignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/LabelType.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Consignment = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+    content.vb: >-
+      <EnumMember>
+
+      Consignment = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Return
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Return
+  id: Return
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  langs:
+  - csharp
+  - vb
+  name: Return
+  nameWithType: LabelType.Return
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType.Return
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/LabelType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Return
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/LabelType.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Return = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+    content.vb: >-
+      <EnumMember>
+
+      Return = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: LabelType
+  nameWithType: LabelType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.LabelType

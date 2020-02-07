@@ -1,0 +1,569 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  id: ITrackingService
+  parent: Sorted.PRO.SDK.Interfaces.Tracking
+  children:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  langs:
+  - csharp
+  - vb
+  name: ITrackingService
+  nameWithType: ITrackingService
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ITrackingService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Tracking
+  namespace: Sorted.PRO.SDK.Interfaces.Tracking
+  summary: "\nRetrieves TrackingEvents for a Consignment\n"
+  example: []
+  syntax:
+    content: public interface ITrackingService
+    content.vb: Public Interface ITrackingService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  id: GetTrackingEventsForEachPackageByConsignment(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetTrackingEventsForEachPackageByConsignment(String)
+  nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignment(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetTrackingEventsForEachPackageByConsignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Tracking
+  namespace: Sorted.PRO.SDK.Interfaces.Tracking
+  summary: "\nGets the tracking events for each package by consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      ConsignmentViewModel GetTrackingEventsForEachPackageByConsignment(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+      description: ''
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetTrackingEventsForEachPackageByConsignment(consignmentReference As String) As ConsignmentViewModel
+  overload: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetTrackingEventsForEachPackageByConsignmentAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Tracking
+  namespace: Sorted.PRO.SDK.Interfaces.Tracking
+  summary: "\nGets the tracking events for each package by consignment asynchronous.\n"
+  example: []
+  syntax:
+    content: Task<ConsignmentViewModel> GetTrackingEventsForEachPackageByConsignmentAsync(string consignmentReference, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel}
+      description: ''
+    content.vb: Function GetTrackingEventsForEachPackageByConsignmentAsync(consignmentReference As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of ConsignmentViewModel)
+  overload: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync*
+  nameWithType.vb: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  id: GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetFlattenedTrackingEventsForEachPackageByConsignment(String)
+  nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetFlattenedTrackingEventsForEachPackageByConsignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+    startLine: 32
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Tracking
+  namespace: Sorted.PRO.SDK.Interfaces.Tracking
+  summary: "\nGets the flattened tracking events for each package by consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      FlattenedConsignmentViewModel GetFlattenedTrackingEventsForEachPackageByConsignment(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+      description: ''
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetFlattenedTrackingEventsForEachPackageByConsignment(consignmentReference As String) As FlattenedConsignmentViewModel
+  overload: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Tracking
+  namespace: Sorted.PRO.SDK.Interfaces.Tracking
+  summary: "\nGets the flattened tracking events for each package by consignment asynchronous.\n"
+  example: []
+  syntax:
+    content: Task<FlattenedConsignmentViewModel> GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(string consignmentReference, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel}
+      description: ''
+    content.vb: Function GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(consignmentReference As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of FlattenedConsignmentViewModel)
+  overload: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync*
+  nameWithType.vb: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  id: PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  langs:
+  - csharp
+  - vb
+  name: PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest)
+  nameWithType: ITrackingService.PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostTrackingEventsForConsignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Tracking/ITrackingService.cs
+    startLine: 47
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Tracking
+  namespace: Sorted.PRO.SDK.Interfaces.Tracking
+  summary: "\nPost the tracking events for consignments asynchronously.\n"
+  example: []
+  syntax:
+    content: Task PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest bulkCarrierTrackingEventsRequest)
+    parameters:
+    - id: bulkCarrierTrackingEventsRequest
+      type: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function PostTrackingEventsForConsignment(bulkCarrierTrackingEventsRequest As BulkCarrierTrackingEventsRequest) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Tracking
+  commentId: N:Sorted.PRO.SDK.Interfaces.Tracking
+  name: Sorted.PRO.SDK.Interfaces.Tracking
+  nameWithType: Sorted.PRO.SDK.Interfaces.Tracking
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment
+  name: GetTrackingEventsForEachPackageByConsignment
+  nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignment
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  name: ConsignmentViewModel
+  nameWithType: ConsignmentViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Tracking
+  commentId: N:Sorted.PRO.SDK.DataTypes.Tracking
+  name: Sorted.PRO.SDK.DataTypes.Tracking
+  nameWithType: Sorted.PRO.SDK.DataTypes.Tracking
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+  name: GetTrackingEventsForEachPackageByConsignmentAsync
+  nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConsignmentViewModel>
+  nameWithType: Task<ConsignmentViewModel>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel>
+  nameWithType.vb: Task(Of ConsignmentViewModel)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel)
+  name.vb: Task(Of ConsignmentViewModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+    name: ConsignmentViewModel
+    nameWithType: ConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+    name: ConsignmentViewModel
+    nameWithType: ConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+  name: GetFlattenedTrackingEventsForEachPackageByConsignment
+  nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  name: FlattenedConsignmentViewModel
+  nameWithType: FlattenedConsignmentViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<FlattenedConsignmentViewModel>
+  nameWithType: Task<FlattenedConsignmentViewModel>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel>
+  nameWithType.vb: Task(Of FlattenedConsignmentViewModel)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel)
+  name.vb: Task(Of FlattenedConsignmentViewModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+    name: FlattenedConsignmentViewModel
+    nameWithType: FlattenedConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+    name: FlattenedConsignmentViewModel
+    nameWithType: FlattenedConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment
+  name: PostTrackingEventsForConsignment
+  nameWithType: ITrackingService.PostTrackingEventsForConsignment
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  name: BulkCarrierTrackingEventsRequest
+  nameWithType: BulkCarrierTrackingEventsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

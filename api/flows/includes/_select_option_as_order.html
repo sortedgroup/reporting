@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<blockquote>
+<p>Select Delivery Option as an Order Endpoint</p>
+</blockquote>
+<pre><code>POST https://api.electioapp.com/deliveryoptions/selectorder
+</code></pre>
+<blockquote>
+<p>Example Select Delivery Option as an Order Request</p>
+</blockquote>
+<pre><code class="lang-json">{
+  &quot;DeliveryOptions&quot;: [
+    {
+      &quot;Reference&quot;: &quot;EDO-000-6DX-6XP&quot;,
+      &quot;OrderReferenceProvidedByCustomer&quot;: &quot;MYORDEREF001&quot;,
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;OrderReference&quot;,
+          &quot;StringValue&quot;: &quot;10045634343&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;SelectOrderRequest xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Orders&quot;&gt;
+  &lt;DeliveryOptions&gt;
+    &lt;SelectDeliveryOptionRequest&gt;
+      &lt;Reference&gt;EDO-000-6DX-6XP&lt;/Reference&gt;
+      &lt;OrderReferenceProvidedByCustomer&gt;MYORDEREF001&lt;/OrderReferenceProvidedByCustomer&gt;
+      &lt;MetaData&gt;
+        &lt;MetaData&gt;
+          &lt;KeyValue xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;OrderReference&lt;/KeyValue&gt;
+          &lt;StringValue xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;10045634343&lt;/StringValue&gt;
+          &lt;IntValue xsi:nil=&quot;true&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+          &lt;DecimalValue xsi:nil=&quot;true&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+          &lt;DateTimeValue xsi:nil=&quot;true&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+          &lt;BoolValue xsi:nil=&quot;true&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+        &lt;/MetaData&gt;
+      &lt;/MetaData&gt;
+    &lt;/SelectDeliveryOptionRequest&gt;
+  &lt;/DeliveryOptions&gt;
+&lt;/SelectOrderRequest&gt;
+</code></pre>
+<blockquote>
+<p>Example Select Delivery Option as an Order Response</p>
+</blockquote>
+<pre><code class="lang-json">{
+  &quot;SelectOrderResults&quot;: [
+    {
+      &quot;DeliveryOptionReference&quot;: &quot;EDO-000-6DX-6XP&quot;,
+      &quot;OrderReference&quot;: &quot;EO-000-002-0TT&quot;,
+      &quot;Status&quot;: 201,
+      &quot;Message&quot;: null,
+      &quot;Links&quot;: [
+        {
+          &quot;Rel&quot;: &quot;Detail&quot;,
+          &quot;Href&quot;: &quot;https://api.electioapp.com/orders/EEO-000-002-0TT&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;SelectOrderResponse xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Orders&quot;&gt;
+    &lt;SelectOrderResults&gt;
+        &lt;SelectOrderResult&gt;
+            &lt;DeliveryOptionReference&gt;EDO-000-6DX-6XP&lt;/DeliveryOptionReference&gt;
+            &lt;OrderReference&gt;EO-000-002-0TT&lt;/OrderReference&gt;
+            &lt;Status&gt;201&lt;/Status&gt;
+            &lt;Links&gt;
+                &lt;ApiLink&gt;
+                    &lt;Rel xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Detail&lt;/Rel&gt;
+                    &lt;Href xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;https://apisandbox.electioapp.com/orders/EO-000-002-0TT&lt;/Href&gt;
+                &lt;/ApiLink&gt;
+            &lt;/Links&gt;
+        &lt;/SelectOrderResult&gt;
+    &lt;/SelectOrderResults&gt;
+&lt;/SelectOrderResponse&gt;
+</code></pre>
+<p>Once the customer has selected an available delivery option, you'll need to record their choice in SortedPRO via the <strong><a href="https://docs.electioapp.com/#/api/SelectDeliveryOptionasanOrder">Select Delivery Option as an Order</a></strong> endpoint. This endpoint takes the <code>{Reference}</code> of the selected option as a path parameter.</p>
+<p>Once it has received the <strong>Select Delivery Option as an Order</strong> request, PRO uses the details of the selected option to create an order and returns an object containing the associated <code>{orderReference}</code>. The reference will come in useful in the next step, when we pack the order into consignments.</p>
+<aside class="note">
+  For full reference information on the <strong>Select Delivery Option as an Order</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/SelectDeliveryOptionasanOrder">Select Delivery Option as an Order</a></strong> page of the API reference.
+</aside>
+<h3 id="example">Example</h3>
+<p>The example to the right shows a request to select a delivery option that has a <code>{Reference}</code> of <em>EDO-000-6DX-6XP</em> as an order. PRO takes that delivery option's details and creates an order with an <code>{orderReference}</code> of <em>EO-000-002-0TT</em>.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_select_option_as_order.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

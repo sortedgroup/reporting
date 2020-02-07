@@ -1,0 +1,1917 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Consignments.AllocationService
+  commentId: T:Sorted.PRO.SDK.Consignments.AllocationService
+  id: AllocationService
+  parent: Sorted.PRO.SDK.Consignments
+  children:
+  - Sorted.PRO.SDK.Consignments.AllocationService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels(System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  - Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: AllocationService
+  nameWithType: AllocationService
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocationService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocates consignments and retrieves labels in a single operation.\n"
+  example: []
+  syntax:
+    content: 'public class AllocationService : BaseService, IAllocationService'
+    content.vb: >-
+      Public Class AllocationService
+          Inherits BaseService
+          Implements IAllocationService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocationService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: AllocationService.AllocationService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocationService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Consignments.AllocationService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public AllocationService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key of the user making the request
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: An instance of <xref href="Sorted.PRO.SDK.Interfaces.IEndpoints" data-throw-if-not-resolved="false"></xref>
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Provides a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: A logger implementing <xref href="Sorted.PRO.SDK.Interfaces.ILogger" data-throw-if-not-resolved="false"></xref>
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Represents a collection of keys and values
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.#ctor*
+  nameWithType.vb: AllocationService.AllocationService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Consignments.AllocationService.AllocationService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: AllocationService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels(System.String,System.String)
+  id: AllocateAndGetLabels(System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateAndGetLabels(String, String)
+  nameWithType: AllocationService.AllocateAndGetLabels(String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateAndGetLabels
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to the cheapest eligible carrier service and retrieve labels in the specified format.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Allocate and get labels", "Allocate and get labels for specified consignment and selected delivery option", new string[]{"Allocations"}, typeof(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/labels/{LabelFormat:string}", "PUT", null)]
+
+      public AllocateAndGetLabelsResponse AllocateAndGetLabels(string consignmentReference, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: >-
+      <ApiEndpoint("Allocate and get labels", "Allocate and get labels for specified consignment and selected delivery option", New String() {"Allocations"}, GetType(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/labels/{LabelFormat:string}", "PUT", Nothing)>
+
+      Public Function AllocateAndGetLabels(consignmentReference As String, labelFormat As String) As AllocateAndGetLabelsResponse
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+  id: AllocateAndGetLabelsAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateAndGetLabelsAsync(String, String)
+  nameWithType: AllocationService.AllocateAndGetLabelsAsync(String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateAndGetLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 56
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to the cheapest eligible carrier service and retrieve labels in the specified format. Asynchronous method.\n"
+  example: []
+  syntax:
+    content: public Task<AllocateAndGetLabelsResponse> AllocateAndGetLabelsAsync(string consignmentReference, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse}
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: Public Function AllocateAndGetLabelsAsync(consignmentReference As String, labelFormat As String) As Task(Of AllocateAndGetLabelsResponse)
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  id: AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateWithServiceRefAndGetLabels(String, String, String)
+  nameWithType: AllocationService.AllocateWithServiceRefAndGetLabels(String, String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateWithServiceRefAndGetLabels
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 69
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to the specified service and retrieve labels in the specified format.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Allocate with service and get labels", "Allocate and get labels for specified consignment and service reference", new string[]{"Allocations"}, typeof(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/carrierservice/{ServiceRef:string}/labels/{LabelFormat:string}", "PUT", null)]
+
+      public AllocateAndGetLabelsResponse AllocateWithServiceRefAndGetLabels(string consignmentReference, string serviceRef, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: serviceRef
+      type: System.String
+      description: The reference of the service to allocate to.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: >-
+      <ApiEndpoint("Allocate with service and get labels", "Allocate and get labels for specified consignment and service reference", New String() {"Allocations"}, GetType(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/carrierservice/{ServiceRef:string}/labels/{LabelFormat:string}", "PUT", Nothing)>
+
+      Public Function AllocateWithServiceRefAndGetLabels(consignmentReference As String, serviceRef As String, labelFormat As String) As AllocateAndGetLabelsResponse
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  id: AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateWithServiceRefAndGetLabelsAsync(String, String, String)
+  nameWithType: AllocationService.AllocateWithServiceRefAndGetLabelsAsync(String, String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateWithServiceRefAndGetLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 90
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to the specified service and retrieve labels in the specified format. Asynchronous method.\n"
+  example: []
+  syntax:
+    content: public Task<AllocateAndGetLabelsResponse> AllocateWithServiceRefAndGetLabelsAsync(string consignmentReference, string serviceRef, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: serviceRef
+      type: System.String
+      description: The reference of the service to allocate to.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse}
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: Public Function AllocateWithServiceRefAndGetLabelsAsync(consignmentReference As String, serviceRef As String, labelFormat As String) As Task(Of AllocateAndGetLabelsResponse)
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  id: AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateWithServiceGroupAndGetLabels(String, String, String)
+  nameWithType: AllocationService.AllocateWithServiceGroupAndGetLabels(String, String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateWithServiceGroupAndGetLabels
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 103
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to the cheapest eligible service in the specified service group and retrieve labels in the specified format.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Allocate with service group and get labels", "Allocate and get labels for specified consignment and service group reference", new string[]{"Allocations"}, typeof(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/servicegroup/{ServiceGroupReference:string}/labels/{LabelFormat:string}", "PUT", null)]
+
+      public AllocateAndGetLabelsResponse AllocateWithServiceGroupAndGetLabels(string consignmentReference, string serviceGroupReference, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: serviceGroupReference
+      type: System.String
+      description: The service group reference.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: >-
+      <ApiEndpoint("Allocate with service group and get labels", "Allocate and get labels for specified consignment and service group reference", New String() {"Allocations"}, GetType(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/servicegroup/{ServiceGroupReference:string}/labels/{LabelFormat:string}", "PUT", Nothing)>
+
+      Public Function AllocateWithServiceGroupAndGetLabels(consignmentReference As String, serviceGroupReference As String, labelFormat As String) As AllocateAndGetLabelsResponse
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  id: AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateWithServiceGroupAndGetLabelsAsync(String, String, String)
+  nameWithType: AllocationService.AllocateWithServiceGroupAndGetLabelsAsync(String, String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateWithServiceGroupAndGetLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 123
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to the cheapest eligible service in the specified service group and retrieve labels in the specified format. Asynchronous method.\n"
+  example: []
+  syntax:
+    content: public Task<AllocateAndGetLabelsResponse> AllocateWithServiceGroupAndGetLabelsAsync(string consignmentReference, string serviceGroupReference, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: serviceGroupReference
+      type: System.String
+      description: The service group reference.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse}
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: Public Function AllocateWithServiceGroupAndGetLabelsAsync(consignmentReference As String, serviceGroupReference As String, labelFormat As String) As Task(Of AllocateAndGetLabelsResponse)
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  id: AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateWithQuoteReferenceAndGetLabels(String, String, String)
+  nameWithType: AllocationService.AllocateWithQuoteReferenceAndGetLabels(String, String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateWithQuoteReferenceAndGetLabels
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 136
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to  the specified quote reference and retrieve labels in the specified format.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Allocate with quote reference and get labels", "Allocate and get labels for specified consignment and quote reference", new string[]{"Allocations"}, typeof(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/quote/{QuoteReference:string}/labels/{LabelFormat:string}", "PUT", null)]
+
+      public AllocateAndGetLabelsResponse AllocateWithQuoteReferenceAndGetLabels(string consignmentReference, string quoteReference, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: quoteReference
+      type: System.String
+      description: The service group reference.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: >-
+      <ApiEndpoint("Allocate with quote reference and get labels", "Allocate and get labels for specified consignment and quote reference", New String() {"Allocations"}, GetType(AllocateAndGetLabelsResponse), "/allocation/{ConsignmentReference:string}/quote/{QuoteReference:string}/labels/{LabelFormat:string}", "PUT", Nothing)>
+
+      Public Function AllocateWithQuoteReferenceAndGetLabels(consignmentReference As String, quoteReference As String, labelFormat As String) As AllocateAndGetLabelsResponse
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  id: AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Consignments.AllocationService
+  langs:
+  - csharp
+  - vb
+  name: AllocateWithQuoteReferenceAndGetLabelsAsync(String, String, String)
+  nameWithType: AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(String, String, String)
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/AllocationService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateWithQuoteReferenceAndGetLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/AllocationService.cs
+    startLine: 156
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAllocate consignment to  the specified quote reference and retrieve labels in the specified format. Asynchronous method.\n"
+  example: []
+  syntax:
+    content: public Task<AllocateAndGetLabelsResponse> AllocateWithQuoteReferenceAndGetLabelsAsync(string consignmentReference, string quoteReference, string labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: quoteReference
+      type: System.String
+      description: The service group reference.
+    - id: labelFormat
+      type: System.String
+      description: Label format (e.g. PDF, PNG).
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse}
+      description: A response object containing the allocated consignment details, return consignment details (if any) and label as base64 encoded string.
+    content.vb: Public Function AllocateWithQuoteReferenceAndGetLabelsAsync(consignmentReference As String, quoteReference As String, labelFormat As String) As Task(Of AllocateAndGetLabelsResponse)
+  overload: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Consignments
+  commentId: N:Sorted.PRO.SDK.Consignments
+  name: Sorted.PRO.SDK.Consignments
+  nameWithType: Sorted.PRO.SDK.Consignments
+  fullName: Sorted.PRO.SDK.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  parent: Sorted.PRO.SDK.Interfaces.Consignments
+  name: IAllocationService
+  nameWithType: IAllocationService
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Consignments
+  commentId: N:Sorted.PRO.SDK.Interfaces.Consignments
+  name: Sorted.PRO.SDK.Interfaces.Consignments
+  nameWithType: Sorted.PRO.SDK.Interfaces.Consignments
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.AllocationService
+  commentId: T:Sorted.PRO.SDK.Consignments.AllocationService
+  name: AllocationService
+  nameWithType: AllocationService
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService
+- uid: Sorted.PRO.SDK.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Interfaces.IEndpoints
+  isExternal: true
+- uid: Sorted.PRO.SDK.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Interfaces.ILogger
+  isExternal: true
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.#ctor
+  name: AllocationService
+  nameWithType: AllocationService.AllocationService
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocationService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels
+  name: AllocateAndGetLabels
+  nameWithType: AllocationService.AllocateAndGetLabels
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabels
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateAndGetLabels(String, String)
+  nameWithType: IAllocationService.AllocateAndGetLabels(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels(System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels(System.String,System.String)
+    name: AllocateAndGetLabels
+    nameWithType: IAllocationService.AllocateAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels(System.String,System.String)
+    name: AllocateAndGetLabels
+    nameWithType: IAllocationService.AllocateAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: AllocateAndGetLabelsResponse
+  nameWithType: AllocateAndGetLabelsResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync
+  name: AllocateAndGetLabelsAsync
+  nameWithType: AllocationService.AllocateAndGetLabelsAsync
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateAndGetLabelsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateAndGetLabelsAsync(String, String)
+  nameWithType: IAllocationService.AllocateAndGetLabelsAsync(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync(System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+    name: AllocateAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync(System.String,System.String)
+    name: AllocateAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<AllocateAndGetLabelsResponse>
+  nameWithType: Task<AllocateAndGetLabelsResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse>
+  nameWithType.vb: Task(Of AllocateAndGetLabelsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse)
+  name.vb: Task(Of AllocateAndGetLabelsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+    name: AllocateAndGetLabelsResponse
+    nameWithType: AllocateAndGetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+    name: AllocateAndGetLabelsResponse
+    nameWithType: AllocateAndGetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAndGetLabelsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels
+  name: AllocateWithServiceRefAndGetLabels
+  nameWithType: AllocationService.AllocateWithServiceRefAndGetLabels
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabels
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateWithServiceRefAndGetLabels(String, String, String)
+  nameWithType: IAllocationService.AllocateWithServiceRefAndGetLabels(String, String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+    name: AllocateWithServiceRefAndGetLabels
+    nameWithType: IAllocationService.AllocateWithServiceRefAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels(System.String,System.String,System.String)
+    name: AllocateWithServiceRefAndGetLabels
+    nameWithType: IAllocationService.AllocateWithServiceRefAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync
+  name: AllocateWithServiceRefAndGetLabelsAsync
+  nameWithType: AllocationService.AllocateWithServiceRefAndGetLabelsAsync
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceRefAndGetLabelsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateWithServiceRefAndGetLabelsAsync(String, String, String)
+  nameWithType: IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(String, String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+    name: AllocateWithServiceRefAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateWithServiceRefAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync(System.String,System.String,System.String)
+    name: AllocateWithServiceRefAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateWithServiceRefAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceRefAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels
+  name: AllocateWithServiceGroupAndGetLabels
+  nameWithType: AllocationService.AllocateWithServiceGroupAndGetLabels
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabels
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateWithServiceGroupAndGetLabels(String, String, String)
+  nameWithType: IAllocationService.AllocateWithServiceGroupAndGetLabels(String, String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+    name: AllocateWithServiceGroupAndGetLabels
+    nameWithType: IAllocationService.AllocateWithServiceGroupAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels(System.String,System.String,System.String)
+    name: AllocateWithServiceGroupAndGetLabels
+    nameWithType: IAllocationService.AllocateWithServiceGroupAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+  name: AllocateWithServiceGroupAndGetLabelsAsync
+  nameWithType: AllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateWithServiceGroupAndGetLabelsAsync(String, String, String)
+  nameWithType: IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(String, String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+    name: AllocateWithServiceGroupAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync(System.String,System.String,System.String)
+    name: AllocateWithServiceGroupAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithServiceGroupAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels
+  name: AllocateWithQuoteReferenceAndGetLabels
+  nameWithType: AllocationService.AllocateWithQuoteReferenceAndGetLabels
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabels
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateWithQuoteReferenceAndGetLabels(String, String, String)
+  nameWithType: IAllocationService.AllocateWithQuoteReferenceAndGetLabels(String, String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+    name: AllocateWithQuoteReferenceAndGetLabels
+    nameWithType: IAllocationService.AllocateWithQuoteReferenceAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels(System.String,System.String,System.String)
+    name: AllocateWithQuoteReferenceAndGetLabels
+    nameWithType: IAllocationService.AllocateWithQuoteReferenceAndGetLabels
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabels
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+  name: AllocateWithQuoteReferenceAndGetLabelsAsync
+  nameWithType: AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+  fullName: Sorted.PRO.SDK.Consignments.AllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService
+  isExternal: true
+  name: AllocateWithQuoteReferenceAndGetLabelsAsync(String, String, String)
+  nameWithType: IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(String, String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String, System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+    name: AllocateWithQuoteReferenceAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync(System.String,System.String,System.String)
+    name: AllocateWithQuoteReferenceAndGetLabelsAsync
+    nameWithType: IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IAllocationService.AllocateWithQuoteReferenceAndGetLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

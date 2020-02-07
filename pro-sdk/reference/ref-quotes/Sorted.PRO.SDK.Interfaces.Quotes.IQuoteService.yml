@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  id: IQuoteService
+  parent: Sorted.PRO.SDK.Interfaces.Quotes
+  children:
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  - Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: IQuoteService
+  nameWithType: IQuoteService
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IQuoteService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 11
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nInterface for Quote Service\n"
+  example: []
+  syntax:
+    content: public interface IQuoteService
+    content.vb: Public Interface IQuoteService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  id: CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotes(Consignment)
+  nameWithType: IQuoteService.CreateQuotes(Consignment)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nGenerates quotes for the given consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      QuoteResult CreateQuotes(Consignment consignment)
+    parameters:
+    - id: consignment
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+      description: The consignment.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+      description: Quotes
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function CreateQuotes(consignment As Consignment) As QuoteResult
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  id: CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotesAsync(Consignment)
+  nameWithType: IQuoteService.CreateQuotesAsync(Consignment)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nGenerates quotes for the given consignment.\n"
+  example: []
+  syntax:
+    content: Task<QuoteResult> CreateQuotesAsync(Consignment consignment)
+    parameters:
+    - id: consignment
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+      description: The consignment.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+      description: Task to await
+    content.vb: Function CreateQuotesAsync(consignment As Consignment) As Task(Of QuoteResult)
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  id: CreateQuotes(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotes(String)
+  nameWithType: IQuoteService.CreateQuotes(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nGenerates quotes for the given consignment reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      QuoteResult CreateQuotes(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+      description: List of Quotes
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function CreateQuotes(consignmentReference As String) As QuoteResult
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  id: CreateQuotesAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: CreateQuotesAsync(String)
+  nameWithType: IQuoteService.CreateQuotesAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 41
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nGenerates quotes for the given consignment reference.\n"
+  example: []
+  syntax:
+    content: Task<QuoteResult> CreateQuotesAsync(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+      description: Task to await.
+    content.vb: Function CreateQuotesAsync(consignmentReference As String) As Task(Of QuoteResult)
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  id: GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupQuotesAsync(Consignment)
+  nameWithType: IQuoteService.GetServiceGroupQuotesAsync(Consignment)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync(Sorted.PRO.SDK.DataTypes.Consignments.Consignment)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 48
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nGenerates quotes for the given consignment, grouped by service group.\n"
+  example: []
+  syntax:
+    content: Task<List<ServiceGroupQuoteResult>> GetServiceGroupQuotesAsync(Consignment consignment)
+    parameters:
+    - id: consignment
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+      description: The consignment.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult}}
+      description: Task to await
+    content.vb: Function GetServiceGroupQuotesAsync(consignment As Consignment) As Task(Of List(Of ServiceGroupQuoteResult))
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  id: PurgeQuotes(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: PurgeQuotes(Guid)
+  nameWithType: IQuoteService.PurgeQuotes(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PurgeQuotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 54
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nPurges all quotes that have expired.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void PurgeQuotes(Guid secretKey)
+    parameters:
+    - id: secretKey
+      type: System.Guid
+      description: The secret key.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub PurgeQuotes(secretKey As Guid)
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  id: PurgeQuotesAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService
+  langs:
+  - csharp
+  - vb
+  name: PurgeQuotesAsync(Guid)
+  nameWithType: IQuoteService.PurgeQuotesAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PurgeQuotesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Quotes/IQuoteService.cs
+    startLine: 62
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Quotes
+  namespace: Sorted.PRO.SDK.Interfaces.Quotes
+  summary: "\nPurges all quotes that have expired.\n"
+  example: []
+  syntax:
+    content: Task PurgeQuotesAsync(Guid secretKey)
+    parameters:
+    - id: secretKey
+      type: System.Guid
+      description: The secret key.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Task to await
+    content.vb: Function PurgeQuotesAsync(secretKey As Guid) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Quotes
+  commentId: N:Sorted.PRO.SDK.Interfaces.Quotes
+  name: Sorted.PRO.SDK.Interfaces.Quotes
+  nameWithType: Sorted.PRO.SDK.Interfaces.Quotes
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes
+  name: CreateQuotes
+  nameWithType: IQuoteService.CreateQuotes
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotes
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: Consignment
+  nameWithType: Consignment
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  parent: Sorted.PRO.SDK.DataTypes.Quotes
+  name: QuoteResult
+  nameWithType: QuoteResult
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.DataTypes.Quotes
+  commentId: N:Sorted.PRO.SDK.DataTypes.Quotes
+  name: Sorted.PRO.SDK.DataTypes.Quotes
+  nameWithType: Sorted.PRO.SDK.DataTypes.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync
+  name: CreateQuotesAsync
+  nameWithType: IQuoteService.CreateQuotesAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.CreateQuotesAsync
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<QuoteResult>
+  nameWithType: Task<QuoteResult>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult>
+  nameWithType.vb: Task(Of QuoteResult)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult)
+  name.vb: Task(Of QuoteResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+    name: QuoteResult
+    nameWithType: QuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+    name: QuoteResult
+    nameWithType: QuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync
+  name: GetServiceGroupQuotesAsync
+  nameWithType: IQuoteService.GetServiceGroupQuotesAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.GetServiceGroupQuotesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<ServiceGroupQuoteResult>>
+  nameWithType: Task<List<ServiceGroupQuoteResult>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult>>
+  nameWithType.vb: Task(Of List(Of ServiceGroupQuoteResult))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult))
+  name.vb: Task(Of List(Of ServiceGroupQuoteResult))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+    name: ServiceGroupQuoteResult
+    nameWithType: ServiceGroupQuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+    name: ServiceGroupQuoteResult
+    nameWithType: ServiceGroupQuoteResult
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes
+  name: PurgeQuotes
+  nameWithType: IQuoteService.PurgeQuotes
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotes
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync
+  name: PurgeQuotesAsync
+  nameWithType: IQuoteService.PurgeQuotesAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Quotes.IQuoteService.PurgeQuotesAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

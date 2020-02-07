@@ -1,0 +1,2291 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  commentId: T:Sorted.PRO.SDK.Settings.CollectionCalendarService
+  id: CollectionCalendarService
+  parent: Sorted.PRO.SDK.Settings
+  children:
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: CollectionCalendarService
+  nameWithType: CollectionCalendarService
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CollectionCalendarService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nService for managing collection calendars\n"
+  example: []
+  syntax:
+    content: 'public class CollectionCalendarService : BaseService, ICollectionCalendarService'
+    content.vb: >-
+      Public Class CollectionCalendarService
+          Inherits BaseService
+          Implements ICollectionCalendarService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: CollectionCalendarService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: CollectionCalendarService.CollectionCalendarService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.CollectionCalendarService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 27
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Settings.CollectionCalendarService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CollectionCalendarService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.#ctor*
+  nameWithType.vb: CollectionCalendarService.CollectionCalendarService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Settings.CollectionCalendarService.CollectionCalendarService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: CollectionCalendarService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+  id: GetCollectionCalendar(System.String,System.String)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: GetCollectionCalendar(String, String)
+  nameWithType: CollectionCalendarService.GetCollectionCalendar(String, String)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetCollectionCalendar
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the collection calendar.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Collection Calendar", "Gets the collection calendar for the specified shipping location and MPD Carrier.", "Collection Calendar", typeof(CollectionCalendar), "/collectioncalendar/{shippingLocationReference:string}/{mpdCarrierReference:string}", "GET", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public CollectionCalendar GetCollectionCalendar(string shippingLocationReference, string mpdCarrierReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Collection Calendar", "Gets the collection calendar for the specified shipping location and MPD Carrier.", "Collection Calendar", GetType(CollectionCalendar), "/collectioncalendar/{shippingLocationReference:string}/{mpdCarrierReference:string}", "GET", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetCollectionCalendar(shippingLocationReference As String, mpdCarrierReference As String) As CollectionCalendar
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+  id: DeleteCollectionCalendar(System.String,System.String)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: DeleteCollectionCalendar(String, String)
+  nameWithType: CollectionCalendarService.DeleteCollectionCalendar(String, String)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteCollectionCalendar
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 57
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDelete a collection calendar\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Collection Calender", "Deletes the collection calendar for the specified shipping location and MPD Carrier.", "Collection Calendar", "/collectioncalendar/{shippingLocationReference:string}/{mpdCarrierReference:string}", "PUT", new HttpStatusCode[]{HttpStatusCode.NoContent, HttpStatusCode.NotFound})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void DeleteCollectionCalendar(string shippingLocationReference, string mpdCarrierReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    content.vb: >-
+      <ApiEndpoint("Delete Collection Calender", "Deletes the collection calendar for the specified shipping location and MPD Carrier.", "Collection Calendar", "/collectioncalendar/{shippingLocationReference:string}/{mpdCarrierReference:string}", "PUT", New HttpStatusCode() {HttpStatusCode.NoContent, HttpStatusCode.NotFound})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub DeleteCollectionCalendar(shippingLocationReference As String, mpdCarrierReference As String)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  id: AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: AddCollectionCalendarRule(String, String, CalendarRule)
+  nameWithType: CollectionCalendarService.AddCollectionCalendarRule(String, String, CalendarRule)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddCollectionCalendarRule
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 76
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nAdd a new rule to an existing collection calendar\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Add Collection Calendar Rule", "Add a new rule to an existing collection calendar.", "Collection Calendar", typeof(CalendarRule), null, "/collectioncalendar/addrule/{shippingLocationReference:string}/{mpdCarrierReference:string}", "POST", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void AddCollectionCalendarRule(string shippingLocationReference, string mpdCarrierReference, CalendarRule rule)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    - id: rule
+      type: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+      description: The rule.
+    content.vb: >-
+      <ApiEndpoint("Add Collection Calendar Rule", "Add a new rule to an existing collection calendar.", "Collection Calendar", GetType(CalendarRule), Nothing, "/collectioncalendar/addrule/{shippingLocationReference:string}/{mpdCarrierReference:string}", "POST", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub AddCollectionCalendarRule(shippingLocationReference As String, mpdCarrierReference As String, rule As CalendarRule)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  id: AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: AddCollectionCalendarException(String, String, CalendarException)
+  nameWithType: CollectionCalendarService.AddCollectionCalendarException(String, String, CalendarException)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddCollectionCalendarException
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 99
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nAdd a new exception to an existing collection calendar\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Add Collection Calendar Exception", "Add a new exception to an existing collection calender.", "Collection Calendar", typeof(CalendarException), null, "/collectioncalendar/addexception/{shippingLocationReference:string}/{mpdCarrierReference:string}", "POST", new HttpStatusCode[]{HttpStatusCode.Created, HttpStatusCode.BadRequest})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void AddCollectionCalendarException(string shippingLocationReference, string mpdCarrierReference, CalendarException exception)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    - id: exception
+      type: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+      description: The exception.
+    content.vb: >-
+      <ApiEndpoint("Add Collection Calendar Exception", "Add a new exception to an existing collection calender.", "Collection Calendar", GetType(CalendarException), Nothing, "/collectioncalendar/addexception/{shippingLocationReference:string}/{mpdCarrierReference:string}", "POST", New HttpStatusCode() {HttpStatusCode.Created, HttpStatusCode.BadRequest})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub AddCollectionCalendarException(shippingLocationReference As String, mpdCarrierReference As String, exception As CalendarException)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  id: RemoveCollectionCalendarRule(System.Guid)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: RemoveCollectionCalendarRule(Guid)
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarRule(Guid)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveCollectionCalendarRule
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 119
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nRemove an existing collection calendar rule\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Remove Collection Calender Rule", "Remove an existing collection calendar rule.", "Collection Calendar", "/collectioncalendar/removerule/{ruleId:Guid}", "PUT", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void RemoveCollectionCalendarRule(Guid ruleId)
+    parameters:
+    - id: ruleId
+      type: System.Guid
+      description: The rule identifier.
+    content.vb: >-
+      <ApiEndpoint("Remove Collection Calender Rule", "Remove an existing collection calendar rule.", "Collection Calendar", "/collectioncalendar/removerule/{ruleId:Guid}", "PUT", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub RemoveCollectionCalendarRule(ruleId As Guid)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  id: RemoveCollectionCalendarException(System.Guid)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: RemoveCollectionCalendarException(Guid)
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarException(Guid)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveCollectionCalendarException
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 137
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nRemove an existing collection calendar exception\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Remove Collection Calender Exception", "Remove an existing collection calender exception.", "Collection Calendar", "/collectioncalender/removeexception/{exceptionId:Guid}", "PUT", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound})]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void RemoveCollectionCalendarException(Guid exceptionId)
+    parameters:
+    - id: exceptionId
+      type: System.Guid
+      description: The exception identifier.
+    content.vb: >-
+      <ApiEndpoint("Remove Collection Calender Exception", "Remove an existing collection calender exception.", "Collection Calendar", "/collectioncalender/removeexception/{exceptionId:Guid}", "PUT", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound})>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub RemoveCollectionCalendarException(exceptionId As Guid)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  id: RemoveCollectionCalendarExceptionAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: RemoveCollectionCalendarExceptionAsync(Guid)
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarExceptionAsync(Guid)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveCollectionCalendarExceptionAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 157
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nRemove an existing collection calendar exception\n"
+  example: []
+  syntax:
+    content: public Task RemoveCollectionCalendarExceptionAsync(Guid exceptionId)
+    parameters:
+    - id: exceptionId
+      type: System.Guid
+      description: The exception identifier.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function RemoveCollectionCalendarExceptionAsync(exceptionId As Guid) As Task
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+  id: GetCollectionCalendarAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: GetCollectionCalendarAsync(String, String)
+  nameWithType: CollectionCalendarService.GetCollectionCalendarAsync(String, String)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetCollectionCalendarAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 169
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nReturns the specified collection calendar\n"
+  example: []
+  syntax:
+    content: public Task<CollectionCalendar> GetCollectionCalendarAsync(string shippingLocationReference, string mpdCarrierReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar}
+      description: ''
+    content.vb: Public Function GetCollectionCalendarAsync(shippingLocationReference As String, mpdCarrierReference As String) As Task(Of CollectionCalendar)
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+  id: DeleteCollectionCalendarAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: DeleteCollectionCalendarAsync(String, String)
+  nameWithType: CollectionCalendarService.DeleteCollectionCalendarAsync(String, String)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteCollectionCalendarAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 183
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDeletes the specified collection calendar\n"
+  example: []
+  syntax:
+    content: public Task DeleteCollectionCalendarAsync(string shippingLocationReference, string mpdCarrierReference)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function DeleteCollectionCalendarAsync(shippingLocationReference As String, mpdCarrierReference As String) As Task
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  id: AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: AddCollectionCalendarRuleAsync(String, String, CalendarRule)
+  nameWithType: CollectionCalendarService.AddCollectionCalendarRuleAsync(String, String, CalendarRule)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddCollectionCalendarRuleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 198
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nAdds the collection calendar rule asynchronously.\n"
+  example: []
+  syntax:
+    content: public Task AddCollectionCalendarRuleAsync(string shippingLocationReference, string mpdCarrierReference, CalendarRule rule)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    - id: rule
+      type: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+      description: The rule.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function AddCollectionCalendarRuleAsync(shippingLocationReference As String, mpdCarrierReference As String, rule As CalendarRule) As Task
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  id: AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: AddCollectionCalendarExceptionAsync(String, String, CalendarException)
+  nameWithType: CollectionCalendarService.AddCollectionCalendarExceptionAsync(String, String, CalendarException)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddCollectionCalendarExceptionAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 213
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nAdd an exception to an existing collection calendar\n"
+  example: []
+  syntax:
+    content: public Task AddCollectionCalendarExceptionAsync(string shippingLocationReference, string mpdCarrierReference, CalendarException exception)
+    parameters:
+    - id: shippingLocationReference
+      type: System.String
+      description: The shipping location reference.
+    - id: mpdCarrierReference
+      type: System.String
+      description: The MPD carrier reference.
+    - id: exception
+      type: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+      description: The exception.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function AddCollectionCalendarExceptionAsync(shippingLocationReference As String, mpdCarrierReference As String, exception As CalendarException) As Task
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  id: RemoveCollectionCalendarRuleAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  langs:
+  - csharp
+  - vb
+  name: RemoveCollectionCalendarRuleAsync(Guid)
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarRuleAsync(Guid)
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveCollectionCalendarRuleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CollectionCalendarService.cs
+    startLine: 226
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nRemove a collection calendar rule\n"
+  example: []
+  syntax:
+    content: public Task RemoveCollectionCalendarRuleAsync(Guid ruleId)
+    parameters:
+    - id: ruleId
+      type: System.Guid
+      description: The rule identifier.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function RemoveCollectionCalendarRuleAsync(ruleId As Guid) As Task
+  overload: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Settings
+  commentId: N:Sorted.PRO.SDK.Settings
+  name: Sorted.PRO.SDK.Settings
+  nameWithType: Sorted.PRO.SDK.Settings
+  fullName: Sorted.PRO.SDK.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  name: ICollectionCalendarService
+  nameWithType: ICollectionCalendarService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService
+  commentId: T:Sorted.PRO.SDK.Settings.CollectionCalendarService
+  name: CollectionCalendarService
+  nameWithType: CollectionCalendarService
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.#ctor
+  name: CollectionCalendarService
+  nameWithType: CollectionCalendarService.CollectionCalendarService
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.CollectionCalendarService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar
+  name: GetCollectionCalendar
+  nameWithType: CollectionCalendarService.GetCollectionCalendar
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendar
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: GetCollectionCalendar(String, String)
+  nameWithType: ICollectionCalendarService.GetCollectionCalendar(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar(System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+    name: GetCollectionCalendar
+    nameWithType: ICollectionCalendarService.GetCollectionCalendar
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar(System.String,System.String)
+    name: GetCollectionCalendar
+    nameWithType: ICollectionCalendarService.GetCollectionCalendar
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+  commentId: T:Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+  parent: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  name: CollectionCalendar
+  nameWithType: CollectionCalendar
+  fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+- uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  commentId: N:Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  name: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  nameWithType: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar
+  name: DeleteCollectionCalendar
+  nameWithType: CollectionCalendarService.DeleteCollectionCalendar
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendar
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: DeleteCollectionCalendar(String, String)
+  nameWithType: ICollectionCalendarService.DeleteCollectionCalendar(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar(System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+    name: DeleteCollectionCalendar
+    nameWithType: ICollectionCalendarService.DeleteCollectionCalendar
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar(System.String,System.String)
+    name: DeleteCollectionCalendar
+    nameWithType: ICollectionCalendarService.DeleteCollectionCalendar
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendar
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule
+  name: AddCollectionCalendarRule
+  nameWithType: CollectionCalendarService.AddCollectionCalendarRule
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRule
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: AddCollectionCalendarRule(String, String, CalendarRule)
+  nameWithType: ICollectionCalendarService.AddCollectionCalendarRule(String, String, CalendarRule)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+    name: AddCollectionCalendarRule
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarRule
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+    name: CalendarRule
+    nameWithType: CalendarRule
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+    name: AddCollectionCalendarRule
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarRule
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRule
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+    name: CalendarRule
+    nameWithType: CalendarRule
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+  commentId: T:Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+  parent: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  name: CalendarRule
+  nameWithType: CalendarRule
+  fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException
+  name: AddCollectionCalendarException
+  nameWithType: CollectionCalendarService.AddCollectionCalendarException
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarException
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: AddCollectionCalendarException(String, String, CalendarException)
+  nameWithType: ICollectionCalendarService.AddCollectionCalendarException(String, String, CalendarException)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+    name: AddCollectionCalendarException
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarException
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+    name: CalendarException
+    nameWithType: CalendarException
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+    name: AddCollectionCalendarException
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarException
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+    name: CalendarException
+    nameWithType: CalendarException
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+  commentId: T:Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+  parent: Sorted.PRO.SDK.DataTypes.ServiceAvailability
+  name: CalendarException
+  nameWithType: CalendarException
+  fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule
+  name: RemoveCollectionCalendarRule
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarRule
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRule
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: RemoveCollectionCalendarRule(Guid)
+  nameWithType: ICollectionCalendarService.RemoveCollectionCalendarRule(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+    name: RemoveCollectionCalendarRule
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarRule
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule(System.Guid)
+    name: RemoveCollectionCalendarRule
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarRule
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRule
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException
+  name: RemoveCollectionCalendarException
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarException
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarException
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: RemoveCollectionCalendarException(Guid)
+  nameWithType: ICollectionCalendarService.RemoveCollectionCalendarException(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+    name: RemoveCollectionCalendarException
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarException
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException(System.Guid)
+    name: RemoveCollectionCalendarException
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarException
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarException
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+  name: RemoveCollectionCalendarExceptionAsync
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: RemoveCollectionCalendarExceptionAsync(Guid)
+  nameWithType: ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+    name: RemoveCollectionCalendarExceptionAsync
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync(System.Guid)
+    name: RemoveCollectionCalendarExceptionAsync
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync
+  name: GetCollectionCalendarAsync
+  nameWithType: CollectionCalendarService.GetCollectionCalendarAsync
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.GetCollectionCalendarAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: GetCollectionCalendarAsync(String, String)
+  nameWithType: ICollectionCalendarService.GetCollectionCalendarAsync(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync(System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+    name: GetCollectionCalendarAsync
+    nameWithType: ICollectionCalendarService.GetCollectionCalendarAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync(System.String,System.String)
+    name: GetCollectionCalendarAsync
+    nameWithType: ICollectionCalendarService.GetCollectionCalendarAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.GetCollectionCalendarAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<CollectionCalendar>
+  nameWithType: Task<CollectionCalendar>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar>
+  nameWithType.vb: Task(Of CollectionCalendar)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar)
+  name.vb: Task(Of CollectionCalendar)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+    name: CollectionCalendar
+    nameWithType: CollectionCalendar
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+    name: CollectionCalendar
+    nameWithType: CollectionCalendar
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CollectionCalendar
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync
+  name: DeleteCollectionCalendarAsync
+  nameWithType: CollectionCalendarService.DeleteCollectionCalendarAsync
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.DeleteCollectionCalendarAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: DeleteCollectionCalendarAsync(String, String)
+  nameWithType: ICollectionCalendarService.DeleteCollectionCalendarAsync(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync(System.String, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+    name: DeleteCollectionCalendarAsync
+    nameWithType: ICollectionCalendarService.DeleteCollectionCalendarAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync(System.String,System.String)
+    name: DeleteCollectionCalendarAsync
+    nameWithType: ICollectionCalendarService.DeleteCollectionCalendarAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.DeleteCollectionCalendarAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync
+  name: AddCollectionCalendarRuleAsync
+  nameWithType: CollectionCalendarService.AddCollectionCalendarRuleAsync
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarRuleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: AddCollectionCalendarRuleAsync(String, String, CalendarRule)
+  nameWithType: ICollectionCalendarService.AddCollectionCalendarRuleAsync(String, String, CalendarRule)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+    name: AddCollectionCalendarRuleAsync
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarRuleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+    name: CalendarRule
+    nameWithType: CalendarRule
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule)
+    name: AddCollectionCalendarRuleAsync
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarRuleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarRuleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+    name: CalendarRule
+    nameWithType: CalendarRule
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarRule
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync
+  name: AddCollectionCalendarExceptionAsync
+  nameWithType: CollectionCalendarService.AddCollectionCalendarExceptionAsync
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.AddCollectionCalendarExceptionAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: AddCollectionCalendarExceptionAsync(String, String, CalendarException)
+  nameWithType: ICollectionCalendarService.AddCollectionCalendarExceptionAsync(String, String, CalendarException)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+    name: AddCollectionCalendarExceptionAsync
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarExceptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+    name: CalendarException
+    nameWithType: CalendarException
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException)
+    name: AddCollectionCalendarExceptionAsync
+    nameWithType: ICollectionCalendarService.AddCollectionCalendarExceptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.AddCollectionCalendarExceptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+    name: CalendarException
+    nameWithType: CalendarException
+    fullName: Sorted.PRO.SDK.DataTypes.ServiceAvailability.CalendarException
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync
+  name: RemoveCollectionCalendarRuleAsync
+  nameWithType: CollectionCalendarService.RemoveCollectionCalendarRuleAsync
+  fullName: Sorted.PRO.SDK.Settings.CollectionCalendarService.RemoveCollectionCalendarRuleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService
+  isExternal: true
+  name: RemoveCollectionCalendarRuleAsync(Guid)
+  nameWithType: ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+    name: RemoveCollectionCalendarRuleAsync
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarRuleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync(System.Guid)
+    name: RemoveCollectionCalendarRuleAsync
+    nameWithType: ICollectionCalendarService.RemoveCollectionCalendarRuleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICollectionCalendarService.RemoveCollectionCalendarRuleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

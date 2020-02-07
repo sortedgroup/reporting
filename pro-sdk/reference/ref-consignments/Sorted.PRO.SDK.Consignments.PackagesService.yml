@@ -1,0 +1,1446 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Consignments.PackagesService
+  commentId: T:Sorted.PRO.SDK.Consignments.PackagesService
+  id: PackagesService
+  parent: Sorted.PRO.SDK.Consignments
+  children:
+  - Sorted.PRO.SDK.Consignments.PackagesService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage(System.String)
+  - Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync(System.String)
+  - Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  - Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  - Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  - Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  langs:
+  - csharp
+  - vb
+  name: PackagesService
+  nameWithType: PackagesService
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackagesService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nMethods to delete, set, and update packages within consignments.\n"
+  example: []
+  syntax:
+    content: 'public class PackagesService : BaseService, IPackagesService'
+    content.vb: >-
+      Public Class PackagesService
+          Inherits BaseService
+          Implements IPackagesService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: PackagesService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: PackagesService.PackagesService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.PackagesService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 27
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Consignments.PackagesService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public PackagesService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.#ctor*
+  nameWithType.vb: PackagesService.PackagesService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Consignments.PackagesService.PackagesService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PackagesService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  id: UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: UpdatePackage(UpdatePackageRequest)
+  nameWithType: PackagesService.UpdatePackage(UpdatePackageRequest)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdatePackage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 36
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nUpdates the package.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Update Package", "Updates the specified package.", "Packages", typeof(UpdatePackageRequest), null, "/packages/{packageReference:string}", "PUT", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void UpdatePackage(UpdatePackageRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+      description: The request.
+    content.vb: >-
+      <ApiEndpoint("Update Package", "Updates the specified package.", "Packages", GetType(UpdatePackageRequest), Nothing, "/packages/{packageReference:string}", "PUT", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub UpdatePackage(request As UpdatePackageRequest)
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  id: UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: UpdatePackageAsync(UpdatePackageRequest)
+  nameWithType: PackagesService.UpdatePackageAsync(UpdatePackageRequest)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdatePackageAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 56
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nUpdates a package asynchronously\n"
+  example: []
+  syntax:
+    content: public Task UpdatePackageAsync(UpdatePackageRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function UpdatePackageAsync(request As UpdatePackageRequest) As Task
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage(System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage(System.String)
+  id: DeletePackage(System.String)
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: DeletePackage(String)
+  nameWithType: PackagesService.DeletePackage(String)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeletePackage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 66
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nDeletes the specified package\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Package", "Deletes the specified package.", "Packages", "/packages/{packageReference:string}", "DELETE", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void DeletePackage(string packageReference)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Delete Package", "Deletes the specified package.", "Packages", "/packages/{packageReference:string}", "DELETE", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub DeletePackage(packageReference As String)
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync(System.String)
+  id: DeletePackageAsync(System.String)
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: DeletePackageAsync(String)
+  nameWithType: PackagesService.DeletePackageAsync(String)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeletePackageAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 84
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nDelete a package asynchronously\n"
+  example: []
+  syntax:
+    content: public Task DeletePackageAsync(string packageReference)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function DeletePackageAsync(packageReference As String) As Task
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  id: SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: PackagesService.SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetCustomerProvidedReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 95
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nSet the reference provided by customer on the specified package.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Set Customer Reference", "Sets the customer-provided reference for a package.", "Packages", typeof(ReferenceProvidedByCustomerRequest), null, "/packages/{packageReference:string}/setcustomerprovidedreference", "PUT", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void SetCustomerProvidedReference(string packageReference, ReferenceProvidedByCustomerRequest request)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: The package reference.
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+      description: The request.
+    content.vb: >-
+      <ApiEndpoint("Set Customer Reference", "Sets the customer-provided reference for a package.", "Packages", GetType(ReferenceProvidedByCustomerRequest), Nothing, "/packages/{packageReference:string}/setcustomerprovidedreference", "PUT", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub SetCustomerProvidedReference(packageReference As String, request As ReferenceProvidedByCustomerRequest)
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  id: SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Consignments.PackagesService
+  langs:
+  - csharp
+  - vb
+  name: SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: PackagesService.SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Consignments/PackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetCustomerProvidedReferenceAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Consignments/PackagesService.cs
+    startLine: 115
+  assemblies:
+  - Sorted.PRO.SDK.Consignments
+  namespace: Sorted.PRO.SDK.Consignments
+  summary: "\nAsynchronously set the reference provided by customer on the specified package.\n"
+  example: []
+  syntax:
+    content: public Task SetCustomerProvidedReferenceAsync(string packageReference, ReferenceProvidedByCustomerRequest request)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: The package reference.
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SetCustomerProvidedReferenceAsync(packageReference As String, request As ReferenceProvidedByCustomerRequest) As Task
+  overload: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Consignments
+  commentId: N:Sorted.PRO.SDK.Consignments
+  name: Sorted.PRO.SDK.Consignments
+  nameWithType: Sorted.PRO.SDK.Consignments
+  fullName: Sorted.PRO.SDK.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  parent: Sorted.PRO.SDK.Interfaces.Consignments
+  name: IPackagesService
+  nameWithType: IPackagesService
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Consignments
+  commentId: N:Sorted.PRO.SDK.Interfaces.Consignments
+  name: Sorted.PRO.SDK.Interfaces.Consignments
+  nameWithType: Sorted.PRO.SDK.Interfaces.Consignments
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.PackagesService
+  commentId: T:Sorted.PRO.SDK.Consignments.PackagesService
+  name: PackagesService
+  nameWithType: PackagesService
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.#ctor
+  name: PackagesService
+  nameWithType: PackagesService.PackagesService
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.PackagesService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage
+  name: UpdatePackage
+  nameWithType: PackagesService.UpdatePackage
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackage
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  name: UpdatePackage(UpdatePackageRequest)
+  nameWithType: IPackagesService.UpdatePackage(UpdatePackageRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+    name: UpdatePackage
+    nameWithType: IPackagesService.UpdatePackage
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+    name: UpdatePackageRequest
+    nameWithType: UpdatePackageRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+    name: UpdatePackage
+    nameWithType: IPackagesService.UpdatePackage
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+    name: UpdatePackageRequest
+    nameWithType: UpdatePackageRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: UpdatePackageRequest
+  nameWithType: UpdatePackageRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync
+  name: UpdatePackageAsync
+  nameWithType: PackagesService.UpdatePackageAsync
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.UpdatePackageAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  name: UpdatePackageAsync(UpdatePackageRequest)
+  nameWithType: IPackagesService.UpdatePackageAsync(UpdatePackageRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+    name: UpdatePackageAsync
+    nameWithType: IPackagesService.UpdatePackageAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+    name: UpdatePackageRequest
+    nameWithType: UpdatePackageRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+    name: UpdatePackageAsync
+    nameWithType: IPackagesService.UpdatePackageAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+    name: UpdatePackageRequest
+    nameWithType: UpdatePackageRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage
+  name: DeletePackage
+  nameWithType: PackagesService.DeletePackage
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackage
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  isExternal: true
+  name: DeletePackage(String)
+  nameWithType: IPackagesService.DeletePackage(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+    name: DeletePackage
+    nameWithType: IPackagesService.DeletePackage
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+    name: DeletePackage
+    nameWithType: IPackagesService.DeletePackage
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync
+  name: DeletePackageAsync
+  nameWithType: PackagesService.DeletePackageAsync
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.DeletePackageAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  isExternal: true
+  name: DeletePackageAsync(String)
+  nameWithType: IPackagesService.DeletePackageAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+    name: DeletePackageAsync
+    nameWithType: IPackagesService.DeletePackageAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+    name: DeletePackageAsync
+    nameWithType: IPackagesService.DeletePackageAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference
+  name: SetCustomerProvidedReference
+  nameWithType: PackagesService.SetCustomerProvidedReference
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReference
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  isExternal: true
+  name: SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: IPackagesService.SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+    name: SetCustomerProvidedReference
+    nameWithType: IPackagesService.SetCustomerProvidedReference
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+    name: ReferenceProvidedByCustomerRequest
+    nameWithType: ReferenceProvidedByCustomerRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+    name: SetCustomerProvidedReference
+    nameWithType: IPackagesService.SetCustomerProvidedReference
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+    name: ReferenceProvidedByCustomerRequest
+    nameWithType: ReferenceProvidedByCustomerRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: ReferenceProvidedByCustomerRequest
+  nameWithType: ReferenceProvidedByCustomerRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+- uid: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync*
+  commentId: Overload:Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync
+  name: SetCustomerProvidedReferenceAsync
+  nameWithType: PackagesService.SetCustomerProvidedReferenceAsync
+  fullName: Sorted.PRO.SDK.Consignments.PackagesService.SetCustomerProvidedReferenceAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  isExternal: true
+  name: SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: IPackagesService.SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+    name: SetCustomerProvidedReferenceAsync
+    nameWithType: IPackagesService.SetCustomerProvidedReferenceAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+    name: ReferenceProvidedByCustomerRequest
+    nameWithType: ReferenceProvidedByCustomerRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+    name: SetCustomerProvidedReferenceAsync
+    nameWithType: IPackagesService.SetCustomerProvidedReferenceAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+    name: ReferenceProvidedByCustomerRequest
+    nameWithType: ReferenceProvidedByCustomerRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,837 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  id: ManifestFileItem
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  - Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress
+  - Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate
+  langs:
+  - csharp
+  - vb
+  name: ManifestFileItem
+  nameWithType: ManifestFileItem
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ManifestFileItem
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Manifest File Item", "Information relating to a manifest file item.")]
+
+      public class ManifestFileItem
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Manifest File Item", "Information relating to a manifest file item.")>
+
+      Public Class ManifestFileItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Manifest File Item
+    - type: System.String
+      value: Information relating to a manifest file item.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  id: ConsignmentReferenceForAllLegsAssignedByMpd
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReferenceForAllLegsAssignedByMpd
+  nameWithType: ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReferenceForAllLegsAssignedByMpd
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The consignment reference.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentReferenceForAllLegsAssignedByMpd { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The consignment reference.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReferenceForAllLegsAssignedByMpd As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The consignment reference.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  id: ConsignmentReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReferenceProvidedByCustomer
+  nameWithType: ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReferenceProvidedByCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The consignment reference provided by the customer.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentReferenceProvidedByCustomer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The consignment reference provided by the customer.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReferenceProvidedByCustomer As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The consignment reference provided by the customer.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate
+  id: ShippingDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  langs:
+  - csharp
+  - vb
+  name: ShippingDate
+  nameWithType: ManifestFileItem.ShippingDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The date that the consignment will be shipped", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? ShippingDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The date that the consignment will be shipped", False, PropertyCollectionType.Single)>
+
+      Public Property ShippingDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date that the consignment will be shipped
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate
+  id: EstimatedDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  langs:
+  - csharp
+  - vb
+  name: EstimatedDeliveryDate
+  nameWithType: ManifestFileItem.EstimatedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: EstimatedDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The estimated delivery date.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? EstimatedDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The estimated delivery date.", False, PropertyCollectionType.Single)>
+
+      Public Property EstimatedDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The estimated delivery date.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName
+  id: CarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceName
+  nameWithType: ManifestFileItem.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 52
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The carrier service name.", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The carrier service name.", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The carrier service name.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress
+  id: DestinationAddress
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddress
+  nameWithType: ManifestFileItem.DestinationAddress
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DestinationAddress
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ManifestFileItem.cs
+    startLine: 56
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The address as a single line.", false, PropertyCollectionType.Single)]
+
+      public string DestinationAddress { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The address as a single line.", False, PropertyCollectionType.Single)>
+
+      Public Property DestinationAddress As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The address as a single line.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  name: ConsignmentReferenceForAllLegsAssignedByMpd
+  nameWithType: ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceForAllLegsAssignedByMpd
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  name: ConsignmentReferenceProvidedByCustomer
+  nameWithType: ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ConsignmentReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate
+  name: ShippingDate
+  nameWithType: ManifestFileItem.ShippingDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.ShippingDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate
+  name: EstimatedDeliveryDate
+  nameWithType: ManifestFileItem.EstimatedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.EstimatedDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName
+  name: CarrierServiceName
+  nameWithType: ManifestFileItem.CarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.CarrierServiceName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress
+  name: DestinationAddress
+  nameWithType: ManifestFileItem.DestinationAddress
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ManifestFileItem.DestinationAddress

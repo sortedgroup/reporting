@@ -1,0 +1,621 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel
+  id: PackageViewModel
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  children:
+  - Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.#ctor
+  - Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs
+  - Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  langs:
+  - csharp
+  - vb
+  name: PackageViewModel
+  nameWithType: PackageViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageViewModel
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+    startLine: 7
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Package View Model", "Represents tracking events for a package.")]
+
+      public class PackageViewModel
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Package View Model", "Represents tracking events for a package.")>
+
+      Public Class PackageViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Package View Model
+    - type: System.String
+      value: Represents tracking events for a package.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.#ctor
+  commentId: M:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel
+  langs:
+  - csharp
+  - vb
+  name: PackageViewModel()
+  nameWithType: PackageViewModel.PackageViewModel()
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageViewModel()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: public PackageViewModel()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  id: PackageReferenceForAllLegsAssignedByMpd
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel
+  langs:
+  - csharp
+  - vb
+  name: PackageReferenceForAllLegsAssignedByMpd
+  nameWithType: PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageReferenceForAllLegsAssignedByMpd
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The package reference.", false, PropertyCollectionType.Single)]
+
+      public string PackageReferenceForAllLegsAssignedByMpd { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The package reference.", False, PropertyCollectionType.Single)>
+
+      Public Property PackageReferenceForAllLegsAssignedByMpd As String
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The package reference.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs
+  commentId: P:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs
+  id: Legs
+  parent: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel
+  langs:
+  - csharp
+  - vb
+  name: Legs
+  nameWithType: PackageViewModel.Legs
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Legs
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Tracking/PackageViewModel.cs
+    startLine: 21
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Tracking
+  namespace: Sorted.PRO.SDK.DataTypes.Tracking
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A list of legs for this package.", false, PropertyCollectionType.Single)]
+
+      public List<LegViewModel> Legs { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A list of legs for this package.", False, PropertyCollectionType.Single)>
+
+      Public Property Legs As List(Of LegViewModel)
+  overload: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A list of legs for this package.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Tracking
+  commentId: N:Sorted.PRO.SDK.DataTypes.Tracking
+  name: Sorted.PRO.SDK.DataTypes.Tracking
+  nameWithType: Sorted.PRO.SDK.DataTypes.Tracking
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.#ctor
+  name: PackageViewModel
+  nameWithType: PackageViewModel.PackageViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageViewModel
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  name: PackageReferenceForAllLegsAssignedByMpd
+  nameWithType: PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.PackageReferenceForAllLegsAssignedByMpd
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs
+  name: Legs
+  nameWithType: PackageViewModel.Legs
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.PackageViewModel.Legs
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<LegViewModel>
+  nameWithType: List<LegViewModel>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel>
+  nameWithType.vb: List(Of LegViewModel)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel)
+  name.vb: List(Of LegViewModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel
+    name: LegViewModel
+    nameWithType: LegViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel
+    name: LegViewModel
+    nameWithType: LegViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.LegViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

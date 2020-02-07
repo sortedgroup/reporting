@@ -1,0 +1,2288 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Security.RoleService
+  commentId: T:Sorted.PRO.SDK.Security.RoleService
+  id: RoleService
+  parent: Sorted.PRO.SDK.Security
+  children:
+  - Sorted.PRO.SDK.Security.RoleService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Security.RoleService.AddAccountToRole(System.Guid,System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  - Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  - Sorted.PRO.SDK.Security.RoleService.DeleteRole(System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync(System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole(System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync(System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  - Sorted.PRO.SDK.Security.RoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  - Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  langs:
+  - csharp
+  - vb
+  name: RoleService
+  nameWithType: RoleService
+  fullName: Sorted.PRO.SDK.Security.RoleService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RoleService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nService for managing user roles\n"
+  example: []
+  syntax:
+    content: 'public class RoleService : BaseService, IRoleService'
+    content.vb: >-
+      Public Class RoleService
+          Inherits BaseService
+          Implements IRoleService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Security.RoleService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: RoleService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: RoleService.RoleService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Security.RoleService.RoleService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Security.RoleService\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public RoleService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: ''
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: ''
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: ''
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String))
+  overload: Sorted.PRO.SDK.Security.RoleService.#ctor*
+  nameWithType.vb: RoleService.RoleService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Security.RoleService.RoleService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: RoleService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Security.RoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  id: CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: CreateCustomRole(NewRole)
+  nameWithType: RoleService.CreateCustomRole(NewRole)
+  fullName: Sorted.PRO.SDK.Security.RoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateCustomRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nCreate a new custom role\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Create Custom Role", "Creates a new custom role with a set of permissions.", "Roles", typeof(NewRole), typeof(Role), "/roles/custom", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public Role CreateCustomRole(NewRole role)
+    parameters:
+    - id: role
+      type: Sorted.PRO.SDK.DataTypes.Role.NewRole
+      description: ''
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Security.Role
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Create Custom Role", "Creates a new custom role with a set of permissions.", "Roles", GetType(NewRole), GetType(Role), "/roles/custom", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function CreateCustomRole(role As NewRole) As Role
+  overload: Sorted.PRO.SDK.Security.RoleService.CreateCustomRole*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.DeleteRole(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.DeleteRole(System.Guid)
+  id: DeleteRole(System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: DeleteRole(Guid)
+  nameWithType: RoleService.DeleteRole(Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.DeleteRole(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nDeletes the specified role\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Role", "Deletes the specified role.", "Roles", "/roles/{roleReference:string}", "DELETE", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void DeleteRole(Guid roleReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Delete Role", "Deletes the specified role.", "Roles", "/roles/{roleReference:string}", "DELETE", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub DeleteRole(roleReference As Guid)
+  overload: Sorted.PRO.SDK.Security.RoleService.DeleteRole*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole(System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  id: UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: UpdateRole(UpdateRole)
+  nameWithType: RoleService.UpdateRole(UpdateRole)
+  fullName: Sorted.PRO.SDK.Security.RoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 71
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nUpdate the specified role\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Update Role", "Updates the specified role with new properties.", "Roles", typeof(UpdateRole), null, "/roles", "PUT", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void UpdateRole(UpdateRole role)
+    parameters:
+    - id: role
+      type: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Update Role", "Updates the specified role with new properties.", "Roles", GetType(UpdateRole), Nothing, "/roles", "PUT", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub UpdateRole(role As UpdateRole)
+  overload: Sorted.PRO.SDK.Security.RoleService.UpdateRole*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole(System.Guid)
+  id: GetAccountsWithinRole(System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: GetAccountsWithinRole(Guid)
+  nameWithType: RoleService.GetAccountsWithinRole(Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAccountsWithinRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 90
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nGets the accounts within role.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Accounts in Role", "Returns all the accounts within a role.", "Roles", typeof(List<Account>), "/roles/{roleReference:string}/accounts", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<Account> GetAccountsWithinRole(Guid roleReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: The role reference.
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Account}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Accounts in Role", "Returns all the accounts within a role.", "Roles", GetType(List(Of Account)), "/roles/{roleReference:string}/accounts", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetAccountsWithinRole(roleReference As Guid) As List(Of Account)
+  overload: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole(System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.AddAccountToRole(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.AddAccountToRole(System.Guid,System.Guid)
+  id: AddAccountToRole(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: AddAccountToRole(Guid, Guid)
+  nameWithType: RoleService.AddAccountToRole(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.AddAccountToRole(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddAccountToRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 108
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nAdd the specified account to the specified role\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Add Account to Role", "Adds the specified account to the role.", "Roles", "/roles/{roleReference:string}/accounts/{accountReference:string}", "PUT", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void AddAccountToRole(Guid roleReference, Guid accountReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: ''
+    - id: accountReference
+      type: System.Guid
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Add Account to Role", "Adds the specified account to the role.", "Roles", "/roles/{roleReference:string}/accounts/{accountReference:string}", "PUT", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub AddAccountToRole(roleReference As Guid, accountReference As Guid)
+  overload: Sorted.PRO.SDK.Security.RoleService.AddAccountToRole*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole(System.Guid,System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+  id: RemoveAccountFromRole(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: RemoveAccountFromRole(Guid, Guid)
+  nameWithType: RoleService.RemoveAccountFromRole(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveAccountFromRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 125
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nRemove the specified account from the role\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Remove Account From Role", "Removes the specified account from the role.", "Roles", "/roles/{roleReference:string}/accounts/{accountReference:string}", "DELETE", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void RemoveAccountFromRole(Guid roleReference, Guid accountReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: ''
+    - id: accountReference
+      type: System.Guid
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Remove Account From Role", "Removes the specified account from the role.", "Roles", "/roles/{roleReference:string}/accounts/{accountReference:string}", "DELETE", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub RemoveAccountFromRole(roleReference As Guid, accountReference As Guid)
+  overload: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  id: CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: CreateCustomRoleAsync(NewRole)
+  nameWithType: RoleService.CreateCustomRoleAsync(NewRole)
+  fullName: Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateCustomRoleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 143
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nCreate custom role\n"
+  example: []
+  syntax:
+    content: public Task<Role> CreateCustomRoleAsync(NewRole role)
+    parameters:
+    - id: role
+      type: Sorted.PRO.SDK.DataTypes.Role.NewRole
+      description: The role.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Security.Role}
+      description: ''
+    content.vb: Public Function CreateCustomRoleAsync(role As NewRole) As Task(Of Role)
+  overload: Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync(System.Guid)
+  id: DeleteRoleAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: DeleteRoleAsync(Guid)
+  nameWithType: RoleService.DeleteRoleAsync(Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteRoleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 153
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nDelete Role\n"
+  example: []
+  syntax:
+    content: public Task DeleteRoleAsync(Guid roleReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: The role reference.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function DeleteRoleAsync(roleReference As Guid) As Task
+  overload: Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync(System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  id: UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: UpdateRoleAsync(UpdateRole)
+  nameWithType: RoleService.UpdateRoleAsync(UpdateRole)
+  fullName: Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateRoleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 163
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nUpdate role\n"
+  example: []
+  syntax:
+    content: public Task UpdateRoleAsync(UpdateRole role)
+    parameters:
+    - id: role
+      type: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+      description: The role.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function UpdateRoleAsync(role As UpdateRole) As Task
+  overload: Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync(System.Guid)
+  id: GetAccountsWithinRoleAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: GetAccountsWithinRoleAsync(Guid)
+  nameWithType: RoleService.GetAccountsWithinRoleAsync(Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAccountsWithinRoleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 173
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nGet accounts within role\n"
+  example: []
+  syntax:
+    content: public Task<List<Account>> GetAccountsWithinRoleAsync(Guid roleReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: The role reference.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Account}}
+      description: ''
+    content.vb: Public Function GetAccountsWithinRoleAsync(roleReference As Guid) As Task(Of List(Of Account))
+  overload: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync(System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+  id: AddAccountToRoleAsync(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: AddAccountToRoleAsync(Guid, Guid)
+  nameWithType: RoleService.AddAccountToRoleAsync(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddAccountToRoleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 184
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nAdd account to role\n"
+  example: []
+  syntax:
+    content: public Task AddAccountToRoleAsync(Guid roleReference, Guid accountReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: The role reference.
+    - id: accountReference
+      type: System.Guid
+      description: The account reference.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function AddAccountToRoleAsync(roleReference As Guid, accountReference As Guid) As Task
+  overload: Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  id: RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Security.RoleService
+  langs:
+  - csharp
+  - vb
+  name: RemoveAccountFromRoleAsync(Guid, Guid)
+  nameWithType: RoleService.RemoveAccountFromRoleAsync(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync(System.Guid, System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Security/RoleService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RemoveAccountFromRoleAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Security/RoleService.cs
+    startLine: 195
+  assemblies:
+  - Sorted.PRO.SDK.Security
+  namespace: Sorted.PRO.SDK.Security
+  summary: "\nRemove account from role\n"
+  example: []
+  syntax:
+    content: public Task RemoveAccountFromRoleAsync(Guid roleReference, Guid accountReference)
+    parameters:
+    - id: roleReference
+      type: System.Guid
+      description: The role reference.
+    - id: accountReference
+      type: System.Guid
+      description: The account reference.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function RemoveAccountFromRoleAsync(roleReference As Guid, accountReference As Guid) As Task
+  overload: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Security
+  commentId: N:Sorted.PRO.SDK.Security
+  name: Sorted.PRO.SDK.Security
+  nameWithType: Sorted.PRO.SDK.Security
+  fullName: Sorted.PRO.SDK.Security
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  parent: Sorted.PRO.SDK.Interfaces.Security
+  name: IRoleService
+  nameWithType: IRoleService
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Security
+  commentId: N:Sorted.PRO.SDK.Interfaces.Security
+  name: Sorted.PRO.SDK.Interfaces.Security
+  nameWithType: Sorted.PRO.SDK.Interfaces.Security
+  fullName: Sorted.PRO.SDK.Interfaces.Security
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService
+  commentId: T:Sorted.PRO.SDK.Security.RoleService
+  name: RoleService
+  nameWithType: RoleService
+  fullName: Sorted.PRO.SDK.Security.RoleService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Security.RoleService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.#ctor
+  name: RoleService
+  nameWithType: RoleService.RoleService
+  fullName: Sorted.PRO.SDK.Security.RoleService.RoleService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Security.RoleService.CreateCustomRole*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.CreateCustomRole
+  name: CreateCustomRole
+  nameWithType: RoleService.CreateCustomRole
+  fullName: Sorted.PRO.SDK.Security.RoleService.CreateCustomRole
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  name: CreateCustomRole(NewRole)
+  nameWithType: IRoleService.CreateCustomRole(NewRole)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+    name: CreateCustomRole
+    nameWithType: IRoleService.CreateCustomRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.NewRole
+    name: NewRole
+    nameWithType: NewRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+    name: CreateCustomRole
+    nameWithType: IRoleService.CreateCustomRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.NewRole
+    name: NewRole
+    nameWithType: NewRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  commentId: T:Sorted.PRO.SDK.DataTypes.Role.NewRole
+  parent: Sorted.PRO.SDK.DataTypes.Role
+  name: NewRole
+  nameWithType: NewRole
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole
+- uid: Sorted.PRO.SDK.DataTypes.Security.Role
+  commentId: T:Sorted.PRO.SDK.DataTypes.Security.Role
+  parent: Sorted.PRO.SDK.DataTypes.Security
+  name: Role
+  nameWithType: Role
+  fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+- uid: Sorted.PRO.SDK.DataTypes.Role
+  commentId: N:Sorted.PRO.SDK.DataTypes.Role
+  name: Sorted.PRO.SDK.DataTypes.Role
+  nameWithType: Sorted.PRO.SDK.DataTypes.Role
+  fullName: Sorted.PRO.SDK.DataTypes.Role
+- uid: Sorted.PRO.SDK.DataTypes.Security
+  commentId: N:Sorted.PRO.SDK.DataTypes.Security
+  name: Sorted.PRO.SDK.DataTypes.Security
+  nameWithType: Sorted.PRO.SDK.DataTypes.Security
+  fullName: Sorted.PRO.SDK.DataTypes.Security
+- uid: Sorted.PRO.SDK.Security.RoleService.DeleteRole*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.DeleteRole
+  name: DeleteRole
+  nameWithType: RoleService.DeleteRole
+  fullName: Sorted.PRO.SDK.Security.RoleService.DeleteRole
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: DeleteRole(Guid)
+  nameWithType: IRoleService.DeleteRole(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole(System.Guid)
+    name: DeleteRole
+    nameWithType: IRoleService.DeleteRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole(System.Guid)
+    name: DeleteRole
+    nameWithType: IRoleService.DeleteRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sorted.PRO.SDK.Security.RoleService.UpdateRole*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.UpdateRole
+  name: UpdateRole
+  nameWithType: RoleService.UpdateRole
+  fullName: Sorted.PRO.SDK.Security.RoleService.UpdateRole
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  name: UpdateRole(UpdateRole)
+  nameWithType: IRoleService.UpdateRole(UpdateRole)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+    name: UpdateRole
+    nameWithType: IRoleService.UpdateRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+    name: UpdateRole
+    nameWithType: UpdateRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+    name: UpdateRole
+    nameWithType: IRoleService.UpdateRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+    name: UpdateRole
+    nameWithType: UpdateRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+  commentId: T:Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+  parent: Sorted.PRO.SDK.DataTypes.Role
+  name: UpdateRole
+  nameWithType: UpdateRole
+  fullName: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+- uid: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole
+  name: GetAccountsWithinRole
+  nameWithType: RoleService.GetAccountsWithinRole
+  fullName: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRole
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: GetAccountsWithinRole(Guid)
+  nameWithType: IRoleService.GetAccountsWithinRole(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole(System.Guid)
+    name: GetAccountsWithinRole
+    nameWithType: IRoleService.GetAccountsWithinRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole(System.Guid)
+    name: GetAccountsWithinRole
+    nameWithType: IRoleService.GetAccountsWithinRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Account}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Account}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Account>
+  nameWithType: List<Account>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Account>
+  nameWithType.vb: List(Of Account)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Account)
+  name.vb: List(Of Account)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Account
+    name: Account
+    nameWithType: Account
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Account
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Account
+    name: Account
+    nameWithType: Account
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Account
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService.AddAccountToRole*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.AddAccountToRole
+  name: AddAccountToRole
+  nameWithType: RoleService.AddAccountToRole
+  fullName: Sorted.PRO.SDK.Security.RoleService.AddAccountToRole
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: AddAccountToRole(Guid, Guid)
+  nameWithType: IRoleService.AddAccountToRole(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole(System.Guid,System.Guid)
+    name: AddAccountToRole
+    nameWithType: IRoleService.AddAccountToRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole(System.Guid,System.Guid)
+    name: AddAccountToRole
+    nameWithType: IRoleService.AddAccountToRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole
+  name: RemoveAccountFromRole
+  nameWithType: RoleService.RemoveAccountFromRole
+  fullName: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRole
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: RemoveAccountFromRole(Guid, Guid)
+  nameWithType: IRoleService.RemoveAccountFromRole(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+    name: RemoveAccountFromRole
+    nameWithType: IRoleService.RemoveAccountFromRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole(System.Guid,System.Guid)
+    name: RemoveAccountFromRole
+    nameWithType: IRoleService.RemoveAccountFromRole
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRole
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync
+  name: CreateCustomRoleAsync
+  nameWithType: RoleService.CreateCustomRoleAsync
+  fullName: Sorted.PRO.SDK.Security.RoleService.CreateCustomRoleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  name: CreateCustomRoleAsync(NewRole)
+  nameWithType: IRoleService.CreateCustomRoleAsync(NewRole)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+    name: CreateCustomRoleAsync
+    nameWithType: IRoleService.CreateCustomRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.NewRole
+    name: NewRole
+    nameWithType: NewRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync(Sorted.PRO.SDK.DataTypes.Role.NewRole)
+    name: CreateCustomRoleAsync
+    nameWithType: IRoleService.CreateCustomRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.CreateCustomRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.NewRole
+    name: NewRole
+    nameWithType: NewRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Security.Role}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Security.Role}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Role>
+  nameWithType: Task<Role>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Security.Role>
+  nameWithType.vb: Task(Of Role)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Security.Role)
+  name.vb: Task(Of Role)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync
+  name: DeleteRoleAsync
+  nameWithType: RoleService.DeleteRoleAsync
+  fullName: Sorted.PRO.SDK.Security.RoleService.DeleteRoleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: DeleteRoleAsync(Guid)
+  nameWithType: IRoleService.DeleteRoleAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync(System.Guid)
+    name: DeleteRoleAsync
+    nameWithType: IRoleService.DeleteRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync(System.Guid)
+    name: DeleteRoleAsync
+    nameWithType: IRoleService.DeleteRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.DeleteRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync
+  name: UpdateRoleAsync
+  nameWithType: RoleService.UpdateRoleAsync
+  fullName: Sorted.PRO.SDK.Security.RoleService.UpdateRoleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  name: UpdateRoleAsync(UpdateRole)
+  nameWithType: IRoleService.UpdateRoleAsync(UpdateRole)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+    name: UpdateRoleAsync
+    nameWithType: IRoleService.UpdateRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+    name: UpdateRole
+    nameWithType: UpdateRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync(Sorted.PRO.SDK.DataTypes.Role.UpdateRole)
+    name: UpdateRoleAsync
+    nameWithType: IRoleService.UpdateRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.UpdateRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+    name: UpdateRole
+    nameWithType: UpdateRole
+    fullName: Sorted.PRO.SDK.DataTypes.Role.UpdateRole
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync
+  name: GetAccountsWithinRoleAsync
+  nameWithType: RoleService.GetAccountsWithinRoleAsync
+  fullName: Sorted.PRO.SDK.Security.RoleService.GetAccountsWithinRoleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: GetAccountsWithinRoleAsync(Guid)
+  nameWithType: IRoleService.GetAccountsWithinRoleAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync(System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync(System.Guid)
+    name: GetAccountsWithinRoleAsync
+    nameWithType: IRoleService.GetAccountsWithinRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync(System.Guid)
+    name: GetAccountsWithinRoleAsync
+    nameWithType: IRoleService.GetAccountsWithinRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.GetAccountsWithinRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Account}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Account}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Account>>
+  nameWithType: Task<List<Account>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Account>>
+  nameWithType.vb: Task(Of List(Of Account))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Account))
+  name.vb: Task(Of List(Of Account))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Account
+    name: Account
+    nameWithType: Account
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Account
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Account
+    name: Account
+    nameWithType: Account
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Account
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync
+  name: AddAccountToRoleAsync
+  nameWithType: RoleService.AddAccountToRoleAsync
+  fullName: Sorted.PRO.SDK.Security.RoleService.AddAccountToRoleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: AddAccountToRoleAsync(Guid, Guid)
+  nameWithType: IRoleService.AddAccountToRoleAsync(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+    name: AddAccountToRoleAsync
+    nameWithType: IRoleService.AddAccountToRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync(System.Guid,System.Guid)
+    name: AddAccountToRoleAsync
+    nameWithType: IRoleService.AddAccountToRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.AddAccountToRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync*
+  commentId: Overload:Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync
+  name: RemoveAccountFromRoleAsync
+  nameWithType: RoleService.RemoveAccountFromRoleAsync
+  fullName: Sorted.PRO.SDK.Security.RoleService.RemoveAccountFromRoleAsync
+- uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Security.IRoleService
+  isExternal: true
+  name: RemoveAccountFromRoleAsync(Guid, Guid)
+  nameWithType: IRoleService.RemoveAccountFromRoleAsync(Guid, Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync(System.Guid, System.Guid)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+    name: RemoveAccountFromRoleAsync
+    nameWithType: IRoleService.RemoveAccountFromRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync(System.Guid,System.Guid)
+    name: RemoveAccountFromRoleAsync
+    nameWithType: IRoleService.RemoveAccountFromRoleAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Security.IRoleService.RemoveAccountFromRoleAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Guid
+    name: Guid
+    nameWithType: Guid
+    fullName: System.Guid
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

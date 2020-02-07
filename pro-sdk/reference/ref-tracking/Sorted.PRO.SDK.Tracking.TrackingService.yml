@@ -1,0 +1,1585 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Tracking.TrackingService
+  commentId: T:Sorted.PRO.SDK.Tracking.TrackingService
+  id: TrackingService
+  parent: Sorted.PRO.SDK.Tracking
+  children:
+  - Sorted.PRO.SDK.Tracking.TrackingService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  - Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  - Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  langs:
+  - csharp
+  - vb
+  name: TrackingService
+  nameWithType: TrackingService
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: TrackingService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nService for retrieving tracking events for consignments / packages\n"
+  example: []
+  syntax:
+    content: 'public class TrackingService : BaseService, ITrackingService'
+    content.vb: >-
+      Public Class TrackingService
+          Inherits BaseService
+          Implements ITrackingService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Tracking.TrackingService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Tracking.TrackingService
+  langs:
+  - csharp
+  - vb
+  name: TrackingService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: TrackingService.TrackingService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.TrackingService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nGet tracking events\n"
+  example: []
+  syntax:
+    content: public TrackingService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The api key of the user making the request
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: An instance of <xref href="Sorted.PRO.SDK.Interfaces.IEndpoints" data-throw-if-not-resolved="false"></xref>
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: A logger implenting <xref href="Sorted.PRO.SDK.Interfaces.ILogger" data-throw-if-not-resolved="false"></xref>
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Tracking.TrackingService.#ctor*
+  nameWithType.vb: TrackingService.TrackingService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Tracking.TrackingService.TrackingService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: TrackingService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  commentId: M:Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  id: GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  parent: Sorted.PRO.SDK.Tracking.TrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetFlattenedTrackingEventsForEachPackageByConsignment(String)
+  nameWithType: TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(String)
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetFlattenedTrackingEventsForEachPackageByConsignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nGet flattened tracking events for each package in a consignment\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Events Per Package", "Returns events for each package in a consignment.", "Tracking", typeof(FlattenedConsignmentViewModel), "/tracking/flattened/{consignmentReference:string}", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public FlattenedConsignmentViewModel GetFlattenedTrackingEventsForEachPackageByConsignment(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Events Per Package", "Returns events for each package in a consignment.", "Tracking", GetType(FlattenedConsignmentViewModel), "/tracking/flattened/{consignmentReference:string}", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetFlattenedTrackingEventsForEachPackageByConsignment(consignmentReference As String) As FlattenedConsignmentViewModel
+  overload: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Tracking.TrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  nameWithType: TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 58
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nGets the flattened tracking events for each package by consignment asynchronous.\n"
+  example: []
+  syntax:
+    content: public Task<FlattenedConsignmentViewModel> GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(string consignmentReference, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel}
+      description: ''
+    content.vb: Public Function GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(consignmentReference As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of FlattenedConsignmentViewModel)
+  overload: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  nameWithType.vb: TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  commentId: M:Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  id: PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  parent: Sorted.PRO.SDK.Tracking.TrackingService
+  langs:
+  - csharp
+  - vb
+  name: PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest)
+  nameWithType: TrackingService.PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest)
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostTrackingEventsForConsignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 83
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nPost the tracking events for consignments asynchronously.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Post Tracking Events", "Post tracking events for a consignment.", "Tracking", typeof(ConsignmentTrackingEvent), "/carrierTrackingEvents", "POST", null)]
+
+      public Task PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest bulkCarrierTrackingEventsRequest)
+    parameters:
+    - id: bulkCarrierTrackingEventsRequest
+      type: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Post Tracking Events", "Post tracking events for a consignment.", "Tracking", GetType(ConsignmentTrackingEvent), "/carrierTrackingEvents", "POST", Nothing)>
+
+      Public Function PostTrackingEventsForConsignment(bulkCarrierTrackingEventsRequest As BulkCarrierTrackingEventsRequest) As Task
+  overload: Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  commentId: M:Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  id: GetTrackingEventsForEachPackageByConsignment(System.String)
+  parent: Sorted.PRO.SDK.Tracking.TrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetTrackingEventsForEachPackageByConsignment(String)
+  nameWithType: TrackingService.GetTrackingEventsForEachPackageByConsignment(String)
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetTrackingEventsForEachPackageByConsignment
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 116
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nGet tracking events for all packages for the specified consignment\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Tracking Events", "Returns all tracking events for a consignment.", "Tracking", typeof(ConsignmentViewModel), "/tracking/{consignmentReference:string}", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public ConsignmentViewModel GetTrackingEventsForEachPackageByConsignment(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The reference of the <xref href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment" data-throw-if-not-resolved="false"></xref> to retrieve packages for
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+      description: A <xref href="Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel" data-throw-if-not-resolved="false"></xref> contains details of tracking events for each package
+    content.vb: >-
+      <ApiEndpoint("Get Tracking Events", "Returns all tracking events for a consignment.", "Tracking", GetType(ConsignmentViewModel), "/tracking/{consignmentReference:string}", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetTrackingEventsForEachPackageByConsignment(consignmentReference As String) As ConsignmentViewModel
+  overload: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Tracking.TrackingService
+  langs:
+  - csharp
+  - vb
+  name: GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  nameWithType: TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Tracking/TrackingService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetTrackingEventsForEachPackageByConsignmentAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Tracking/TrackingService.cs
+    startLine: 137
+  assemblies:
+  - Sorted.PRO.SDK.Tracking
+  namespace: Sorted.PRO.SDK.Tracking
+  summary: "\nGet tracking events for all packages for the specified consignment\n"
+  example: []
+  syntax:
+    content: public Task<ConsignmentViewModel> GetTrackingEventsForEachPackageByConsignmentAsync(string consignmentReference, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The reference of the <xref href="Sorted.PRO.SDK.DataTypes.Consignments.Consignment" data-throw-if-not-resolved="false"></xref> to retrieve packages for
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel}
+      description: "\nA <xref href=\"Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel\" data-throw-if-not-resolved=\"false\"></xref> contains details of tracking events for each package\n"
+    content.vb: Public Function GetTrackingEventsForEachPackageByConsignmentAsync(consignmentReference As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of ConsignmentViewModel)
+  overload: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  nameWithType.vb: TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+references:
+- uid: Sorted.PRO.SDK.Tracking
+  commentId: N:Sorted.PRO.SDK.Tracking
+  name: Sorted.PRO.SDK.Tracking
+  nameWithType: Sorted.PRO.SDK.Tracking
+  fullName: Sorted.PRO.SDK.Tracking
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  parent: Sorted.PRO.SDK.Interfaces.Tracking
+  name: ITrackingService
+  nameWithType: ITrackingService
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Tracking
+  commentId: N:Sorted.PRO.SDK.Interfaces.Tracking
+  name: Sorted.PRO.SDK.Interfaces.Tracking
+  nameWithType: Sorted.PRO.SDK.Interfaces.Tracking
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Interfaces.IEndpoints
+  isExternal: true
+- uid: Sorted.PRO.SDK.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Interfaces.ILogger
+  isExternal: true
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Tracking.TrackingService.#ctor
+  name: TrackingService
+  nameWithType: TrackingService.TrackingService
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.TrackingService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment*
+  commentId: Overload:Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+  name: GetFlattenedTrackingEventsForEachPackageByConsignment
+  nameWithType: TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  isExternal: true
+  name: GetFlattenedTrackingEventsForEachPackageByConsignment(String)
+  nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+    name: GetFlattenedTrackingEventsForEachPackageByConsignment
+    nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment(System.String)
+    name: GetFlattenedTrackingEventsForEachPackageByConsignment
+    nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  name: FlattenedConsignmentViewModel
+  nameWithType: FlattenedConsignmentViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+- uid: Sorted.PRO.SDK.DataTypes.Tracking
+  commentId: N:Sorted.PRO.SDK.DataTypes.Tracking
+  name: Sorted.PRO.SDK.DataTypes.Tracking
+  nameWithType: Sorted.PRO.SDK.DataTypes.Tracking
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync*
+  commentId: Overload:Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  nameWithType: TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  isExternal: true
+  name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+    nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+    nameWithType: ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetFlattenedTrackingEventsForEachPackageByConsignmentAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<FlattenedConsignmentViewModel>
+  nameWithType: Task<FlattenedConsignmentViewModel>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel>
+  nameWithType.vb: Task(Of FlattenedConsignmentViewModel)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel)
+  name.vb: Task(Of FlattenedConsignmentViewModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+    name: FlattenedConsignmentViewModel
+    nameWithType: FlattenedConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+    name: FlattenedConsignmentViewModel
+    nameWithType: FlattenedConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.FlattenedConsignmentViewModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment*
+  commentId: Overload:Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment
+  name: PostTrackingEventsForConsignment
+  nameWithType: TrackingService.PostTrackingEventsForConsignment
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.PostTrackingEventsForConsignment
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  name: PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest)
+  nameWithType: ITrackingService.PostTrackingEventsForConsignment(BulkCarrierTrackingEventsRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+    name: PostTrackingEventsForConsignment
+    nameWithType: ITrackingService.PostTrackingEventsForConsignment
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+    name: BulkCarrierTrackingEventsRequest
+    nameWithType: BulkCarrierTrackingEventsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment(Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest)
+    name: PostTrackingEventsForConsignment
+    nameWithType: ITrackingService.PostTrackingEventsForConsignment
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.PostTrackingEventsForConsignment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+    name: BulkCarrierTrackingEventsRequest
+    nameWithType: BulkCarrierTrackingEventsRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  name: BulkCarrierTrackingEventsRequest
+  nameWithType: BulkCarrierTrackingEventsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.BulkCarrierTrackingEventsRequest
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Consignment
+  isExternal: true
+- uid: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  parent: Sorted.PRO.SDK.DataTypes.Tracking
+  name: ConsignmentViewModel
+  nameWithType: ConsignmentViewModel
+  fullName: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment*
+  commentId: Overload:Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment
+  name: GetTrackingEventsForEachPackageByConsignment
+  nameWithType: TrackingService.GetTrackingEventsForEachPackageByConsignment
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignment
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  isExternal: true
+  name: GetTrackingEventsForEachPackageByConsignment(String)
+  nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignment(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+    name: GetTrackingEventsForEachPackageByConsignment
+    nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignment
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment(System.String)
+    name: GetTrackingEventsForEachPackageByConsignment
+    nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignment
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignment
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync*
+  commentId: Overload:Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+  name: GetTrackingEventsForEachPackageByConsignmentAsync
+  nameWithType: TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+  fullName: Sorted.PRO.SDK.Tracking.TrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+- uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService
+  isExternal: true
+  name: GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetTrackingEventsForEachPackageByConsignmentAsync(String, Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetTrackingEventsForEachPackageByConsignmentAsync
+    nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetTrackingEventsForEachPackageByConsignmentAsync
+    nameWithType: ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Tracking.ITrackingService.GetTrackingEventsForEachPackageByConsignmentAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConsignmentViewModel>
+  nameWithType: Task<ConsignmentViewModel>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel>
+  nameWithType.vb: Task(Of ConsignmentViewModel)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel)
+  name.vb: Task(Of ConsignmentViewModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+    name: ConsignmentViewModel
+    nameWithType: ConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+    name: ConsignmentViewModel
+    nameWithType: ConsignmentViewModel
+    fullName: Sorted.PRO.SDK.DataTypes.Tracking.ConsignmentViewModel
+  - name: )
+    nameWithType: )
+    fullName: )

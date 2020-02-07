@@ -1,0 +1,452 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  id: ConsignmentEventType
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentCreated
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentUpdated
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.LabelsPrinted
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageAdded
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageRemoved
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageUpdated
+  - Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.Rescheduled
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentEventType
+  nameWithType: ConsignmentEventType
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentEventType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 7
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Event Type", "Represents a consignment event that triggered a webhook.")]
+
+      public enum ConsignmentEventType
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Event Type", "Represents a consignment event that triggered a webhook.")>
+
+      Public Enum ConsignmentEventType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Event Type
+    - type: System.String
+      value: Represents a consignment event that triggered a webhook.
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentCreated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentCreated
+  id: ConsignmentCreated
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentCreated
+  nameWithType: ConsignmentEventType.ConsignmentCreated
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentCreated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentCreated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Consignment Created")]
+
+      ConsignmentCreated = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Consignment Created")>
+
+      ConsignmentCreated = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Consignment Created
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentUpdated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentUpdated
+  id: ConsignmentUpdated
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentUpdated
+  nameWithType: ConsignmentEventType.ConsignmentUpdated
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.ConsignmentUpdated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentUpdated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Consignment Updated")]
+
+      ConsignmentUpdated = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Consignment Updated")>
+
+      ConsignmentUpdated = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Consignment Updated
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.LabelsPrinted
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.LabelsPrinted
+  id: LabelsPrinted
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: LabelsPrinted
+  nameWithType: ConsignmentEventType.LabelsPrinted
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.LabelsPrinted
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelsPrinted
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Labels Printed")]
+
+      LabelsPrinted = 3
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Labels Printed")>
+
+      LabelsPrinted = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Labels Printed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageAdded
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageAdded
+  id: PackageAdded
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: PackageAdded
+  nameWithType: ConsignmentEventType.PackageAdded
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageAdded
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageAdded
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Package Added")]
+
+      PackageAdded = 4
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Package Added")>
+
+      PackageAdded = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Package Added
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageRemoved
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageRemoved
+  id: PackageRemoved
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: PackageRemoved
+  nameWithType: ConsignmentEventType.PackageRemoved
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageRemoved
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageRemoved
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Package Removed")]
+
+      PackageRemoved = 5
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Package Removed")>
+
+      PackageRemoved = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Package Removed
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageUpdated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageUpdated
+  id: PackageUpdated
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: PackageUpdated
+  nameWithType: ConsignmentEventType.PackageUpdated
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.PackageUpdated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageUpdated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Package Updated")]
+
+      PackageUpdated = 6
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Package Updated")>
+
+      PackageUpdated = 6
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Package Updated
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.Rescheduled
+  commentId: F:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.Rescheduled
+  id: Rescheduled
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  langs:
+  - csharp
+  - vb
+  name: Rescheduled
+  nameWithType: ConsignmentEventType.Rescheduled
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType.Rescheduled
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Rescheduled
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.WebHooks/Enums/ConsignmentEventType.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Webhooks
+  namespace: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "Rescheduled")]
+
+      Rescheduled = 7
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="Rescheduled")>
+
+      Rescheduled = 7
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Rescheduled
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  name: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks.Enums
+  name: ConsignmentEventType
+  nameWithType: ConsignmentEventType
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.Enums.ConsignmentEventType

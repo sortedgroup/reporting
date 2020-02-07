@@ -1,0 +1,801 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.HttpClientFactory
+  id: HttpClientFactory
+  parent: Sorted.PRO.SDK.Shared
+  children:
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor(System.Net.Http.HttpMessageHandler,Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient(System.Uri)
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient(System.String)
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost(System.Uri)
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.Handler
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.Logger
+  - Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient(System.Uri,Sorted.PRO.SDK.Shared.Interfaces.IHttpClient)
+  langs:
+  - csharp
+  - vb
+  name: HttpClientFactory
+  nameWithType: HttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: HttpClientFactory
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nFactory used to get an <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> instance per BaseUrl.\n<remarks>\nWe provide a client per base url to optimise re-use of TCP connections \nto a specific endpoint\n</remarks>\n"
+  example: []
+  syntax:
+    content: 'public class HttpClientFactory : IHttpClientFactory'
+    content.vb: >-
+      Public Class HttpClientFactory
+          Implements IHttpClientFactory
+  inheritance:
+  - System.Object
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.Logger
+  commentId: F:Sorted.PRO.SDK.Shared.HttpClientFactory.Logger
+  id: Logger
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: Logger
+  nameWithType: HttpClientFactory.Logger
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.Logger
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Logger
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: protected readonly ILogger Logger
+    return:
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+    content.vb: Protected ReadOnly Logger As ILogger
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.Handler
+  commentId: F:Sorted.PRO.SDK.Shared.HttpClientFactory.Handler
+  id: Handler
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: Handler
+  nameWithType: HttpClientFactory.Handler
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.Handler
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Handler
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: protected readonly HttpMessageHandler Handler
+    return:
+      type: System.Net.Http.HttpMessageHandler
+    content.vb: Protected ReadOnly Handler As HttpMessageHandler
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  commentId: M:Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  id: '#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)'
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: HttpClientFactory(ILogger)
+  nameWithType: HttpClientFactory.HttpClientFactory(ILogger)
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.HttpClientFactory(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nCreate a new instance of <xref href=\"Sorted.PRO.SDK.Shared.HttpClientFactory\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public HttpClientFactory(ILogger logger)
+    parameters:
+    - id: logger
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: An instance of <xref href="Sorted.PRO.SDK.Shared.Interfaces.ILogger" data-throw-if-not-resolved="false"></xref> used to log internal errors
+    content.vb: Public Sub New(logger As ILogger)
+  overload: Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor(System.Net.Http.HttpMessageHandler,Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  commentId: M:Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor(System.Net.Http.HttpMessageHandler,Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  id: '#ctor(System.Net.Http.HttpMessageHandler,Sorted.PRO.SDK.Shared.Interfaces.ILogger)'
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: HttpClientFactory(HttpMessageHandler, ILogger)
+  nameWithType: HttpClientFactory.HttpClientFactory(HttpMessageHandler, ILogger)
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.HttpClientFactory(System.Net.Http.HttpMessageHandler, Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 41
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nCreate a new instance of <xref href=\"Sorted.PRO.SDK.Shared.HttpClientFactory\" data-throw-if-not-resolved=\"false\"></xref> with a different <xref href=\"System.Net.Http.HttpMessageHandler\" data-throw-if-not-resolved=\"false\"></xref>\nThis allows us to insert a new handler into the pipeline for custom functionality, e.g. logging\n"
+  example: []
+  syntax:
+    content: public HttpClientFactory(HttpMessageHandler handler, ILogger logger)
+    parameters:
+    - id: handler
+      type: System.Net.Http.HttpMessageHandler
+      description: An instance of <xref href="System.Net.Http.HttpMessageHandler" data-throw-if-not-resolved="false"></xref>
+    - id: logger
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: An instance of <xref href="Sorted.PRO.SDK.Shared.Interfaces.ILogger" data-throw-if-not-resolved="false"></xref> used to log internal errors
+    content.vb: Public Sub New(handler As HttpMessageHandler, logger As ILogger)
+  overload: Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient(System.String)
+  id: GetClient(System.String)
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: GetClient(String)
+  nameWithType: HttpClientFactory.GetClient(String)
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetClient
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 61
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nGet an <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> for the specified baseUrl.\n<remarks>\nThe first call for each baseUrl will return a new HttpClient based on the url host which will then be\nsaved for future requests. Each subsequent call to this method with\nthe same baseUrl will return the same <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref>.\nEach different baseUrl will yield a different <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref>\n</remarks>\n"
+  example: []
+  syntax:
+    content: public IHttpClient GetClient(string baseUrl)
+    parameters:
+    - id: baseUrl
+      type: System.String
+      description: The baseurl for all requests. Must be a valid URI
+    return:
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+      description: <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function GetClient(baseUrl As String) As IHttpClient
+  overload: Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient*
+  exceptions:
+  - type: System.UriFormatException
+    commentId: T:System.UriFormatException
+    description: Thrown if the BaseUrl passed in is not a valid Uri.
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the BaseUrl passed in is null
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient(System.Uri)
+  id: CreateClient(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateClient(Uri)
+  nameWithType: HttpClientFactory.CreateClient(Uri)
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateClient
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 78
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nCreate a new <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> for the specified <xref href=\"System.Uri\" data-throw-if-not-resolved=\"false\"></xref>\nand save the <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> for future requests\n"
+  example: []
+  syntax:
+    content: protected virtual IHttpClient CreateClient(Uri baseUrl)
+    parameters:
+    - id: baseUrl
+      type: System.Uri
+      description: The base url as a valid <xref href="System.Uri" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+      description: A <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Overridable Function CreateClient(baseUrl As Uri) As IHttpClient
+  overload: Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient*
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient(System.Uri,Sorted.PRO.SDK.Shared.Interfaces.IHttpClient)
+  commentId: M:Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient(System.Uri,Sorted.PRO.SDK.Shared.Interfaces.IHttpClient)
+  id: TryAddClient(System.Uri,Sorted.PRO.SDK.Shared.Interfaces.IHttpClient)
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: TryAddClient(Uri, IHttpClient)
+  nameWithType: HttpClientFactory.TryAddClient(Uri, IHttpClient)
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient(System.Uri, Sorted.PRO.SDK.Shared.Interfaces.IHttpClient)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: TryAddClient
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 91
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nTry to save the specified <xref href=\"System.Net.Http.HttpClient\" data-throw-if-not-resolved=\"false\"></xref> to the internal <xref href=\"System.Collections.Concurrent.ConcurrentDictionary%602\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: protected void TryAddClient(Uri uriKey, IHttpClient client)
+    parameters:
+    - id: uriKey
+      type: System.Uri
+      description: The key (based on the Uri authority - not the full path)
+    - id: client
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+      description: The <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref> to save
+    content.vb: Protected Sub TryAddClient(uriKey As Uri, client As IHttpClient)
+  overload: Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost(System.Uri)
+  id: GetSchemeAndHost(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.HttpClientFactory
+  langs:
+  - csharp
+  - vb
+  name: GetSchemeAndHost(Uri)
+  nameWithType: HttpClientFactory.GetSchemeAndHost(Uri)
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSchemeAndHost
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/HttpClientFactory.cs
+    startLine: 143
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nRemove extraneous path segments from the provided <xref href=\"System.Uri\" data-throw-if-not-resolved=\"false\"></xref>\n<remarks>\nWe are only interested in the scheme and host\n</remarks>\n<example>\nThe input &apos;https://test.com/somepath/something\nwill return &apos;https://test.com&apos;\n</example>\n"
+  example: []
+  syntax:
+    content: protected static Uri GetSchemeAndHost(Uri baseUrl)
+    parameters:
+    - id: baseUrl
+      type: System.Uri
+      description: ''
+    return:
+      type: System.Uri
+      description: ''
+    content.vb: Protected Shared Function GetSchemeAndHost(baseUrl As Uri) As Uri
+  overload: Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+references:
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Net.Http.HttpMessageHandler
+  commentId: T:System.Net.Http.HttpMessageHandler
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpMessageHandler
+  nameWithType: HttpMessageHandler
+  fullName: System.Net.Http.HttpMessageHandler
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.HttpClientFactory
+  name: HttpClientFactory
+  nameWithType: HttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Shared.HttpClientFactory.#ctor
+  name: HttpClientFactory
+  nameWithType: HttpClientFactory.HttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.HttpClientFactory
+- uid: System.UriFormatException
+  commentId: T:System.UriFormatException
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient*
+  commentId: Overload:Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient
+  name: GetClient
+  nameWithType: HttpClientFactory.GetClient
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.GetClient
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient(System.String)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  isExternal: true
+  name: GetClient(String)
+  nameWithType: IHttpClientFactory.GetClient(String)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient(System.String)
+    name: GetClient
+    nameWithType: IHttpClientFactory.GetClient
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient(System.String)
+    name: GetClient
+    nameWithType: IHttpClientFactory.GetClient
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory.GetClient
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClient
+  nameWithType: IHttpClient
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient*
+  commentId: Overload:Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient
+  name: CreateClient
+  nameWithType: HttpClientFactory.CreateClient
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.CreateClient
+- uid: System.Collections.Concurrent.ConcurrentDictionary`2
+  commentId: T:System.Collections.Concurrent.ConcurrentDictionary`2
+  isExternal: true
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient*
+  commentId: Overload:Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient
+  name: TryAddClient
+  nameWithType: HttpClientFactory.TryAddClient
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.TryAddClient
+- uid: Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost*
+  commentId: Overload:Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost
+  name: GetSchemeAndHost
+  nameWithType: HttpClientFactory.GetSchemeAndHost
+  fullName: Sorted.PRO.SDK.Shared.HttpClientFactory.GetSchemeAndHost

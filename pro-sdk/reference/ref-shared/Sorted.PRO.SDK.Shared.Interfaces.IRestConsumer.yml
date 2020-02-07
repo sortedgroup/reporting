@@ -1,0 +1,1506 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  id: IRestConsumer
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  children:
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: IRestConsumer
+  nameWithType: IRestConsumer
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IRestConsumer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 6
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: Implementing class provides methods which will allow the caller to interact with RESTful API&apos;s
+  example: []
+  syntax:
+    content: public interface IRestConsumer
+    content.vb: Public Interface IRestConsumer
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Get``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Get<T>(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Get
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a GET to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: T Get<T>(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: Type that we will deserialise the response into
+    return:
+      type: '{T}'
+      description: ApiResponse containing a deserialised instance of type T or an Error object on failure.
+    content.vb: Function Get(Of T)(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As T
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get*
+  nameWithType.vb: IRestConsumer.Get(Of T)(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Get(Of T)(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<T>(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.GetAsync<T>(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous GET to the specified requestUri. The requestUri&quot; should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task<T> GetAsync<T>(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: Type that we will deserialise the response into
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: "\nApiResponse containing a deserialised instance of type T or an Error object on failure.\n"
+    content.vb: Function GetAsync(Of T)(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of T)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync*
+  nameWithType.vb: IRestConsumer.GetAsync(Of T)(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetAsync(Of T)(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Get(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Get(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Get(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Get
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 36
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a GET to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: void Get(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    content.vb: Sub Get(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get*
+  nameWithType.vb: IRestConsumer.Get(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Get(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.GetAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 47
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous GET to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task GetAsync(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nTask for awaiting.\n"
+    content.vb: Function GetAsync(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync*
+  nameWithType.vb: IRestConsumer.GetAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetAsync(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Post``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Post<T, TOut>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Post<T, TOut>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post<T, TOut>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Post
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 63
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a POST to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: TOut Post<T, TOut>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the POST request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the POST request as its body
+    - id: TOut
+      description: The type that we will return within the API Response.
+    return:
+      type: '{TOut}'
+      description: "\nApiResponse containing a deserialised instance of type T or an Error object on failure.\n"
+    content.vb: Function Post(Of T, TOut)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As TOut
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post*
+  nameWithType.vb: IRestConsumer.Post(Of T, TOut)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post(Of T, TOut)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Post(Of T, TOut)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PostAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PostAsync<T, TOut>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PostAsync<T, TOut>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync<T, TOut>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 78
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous POST to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task<TOut> PostAsync<T, TOut>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the POST request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the POST request as its body
+    - id: TOut
+      description: The type that we will return within the API Response.
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: "\nApiResponse containing a deserialised instance of type T or an Error object on failure.\n"
+    content.vb: Function PostAsync(Of T, TOut)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of TOut)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync*
+  nameWithType.vb: IRestConsumer.PostAsync(Of T, TOut)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync(Of T, TOut)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PostAsync(Of T, TOut)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Post``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Post<T>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Post<T>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post<T>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Post
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 89
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a POST to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: void Post<T>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the POST request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the POST request as its body
+    content.vb: Sub Post(Of T)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post*
+  nameWithType.vb: IRestConsumer.Post(Of T)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post(Of T)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Post(Of T)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PostAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PostAsync<T>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PostAsync<T>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync<T>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 103
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous POST to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task PostAsync<T>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the POST request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the POST request as its body
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nTask for awaiting.\n"
+    content.vb: Function PostAsync(Of T)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync*
+  nameWithType.vb: IRestConsumer.PostAsync(Of T)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync(Of T)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PostAsync(Of T)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Put``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Put<T, TOut>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Put<T, TOut>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put<T, TOut>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Put
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 118
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a PUT to the specified requestUri sending the serialised content of model as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: TOut Put<T, TOut>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PUT request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PUT request as its body
+    - id: TOut
+      description: The type that we will return within the API Response.
+    return:
+      type: '{TOut}'
+      description: "\nApiResponse containing a deserialised instance of type T or an Error object on failure.\n"
+    content.vb: Function Put(Of T, TOut)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As TOut
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put*
+  nameWithType.vb: IRestConsumer.Put(Of T, TOut)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put(Of T, TOut)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Put(Of T, TOut)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PutAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PutAsync<T, TOut>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PutAsync<T, TOut>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync<T, TOut>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 131
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous PUT to the specified requestUri sending the serialised content of model as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task<TOut> PutAsync<T, TOut>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PUT request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PUT request as its body
+    - id: TOut
+      description: The type that we will return within the API Response.
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: ApiResponse containing a deserialised instance of type T or an Error object on failure.
+    content.vb: Function PutAsync(Of T, TOut)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of TOut)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync*
+  nameWithType.vb: IRestConsumer.PutAsync(Of T, TOut)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync(Of T, TOut)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PutAsync(Of T, TOut)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Put``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Put<T>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Put<T>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put<T>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Put
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 142
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a PUT to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: void Put<T>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PUT request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PUT request as its body
+    content.vb: Sub Put(Of T)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put*
+  nameWithType.vb: IRestConsumer.Put(Of T)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put(Of T)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Put(Of T)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PutAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PutAsync<T>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PutAsync<T>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync<T>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 156
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous PUT to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task PutAsync<T>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PUT request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PUT request as its body
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nTask for awaiting.\n"
+    content.vb: Function PutAsync(Of T)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync*
+  nameWithType.vb: IRestConsumer.PutAsync(Of T)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync(Of T)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PutAsync(Of T)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Patch``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Patch<T, TOut>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Patch<T, TOut>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch<T, TOut>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Patch
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 171
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a PATCH to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: TOut Patch<T, TOut>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PATCH request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PATCH request as its body
+    - id: TOut
+      description: The type that we will return within the API Response.
+    return:
+      type: '{TOut}'
+      description: "\nApiResponse containing a deserialised instance of type T or an Error object on failure.\n"
+    content.vb: Function Patch(Of T, TOut)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As TOut
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*
+  nameWithType.vb: IRestConsumer.Patch(Of T, TOut)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(Of T, TOut)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Patch(Of T, TOut)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PatchAsync``2(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync<T, TOut>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PatchAsync<T, TOut>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync<T, TOut>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PatchAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 186
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous PATCH to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task<TOut> PatchAsync<T, TOut>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PATCH request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PATCH request as its body
+    - id: TOut
+      description: The type that we will return within the API Response.
+    return:
+      type: System.Threading.Tasks.Task{{TOut}}
+      description: "\nApiResponse containing a deserialised instance of type T or an Error object on failure.\n"
+    content.vb: Function PatchAsync(Of T, TOut)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of TOut)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*
+  nameWithType.vb: IRestConsumer.PatchAsync(Of T, TOut)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(Of T, TOut)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PatchAsync(Of T, TOut)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Patch``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Patch<T>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Patch<T>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch<T>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Patch
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 197
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a PATCH to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: void Patch<T>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PATCH request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PATCH request as its body
+    content.vb: Sub Patch(Of T)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*
+  nameWithType.vb: IRestConsumer.Patch(Of T)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(Of T)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Patch(Of T)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PatchAsync``1(``0,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync<T>(T, String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PatchAsync<T>(T, String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync<T>(T, System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PatchAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 211
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous PATCH to the specified requestUri sending the serialised content of model  as the body of the request.\nThe requestUri should contain the route part of the request (not the endpoint) and should include any QueryString\nparameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task PatchAsync<T>(T model, string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: model
+      type: '{T}'
+      description: The model that we are serializing and passing with the PATCH request as its body.
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: The type of the model that we are passing with the PATCH request as its body
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nTask for awaiting.\n"
+    content.vb: Function PatchAsync(Of T)(model As T, requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*
+  nameWithType.vb: IRestConsumer.PatchAsync(Of T)(T, String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(Of T)(T, System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PatchAsync(Of T)(T, String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Patch(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Patch(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Patch(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Patch
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 218
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a PATCH to the specified requestUri\n"
+  example: []
+  syntax:
+    content: void Patch(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    content.vb: Sub Patch(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*
+  nameWithType.vb: IRestConsumer.Patch(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Patch(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PatchAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: PatchAsync(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.PatchAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PatchAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 226
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous PATCH to the specified requestUri\n"
+  example: []
+  syntax:
+    content: Task PatchAsync(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: Task for awaiting
+    content.vb: Function PatchAsync(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*
+  nameWithType.vb: IRestConsumer.PatchAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PatchAsync(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Delete``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Delete<T>(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Delete<T>(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Delete
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 238
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a DELETE to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: T Delete<T>(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: "\nApiResponse containing true on success, false on failure.\n"
+    content.vb: Function Delete(Of T)(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As T
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete*
+  nameWithType.vb: IRestConsumer.Delete(Of T)(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Delete(Of T)(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: DeleteAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync<T>(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.DeleteAsync<T>(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync<T>(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 250
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous DELETE to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task<T> DeleteAsync<T>(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: "\nApiResponse containing true on success, false on failure.\n"
+    content.vb: Function DeleteAsync(Of T)(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of T)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync*
+  nameWithType.vb: IRestConsumer.DeleteAsync(Of T)(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(Of T)(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: DeleteAsync(Of T)(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Delete(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: Delete(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.Delete(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Delete
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 258
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues a DELETE to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: void Delete(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    content.vb: Sub Delete(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete*
+  nameWithType.vb: IRestConsumer.Delete(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Delete(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: DeleteAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, Dictionary<String, String>)
+  nameWithType: IRestConsumer.DeleteAsync(String, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 269
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nIssues an asynchronous DELETE to the specified requestUri. The requestUri should contain the route part\nof the request (not the endpoint) and should include any QueryString parameters created using <xref href=\"Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: Task DeleteAsync(string requestUri, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: requestUri
+      type: System.String
+      description: The route part of the request. This should not include the endpoint but should include a QueryString built using <xref href="Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary%7bSystem.String%2cSystem.String%7d)" data-throw-if-not-resolved="false"></xref>.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Any optional headers which should be added to the request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: "\nApiResponse containing true on success, false on failure.\n"
+    content.vb: Function DeleteAsync(requestUri As String, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync*
+  nameWithType.vb: IRestConsumer.DeleteAsync(String, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: DeleteAsync(String, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+  id: BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  langs:
+  - csharp
+  - vb
+  name: BuildQueryString(Dictionary<String, String>)
+  nameWithType: IRestConsumer.BuildQueryString(Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: BuildQueryString
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumer.cs
+    startLine: 279
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nBuilds a query string by concatenating name/value pairs. This method will\nURLEncode all entries so you do not need to handle encoding before calling.\n"
+  example: []
+  syntax:
+    content: string BuildQueryString(Dictionary<string, string> queryStringItems)
+    parameters:
+    - id: queryStringItems
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The query string items to create a querystring for.
+    return:
+      type: System.String
+      description: "\nURL Encoded QueryString ready for use.\n"
+    content.vb: Function BuildQueryString(queryStringItems As Dictionary(Of String, String)) As String
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString*
+  nameWithType.vb: IRestConsumer.BuildQueryString(Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: BuildQueryString(Dictionary(Of String, String))
+references:
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  isExternal: true
+  name: BuildQueryString(Dictionary<String, String>)
+  nameWithType: IRestConsumer.BuildQueryString(Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: IRestConsumer.BuildQueryString(Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: BuildQueryString(Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+    name: BuildQueryString
+    nameWithType: IRestConsumer.BuildQueryString
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString(System.Collections.Generic.Dictionary{System.String,System.String})
+    name: BuildQueryString
+    nameWithType: IRestConsumer.BuildQueryString
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get
+  name: Get
+  nameWithType: IRestConsumer.Get
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IRestConsumer
+  nameWithType: IRestConsumer
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync
+  name: GetAsync
+  nameWithType: IRestConsumer.GetAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.GetAsync
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post
+  name: Post
+  nameWithType: IRestConsumer.Post
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Post
+- uid: '{TOut}'
+  commentId: '!:TOut'
+  definition: TOut
+  name: TOut
+  nameWithType: TOut
+  fullName: TOut
+- uid: TOut
+  name: TOut
+  nameWithType: TOut
+  fullName: TOut
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync
+  name: PostAsync
+  nameWithType: IRestConsumer.PostAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PostAsync
+- uid: System.Threading.Tasks.Task{{TOut}}
+  commentId: T:System.Threading.Tasks.Task{``1}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TOut>
+  nameWithType: Task<TOut>
+  fullName: System.Threading.Tasks.Task<TOut>
+  nameWithType.vb: Task(Of TOut)
+  fullName.vb: System.Threading.Tasks.Task(Of TOut)
+  name.vb: Task(Of TOut)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TOut
+    nameWithType: TOut
+    fullName: TOut
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TOut
+    nameWithType: TOut
+    fullName: TOut
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put
+  name: Put
+  nameWithType: IRestConsumer.Put
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Put
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync
+  name: PutAsync
+  nameWithType: IRestConsumer.PutAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PutAsync
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch
+  name: Patch
+  nameWithType: IRestConsumer.Patch
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Patch
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync
+  name: PatchAsync
+  nameWithType: IRestConsumer.PatchAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.PatchAsync
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete
+  name: Delete
+  nameWithType: IRestConsumer.Delete
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.Delete
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync
+  name: DeleteAsync
+  nameWithType: IRestConsumer.DeleteAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.DeleteAsync
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString
+  name: BuildQueryString
+  nameWithType: IRestConsumer.BuildQueryString
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer.BuildQueryString

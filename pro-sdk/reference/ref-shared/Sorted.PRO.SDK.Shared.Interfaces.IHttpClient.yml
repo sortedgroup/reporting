@@ -1,0 +1,1633 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  id: IHttpClient
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  children:
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.String)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.Uri)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.String)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.Uri)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.String)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.Uri)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  - Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout
+  langs:
+  - csharp
+  - vb
+  name: IHttpClient
+  nameWithType: IHttpClient
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IHttpClient
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: 'public interface IHttpClient : IDisposable'
+    content.vb: >-
+      Public Interface IHttpClient
+          Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders
+  id: DefaultRequestHeaders
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: DefaultRequestHeaders
+  nameWithType: IHttpClient.DefaultRequestHeaders
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DefaultRequestHeaders
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 11
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: HttpRequestHeaders DefaultRequestHeaders { get; }
+    parameters: []
+    return:
+      type: System.Net.Http.Headers.HttpRequestHeaders
+    content.vb: ReadOnly Property DefaultRequestHeaders As HttpRequestHeaders
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress
+  id: BaseAddress
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: BaseAddress
+  nameWithType: IHttpClient.BaseAddress
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: BaseAddress
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Uri BaseAddress { get; set; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Property BaseAddress As Uri
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout
+  id: Timeout
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: Timeout
+  nameWithType: IHttpClient.Timeout
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Timeout
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: TimeSpan Timeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Property Timeout As TimeSpan
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize
+  id: MaxResponseContentBufferSize
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: MaxResponseContentBufferSize
+  nameWithType: IHttpClient.MaxResponseContentBufferSize
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MaxResponseContentBufferSize
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: long MaxResponseContentBufferSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Property MaxResponseContentBufferSize As Long
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.String)
+  id: GetStringAsync(System.String)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetStringAsync(String)
+  nameWithType: IHttpClient.GetStringAsync(String)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetStringAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<string> GetStringAsync(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function GetStringAsync(requestUri As String) As Task(Of String)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.Uri)
+  id: GetStringAsync(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetStringAsync(Uri)
+  nameWithType: IHttpClient.GetStringAsync(Uri)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetStringAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<string> GetStringAsync(Uri requestUri)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Function GetStringAsync(requestUri As Uri) As Task(Of String)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.String)
+  id: GetByteArrayAsync(System.String)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetByteArrayAsync(String)
+  nameWithType: IHttpClient.GetByteArrayAsync(String)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetByteArrayAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<byte[]> GetByteArrayAsync(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+    content.vb: Function GetByteArrayAsync(requestUri As String) As Task(Of Byte())
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.Uri)
+  id: GetByteArrayAsync(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetByteArrayAsync(Uri)
+  nameWithType: IHttpClient.GetByteArrayAsync(Uri)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetByteArrayAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<byte[]> GetByteArrayAsync(Uri requestUri)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+    content.vb: Function GetByteArrayAsync(requestUri As Uri) As Task(Of Byte())
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.String)
+  id: GetStreamAsync(System.String)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetStreamAsync(String)
+  nameWithType: IHttpClient.GetStreamAsync(String)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetStreamAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<Stream> GetStreamAsync(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Function GetStreamAsync(requestUri As String) As Task(Of Stream)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.Uri)
+  id: GetStreamAsync(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetStreamAsync(Uri)
+  nameWithType: IHttpClient.GetStreamAsync(Uri)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetStreamAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 21
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<Stream> GetStreamAsync(Uri requestUri)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+    content.vb: Function GetStreamAsync(requestUri As Uri) As Task(Of Stream)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String)
+  id: GetAsync(System.String)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String)
+  nameWithType: IHttpClient.GetAsync(String)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As String) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri)
+  id: GetAsync(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Uri)
+  nameWithType: IHttpClient.GetAsync(Uri)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(Uri requestUri)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As Uri) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  id: GetAsync(System.String,System.Net.Http.HttpCompletionOption)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, HttpCompletionOption)
+  nameWithType: IHttpClient.GetAsync(String, HttpCompletionOption)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String, System.Net.Http.HttpCompletionOption)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As String, completionOption As HttpCompletionOption) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  id: GetAsync(System.Uri,System.Net.Http.HttpCompletionOption)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Uri, HttpCompletionOption)
+  nameWithType: IHttpClient.GetAsync(Uri, HttpCompletionOption)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri, System.Net.Http.HttpCompletionOption)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(Uri requestUri, HttpCompletionOption completionOption)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As Uri, completionOption As HttpCompletionOption) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, CancellationToken)
+  nameWithType: IHttpClient.GetAsync(String, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(string requestUri, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As String, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Threading.CancellationToken)
+  id: GetAsync(System.Uri,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Uri, CancellationToken)
+  nameWithType: IHttpClient.GetAsync(Uri, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 27
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(Uri requestUri, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As Uri, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  id: GetAsync(System.String,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String, HttpCompletionOption, CancellationToken)
+  nameWithType: IHttpClient.GetAsync(String, HttpCompletionOption, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.String, System.Net.Http.HttpCompletionOption, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(string requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As String, completionOption As HttpCompletionOption, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  id: GetAsync(System.Uri,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Uri, HttpCompletionOption, CancellationToken)
+  nameWithType: IHttpClient.GetAsync(Uri, HttpCompletionOption, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync(System.Uri, System.Net.Http.HttpCompletionOption, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 29
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> GetAsync(Uri requestUri, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function GetAsync(requestUri As Uri, completionOption As HttpCompletionOption, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  id: PostAsync(System.String,System.Net.Http.HttpContent)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(String, HttpContent)
+  nameWithType: IHttpClient.PostAsync(String, HttpContent)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PostAsync(requestUri As String, content As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent)
+  id: PostAsync(System.Uri,System.Net.Http.HttpContent)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(Uri, HttpContent)
+  nameWithType: IHttpClient.PostAsync(Uri, HttpContent)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 31
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PostAsync(Uri requestUri, HttpContent content)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PostAsync(requestUri As Uri, content As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PostAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(String, HttpContent, CancellationToken)
+  nameWithType: IHttpClient.PostAsync(String, HttpContent, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.String, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 32
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PostAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PostAsync(requestUri As String, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PostAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(Uri, HttpContent, CancellationToken)
+  nameWithType: IHttpClient.PostAsync(Uri, HttpContent, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync(System.Uri, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PostAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PostAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PostAsync(requestUri As Uri, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent)
+  id: PutAsync(System.String,System.Net.Http.HttpContent)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PutAsync(String, HttpContent)
+  nameWithType: IHttpClient.PutAsync(String, HttpContent)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PutAsync(string requestUri, HttpContent content)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PutAsync(requestUri As String, content As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent)
+  id: PutAsync(System.Uri,System.Net.Http.HttpContent)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PutAsync(Uri, HttpContent)
+  nameWithType: IHttpClient.PutAsync(Uri, HttpContent)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri, System.Net.Http.HttpContent)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 35
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PutAsync(Uri requestUri, HttpContent content)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: content
+      type: System.Net.Http.HttpContent
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PutAsync(requestUri As Uri, content As HttpContent) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PutAsync(System.String,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PutAsync(String, HttpContent, CancellationToken)
+  nameWithType: IHttpClient.PutAsync(String, HttpContent, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.String, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 36
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PutAsync(string requestUri, HttpContent content, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PutAsync(requestUri As String, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  id: PutAsync(System.Uri,System.Net.Http.HttpContent,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: PutAsync(Uri, HttpContent, CancellationToken)
+  nameWithType: IHttpClient.PutAsync(Uri, HttpContent, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync(System.Uri, System.Net.Http.HttpContent, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 37
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> PutAsync(Uri requestUri, HttpContent content, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: content
+      type: System.Net.Http.HttpContent
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function PutAsync(requestUri As Uri, content As HttpContent, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String)
+  id: DeleteAsync(System.String)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String)
+  nameWithType: IHttpClient.DeleteAsync(String)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> DeleteAsync(string requestUri)
+    parameters:
+    - id: requestUri
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function DeleteAsync(requestUri As String) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri)
+  id: DeleteAsync(System.Uri)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Uri)
+  nameWithType: IHttpClient.DeleteAsync(Uri)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> DeleteAsync(Uri requestUri)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function DeleteAsync(requestUri As Uri) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String,System.Threading.CancellationToken)
+  id: DeleteAsync(System.String,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(String, CancellationToken)
+  nameWithType: IHttpClient.DeleteAsync(String, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> DeleteAsync(string requestUri, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function DeleteAsync(requestUri As String, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  id: DeleteAsync(System.Uri,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(Uri, CancellationToken)
+  nameWithType: IHttpClient.DeleteAsync(Uri, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync(System.Uri, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 41
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> DeleteAsync(Uri requestUri, CancellationToken cancellationToken)
+    parameters:
+    - id: requestUri
+      type: System.Uri
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function DeleteAsync(requestUri As Uri, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  id: SendAsync(System.Net.Http.HttpRequestMessage)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(HttpRequestMessage)
+  nameWithType: IHttpClient.SendAsync(HttpRequestMessage)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SendAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> SendAsync(HttpRequestMessage request)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function SendAsync(request As HttpRequestMessage) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(HttpRequestMessage, CancellationToken)
+  nameWithType: IHttpClient.SendAsync(HttpRequestMessage, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SendAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 43
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function SendAsync(request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(HttpRequestMessage, HttpCompletionOption)
+  nameWithType: IHttpClient.SendAsync(HttpRequestMessage, HttpCompletionOption)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpCompletionOption)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SendAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 44
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function SendAsync(request As HttpRequestMessage, completionOption As HttpCompletionOption) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  id: SendAsync(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpCompletionOption,System.Threading.CancellationToken)
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: SendAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)
+  nameWithType: IHttpClient.SendAsync(HttpRequestMessage, HttpCompletionOption, CancellationToken)
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpCompletionOption, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SendAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+    parameters:
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+    - id: completionOption
+      type: System.Net.Http.HttpCompletionOption
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+    content.vb: Function SendAsync(request As HttpRequestMessage, completionOption As HttpCompletionOption, cancellationToken As CancellationToken) As Task(Of HttpResponseMessage)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests
+  id: CancelPendingRequests
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient
+  langs:
+  - csharp
+  - vb
+  name: CancelPendingRequests()
+  nameWithType: IHttpClient.CancelPendingRequests()
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CancelPendingRequests
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IHttpClient.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: void CancelPendingRequests()
+    content.vb: Sub CancelPendingRequests
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests*
+references:
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders
+  name: DefaultRequestHeaders
+  nameWithType: IHttpClient.DefaultRequestHeaders
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DefaultRequestHeaders
+- uid: System.Net.Http.Headers.HttpRequestHeaders
+  commentId: T:System.Net.Http.Headers.HttpRequestHeaders
+  parent: System.Net.Http.Headers
+  isExternal: true
+  name: HttpRequestHeaders
+  nameWithType: HttpRequestHeaders
+  fullName: System.Net.Http.Headers.HttpRequestHeaders
+- uid: System.Net.Http.Headers
+  commentId: N:System.Net.Http.Headers
+  isExternal: true
+  name: System.Net.Http.Headers
+  nameWithType: System.Net.Http.Headers
+  fullName: System.Net.Http.Headers
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress
+  name: BaseAddress
+  nameWithType: IHttpClient.BaseAddress
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.BaseAddress
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout
+  name: Timeout
+  nameWithType: IHttpClient.Timeout
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.Timeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize
+  name: MaxResponseContentBufferSize
+  nameWithType: IHttpClient.MaxResponseContentBufferSize
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.MaxResponseContentBufferSize
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync
+  name: GetStringAsync
+  nameWithType: IHttpClient.GetStringAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStringAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync
+  name: GetByteArrayAsync
+  nameWithType: IHttpClient.GetByteArrayAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetByteArrayAsync
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync
+  name: GetStreamAsync
+  nameWithType: IHttpClient.GetStreamAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetStreamAsync
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync
+  name: GetAsync
+  nameWithType: IHttpClient.GetAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.GetAsync
+- uid: System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  commentId: T:System.Threading.Tasks.Task{System.Net.Http.HttpResponseMessage}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HttpResponseMessage>
+  nameWithType: Task<HttpResponseMessage>
+  fullName: System.Threading.Tasks.Task<System.Net.Http.HttpResponseMessage>
+  nameWithType.vb: Task(Of HttpResponseMessage)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Net.Http.HttpResponseMessage)
+  name.vb: Task(Of HttpResponseMessage)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Net.Http.HttpResponseMessage
+    name: HttpResponseMessage
+    nameWithType: HttpResponseMessage
+    fullName: System.Net.Http.HttpResponseMessage
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http.HttpCompletionOption
+  commentId: T:System.Net.Http.HttpCompletionOption
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpCompletionOption
+  nameWithType: HttpCompletionOption
+  fullName: System.Net.Http.HttpCompletionOption
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync
+  name: PostAsync
+  nameWithType: IHttpClient.PostAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PostAsync
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync
+  name: PutAsync
+  nameWithType: IHttpClient.PutAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.PutAsync
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync
+  name: DeleteAsync
+  nameWithType: IHttpClient.DeleteAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.DeleteAsync
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync
+  name: SendAsync
+  nameWithType: IHttpClient.SendAsync
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.SendAsync
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests
+  name: CancelPendingRequests
+  nameWithType: IHttpClient.CancelPendingRequests
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClient.CancelPendingRequests

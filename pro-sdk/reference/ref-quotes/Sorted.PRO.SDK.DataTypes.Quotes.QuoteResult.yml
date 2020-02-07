@@ -1,0 +1,779 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  commentId: T:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  id: QuoteResult
+  parent: Sorted.PRO.SDK.DataTypes.Quotes
+  children:
+  - Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message
+  - Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference
+  - Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes
+  - Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices
+  langs:
+  - csharp
+  - vb
+  name: QuoteResult
+  nameWithType: QuoteResult
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: QuoteResult
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Quote Result", "The results of a quote for a consignment.")]
+
+      [Serializable]
+
+      public class QuoteResult
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Quote Result", "The results of a quote for a consignment.")>
+
+      <Serializable>
+
+      Public Class QuoteResult
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Sorted.PRO.SDK.DataTypes.Quotes.ServiceGroupQuoteResult
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Quote Result
+    - type: System.String
+      value: The results of a quote for a consignment.
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference
+  id: QuoteRequestReference
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  langs:
+  - csharp
+  - vb
+  name: QuoteRequestReference
+  nameWithType: QuoteResult.QuoteRequestReference
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: QuoteRequestReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the quote request reference - a unique reference assigned to the \nrequest that generated the result.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The unique reference for this quote request.", false, PropertyCollectionType.Single)]
+
+      public Guid QuoteRequestReference { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+      description: "\nThe quote request reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The unique reference for this quote request.", False, PropertyCollectionType.Single)>
+
+      Public Property QuoteRequestReference As Guid
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The unique reference for this quote request.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes
+  id: Quotes
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  langs:
+  - csharp
+  - vb
+  name: Quotes
+  nameWithType: QuoteResult.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Quotes
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+    startLine: 32
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the quotes.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A collection of quotes.", PropertyCollectionType.Collection)]
+
+      public List<Quote> Quotes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.Quote}
+      description: "\nThe quotes.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A collection of quotes.", PropertyCollectionType.Collection)>
+
+      Public Property Quotes As List(Of Quote)
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A collection of quotes.
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message
+  id: Message
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: QuoteResult.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Message
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the message.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A message relating to this quote result.", false, PropertyCollectionType.Single)]
+
+      public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe message.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A message relating to this quote result.", False, PropertyCollectionType.Single)>
+
+      Public Property Message As String
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A message relating to this quote result.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices
+  commentId: P:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices
+  id: UnqualifiedServices
+  parent: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult
+  langs:
+  - csharp
+  - vb
+  name: UnqualifiedServices
+  nameWithType: QuoteResult.UnqualifiedServices
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UnqualifiedServices
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/QuoteResult.cs
+    startLine: 53
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nGets or sets the unqualified services - a list of \nservices for which quotes could not be obtained.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A list of services that are unable to provide a quote, including reasons.", PropertyCollectionType.Collection)]
+
+      public List<UnqualifiedService> UnqualifiedServices { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService}
+      description: "\nThe unqualified services.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A list of services that are unable to provide a quote, including reasons.", PropertyCollectionType.Collection)>
+
+      Public Property UnqualifiedServices As List(Of UnqualifiedService)
+  overload: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A list of services that are unable to provide a quote, including reasons.
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Quotes
+  commentId: N:Sorted.PRO.SDK.DataTypes.Quotes
+  name: Sorted.PRO.SDK.DataTypes.Quotes
+  nameWithType: Sorted.PRO.SDK.DataTypes.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference
+  name: QuoteRequestReference
+  nameWithType: QuoteResult.QuoteRequestReference
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.QuoteRequestReference
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes
+  name: Quotes
+  nameWithType: QuoteResult.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Quotes
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.Quote}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.Quote}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Quote>
+  nameWithType: List<Quote>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Quotes.Quote>
+  nameWithType.vb: List(Of Quote)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Quotes.Quote)
+  name.vb: List(Of Quote)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.Quote
+    name: Quote
+    nameWithType: Quote
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.Quote
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.Quote
+    name: Quote
+    nameWithType: Quote
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.Quote
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message
+  name: Message
+  nameWithType: QuoteResult.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices
+  name: UnqualifiedServices
+  nameWithType: QuoteResult.UnqualifiedServices
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteResult.UnqualifiedServices
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<UnqualifiedService>
+  nameWithType: List<UnqualifiedService>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService>
+  nameWithType.vb: List(Of UnqualifiedService)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService)
+  name.vb: List(Of UnqualifiedService)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+    name: UnqualifiedService
+    nameWithType: UnqualifiedService
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+    name: UnqualifiedService
+    nameWithType: UnqualifiedService
+    fullName: Sorted.PRO.SDK.DataTypes.Quotes.UnqualifiedService
+  - name: )
+    nameWithType: )
+    fullName: )

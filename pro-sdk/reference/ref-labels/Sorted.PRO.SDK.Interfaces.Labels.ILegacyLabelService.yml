@@ -1,0 +1,551 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  id: ILegacyLabelService
+  parent: Sorted.PRO.SDK.Interfaces.Labels
+  children:
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String)
+  - Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  langs:
+  - csharp
+  - vb
+  name: ILegacyLabelService
+  nameWithType: ILegacyLabelService
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ILegacyLabelService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\n<p>The interface for <a href=\"Sorted.PRO.SDK.Labels.LegacyLabelService.html\">LegacyLabelService</a>. Retrieves package and consignment labels.</p> \n<p><strong>Note:</strong> This service is <em>now deprecated</em>. Please use <a href=\"Sorted.PRO.SDK.Labels.LabelService.html\">LabelService</a> instead.</p>\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use ILabelService")]
+
+      public interface ILegacyLabelService
+    content.vb: >-
+      <Obsolete("Deprecated Use ILabelService")>
+
+      Public Interface ILegacyLabelService
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use ILabelService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String)
+  id: GetLabels(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabels(String)
+  nameWithType: ILegacyLabelService.GetLabels(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabels
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns labels for the specified consignment reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      GetLabelsResponse GetLabels(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference to retrieve labels for
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+      description: Label data for all packages in the consignment
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetLabels(consignmentReference As String) As GetLabelsResponse
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  id: GetLabels(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabels(String, LegacyLabelFormat)
+  nameWithType: ILegacyLabelService.GetLabels(String, LegacyLabelFormat)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels(System.String, Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabels
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 27
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns labels for the specified consignment reference, in the specified format.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      GetLabelsResponse GetLabels(string consignmentReference, LegacyLabelFormat labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference to retrieve labels for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+      description: The format to output the labels in.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+      description: Label data for all packages in the consignment
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetLabels(consignmentReference As String, labelFormat As LegacyLabelFormat) As GetLabelsResponse
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String)
+  id: GetLabelsAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabelsAsync(String)
+  nameWithType: ILegacyLabelService.GetLabelsAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 35
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns labels for the specified consignment reference.\n"
+  example: []
+  syntax:
+    content: Task<GetLabelsResponse> GetLabelsAsync(string consignmentReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference to retrieve labels for
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: Label data for all packages in the consignment
+    content.vb: Function GetLabelsAsync(consignmentReference As String) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  id: GetLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabelsAsync(String, LegacyLabelFormat)
+  nameWithType: ILegacyLabelService.GetLabelsAsync(String, LegacyLabelFormat)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync(System.String, Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 43
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns labels for the specified consignment reference, in the specified format.\n"
+  example: []
+  syntax:
+    content: Task<GetLabelsResponse> GetLabelsAsync(string consignmentReference, LegacyLabelFormat labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference to retrieve labels for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+      description: The format to output the labels in.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: Label data for all packages in the consignment
+    content.vb: Function GetLabelsAsync(consignmentReference As String, labelFormat As LegacyLabelFormat) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String)
+  id: GetLabel(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabel(String, String)
+  nameWithType: ILegacyLabelService.GetLabel(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabel
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 51
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns the label for an individual package within the specified consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      GetLabelsResponse GetLabel(string consignmentReference, string packageReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference the package belongs to
+    - id: packageReference
+      type: System.String
+      description: The package reference to retrieve a label for
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+      description: Label data for the selected package
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetLabel(consignmentReference As String, packageReference As String) As GetLabelsResponse
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  id: GetLabel(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabel(String, String, LegacyLabelFormat)
+  nameWithType: ILegacyLabelService.GetLabel(String, String, LegacyLabelFormat)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel(System.String, System.String, Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabel
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 61
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns the label for an individual package within the specified consignment, in the specified format.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      GetLabelsResponse GetLabel(string consignmentReference, string packageReference, LegacyLabelFormat labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference the package belongs to
+    - id: packageReference
+      type: System.String
+      description: The package reference to retrieve a label for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+      description: The format to output the label in.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+      description: Label data for the selected package
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetLabel(consignmentReference As String, packageReference As String, labelFormat As LegacyLabelFormat) As GetLabelsResponse
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String)
+  id: GetLabelAsync(System.String,System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabelAsync(String, String)
+  nameWithType: ILegacyLabelService.GetLabelAsync(String, String)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabelAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 70
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns the label for an individual package within the specified consignment.\n"
+  example: []
+  syntax:
+    content: Task<GetLabelsResponse> GetLabelAsync(string consignmentReference, string packageReference)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference the package belongs to
+    - id: packageReference
+      type: System.String
+      description: The package reference to retrieve a label for
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: Label data for the selected package
+    content.vb: Function GetLabelAsync(consignmentReference As String, packageReference As String) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  id: GetLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService
+  langs:
+  - csharp
+  - vb
+  name: GetLabelAsync(String, String, LegacyLabelFormat)
+  nameWithType: ILegacyLabelService.GetLabelAsync(String, String, LegacyLabelFormat)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetLabelAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Labels/ILegacyLabelService.cs
+    startLine: 79
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Labels
+  namespace: Sorted.PRO.SDK.Interfaces.Labels
+  summary: "\nReturns the label for an individual package within the specified consignment, in the specified format.\n"
+  example: []
+  syntax:
+    content: Task<GetLabelsResponse> GetLabelAsync(string consignmentReference, string packageReference, LegacyLabelFormat labelFormat)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference the package belongs to
+    - id: packageReference
+      type: System.String
+      description: The package reference to retrieve a label for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+      description: The format to output the label in.
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: Label data for the selected package
+    content.vb: Function GetLabelAsync(consignmentReference As String, packageReference As String, labelFormat As LegacyLabelFormat) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Labels
+  commentId: N:Sorted.PRO.SDK.Interfaces.Labels
+  name: Sorted.PRO.SDK.Interfaces.Labels
+  nameWithType: Sorted.PRO.SDK.Interfaces.Labels
+  fullName: Sorted.PRO.SDK.Interfaces.Labels
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels
+  name: GetLabels
+  nameWithType: ILegacyLabelService.GetLabels
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabels
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: GetLabelsResponse
+  nameWithType: GetLabelsResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Labels
+  commentId: N:Sorted.PRO.SDK.DataTypes.Labels
+  name: Sorted.PRO.SDK.DataTypes.Labels
+  nameWithType: Sorted.PRO.SDK.DataTypes.Labels
+  fullName: Sorted.PRO.SDK.DataTypes.Labels
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: LegacyLabelFormat
+  nameWithType: LegacyLabelFormat
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync
+  name: GetLabelsAsync
+  nameWithType: ILegacyLabelService.GetLabelsAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelsAsync
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetLabelsResponse>
+  nameWithType: Task<GetLabelsResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse>
+  nameWithType.vb: Task(Of GetLabelsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse)
+  name.vb: Task(Of GetLabelsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+    name: GetLabelsResponse
+    nameWithType: GetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+    name: GetLabelsResponse
+    nameWithType: GetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel
+  name: GetLabel
+  nameWithType: ILegacyLabelService.GetLabel
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabel
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync
+  name: GetLabelAsync
+  nameWithType: ILegacyLabelService.GetLabelAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILegacyLabelService.GetLabelAsync

@@ -1,0 +1,3254 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  id: ConsignmentSummary
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentSummary
+  nameWithType: ConsignmentSummary
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentSummary
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Summary", "A summary view of a consignment record.")]
+
+      public sealed class ConsignmentSummary
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Summary", "A summary view of a consignment record.")>
+
+      Public NotInheritable Class ConsignmentSummary
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Summary
+    - type: System.String
+      value: A summary view of a consignment record.
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference
+  id: Reference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: ConsignmentSummary.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Reference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the Electio Consignment reference (EC-xxx-xxx-xxx)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 1)]
+
+      [DataContractItem("The reference of the consignment.", false, PropertyCollectionType.Single)]
+
+      public string Reference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe reference.\n"
+    content.vb: >-
+      <DataMember(Order:=1)>
+
+      <DataContractItem("The reference of the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property Reference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 1
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  id: ConsignmentReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReferenceProvidedByCustomer
+  nameWithType: ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReferenceProvidedByCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the reference provided by customer.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 2)]
+
+      [DataContractItem("The consignment reference provided by the customer.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentReferenceProvidedByCustomer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe reference provided by customer.\n"
+    content.vb: >-
+      <DataMember(Order:=2)>
+
+      <DataContractItem("The consignment reference provided by the customer.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReferenceProvidedByCustomer As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 2
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The consignment reference provided by the customer.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated
+  id: DateCreated
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DateCreated
+  nameWithType: ConsignmentSummary.DateCreated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DateCreated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 44
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the date created.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 3)]
+
+      [DataContractItem("The date and time that the consignment was created.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset DateCreated { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: "\nThe date created.\n"
+    content.vb: >-
+      <DataMember(Order:=3)>
+
+      <DataContractItem("The date and time that the consignment was created.", False, PropertyCollectionType.Single)>
+
+      Public Property DateCreated As DateTimeOffset
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 3
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date and time that the consignment was created.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State
+  id: State
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: ConsignmentSummary.State
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: State
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 65
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the state of the Consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 4)]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      [DataContractItem("The current state of the consignment.", false, PropertyCollectionType.Single)]
+
+      public ConsignmentState State { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+      description: "\nThe state.\n"
+    content.vb: >-
+      <DataMember(Order:=4)>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      <DataContractItem("The current state of the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property State As ConsignmentState
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 4
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The current state of the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate
+  id: ShippingDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: ShippingDate
+  nameWithType: ConsignmentSummary.ShippingDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 76
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the requested shipping date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 5)]
+
+      [DataContractItem("The shipping date of the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? ShippingDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe shipping date.\n"
+    content.vb: >-
+      <DataMember(Order:=5)>
+
+      <DataContractItem("The shipping date of the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property ShippingDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 5
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The shipping date of the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference
+  id: MpdCarrierReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierReference
+  nameWithType: ConsignmentSummary.MpdCarrierReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 97
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the MPD carrier reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 6)]
+
+      [DataContractItem("The reference of the carrier associated with the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe MPD carrier reference.\n"
+    content.vb: >-
+      <DataMember(Order:=6)>
+
+      <DataContractItem("The reference of the carrier associated with the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 6
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the carrier associated with the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference
+  id: MpdCarrierServiceReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceReference
+  nameWithType: ConsignmentSummary.MpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 107
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the MPD carrier service reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 7)]
+
+      [DataContractItem("The reference of the carrier service associated with the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe MPD carrier service reference.\n"
+    content.vb: >-
+      <DataMember(Order:=7)>
+
+      <DataContractItem("The reference of the carrier service associated with the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 7
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the carrier service associated with the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate
+  id: AllocationDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: AllocationDate
+  nameWithType: ConsignmentSummary.AllocationDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocationDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 117
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the  allocation date - the date on which the consignment was allocated.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 8)]
+
+      [DataContractItem("The date that the consignment was allocated (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? AllocationDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe active allocation date.\n"
+    content.vb: >-
+      <DataMember(Order:=8)>
+
+      <DataContractItem("The date that the consignment was allocated (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property AllocationDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 8
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date that the consignment was allocated (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate
+  id: ShippedDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: ShippedDate
+  nameWithType: ConsignmentSummary.ShippedDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippedDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 138
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the date on which the consignment was shipped\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Order = 9)]
+
+      [DataContractItem("The date that the consignment was shipped (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? ShippedDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe shipped date.\n"
+    content.vb: >-
+      <DataMember(Order:=9)>
+
+      <DataContractItem("The date that the consignment was shipped (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property ShippedDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Order
+      type: System.Int32
+      value: 9
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date that the consignment was shipped (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source
+  id: Source
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: ConsignmentSummary.Source
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Source
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 159
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the source of the creation of the consignment - API or Electio website.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The source of the consignment, e.g. \"Web\", \"API\".", false, PropertyCollectionType.Single)]
+
+      public string Source { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe source.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The source of the consignment, e.g. ""Web"", ""API"".", False, PropertyCollectionType.Single)>
+
+      Public Property Source As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The source of the consignment, e.g. "Web", "API".
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName
+  id: MpdCarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceName
+  nameWithType: ConsignmentSummary.MpdCarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 169
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the name of the MPD carrier service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the carrier service associated with the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the MPD carrier service.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the carrier service associated with the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the carrier service associated with the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName
+  id: MpdCarrierServiceGroupName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceGroupName
+  nameWithType: ConsignmentSummary.MpdCarrierServiceGroupName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceGroupName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 179
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the name of the MPD carrier service group.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the service group the consignment was allocated with (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceGroupName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the MPD carrier service group.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the service group the consignment was allocated with (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceGroupName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the service group the consignment was allocated with (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference
+  id: MpdCarrierServiceGroupReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceGroupReference
+  nameWithType: ConsignmentSummary.MpdCarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceGroupReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 189
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the MPD carrier service group reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the service group the consignment was allocated with (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceGroupReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe MPD carrier service group reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the service group the consignment was allocated with (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceGroupReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the service group the consignment was allocated with (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1
+  id: DestinationAddressLine1
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddressLine1
+  nameWithType: ConsignmentSummary.DestinationAddressLine1
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DestinationAddressLine1
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 200
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the destination address line1.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The destination address line 1.", false, PropertyCollectionType.Single)]
+
+      public string DestinationAddressLine1 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe destination address line1.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The destination address line 1.", False, PropertyCollectionType.Single)>
+
+      Public Property DestinationAddressLine1 As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The destination address line 1.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown
+  id: DestinationAddressTown
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddressTown
+  nameWithType: ConsignmentSummary.DestinationAddressTown
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DestinationAddressTown
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 210
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the destination address town.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The destination address town.", false, PropertyCollectionType.Single)]
+
+      public string DestinationAddressTown { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe destination address town.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The destination address town.", False, PropertyCollectionType.Single)>
+
+      Public Property DestinationAddressTown As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The destination address town.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode
+  id: DestinationAddressPostcode
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddressPostcode
+  nameWithType: ConsignmentSummary.DestinationAddressPostcode
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DestinationAddressPostcode
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 220
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the destination address postcode.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The destination address postcode.", false, PropertyCollectionType.Single)]
+
+      public string DestinationAddressPostcode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe destination address postcode.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The destination address postcode.", False, PropertyCollectionType.Single)>
+
+      Public Property DestinationAddressPostcode As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The destination address postcode.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry
+  id: DestinationAddressCountry
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DestinationAddressCountry
+  nameWithType: ConsignmentSummary.DestinationAddressCountry
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DestinationAddressCountry
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 230
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the destination address country.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The destination address country.", false, PropertyCollectionType.Single)]
+
+      public string DestinationAddressCountry { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe destination address country.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The destination address country.", False, PropertyCollectionType.Single)>
+
+      Public Property DestinationAddressCountry As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The destination address country.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference
+  id: DestinationShippingLocationReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DestinationShippingLocationReference
+  nameWithType: ConsignmentSummary.DestinationShippingLocationReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DestinationShippingLocationReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 240
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the destination shipping location reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The destination address shipping location reference (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string DestinationShippingLocationReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe destination shipping location reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The destination address shipping location reference (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property DestinationShippingLocationReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The destination address shipping location reference (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate
+  id: RequestedDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: RequestedDeliveryDate
+  nameWithType: ConsignmentSummary.RequestedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RequestedDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 250
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the requested delivery date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The requested delivery date, if supplied.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? RequestedDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe requested delivery date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The requested delivery date, if supplied.", False, PropertyCollectionType.Single)>
+
+      Public Property RequestedDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The requested delivery date, if supplied.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  id: RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  nameWithType: ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 271
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the requested delivery date is to be exactly on the date specified.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Flag indicating whether the requested delivery date was to be exact (if applicable).", false, PropertyCollectionType.Single)]
+
+      public bool? RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+      description: "\nThe requested delivery date is to be exactly on the date specified.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Flag indicating whether the requested delivery date was to be exact (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified As Boolean?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Flag indicating whether the requested delivery date was to be exact (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted
+  id: LabelsPrinted
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: LabelsPrinted
+  nameWithType: ConsignmentSummary.LabelsPrinted
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelsPrinted
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 281
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets a value indicating whether labels have been printed.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether labels have ever been printed.", false, PropertyCollectionType.Single)]
+
+      public bool LabelsPrinted { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if labels have been printed otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether labels have ever been printed.", False, PropertyCollectionType.Single)>
+
+      Public Property LabelsPrinted As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether labels have ever been printed.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted
+  id: DateLabelsWereFirstPrinted
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DateLabelsWereFirstPrinted
+  nameWithType: ConsignmentSummary.DateLabelsWereFirstPrinted
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DateLabelsWereFirstPrinted
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 291
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the date labels were first printed.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The date and time that labels were first printed (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? DateLabelsWereFirstPrinted { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe date labels were first printed.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The date and time that labels were first printed (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property DateLabelsWereFirstPrinted As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date and time that labels were first printed (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate
+  id: EstimatedDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: EstimatedDeliveryDate
+  nameWithType: ConsignmentSummary.EstimatedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: EstimatedDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 312
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the estimated delivery date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The estimated delivery date (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? EstimatedDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe estimated delivery date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The estimated delivery date (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property EstimatedDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The estimated delivery date (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms
+  id: ShippingTerms
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: ShippingTerms
+  nameWithType: ConsignmentSummary.ShippingTerms
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShippingTerms
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 333
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the shipping terms.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The shipping terms for the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public ShippingTerms? ShippingTerms { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms}
+      description: "\nThe shipping terms.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The shipping terms for the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property ShippingTerms As ShippingTerms?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The shipping terms for the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  id: FailedAllocationAttemptedAllocationDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocationAttemptedAllocationDate
+  nameWithType: ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocationAttemptedAllocationDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 347
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the failed allocation attempted allocation date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The attempted date of failed allocation - only applicable when allocation has been attempted but was not successful.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? FailedAllocationAttemptedAllocationDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe failed allocation attempted allocation date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The attempted date of failed allocation - only applicable when allocation has been attempted but was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedAllocationAttemptedAllocationDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The attempted date of failed allocation - only applicable when allocation has been attempted but was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage
+  id: FailedAllocationMessage
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocationMessage
+  nameWithType: ConsignmentSummary.FailedAllocationMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocationMessage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 368
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the failed allocation message.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The failed allocation message - only applicable when allocation has been attempted but was not successful.", false, PropertyCollectionType.Single)]
+
+      public string FailedAllocationMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe failed allocation message.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The failed allocation message - only applicable when allocation has been attempted but was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedAllocationMessage As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The failed allocation message - only applicable when allocation has been attempted but was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  id: FailedAllocationMpdCarrierServiceReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocationMpdCarrierServiceReference
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocationMpdCarrierServiceReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 378
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the failed allocation MPD carrier service reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The carrier service reference of the failed allocation - only applicable when allocation has been attempted but was not successful.", false, PropertyCollectionType.Single)]
+
+      public string FailedAllocationMpdCarrierServiceReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe failed allocation MPD carrier service reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The carrier service reference of the failed allocation - only applicable when allocation has been attempted but was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedAllocationMpdCarrierServiceReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The carrier service reference of the failed allocation - only applicable when allocation has been attempted but was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  id: FailedAllocationMpdCarrierServiceGroupName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocationMpdCarrierServiceGroupName
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocationMpdCarrierServiceGroupName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 388
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the name of the failed alloc MPD carrier service group.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The service group name of the failed allocation - only applicable when allocation has been attempted with a service group was not successful.", false, PropertyCollectionType.Single)]
+
+      public string FailedAllocationMpdCarrierServiceGroupName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the failed alloc MPD carrier service group.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The service group name of the failed allocation - only applicable when allocation has been attempted with a service group was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedAllocationMpdCarrierServiceGroupName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The service group name of the failed allocation - only applicable when allocation has been attempted with a service group was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  id: FailedAllocationMpdCarrierServiceGroupReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocationMpdCarrierServiceGroupReference
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocationMpdCarrierServiceGroupReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 398
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the failed allocation MPD carrier service group reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The service group reference of the failed allocation - only applicable when allocation has been attempted with a service group but was not successful.", false, PropertyCollectionType.Single)]
+
+      public string FailedAllocationMpdCarrierServiceGroupReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe failed allocation MPD carrier service group reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The service group reference of the failed allocation - only applicable when allocation has been attempted with a service group but was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedAllocationMpdCarrierServiceGroupReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The service group reference of the failed allocation - only applicable when allocation has been attempted with a service group but was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  id: FailedAllocationMpdCarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocationMpdCarrierServiceName
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocationMpdCarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 408
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the name of the failed allocation MPD carrier service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The carrier service name of the failed allocation - only applicable when allocation has been attempted but was not successful.", false, PropertyCollectionType.Single)]
+
+      public string FailedAllocationMpdCarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the failed allocation MPD carrier service.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The carrier service name of the failed allocation - only applicable when allocation has been attempted but was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedAllocationMpdCarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The carrier service name of the failed allocation - only applicable when allocation has been attempted but was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate
+  id: IsLate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: IsLate
+  nameWithType: ConsignmentSummary.IsLate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsLate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 418
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets a value indicating whether this instance is late.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Indicates whether the consignment is late.", false, PropertyCollectionType.Single)]
+
+      public bool IsLate { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is late; otherwise, <code>false</code>.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Indicates whether the consignment is late.", False, PropertyCollectionType.Single)>
+
+      Public Property IsLate As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Indicates whether the consignment is late.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate
+  id: DeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: DeliveryDate
+  nameWithType: ConsignmentSummary.DeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 428
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the delivery date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The delivery date of the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? DeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe delivery date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The delivery date of the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property DeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The delivery date of the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate
+  id: CollectionDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: CollectionDate
+  nameWithType: ConsignmentSummary.CollectionDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CollectionDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 449
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the collection date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The collection date of the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? CollectionDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe collection date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The collection date of the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property CollectionDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The collection date of the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate
+  id: AttemptedDeliveryDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: AttemptedDeliveryDate
+  nameWithType: ConsignmentSummary.AttemptedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AttemptedDeliveryDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 470
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the attempted delivery date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The attempted delivery date of the consignment (if applicable).", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? AttemptedDeliveryDate { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+      description: "\nThe attempted delivery date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The attempted delivery date of the consignment (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property AttemptedDeliveryDate As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The attempted delivery date of the consignment (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value
+  id: Value
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ConsignmentSummary.Value
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Value
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 491
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the monetary value of the Consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The value of the consignment.", false, PropertyCollectionType.Single)]
+
+      public Money Value { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Money
+      description: "\nThe value.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The value of the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property Value As Money
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The value of the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight
+  id: Weight
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: ConsignmentSummary.Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Weight
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 501
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the weight of the Consignment in Kgs.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The weight of the consignment.", false, PropertyCollectionType.Single)]
+
+      public Weight Weight { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Weight
+      description: "\nThe weight.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The weight of the consignment.", False, PropertyCollectionType.Single)>
+
+      Public Property Weight As Weight
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The weight of the consignment.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink
+  id: ApiLink
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: ApiLink
+  nameWithType: ConsignmentSummary.ApiLink
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ApiLink
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 511
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the API link.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Link to the full consignment details.", false, PropertyCollectionType.Single)]
+
+      public ApiLink ApiLink { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+      description: "\nThe API link.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Link to the full consignment details.", False, PropertyCollectionType.Single)>
+
+      Public Property ApiLink As ApiLink
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Link to the full consignment details.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage
+  id: FailedManifestMessage
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedManifestMessage
+  nameWithType: ConsignmentSummary.FailedManifestMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedManifestMessage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 518
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the reason for a failed manifest\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Message for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.", false, PropertyCollectionType.Single)]
+
+      public string FailedManifestMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Message for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedManifestMessage As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Message for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp
+  id: FailedManifestTimeStamp
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary
+  langs:
+  - csharp
+  - vb
+  name: FailedManifestTimeStamp
+  nameWithType: ConsignmentSummary.FailedManifestTimeStamp
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedManifestTimeStamp
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentSummary.cs
+    startLine: 525
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the failed manifest date\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Date and time for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset? FailedManifestTimeStamp { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Date and time for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.", False, PropertyCollectionType.Single)>
+
+      Public Property FailedManifestTimeStamp As DateTimeOffset?
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Date and time for a failed manifest event - only applicable when an attempt has been made to manifest but the attempt was not successful.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference
+  name: Reference
+  nameWithType: ConsignmentSummary.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Reference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  name: ConsignmentReferenceProvidedByCustomer
+  nameWithType: ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ConsignmentReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated
+  name: DateCreated
+  nameWithType: ConsignmentSummary.DateCreated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateCreated
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State
+  name: State
+  nameWithType: ConsignmentSummary.State
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.State
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentState
+  nameWithType: ConsignmentState
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentState
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate
+  name: ShippingDate
+  nameWithType: ConsignmentSummary.ShippingDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingDate
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTimeOffset>
+  nameWithType: Nullable<DateTimeOffset>
+  fullName: System.Nullable<System.DateTimeOffset>
+  nameWithType.vb: Nullable(Of DateTimeOffset)
+  fullName.vb: System.Nullable(Of System.DateTimeOffset)
+  name.vb: Nullable(Of DateTimeOffset)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    nameWithType: DateTimeOffset
+    fullName: System.DateTimeOffset
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference
+  name: MpdCarrierReference
+  nameWithType: ConsignmentSummary.MpdCarrierReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference
+  name: MpdCarrierServiceReference
+  nameWithType: ConsignmentSummary.MpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate
+  name: AllocationDate
+  nameWithType: ConsignmentSummary.AllocationDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AllocationDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate
+  name: ShippedDate
+  nameWithType: ConsignmentSummary.ShippedDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippedDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source
+  name: Source
+  nameWithType: ConsignmentSummary.Source
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Source
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName
+  name: MpdCarrierServiceName
+  nameWithType: ConsignmentSummary.MpdCarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName
+  name: MpdCarrierServiceGroupName
+  nameWithType: ConsignmentSummary.MpdCarrierServiceGroupName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference
+  name: MpdCarrierServiceGroupReference
+  nameWithType: ConsignmentSummary.MpdCarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.MpdCarrierServiceGroupReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1
+  name: DestinationAddressLine1
+  nameWithType: ConsignmentSummary.DestinationAddressLine1
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressLine1
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown
+  name: DestinationAddressTown
+  nameWithType: ConsignmentSummary.DestinationAddressTown
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressTown
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode
+  name: DestinationAddressPostcode
+  nameWithType: ConsignmentSummary.DestinationAddressPostcode
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressPostcode
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry
+  name: DestinationAddressCountry
+  nameWithType: ConsignmentSummary.DestinationAddressCountry
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationAddressCountry
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference
+  name: DestinationShippingLocationReference
+  nameWithType: ConsignmentSummary.DestinationShippingLocationReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DestinationShippingLocationReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate
+  name: RequestedDeliveryDate
+  nameWithType: ConsignmentSummary.RequestedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  name: RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  nameWithType: ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.RequestedDeliveryDateIsToBeExactlyOnTheDateSpecified
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Boolean>
+  nameWithType: Nullable<Boolean>
+  fullName: System.Nullable<System.Boolean>
+  nameWithType.vb: Nullable(Of Boolean)
+  fullName.vb: System.Nullable(Of System.Boolean)
+  name.vb: Nullable(Of Boolean)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted
+  name: LabelsPrinted
+  nameWithType: ConsignmentSummary.LabelsPrinted
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.LabelsPrinted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted
+  name: DateLabelsWereFirstPrinted
+  nameWithType: ConsignmentSummary.DateLabelsWereFirstPrinted
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DateLabelsWereFirstPrinted
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate
+  name: EstimatedDeliveryDate
+  nameWithType: ConsignmentSummary.EstimatedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.EstimatedDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms
+  name: ShippingTerms
+  nameWithType: ConsignmentSummary.ShippingTerms
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ShippingTerms
+- uid: System.Nullable{Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms}
+  commentId: T:System.Nullable{Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<ShippingTerms>
+  nameWithType: Nullable<ShippingTerms>
+  fullName: System.Nullable<Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms>
+  nameWithType.vb: Nullable(Of ShippingTerms)
+  fullName.vb: System.Nullable(Of Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms)
+  name.vb: Nullable(Of ShippingTerms)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms
+    name: ShippingTerms
+    nameWithType: ShippingTerms
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms
+    name: ShippingTerms
+    nameWithType: ShippingTerms
+    fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ShippingTerms
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  name: FailedAllocationAttemptedAllocationDate
+  nameWithType: ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationAttemptedAllocationDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage
+  name: FailedAllocationMessage
+  nameWithType: ConsignmentSummary.FailedAllocationMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMessage
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  name: FailedAllocationMpdCarrierServiceReference
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  name: FailedAllocationMpdCarrierServiceGroupName
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  name: FailedAllocationMpdCarrierServiceGroupReference
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceGroupReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  name: FailedAllocationMpdCarrierServiceName
+  nameWithType: ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedAllocationMpdCarrierServiceName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate
+  name: IsLate
+  nameWithType: ConsignmentSummary.IsLate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.IsLate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate
+  name: DeliveryDate
+  nameWithType: ConsignmentSummary.DeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.DeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate
+  name: CollectionDate
+  nameWithType: ConsignmentSummary.CollectionDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.CollectionDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate
+  name: AttemptedDeliveryDate
+  nameWithType: ConsignmentSummary.AttemptedDeliveryDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.AttemptedDeliveryDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value
+  name: Value
+  nameWithType: ConsignmentSummary.Value
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Value
+- uid: Sorted.PRO.SDK.DataTypes.Common.Money
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Money
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Money
+  nameWithType: Money
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Money
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight
+  name: Weight
+  nameWithType: ConsignmentSummary.Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.Weight
+- uid: Sorted.PRO.SDK.DataTypes.Common.Weight
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Weight
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Weight
+  nameWithType: Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Weight
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink
+  name: ApiLink
+  nameWithType: ConsignmentSummary.ApiLink
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.ApiLink
+- uid: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.ApiLink
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: ApiLink
+  nameWithType: ApiLink
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ApiLink
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage
+  name: FailedManifestMessage
+  nameWithType: ConsignmentSummary.FailedManifestMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestMessage
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp
+  name: FailedManifestTimeStamp
+  nameWithType: ConsignmentSummary.FailedManifestTimeStamp
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentSummary.FailedManifestTimeStamp

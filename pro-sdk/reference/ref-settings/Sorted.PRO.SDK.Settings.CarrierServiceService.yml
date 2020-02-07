@@ -1,0 +1,1505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService
+  commentId: T:Sorted.PRO.SDK.Settings.CarrierServiceService
+  id: CarrierServiceService
+  parent: Sorted.PRO.SDK.Settings
+  children:
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  - Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceService
+  nameWithType: CarrierServiceService
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nRetrieve Carrier Services and MPD Carrier Services\n"
+  example: []
+  syntax:
+    content: 'public class CarrierServiceService : BaseService, ICarrierServiceService'
+    content.vb: >-
+      Public Class CarrierServiceService
+          Inherits BaseService
+          Implements ICarrierServiceService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: CarrierServiceService.CarrierServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.CarrierServiceService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Settings.CarrierServiceService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public CarrierServiceService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.#ctor*
+  nameWithType.vb: CarrierServiceService.CarrierServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Settings.CarrierServiceService.CarrierServiceService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: CarrierServiceService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  id: GetAvailableMpdCarrierServicesForSubscription
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableMpdCarrierServicesForSubscription()
+  nameWithType: CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription()
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableMpdCarrierServicesForSubscription
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the available MPD carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Available MPD Carrier Services", "Returns the available MPD Carrier Services for your subscription.", "Carrier Services", typeof(SubscriptionMpdCarrierServiceResponse), "/carrierservices", "GET", new HttpStatusCode[]{HttpStatusCode.OK, HttpStatusCode.NotFound})]
+
+      public SubscriptionMpdCarrierServiceResponse GetAvailableMpdCarrierServicesForSubscription()
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+      description: "\nA collection of MPD Carrier Services\n"
+    content.vb: >-
+      <ApiEndpoint("Get Available MPD Carrier Services", "Returns the available MPD Carrier Services for your subscription.", "Carrier Services", GetType(SubscriptionMpdCarrierServiceResponse), "/carrierservices", "GET", New HttpStatusCode() {HttpStatusCode.OK, HttpStatusCode.NotFound})>
+
+      Public Function GetAvailableMpdCarrierServicesForSubscription As SubscriptionMpdCarrierServiceResponse
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription
+  id: GetAvailableCarrierServicesForSubscription
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableCarrierServicesForSubscription()
+  nameWithType: CarrierServiceService.GetAvailableCarrierServicesForSubscription()
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableCarrierServicesForSubscription
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 60
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the available underlying carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("This method is obsolete.")]
+
+      public SubscriptionCarrierServiceResponse GetAvailableCarrierServicesForSubscription()
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+      description: "\nA collection of Carrier Services\n"
+    content.vb: >-
+      <Obsolete("This method is obsolete.")>
+
+      Public Function GetAvailableCarrierServicesForSubscription As SubscriptionCarrierServiceResponse
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: This method is obsolete.
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  id: IsMpdCarrierServiceReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: IsMpdCarrierServiceReferenceAvailable(String)
+  nameWithType: CarrierServiceService.IsMpdCarrierServiceReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsMpdCarrierServiceReferenceAvailable
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 72
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCheck whether the MPD CarrierService reference is available.\n"
+  example: []
+  syntax:
+    content: public bool IsMpdCarrierServiceReferenceAvailable(string mpdCarrierServiceReference)
+    parameters:
+    - id: mpdCarrierServiceReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: <code>True</code> if the reference is available, otherwise <code>False</code>
+    content.vb: Public Function IsMpdCarrierServiceReferenceAvailable(mpdCarrierServiceReference As String) As Boolean
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  id: GetAvailableMpdCarrierServicesForSubscriptionAsync
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  nameWithType: CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableMpdCarrierServicesForSubscriptionAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 85
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the available MPD carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: public Task<SubscriptionMpdCarrierServiceResponse> GetAvailableMpdCarrierServicesForSubscriptionAsync()
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse}
+      description: "\nA collection of MPD Carrier Services\n"
+    content.vb: Public Function GetAvailableMpdCarrierServicesForSubscriptionAsync As Task(Of SubscriptionMpdCarrierServiceResponse)
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  id: GetAvailableCarrierServicesForSubscriptionAsync
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: GetAvailableCarrierServicesForSubscriptionAsync()
+  nameWithType: CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync()
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAvailableCarrierServicesForSubscriptionAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 108
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the available underlying carrier services for subscription.\n"
+  example: []
+  syntax:
+    content: public Task<SubscriptionCarrierServiceResponse> GetAvailableCarrierServicesForSubscriptionAsync()
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse}
+      description: "\nA collection of Carrier Services\n"
+    content.vb: Public Function GetAvailableCarrierServicesForSubscriptionAsync As Task(Of SubscriptionCarrierServiceResponse)
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  id: IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.CarrierServiceService
+  langs:
+  - csharp
+  - vb
+  name: IsMpdCarrierServiceReferenceAvailableAsync(String)
+  nameWithType: CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsMpdCarrierServiceReferenceAvailableAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/CarrierServiceService.cs
+    startLine: 130
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCheck whether the MPD CarrierService reference is available.\n"
+  example: []
+  syntax:
+    content: public Task<bool> IsMpdCarrierServiceReferenceAvailableAsync(string mpdCarrierServiceReference)
+    parameters:
+    - id: mpdCarrierServiceReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: <code>True</code> if the reference is available, otherwise <code>False</code>
+    content.vb: Public Function IsMpdCarrierServiceReferenceAvailableAsync(mpdCarrierServiceReference As String) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Settings
+  commentId: N:Sorted.PRO.SDK.Settings
+  name: Sorted.PRO.SDK.Settings
+  nameWithType: Sorted.PRO.SDK.Settings
+  fullName: Sorted.PRO.SDK.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  name: ICarrierServiceService
+  nameWithType: ICarrierServiceService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService
+  commentId: T:Sorted.PRO.SDK.Settings.CarrierServiceService
+  name: CarrierServiceService
+  nameWithType: CarrierServiceService
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.#ctor
+  name: CarrierServiceService
+  nameWithType: CarrierServiceService.CarrierServiceService
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.CarrierServiceService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  name: GetAvailableMpdCarrierServicesForSubscription
+  nameWithType: CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  name: GetAvailableMpdCarrierServicesForSubscription()
+  nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+    name: GetAvailableMpdCarrierServicesForSubscription
+    nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+    name: GetAvailableMpdCarrierServicesForSubscription
+    nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: SubscriptionMpdCarrierServiceResponse
+  nameWithType: SubscriptionMpdCarrierServiceResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription
+  name: GetAvailableCarrierServicesForSubscription
+  nameWithType: CarrierServiceService.GetAvailableCarrierServicesForSubscription
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscription
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  name: GetAvailableCarrierServicesForSubscription()
+  nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscription()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+    name: GetAvailableCarrierServicesForSubscription
+    nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+    name: GetAvailableCarrierServicesForSubscription
+    nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscription
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: SubscriptionCarrierServiceResponse
+  nameWithType: SubscriptionCarrierServiceResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+  name: IsMpdCarrierServiceReferenceAvailable
+  nameWithType: CarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  isExternal: true
+  name: IsMpdCarrierServiceReferenceAvailable(String)
+  nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+    name: IsMpdCarrierServiceReferenceAvailable
+    nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable(System.String)
+    name: IsMpdCarrierServiceReferenceAvailable
+    nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  name: GetAvailableMpdCarrierServicesForSubscriptionAsync
+  nameWithType: CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  name: GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+    name: GetAvailableMpdCarrierServicesForSubscriptionAsync
+    nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+    name: GetAvailableMpdCarrierServicesForSubscriptionAsync
+    nameWithType: ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableMpdCarrierServicesForSubscriptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionMpdCarrierServiceResponse>
+  nameWithType: Task<SubscriptionMpdCarrierServiceResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse>
+  nameWithType.vb: Task(Of SubscriptionMpdCarrierServiceResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse)
+  name.vb: Task(Of SubscriptionMpdCarrierServiceResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+    name: SubscriptionMpdCarrierServiceResponse
+    nameWithType: SubscriptionMpdCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+    name: SubscriptionMpdCarrierServiceResponse
+    nameWithType: SubscriptionMpdCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionMpdCarrierServiceResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  name: GetAvailableCarrierServicesForSubscriptionAsync
+  nameWithType: CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  name: GetAvailableCarrierServicesForSubscriptionAsync()
+  nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+    name: GetAvailableCarrierServicesForSubscriptionAsync
+    nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+    name: GetAvailableCarrierServicesForSubscriptionAsync
+    nameWithType: ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.GetAvailableCarrierServicesForSubscriptionAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<SubscriptionCarrierServiceResponse>
+  nameWithType: Task<SubscriptionCarrierServiceResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse>
+  nameWithType.vb: Task(Of SubscriptionCarrierServiceResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse)
+  name.vb: Task(Of SubscriptionCarrierServiceResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+    name: SubscriptionCarrierServiceResponse
+    nameWithType: SubscriptionCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+    name: SubscriptionCarrierServiceResponse
+    nameWithType: SubscriptionCarrierServiceResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Common.SubscriptionCarrierServiceResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+  name: IsMpdCarrierServiceReferenceAvailableAsync
+  nameWithType: CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+  fullName: Sorted.PRO.SDK.Settings.CarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService
+  isExternal: true
+  name: IsMpdCarrierServiceReferenceAvailableAsync(String)
+  nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+    name: IsMpdCarrierServiceReferenceAvailableAsync
+    nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync(System.String)
+    name: IsMpdCarrierServiceReferenceAvailableAsync
+    nameWithType: ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.ICarrierServiceService.IsMpdCarrierServiceReferenceAvailableAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

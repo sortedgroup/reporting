@@ -1,0 +1,1034 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  id: BaseService
+  parent: Sorted.PRO.SDK.Shared
+  children:
+  - Sorted.PRO.SDK.Shared.BaseService.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  - Sorted.PRO.SDK.Shared.BaseService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  langs:
+  - csharp
+  - vb
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: BaseService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nBase class from which all services should inherit.\n"
+  example: []
+  syntax:
+    content: public abstract class BaseService
+    content.vb: Public MustInherit Class BaseService
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Sorted.PRO.SDK.Consignments.AllocationService
+  - Sorted.PRO.SDK.Consignments.ConsignmentAllocationService
+  - Sorted.PRO.SDK.Consignments.ConsignmentService
+  - Sorted.PRO.SDK.Consignments.ItemsService
+  - Sorted.PRO.SDK.Consignments.PackagesService
+  - Sorted.PRO.SDK.Labels.LabelService
+  - Sorted.PRO.SDK.Labels.LegacyLabelService
+  - Sorted.PRO.SDK.Orders.OrderService
+  - Sorted.PRO.SDK.Quotes.QuoteService
+  - Sorted.PRO.SDK.Rates.RatesService
+  - Sorted.PRO.SDK.Reconciliation.InvoiceService
+  - Sorted.PRO.SDK.Security.RoleService
+  - Sorted.PRO.SDK.Security.SecurityService
+  - Sorted.PRO.SDK.Settings.CarrierServiceService
+  - Sorted.PRO.SDK.Settings.CarriersService
+  - Sorted.PRO.SDK.Settings.CollectionCalendarService
+  - Sorted.PRO.SDK.Settings.PackageSizeService
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService
+  - Sorted.PRO.SDK.Settings.ShippingLocationsServiceService
+  - Sorted.PRO.SDK.Settings.StaticDataService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  id: VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: VERSION
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: protected const string VERSION = "1.1"
+    return:
+      type: System.String
+    content.vb: Protected Const VERSION As String = "1.1"
+  modifiers.csharp:
+  - protected
+  - const
+  modifiers.vb:
+  - Protected
+  - Const
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  id: Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Rest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nDefault IRestConsumer for the service.\n"
+  example: []
+  syntax:
+    content: protected IRestConsumer Rest
+    return:
+      type: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+    content.vb: Protected Rest As IRestConsumer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  id: Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Log
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nThe log\n"
+  example: []
+  syntax:
+    content: protected readonly ILogger Log
+    return:
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+    content.vb: Protected ReadOnly Log As ILogger
+  modifiers.csharp:
+  - protected
+  - readonly
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.BaseService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: BaseService(String, IEndpoints, String, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: BaseService.BaseService(String, IEndpoints, String, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.BaseService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Shared.BaseService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: protected BaseService(string apiKey, IEndpoints endpoints, string baseUri, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: baseUri
+      type: System.String
+      description: The base URI.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Protected Sub New(apiKey As String, endpoints As IEndpoints, baseUri As String, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String))
+  overload: Sorted.PRO.SDK.Shared.BaseService.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: endpoints
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: You must supply an api key;apiKey
+  nameWithType.vb: BaseService.BaseService(String, IEndpoints, String, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.BaseService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: BaseService(String, IEndpoints, String, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Shared.BaseService.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  id: '#ctor(Sorted.PRO.SDK.Shared.Interfaces.ILogger)'
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: BaseService(ILogger)
+  nameWithType: BaseService.BaseService(ILogger)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.BaseService(Sorted.PRO.SDK.Shared.Interfaces.ILogger)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Shared.BaseService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: protected BaseService(ILogger log)
+    parameters:
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    content.vb: Protected Sub New(log As ILogger)
+  overload: Sorted.PRO.SDK.Shared.BaseService.#ctor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  id: GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetRestConfig
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 69
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nGets the rest configuration.\n"
+  example: []
+  syntax:
+    content: protected RestConsumerConfiguration GetRestConfig(string apiKey, IEndpoints endpoints, string baseUri)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: baseUri
+      type: System.String
+      description: The base URI.
+    return:
+      type: Sorted.PRO.SDK.Shared.RestConsumerConfiguration
+      description: ''
+    content.vb: Protected Function GetRestConfig(apiKey As String, endpoints As IEndpoints, baseUri As String) As RestConsumerConfiguration
+  overload: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: You must supply an api key
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  id: CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CallAsyncMethod
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 93
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nCalls the asynchronous method.\n"
+  example: []
+  syntax:
+    content: protected TReturn CallAsyncMethod<TReturn>(Func<TReturn> asyncCall)
+    parameters:
+    - id: asyncCall
+      type: System.Func{{TReturn}}
+      description: The asynchronous call.
+    typeParameters:
+    - id: TReturn
+      description: The type of the return.
+    return:
+      type: '{TReturn}'
+      description: Type
+    content.vb: Protected Function CallAsyncMethod(Of TReturn)(asyncCall As Func(Of TReturn)) As TReturn
+  overload: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: A delegate callback throws an exception.
+  - type: Sorted.PRO.SDK.Shared.Error.ApiException
+    commentId: T:Sorted.PRO.SDK.Shared.Error.ApiException
+    description: Condition.
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  id: CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  langs:
+  - csharp
+  - vb
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/BaseService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CallAsyncMethod
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/BaseService.cs
+    startLine: 124
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nCalls the asynchronous method.\n"
+  example: []
+  syntax:
+    content: protected void CallAsyncMethod(Action asyncCall)
+    parameters:
+    - id: asyncCall
+      type: System.Action
+      description: The asynchronous call.
+    content.vb: Protected Sub CallAsyncMethod(asyncCall As Action)
+  overload: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: A delegate callback throws an exception.
+  - type: System.AggregateException
+    commentId: T:System.AggregateException
+    description: Condition.
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IRestConsumer
+  nameWithType: IRestConsumer
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumer
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: System.Net.Http.HttpClient
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Sorted.PRO.SDK.Shared.BaseService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Shared.BaseService.#ctor
+  name: BaseService
+  nameWithType: BaseService.BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService.BaseService
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig*
+  commentId: Overload:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  name: GetRestConfig
+  nameWithType: BaseService.GetRestConfig
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+- uid: Sorted.PRO.SDK.Shared.RestConsumerConfiguration
+  commentId: T:Sorted.PRO.SDK.Shared.RestConsumerConfiguration
+  parent: Sorted.PRO.SDK.Shared
+  name: RestConsumerConfiguration
+  nameWithType: RestConsumerConfiguration
+  fullName: Sorted.PRO.SDK.Shared.RestConsumerConfiguration
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Sorted.PRO.SDK.Shared.Error.ApiException
+  commentId: T:Sorted.PRO.SDK.Shared.Error.ApiException
+  parent: Sorted.PRO.SDK.Shared.Error
+  name: ApiException
+  nameWithType: ApiException
+  fullName: Sorted.PRO.SDK.Shared.Error.ApiException
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod*
+  commentId: Overload:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  name: CallAsyncMethod
+  nameWithType: BaseService.CallAsyncMethod
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+- uid: System.Func{{TReturn}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  name: Func<TReturn>
+  nameWithType: Func<TReturn>
+  fullName: System.Func<TReturn>
+  nameWithType.vb: Func(Of TReturn)
+  fullName.vb: System.Func(Of TReturn)
+  name.vb: Func(Of TReturn)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{TReturn}'
+  commentId: '!:TReturn'
+  definition: TReturn
+  name: TReturn
+  nameWithType: TReturn
+  fullName: TReturn
+- uid: Sorted.PRO.SDK.Shared.Error
+  commentId: N:Sorted.PRO.SDK.Shared.Error
+  name: Sorted.PRO.SDK.Shared.Error
+  nameWithType: Sorted.PRO.SDK.Shared.Error
+  fullName: Sorted.PRO.SDK.Shared.Error
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TReturn
+  commentId: '!:TReturn'
+  name: TReturn
+  nameWithType: TReturn
+  fullName: TReturn
+- uid: System.AggregateException
+  commentId: T:System.AggregateException
+  isExternal: true
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

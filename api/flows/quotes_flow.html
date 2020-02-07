@@ -1,0 +1,837 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quotes Flow </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Quotes Flow ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="quotes-flow">Quotes Flow</h1>
+
+<p>
+   <a href="../../images/Flow1.png" target="_blank">
+      <img src="../../images/Flow1.png" class="noborder">
+   </a>
+</p>
+<p>The <strong>Quotes</strong> flow is intended as a back-end customer service integration to help you resolve delivery issues that require manual intervention. In this flow, a consignment is created and then allocated to a carrier service based on a specific quote for that consignment.</p>
+<p>The <strong>Quotes</strong> flow is useful to your business for:</p>
+<ul>
+<li>Customer contact centre use.</li>
+<li>In store delivery booking.</li>
+<li>ERP workflows (e.g. SAP, Oracle).</li>
+</ul>
+<p>There are five steps to the flow:</p>
+<ol>
+<li><strong>Create the consignment</strong> - Use the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> endpoint to record the details of a new consignment.</li>
+<li><strong>Get quotes for the consignment</strong> - Use the <a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a> endpoint to get delivery quotes for the consignment.</li>
+<li><strong>Select a quote</strong> - Use the <a href="https://docs.electioapp.com/#/api/AllocateWithQuote">Allocate With Quote</a> endpoint to select one of the returned quotes.</li>
+<li><strong>Get the consignment's labels</strong> - Use the <a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a> endpoint to get the delivery label for your consignment.</li>
+<li><strong>Manifest the consignment</strong> - Use the <a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments from Query</a> endpoint to confirm the consignment with the selected carrier. At this point, the consignment is ready to ship.</li>
+</ol>
+<p>This section gives more detail on each step of the flow and provides worked examples.</p>
+<hr>
+<h2 id="step-1-creating-consignments">Step 1: Creating Consignments</h2>
+<div class="tab">
+    <button class="staticTabButton">Create Consignment Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('createConEndpoint')">Click to Copy</div>
+</div>
+<div id="createConEndpoint" class="staticTabContent" onclick="CopyToClipboard('createConEndpoint')">
+<pre><code>POST https://api.electioapp.com/consignments
+</code></pre>
+</div>
+<p>The first step toward manifesting a consignment is to create that consignment in SortedPRO.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+In the context of PRO, the term <strong>&quot;consignment&quot;</strong> refers to a collection of one or more packages that are shipped from the same origin address, to the same destination address, on behalf of the same    Sorted customer, using the same carrier service, on the same day.</p>
+<p>A <strong>package</strong> is an <strong>item</strong> or a collection of items, wrapped or contained together for shipment. Each package can contain one or more items.</p>
+<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. As such, this sales order would break down to:</p>
+<ul>
+<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
+<li>A single consignment corresponding to everything on the order.</li>
+</ul>
+</blockquote>
+<p>Consignments are created using the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> endpoint, which takes information about new consignments, adds them to the database, and returns a link to the newly-created consignment, including its <code>{consignmentReference}</code>.</p>
+<p>The <code>{consignmentReference}</code> is a unique identifier for that consignment within PRO, and is a required parameter for many of PRO's API requests. Each PRO <code>{consignmentReference}</code> takes the format <code>EC-xxx-xxx-xxx</code>, where <code>x</code> is an alphanumeric character.</p>
+<p>As a minimum, the <strong>Create Consignments</strong> endpoint requires you to send package weights and dimensions, origin address, and destination address data. You can either specify package weights and dimension via the <code>Weight</code> and <code>Dimensions</code> properties, or by supplying a <code>PackageSizeReference</code>.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+A <code>PackageSizeReference</code> is a unique identifier for a pre-defined, standardised package size. To configure standard package sizes, use the <strong><a href="https://www.electioapp.com/Configuration/packagingsizes">Configuration &gt; Packaging Sizes</a></strong> page of the PRO UI.</p>
+</blockquote>
+<p>However, there are lots of other properties you can send when creating a consignment, including:</p>
+<ul>
+<li>Your own consignment reference.</li>
+<li>The consignment's source.</li>
+<li>Shipping and delivery dates.</li>
+<li>Customs documentation.</li>
+<li>The consignment's direction of travel.</li>
+<li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For more information on using metadata in PRO, see the <strong><a href="/api/flows/moreInfo.html#metadata">Metadata</a></strong> section of the <strong>More Information</strong> page.</li>
+<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment could be allocated to. For more information on allocation tags, see the <strong><a href="/api/flows/moreInfo.html#tags">Tags</a></strong> section of the <strong>More Information</strong> page.</li>
+</ul>
+<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your organisation's shipping locations, see the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page of the API reference.</p>
+<p>To edit an existing order, use the <strong><a href="https://docs.electioapp.com/#/api/UpdateOrder">Update Orders</a></strong> endpoint. For more information on updating orders, see the <strong><a href="/api/flows/moreInfo.html#updating-orders">Updating Orders</a></strong> section of the <strong>More Information</strong> page.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+For full reference information on the <strong>Create Consignment</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="create-consignments-example">Create Consignments Example</h3>
+<p>These examples show the creation of a fairly standard consignment. In this case, we have an outbound consignment comprising a single package with a single item inside it.</p>
+<div class="tab">
+    <button class="staticTabButton">Request Example</button>
+    <div class="copybutton" onclick="CopyToClipboard('createConRequest')">Click to Copy</div>
+</div>
+<div id="createConRequest" class="staticTabContent" onclick="CopyToClipboard('createConRequest')">
+<pre><code class="lang-json">{
+  &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;MYCONS-098998&quot;,
+  &quot;Source&quot;: &quot;Api&quot;,
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;Restock_Date&quot;,
+      &quot;DateTimeValue&quot;: &quot;2019-06-18T00:00:00+00:00&quot;
+    }
+  ],
+  &quot;Packages&quot;: [
+    {
+      &quot;Items&quot;: [
+        {
+          &quot;Sku&quot;: &quot;SKU093434&quot;,
+          &quot;Model&quot;: &quot;ITM-002&quot;,
+          &quot;Description&quot;: &quot;Striped Bamboo Red/White&quot;,
+          &quot;CountryOfOrigin&quot;: {
+            &quot;IsoCode&quot;: {
+              &quot;TwoLetterCode&quot;: &quot;GB&quot;
+            }
+          },
+          &quot;HarmonisationCode&quot;: &quot;Harmonisation_Code&quot;,
+          &quot;Weight&quot;: {
+            &quot;Value&quot;: 0.5,
+            &quot;Unit&quot;: &quot;Kg&quot;
+          },
+          &quot;Dimensions&quot;: {
+            &quot;Unit&quot;: &quot;Cm&quot;,
+            &quot;Width&quot;: 10.0,
+            &quot;Length&quot;: 10.0,
+            &quot;Height&quot;: 10.0
+          },
+          &quot;Value&quot;: {
+            &quot;Amount&quot;: 5.99,
+            &quot;Currency&quot;: {
+              &quot;IsoCode&quot;: &quot;GBP&quot;
+            }
+          },
+          &quot;ItemReferenceProvidedByCustomer&quot;: &quot;ITEMREF-098&quot;,
+          &quot;Barcode&quot;: {
+            &quot;Code&quot;: &quot;09887-091221&quot;,
+            &quot;BarcodeType&quot;: &quot;Code39&quot;
+          },
+          &quot;MetaData&quot;: [
+            {
+              &quot;KeyValue&quot;: &quot;Picker&quot;,
+              &quot;StringValue&quot;: &quot;David Thomas&quot;
+            }
+          ],
+          &quot;Quantity&quot;: 1,
+          &quot;Unit&quot;: &quot;Box&quot;,
+          &quot;HarmonisationKeyWords&quot;: [
+            &quot;Keyword1&quot;
+          ],
+          &quot;ContentClassification&quot;: &quot;Unrestricted&quot;,
+          &quot;ContentClassificationDetails&quot;: &quot;NotSpecified&quot;
+        }
+      ],
+      &quot;PackageReferenceProvidedByCustomer&quot;: &quot;MYPACK-00923&quot;,
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 0.5,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 10.0,
+        &quot;Length&quot;: 10.0,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Description&quot;: &quot;Socks&quot;,
+      &quot;Value&quot;: {
+        &quot;Amount&quot;: 5.99,
+        &quot;Currency&quot;: {
+          &quot;IsoCode&quot;: &quot;GBP&quot;
+        }
+      },
+      &quot;Barcode&quot;: {
+        &quot;Code&quot;: &quot;09887-091221&quot;,
+        &quot;BarcodeType&quot;: &quot;Code39&quot;
+      },
+      &quot;MetaData&quot;: [
+        {
+          &quot;KeyValue&quot;: &quot;WMS-REF&quot;,
+          &quot;IntValue&quot;: 77656555
+        }
+      ]
+    }
+  ],
+  &quot;CustomsDocumentation&quot;: {
+    &quot;DesignatedPersonResponsible&quot;: &quot;Peter McPetersson&quot;,
+    &quot;ImportersVatNumber&quot;: &quot;02345555&quot;,
+    &quot;CategoryType&quot;: &quot;Other&quot;,
+    &quot;ShipperCustomsReference&quot;: &quot;CREF0001&quot;,
+    &quot;ImportersTaxCode&quot;: &quot;TC001&quot;,
+    &quot;ImportersTelephone&quot;: &quot;0161123456&quot;,
+    &quot;ImportersFax&quot;: &quot;01611124547&quot;,
+    &quot;ImportersEmail&quot;: &quot;peter.mcpetersson@test.com&quot;,
+    &quot;CN23Comments&quot;: &quot;Comments&quot;,
+    &quot;ReferencesOfAttachedInvoices&quot;: [
+      &quot;INV001&quot;
+    ],
+    &quot;ReferencesOfAttachedCertificates&quot;: [
+      &quot;CERT001&quot;
+    ],
+    &quot;ReferencesOfAttachedLicences&quot;: [
+      &quot;LIC001&quot;
+    ],
+    &quot;CategoryTypeExplanation&quot;: &quot;Explanation&quot;,
+    &quot;DeclarationDate&quot;: &quot;2019-06-14T00:00:00+00:00&quot;,
+    &quot;OfficeOfPosting&quot;: &quot;Manchester&quot;,
+    &quot;ReasonForExport&quot;: &quot;Sale&quot;,
+    &quot;ShippingTerms&quot;: &quot;CFR&quot;,
+    &quot;ShippersVatNumber&quot;: &quot;874541414&quot;,
+    &quot;ReceiversTaxCode&quot;: &quot;TC5454&quot;,
+    &quot;ReceiversVatNumber&quot;: &quot;8745474&quot;,
+    &quot;InvoiceDate&quot;: &quot;2019-06-14T00:00:00+00:00&quot;
+  },
+  &quot;Addresses&quot;: [
+    {
+      &quot;AddressType&quot;: &quot;Origin&quot;,
+      &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+      &quot;IsCached&quot;: false
+    },
+    {
+      &quot;AddressType&quot;: &quot;Destination&quot;,
+      &quot;Contact&quot;: {
+        &quot;Title&quot;: &quot;Mr&quot;,
+        &quot;FirstName&quot;: &quot;Peter&quot;,
+        &quot;LastName&quot;: &quot;McPetersson&quot;,
+        &quot;Telephone&quot;: &quot;07702123456&quot;,
+        &quot;Mobile&quot;: &quot;07702123456&quot;,
+        &quot;LandLine&quot;: &quot;0161544123&quot;,
+        &quot;Email&quot;: &quot;peter.mcpetersson@test.com&quot;
+      },
+      &quot;CompanyName&quot;: &quot;Test Company (UK) Ltd.&quot;,
+      &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+      &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+      &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+      &quot;Town&quot;: &quot;Manchester&quot;,
+      &quot;Region&quot;: &quot;Greater Manchester&quot;,
+      &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+      &quot;Country&quot;: {
+        &quot;Name&quot;: &quot;Great Britain&quot;,
+        &quot;IsoCode&quot;: {
+          &quot;TwoLetterCode&quot;: &quot;GB&quot;
+        }
+      },
+      &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+      &quot;LatLong&quot;: {
+        &quot;Latitude&quot;: 53.474220,
+        &quot;Longitude&quot;: -2.246049
+      },
+      &quot;IsCached&quot;: false
+    }
+  ],
+  &quot;Direction&quot;: &quot;Outbound&quot;
+}
+</code></pre>
+</div>   
+<p>After receiving the request, PRO returns a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. At this point, you should store the <code>{consignmentReference}</code>, as many of PRO's endpoints take <code>{consignmentReference}</code> as a parameter.</p>
+<div class="tab">
+    <button class="staticTabButton">Request Example</button>
+    <div class="copybutton" onclick="CopyToClipboard('createConResponse')">Click to Copy</div>
+</div>
+<div id="createConResponse" class="staticTabContent" onclick="CopyToClipboard('createConResponse')">
+<pre><code class="lang-json">[
+  {
+    &quot;Rel&quot;: &quot;Link&quot;,
+    &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-05B-MMA&quot;
+  }
+]
+</code></pre>
+</div>
+<hr>
+<h2 id="step-2-getting-quotes-by-consignment-reference">Step 2: Getting Quotes by Consignment Reference</h2>
+<div class="tab">
+    <button class="staticTabButton">Get Quotes by Consignment Reference Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('quoteConRefEndpoint')">Click to Copy</div>
+</div>
+<div id="quoteConRefEndpoint" class="staticTabContent" onclick="CopyToClipboard('quoteConRefEndpoint')">
+<pre><code>GET https://api.electioapp.com/quotes/consignment/{consignmentReference}
+</code></pre>
+</div>  
+<p>Once you've created your consignment, you'll need to use the <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong> endpoint to get some delivery quotes for it.</p>
+<p><strong>Get Quotes by Consignment Reference</strong> returns quotes based on the details of an existing consignment. Specifically, it takes a <code>{consignmentReference}</code> as a path parameter and returns an array of <code>{Quotes}</code> for that consignment, as well as a list of services that were unable to quote for the consignment.</p>
+<p>Each <code>{Quote}</code> object contains details on carrier service, dates, addresses, and price, amongst other information. Pay particular attention to the <code>{quoteReference}</code>, as you'll need this when you select a quote in the next step.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Get Quotes by Consignment Reference</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="get-quotes-by-consignment-reference-example">Get Quotes By Consignment Reference Example</h3>
+<p>The example shows a <strong>Get Quotes by Consignment Reference</strong> request and its accompanying response. In this case, SortedPRO has returned two quotes for the service. The next step in the process is to select one of those quotes.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Get Quotes by Consignment Reference Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('quoteConRefRequest')">Click to Copy</div>
+</div>
+<div id="quoteConRefRequest" class="staticTabContent" onclick="CopyToClipboard('quoteConRefRequest')">
+<pre><code>https://api.electioapp.com/quotes/consignment/EC-000-05B-1CM
+</code></pre>
+</div>  
+<div class="tab">
+    <button class="staticTabButton">Example Get Quotes by Consignment Reference Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('quoteConRefResponse')">Click to Copy</div>
+</div>
+<div id="quoteConRefResponse" class="staticTabContent" onclick="CopyToClipboard('quoteConRefResponse')">
+<pre><code class="lang-json">{
+    &quot;QuoteRequestReference&quot;: &quot;6f9c7ee5-a97e-4df9-bc07-aa3f00e99316&quot;,
+    &quot;Quotes&quot;: [
+        {
+            &quot;MpdCarrierServiceSource&quot;: 2,
+            &quot;MpdCarrierService&quot;: &quot;1st and 2nd Class Account Mail (1st Parcel)&quot;,
+            &quot;OriginAddress&quot;: {
+                &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+                &quot;AddressLine1&quot;: &quot;Third Floor&quot;,
+                &quot;AddressLine2&quot;: &quot;Merchant Exchange&quot;,
+                &quot;AddressLine3&quot;: &quot;Whitworth Street West&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;RegionCode&quot;: &quot;&quot;,
+                &quot;SpecialInstructions&quot;: &quot;&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;DestinationAddress&quot;: {
+                &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+                &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+                &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;Greater Manchester&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;CollectionDate&quot;: &quot;2019-05-01T00:00:00&quot;,
+            &quot;EarliestDeliveryDate&quot;: &quot;2019-05-02T00:00:00&quot;,
+            &quot;LatestDeliveryDate&quot;: &quot;2019-05-02T23:59:00&quot;,
+            &quot;BasePrice&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Price&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Surcharges&quot;: [],
+            &quot;Legs&quot;: [
+                {
+                    &quot;JourneyStage&quot;: 1,
+                    &quot;CarrierService&quot;: {
+                        &quot;Reference&quot;: &quot;RMDBPR1STPSU&quot;,
+                        &quot;Name&quot;: &quot;1st and 2nd Class Account Mail (1st Parcel)&quot;,
+                        &quot;CarrierReference&quot;: &quot;ROYAL_MAIL&quot;,
+                        &quot;CarrierName&quot;: null,
+                        &quot;IsDropOff&quot;: false,
+                        &quot;IsPickUp&quot;: false,
+                        &quot;IsTimed&quot;: false
+                    },
+                    &quot;CarrierAccountReference&quot;: &quot;RM1&quot;,
+                    &quot;DeliveryHub&quot;: null,
+                    &quot;CostItems&quot;: null,
+                    &quot;VolumetricParcelWeight&quot;: null,
+                    &quot;CollectionType&quot;: &quot;NotApplicable&quot;
+                }
+            ],
+            &quot;CarrierAccountOwner&quot;: null,
+            &quot;IsElectioService&quot;: false,
+            &quot;QuoteReference&quot;: &quot;f6374a18-a6b5-48c1-841c-aa3f00e9951a&quot;,
+            &quot;CreationDate&quot;: &quot;2019-04-30T14:10:26.8551633+00:00&quot;,
+            &quot;ExpiryDate&quot;: &quot;2019-05-01T00:00:00+01:00&quot;,
+            &quot;Requestor&quot;: &quot;Andy Walton&quot;,
+            &quot;ConsignmentReference&quot;: &quot;EC-000-05B-1CM&quot;,
+            &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_RMDBPR1STPSU&quot;
+        },
+        {
+            &quot;MpdCarrierServiceSource&quot;: 2,
+            &quot;MpdCarrierService&quot;: &quot;Tracked 48 Signed For&quot;,
+            &quot;OriginAddress&quot;: {
+                &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+                &quot;AddressLine1&quot;: &quot;Third Floor&quot;,
+                &quot;AddressLine2&quot;: &quot;Merchant Exchange&quot;,
+                &quot;AddressLine3&quot;: &quot;Whitworth Street West&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;RegionCode&quot;: &quot;&quot;,
+                &quot;SpecialInstructions&quot;: &quot;&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;DestinationAddress&quot;: {
+                &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+                &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+                &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;Greater Manchester&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;CollectionDate&quot;: &quot;2019-05-01T00:00:00&quot;,
+            &quot;EarliestDeliveryDate&quot;: &quot;2019-05-03T00:00:00&quot;,
+            &quot;LatestDeliveryDate&quot;: &quot;2019-05-03T23:59:00&quot;,
+            &quot;BasePrice&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Price&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Surcharges&quot;: [],
+            &quot;Legs&quot;: [
+                {
+                    &quot;JourneyStage&quot;: 1,
+                    &quot;CarrierService&quot;: {
+                        &quot;Reference&quot;: &quot;RMDTPS48HNAST&quot;,
+                        &quot;Name&quot;: &quot;Tracked 48 Signed For&quot;,
+                        &quot;CarrierReference&quot;: &quot;ROYAL_MAIL&quot;,
+                        &quot;CarrierName&quot;: null,
+                        &quot;IsDropOff&quot;: false,
+                        &quot;IsPickUp&quot;: false,
+                        &quot;IsTimed&quot;: false
+                    },
+                    &quot;CarrierAccountReference&quot;: &quot;RM1&quot;,
+                    &quot;DeliveryHub&quot;: null,
+                    &quot;CostItems&quot;: null,
+                    &quot;VolumetricParcelWeight&quot;: null,
+                    &quot;CollectionType&quot;: &quot;NotApplicable&quot;
+                }
+            ],
+            &quot;CarrierAccountOwner&quot;: null,
+            &quot;IsElectioService&quot;: false,
+            &quot;QuoteReference&quot;: &quot;f63bd4ab-d519-4547-b361-aa3f00e9951a&quot;,
+            &quot;CreationDate&quot;: &quot;2019-04-30T14:10:26.8551633+00:00&quot;,
+            &quot;ExpiryDate&quot;: &quot;2019-05-01T00:00:00+01:00&quot;,
+            &quot;Requestor&quot;: &quot;Andy Walton&quot;,
+            &quot;ConsignmentReference&quot;: &quot;EC-000-05B-1CM&quot;,
+            &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_RMDTPS48HNAST&quot;
+        }
+    ],
+    &quot;Message&quot;: null,
+    &quot;UnqualifiedServices&quot;: [
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;acceptanceTestCarrier_825d&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;acceptanceTestCarrier_f8fe&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: false,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;Express With Signature Parcel&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_ANPOS-00001&quot;,
+            &quot;ExclusionReason&quot;: &quot;This service is not available for the selected collection/delivery dates.&quot;
+        },
+        {
+            &quot;Available&quot;: false,
+            &quot;Rates&quot;: true,
+            &quot;MpdCarrierService&quot;: &quot;Next Day Monday - Saturday&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_MNZIS-00001&quot;,
+            &quot;ExclusionReason&quot;: &quot;This service is not available between the selected addresses.&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS EXPRESS (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHEXDCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS EXPRESS (Saturday Delivery, Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHEXSDDCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS EXPRESS PLUS (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHEP&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS SAVER (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHSADCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS STANDARD (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHSTDCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: false,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;wnDirect International Economy&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_WNDECOM&quot;,
+            &quot;ExclusionReason&quot;: &quot;This service is not available between the selected addresses. This service is not available for the given package dimensions/weight.&quot;
+        }
+    ]
+}
+</code></pre>
+</div> 
+<hr>
+<h2 id="step-3-selecting-a-quote">Step 3: Selecting a Quote</h2>
+<div class="tab">
+    <button class="staticTabButton">Allocate With Quote Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocateWithQuoteEndpoint')">Click to Copy</div>
+</div>
+<div id="allocateWithQuoteEndpoint" class="staticTabContent" onclick="CopyToClipboard('allocateWithQuoteEndpoint')">
+<pre><code>PUT https://api.electioapp.com/allocation/{consignmentReference}/allocatewithquote/{quoteReference}
+</code></pre>
+</div>  
+<p>To allocate an individual consignment based on a specific delivery quote from a carrier, use the <strong><a href="https://docs.electioapp.com/#/api/AllocateWithQuote">Allocate With Quote</a></strong> endpoint.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+You can get quote details via SortedPRO's Quotes API. For more information on PRO's quote endpoints (<strong><a href="https://docs.electioapp.com/#/api/GetQuotes">Get Quotes</a></strong>, <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong>, and <strong><a href="https://docs.electioapp.com/#/api/GetServiceGroupQuotes">Get Service Group Quotes</a></strong>), see the API reference.</p>
+</blockquote>
+<p>The <strong>Allocate With Quote</strong> endpoint takes the <code>{consignmentReference}</code> of the consignment you want to allocate and the <code>{quoteReference}</code> of a particular quote. Once the request is received PRO attempts to allocate the consignment to the carrier service specified in the quote, and returns an Allocation Summary.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Allocate With Quote</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/AllocateWithQuote">Allocate With Quote</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="allocate-with-quote-example">Allocate With Quote Example</h3>
+<p>The example shows a request to allocate a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-N40</em> to the carrier service associated with a quote that has the <code>{quoteReference}</code> <em>112236d5-4460-492f-a6bd-aa3f00f62dfb</em>.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Allocate With Quote Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocateWithQuoteRequest')">Click to Copy</div>
+</div>
+<div id="allocateWithQuoteRequest" class="staticTabContent" onclick="CopyToClipboard('allocateWithQuoteRequest')">
+<pre><code>PUT https://api.electioapp.com/allocation/EC-000-05B-N40/allocatewithquote/112236d5-4460-492f-a6bd-aa3f00f62dfb
+</code></pre>
+</div>  
+<div class="tab">
+    <button class="staticTabButton">Example Allocate With Quote Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('allocateWithQuoteResponse')">Click to Copy</div>
+</div>
+<div id="allocateWithQuoteResponse" class="staticTabContent" onclick="CopyToClipboard('allocateWithQuoteResponse')">
+<pre><code class="lang-json">[
+    {
+        &quot;StatusCode&quot;: 200,
+        &quot;ApiLinks&quot;: [
+            {
+                &quot;Rel&quot;: &quot;detail&quot;,
+                &quot;Href&quot;: &quot;https://apisandbox.electioapp.com/consignments/EC-000-05B-N40&quot;
+            },
+            {
+                &quot;Rel&quot;: &quot;label&quot;,
+                &quot;Href&quot;: &quot;https://apisandbox.electioapp.com/labels/EC-000-05B-N40&quot;
+            }
+        ],
+        &quot;Description&quot;: &quot;Consignment EC-000-05B-N40 has been successfully allocated with UPS STANDARD (Delivery Confirmation Signature Required) for shipping on 18/06/2019 17:00:00 +00:00&quot;,
+        &quot;ConsignmentLegs&quot;: [
+            {
+                &quot;Leg&quot;: 1,
+                &quot;TrackingReferences&quot;: [
+                    &quot;1Z9A80W5DK96293164&quot;
+                ],
+                &quot;CarrierReference&quot;: &quot;UPS&quot;,
+                &quot;CarrierServiceReference&quot;: null,
+                &quot;CarrierName&quot;: &quot;UPS&quot;
+            }
+        ],
+        &quot;CarrierReference&quot;: &quot;UPS&quot;,
+        &quot;CarrierName&quot;: &quot;UPS&quot;,
+        &quot;CarrierServiceReference&quot;: &quot;EDC5_UPSHSTDCS&quot;,
+        &quot;CarrierServiceName&quot;: &quot;UPS STANDARD (Delivery Confirmation Signature Required)&quot;
+    }
+]
+</code></pre>
+</div>  
+<hr>
+<h2 id="step-4-getting-consignment-labels">Step 4: Getting Consignment Labels</h2>
+<div class="tab">
+    <button class="staticTabButton">Get Labels in Format Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('GLFEndpoint')">Click to Copy</div>
+</div>
+<div id="GLFEndpoint" class="staticTabContent" onclick="CopyToClipboard('GLFEndpoint')">
+<pre><code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}
+</code></pre>
+</div>
+<p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The next step in the process is to retrieve those delivery labels via the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Label in Format</a></strong> endpoint.</p>
+<p>The <strong>Get Labels in Format</strong> endpoint takes a <code>{consignmentReference}</code> and <code>{labelFormat}</code> as path parameters. PRO returns all package labels associated with that consignment as a base64-encoded byte array in the format requested.</p>
+<p><strong>Get Labels in Format</strong> can return labels as <code>pdf</code>, <code>zpl</code> and <code>zplii</code> file types. We recommend that, when integrating PRO with your system, you make the <code>{labelFormat}</code> field a parameter, so you can easily return labels in an alternative format if required.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Get Labels in Format</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of the API reference.</p>
+</blockquote>
+<h3 id="get-labels-in-format-example">Get Labels in Format Example</h3>
+<p>The example shows a request to get PDF labels for a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. The file data in the response has been truncated for clarity.</p>
+<p>You would next need to decode the file's Base64 in order to view the label itself. If you are unsure how to do so, see the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN docs</a></strong> for more information.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Get Labels in Format Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('GLFRequest')">Click to Copy</div>
+</div>
+<div id="GLFRequest" class="staticTabContent" onclick="CopyToClipboard('GLFRequest')">
+<pre><code>GET https://api.electioapp.com/labels/EC-000-05B-MMA/pdf
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Get Labels in Format Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('GLFResponse')">Click to Copy</div>
+</div>
+<div id="GLFResponse" class="staticTabContent" onclick="CopyToClipboard('GLFResponse')">
+<pre><code class="lang-json">{
+  &quot;File&quot;: &quot;SlZCRVJpMHhMalFLSmRQcjZ ... TVRrNU9ERUtKU1ZGVDBZPQ==&quot;,
+  &quot;ContentType&quot;: &quot;application/pdf&quot;
+}
+</code></pre>
+</div>
+<hr>
+<h2 id="step-5-manifesting-a-consignment">Step 5: Manifesting a Consignment</h2>
+<div class="tab">
+    <button class="staticTabButton">Manifest Consignments From Query Endpoint</button>
+    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryEndpoint')">Click to Copy</div>
+</div>
+<div id="ManifestQueryEndpoint" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryEndpoint')">
+<pre><code>PUT https://api.electioapp.com/consignments/manifestFromQuery
+</code></pre>
+</div>
+<p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're ready to manifest it. To manifest a consignment, use the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> endpoint.</p>
+<blockquote>
+<p><span class="note-header">More Information:</span>
+In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the consignment in question needs to be collected from the shipper.</p>
+</blockquote>
+<p>The <strong>Manifest Consignments From Query</strong> endpoint enables you to use a query to select consignments to be manifested. You can select consignments via the following criteria:</p>
+<ul>
+<li><code>ShippingLocationReference</code> - The shipping location that the consignment will ship from. For information on how to obtain a list of your organisation's shipping locations and their references, see the <a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a> page of the API reference.</li>
+<li><code>States</code> - The state that the consignments should be in. All the consignments you provide in the request should be in a state of either <em>Allocated</em> or <em>Manifest Failed</em>. If you attempt to manifest a consignment that is not in one of these states then PRO returns an error.</li>
+<li><code>Carriers</code> - The carriers that the consignments are allocated to.</li>
+<li><code>LabelsPrinted</code> - Whether or not the labels for the consignments have already been printed.</li>
+<li><code>ShippingDate</code> - The date that the consignment is scheduled to ship.</li>
+<li><code>ShippingDateRanges</code>- A range of scheduled shipping dates.</li>
+</ul>
+<p>Once PRO has attempted to add the consignments to the manifest queue, the <strong>Manifest Consignments From Query</strong> endpoint returns a <code>Message</code> indicating how many consignments met the terms of the query and how many it was able to queue. It also returns a <code>FailedConsignments</code> array listing the <code>consignmentReferences</code> of those consignments that PRO was unable to queue for manifest.</p>
+<blockquote>
+<p><span class="note-header">Note:</span>
+For full reference information on the <strong>Manifest Consignments From Query</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> page of the API Reference.</p>
+</blockquote>
+<h3 id="manifest-consignments-from-query-example">Manifest Consignments From Query Example</h3>
+<p>The example shows a request to manifest all consignments that are allocated to Carrier X, shipping from a location with the <code>ShippingLocationReference</code> <em>Location1</em>, and have already had their labels printed. The response indicates that PRO found 10 consignments meeting these criteria, and that all 10 were successfully queued for manifest.</p>
+<div class="tab">
+    <button class="staticTabButton">Example Manifest Consignments From Query Request</button>
+    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryRequest')">Click to Copy</div>
+</div>
+<div id="ManifestQueryRequest" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryRequest')">
+<pre><code class="lang-json">{
+  &quot;ShippingLocationReferences&quot;: [
+    &quot;Location1&quot;
+  ],
+  &quot;States&quot;: [
+    &quot;Allocated&quot;
+  ],
+  &quot;Carriers&quot;: [
+    &quot;CARRIER_X&quot;
+  ],
+  &quot;LabelsPrinted&quot;: true
+}
+</code></pre>
+</div>
+<div class="tab">
+    <button class="staticTabButton">Example Manifest Consignments From Query Response</button>
+    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryResponse')">Click to Copy</div>
+</div>
+<div id="ManifestQueryResponse" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryResponse')">
+<pre><code class="lang-json">{
+  &quot;Message&quot;: &quot;Query found 10 consignment(s). 10 successfully queued to manifest. 0 failed to be added to the queue&quot;
+}
+</code></pre>
+</div>
+<script src="../../scripts/requesttabs.js"></script>
+<script src="../../scripts/responsetabs.js"></script>
+<script src="../../scripts/copy.js"></script>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/quotes_flow.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

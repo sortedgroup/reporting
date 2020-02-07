@@ -1,0 +1,1223 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Labels.LabelService
+  commentId: T:Sorted.PRO.SDK.Labels.LabelService
+  id: LabelService
+  parent: Sorted.PRO.SDK.Labels
+  children:
+  - Sorted.PRO.SDK.Labels.LabelService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  - Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: LabelService
+  nameWithType: LabelService
+  fullName: Sorted.PRO.SDK.Labels.LabelService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Labels/LabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LabelService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Labels/LabelService.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Labels
+  namespace: Sorted.PRO.SDK.Labels
+  summary: "\nService for retrieving despatch labels\n"
+  example: []
+  syntax:
+    content: 'public class LabelService : BaseService, ILabelService'
+    content.vb: >-
+      Public Class LabelService
+          Inherits BaseService
+          Implements ILabelService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Labels.LabelService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Labels.LabelService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Labels.LabelService
+  langs:
+  - csharp
+  - vb
+  name: LabelService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: LabelService.LabelService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Labels.LabelService.LabelService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Labels/LabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Labels/LabelService.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.Labels
+  namespace: Sorted.PRO.SDK.Labels
+  summary: "\n/// Initializes a new instance of the <xref href=\"Sorted.PRO.SDK.Labels.LabelService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public LabelService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The api key of the user making the request
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: An instance of <xref href="Sorted.PRO.SDK.Interfaces.IEndpoints" data-throw-if-not-resolved="false"></xref>
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Provides a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: A logger implementing <xref href="Sorted.PRO.SDK.Interfaces.ILogger" data-throw-if-not-resolved="false"></xref>
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: Represents a collection of keys and values
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Labels.LabelService.#ctor*
+  nameWithType.vb: LabelService.LabelService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Labels.LabelService.LabelService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: LabelService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  commentId: M:Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  id: GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  parent: Sorted.PRO.SDK.Labels.LabelService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentLabelsAsync(String, LabelFormat, Int32)
+  nameWithType: LabelService.GetConsignmentLabelsAsync(String, LabelFormat, Int32)
+  fullName: Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync(System.String, Sorted.PRO.SDK.DataTypes.Labels.LabelFormat, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Labels/LabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentLabelsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Labels/LabelService.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.Labels
+  namespace: Sorted.PRO.SDK.Labels
+  summary: "\nReturns the labels for all packages in the specified consignment, in the specified format and resolution.\n"
+  example:
+  - <pre><code>    var labelData = await _labelService.GetConsignmentLabelsAsync(consignmentReference, LabelFormat.PDF, 203);</code></pre>
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Consignment Labels", "Returns the labels for the specified consignment, in the specified format and resolution.", "Labels", typeof(GetLabelsResponse), "/labels/{consignmentReference:string}/{format:string}/{resolution:int}", "GET", null)]
+
+      public Task<GetLabelsResponse> GetConsignmentLabelsAsync(string consignmentReference, LabelFormat labelFormat, int resolution)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference to retrieve labels for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+      description: The format to output the labels in. Must be a valid LabelFormat
+    - id: resolution
+      type: System.Int32
+      description: The label resolution required
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: "\nLabel data for all packages in the consignment\n"
+    content.vb: >-
+      <ApiEndpoint("Get Consignment Labels", "Returns the labels for the specified consignment, in the specified format and resolution.", "Labels", GetType(GetLabelsResponse), "/labels/{consignmentReference:string}/{format:string}/{resolution:int}", "GET", Nothing)>
+
+      Public Function GetConsignmentLabelsAsync(consignmentReference As String, labelFormat As LabelFormat, resolution As Integer) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  commentId: M:Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  id: GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  parent: Sorted.PRO.SDK.Labels.LabelService
+  langs:
+  - csharp
+  - vb
+  name: GetPackageLabelAsync(String, String, LabelFormat, Int32)
+  nameWithType: LabelService.GetPackageLabelAsync(String, String, LabelFormat, Int32)
+  fullName: Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.Labels.LabelFormat, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Labels/LabelService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetPackageLabelAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Labels/LabelService.cs
+    startLine: 74
+  assemblies:
+  - Sorted.PRO.SDK.Labels
+  namespace: Sorted.PRO.SDK.Labels
+  summary: "\nReturns the label for an individual package within the specified consignment, in the specified format and resolution.\n"
+  example:
+  - <pre><code>    var labelData = await _labelService.GetPackageLabelsAsync(consignmentReference, packageReference, LabelFormat.PDF, 203);</code></pre>
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Package Label", "Returns the label for the specified package in the specified format and resolution.", "Labels", typeof(GetLabelsResponse), "/labels/package/{consignmentReference:string}/{packageReference:string}/{format:string}/{resolution:int}", "GET", null)]
+
+      public Task<GetLabelsResponse> GetPackageLabelAsync(string consignmentReference, string packageReference, LabelFormat labelFormat, int resolution)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference that the package belongs to
+    - id: packageReference
+      type: System.String
+      description: The package reference to retrieve a label for
+    - id: labelFormat
+      type: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+      description: The format to output the labels in. Must be a valid LabelFormat
+    - id: resolution
+      type: System.Int32
+      description: The label resolution required
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+      description: "\nLabel data for the selected package\n"
+    content.vb: >-
+      <ApiEndpoint("Get Package Label", "Returns the label for the specified package in the specified format and resolution.", "Labels", GetType(GetLabelsResponse), "/labels/package/{consignmentReference:string}/{packageReference:string}/{format:string}/{resolution:int}", "GET", Nothing)>
+
+      Public Function GetPackageLabelAsync(consignmentReference As String, packageReference As String, labelFormat As LabelFormat, resolution As Integer) As Task(Of GetLabelsResponse)
+  overload: Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Labels
+  commentId: N:Sorted.PRO.SDK.Labels
+  name: Sorted.PRO.SDK.Labels
+  nameWithType: Sorted.PRO.SDK.Labels
+  fullName: Sorted.PRO.SDK.Labels
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  parent: Sorted.PRO.SDK.Interfaces.Labels
+  name: ILabelService
+  nameWithType: ILabelService
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Labels
+  commentId: N:Sorted.PRO.SDK.Interfaces.Labels
+  name: Sorted.PRO.SDK.Interfaces.Labels
+  nameWithType: Sorted.PRO.SDK.Interfaces.Labels
+  fullName: Sorted.PRO.SDK.Interfaces.Labels
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Labels.LabelService
+  commentId: T:Sorted.PRO.SDK.Labels.LabelService
+  name: LabelService
+  nameWithType: LabelService
+  fullName: Sorted.PRO.SDK.Labels.LabelService
+- uid: Sorted.PRO.SDK.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Interfaces.IEndpoints
+  isExternal: true
+- uid: Sorted.PRO.SDK.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Interfaces.ILogger
+  isExternal: true
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Labels.LabelService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Labels.LabelService.#ctor
+  name: LabelService
+  nameWithType: LabelService.LabelService
+  fullName: Sorted.PRO.SDK.Labels.LabelService.LabelService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync
+  name: GetConsignmentLabelsAsync
+  nameWithType: LabelService.GetConsignmentLabelsAsync
+  fullName: Sorted.PRO.SDK.Labels.LabelService.GetConsignmentLabelsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  isExternal: true
+  name: GetConsignmentLabelsAsync(String, LabelFormat, Int32)
+  nameWithType: ILabelService.GetConsignmentLabelsAsync(String, LabelFormat, Int32)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String, Sorted.PRO.SDK.DataTypes.Labels.LabelFormat, System.Int32)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+    name: GetConsignmentLabelsAsync
+    nameWithType: ILabelService.GetConsignmentLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+    name: LabelFormat
+    nameWithType: LabelFormat
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync(System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+    name: GetConsignmentLabelsAsync
+    nameWithType: ILabelService.GetConsignmentLabelsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetConsignmentLabelsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+    name: LabelFormat
+    nameWithType: LabelFormat
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: LabelFormat
+  nameWithType: LabelFormat
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GetLabelsResponse>
+  nameWithType: Task<GetLabelsResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse>
+  nameWithType.vb: Task(Of GetLabelsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse)
+  name.vb: Task(Of GetLabelsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+    name: GetLabelsResponse
+    nameWithType: GetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+    name: GetLabelsResponse
+    nameWithType: GetLabelsResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.GetLabelsResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Labels
+  commentId: N:Sorted.PRO.SDK.DataTypes.Labels
+  name: Sorted.PRO.SDK.DataTypes.Labels
+  nameWithType: Sorted.PRO.SDK.DataTypes.Labels
+  fullName: Sorted.PRO.SDK.DataTypes.Labels
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync*
+  commentId: Overload:Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync
+  name: GetPackageLabelAsync
+  nameWithType: LabelService.GetPackageLabelAsync
+  fullName: Sorted.PRO.SDK.Labels.LabelService.GetPackageLabelAsync
+- uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+  parent: Sorted.PRO.SDK.Interfaces.Labels.ILabelService
+  isExternal: true
+  name: GetPackageLabelAsync(String, String, LabelFormat, Int32)
+  nameWithType: ILabelService.GetPackageLabelAsync(String, String, LabelFormat, Int32)
+  fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String, System.String, Sorted.PRO.SDK.DataTypes.Labels.LabelFormat, System.Int32)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+    name: GetPackageLabelAsync
+    nameWithType: ILabelService.GetPackageLabelAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+    name: LabelFormat
+    nameWithType: LabelFormat
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync(System.String,System.String,Sorted.PRO.SDK.DataTypes.Labels.LabelFormat,System.Int32)
+    name: GetPackageLabelAsync
+    nameWithType: ILabelService.GetPackageLabelAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Labels.ILabelService.GetPackageLabelAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+    name: LabelFormat
+    nameWithType: LabelFormat
+    fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

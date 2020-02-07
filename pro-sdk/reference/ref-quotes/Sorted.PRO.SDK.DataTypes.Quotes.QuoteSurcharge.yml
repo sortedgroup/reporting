@@ -1,0 +1,505 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Quotes.QuoteSurcharge
+  commentId: T:Sorted.PRO.SDK.DataTypes.Quotes.QuoteSurcharge
+  id: QuoteSurcharge
+  parent: Sorted.PRO.SDK.DataTypes.Quotes
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: QuoteSurcharge
+  nameWithType: QuoteSurcharge
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes.QuoteSurcharge
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Quotes/QuoteSurcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: QuoteSurcharge
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Quotes/QuoteSurcharge.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Quotes
+  namespace: Sorted.PRO.SDK.DataTypes.Quotes
+  summary: "\nRepresents a surcharge applicable to a Quote.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Quote Surcharge", "A surcharge applicable to a quote.")]
+
+      [Serializable]
+
+      public class QuoteSurcharge : SurchargeBase
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Quote Surcharge", "A surcharge applicable to a quote.")>
+
+      <Serializable>
+
+      Public Class QuoteSurcharge
+          Inherits SurchargeBase
+  seealso:
+  - linkId: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+    commentId: T:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  inheritedMembers:
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.ApplicationType
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Type
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBase
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBaseOnly
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CalculationModel
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitFactor
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitPrice
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Quote Surcharge
+    - type: System.String
+      value: A surcharge applicable to a quote.
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  parent: Sorted.PRO.SDK.DataTypes.Rates
+  name: SurchargeBase
+  nameWithType: SurchargeBase
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+- uid: Sorted.PRO.SDK.DataTypes.Quotes
+  commentId: N:Sorted.PRO.SDK.DataTypes.Quotes
+  name: Sorted.PRO.SDK.DataTypes.Quotes
+  nameWithType: Sorted.PRO.SDK.DataTypes.Quotes
+  fullName: Sorted.PRO.SDK.DataTypes.Quotes
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: ObjectBase
+  nameWithType: ObjectBase
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: Reference
+  nameWithType: SurchargeBase.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: CurrencyIsoCode
+  nameWithType: SurchargeBase.CurrencyIsoCode
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: Amount
+  nameWithType: SurchargeBase.Amount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.ApplicationType
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.ApplicationType
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: ApplicationType
+  nameWithType: SurchargeBase.ApplicationType
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.ApplicationType
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Type
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Type
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: Type
+  nameWithType: SurchargeBase.Type
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Type
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBase
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBase
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: AppliesToBase
+  nameWithType: SurchargeBase.AppliesToBase
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBase
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBaseOnly
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBaseOnly
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: AppliesToBaseOnly
+  nameWithType: SurchargeBase.AppliesToBaseOnly
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.AppliesToBaseOnly
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CalculationModel
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CalculationModel
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: CalculationModel
+  nameWithType: SurchargeBase.CalculationModel
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CalculationModel
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitFactor
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitFactor
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: IncrementalUnitFactor
+  nameWithType: SurchargeBase.IncrementalUnitFactor
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitFactor
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitPrice
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitPrice
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: IncrementalUnitPrice
+  nameWithType: SurchargeBase.IncrementalUnitPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.IncrementalUnitPrice
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: MinimumAmount
+  nameWithType: SurchargeBase.MinimumAmount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: MaximumAmount
+  nameWithType: SurchargeBase.MaximumAmount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+  parent: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  name: Id
+  nameWithType: ObjectBase.Id
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+  parent: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  name: Label
+  nameWithType: ObjectBase.Label
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+  parent: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  name: Description
+  nameWithType: ObjectBase.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Rates
+  commentId: N:Sorted.PRO.SDK.DataTypes.Rates
+  name: Sorted.PRO.SDK.DataTypes.Rates
+  nameWithType: Sorted.PRO.SDK.DataTypes.Rates
+  fullName: Sorted.PRO.SDK.DataTypes.Rates
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common

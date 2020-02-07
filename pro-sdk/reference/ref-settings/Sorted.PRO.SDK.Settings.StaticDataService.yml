@@ -1,0 +1,3467 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Settings.StaticDataService
+  commentId: T:Sorted.PRO.SDK.Settings.StaticDataService
+  id: StaticDataService
+  parent: Sorted.PRO.SDK.Settings
+  children:
+  - Sorted.PRO.SDK.Settings.StaticDataService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates(System.String)
+  - Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StaticDataService
+  nameWithType: StaticDataService
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: StaticDataService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nProvides access to static data such as lookup tables\n"
+  example: []
+  syntax:
+    content: 'public class StaticDataService : BaseService, IStaticDataService'
+    content.vb: >-
+      Public Class StaticDataService
+          Inherits BaseService
+          Implements IStaticDataService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: StaticDataService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: StaticDataService.StaticDataService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.StaticDataService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Settings.StaticDataService\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public StaticDataService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: ''
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: ''
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: ''
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+  nameWithType.vb: StaticDataService.StaticDataService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Settings.StaticDataService.StaticDataService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: StaticDataService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions
+  id: GetAllPermissions
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetAllPermissions()
+  nameWithType: StaticDataService.GetAllPermissions()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAllPermissions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 59
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets all permissions.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get All Permissions", "Returns all available Electio permissions.", "Static Data", typeof(List<PermissionGroup>), "/security/permissions", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<PermissionGroup> GetAllPermissions()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.PermissionGroup}
+      description: "\nList of Permissions\n"
+    content.vb: >-
+      <ApiEndpoint("Get All Permissions", "Returns all available Electio permissions.", "Static Data", GetType(List(Of PermissionGroup)), "/security/permissions", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetAllPermissions As List(Of PermissionGroup)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles
+  id: GetAllBuiltInRoles
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetAllBuiltInRoles()
+  nameWithType: StaticDataService.GetAllBuiltInRoles()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAllBuiltInRoles
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 80
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets all built in roles.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Built In Roles", "Returns all non-configurable (built-in) Electio roles.", "Static Data", typeof(List<Role>), "/security/staticdata/builtinroles", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<Role> GetAllBuiltInRoles()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Role}
+      description: "\nList of &apos;BuiltIn&apos; roles\n"
+    content.vb: >-
+      <ApiEndpoint("Get Built In Roles", "Returns all non-configurable (built-in) Electio roles.", "Static Data", GetType(List(Of Role)), "/security/staticdata/builtinroles", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetAllBuiltInRoles As List(Of Role)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones
+  id: GetSupportedTimeZones
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedTimeZones()
+  nameWithType: StaticDataService.GetSupportedTimeZones()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedTimeZones
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 101
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the supported time zones.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Timezones", "Returns all supported timezones.", "Static Data", typeof(HashSet<TimeZone>), "/security/staticdata/timezones", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public HashSet<TimeZone> GetSupportedTimeZones()
+    return:
+      type: System.Collections.Generic.HashSet{System.TimeZone}
+      description: "\nSet of supported timezones.\n"
+    content.vb: >-
+      <ApiEndpoint("Get Timezones", "Returns all supported timezones.", "Static Data", GetType(HashSet(Of TimeZone)), "/security/staticdata/timezones", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetSupportedTimeZones As HashSet(Of TimeZone)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles
+  id: GetSupportedTitles
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedTitles()
+  nameWithType: StaticDataService.GetSupportedTitles()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedTitles
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 119
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet supported titles\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Titles", "Gets all supported titles.", "Static Data", typeof(IList<string>), "/security/staticdata/titles", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<string> GetSupportedTitles()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Titles", "Gets all supported titles.", "Static Data", GetType(IList(Of String)), "/security/staticdata/titles", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetSupportedTitles As List(Of String)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies
+  id: GetSupportedCurrencies
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedCurrencies()
+  nameWithType: StaticDataService.GetSupportedCurrencies()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedCurrencies
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 137
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet all supported currencies\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Currencies", "Returns all supported currencies.", "Static Data", typeof(List<Currency>), "/security/staticdata/currencies", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<Currency> GetSupportedCurrencies()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Currency}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Currencies", "Returns all supported currencies.", "Static Data", GetType(List(Of Currency)), "/security/staticdata/currencies", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetSupportedCurrencies As List(Of Currency)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries
+  id: GetSupportedCountries
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedCountries()
+  nameWithType: StaticDataService.GetSupportedCountries()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedCountries
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 155
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet all supported countries\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Countries", "Returns all supported countries.", "Static Data", typeof(List<Country>), "/security/staticdata/countries", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<Country> GetSupportedCountries()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Country}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Countries", "Returns all supported countries.", "Static Data", GetType(List(Of Country)), "/security/staticdata/countries", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetSupportedCountries As List(Of Country)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions
+  id: GetSupportedRegions
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedRegions()
+  nameWithType: StaticDataService.GetSupportedRegions()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedRegions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 173
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet all supported regions\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Regions", "Returns all supported regions.", "Static Data", typeof(List<Region>), "/security/staticdata/regions", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public Dictionary<string, List<Region>> GetSupportedRegions()
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Region}}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Regions", "Returns all supported regions.", "Static Data", GetType(List(Of Region)), "/security/staticdata/regions", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetSupportedRegions As Dictionary(Of String, List(Of Region))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates(System.String)
+  id: GetTaxRates(System.String)
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetTaxRates(String)
+  nameWithType: StaticDataService.GetTaxRates(String)
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetTaxRates
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 194
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the Tax rates configured for the specified country.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Tax Rates", "Returns all supported Tax rates.", "Static Data", "/rates/management/static/tax/{countryIsoCode:string}", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<TaxRate> GetTaxRates(string countryIsoCode)
+    parameters:
+    - id: countryIsoCode
+      type: System.String
+      description: The country ISO code.
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.TaxRate}
+      description: "\nList of supported Tax rates\n"
+    content.vb: >-
+      <ApiEndpoint("Get Tax Rates", "Returns all supported Tax rates.", "Static Data", "/rates/management/static/tax/{countryIsoCode:string}", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetTaxRates(countryIsoCode As String) As List(Of TaxRate)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits
+  id: GetDimensionUnits
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetDimensionUnits()
+  nameWithType: StaticDataService.GetDimensionUnits()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetDimensionUnits
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 211
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet all dimensions units\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Dimension Units", "Gets all supported dimensions units.", "Static Data", typeof(List<Unit>), "/rates/management/static/dimensionunits", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<Unit> GetDimensionUnits()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Rates.Unit}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Dimension Units", "Gets all supported dimensions units.", "Static Data", GetType(List(Of Unit)), "/rates/management/static/dimensionunits", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetDimensionUnits As List(Of Unit)
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync
+  id: GetAllPermissionsAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetAllPermissionsAsync()
+  nameWithType: StaticDataService.GetAllPermissionsAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAllPermissionsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 229
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets all permissions asynchronous.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public Task<List<PermissionGroup>> GetAllPermissionsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.PermissionGroup}}
+      description: ''
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetAllPermissionsAsync As Task(Of List(Of PermissionGroup))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync
+  id: GetAllBuiltInRolesAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetAllBuiltInRolesAsync()
+  nameWithType: StaticDataService.GetAllBuiltInRolesAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetAllBuiltInRolesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 235
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  syntax:
+    content: public Task<List<Role>> GetAllBuiltInRolesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Role}}
+    content.vb: Public Function GetAllBuiltInRolesAsync As Task(Of List(Of Role))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync
+  id: GetSupportedTimeZonesAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedTimeZonesAsync()
+  nameWithType: StaticDataService.GetSupportedTimeZonesAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedTimeZonesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 245
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the supported time zones.\n"
+  example: []
+  syntax:
+    content: public Task<HashSet<TimeZone>> GetSupportedTimeZonesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.HashSet{System.TimeZone}}
+      description: ''
+    content.vb: Public Function GetSupportedTimeZonesAsync As Task(Of HashSet(Of TimeZone))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync
+  id: GetSupportedTitlesAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedTitlesAsync()
+  nameWithType: StaticDataService.GetSupportedTitlesAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedTitlesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 255
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the supported titles.\n"
+  example: []
+  syntax:
+    content: public Task<List<string>> GetSupportedTitlesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+      description: ''
+    content.vb: Public Function GetSupportedTitlesAsync As Task(Of List(Of String))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync
+  id: GetSupportedCurrenciesAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedCurrenciesAsync()
+  nameWithType: StaticDataService.GetSupportedCurrenciesAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedCurrenciesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 265
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the supported currencies.\n"
+  example: []
+  syntax:
+    content: public Task<List<Currency>> GetSupportedCurrenciesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Currency}}
+      description: ''
+    content.vb: Public Function GetSupportedCurrenciesAsync As Task(Of List(Of Currency))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync
+  id: GetSupportedCountriesAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedCountriesAsync()
+  nameWithType: StaticDataService.GetSupportedCountriesAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedCountriesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 275
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the supported countries.\n"
+  example: []
+  syntax:
+    content: public Task<List<Country>> GetSupportedCountriesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Country}}
+      description: ''
+    content.vb: Public Function GetSupportedCountriesAsync As Task(Of List(Of Country))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync
+  id: GetSupportedRegionsAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetSupportedRegionsAsync()
+  nameWithType: StaticDataService.GetSupportedRegionsAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetSupportedRegionsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 285
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the supported regions.\n"
+  example: []
+  syntax:
+    content: public Task<Dictionary<string, List<Region>>> GetSupportedRegionsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Region}}}
+      description: ''
+    content.vb: Public Function GetSupportedRegionsAsync As Task(Of Dictionary(Of String, List(Of Region)))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync(System.String)
+  id: GetTaxRatesAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetTaxRatesAsync(String)
+  nameWithType: StaticDataService.GetTaxRatesAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetTaxRatesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 298
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the VAT rates configured for the specified country.\n"
+  example: []
+  syntax:
+    content: public Task<List<TaxRate>> GetTaxRatesAsync(string countryIsoCode)
+    parameters:
+    - id: countryIsoCode
+      type: System.String
+      description: The country ISO code.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.TaxRate}}
+      description: "\nList of supported VAT rates\n"
+    content.vb: Public Function GetTaxRatesAsync(countryIsoCode As String) As Task(Of List(Of TaxRate))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync
+  commentId: M:Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync
+  id: GetDimensionUnitsAsync
+  parent: Sorted.PRO.SDK.Settings.StaticDataService
+  langs:
+  - csharp
+  - vb
+  name: GetDimensionUnitsAsync()
+  nameWithType: StaticDataService.GetDimensionUnitsAsync()
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/StaticDataService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetDimensionUnitsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/StaticDataService.cs
+    startLine: 308
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the dimension units.\n"
+  example: []
+  syntax:
+    content: public Task<List<Unit>> GetDimensionUnitsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Rates.Unit}}
+      description: ''
+    content.vb: Public Function GetDimensionUnitsAsync As Task(Of List(Of Unit))
+  overload: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Settings
+  commentId: N:Sorted.PRO.SDK.Settings
+  name: Sorted.PRO.SDK.Settings
+  nameWithType: Sorted.PRO.SDK.Settings
+  fullName: Sorted.PRO.SDK.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  name: IStaticDataService
+  nameWithType: IStaticDataService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService
+  commentId: T:Sorted.PRO.SDK.Settings.StaticDataService
+  name: StaticDataService
+  nameWithType: StaticDataService
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.#ctor
+  name: StaticDataService
+  nameWithType: StaticDataService.StaticDataService
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.StaticDataService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions
+  name: GetAllPermissions
+  nameWithType: StaticDataService.GetAllPermissions
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissions
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetAllPermissions()
+  nameWithType: IStaticDataService.GetAllPermissions()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+    name: GetAllPermissions
+    nameWithType: IStaticDataService.GetAllPermissions
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+    name: GetAllPermissions
+    nameWithType: IStaticDataService.GetAllPermissions
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.PermissionGroup}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.PermissionGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<PermissionGroup>
+  nameWithType: List<PermissionGroup>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Security.PermissionGroup>
+  nameWithType.vb: List(Of PermissionGroup)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Security.PermissionGroup)
+  name.vb: List(Of PermissionGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+    name: PermissionGroup
+    nameWithType: PermissionGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+    name: PermissionGroup
+    nameWithType: PermissionGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles
+  name: GetAllBuiltInRoles
+  nameWithType: StaticDataService.GetAllBuiltInRoles
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRoles
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetAllBuiltInRoles()
+  nameWithType: IStaticDataService.GetAllBuiltInRoles()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+    name: GetAllBuiltInRoles
+    nameWithType: IStaticDataService.GetAllBuiltInRoles
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+    name: GetAllBuiltInRoles
+    nameWithType: IStaticDataService.GetAllBuiltInRoles
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRoles
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Role}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Role}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Role>
+  nameWithType: List<Role>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Security.Role>
+  nameWithType.vb: List(Of Role)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Security.Role)
+  name.vb: List(Of Role)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones
+  name: GetSupportedTimeZones
+  nameWithType: StaticDataService.GetSupportedTimeZones
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZones
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedTimeZones()
+  nameWithType: IStaticDataService.GetSupportedTimeZones()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+    name: GetSupportedTimeZones
+    nameWithType: IStaticDataService.GetSupportedTimeZones
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+    name: GetSupportedTimeZones
+    nameWithType: IStaticDataService.GetSupportedTimeZones
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZones
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.HashSet{System.TimeZone}
+  commentId: T:System.Collections.Generic.HashSet{System.TimeZone}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  name: HashSet<TimeZone>
+  nameWithType: HashSet<TimeZone>
+  fullName: System.Collections.Generic.HashSet<System.TimeZone>
+  nameWithType.vb: HashSet(Of TimeZone)
+  fullName.vb: System.Collections.Generic.HashSet(Of System.TimeZone)
+  name.vb: HashSet(Of TimeZone)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeZone
+    name: TimeZone
+    nameWithType: TimeZone
+    fullName: System.TimeZone
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeZone
+    name: TimeZone
+    nameWithType: TimeZone
+    fullName: System.TimeZone
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles
+  name: GetSupportedTitles
+  nameWithType: StaticDataService.GetSupportedTitles
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitles
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedTitles()
+  nameWithType: IStaticDataService.GetSupportedTitles()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+    name: GetSupportedTitles
+    nameWithType: IStaticDataService.GetSupportedTitles
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+    name: GetSupportedTitles
+    nameWithType: IStaticDataService.GetSupportedTitles
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitles
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies
+  name: GetSupportedCurrencies
+  nameWithType: StaticDataService.GetSupportedCurrencies
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrencies
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedCurrencies()
+  nameWithType: IStaticDataService.GetSupportedCurrencies()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+    name: GetSupportedCurrencies
+    nameWithType: IStaticDataService.GetSupportedCurrencies
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+    name: GetSupportedCurrencies
+    nameWithType: IStaticDataService.GetSupportedCurrencies
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrencies
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Currency}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Currency}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Currency>
+  nameWithType: List<Currency>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Currency>
+  nameWithType.vb: List(Of Currency)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Currency)
+  name.vb: List(Of Currency)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Currency
+    name: Currency
+    nameWithType: Currency
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Currency
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Currency
+    name: Currency
+    nameWithType: Currency
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Currency
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries
+  name: GetSupportedCountries
+  nameWithType: StaticDataService.GetSupportedCountries
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountries
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedCountries()
+  nameWithType: IStaticDataService.GetSupportedCountries()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+    name: GetSupportedCountries
+    nameWithType: IStaticDataService.GetSupportedCountries
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+    name: GetSupportedCountries
+    nameWithType: IStaticDataService.GetSupportedCountries
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountries
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Country}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Country}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Country>
+  nameWithType: List<Country>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Country>
+  nameWithType.vb: List(Of Country)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Country)
+  name.vb: List(Of Country)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Country
+    name: Country
+    nameWithType: Country
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Country
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Country
+    name: Country
+    nameWithType: Country
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Country
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions
+  name: GetSupportedRegions
+  nameWithType: StaticDataService.GetSupportedRegions
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegions
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedRegions()
+  nameWithType: IStaticDataService.GetSupportedRegions()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+    name: GetSupportedRegions
+    nameWithType: IStaticDataService.GetSupportedRegions
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+    name: GetSupportedRegions
+    nameWithType: IStaticDataService.GetSupportedRegions
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegions
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Region}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Region}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, List<Region>>
+  nameWithType: Dictionary<String, List<Region>>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Region>>
+  nameWithType.vb: Dictionary(Of String, List(Of Region))
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Region))
+  name.vb: Dictionary(Of String, List(Of Region))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Region
+    name: Region
+    nameWithType: Region
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Region
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Region
+    name: Region
+    nameWithType: Region
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Region
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates
+  name: GetTaxRates
+  nameWithType: StaticDataService.GetTaxRates
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRates
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  isExternal: true
+  name: GetTaxRates(String)
+  nameWithType: IStaticDataService.GetTaxRates(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates(System.String)
+    name: GetTaxRates
+    nameWithType: IStaticDataService.GetTaxRates
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates(System.String)
+    name: GetTaxRates
+    nameWithType: IStaticDataService.GetTaxRates
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRates
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.TaxRate}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.TaxRate}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TaxRate>
+  nameWithType: List<TaxRate>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.TaxRate>
+  nameWithType.vb: List(Of TaxRate)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.TaxRate)
+  name.vb: List(Of TaxRate)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+    name: TaxRate
+    nameWithType: TaxRate
+    fullName: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+    name: TaxRate
+    nameWithType: TaxRate
+    fullName: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits
+  name: GetDimensionUnits
+  nameWithType: StaticDataService.GetDimensionUnits
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnits
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetDimensionUnits()
+  nameWithType: IStaticDataService.GetDimensionUnits()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+    name: GetDimensionUnits
+    nameWithType: IStaticDataService.GetDimensionUnits
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+    name: GetDimensionUnits
+    nameWithType: IStaticDataService.GetDimensionUnits
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnits
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Rates.Unit}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Rates.Unit}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Unit>
+  nameWithType: List<Unit>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Rates.Unit>
+  nameWithType.vb: List(Of Unit)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Rates.Unit)
+  name.vb: List(Of Unit)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Rates.Unit
+    name: Unit
+    nameWithType: Unit
+    fullName: Sorted.PRO.SDK.DataTypes.Rates.Unit
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Rates.Unit
+    name: Unit
+    nameWithType: Unit
+    fullName: Sorted.PRO.SDK.DataTypes.Rates.Unit
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync
+  name: GetAllPermissionsAsync
+  nameWithType: StaticDataService.GetAllPermissionsAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllPermissionsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetAllPermissionsAsync()
+  nameWithType: IStaticDataService.GetAllPermissionsAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+    name: GetAllPermissionsAsync
+    nameWithType: IStaticDataService.GetAllPermissionsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+    name: GetAllPermissionsAsync
+    nameWithType: IStaticDataService.GetAllPermissionsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllPermissionsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.PermissionGroup}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.PermissionGroup}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<PermissionGroup>>
+  nameWithType: Task<List<PermissionGroup>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Security.PermissionGroup>>
+  nameWithType.vb: Task(Of List(Of PermissionGroup))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Security.PermissionGroup))
+  name.vb: Task(Of List(Of PermissionGroup))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+    name: PermissionGroup
+    nameWithType: PermissionGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+    name: PermissionGroup
+    nameWithType: PermissionGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Security.PermissionGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync
+  name: GetAllBuiltInRolesAsync
+  nameWithType: StaticDataService.GetAllBuiltInRolesAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetAllBuiltInRolesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetAllBuiltInRolesAsync()
+  nameWithType: IStaticDataService.GetAllBuiltInRolesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+    name: GetAllBuiltInRolesAsync
+    nameWithType: IStaticDataService.GetAllBuiltInRolesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+    name: GetAllBuiltInRolesAsync
+    nameWithType: IStaticDataService.GetAllBuiltInRolesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetAllBuiltInRolesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Role}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Role}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Role>>
+  nameWithType: Task<List<Role>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Security.Role>>
+  nameWithType.vb: Task(Of List(Of Role))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Security.Role))
+  name.vb: Task(Of List(Of Role))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Role
+    name: Role
+    nameWithType: Role
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Role
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync
+  name: GetSupportedTimeZonesAsync
+  nameWithType: StaticDataService.GetSupportedTimeZonesAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTimeZonesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedTimeZonesAsync()
+  nameWithType: IStaticDataService.GetSupportedTimeZonesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+    name: GetSupportedTimeZonesAsync
+    nameWithType: IStaticDataService.GetSupportedTimeZonesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+    name: GetSupportedTimeZonesAsync
+    nameWithType: IStaticDataService.GetSupportedTimeZonesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTimeZonesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.HashSet{System.TimeZone}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.HashSet{System.TimeZone}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<HashSet<TimeZone>>
+  nameWithType: Task<HashSet<TimeZone>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.HashSet<System.TimeZone>>
+  nameWithType.vb: Task(Of HashSet(Of TimeZone))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.HashSet(Of System.TimeZone))
+  name.vb: Task(Of HashSet(Of TimeZone))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.TimeZone
+    name: TimeZone
+    nameWithType: TimeZone
+    fullName: System.TimeZone
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    nameWithType: HashSet
+    fullName: System.Collections.Generic.HashSet
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.TimeZone
+    name: TimeZone
+    nameWithType: TimeZone
+    fullName: System.TimeZone
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync
+  name: GetSupportedTitlesAsync
+  nameWithType: StaticDataService.GetSupportedTitlesAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedTitlesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedTitlesAsync()
+  nameWithType: IStaticDataService.GetSupportedTitlesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+    name: GetSupportedTitlesAsync
+    nameWithType: IStaticDataService.GetSupportedTitlesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+    name: GetSupportedTitlesAsync
+    nameWithType: IStaticDataService.GetSupportedTitlesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedTitlesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<String>>
+  nameWithType: Task<List<String>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<System.String>>
+  nameWithType.vb: Task(Of List(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of System.String))
+  name.vb: Task(Of List(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync
+  name: GetSupportedCurrenciesAsync
+  nameWithType: StaticDataService.GetSupportedCurrenciesAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCurrenciesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedCurrenciesAsync()
+  nameWithType: IStaticDataService.GetSupportedCurrenciesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+    name: GetSupportedCurrenciesAsync
+    nameWithType: IStaticDataService.GetSupportedCurrenciesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+    name: GetSupportedCurrenciesAsync
+    nameWithType: IStaticDataService.GetSupportedCurrenciesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCurrenciesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Currency}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Currency}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Currency>>
+  nameWithType: Task<List<Currency>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Currency>>
+  nameWithType.vb: Task(Of List(Of Currency))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Currency))
+  name.vb: Task(Of List(Of Currency))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Currency
+    name: Currency
+    nameWithType: Currency
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Currency
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Currency
+    name: Currency
+    nameWithType: Currency
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Currency
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync
+  name: GetSupportedCountriesAsync
+  nameWithType: StaticDataService.GetSupportedCountriesAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedCountriesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedCountriesAsync()
+  nameWithType: IStaticDataService.GetSupportedCountriesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+    name: GetSupportedCountriesAsync
+    nameWithType: IStaticDataService.GetSupportedCountriesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+    name: GetSupportedCountriesAsync
+    nameWithType: IStaticDataService.GetSupportedCountriesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedCountriesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Country}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Country}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Country>>
+  nameWithType: Task<List<Country>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Country>>
+  nameWithType.vb: Task(Of List(Of Country))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Country))
+  name.vb: Task(Of List(Of Country))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Country
+    name: Country
+    nameWithType: Country
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Country
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Country
+    name: Country
+    nameWithType: Country
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Country
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync
+  name: GetSupportedRegionsAsync
+  nameWithType: StaticDataService.GetSupportedRegionsAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetSupportedRegionsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetSupportedRegionsAsync()
+  nameWithType: IStaticDataService.GetSupportedRegionsAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+    name: GetSupportedRegionsAsync
+    nameWithType: IStaticDataService.GetSupportedRegionsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+    name: GetSupportedRegionsAsync
+    nameWithType: IStaticDataService.GetSupportedRegionsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetSupportedRegionsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Region}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.Region}}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Dictionary<String, List<Region>>>
+  nameWithType: Task<Dictionary<String, List<Region>>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.Dictionary<System.String, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.Region>>>
+  nameWithType.vb: Task(Of Dictionary(Of String, List(Of Region)))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.Dictionary(Of System.String, System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.Region)))
+  name.vb: Task(Of Dictionary(Of String, List(Of Region)))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Region
+    name: Region
+    nameWithType: Region
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Region
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Region
+    name: Region
+    nameWithType: Region
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Region
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync
+  name: GetTaxRatesAsync
+  nameWithType: StaticDataService.GetTaxRatesAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetTaxRatesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  isExternal: true
+  name: GetTaxRatesAsync(String)
+  nameWithType: IStaticDataService.GetTaxRatesAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync(System.String)
+    name: GetTaxRatesAsync
+    nameWithType: IStaticDataService.GetTaxRatesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync(System.String)
+    name: GetTaxRatesAsync
+    nameWithType: IStaticDataService.GetTaxRatesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetTaxRatesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.TaxRate}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.TaxRate}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<TaxRate>>
+  nameWithType: Task<List<TaxRate>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.TaxRate>>
+  nameWithType.vb: Task(Of List(Of TaxRate))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.TaxRate))
+  name.vb: Task(Of List(Of TaxRate))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+    name: TaxRate
+    nameWithType: TaxRate
+    fullName: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+    name: TaxRate
+    nameWithType: TaxRate
+    fullName: Sorted.PRO.SDK.DataTypes.Common.TaxRate
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync
+  name: GetDimensionUnitsAsync
+  nameWithType: StaticDataService.GetDimensionUnitsAsync
+  fullName: Sorted.PRO.SDK.Settings.StaticDataService.GetDimensionUnitsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService
+  name: GetDimensionUnitsAsync()
+  nameWithType: IStaticDataService.GetDimensionUnitsAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+    name: GetDimensionUnitsAsync
+    nameWithType: IStaticDataService.GetDimensionUnitsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+    name: GetDimensionUnitsAsync
+    nameWithType: IStaticDataService.GetDimensionUnitsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IStaticDataService.GetDimensionUnitsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Rates.Unit}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Rates.Unit}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Unit>>
+  nameWithType: Task<List<Unit>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Rates.Unit>>
+  nameWithType.vb: Task(Of List(Of Unit))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Rates.Unit))
+  name.vb: Task(Of List(Of Unit))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Rates.Unit
+    name: Unit
+    nameWithType: Unit
+    fullName: Sorted.PRO.SDK.DataTypes.Rates.Unit
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Rates.Unit
+    name: Unit
+    nameWithType: Unit
+    fullName: Sorted.PRO.SDK.DataTypes.Rates.Unit
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

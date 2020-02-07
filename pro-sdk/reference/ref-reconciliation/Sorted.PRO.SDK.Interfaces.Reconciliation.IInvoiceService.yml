@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService
+  id: IInvoiceService
+  parent: Sorted.PRO.SDK.Interfaces.Reconciliation
+  children:
+  - Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer(System.Guid)
+  - Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync(System.Guid)
+  langs:
+  - csharp
+  - vb
+  name: IInvoiceService
+  nameWithType: IInvoiceService
+  fullName: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Reconciliation/IInvoiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IInvoiceService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Reconciliation/IInvoiceService.cs
+    startLine: 7
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Reconciliation
+  namespace: Sorted.PRO.SDK.Interfaces.Reconciliation
+  syntax:
+    content: public interface IInvoiceService
+    content.vb: Public Interface IInvoiceService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer(System.Guid)
+  id: GetInvoiceListForCustomer(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService
+  langs:
+  - csharp
+  - vb
+  name: GetInvoiceListForCustomer(Guid)
+  nameWithType: IInvoiceService.GetInvoiceListForCustomer(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Reconciliation/IInvoiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetInvoiceListForCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Reconciliation/IInvoiceService.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Reconciliation
+  namespace: Sorted.PRO.SDK.Interfaces.Reconciliation
+  summary: "\nGets the invoice list for customer.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      IList<InvoiceSummary> GetInvoiceListForCustomer(Guid customerReference)
+    parameters:
+    - id: customerReference
+      type: System.Guid
+      description: The customer reference.
+    return:
+      type: System.Collections.Generic.IList{Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary}
+      description: ''
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Function GetInvoiceListForCustomer(customerReference As Guid) As IList(Of InvoiceSummary)
+  overload: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync(System.Guid)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync(System.Guid)
+  id: GetInvoiceListForCustomerAsync(System.Guid)
+  parent: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService
+  langs:
+  - csharp
+  - vb
+  name: GetInvoiceListForCustomerAsync(Guid)
+  nameWithType: IInvoiceService.GetInvoiceListForCustomerAsync(Guid)
+  fullName: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync(System.Guid)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Reconciliation/IInvoiceService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetInvoiceListForCustomerAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Reconciliation/IInvoiceService.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Reconciliation
+  namespace: Sorted.PRO.SDK.Interfaces.Reconciliation
+  summary: "\nGets the invoice list for customer asynchronous.\n"
+  example: []
+  syntax:
+    content: Task<IList<InvoiceSummary>> GetInvoiceListForCustomerAsync(Guid customerReference)
+    parameters:
+    - id: customerReference
+      type: System.Guid
+      description: The customer reference.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IList{Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary}}
+      description: ''
+    content.vb: Function GetInvoiceListForCustomerAsync(customerReference As Guid) As Task(Of IList(Of InvoiceSummary))
+  overload: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Reconciliation
+  commentId: N:Sorted.PRO.SDK.Interfaces.Reconciliation
+  name: Sorted.PRO.SDK.Interfaces.Reconciliation
+  nameWithType: Sorted.PRO.SDK.Interfaces.Reconciliation
+  fullName: Sorted.PRO.SDK.Interfaces.Reconciliation
+- uid: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer
+  name: GetInvoiceListForCustomer
+  nameWithType: IInvoiceService.GetInvoiceListForCustomer
+  fullName: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomer
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Collections.Generic.IList{Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary}
+  commentId: T:System.Collections.Generic.IList{Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<InvoiceSummary>
+  nameWithType: IList<InvoiceSummary>
+  fullName: System.Collections.Generic.IList<Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary>
+  nameWithType.vb: IList(Of InvoiceSummary)
+  fullName.vb: System.Collections.Generic.IList(Of Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary)
+  name.vb: IList(Of InvoiceSummary)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+    name: InvoiceSummary
+    nameWithType: InvoiceSummary
+    fullName: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+    name: InvoiceSummary
+    nameWithType: InvoiceSummary
+    fullName: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync
+  name: GetInvoiceListForCustomerAsync
+  nameWithType: IInvoiceService.GetInvoiceListForCustomerAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Reconciliation.IInvoiceService.GetInvoiceListForCustomerAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IList{Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IList{Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IList<InvoiceSummary>>
+  nameWithType: Task<IList<InvoiceSummary>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IList<Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary>>
+  nameWithType.vb: Task(Of IList(Of InvoiceSummary))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IList(Of Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary))
+  name.vb: Task(Of IList(Of InvoiceSummary))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+    name: InvoiceSummary
+    nameWithType: InvoiceSummary
+    fullName: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    nameWithType: IList
+    fullName: System.Collections.Generic.IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+    name: InvoiceSummary
+    nameWithType: InvoiceSummary
+    fullName: Sorted.PRO.SDK.DataTypes.Payments.InvoiceSummary
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

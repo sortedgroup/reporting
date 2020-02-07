@@ -1,0 +1,781 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  id: FailedAllocation
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message
+  - Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName
+  - Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName
+  - Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference
+  langs:
+  - csharp
+  - vb
+  name: FailedAllocation
+  nameWithType: FailedAllocation
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedAllocation
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nRepresents a failed attempt to allocate a consignment\nwith a carrier service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Failed Allocation", "Provides details of a failed allocation event.")]
+
+      public class FailedAllocation
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Failed Allocation", "Provides details of a failed allocation event.")>
+
+      Public Class FailedAllocation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Failed Allocation
+    - type: System.String
+      value: Provides details of a failed allocation event.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference
+  id: CarrierServiceGroupReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  langs:
+  - csharp
+  - vb
+  name: CarrierServiceGroupReference
+  nameWithType: FailedAllocation.CarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CarrierServiceGroupReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the carrier service group reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The carrier service group reference (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string CarrierServiceGroupReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe carrier service group reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The carrier service group reference (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property CarrierServiceGroupReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The carrier service group reference (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName
+  id: MpdCarrierServiceGroupName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceGroupName
+  nameWithType: FailedAllocation.MpdCarrierServiceGroupName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceGroupName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 35
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the name of the MPD carrier service group.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The MPD carrier service group name (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceGroupName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the MPD carrier service group.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The MPD carrier service group name (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceGroupName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The MPD carrier service group name (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference
+  id: MpdCarrierServiceReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceReference
+  nameWithType: FailedAllocation.MpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the MPD carrier service reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The Mpd carrier service reference (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe MPD carrier service reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The Mpd carrier service reference (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The Mpd carrier service reference (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName
+  id: MpdCarrierServiceName
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceName
+  nameWithType: FailedAllocation.MpdCarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceName
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the name of the MPD carrier service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The MPD carrier service name (if applicable).", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the MPD carrier service.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The MPD carrier service name (if applicable).", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceName As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The MPD carrier service name (if applicable).
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate
+  id: AttemptedAllocationDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  langs:
+  - csharp
+  - vb
+  name: AttemptedAllocationDate
+  nameWithType: FailedAllocation.AttemptedAllocationDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AttemptedAllocationDate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 65
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the attempted allocation date.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The attempted allocation date.", false, PropertyCollectionType.Single)]
+
+      public DateTimeOffset AttemptedAllocationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: "\nThe attempted allocation date.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The attempted allocation date.", False, PropertyCollectionType.Single)>
+
+      Public Property AttemptedAllocationDate As DateTimeOffset
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The attempted allocation date.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message
+  id: Message
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: FailedAllocation.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Message
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/FailedAllocation.cs
+    startLine: 86
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the message - reason for failure.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A message relating to the failed allocation.", false, PropertyCollectionType.Single)]
+
+      public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe message.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A message relating to the failed allocation.", False, PropertyCollectionType.Single)>
+
+      Public Property Message As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A message relating to the failed allocation.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference
+  name: CarrierServiceGroupReference
+  nameWithType: FailedAllocation.CarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.CarrierServiceGroupReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName
+  name: MpdCarrierServiceGroupName
+  nameWithType: FailedAllocation.MpdCarrierServiceGroupName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceGroupName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference
+  name: MpdCarrierServiceReference
+  nameWithType: FailedAllocation.MpdCarrierServiceReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName
+  name: MpdCarrierServiceName
+  nameWithType: FailedAllocation.MpdCarrierServiceName
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.MpdCarrierServiceName
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate
+  name: AttemptedAllocationDate
+  nameWithType: FailedAllocation.AttemptedAllocationDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.AttemptedAllocationDate
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message
+  name: Message
+  nameWithType: FailedAllocation.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.FailedAllocation.Message

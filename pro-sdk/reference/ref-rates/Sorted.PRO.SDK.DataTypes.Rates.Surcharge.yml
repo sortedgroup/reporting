@@ -1,0 +1,1492 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  id: Surcharge
+  parent: Sorted.PRO.SDK.DataTypes.Rates
+  children:
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo
+  - Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId
+  langs:
+  - csharp
+  - vb
+  name: Surcharge
+  nameWithType: Surcharge
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Surcharge
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  syntax:
+    content: >-
+      [DataContract]
+
+      [Serializable]
+
+      public class Surcharge : SurchargeBase
+    content.vb: >-
+      <DataContract>
+
+      <Serializable>
+
+      Public Class Surcharge
+          Inherits SurchargeBase
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  inheritedMembers:
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+  - Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+  - Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type
+  id: Type
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: Surcharge.Type
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Type
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nAdditive/Variable\nAdditive is a fixed or calculated amount that is added on to the price.\nVariable represents a percentage surcharge that is calculated and then added to the final price.\n\neg Variable surcharge with an amount of 0.4 means add 40%\nAdditive surcharge with an amount of 0.4 means add 40p\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public SurchargeType Type { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Rates.Enums.SurchargeType
+    content.vb: >-
+      <DataMember>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property Type As SurchargeType
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId
+  id: DimensionUnitId
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: DimensionUnitId
+  nameWithType: Surcharge.DimensionUnitId
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DimensionUnitId
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\ne.g. kg if the class is &apos;out of gauge&apos; and subclass is &apos;too heavy&apos;; can be null, if the class is &apos;Special Day Delivery&apos;\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int DimensionUnitId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property DimensionUnitId As Integer
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension
+  id: Dimension
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: Surcharge.Dimension
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Dimension
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  syntax:
+    content: >-
+      [DataMember]
+
+      public string Dimension { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      Public Property Dimension As String
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase
+  id: AppliesToBase
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: AppliesToBase
+  nameWithType: Surcharge.AppliesToBase
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AppliesToBase
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nThis field is only used for variable surcharges\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool AppliesToBase { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property AppliesToBase As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly
+  id: AppliesToBaseOnly
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: AppliesToBaseOnly
+  nameWithType: Surcharge.AppliesToBaseOnly
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AppliesToBaseOnly
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nThis field is only used for variable surcharges\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public bool AppliesToBaseOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <DataMember>
+
+      Public Property AppliesToBaseOnly As Boolean
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart
+  id: DimensionIntervalStart
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: DimensionIntervalStart
+  nameWithType: Surcharge.DimensionIntervalStart
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DimensionIntervalStart
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 51
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nIn units\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal DimensionIntervalStart { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: >-
+      <DataMember>
+
+      Public Property DimensionIntervalStart As Decimal
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd
+  id: DimensionIntervalEnd
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: DimensionIntervalEnd
+  nameWithType: Surcharge.DimensionIntervalEnd
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DimensionIntervalEnd
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 57
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nIn units\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal? DimensionIntervalEnd { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <DataMember>
+
+      Public Property DimensionIntervalEnd As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor
+  id: IncrementalUnitFactor
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: IncrementalUnitFactor
+  nameWithType: Surcharge.IncrementalUnitFactor
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IncrementalUnitFactor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 60
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal? IncrementalUnitFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <DataMember>
+
+      Public Property IncrementalUnitFactor As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice
+  id: IncrementalUnitPrice
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: IncrementalUnitPrice
+  nameWithType: Surcharge.IncrementalUnitPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IncrementalUnitPrice
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 63
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal? IncrementalUnitPrice { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <DataMember>
+
+      Public Property IncrementalUnitPrice As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice
+  id: MinimumPrice
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: MinimumPrice
+  nameWithType: Surcharge.MinimumPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MinimumPrice
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 69
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nApplies to variable only\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal? MinimumPrice { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <DataMember>
+
+      Public Property MinimumPrice As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice
+  id: MaximumPrice
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: MaximumPrice
+  nameWithType: Surcharge.MaximumPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MaximumPrice
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 75
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nApplies to variable only\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal? MaximumPrice { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: >-
+      <DataMember>
+
+      Public Property MaximumPrice As Decimal?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom
+  id: ValidFrom
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: ValidFrom
+  nameWithType: Surcharge.ValidFrom
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ValidFrom
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 81
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nDate and time this surcharge is valid from\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public DateTime ValidFrom { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <DataMember>
+
+      Public Property ValidFrom As Date
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo
+  id: ValidTo
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: ValidTo
+  nameWithType: Surcharge.ValidTo
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ValidTo
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 87
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nDate and time this surcharge is valid to\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public DateTime? ValidTo { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: >-
+      <DataMember>
+
+      Public Property ValidTo As Date?
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType
+  id: ApplicationType
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: ApplicationType
+  nameWithType: Surcharge.ApplicationType
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ApplicationType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 96
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the type of the application - Standard or Retrospective\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public ApplicationType ApplicationType { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Rates.Enums.ApplicationType
+      description: "\nThe type of the application.\n"
+    content.vb: >-
+      <DataMember>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property ApplicationType As ApplicationType
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel
+  id: CalculationModel
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: CalculationModel
+  nameWithType: Surcharge.CalculationModel
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CalculationModel
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 106
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the calcuation model.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      public CalculationModel CalculationModel { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Rates.Enums.CalculationModel
+      description: "\nThe calcuation model.\n"
+    content.vb: >-
+      <DataMember>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      Public Property CalculationModel As CalculationModel
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId
+  id: VatRateId
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Surcharge
+  langs:
+  - csharp
+  - vb
+  name: VatRateId
+  nameWithType: Surcharge.VatRateId
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: VatRateId
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Rates/Surcharge.cs
+    startLine: 116
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Rates
+  namespace: Sorted.PRO.SDK.DataTypes.Rates
+  summary: "\nGets or sets the vat rate identifier.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int VatRateId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+      description: "\nThe vat rate identifier.\n"
+    content.vb: >-
+      <DataMember>
+
+      Public Property VatRateId As Integer
+  overload: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Rates
+  commentId: N:Sorted.PRO.SDK.DataTypes.Rates
+  name: Sorted.PRO.SDK.DataTypes.Rates
+  nameWithType: Sorted.PRO.SDK.DataTypes.Rates
+  fullName: Sorted.PRO.SDK.DataTypes.Rates
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: ObjectBase
+  nameWithType: ObjectBase
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  parent: Sorted.PRO.SDK.DataTypes.Rates
+  name: SurchargeBase
+  nameWithType: SurchargeBase
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: Reference
+  nameWithType: SurchargeBase.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Reference
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: CurrencyIsoCode
+  nameWithType: SurchargeBase.CurrencyIsoCode
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.CurrencyIsoCode
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: Amount
+  nameWithType: SurchargeBase.Amount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.Amount
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: MinimumAmount
+  nameWithType: SurchargeBase.MinimumAmount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MinimumAmount
+- uid: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+  commentId: P:Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+  parent: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase
+  name: MaximumAmount
+  nameWithType: SurchargeBase.MaximumAmount
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.SurchargeBase.MaximumAmount
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+  parent: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  name: Id
+  nameWithType: ObjectBase.Id
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Id
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+  parent: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  name: Label
+  nameWithType: ObjectBase.Label
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Label
+- uid: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+  parent: Sorted.PRO.SDK.DataTypes.Common.ObjectBase
+  name: Description
+  nameWithType: ObjectBase.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Common.ObjectBase.Description
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type
+  name: Type
+  nameWithType: Surcharge.Type
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Type
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Enums.SurchargeType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.Enums.SurchargeType
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Enums
+  name: SurchargeType
+  nameWithType: SurchargeType
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Enums.SurchargeType
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Rates.Enums
+  name: Sorted.PRO.SDK.DataTypes.Rates.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Rates.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId
+  name: DimensionUnitId
+  nameWithType: Surcharge.DimensionUnitId
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionUnitId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension
+  name: Dimension
+  nameWithType: Surcharge.Dimension
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.Dimension
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase
+  name: AppliesToBase
+  nameWithType: Surcharge.AppliesToBase
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBase
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly
+  name: AppliesToBaseOnly
+  nameWithType: Surcharge.AppliesToBaseOnly
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.AppliesToBaseOnly
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart
+  name: DimensionIntervalStart
+  nameWithType: Surcharge.DimensionIntervalStart
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalStart
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd
+  name: DimensionIntervalEnd
+  nameWithType: Surcharge.DimensionIntervalEnd
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.DimensionIntervalEnd
+- uid: System.Nullable{System.Decimal}
+  commentId: T:System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<Decimal>
+  nameWithType: Nullable<Decimal>
+  fullName: System.Nullable<System.Decimal>
+  nameWithType.vb: Nullable(Of Decimal)
+  fullName.vb: System.Nullable(Of System.Decimal)
+  name.vb: Nullable(Of Decimal)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Decimal
+    name: Decimal
+    nameWithType: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Decimal
+    name: Decimal
+    nameWithType: Decimal
+    fullName: System.Decimal
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor
+  name: IncrementalUnitFactor
+  nameWithType: Surcharge.IncrementalUnitFactor
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitFactor
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice
+  name: IncrementalUnitPrice
+  nameWithType: Surcharge.IncrementalUnitPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.IncrementalUnitPrice
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice
+  name: MinimumPrice
+  nameWithType: Surcharge.MinimumPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MinimumPrice
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice
+  name: MaximumPrice
+  nameWithType: Surcharge.MaximumPrice
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.MaximumPrice
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom
+  name: ValidFrom
+  nameWithType: Surcharge.ValidFrom
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidFrom
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo
+  name: ValidTo
+  nameWithType: Surcharge.ValidTo
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ValidTo
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  name: Nullable<DateTime>
+  nameWithType: Nullable<DateTime>
+  fullName: System.Nullable<System.DateTime>
+  nameWithType.vb: Nullable(Of DateTime)
+  fullName.vb: System.Nullable(Of System.DateTime)
+  name.vb: Nullable(Of DateTime)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.DateTime
+    name: DateTime
+    nameWithType: DateTime
+    fullName: System.DateTime
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType
+  name: ApplicationType
+  nameWithType: Surcharge.ApplicationType
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.ApplicationType
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Enums.ApplicationType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.Enums.ApplicationType
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Enums
+  name: ApplicationType
+  nameWithType: ApplicationType
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Enums.ApplicationType
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel
+  name: CalculationModel
+  nameWithType: Surcharge.CalculationModel
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.CalculationModel
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Enums.CalculationModel
+  commentId: T:Sorted.PRO.SDK.DataTypes.Rates.Enums.CalculationModel
+  parent: Sorted.PRO.SDK.DataTypes.Rates.Enums
+  name: CalculationModel
+  nameWithType: CalculationModel
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Enums.CalculationModel
+- uid: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId
+  name: VatRateId
+  nameWithType: Surcharge.VatRateId
+  fullName: Sorted.PRO.SDK.DataTypes.Rates.Surcharge.VatRateId

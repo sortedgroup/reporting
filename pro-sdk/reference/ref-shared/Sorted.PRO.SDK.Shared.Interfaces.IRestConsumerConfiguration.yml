@@ -1,0 +1,392 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  id: IRestConsumerConfiguration
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  children:
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings
+  - Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version
+  langs:
+  - csharp
+  - vb
+  name: IRestConsumerConfiguration
+  nameWithType: IRestConsumerConfiguration
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IRestConsumerConfiguration
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+    startLine: 6
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: Per-user configuration for a given Rest Consumer
+  example: []
+  syntax:
+    content: public interface IRestConsumerConfiguration
+    content.vb: Public Interface IRestConsumerConfiguration
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl
+  id: BaseUrl
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: BaseUrl
+  nameWithType: IRestConsumerConfiguration.BaseUrl
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: BaseUrl
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nThe base URL for the endpoint. This should be loaded from a config\nsection under applicationSettings/Sorted.Core.Infrastructure.RestConsumer.Properties.Settings\n"
+  example: []
+  syntax:
+    content: string BaseUrl { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe base URL.\n"
+    content.vb: ReadOnly Property BaseUrl As String
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings
+  id: SerializerSettings
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: SerializerSettings
+  nameWithType: IRestConsumerConfiguration.SerializerSettings
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SerializerSettings
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+    startLine: 23
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nCustom Serializer settings that should be used for this endpoint\n"
+  example: []
+  syntax:
+    content: JsonSerializerSettings SerializerSettings { get; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.JsonSerializerSettings
+      description: "\nThe serializer settings.\n"
+    content.vb: ReadOnly Property SerializerSettings As JsonSerializerSettings
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken
+  id: AuthenticationToken
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationToken
+  nameWithType: IRestConsumerConfiguration.AuthenticationToken
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AuthenticationToken
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+    startLine: 31
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nThe authentication token for the current user\n"
+  example: []
+  syntax:
+    content: string AuthenticationToken { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe authentication token.\n"
+    content.vb: ReadOnly Property AuthenticationToken As String
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions
+  id: AdditionalOptions
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: AdditionalOptions
+  nameWithType: IRestConsumerConfiguration.AdditionalOptions
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AdditionalOptions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  summary: "\nAny additional settings that should be used for a non-standard implementation of the RestConsumer\n"
+  example: []
+  syntax:
+    content: Dictionary<string, string> AdditionalOptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: "\nThe additional options.\n"
+    content.vb: ReadOnly Property AdditionalOptions As Dictionary(Of String, String)
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version
+  commentId: P:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version
+  id: Version
+  parent: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: IRestConsumerConfiguration.Version
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Version
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/Interfaces/IRestConsumerConfiguration.cs
+    startLine: 41
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared.Interfaces
+  syntax:
+    content: string Version { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Version As String
+  overload: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+references:
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl
+  name: BaseUrl
+  nameWithType: IRestConsumerConfiguration.BaseUrl
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.BaseUrl
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings
+  name: SerializerSettings
+  nameWithType: IRestConsumerConfiguration.SerializerSettings
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.SerializerSettings
+- uid: Newtonsoft.Json.JsonSerializerSettings
+  commentId: T:Newtonsoft.Json.JsonSerializerSettings
+  parent: Newtonsoft.Json
+  isExternal: true
+  name: JsonSerializerSettings
+  nameWithType: JsonSerializerSettings
+  fullName: Newtonsoft.Json.JsonSerializerSettings
+- uid: Newtonsoft.Json
+  commentId: N:Newtonsoft.Json
+  isExternal: true
+  name: Newtonsoft.Json
+  nameWithType: Newtonsoft.Json
+  fullName: Newtonsoft.Json
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken
+  name: AuthenticationToken
+  nameWithType: IRestConsumerConfiguration.AuthenticationToken
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AuthenticationToken
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions
+  name: AdditionalOptions
+  nameWithType: IRestConsumerConfiguration.AdditionalOptions
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.AdditionalOptions
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version*
+  commentId: Overload:Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version
+  name: Version
+  nameWithType: IRestConsumerConfiguration.Version
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IRestConsumerConfiguration.Version

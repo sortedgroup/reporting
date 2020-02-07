@@ -1,0 +1,343 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  id: ConsignmentBookingStatus
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Allocated
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.AwaitingManifest
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Booked
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Cancelled
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.FailedToAllocate
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Manifested
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentBookingStatus
+  nameWithType: ConsignmentBookingStatus
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentBookingStatus
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 6
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Booking Status", "The status of a consignment from the carrier's perspective.")]
+
+      public enum ConsignmentBookingStatus
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Booking Status", "The status of a consignment from the carrier's perspective.")>
+
+      Public Enum ConsignmentBookingStatus
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Booking Status
+    - type: System.String
+      value: The status of a consignment from the carrier's perspective.
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Allocated
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Allocated
+  id: Allocated
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  langs:
+  - csharp
+  - vb
+  name: Allocated
+  nameWithType: ConsignmentBookingStatus.Allocated
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Allocated
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Allocated
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe allocated\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Allocated = 0
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+    content.vb: >-
+      <EnumMember>
+
+      Allocated = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Manifested
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Manifested
+  id: Manifested
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  langs:
+  - csharp
+  - vb
+  name: Manifested
+  nameWithType: ConsignmentBookingStatus.Manifested
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Manifested
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Manifested
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe manifested\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Manifested = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+    content.vb: >-
+      <EnumMember>
+
+      Manifested = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.FailedToAllocate
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.FailedToAllocate
+  id: FailedToAllocate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  langs:
+  - csharp
+  - vb
+  name: FailedToAllocate
+  nameWithType: ConsignmentBookingStatus.FailedToAllocate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.FailedToAllocate
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: FailedToAllocate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe failed to allocate\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      FailedToAllocate = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+    content.vb: >-
+      <EnumMember>
+
+      FailedToAllocate = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Booked
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Booked
+  id: Booked
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  langs:
+  - csharp
+  - vb
+  name: Booked
+  nameWithType: ConsignmentBookingStatus.Booked
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Booked
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Booked
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 29
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe booked\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Booked = 3
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+    content.vb: >-
+      <EnumMember>
+
+      Booked = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Cancelled
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Cancelled
+  id: Cancelled
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: ConsignmentBookingStatus.Cancelled
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.Cancelled
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Cancelled
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 34
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe cancelled\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Cancelled = 4
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+    content.vb: >-
+      <EnumMember>
+
+      Cancelled = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.AwaitingManifest
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.AwaitingManifest
+  id: AwaitingManifest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  langs:
+  - csharp
+  - vb
+  name: AwaitingManifest
+  nameWithType: ConsignmentBookingStatus.AwaitingManifest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus.AwaitingManifest
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AwaitingManifest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/ConsignmentBookingStatus.cs
+    startLine: 39
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe awaiting manifest\n"
+  example: []
+  syntax:
+    content: >-
+      [EnumMember]
+
+      AwaitingManifest = 5
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+    content.vb: >-
+      <EnumMember>
+
+      AwaitingManifest = 5
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentBookingStatus
+  nameWithType: ConsignmentBookingStatus
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentBookingStatus

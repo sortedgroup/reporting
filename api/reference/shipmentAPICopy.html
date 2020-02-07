@@ -1,0 +1,1093 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Labels API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Labels API ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="api.electioapp.com/labels/Labels API/1.1">
+
+<h1 id="api_electioapp_com_labels_Labels_API_1_1" data-uid="api.electioapp.com/labels/Labels API/1.1" class="text-capitalize text-break">Labels API</h1>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/andywalton7/doc-centre/new/api-poc/apiSpec/new?filename=api_electioapp_com_labels_Labels_API_1_1_Get_Labels.md&amp;value=---%0Auid%3A%20api.electioapp.com%2Flabels%2FLabels%20API%2F1.1%2FGet%20Labels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/andywalton7/doc-centre/blob/api-poc/docfx_project/api/reference/shipmentAPICopy.json/#L1">View Source</a>
+  </span>
+   <h3 id="api_electioapp_com_labels_Labels_API_1_1_Get_Labels" data-uid="api.electioapp.com/labels/Labels API/1.1/Get Labels" class="text-capitalize">Get Labels</h3>
+  <div class="markdown level1 description"><p>Returns labels for the specified consignment.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">GET /{consignmentReference}</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">consignmentReference</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>The consignment's unique reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">200</span></td>
+        <td><p>A shipment object was returned successfully</p>
+</td>
+        <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;properties&quot;: {
+    &quot;ContentType&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;type&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    },
+    &quot;message&quot;: {
+      &quot;type&quot;: &quot;string&quot;
+    }
+  },
+  &quot;x-internal-ref-name&quot;: &quot;GetLabelsResponse&quot;
+}</code></pre>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/andywalton7/doc-centre/new/api-poc/apiSpec/new?filename=api_electioapp_com_labels_Labels_API_1_1_Get_Labels_In_Format.md&amp;value=---%0Auid%3A%20api.electioapp.com%2Flabels%2FLabels%20API%2F1.1%2FGet%20Labels%20In%20Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/andywalton7/doc-centre/blob/api-poc/docfx_project/api/reference/shipmentAPICopy.json/#L1">View Source</a>
+  </span>
+   <h3 id="api_electioapp_com_labels_Labels_API_1_1_Get_Labels_In_Format" data-uid="api.electioapp.com/labels/Labels API/1.1/Get Labels In Format" class="text-capitalize">Get Labels In Format</h3>
+  <div class="markdown level1 description"><p>Returns labels for the specified consignment in the specified format.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">GET /{consignmentReference}/{labelFormat}</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">*id</span></td>
+        <td>string</td>
+        <td></td>
+        <td><p>Returns labels for the specified consignment in the specified format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">200</span></td>
+        <td><p>A shipment object was returned successfully</p>
+</td>
+        <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;Shipment&quot;: {
+    &quot;properties&quot;: {
+      &quot;tracking_references&quot;: {
+        &quot;description&quot;: &quot;The carrier's reference for this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;custom_references&quot;: {
+        &quot;description&quot;: &quot;A list of your own custom references for this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;tags&quot;: {
+        &quot;description&quot;: &quot;An optional list of tags to apply to this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;carrier&quot;: {
+        &quot;description&quot;: &quot;The name of the carrier of this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;carrier_service&quot;: {
+        &quot;description&quot;: &quot;The name of the carrier service of this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;shipped_date&quot;: {
+        &quot;description&quot;: &quot;The date on which the shipment was (or will be) shipped.&quot;,
+        &quot;format&quot;: &quot;date-time&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;order_date&quot;: {
+        &quot;description&quot;: &quot;The date on which the order was placed.&quot;,
+        &quot;format&quot;: &quot;date-time&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;promised_date&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;start&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;end&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;PromisedDate&quot;,
+        &quot;description&quot;: &quot;The date range on which the shipment should have been delivered to the customer.&quot;
+      },
+      &quot;expected_delivery_date&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;start&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;end&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;ExpectedDeliveryDate&quot;,
+        &quot;description&quot;: &quot;The date and time during which delivery is expected.&quot;
+      },
+      &quot;addresses&quot;: {
+        &quot;description&quot;: &quot;The addresses relevant to a shipment. Each address includes a \&quot;Type\&quot; property indicating the type of address, should include only 1 address of each type (e.g. 1 origin and 1 destination).&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;address_type&quot;: {
+              &quot;enum&quot;: [
+                &quot;not_specified&quot;,
+                &quot;origin&quot;,
+                &quot;destination&quot;,
+                &quot;return&quot;,
+                &quot;billing&quot;,
+                &quot;hub&quot;,
+                &quot;alternative_delivery&quot;,
+                &quot;other&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;reference&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;property_number&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;property_name&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line1&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line2&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line3&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;locality&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;region&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country_iso_code&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;lat_long&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;latitude&quot;: {
+                  &quot;format&quot;: &quot;double&quot;,
+                  &quot;type&quot;: &quot;number&quot;
+                },
+                &quot;longitude&quot;: {
+                  &quot;format&quot;: &quot;double&quot;,
+                  &quot;type&quot;: &quot;number&quot;
+                }
+              },
+              &quot;x-internal-ref-name&quot;: &quot;LatLong&quot;
+            },
+            &quot;external_references&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;type&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              },
+              &quot;x-internal-ref-name&quot;: &quot;ExternalAddressReference&quot;
+            }
+          },
+          &quot;x-internal-ref-name&quot;: &quot;Address&quot;
+        }
+      },
+      &quot;consumer&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;reference&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;email&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;phone&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;mobile_phone&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;first_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;last_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;middle_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;title&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;Consumer&quot;,
+        &quot;description&quot;: &quot;The consumer that the shipment relates to.&quot;
+      },
+      &quot;metadata&quot;: {
+        &quot;description&quot;: &quot;Optional metadata about this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;key&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;value&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;type&quot;: {
+              &quot;enum&quot;: [
+                &quot;string&quot;,
+                &quot;datetime&quot;,
+                &quot;datetimeoffset&quot;,
+                &quot;boolean&quot;,
+                &quot;integer&quot;,
+                &quot;decimal&quot;,
+                &quot;url&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          },
+          &quot;x-internal-ref-name&quot;: &quot;Metadata&quot;
+        }
+      },
+      &quot;retailer&quot;: {
+        &quot;description&quot;: &quot;An identifier for the retailer for this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;shipment_type&quot;: {
+        &quot;description&quot;: &quot;A property indicating the type of shipment, e.g. \&quot;delivery\&quot;, \&quot;pick_up\&quot;, \&quot;drop_off\&quot;.&quot;,
+        &quot;enum&quot;: [
+          &quot;delivery&quot;,
+          &quot;return&quot;,
+          &quot;pick_up&quot;,
+          &quot;drop_off&quot;,
+          &quot;drop_off_pick_up&quot;,
+          &quot;return_drop_off&quot;
+        ],
+        &quot;type&quot;: &quot;string&quot;
+      }
+    }
+  }
+}</code></pre>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/andywalton7/doc-centre/new/api-poc/apiSpec/new?filename=api_electioapp_com_labels_Labels_API_1_1_Get_Package_Label.md&amp;value=---%0Auid%3A%20api.electioapp.com%2Flabels%2FLabels%20API%2F1.1%2FGet%20Package%20Label%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/andywalton7/doc-centre/blob/api-poc/docfx_project/api/reference/shipmentAPICopy.json/#L1">View Source</a>
+  </span>
+   <h3 id="api_electioapp_com_labels_Labels_API_1_1_Get_Package_Label" data-uid="api.electioapp.com/labels/Labels API/1.1/Get Package Label" class="text-capitalize">Get Package Label</h3>
+  <div class="markdown level1 description"><p>Returns the label for the specified package.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">GET /{consignmentReference}/{packageReference}[?tracking_references&amp;custom_references&amp;page]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">tracking_references</span></td>
+        <td>array</td>
+        <td></td>
+        <td><p>Returns the label for the specified package.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">custom_references</span></td>
+        <td>array</td>
+        <td></td>
+        <td><p>Returns the label for the specified package.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">page</span></td>
+        <td>integer</td>
+        <td></td>
+        <td><p>Returns the label for the specified package.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">200</span></td>
+        <td><p>A shipment object was returned successfully</p>
+</td>
+        <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;Shipment&quot;: {
+    &quot;properties&quot;: {
+      &quot;tracking_references&quot;: {
+        &quot;description&quot;: &quot;The carrier's reference for this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;custom_references&quot;: {
+        &quot;description&quot;: &quot;A list of your own custom references for this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;tags&quot;: {
+        &quot;description&quot;: &quot;An optional list of tags to apply to this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;carrier&quot;: {
+        &quot;description&quot;: &quot;The name of the carrier of this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;carrier_service&quot;: {
+        &quot;description&quot;: &quot;The name of the carrier service of this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;shipped_date&quot;: {
+        &quot;description&quot;: &quot;The date on which the shipment was (or will be) shipped.&quot;,
+        &quot;format&quot;: &quot;date-time&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;order_date&quot;: {
+        &quot;description&quot;: &quot;The date on which the order was placed.&quot;,
+        &quot;format&quot;: &quot;date-time&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;promised_date&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;start&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;end&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;PromisedDate&quot;,
+        &quot;description&quot;: &quot;The date range on which the shipment should have been delivered to the customer.&quot;
+      },
+      &quot;expected_delivery_date&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;start&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;end&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;ExpectedDeliveryDate&quot;,
+        &quot;description&quot;: &quot;The date and time during which delivery is expected.&quot;
+      },
+      &quot;addresses&quot;: {
+        &quot;description&quot;: &quot;The addresses relevant to a shipment. Each address includes a \&quot;Type\&quot; property indicating the type of address, should include only 1 address of each type (e.g. 1 origin and 1 destination).&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;address_type&quot;: {
+              &quot;enum&quot;: [
+                &quot;not_specified&quot;,
+                &quot;origin&quot;,
+                &quot;destination&quot;,
+                &quot;return&quot;,
+                &quot;billing&quot;,
+                &quot;hub&quot;,
+                &quot;alternative_delivery&quot;,
+                &quot;other&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;reference&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;property_number&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;property_name&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line1&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line2&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line3&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;locality&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;region&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country_iso_code&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;lat_long&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;latitude&quot;: {
+                  &quot;format&quot;: &quot;double&quot;,
+                  &quot;type&quot;: &quot;number&quot;
+                },
+                &quot;longitude&quot;: {
+                  &quot;format&quot;: &quot;double&quot;,
+                  &quot;type&quot;: &quot;number&quot;
+                }
+              },
+              &quot;x-internal-ref-name&quot;: &quot;LatLong&quot;
+            },
+            &quot;external_references&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;type&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              },
+              &quot;x-internal-ref-name&quot;: &quot;ExternalAddressReference&quot;
+            }
+          },
+          &quot;x-internal-ref-name&quot;: &quot;Address&quot;
+        }
+      },
+      &quot;consumer&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;reference&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;email&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;phone&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;mobile_phone&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;first_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;last_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;middle_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;title&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;Consumer&quot;,
+        &quot;description&quot;: &quot;The consumer that the shipment relates to.&quot;
+      },
+      &quot;metadata&quot;: {
+        &quot;description&quot;: &quot;Optional metadata about this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;key&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;value&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;type&quot;: {
+              &quot;enum&quot;: [
+                &quot;string&quot;,
+                &quot;datetime&quot;,
+                &quot;datetimeoffset&quot;,
+                &quot;boolean&quot;,
+                &quot;integer&quot;,
+                &quot;decimal&quot;,
+                &quot;url&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          },
+          &quot;x-internal-ref-name&quot;: &quot;Metadata&quot;
+        }
+      },
+      &quot;retailer&quot;: {
+        &quot;description&quot;: &quot;An identifier for the retailer for this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;shipment_type&quot;: {
+        &quot;description&quot;: &quot;A property indicating the type of shipment, e.g. \&quot;delivery\&quot;, \&quot;pick_up\&quot;, \&quot;drop_off\&quot;.&quot;,
+        &quot;enum&quot;: [
+          &quot;delivery&quot;,
+          &quot;return&quot;,
+          &quot;pick_up&quot;,
+          &quot;drop_off&quot;,
+          &quot;drop_off_pick_up&quot;,
+          &quot;return_drop_off&quot;
+        ],
+        &quot;type&quot;: &quot;string&quot;
+      }
+    }
+  }
+}</code></pre>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/andywalton7/doc-centre/new/api-poc/apiSpec/new?filename=api_electioapp_com_labels_Labels_API_1_1_Get_Package_Label_in_Format.md&amp;value=---%0Auid%3A%20api.electioapp.com%2Flabels%2FLabels%20API%2F1.1%2FGet%20Package%20Label%20in%20Format%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/andywalton7/doc-centre/blob/api-poc/docfx_project/api/reference/shipmentAPICopy.json/#L1">View Source</a>
+  </span>
+   <h3 id="api_electioapp_com_labels_Labels_API_1_1_Get_Package_Label_in_Format" data-uid="api.electioapp.com/labels/Labels API/1.1/Get Package Label in Format" class="text-capitalize">Get Package Label in Format</h3>
+  <div class="markdown level1 description"><p>Returns the label for the specified package in the specified format.</p>
+</div>
+  <h5>Request</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-restApi hljs">GET /{consignmentReference}/{packageReference}/{labelFormat}[?tracking_references&amp;custom_references&amp;page]</code></pre>
+  </div>
+  <h5>Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Value</th>
+        <th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">tracking_references</span></td>
+        <td>array</td>
+        <td></td>
+        <td><p>Returns the label for the specified package in the specified format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">custom_references</span></td>
+        <td>array</td>
+        <td></td>
+        <td><p>Returns the label for the specified package in the specified format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">page</span></td>
+        <td>integer</td>
+        <td></td>
+        <td><p>Returns the label for the specified package in the specified format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="responses">
+    <h5>Responses</h5>
+    <table class="table table-bordered table-striped table-condensed">
+      <thead>
+        <tr>
+          <th>Status Code</th>
+          <th>Description</th>
+          <th>Samples</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="status">200</span></td>
+        <td><p>A shipment object was returned successfully</p>
+</td>
+        <td class="sample-response">
+          <div class="mime-type">
+            <i>Mime type: </i><span class="mime">application/json</span>
+          </div>
+          <pre class="response-content"><code class="lang-js json hljs">{
+  &quot;Shipment&quot;: {
+    &quot;properties&quot;: {
+      &quot;tracking_references&quot;: {
+        &quot;description&quot;: &quot;The carrier's reference for this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;custom_references&quot;: {
+        &quot;description&quot;: &quot;A list of your own custom references for this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;tags&quot;: {
+        &quot;description&quot;: &quot;An optional list of tags to apply to this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;string&quot;
+        }
+      },
+      &quot;carrier&quot;: {
+        &quot;description&quot;: &quot;The name of the carrier of this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;carrier_service&quot;: {
+        &quot;description&quot;: &quot;The name of the carrier service of this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;shipped_date&quot;: {
+        &quot;description&quot;: &quot;The date on which the shipment was (or will be) shipped.&quot;,
+        &quot;format&quot;: &quot;date-time&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;order_date&quot;: {
+        &quot;description&quot;: &quot;The date on which the order was placed.&quot;,
+        &quot;format&quot;: &quot;date-time&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;promised_date&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;start&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;end&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;PromisedDate&quot;,
+        &quot;description&quot;: &quot;The date range on which the shipment should have been delivered to the customer.&quot;
+      },
+      &quot;expected_delivery_date&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;start&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;end&quot;: {
+            &quot;format&quot;: &quot;date-time&quot;,
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;ExpectedDeliveryDate&quot;,
+        &quot;description&quot;: &quot;The date and time during which delivery is expected.&quot;
+      },
+      &quot;addresses&quot;: {
+        &quot;description&quot;: &quot;The addresses relevant to a shipment. Each address includes a \&quot;Type\&quot; property indicating the type of address, should include only 1 address of each type (e.g. 1 origin and 1 destination).&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;address_type&quot;: {
+              &quot;enum&quot;: [
+                &quot;not_specified&quot;,
+                &quot;origin&quot;,
+                &quot;destination&quot;,
+                &quot;return&quot;,
+                &quot;billing&quot;,
+                &quot;hub&quot;,
+                &quot;alternative_delivery&quot;,
+                &quot;other&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;reference&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;property_number&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;property_name&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line1&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line2&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;address_line3&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;locality&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;region&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;postal_code&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;country_iso_code&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;lat_long&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;latitude&quot;: {
+                  &quot;format&quot;: &quot;double&quot;,
+                  &quot;type&quot;: &quot;number&quot;
+                },
+                &quot;longitude&quot;: {
+                  &quot;format&quot;: &quot;double&quot;,
+                  &quot;type&quot;: &quot;number&quot;
+                }
+              },
+              &quot;x-internal-ref-name&quot;: &quot;LatLong&quot;
+            },
+            &quot;external_references&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;properties&quot;: {
+                &quot;type&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;type&quot;: &quot;string&quot;
+                }
+              },
+              &quot;x-internal-ref-name&quot;: &quot;ExternalAddressReference&quot;
+            }
+          },
+          &quot;x-internal-ref-name&quot;: &quot;Address&quot;
+        }
+      },
+      &quot;consumer&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;properties&quot;: {
+          &quot;reference&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;email&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;phone&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;mobile_phone&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;first_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;last_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;middle_name&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;title&quot;: {
+            &quot;type&quot;: &quot;string&quot;
+          }
+        },
+        &quot;x-internal-ref-name&quot;: &quot;Consumer&quot;,
+        &quot;description&quot;: &quot;The consumer that the shipment relates to.&quot;
+      },
+      &quot;metadata&quot;: {
+        &quot;description&quot;: &quot;Optional metadata about this shipment.&quot;,
+        &quot;uniqueItems&quot;: false,
+        &quot;type&quot;: &quot;array&quot;,
+        &quot;items&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;properties&quot;: {
+            &quot;key&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;value&quot;: {
+              &quot;type&quot;: &quot;string&quot;
+            },
+            &quot;type&quot;: {
+              &quot;enum&quot;: [
+                &quot;string&quot;,
+                &quot;datetime&quot;,
+                &quot;datetimeoffset&quot;,
+                &quot;boolean&quot;,
+                &quot;integer&quot;,
+                &quot;decimal&quot;,
+                &quot;url&quot;
+              ],
+              &quot;type&quot;: &quot;string&quot;
+            }
+          },
+          &quot;x-internal-ref-name&quot;: &quot;Metadata&quot;
+        }
+      },
+      &quot;retailer&quot;: {
+        &quot;description&quot;: &quot;An identifier for the retailer for this shipment.&quot;,
+        &quot;type&quot;: &quot;string&quot;
+      },
+      &quot;shipment_type&quot;: {
+        &quot;description&quot;: &quot;A property indicating the type of shipment, e.g. \&quot;delivery\&quot;, \&quot;pick_up\&quot;, \&quot;drop_off\&quot;.&quot;,
+        &quot;enum&quot;: [
+          &quot;delivery&quot;,
+          &quot;return&quot;,
+          &quot;pick_up&quot;,
+          &quot;drop_off&quot;,
+          &quot;drop_off_pick_up&quot;,
+          &quot;return_drop_off&quot;
+        ],
+        &quot;type&quot;: &quot;string&quot;
+      }
+    }
+  }
+}</code></pre>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/new/api-poc/apiSpec/new?filename=api_electioapp_com_labels_Labels_API_1_1.md&amp;value=---%0Auid%3A%20api.electioapp.com%2Flabels%2FLabels%20API%2F1.1%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/api-poc/docfx_project/api/reference/shipmentAPICopy.json/#L1" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

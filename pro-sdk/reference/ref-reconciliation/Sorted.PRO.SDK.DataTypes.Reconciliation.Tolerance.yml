@@ -1,0 +1,656 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  commentId: T:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  id: Tolerance
+  parent: Sorted.PRO.SDK.DataTypes.Reconciliation
+  children:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  - Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  - Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  - Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  - Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  langs:
+  - csharp
+  - vb
+  name: Tolerance
+  nameWithType: Tolerance
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Tolerance
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+    startLine: 6
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation
+  namespace: Sorted.PRO.SDK.DataTypes.Reconciliation
+  syntax:
+    content: >-
+      [DataContract]
+
+      [Serializable]
+
+      public class Tolerance
+    content.vb: >-
+      <DataContract>
+
+      <Serializable>
+
+      Public Class Tolerance
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  id: MaxPercentageDifferenceAllowed
+  parent: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  langs:
+  - csharp
+  - vb
+  name: MaxPercentageDifferenceAllowed
+  nameWithType: Tolerance.MaxPercentageDifferenceAllowed
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MaxPercentageDifferenceAllowed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+    startLine: 33
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation
+  namespace: Sorted.PRO.SDK.DataTypes.Reconciliation
+  summary: "\nThe maximum allowed difference between the value from the carrier \ninvoice and the value in Sorted Pro expressed as a percentage.\nSetting this value to Decimal.Zero will disable this check - \nany deviation from expected cost will always be a discrepancy.\nThis value may not be less than zero.\n"
+  example:
+  - "\nWe have a consignment in Electio with a cost of £10.00. \nThe matching line from the carrier invoice is £10.50 because they \nadded a handling charge. The difference between £10.00 and £10.50 \nis: \n\n((Actual / Expected) * 100) - 100 :\n((10.50 / 10.00) * 100) - 100 == 5%. \n\nIf <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref> is set to 5% or more\nthen we would mark the line as reconciled.\n\nIf <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref> is set to less than \n5% (i.e. 0%) then the line will be flagged as a discrepancy.\n"
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal MaxPercentageDifferenceAllowed { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: >-
+      <DataMember>
+
+      Public Property MaxPercentageDifferenceAllowed As Decimal
+  overload: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  id: ValueOfDifferenceThreshold
+  parent: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  langs:
+  - csharp
+  - vb
+  name: ValueOfDifferenceThreshold
+  nameWithType: Tolerance.ValueOfDifferenceThreshold
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ValueOfDifferenceThreshold
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+    startLine: 65
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation
+  namespace: Sorted.PRO.SDK.DataTypes.Reconciliation
+  summary: "\nThe maximum value of a difference that if exceeded will automatically cause \na line to be marked as a discrepancy regardless of <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref>.\nA <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold\" data-throw-if-not-resolved=\"false\"></xref> of Decimal.Zero will disable this check meaning that \nif a value is within the <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref> it will always be \nallowed regardless of the value of the difference. This value may not be less than zero.\n"
+  example:
+  - "\nWe have a consignment in Electio with a cost of £50.00. \nThe matching line from the carrier invoice is £54.50. \nThe difference between £50.00 and £54.50  is: \n\n((Actual / Expected) * 100) - 100 :\n((54.50 / 50.00) * 100) - 100 == 9%. \n\nThe Value of the Difference is £4.50:\n\nActual - Expected : (54.50 - 50.00) == £4.50\n\nAssume <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref> is set to 10%.\n\nIf <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold\" data-throw-if-not-resolved=\"false\"></xref> is set to £4.51 or higher \nthen the line will be marked as a match - it is within tolerance.\n\nIf <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold\" data-throw-if-not-resolved=\"false\"></xref> is set to £4.50 or lower\nthen the line will be marked as a discrepancy - despite the fact that \nit is within the percentage difference tolerance, the amount is large \nenough to trigger an automatic discrepancy. \n"
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal ValueOfDifferenceThreshold { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: >-
+      <DataMember>
+
+      Public Property ValueOfDifferenceThreshold As Decimal
+  overload: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  id: NegativeMaxPercentageDifferenceAllowed
+  parent: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  langs:
+  - csharp
+  - vb
+  name: NegativeMaxPercentageDifferenceAllowed
+  nameWithType: Tolerance.NegativeMaxPercentageDifferenceAllowed
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: NegativeMaxPercentageDifferenceAllowed
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+    startLine: 76
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation
+  namespace: Sorted.PRO.SDK.DataTypes.Reconciliation
+  summary: "\nThe maximum allowed difference between the value from the carrier \ninvoice and the value in Electio expressed as a percentage.\nSetting this value to Decimal.Zero will disable this check - \nany deviation from expected cost will always be a discrepancy.\nThis value may not be less than zero. This is used when the \nactual cost is lower than expected.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal NegativeMaxPercentageDifferenceAllowed { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: >-
+      <DataMember>
+
+      Public Property NegativeMaxPercentageDifferenceAllowed As Decimal
+  overload: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  id: NegativeValueOfDifferenceThreshold
+  parent: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  langs:
+  - csharp
+  - vb
+  name: NegativeValueOfDifferenceThreshold
+  nameWithType: Tolerance.NegativeValueOfDifferenceThreshold
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: NegativeValueOfDifferenceThreshold
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+    startLine: 87
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation
+  namespace: Sorted.PRO.SDK.DataTypes.Reconciliation
+  summary: "\nThe maximum value of a difference that if exceeded will automatically cause \na line to be marked as a discrepancy regardless of <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref>.\nA <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold\" data-throw-if-not-resolved=\"false\"></xref> of Decimal.Zero will disable this check meaning that \nif a value is within the <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed\" data-throw-if-not-resolved=\"false\"></xref> it will always be \nallowed regardless of the value of the difference. This value may not be less than zero.\nThis value is used when the actual cost is lower than expected.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      public decimal NegativeValueOfDifferenceThreshold { get; set; }
+    parameters: []
+    return:
+      type: System.Decimal
+    content.vb: >-
+      <DataMember>
+
+      Public Property NegativeValueOfDifferenceThreshold As Decimal
+  overload: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  id: ExpectedDateRangeInDays
+  parent: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance
+  langs:
+  - csharp
+  - vb
+  name: ExpectedDateRangeInDays
+  nameWithType: Tolerance.ExpectedDateRangeInDays
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ExpectedDateRangeInDays
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Reconciliation/Tolerance.cs
+    startLine: 114
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Reconciliation
+  namespace: Sorted.PRO.SDK.DataTypes.Reconciliation
+  summary: "\nThe timespan in days that we expect a consignment to be within in relation to the \ninvoice line that references it. Setting this to zero will cause the system to \nmatch the consignment with a date closest to the invoice line date. Setting this \nto -1 will cause the reconciler to only match consignments with a shipping date \nwhich exactly matches the Invoice Line Date.\n"
+  example:
+  - "\nAssume <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays\" data-throw-if-not-resolved=\"false\"></xref> is set to 5.\n\nWe find consignments with a carrier reference of ABC123. This returns 2 consignments, \none with a date of 10/11/12 and one with a date of 10/05/12. The invoice line has a date \nof 11/11/12. \n\nWe will try to find the consignment with a date range of 06/11/12 - 16/11/12 (Invoice line \ndate +/- 5 days). The result will be the consignment with the date 10/11/12 as it is the only \none within this range.\n\nIf multiple consignments are within the range or if <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays\" data-throw-if-not-resolved=\"false\"></xref> is 0\nwe will pick the consignment which is closest to the invoice line date.\n\nIf <xref href=\"Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays\" data-throw-if-not-resolved=\"false\"></xref> is -1 we will only match consignments which have a \nshipping date which exactly matches the invoice date.\n"
+  syntax:
+    content: >-
+      [DataMember]
+
+      public int ExpectedDateRangeInDays { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember>
+
+      Public Property ExpectedDateRangeInDays As Integer
+  overload: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation
+  commentId: N:Sorted.PRO.SDK.DataTypes.Reconciliation
+  name: Sorted.PRO.SDK.DataTypes.Reconciliation
+  nameWithType: Sorted.PRO.SDK.DataTypes.Reconciliation
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  isExternal: true
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+  name: MaxPercentageDifferenceAllowed
+  nameWithType: Tolerance.MaxPercentageDifferenceAllowed
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.MaxPercentageDifferenceAllowed
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  name: Decimal
+  nameWithType: Decimal
+  fullName: System.Decimal
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  isExternal: true
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+  name: ValueOfDifferenceThreshold
+  nameWithType: Tolerance.ValueOfDifferenceThreshold
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ValueOfDifferenceThreshold
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  name: NegativeMaxPercentageDifferenceAllowed
+  nameWithType: Tolerance.NegativeMaxPercentageDifferenceAllowed
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeMaxPercentageDifferenceAllowed
+  isExternal: true
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  isExternal: true
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+  name: NegativeValueOfDifferenceThreshold
+  nameWithType: Tolerance.NegativeValueOfDifferenceThreshold
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.NegativeValueOfDifferenceThreshold
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  commentId: P:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  isExternal: true
+- uid: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+  name: ExpectedDateRangeInDays
+  nameWithType: Tolerance.ExpectedDateRangeInDays
+  fullName: Sorted.PRO.SDK.DataTypes.Reconciliation.Tolerance.ExpectedDateRangeInDays
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

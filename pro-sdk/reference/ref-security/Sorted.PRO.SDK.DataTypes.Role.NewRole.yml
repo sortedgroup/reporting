@@ -1,0 +1,692 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  commentId: T:Sorted.PRO.SDK.DataTypes.Role.NewRole
+  id: NewRole
+  parent: Sorted.PRO.SDK.DataTypes.Role
+  children:
+  - Sorted.PRO.SDK.DataTypes.Role.NewRole.#ctor
+  - Sorted.PRO.SDK.DataTypes.Role.NewRole.Description
+  - Sorted.PRO.SDK.DataTypes.Role.NewRole.Name
+  - Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions
+  langs:
+  - csharp
+  - vb
+  name: NewRole
+  nameWithType: NewRole
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: NewRole
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Role
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("New Role", "Used for creating a new role within Electio.")]
+
+      [Serializable]
+
+      public class NewRole
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("New Role", "Used for creating a new role within Electio.")>
+
+      <Serializable>
+
+      Public Class NewRole
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: New Role
+    - type: System.String
+      value: Used for creating a new role within Electio.
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.#ctor
+  commentId: M:Sorted.PRO.SDK.DataTypes.Role.NewRole.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  langs:
+  - csharp
+  - vb
+  name: NewRole()
+  nameWithType: NewRole.NewRole()
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.NewRole()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Role
+  syntax:
+    content: public NewRole()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.DataTypes.Role.NewRole.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.Name
+  commentId: P:Sorted.PRO.SDK.DataTypes.Role.NewRole.Name
+  id: Name
+  parent: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: NewRole.Name
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.Name
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Name
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+    startLine: 21
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Role
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The name of the new role.", true, PropertyCollectionType.Single)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The name of the new role.", True, PropertyCollectionType.Single)>
+
+      Public Property Name As String
+  overload: Sorted.PRO.SDK.DataTypes.Role.NewRole.Name*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The name of the new role.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Role.NewRole.Description
+  id: Description
+  parent: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: NewRole.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.Description
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Description
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+    startLine: 25
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Role
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A description of the role.", true, PropertyCollectionType.Single)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A description of the role.", True, PropertyCollectionType.Single)>
+
+      Public Property Description As String
+  overload: Sorted.PRO.SDK.DataTypes.Role.NewRole.Description*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A description of the role.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions
+  commentId: P:Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions
+  id: Permissions
+  parent: Sorted.PRO.SDK.DataTypes.Role.NewRole
+  langs:
+  - csharp
+  - vb
+  name: Permissions
+  nameWithType: NewRole.Permissions
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Permissions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Security/NewRole.cs
+    startLine: 29
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Security
+  namespace: Sorted.PRO.SDK.DataTypes.Role
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A list of permissions for this role.", true, PropertyCollectionType.Collection)]
+
+      public List<Permission> Permissions { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Permission}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A list of permissions for this role.", True, PropertyCollectionType.Collection)>
+
+      Public Property Permissions As List(Of Permission)
+  overload: Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A list of permissions for this role.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Role
+  commentId: N:Sorted.PRO.SDK.DataTypes.Role
+  name: Sorted.PRO.SDK.DataTypes.Role
+  nameWithType: Sorted.PRO.SDK.DataTypes.Role
+  fullName: Sorted.PRO.SDK.DataTypes.Role
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Role.NewRole.#ctor
+  name: NewRole
+  nameWithType: NewRole.NewRole
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.NewRole
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.Name*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Role.NewRole.Name
+  name: Name
+  nameWithType: NewRole.Name
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.Description*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Role.NewRole.Description
+  name: Description
+  nameWithType: NewRole.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.Description
+- uid: Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions
+  name: Permissions
+  nameWithType: NewRole.Permissions
+  fullName: Sorted.PRO.SDK.DataTypes.Role.NewRole.Permissions
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Permission}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Security.Permission}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Permission>
+  nameWithType: List<Permission>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Security.Permission>
+  nameWithType.vb: List(Of Permission)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Security.Permission)
+  name.vb: List(Of Permission)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Permission
+    name: Permission
+    nameWithType: Permission
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Permission
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Security.Permission
+    name: Permission
+    nameWithType: Permission
+    fullName: Sorted.PRO.SDK.DataTypes.Security.Permission
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic

@@ -1,0 +1,2000 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  commentId: T:Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  id: SdkReferenceLogger
+  parent: Sorted.PRO.SDK.Shared
+  children:
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  - Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  langs:
+  - csharp
+  - vb
+  name: SdkReferenceLogger
+  nameWithType: SdkReferenceLogger
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SdkReferenceLogger
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  summary: "\nSDK Reference logger - writes diagnostic information\n"
+  example: []
+  syntax:
+    content: 'public class SdkReferenceLogger : ILogger'
+    content.vb: >-
+      Public Class SdkReferenceLogger
+          Implements ILogger
+  inheritance:
+  - System.Object
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Debug(String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Debug(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Debug
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Debug(string format, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Debug(format As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Debug(String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Debug(String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Debug(Exception, String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Debug(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Debug
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Debug(Exception exception, string messageFormat, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: messageFormat
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Debug(exception As Exception, messageFormat As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Debug(Exception, String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Debug(Exception, String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Fatal(Exception, String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Fatal(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Fatal
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Fatal(Exception exception, string messageFormat, LogAction action = LogAction.Log | LogAction.Alert, params object[] args)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: messageFormat
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Fatal(exception As Exception, messageFormat As String, action As LogAction = LogAction.Log Or LogAction.Alert, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Fatal(Exception, String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Fatal(Exception, String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Info(String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Info(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Info
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Info(string format, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Info(format As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Info(String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Info(String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Info(Exception, String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Info(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Info
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 35
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Info(Exception exception, string messageFormat, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: messageFormat
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Info(exception As Exception, messageFormat As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Info(Exception, String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Info(Exception, String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Trace(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Trace
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Trace(string format, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Trace(format As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Trace(String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Trace(String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Trace(Exception, String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Trace(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Trace
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 45
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Trace(Exception exception, string messageFormat, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: messageFormat
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Trace(exception As Exception, messageFormat As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Trace(Exception, String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Trace(Exception, String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Warn(String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Warn(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Warn
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 50
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Warn(string format, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Warn(format As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Warn(String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Warn(String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Warn(Exception, String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Warn(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Warn
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Warn(Exception exception, string messageFormat, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: messageFormat
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Warn(exception As Exception, messageFormat As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Warn(Exception, String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Warn(Exception, String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Error(String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Error(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Error
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 60
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Error(string format, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Error(format As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Error(String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Error(String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Error(Exception, String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Error(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Error
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 65
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Error(Exception exception, string messageFormat, LogAction action = LogAction.Log | LogAction.Alert, params object[] args)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: messageFormat
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Error(exception As Exception, messageFormat As String, action As LogAction = LogAction.Log Or LogAction.Alert, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Error(Exception, String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Error(Exception, String, LogAction, Object())
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  id: Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.SdkReferenceLogger
+  langs:
+  - csharp
+  - vb
+  name: Fatal(String, LogAction, Object[])
+  nameWithType: SdkReferenceLogger.Fatal(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Fatal
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Shared/SdkReferenceLogger.cs
+    startLine: 71
+  assemblies:
+  - Sorted.PRO.SDK.Shared
+  namespace: Sorted.PRO.SDK.Shared
+  syntax:
+    content: public void Fatal(string format, LogAction action = LogAction.Log, params object[] args)
+    parameters:
+    - id: format
+      type: System.String
+    - id: action
+      type: Sorted.PRO.SDK.Shared.Enums.LogAction
+    - id: args
+      type: System.Object[]
+    content.vb: Public Sub Fatal(format As String, action As LogAction = LogAction.Log, ParamArray args As Object())
+  overload: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal*
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  nameWithType.vb: SdkReferenceLogger.Fatal(String, LogAction, Object())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Fatal(String, LogAction, Object())
+references:
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug*
+  commentId: Overload:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug
+  name: Debug
+  nameWithType: SdkReferenceLogger.Debug
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Debug
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Debug(String, LogAction, Object[])
+  nameWithType: ILogger.Debug(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Debug(String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Debug(String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Debug
+    nameWithType: ILogger.Debug
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Debug
+    nameWithType: ILogger.Debug
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+  commentId: T:Sorted.PRO.SDK.Shared.Enums.LogAction
+  parent: Sorted.PRO.SDK.Shared.Enums
+  name: LogAction
+  nameWithType: LogAction
+  fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Sorted.PRO.SDK.Shared.Enums
+  commentId: N:Sorted.PRO.SDK.Shared.Enums
+  name: Sorted.PRO.SDK.Shared.Enums
+  nameWithType: Sorted.PRO.SDK.Shared.Enums
+  fullName: Sorted.PRO.SDK.Shared.Enums
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Debug(Exception, String, LogAction, Object[])
+  nameWithType: ILogger.Debug(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Debug(Exception, String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Debug(Exception, String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Debug
+    nameWithType: ILogger.Debug
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Debug
+    nameWithType: ILogger.Debug
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Debug
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal*
+  commentId: Overload:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal
+  name: Fatal
+  nameWithType: SdkReferenceLogger.Fatal
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Fatal
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Fatal(Exception, String, LogAction, Object[])
+  nameWithType: ILogger.Fatal(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Fatal(Exception, String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Fatal(Exception, String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Fatal
+    nameWithType: ILogger.Fatal
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Fatal
+    nameWithType: ILogger.Fatal
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info*
+  commentId: Overload:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info
+  name: Info
+  nameWithType: SdkReferenceLogger.Info
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Info
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Info(String, LogAction, Object[])
+  nameWithType: ILogger.Info(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Info(String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Info(String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Info(Exception, String, LogAction, Object[])
+  nameWithType: ILogger.Info(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Info(Exception, String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Info(Exception, String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Info
+    nameWithType: ILogger.Info
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Info
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace*
+  commentId: Overload:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace
+  name: Trace
+  nameWithType: SdkReferenceLogger.Trace
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Trace
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Trace(String, LogAction, Object[])
+  nameWithType: ILogger.Trace(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Trace(String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Trace(String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Trace(Exception, String, LogAction, Object[])
+  nameWithType: ILogger.Trace(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Trace(Exception, String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Trace(Exception, String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Trace
+    nameWithType: ILogger.Trace
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Trace
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn*
+  commentId: Overload:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn
+  name: Warn
+  nameWithType: SdkReferenceLogger.Warn
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Warn
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Warn(String, LogAction, Object[])
+  nameWithType: ILogger.Warn(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Warn(String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Warn(String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Warn
+    nameWithType: ILogger.Warn
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Warn
+    nameWithType: ILogger.Warn
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Warn(Exception, String, LogAction, Object[])
+  nameWithType: ILogger.Warn(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Warn(Exception, String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Warn(Exception, String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Warn
+    nameWithType: ILogger.Warn
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Warn
+    nameWithType: ILogger.Warn
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Warn
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error*
+  commentId: Overload:Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error
+  name: Error
+  nameWithType: SdkReferenceLogger.Error
+  fullName: Sorted.PRO.SDK.Shared.SdkReferenceLogger.Error
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Error(String, LogAction, Object[])
+  nameWithType: ILogger.Error(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Error(String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Error(String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Error(Exception, String, LogAction, Object[])
+  nameWithType: ILogger.Error(Exception, String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Error(Exception, String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception, System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Error(Exception, String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error(System.Exception,System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Error
+    nameWithType: ILogger.Error
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Error
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Exception
+    name: Exception
+    nameWithType: Exception
+    fullName: System.Exception
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  commentId: M:Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+  parent: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  isExternal: true
+  name: Fatal(String, LogAction, Object[])
+  nameWithType: ILogger.Fatal(String, LogAction, Object[])
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object[])
+  nameWithType.vb: ILogger.Fatal(String, LogAction, Object())
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String, Sorted.PRO.SDK.Shared.Enums.LogAction, System.Object())
+  name.vb: Fatal(String, LogAction, Object())
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Fatal
+    nameWithType: ILogger.Fatal
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal(System.String,Sorted.PRO.SDK.Shared.Enums.LogAction,System.Object[])
+    name: Fatal
+    nameWithType: ILogger.Fatal
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger.Fatal
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Enums.LogAction
+    name: LogAction
+    nameWithType: LogAction
+    fullName: Sorted.PRO.SDK.Shared.Enums.LogAction
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )

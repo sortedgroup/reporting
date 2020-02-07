@@ -1,0 +1,2591 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  commentId: T:Sorted.PRO.SDK.Settings.ServiceGroupsService
+  id: ServiceGroupsService
+  parent: Sorted.PRO.SDK.Settings
+  children:
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  - Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  langs:
+  - csharp
+  - vb
+  name: ServiceGroupsService
+  nameWithType: ServiceGroupsService
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ServiceGroupsService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nService used to manage carrier service groups\n"
+  example: []
+  syntax:
+    content: 'public class ServiceGroupsService : BaseService, IServiceGroupsService'
+    content.vb: >-
+      Public Class ServiceGroupsService
+          Inherits BaseService
+          Implements IServiceGroupsService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: ServiceGroupsService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: ServiceGroupsService.ServiceGroupsService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.ServiceGroupsService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 27
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.Settings.ServiceGroupsService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ServiceGroupsService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The API key.
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: The endpoints.
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: The log.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.#ctor*
+  nameWithType.vb: ServiceGroupsService.ServiceGroupsService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Settings.ServiceGroupsService.ServiceGroupsService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: ServiceGroupsService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups
+  id: GetServiceGroups
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroups()
+  nameWithType: ServiceGroupsService.GetServiceGroups()
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroups
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets a list of all MPD Carrier Service groups.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Service Groups", "Returns all current carrier service groups.", "Service Groups", typeof(List<MpdCarrierServiceGroup>), "/servicegroups", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<MpdCarrierServiceGroup> GetServiceGroups()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+      description: "\nList of MPD Carrier Service Groups\n"
+    content.vb: >-
+      <ApiEndpoint("Get Service Groups", "Returns all current carrier service groups.", "Service Groups", GetType(List(Of MpdCarrierServiceGroup)), "/servicegroups", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetServiceGroups As List(Of MpdCarrierServiceGroup)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries
+  id: GetServiceGroupSummaries
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupSummaries()
+  nameWithType: ServiceGroupsService.GetServiceGroupSummaries()
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupSummaries
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 55
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the service group summaries.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Service Group Summaries", "Returns a list of service group summaries.", "Service Groups", typeof(List<MpdCarrierServiceGroup>), "/servicegroups/summaries", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<MpdCarrierServiceGroup> GetServiceGroupSummaries()
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Service Group Summaries", "Returns a list of service group summaries.", "Service Groups", GetType(List(Of MpdCarrierServiceGroup)), "/servicegroups/summaries", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetServiceGroupSummaries As List(Of MpdCarrierServiceGroup)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup(System.String)
+  id: GetServiceGroup(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroup(String)
+  nameWithType: ServiceGroupsService.GetServiceGroup(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroup
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 76
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGets the MPD Carrier Service group.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Service Group", "Returns the specified service group.", "Service Groups", typeof(MpdCarrierServiceGroup), "/servicegroups/{serviceGroupReference:string}", "GET", null)]
+
+      public MpdCarrierServiceGroup GetServiceGroup(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: The service group reference.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: "\nMPDCarrierServiceGroup\n"
+    content.vb: >-
+      <ApiEndpoint("Get Service Group", "Returns the specified service group.", "Service Groups", GetType(MpdCarrierServiceGroup), "/servicegroups/{serviceGroupReference:string}", "GET", Nothing)>
+
+      Public Function GetServiceGroup(serviceGroupReference As String) As MpdCarrierServiceGroup
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary(System.String)
+  id: GetServiceGroupSummary(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupSummary(String)
+  nameWithType: ServiceGroupsService.GetServiceGroupSummary(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupSummary
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 93
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet a summary of the specified service group\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Service Group Summary", "Returns a summary of the specified service group.", "Service Groups", typeof(MpdCarrierServiceGroup), "/servicegroups/summary/{serviceGroupReference:string}", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public MpdCarrierServiceGroup GetServiceGroupSummary(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Get Service Group Summary", "Returns a summary of the specified service group.", "Service Groups", GetType(MpdCarrierServiceGroup), "/servicegroups/summary/{serviceGroupReference:string}", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetServiceGroupSummary(serviceGroupReference As String) As MpdCarrierServiceGroup
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  id: IsServiceGroupReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: IsServiceGroupReferenceAvailable(String)
+  nameWithType: ServiceGroupsService.IsServiceGroupReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsServiceGroupReferenceAvailable
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 111
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nIndicates whether the specified service group reference is available.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Is Reference Available", "Indicates whether the specified reference is available. This is useful to call before attempting to create a new service group.", "Service Groups", typeof(bool), "/servicegroups/{serviceGroupReference:string}/available", "GET", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public bool IsServiceGroupReferenceAvailable(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Is Reference Available", "Indicates whether the specified reference is available. This is useful to call before attempting to create a new service group.", "Service Groups", GetType(Boolean), "/servicegroups/{serviceGroupReference:string}/available", "GET", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function IsServiceGroupReferenceAvailable(serviceGroupReference As String) As Boolean
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  id: CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: CreateServiceGroup(MpdCarrierServiceGroup)
+  nameWithType: ServiceGroupsService.CreateServiceGroup(MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateServiceGroup
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 133
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCreates a new MPD Carrier Service group containing all of the MPD\nCarrier Services defined in the request.\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Create Service Group", "Create a new service group.", "Service Groups", typeof(MpdCarrierServiceGroup), typeof(MpdCarrierServiceGroup), "/servicegroups", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public MpdCarrierServiceGroup CreateServiceGroup(MpdCarrierServiceGroup serviceGroup)
+    parameters:
+    - id: serviceGroup
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: The service group.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: "\nThe created MPD Carrier Service Group\n"
+    content.vb: >-
+      <ApiEndpoint("Create Service Group", "Create a new service group.", "Service Groups", GetType(MpdCarrierServiceGroup), GetType(MpdCarrierServiceGroup), "/servicegroups", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function CreateServiceGroup(serviceGroup As MpdCarrierServiceGroup) As MpdCarrierServiceGroup
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  id: UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateServiceGroup(String, MpdCarrierServiceGroup)
+  nameWithType: ServiceGroupsService.UpdateServiceGroup(String, MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup(System.String, Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateServiceGroup
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 152
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nUpdate an existing service group\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Update Service Group", "Update an existing service group with new or updated properties.", "Service Groups", typeof(MpdCarrierServiceGroup), null, "/servicegroups/{serviceGroupReference:string}", "PUT", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void UpdateServiceGroup(string serviceGroupReference, MpdCarrierServiceGroup serviceGroup)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    - id: serviceGroup
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Update Service Group", "Update an existing service group with new or updated properties.", "Service Groups", GetType(MpdCarrierServiceGroup), Nothing, "/servicegroups/{serviceGroupReference:string}", "PUT", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub UpdateServiceGroup(serviceGroupReference As String, serviceGroup As MpdCarrierServiceGroup)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup(System.String)
+  id: DeleteServiceGroup(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteServiceGroup(String)
+  nameWithType: ServiceGroupsService.DeleteServiceGroup(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteServiceGroup
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 170
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDelete the specified service group\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Delete Service Group", "Deletes the specified service group.", "Service Groups", "/servicegroups/{serviceGroupReference:string}", "DELETE", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public void DeleteServiceGroup(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    content.vb: >-
+      <ApiEndpoint("Delete Service Group", "Deletes the specified service group.", "Service Groups", "/servicegroups/{serviceGroupReference:string}", "DELETE", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Sub DeleteServiceGroup(serviceGroupReference As String)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync
+  id: GetServiceGroupsAsync
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupsAsync()
+  nameWithType: ServiceGroupsService.GetServiceGroupsAsync()
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 186
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet all service groups\n"
+  example: []
+  syntax:
+    content: public Task<List<MpdCarrierServiceGroup>> GetServiceGroupsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}}
+      description: ''
+    content.vb: Public Function GetServiceGroupsAsync As Task(Of List(Of MpdCarrierServiceGroup))
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync
+  id: GetServiceGroupSummariesAsync
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupSummariesAsync()
+  nameWithType: ServiceGroupsService.GetServiceGroupSummariesAsync()
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupSummariesAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 195
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet service group summaries\n"
+  example: []
+  syntax:
+    content: public Task<List<MpdCarrierServiceGroup>> GetServiceGroupSummariesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}}
+      description: ''
+    content.vb: Public Function GetServiceGroupSummariesAsync As Task(Of List(Of MpdCarrierServiceGroup))
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync(System.String)
+  id: GetServiceGroupAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupAsync(String)
+  nameWithType: ServiceGroupsService.GetServiceGroupAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 205
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet specific service group\n"
+  example: []
+  syntax:
+    content: public Task<MpdCarrierServiceGroup> GetServiceGroupAsync(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+      description: ''
+    content.vb: Public Function GetServiceGroupAsync(serviceGroupReference As String) As Task(Of MpdCarrierServiceGroup)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  id: GetServiceGroupSummaryAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: GetServiceGroupSummaryAsync(String)
+  nameWithType: ServiceGroupsService.GetServiceGroupSummaryAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetServiceGroupSummaryAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 215
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nGet a summary for a specific service group\n"
+  example: []
+  syntax:
+    content: public Task<MpdCarrierServiceGroup> GetServiceGroupSummaryAsync(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+      description: ''
+    content.vb: Public Function GetServiceGroupSummaryAsync(serviceGroupReference As String) As Task(Of MpdCarrierServiceGroup)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  id: IsServiceGroupReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: IsServiceGroupReferenceAvailableAsync(String)
+  nameWithType: ServiceGroupsService.IsServiceGroupReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IsServiceGroupReferenceAvailableAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 225
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDetermine if the specified reference has already been used.\n"
+  example: []
+  syntax:
+    content: public Task<bool> IsServiceGroupReferenceAvailableAsync(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: ''
+    content.vb: Public Function IsServiceGroupReferenceAvailableAsync(serviceGroupReference As String) As Task(Of Boolean)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  id: CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: CreateServiceGroupAsync(MpdCarrierServiceGroup)
+  nameWithType: ServiceGroupsService.CreateServiceGroupAsync(MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CreateServiceGroupAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 235
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nCreate a new service group\n"
+  example: []
+  syntax:
+    content: public Task<MpdCarrierServiceGroup> CreateServiceGroupAsync(MpdCarrierServiceGroup serviceGroup)
+    parameters:
+    - id: serviceGroup
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+      description: ''
+    content.vb: Public Function CreateServiceGroupAsync(serviceGroup As MpdCarrierServiceGroup) As Task(Of MpdCarrierServiceGroup)
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  id: UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: UpdateServiceGroupAsync(String, MpdCarrierServiceGroup)
+  nameWithType: ServiceGroupsService.UpdateServiceGroupAsync(String, MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync(System.String, Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateServiceGroupAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 246
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nUpdates the service group asynchronously.\n"
+  example: []
+  syntax:
+    content: public Task UpdateServiceGroupAsync(string serviceGroupReference, MpdCarrierServiceGroup serviceGroup)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: The service group reference.
+    - id: serviceGroup
+      type: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+      description: The service group.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function UpdateServiceGroupAsync(serviceGroupReference As String, serviceGroup As MpdCarrierServiceGroup) As Task
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  id: DeleteServiceGroupAsync(System.String)
+  parent: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  langs:
+  - csharp
+  - vb
+  name: DeleteServiceGroupAsync(String)
+  nameWithType: ServiceGroupsService.DeleteServiceGroupAsync(String)
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteServiceGroupAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Settings/ServiceGroupsService.cs
+    startLine: 256
+  assemblies:
+  - Sorted.PRO.SDK.Settings
+  namespace: Sorted.PRO.SDK.Settings
+  summary: "\nDelete the specified service group\n"
+  example: []
+  syntax:
+    content: public Task DeleteServiceGroupAsync(string serviceGroupReference)
+    parameters:
+    - id: serviceGroupReference
+      type: System.String
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Function DeleteServiceGroupAsync(serviceGroupReference As String) As Task
+  overload: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.Settings
+  commentId: N:Sorted.PRO.SDK.Settings
+  name: Sorted.PRO.SDK.Settings
+  nameWithType: Sorted.PRO.SDK.Settings
+  fullName: Sorted.PRO.SDK.Settings
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  parent: Sorted.PRO.SDK.Interfaces.Settings
+  name: IServiceGroupsService
+  nameWithType: IServiceGroupsService
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Settings
+  commentId: N:Sorted.PRO.SDK.Interfaces.Settings
+  name: Sorted.PRO.SDK.Interfaces.Settings
+  nameWithType: Sorted.PRO.SDK.Interfaces.Settings
+  fullName: Sorted.PRO.SDK.Interfaces.Settings
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService
+  commentId: T:Sorted.PRO.SDK.Settings.ServiceGroupsService
+  name: ServiceGroupsService
+  nameWithType: ServiceGroupsService
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.#ctor
+  name: ServiceGroupsService
+  nameWithType: ServiceGroupsService.ServiceGroupsService
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.ServiceGroupsService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups
+  name: GetServiceGroups
+  nameWithType: ServiceGroupsService.GetServiceGroups
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroups
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  name: GetServiceGroups()
+  nameWithType: IServiceGroupsService.GetServiceGroups()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+    name: GetServiceGroups
+    nameWithType: IServiceGroupsService.GetServiceGroups
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+    name: GetServiceGroups
+    nameWithType: IServiceGroupsService.GetServiceGroups
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroups
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MpdCarrierServiceGroup>
+  nameWithType: List<MpdCarrierServiceGroup>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup>
+  nameWithType.vb: List(Of MpdCarrierServiceGroup)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  name.vb: List(Of MpdCarrierServiceGroup)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries
+  name: GetServiceGroupSummaries
+  nameWithType: ServiceGroupsService.GetServiceGroupSummaries
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaries
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  name: GetServiceGroupSummaries()
+  nameWithType: IServiceGroupsService.GetServiceGroupSummaries()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+    name: GetServiceGroupSummaries
+    nameWithType: IServiceGroupsService.GetServiceGroupSummaries
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+    name: GetServiceGroupSummaries
+    nameWithType: IServiceGroupsService.GetServiceGroupSummaries
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaries
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup
+  name: GetServiceGroup
+  nameWithType: ServiceGroupsService.GetServiceGroup
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroup
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: GetServiceGroup(String)
+  nameWithType: IServiceGroupsService.GetServiceGroup(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)
+    name: GetServiceGroup
+    nameWithType: IServiceGroupsService.GetServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup(System.String)
+    name: GetServiceGroup
+    nameWithType: IServiceGroupsService.GetServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: MpdCarrierServiceGroup
+  nameWithType: MpdCarrierServiceGroup
+  fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary
+  name: GetServiceGroupSummary
+  nameWithType: ServiceGroupsService.GetServiceGroupSummary
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummary
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: GetServiceGroupSummary(String)
+  nameWithType: IServiceGroupsService.GetServiceGroupSummary(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)
+    name: GetServiceGroupSummary
+    nameWithType: IServiceGroupsService.GetServiceGroupSummary
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary(System.String)
+    name: GetServiceGroupSummary
+    nameWithType: IServiceGroupsService.GetServiceGroupSummary
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable
+  name: IsServiceGroupReferenceAvailable
+  nameWithType: ServiceGroupsService.IsServiceGroupReferenceAvailable
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailable
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: IsServiceGroupReferenceAvailable(String)
+  nameWithType: IServiceGroupsService.IsServiceGroupReferenceAvailable(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+    name: IsServiceGroupReferenceAvailable
+    nameWithType: IServiceGroupsService.IsServiceGroupReferenceAvailable
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable(System.String)
+    name: IsServiceGroupReferenceAvailable
+    nameWithType: IServiceGroupsService.IsServiceGroupReferenceAvailable
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailable
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup
+  name: CreateServiceGroup
+  nameWithType: ServiceGroupsService.CreateServiceGroup
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroup
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  name: CreateServiceGroup(MpdCarrierServiceGroup)
+  nameWithType: IServiceGroupsService.CreateServiceGroup(MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: CreateServiceGroup
+    nameWithType: IServiceGroupsService.CreateServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: CreateServiceGroup
+    nameWithType: IServiceGroupsService.CreateServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup
+  name: UpdateServiceGroup
+  nameWithType: ServiceGroupsService.UpdateServiceGroup
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroup
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: UpdateServiceGroup(String, MpdCarrierServiceGroup)
+  nameWithType: IServiceGroupsService.UpdateServiceGroup(String, MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String, Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: UpdateServiceGroup
+    nameWithType: IServiceGroupsService.UpdateServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: UpdateServiceGroup
+    nameWithType: IServiceGroupsService.UpdateServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup
+  name: DeleteServiceGroup
+  nameWithType: ServiceGroupsService.DeleteServiceGroup
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroup
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: DeleteServiceGroup(String)
+  nameWithType: IServiceGroupsService.DeleteServiceGroup(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)
+    name: DeleteServiceGroup
+    nameWithType: IServiceGroupsService.DeleteServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup(System.String)
+    name: DeleteServiceGroup
+    nameWithType: IServiceGroupsService.DeleteServiceGroup
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroup
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync
+  name: GetServiceGroupsAsync
+  nameWithType: ServiceGroupsService.GetServiceGroupsAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  name: GetServiceGroupsAsync()
+  nameWithType: IServiceGroupsService.GetServiceGroupsAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+    name: GetServiceGroupsAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+    name: GetServiceGroupsAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<MpdCarrierServiceGroup>>
+  nameWithType: Task<List<MpdCarrierServiceGroup>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup>>
+  nameWithType.vb: Task(Of List(Of MpdCarrierServiceGroup))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup))
+  name.vb: Task(Of List(Of MpdCarrierServiceGroup))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync
+  name: GetServiceGroupSummariesAsync
+  nameWithType: ServiceGroupsService.GetServiceGroupSummariesAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummariesAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  name: GetServiceGroupSummariesAsync()
+  nameWithType: IServiceGroupsService.GetServiceGroupSummariesAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+    name: GetServiceGroupSummariesAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupSummariesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+    name: GetServiceGroupSummariesAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupSummariesAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummariesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync
+  name: GetServiceGroupAsync
+  nameWithType: ServiceGroupsService.GetServiceGroupAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: GetServiceGroupAsync(String)
+  nameWithType: IServiceGroupsService.GetServiceGroupAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)
+    name: GetServiceGroupAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync(System.String)
+    name: GetServiceGroupAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<MpdCarrierServiceGroup>
+  nameWithType: Task<MpdCarrierServiceGroup>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup>
+  nameWithType.vb: Task(Of MpdCarrierServiceGroup)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  name.vb: Task(Of MpdCarrierServiceGroup)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync
+  name: GetServiceGroupSummaryAsync
+  nameWithType: ServiceGroupsService.GetServiceGroupSummaryAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.GetServiceGroupSummaryAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: GetServiceGroupSummaryAsync(String)
+  nameWithType: IServiceGroupsService.GetServiceGroupSummaryAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+    name: GetServiceGroupSummaryAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupSummaryAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync(System.String)
+    name: GetServiceGroupSummaryAsync
+    nameWithType: IServiceGroupsService.GetServiceGroupSummaryAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.GetServiceGroupSummaryAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+  name: IsServiceGroupReferenceAvailableAsync
+  nameWithType: ServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: IsServiceGroupReferenceAvailableAsync(String)
+  nameWithType: IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+    name: IsServiceGroupReferenceAvailableAsync
+    nameWithType: IServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync(System.String)
+    name: IsServiceGroupReferenceAvailableAsync
+    nameWithType: IServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.IsServiceGroupReferenceAvailableAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync
+  name: CreateServiceGroupAsync
+  nameWithType: ServiceGroupsService.CreateServiceGroupAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.CreateServiceGroupAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  name: CreateServiceGroupAsync(MpdCarrierServiceGroup)
+  nameWithType: IServiceGroupsService.CreateServiceGroupAsync(MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: CreateServiceGroupAsync
+    nameWithType: IServiceGroupsService.CreateServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync(Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: CreateServiceGroupAsync
+    nameWithType: IServiceGroupsService.CreateServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.CreateServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync
+  name: UpdateServiceGroupAsync
+  nameWithType: ServiceGroupsService.UpdateServiceGroupAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.UpdateServiceGroupAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: UpdateServiceGroupAsync(String, MpdCarrierServiceGroup)
+  nameWithType: IServiceGroupsService.UpdateServiceGroupAsync(String, MpdCarrierServiceGroup)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String, Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: UpdateServiceGroupAsync
+    nameWithType: IServiceGroupsService.UpdateServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync(System.String,Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup)
+    name: UpdateServiceGroupAsync
+    nameWithType: IServiceGroupsService.UpdateServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.UpdateServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+    name: MpdCarrierServiceGroup
+    nameWithType: MpdCarrierServiceGroup
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MpdCarrierServiceGroup
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync*
+  commentId: Overload:Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync
+  name: DeleteServiceGroupAsync
+  nameWithType: ServiceGroupsService.DeleteServiceGroupAsync
+  fullName: Sorted.PRO.SDK.Settings.ServiceGroupsService.DeleteServiceGroupAsync
+- uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService
+  isExternal: true
+  name: DeleteServiceGroupAsync(String)
+  nameWithType: IServiceGroupsService.DeleteServiceGroupAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)
+    name: DeleteServiceGroupAsync
+    nameWithType: IServiceGroupsService.DeleteServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync(System.String)
+    name: DeleteServiceGroupAsync
+    nameWithType: IServiceGroupsService.DeleteServiceGroupAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Settings.IServiceGroupsService.DeleteServiceGroupAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

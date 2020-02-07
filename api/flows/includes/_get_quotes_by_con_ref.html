@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<blockquote>
+<p>Get Quotes by Consignment Reference Endpoint</p>
+</blockquote>
+<pre><code>GET https://api.electioapp.com/quotes/consignment/{consignmentReference}
+</code></pre>
+<blockquote>
+<p>Example Get Quotes by Consignment Reference Request</p>
+</blockquote>
+<pre><code>https://api.electioapp.com/quotes/consignment/EC-000-05B-1CM
+</code></pre>
+<blockquote>
+<p>Example Get Quotes by Consignment Reference Response</p>
+</blockquote>
+<pre><code class="lang-json">{
+    &quot;QuoteRequestReference&quot;: &quot;6f9c7ee5-a97e-4df9-bc07-aa3f00e99316&quot;,
+    &quot;Quotes&quot;: [
+        {
+            &quot;MpdCarrierServiceSource&quot;: 2,
+            &quot;MpdCarrierService&quot;: &quot;1st and 2nd Class Account Mail (1st Parcel)&quot;,
+            &quot;OriginAddress&quot;: {
+                &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+                &quot;AddressLine1&quot;: &quot;Third Floor&quot;,
+                &quot;AddressLine2&quot;: &quot;Merchant Exchange&quot;,
+                &quot;AddressLine3&quot;: &quot;Whitworth Street West&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;RegionCode&quot;: &quot;&quot;,
+                &quot;SpecialInstructions&quot;: &quot;&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;DestinationAddress&quot;: {
+                &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+                &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+                &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;Greater Manchester&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;CollectionDate&quot;: &quot;2019-05-01T00:00:00&quot;,
+            &quot;EarliestDeliveryDate&quot;: &quot;2019-05-02T00:00:00&quot;,
+            &quot;LatestDeliveryDate&quot;: &quot;2019-05-02T23:59:00&quot;,
+            &quot;BasePrice&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Price&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Surcharges&quot;: [],
+            &quot;Legs&quot;: [
+                {
+                    &quot;JourneyStage&quot;: 1,
+                    &quot;CarrierService&quot;: {
+                        &quot;Reference&quot;: &quot;RMDBPR1STPSU&quot;,
+                        &quot;Name&quot;: &quot;1st and 2nd Class Account Mail (1st Parcel)&quot;,
+                        &quot;CarrierReference&quot;: &quot;ROYAL_MAIL&quot;,
+                        &quot;CarrierName&quot;: null,
+                        &quot;IsDropOff&quot;: false,
+                        &quot;IsPickUp&quot;: false,
+                        &quot;IsTimed&quot;: false
+                    },
+                    &quot;CarrierAccountReference&quot;: &quot;RM1&quot;,
+                    &quot;DeliveryHub&quot;: null,
+                    &quot;CostItems&quot;: null,
+                    &quot;VolumetricParcelWeight&quot;: null,
+                    &quot;CollectionType&quot;: &quot;NotApplicable&quot;
+                }
+            ],
+            &quot;CarrierAccountOwner&quot;: null,
+            &quot;IsElectioService&quot;: false,
+            &quot;QuoteReference&quot;: &quot;f6374a18-a6b5-48c1-841c-aa3f00e9951a&quot;,
+            &quot;CreationDate&quot;: &quot;2019-04-30T14:10:26.8551633+00:00&quot;,
+            &quot;ExpiryDate&quot;: &quot;2019-05-01T00:00:00+01:00&quot;,
+            &quot;Requestor&quot;: &quot;Andy Walton&quot;,
+            &quot;ConsignmentReference&quot;: &quot;EC-000-05B-1CM&quot;,
+            &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_RMDBPR1STPSU&quot;
+        },
+        {
+            &quot;MpdCarrierServiceSource&quot;: 2,
+            &quot;MpdCarrierService&quot;: &quot;Tracked 48 Signed For&quot;,
+            &quot;OriginAddress&quot;: {
+                &quot;ShippingLocationReference&quot;: &quot;EDC5_Electio&quot;,
+                &quot;AddressLine1&quot;: &quot;Third Floor&quot;,
+                &quot;AddressLine2&quot;: &quot;Merchant Exchange&quot;,
+                &quot;AddressLine3&quot;: &quot;Whitworth Street West&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;RegionCode&quot;: &quot;&quot;,
+                &quot;SpecialInstructions&quot;: &quot;&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;DestinationAddress&quot;: {
+                &quot;AddressLine1&quot;: &quot;13 Porter Street&quot;,
+                &quot;AddressLine2&quot;: &quot;Pressington&quot;,
+                &quot;AddressLine3&quot;: &quot;Carlsby&quot;,
+                &quot;Town&quot;: &quot;Manchester&quot;,
+                &quot;Region&quot;: &quot;Greater Manchester&quot;,
+                &quot;Postcode&quot;: &quot;M1 5WG&quot;,
+                &quot;Country&quot;: {
+                    &quot;Name&quot;: &quot;United Kingdom&quot;,
+                    &quot;IsoCode&quot;: {
+                        &quot;TwoLetterCode&quot;: &quot;GB&quot;,
+                        &quot;ThreeLetterCode&quot;: &quot;GBR&quot;,
+                        &quot;NumericCode&quot;: &quot;826&quot;
+                    }
+                },
+                &quot;SpecialInstructions&quot;: &quot;Gate code: 4454&quot;,
+                &quot;IsCached&quot;: false
+            },
+            &quot;CollectionDate&quot;: &quot;2019-05-01T00:00:00&quot;,
+            &quot;EarliestDeliveryDate&quot;: &quot;2019-05-03T00:00:00&quot;,
+            &quot;LatestDeliveryDate&quot;: &quot;2019-05-03T23:59:00&quot;,
+            &quot;BasePrice&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Price&quot;: {
+                &quot;Net&quot;: 27.69,
+                &quot;Gross&quot;: 33.23,
+                &quot;VatRate&quot;: {
+                    &quot;Reference&quot;: &quot;GB-0.2000&quot;,
+                    &quot;CountryIsoCode&quot;: &quot;GB&quot;,
+                    &quot;Type&quot;: &quot;Standard&quot;,
+                    &quot;Rate&quot;: 0.2
+                },
+                &quot;VatAmount&quot;: 5.54,
+                &quot;Currency&quot;: {
+                    &quot;Name&quot;: &quot;Pound Sterling&quot;,
+                    &quot;IsoCode&quot;: &quot;GBP&quot;
+                }
+            },
+            &quot;Surcharges&quot;: [],
+            &quot;Legs&quot;: [
+                {
+                    &quot;JourneyStage&quot;: 1,
+                    &quot;CarrierService&quot;: {
+                        &quot;Reference&quot;: &quot;RMDTPS48HNAST&quot;,
+                        &quot;Name&quot;: &quot;Tracked 48 Signed For&quot;,
+                        &quot;CarrierReference&quot;: &quot;ROYAL_MAIL&quot;,
+                        &quot;CarrierName&quot;: null,
+                        &quot;IsDropOff&quot;: false,
+                        &quot;IsPickUp&quot;: false,
+                        &quot;IsTimed&quot;: false
+                    },
+                    &quot;CarrierAccountReference&quot;: &quot;RM1&quot;,
+                    &quot;DeliveryHub&quot;: null,
+                    &quot;CostItems&quot;: null,
+                    &quot;VolumetricParcelWeight&quot;: null,
+                    &quot;CollectionType&quot;: &quot;NotApplicable&quot;
+                }
+            ],
+            &quot;CarrierAccountOwner&quot;: null,
+            &quot;IsElectioService&quot;: false,
+            &quot;QuoteReference&quot;: &quot;f63bd4ab-d519-4547-b361-aa3f00e9951a&quot;,
+            &quot;CreationDate&quot;: &quot;2019-04-30T14:10:26.8551633+00:00&quot;,
+            &quot;ExpiryDate&quot;: &quot;2019-05-01T00:00:00+01:00&quot;,
+            &quot;Requestor&quot;: &quot;Andy Walton&quot;,
+            &quot;ConsignmentReference&quot;: &quot;EC-000-05B-1CM&quot;,
+            &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_RMDTPS48HNAST&quot;
+        }
+    ],
+    &quot;Message&quot;: null,
+    &quot;UnqualifiedServices&quot;: [
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;acceptanceTestCarrier_825d&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;acceptanceTestCarrier_f8fe&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: false,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;Express With Signature Parcel&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_ANPOS-00001&quot;,
+            &quot;ExclusionReason&quot;: &quot;This service is not available for the selected collection/delivery dates.&quot;
+        },
+        {
+            &quot;Available&quot;: false,
+            &quot;Rates&quot;: true,
+            &quot;MpdCarrierService&quot;: &quot;Next Day Monday - Saturday&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_MNZIS-00001&quot;,
+            &quot;ExclusionReason&quot;: &quot;This service is not available between the selected addresses.&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS EXPRESS (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHEXDCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS EXPRESS (Saturday Delivery, Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHEXSDDCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS EXPRESS PLUS (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHEP&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS SAVER (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHSADCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: true,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;UPS STANDARD (Delivery Confirmation Signature Required)&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;EDC5_UPSHSTDCS&quot;,
+            &quot;ExclusionReason&quot;: &quot;No cost and/or pricing data configured&quot;
+        },
+        {
+            &quot;Available&quot;: false,
+            &quot;Rates&quot;: false,
+            &quot;MpdCarrierService&quot;: &quot;wnDirect International Economy&quot;,
+            &quot;MpdCarrierServiceReference&quot;: &quot;MPD_WNDECOM&quot;,
+            &quot;ExclusionReason&quot;: &quot;This service is not available between the selected addresses. This service is not available for the given package dimensions/weight.&quot;
+        }
+    ]
+}
+</code></pre>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;QuoteResult xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Quotes&quot;&gt;
+    &lt;QuoteRequestReference&gt;ef3b878b-930e-4a8d-8990-aa70009c9ecb&lt;/QuoteRequestReference&gt;
+    &lt;Quotes&gt;
+        &lt;Quote&gt;
+            &lt;QuoteReference&gt;72b23d6b-15a9-4925-af0f-aa70009ca110&lt;/QuoteReference&gt;
+            &lt;Requestor&gt;Andy Walton&lt;/Requestor&gt;
+            &lt;CreationDate&gt;2019-06-18T09:30:16.1575456+00:00&lt;/CreationDate&gt;
+            &lt;ExpiryDate&gt;2019-06-18T15:30:00.0000000+01:00&lt;/ExpiryDate&gt;
+            &lt;ConsignmentReference&gt;EC-000-05B-N44&lt;/ConsignmentReference&gt;
+            &lt;ConsignmentReferenceProvidedByCustomer&gt;MYCONS-098998&lt;/ConsignmentReferenceProvidedByCustomer&gt;
+            &lt;MpdCarrierServiceReference&gt;EDC5_UPSHSTDCS&lt;/MpdCarrierServiceReference&gt;
+            &lt;MpdCarrierServiceSource&gt;External&lt;/MpdCarrierServiceSource&gt;
+            &lt;MpdCarrierService&gt;UPS STANDARD (Delivery Confirmation Signature Required)&lt;/MpdCarrierService&gt;
+            &lt;OriginAddress&gt;
+                &lt;ShippingLocationReference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;EDC5_Electio&lt;/ShippingLocationReference&gt;
+                &lt;AddressLine1 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Third Floor&lt;/AddressLine1&gt;
+                &lt;AddressLine2 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Merchant Exchange&lt;/AddressLine2&gt;
+                &lt;AddressLine3 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Whitworth Street West&lt;/AddressLine3&gt;
+                &lt;Town xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Manchester&lt;/Town&gt;
+                &lt;Region xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+                &lt;Postcode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;M1 5WG&lt;/Postcode&gt;
+                &lt;Country xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;
+                    &lt;Name&gt;United Kingdom&lt;/Name&gt;
+                    &lt;IsoCode&gt;
+                        &lt;TwoLetterCode&gt;GB&lt;/TwoLetterCode&gt;
+                    &lt;/IsoCode&gt;
+                &lt;/Country&gt;
+                &lt;SpecialInstructions xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+            &lt;/OriginAddress&gt;
+            &lt;DestinationAddress&gt;
+                &lt;AddressLine1 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;13 Porter Street&lt;/AddressLine1&gt;
+                &lt;AddressLine2 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Pressington&lt;/AddressLine2&gt;
+                &lt;AddressLine3 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Carlsby&lt;/AddressLine3&gt;
+                &lt;Town xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Manchester&lt;/Town&gt;
+                &lt;Region xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Greater Manchester&lt;/Region&gt;
+                &lt;Postcode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;M1 5WG&lt;/Postcode&gt;
+                &lt;Country xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;
+                    &lt;Name&gt;United Kingdom&lt;/Name&gt;
+                    &lt;IsoCode&gt;
+                        &lt;TwoLetterCode&gt;GB&lt;/TwoLetterCode&gt;
+                    &lt;/IsoCode&gt;
+                &lt;/Country&gt;
+                &lt;SpecialInstructions xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Gate code: 4454&lt;/SpecialInstructions&gt;
+            &lt;/DestinationAddress&gt;
+            &lt;CollectionDate&gt;2019-06-18T17:00:00.0000000+00:00&lt;/CollectionDate&gt;
+            &lt;EarliestDeliveryDate&gt;2019-06-19T00:00:00.0000000+00:00&lt;/EarliestDeliveryDate&gt;
+            &lt;LatestDeliveryDate&gt;2019-06-19T23:30:00.0000000+00:00&lt;/LatestDeliveryDate&gt;
+            &lt;BasePrice&gt;
+                &lt;Net xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;5.49&lt;/Net&gt;
+                &lt;Gross xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;6.59&lt;/Gross&gt;
+                &lt;TaxRate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Reference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB-0.200364298724954463&lt;/Reference&gt;
+                    &lt;CountryIsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB&lt;/CountryIsoCode&gt;
+                    &lt;Type xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Standard&lt;/Type&gt;
+                    &lt;Rate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;0.200364298724954463&lt;/Rate&gt;
+                &lt;/TaxRate&gt;
+                &lt;VatAmount xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;1.10&lt;/VatAmount&gt;
+                &lt;Currency xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Name xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Pound Sterling&lt;/Name&gt;
+                    &lt;IsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GBP&lt;/IsoCode&gt;
+                &lt;/Currency&gt;
+            &lt;/BasePrice&gt;
+            &lt;Price&gt;
+                &lt;Net xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;5.49&lt;/Net&gt;
+                &lt;Gross xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;6.59&lt;/Gross&gt;
+                &lt;TaxRate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Reference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB-0.200364298724954463&lt;/Reference&gt;
+                    &lt;CountryIsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB&lt;/CountryIsoCode&gt;
+                    &lt;Type xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Standard&lt;/Type&gt;
+                    &lt;Rate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;0.200364298724954463&lt;/Rate&gt;
+                &lt;/TaxRate&gt;
+                &lt;VatAmount xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;1.10&lt;/VatAmount&gt;
+                &lt;Currency xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Name xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Pound Sterling&lt;/Name&gt;
+                    &lt;IsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GBP&lt;/IsoCode&gt;
+                &lt;/Currency&gt;
+            &lt;/Price&gt;
+            &lt;Surcharges /&gt;
+            &lt;Legs&gt;
+                &lt;Leg&gt;
+                    &lt;JourneyStage xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;1&lt;/JourneyStage&gt;
+                    &lt;CarrierService xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;
+                        &lt;Reference&gt;UPSHSTDCS&lt;/Reference&gt;
+                        &lt;Name&gt;UPS STANDARD (Delivery Confirmation Signature Required)&lt;/Name&gt;
+                        &lt;CarrierReference&gt;UPS&lt;/CarrierReference&gt;
+                        &lt;IsDropOff&gt;false&lt;/IsDropOff&gt;
+                        &lt;IsPickUp&gt;false&lt;/IsPickUp&gt;
+                        &lt;IsTimed&gt;false&lt;/IsTimed&gt;
+                        &lt;IsTracked&gt;true&lt;/IsTracked&gt;
+                        &lt;IsSigned&gt;true&lt;/IsSigned&gt;
+                        &lt;ServiceDirection&gt;Inbound Outbound&lt;/ServiceDirection&gt;
+                    &lt;/CarrierService&gt;
+                    &lt;CarrierAccountReference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;EDC5_UPS&lt;/CarrierAccountReference&gt;
+                    &lt;CollectionType xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;NotApplicable&lt;/CollectionType&gt;
+                    &lt;Metadata xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+                &lt;/Leg&gt;
+            &lt;/Legs&gt;
+            &lt;IsElectioService&gt;false&lt;/IsElectioService&gt;
+            &lt;ServiceDirection&gt;Inbound Outbound&lt;/ServiceDirection&gt;
+        &lt;/Quote&gt;
+        &lt;Quote&gt;
+            &lt;QuoteReference&gt;587ca570-b400-41b5-8b47-aa70009ca110&lt;/QuoteReference&gt;
+            &lt;Requestor&gt;Andy Walton&lt;/Requestor&gt;
+            &lt;CreationDate&gt;2019-06-18T09:30:16.1575456+00:00&lt;/CreationDate&gt;
+            &lt;ExpiryDate&gt;2019-06-18T15:30:00.0000000+01:00&lt;/ExpiryDate&gt;
+            &lt;ConsignmentReference&gt;EC-000-05B-N44&lt;/ConsignmentReference&gt;
+            &lt;ConsignmentReferenceProvidedByCustomer&gt;MYCONS-098998&lt;/ConsignmentReferenceProvidedByCustomer&gt;
+            &lt;MpdCarrierServiceReference&gt;EDC5_UPSHSADCS&lt;/MpdCarrierServiceReference&gt;
+            &lt;MpdCarrierServiceSource&gt;External&lt;/MpdCarrierServiceSource&gt;
+            &lt;MpdCarrierService&gt;UPS SAVER (Delivery Confirmation Signature Required)&lt;/MpdCarrierService&gt;
+            &lt;OriginAddress&gt;
+                &lt;ShippingLocationReference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;EDC5_Electio&lt;/ShippingLocationReference&gt;
+                &lt;AddressLine1 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Third Floor&lt;/AddressLine1&gt;
+                &lt;AddressLine2 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Merchant Exchange&lt;/AddressLine2&gt;
+                &lt;AddressLine3 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Whitworth Street West&lt;/AddressLine3&gt;
+                &lt;Town xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Manchester&lt;/Town&gt;
+                &lt;Region xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+                &lt;Postcode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;M1 5WG&lt;/Postcode&gt;
+                &lt;Country xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;
+                    &lt;Name&gt;United Kingdom&lt;/Name&gt;
+                    &lt;IsoCode&gt;
+                        &lt;TwoLetterCode&gt;GB&lt;/TwoLetterCode&gt;
+                    &lt;/IsoCode&gt;
+                &lt;/Country&gt;
+                &lt;SpecialInstructions xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+            &lt;/OriginAddress&gt;
+            &lt;DestinationAddress&gt;
+                &lt;AddressLine1 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;13 Porter Street&lt;/AddressLine1&gt;
+                &lt;AddressLine2 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Pressington&lt;/AddressLine2&gt;
+                &lt;AddressLine3 xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Carlsby&lt;/AddressLine3&gt;
+                &lt;Town xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Manchester&lt;/Town&gt;
+                &lt;Region xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Greater Manchester&lt;/Region&gt;
+                &lt;Postcode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;M1 5WG&lt;/Postcode&gt;
+                &lt;Country xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;
+                    &lt;Name&gt;United Kingdom&lt;/Name&gt;
+                    &lt;IsoCode&gt;
+                        &lt;TwoLetterCode&gt;GB&lt;/TwoLetterCode&gt;
+                    &lt;/IsoCode&gt;
+                &lt;/Country&gt;
+                &lt;SpecialInstructions xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Gate code: 4454&lt;/SpecialInstructions&gt;
+            &lt;/DestinationAddress&gt;
+            &lt;CollectionDate&gt;2019-06-18T17:00:00.0000000+00:00&lt;/CollectionDate&gt;
+            &lt;EarliestDeliveryDate&gt;2019-06-19T00:00:00.0000000+00:00&lt;/EarliestDeliveryDate&gt;
+            &lt;LatestDeliveryDate&gt;2019-06-19T12:00:00.0000000+00:00&lt;/LatestDeliveryDate&gt;
+            &lt;BasePrice&gt;
+                &lt;Net xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;7.49&lt;/Net&gt;
+                &lt;Gross xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;8.99&lt;/Gross&gt;
+                &lt;TaxRate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Reference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB-0.200267022696929239&lt;/Reference&gt;
+                    &lt;CountryIsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB&lt;/CountryIsoCode&gt;
+                    &lt;Type xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Standard&lt;/Type&gt;
+                    &lt;Rate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;0.200267022696929239&lt;/Rate&gt;
+                &lt;/TaxRate&gt;
+                &lt;VatAmount xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;1.50&lt;/VatAmount&gt;
+                &lt;Currency xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Name xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Pound Sterling&lt;/Name&gt;
+                    &lt;IsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GBP&lt;/IsoCode&gt;
+                &lt;/Currency&gt;
+            &lt;/BasePrice&gt;
+            &lt;Price&gt;
+                &lt;Net xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;7.49&lt;/Net&gt;
+                &lt;Gross xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;8.99&lt;/Gross&gt;
+                &lt;TaxRate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Reference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB-0.200267022696929239&lt;/Reference&gt;
+                    &lt;CountryIsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GB&lt;/CountryIsoCode&gt;
+                    &lt;Type xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Standard&lt;/Type&gt;
+                    &lt;Rate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;0.200267022696929239&lt;/Rate&gt;
+                &lt;/TaxRate&gt;
+                &lt;VatAmount xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;1.50&lt;/VatAmount&gt;
+                &lt;Currency xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Rates&quot;&gt;
+                    &lt;Name xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Pound Sterling&lt;/Name&gt;
+                    &lt;IsoCode xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;GBP&lt;/IsoCode&gt;
+                &lt;/Currency&gt;
+            &lt;/Price&gt;
+            &lt;Surcharges /&gt;
+            &lt;Legs&gt;
+                &lt;Leg&gt;
+                    &lt;JourneyStage xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;1&lt;/JourneyStage&gt;
+                    &lt;CarrierService xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;
+                        &lt;Reference&gt;UPSHSADCS&lt;/Reference&gt;
+                        &lt;Name&gt;UPS SAVER (Delivery Confirmation Signature Required)&lt;/Name&gt;
+                        &lt;CarrierReference&gt;UPS&lt;/CarrierReference&gt;
+                        &lt;IsDropOff&gt;false&lt;/IsDropOff&gt;
+                        &lt;IsPickUp&gt;false&lt;/IsPickUp&gt;
+                        &lt;IsTimed&gt;false&lt;/IsTimed&gt;
+                        &lt;IsTracked&gt;true&lt;/IsTracked&gt;
+                        &lt;IsSigned&gt;true&lt;/IsSigned&gt;
+                        &lt;ServiceDirection&gt;Inbound Outbound&lt;/ServiceDirection&gt;
+                    &lt;/CarrierService&gt;
+                    &lt;CarrierAccountReference xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;EDC5_UPS&lt;/CarrierAccountReference&gt;
+                    &lt;CollectionType xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;NotApplicable&lt;/CollectionType&gt;
+                    &lt;Metadata xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;
+                &lt;/Leg&gt;
+            &lt;/Legs&gt;
+            &lt;IsElectioService&gt;false&lt;/IsElectioService&gt;
+            &lt;ServiceDirection&gt;Inbound Outbound&lt;/ServiceDirection&gt;
+        &lt;/Quote&gt;
+    &lt;/Quotes&gt;
+    &lt;UnqualifiedServices&gt;
+        &lt;UnqualifiedService&gt;
+            &lt;Available&gt;true&lt;/Available&gt;
+            &lt;Rates&gt;false&lt;/Rates&gt;
+            &lt;MpdCarrierService&gt;acceptanceTestCarrier_825d&lt;/MpdCarrierService&gt;
+            &lt;MpdCarrierServiceReference&gt;acceptanceTestCarrier_f8fe&lt;/MpdCarrierServiceReference&gt;
+            &lt;ExclusionReason&gt;No cost and/or pricing data configured&lt;/ExclusionReason&gt;
+        &lt;/UnqualifiedService&gt;
+        &lt;UnqualifiedService&gt;
+            &lt;Available&gt;false&lt;/Available&gt;
+            &lt;Rates&gt;false&lt;/Rates&gt;
+            &lt;MpdCarrierService&gt;Express With Signature Parcel&lt;/MpdCarrierService&gt;
+            &lt;MpdCarrierServiceReference&gt;MPD_ANPOS-00001&lt;/MpdCarrierServiceReference&gt;
+            &lt;ExclusionReason&gt;This service is not available for the selected collection/delivery dates.&lt;/ExclusionReason&gt;
+        &lt;/UnqualifiedService&gt;
+        &lt;UnqualifiedService&gt;
+            &lt;Available&gt;false&lt;/Available&gt;
+            &lt;Rates&gt;true&lt;/Rates&gt;
+            &lt;MpdCarrierService&gt;Next Day Monday - Saturday&lt;/MpdCarrierService&gt;
+            &lt;MpdCarrierServiceReference&gt;MPD_MNZIS-00001&lt;/MpdCarrierServiceReference&gt;
+            &lt;ExclusionReason&gt;This service is not available between the selected addresses.&lt;/ExclusionReason&gt;
+        &lt;/UnqualifiedService&gt;
+        &lt;UnqualifiedService&gt;
+            &lt;Available&gt;false&lt;/Available&gt;
+            &lt;Rates&gt;false&lt;/Rates&gt;
+            &lt;MpdCarrierService&gt;wnDirect International Economy&lt;/MpdCarrierService&gt;
+            &lt;MpdCarrierServiceReference&gt;MPD_WNDECOM&lt;/MpdCarrierServiceReference&gt;
+            &lt;ExclusionReason&gt;This service is not available between the selected addresses. This service is not available for the given package dimensions/weight.&lt;/ExclusionReason&gt;
+        &lt;/UnqualifiedService&gt;
+    &lt;/UnqualifiedServices&gt;
+&lt;/QuoteResult&gt;
+</code></pre>
+<p>Once you've created your consignment, you'll need to use the <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong> endpoint to get some delivery quotes for it.</p>
+<p><strong>Get Quotes by Consignment Reference</strong> returns quotes based on the details of an existing consignment. Specifically, it takes a <code>{consignmentReference}</code> as a path parameter and returns an array of <code>{Quotes}</code> for that consignment, as well as a list of services that were unable to quote for the consignment.</p>
+<p>Each <code>{Quote}</code> object contains details on carrier service, dates, addresses, and price, amongst other information. Pay particular attention to the <code>{quoteReference}</code>, as you'll need this when you select a quote in the next step.</p>
+<aside class="note">
+  For full reference information on the <strong>Get Quotes by Consignment Reference</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong> page of the API reference.
+</aside>
+<h3 id="example">Example</h3>
+<p>The example to the right shows a <strong>Get Quotes by Consignment Reference</strong> request and its accompanying response. In this case, SortedPRO has returned two quotes for the service. The next step in the process is to select one of those quotes.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_get_quotes_by_con_ref.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1140 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  id: ConsignmentAuditMessage
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor(System.String,System.String,System.String,Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory,System.String,System.String)
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.SystemUser
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp
+  - Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentAuditMessage
+  nameWithType: ConsignmentAuditMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentAuditMessage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nRepresents an Audit Message attributed to a Consignment.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Consignment Audit Message", "A history / audit message for a consignment.")]
+
+      public class ConsignmentAuditMessage
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Consignment Audit Message", "A history / audit message for a consignment.")>
+
+      Public Class ConsignmentAuditMessage
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Consignment Audit Message
+    - type: System.String
+      value: A history / audit message for a consignment.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.SystemUser
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.SystemUser
+  id: SystemUser
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: SystemUser
+  nameWithType: ConsignmentAuditMessage.SystemUser
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.SystemUser
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SystemUser
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nThe system user\n"
+  example: []
+  syntax:
+    content: public const string SystemUser = "System"
+    return:
+      type: System.String
+    content.vb: Public Const SystemUser As String = "System"
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id
+  id: Id
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ConsignmentAuditMessage.Id
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Id
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nWe only have a primary key to support NHibernate\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The id of the message.", true, PropertyCollectionType.Single)]
+
+      public Guid Id { get; set; }
+    parameters: []
+    return:
+      type: System.Guid
+      description: "\nThe identifier.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The id of the message.", True, PropertyCollectionType.Single)>
+
+      Public Property Id As Guid
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The id of the message.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp
+  id: Timestamp
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Timestamp
+  nameWithType: ConsignmentAuditMessage.Timestamp
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Timestamp
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nDate/Time of the audit message\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The date and time that the message was created.", true, PropertyCollectionType.Single)]
+
+      public DateTimeOffset Timestamp { get; set; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+      description: "\nThe timestamp.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The date and time that the message was created.", True, PropertyCollectionType.Single)>
+
+      Public Property Timestamp As DateTimeOffset
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The date and time that the message was created.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference
+  id: ConsignmentReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentReference
+  nameWithType: ConsignmentAuditMessage.ConsignmentReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ConsignmentReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 62
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nReference of the consignment that the log line belongs to\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the consignment that the message is associated with.", false, PropertyCollectionType.Single)]
+
+      public string ConsignmentReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe consignment reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the consignment that the message is associated with.", False, PropertyCollectionType.Single)>
+
+      Public Property ConsignmentReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the consignment that the message is associated with.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message
+  id: Message
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: ConsignmentAuditMessage.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Message
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 72
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nAudit message\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The message content.", false, PropertyCollectionType.Single)]
+
+      public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe message.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The message content.", False, PropertyCollectionType.Single)>
+
+      Public Property Message As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The message content.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity
+  id: Severity
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Severity
+  nameWithType: ConsignmentAuditMessage.Severity
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Severity
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 82
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nSeverity of the message (Default: None)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The severity of the message.", false, PropertyCollectionType.Single)]
+
+      public AuditMessageSeverity Severity { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity
+      description: "\nThe severity.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The severity of the message.", False, PropertyCollectionType.Single)>
+
+      Public Property Severity As AuditMessageSeverity
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The severity of the message.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category
+  id: Category
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: ConsignmentAuditMessage.Category
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Category
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 92
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nCategory of the message (Default: None)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The category of the message.", false, PropertyCollectionType.Single)]
+
+      public ConsignmentAuditMessageCategory Category { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory
+      description: "\nThe category.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The category of the message.", False, PropertyCollectionType.Single)>
+
+      Public Property Category As ConsignmentAuditMessageCategory
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The category of the message.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username
+  id: Username
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: ConsignmentAuditMessage.Username
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Username
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 102
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nString representation of the user which caused the audit message to be raised (i.e. System or &apos;Joe Bloggs&apos;)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The username associated with the message.", false, PropertyCollectionType.Single)]
+
+      public string Username { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe username.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The username associated with the message.", False, PropertyCollectionType.Single)>
+
+      Public Property Username As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The username associated with the message.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData
+  id: AdditionalData
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: AdditionalData
+  nameWithType: ConsignmentAuditMessage.AdditionalData
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AdditionalData
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 112
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nAny additional data that the audit needs to store agains tthe row\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Any additional data for the message.", false, PropertyCollectionType.Single)]
+
+      public string AdditionalData { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe additional data.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Any additional data for the message.", False, PropertyCollectionType.Single)>
+
+      Public Property AdditionalData As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Any additional data for the message.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details
+  id: Details
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: Details
+  nameWithType: ConsignmentAuditMessage.Details
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Details
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 122
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the details.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Details of the audit message.", false, PropertyCollectionType.Single)]
+
+      public string Details { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe details.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Details of the audit message.", False, PropertyCollectionType.Single)>
+
+      Public Property Details As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Details of the audit message.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor
+  commentId: M:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentAuditMessage()
+  nameWithType: ConsignmentAuditMessage.ConsignmentAuditMessage()
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentAuditMessage()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 129
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ConsignmentAuditMessage()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor(System.String,System.String,System.String,Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory,System.String,System.String)
+  commentId: M:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor(System.String,System.String,System.String,Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory,System.String,System.String)'
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  langs:
+  - csharp
+  - vb
+  name: ConsignmentAuditMessage(String, String, String, AuditMessageSeverity, ConsignmentAuditMessageCategory, String, String)
+  nameWithType: ConsignmentAuditMessage.ConsignmentAuditMessage(String, String, String, AuditMessageSeverity, ConsignmentAuditMessageCategory, String, String)
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentAuditMessage(System.String, System.String, System.String, Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity, Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory, System.String, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/ConsignmentAuditMessage.cs
+    startLine: 141
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public ConsignmentAuditMessage(string consignmentReference, string message, string username, AuditMessageSeverity severity = AuditMessageSeverity.None, ConsignmentAuditMessageCategory category = ConsignmentAuditMessageCategory.None, string additionalData = null, string details = null)
+    parameters:
+    - id: consignmentReference
+      type: System.String
+      description: The consignment reference.
+    - id: message
+      type: System.String
+      description: The message.
+    - id: username
+      type: System.String
+      description: The username.
+    - id: severity
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity
+      description: The severity.
+    - id: category
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory
+      description: The category.
+    - id: additionalData
+      type: System.String
+      description: The additional data.
+    - id: details
+      type: System.String
+      description: The details.
+    content.vb: Public Sub New(consignmentReference As String, message As String, username As String, severity As AuditMessageSeverity = AuditMessageSeverity.None, category As ConsignmentAuditMessageCategory = ConsignmentAuditMessageCategory.None, additionalData As String = Nothing, details As String = Nothing)
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id
+  name: Id
+  nameWithType: ConsignmentAuditMessage.Id
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Id
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp
+  name: Timestamp
+  nameWithType: ConsignmentAuditMessage.Timestamp
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Timestamp
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference
+  name: ConsignmentReference
+  nameWithType: ConsignmentAuditMessage.ConsignmentReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message
+  name: Message
+  nameWithType: ConsignmentAuditMessage.Message
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Message
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity
+  name: Severity
+  nameWithType: ConsignmentAuditMessage.Severity
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Severity
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: AuditMessageSeverity
+  nameWithType: AuditMessageSeverity
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.AuditMessageSeverity
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category
+  name: Category
+  nameWithType: ConsignmentAuditMessage.Category
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Category
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentAuditMessageCategory
+  nameWithType: ConsignmentAuditMessageCategory
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAuditMessageCategory
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username
+  name: Username
+  nameWithType: ConsignmentAuditMessage.Username
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Username
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData
+  name: AdditionalData
+  nameWithType: ConsignmentAuditMessage.AdditionalData
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.AdditionalData
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details
+  name: Details
+  nameWithType: ConsignmentAuditMessage.Details
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.Details
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+  name: ConsignmentAuditMessage
+  nameWithType: ConsignmentAuditMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.#ctor
+  name: ConsignmentAuditMessage
+  nameWithType: ConsignmentAuditMessage.ConsignmentAuditMessage
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ConsignmentAuditMessage.ConsignmentAuditMessage

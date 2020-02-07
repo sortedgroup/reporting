@@ -1,0 +1,1873 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService
+  commentId: T:Sorted.PRO.SDK.Webhooks.WebHooksService
+  id: WebHooksService
+  parent: Sorted.PRO.SDK.Webhooks
+  children:
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  - Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  langs:
+  - csharp
+  - vb
+  name: WebHooksService
+  nameWithType: WebHooksService
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: WebHooksService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nService for retrieving tracking events for consignments / packages\n"
+  example: []
+  syntax:
+    content: 'public class WebHooksService : BaseService, IWebHooksService'
+    content.vb: >-
+      Public Class WebHooksService
+          Inherits BaseService
+          Implements IWebHooksService
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.Shared.BaseService
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  inheritedMembers:
+  - Sorted.PRO.SDK.Shared.BaseService.VERSION
+  - Sorted.PRO.SDK.Shared.BaseService.Rest
+  - Sorted.PRO.SDK.Shared.BaseService.Log
+  - Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  - Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: '#ctor(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory,Sorted.PRO.SDK.Shared.Interfaces.ILogger,System.Collections.Generic.Dictionary{System.String,System.String})'
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: WebHooksService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  nameWithType: WebHooksService.WebHooksService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.WebHooksService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nGet tracking events\n"
+  example: []
+  syntax:
+    content: public WebHooksService(string apiKey, IEndpoints endpoints, IHttpClientFactory httpClientFactory, ILogger log, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: apiKey
+      type: System.String
+      description: The api key of the user making the request
+    - id: endpoints
+      type: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+      description: An instance of <xref href="Sorted.PRO.SDK.Interfaces.IEndpoints" data-throw-if-not-resolved="false"></xref>
+    - id: httpClientFactory
+      type: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+      description: Used to provide a re-usable instance of <xref href="System.Net.Http.HttpClient" data-throw-if-not-resolved="false"></xref>
+    - id: log
+      type: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+      description: A logger implenting <xref href="Sorted.PRO.SDK.Interfaces.ILogger" data-throw-if-not-resolved="false"></xref>
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Sub New(apiKey As String, endpoints As IEndpoints, httpClientFactory As IHttpClientFactory, log As ILogger, optionalHeaders As Dictionary(Of String, String) = Nothing)
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.#ctor*
+  nameWithType.vb: WebHooksService.WebHooksService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Webhooks.WebHooksService.WebHooksService(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory, Sorted.PRO.SDK.Shared.Interfaces.ILogger, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: WebHooksService(String, IEndpoints, IHttpClientFactory, ILogger, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  id: GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentEvents(ConsignmentEventRequest)
+  nameWithType: WebHooksService.GetConsignmentEvents(ConsignmentEventRequest)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentEvents
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nGet consignment events of specified type between specified date range\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Consignment Events of specified type", "Returns Consignment Events of specified type", "Events", typeof(List<ConsignmentEventPayload>), "/events/consignments", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public ConsignmentEventPayloadResponse GetConsignmentEvents(ConsignmentEventRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+      description: The request.
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+      description: "\nList of ConsignmentEventPayload\n"
+    content.vb: >-
+      <ApiEndpoint("Get Consignment Events of specified type", "Returns Consignment Events of specified type", "Events", GetType(List(Of ConsignmentEventPayload)), "/events/consignments", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetConsignmentEvents(request As ConsignmentEventRequest) As ConsignmentEventPayloadResponse
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  nameWithType: WebHooksService.GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentEventsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 58
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nGets the consignment events.\n"
+  example: []
+  syntax:
+    content: public Task<ConsignmentEventPayloadResponse> GetConsignmentEventsAsync(ConsignmentEventRequest request, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+      description: The request.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse}
+      description: ''
+    content.vb: Public Function GetConsignmentEventsAsync(request As ConsignmentEventRequest, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of ConsignmentEventPayloadResponse)
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  nameWithType.vb: WebHooksService.GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  id: GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentStateEvents(ConsignmentStateEventRequest)
+  nameWithType: WebHooksService.GetConsignmentStateEvents(ConsignmentStateEventRequest)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentStateEvents
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 71
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nGet consignment state events of specified type between specified date range\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get Consignment State Events of specified type", "Returns Consignment State Events of specified type", "Events", typeof(List<ConsignmentPayload>), "/events/consignmentstateevents", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public List<ConsignmentPayload> GetConsignmentStateEvents(ConsignmentStateEventRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+      description: The request.
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload}
+      description: "\nList of ConsignmentPayload\n"
+    content.vb: >-
+      <ApiEndpoint("Get Consignment State Events of specified type", "Returns Consignment State Events of specified type", "Events", GetType(List(Of ConsignmentPayload)), "/events/consignmentstateevents", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetConsignmentStateEvents(request As ConsignmentStateEventRequest) As List(Of ConsignmentPayload)
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary<String, String>)
+  nameWithType: WebHooksService.GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentStateEventsAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 91
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nGets the consignment state events asynchronous.\n"
+  example: []
+  syntax:
+    content: public Task<List<ConsignmentPayload>> GetConsignmentStateEventsAsync(ConsignmentStateEventRequest request, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+      description: The request.
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload}}
+      description: ''
+    content.vb: Public Function GetConsignmentStateEventsAsync(request As ConsignmentStateEventRequest, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of List(Of ConsignmentPayload))
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  nameWithType.vb: WebHooksService.GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary(Of String, String))
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  id: GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentEventSummary(ConsignmentEventRequest)
+  nameWithType: WebHooksService.GetConsignmentEventSummary(ConsignmentEventRequest)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentEventSummary
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 104
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\nThe event summary endpoint allows a shorter version of the consignment events with a smaller payload\n"
+  example: []
+  syntax:
+    content: >-
+      [ApiEndpoint("Get EventSummary for Consignment Events of specified type", "Returns EventSummary for Consignment Events of specified type", "Events", typeof(EventSummary), "/events/consignments/summary", "POST", null)]
+
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      public EventSummaryResponse GetConsignmentEventSummary(ConsignmentEventRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+      description: ''
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+      description: "\nEventSummary\n"
+    content.vb: >-
+      <ApiEndpoint("Get EventSummary for Consignment Events of specified type", "Returns EventSummary for Consignment Events of specified type", "Events", GetType(EventSummary), "/events/consignments/summary", "POST", Nothing)>
+
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Public Function GetConsignmentEventSummary(request As ConsignmentEventRequest) As EventSummaryResponse
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Webhooks.WebHooksService
+  langs:
+  - csharp
+  - vb
+  name: GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  nameWithType: WebHooksService.GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GetConsignmentEventSummaryAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Webhooks/WebHooksService.cs
+    startLine: 123
+  assemblies:
+  - Sorted.PRO.SDK.Webhooks
+  namespace: Sorted.PRO.SDK.Webhooks
+  summary: "\n"
+  example: []
+  syntax:
+    content: public Task<EventSummaryResponse> GetConsignmentEventSummaryAsync(ConsignmentEventRequest request, Dictionary<string, string> optionalHeaders = null)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+      description: ''
+    - id: optionalHeaders
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    return:
+      type: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse}
+      description: ''
+    content.vb: Public Function GetConsignmentEventSummaryAsync(request As ConsignmentEventRequest, optionalHeaders As Dictionary(Of String, String) = Nothing) As Task(Of EventSummaryResponse)
+  overload: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync*
+  implements:
+  - Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  nameWithType.vb: WebHooksService.GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+references:
+- uid: Sorted.PRO.SDK.Webhooks
+  commentId: N:Sorted.PRO.SDK.Webhooks
+  name: Sorted.PRO.SDK.Webhooks
+  nameWithType: Sorted.PRO.SDK.Webhooks
+  fullName: Sorted.PRO.SDK.Webhooks
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.Shared.BaseService
+  commentId: T:Sorted.PRO.SDK.Shared.BaseService
+  parent: Sorted.PRO.SDK.Shared
+  name: BaseService
+  nameWithType: BaseService
+  fullName: Sorted.PRO.SDK.Shared.BaseService
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks
+  name: IWebHooksService
+  nameWithType: IWebHooksService
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+- uid: Sorted.PRO.SDK.Shared.BaseService.VERSION
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.VERSION
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: VERSION
+  nameWithType: BaseService.VERSION
+  fullName: Sorted.PRO.SDK.Shared.BaseService.VERSION
+- uid: Sorted.PRO.SDK.Shared.BaseService.Rest
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Rest
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Rest
+  nameWithType: BaseService.Rest
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Rest
+- uid: Sorted.PRO.SDK.Shared.BaseService.Log
+  commentId: F:Sorted.PRO.SDK.Shared.BaseService.Log
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  name: Log
+  nameWithType: BaseService.Log
+  fullName: Sorted.PRO.SDK.Shared.BaseService.Log
+- uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: GetRestConfig(String, IEndpoints, String)
+  nameWithType: BaseService.GetRestConfig(String, IEndpoints, String)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String, Sorted.PRO.SDK.Shared.Interfaces.IEndpoints, System.String)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig(System.String,Sorted.PRO.SDK.Shared.Interfaces.IEndpoints,System.String)
+    name: GetRestConfig
+    nameWithType: BaseService.GetRestConfig
+    fullName: Sorted.PRO.SDK.Shared.BaseService.GetRestConfig
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+    name: IEndpoints
+    nameWithType: IEndpoints
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{{TReturn}})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  definition: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  parent: Sorted.PRO.SDK.Shared.BaseService
+  isExternal: true
+  name: CallAsyncMethod(Action)
+  nameWithType: BaseService.CallAsyncMethod(Action)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(System.Action)
+    name: CallAsyncMethod
+    nameWithType: BaseService.CallAsyncMethod
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Action
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Shared
+  commentId: N:Sorted.PRO.SDK.Shared
+  name: Sorted.PRO.SDK.Shared
+  nameWithType: Sorted.PRO.SDK.Shared
+  fullName: Sorted.PRO.SDK.Shared
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks
+  commentId: N:Sorted.PRO.SDK.Interfaces.Webhooks
+  name: Sorted.PRO.SDK.Interfaces.Webhooks
+  nameWithType: Sorted.PRO.SDK.Interfaces.Webhooks
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks
+- uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  commentId: M:Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+  isExternal: true
+  name: CallAsyncMethod<TReturn>(Func<TReturn>)
+  nameWithType: BaseService.CallAsyncMethod<TReturn>(Func<TReturn>)
+  fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>(System.Func<TReturn>)
+  nameWithType.vb: BaseService.CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  fullName.vb: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)(System.Func(Of TReturn))
+  name.vb: CallAsyncMethod(Of TReturn)(Func(Of TReturn))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod<TReturn>
+    nameWithType: BaseService.CallAsyncMethod<TReturn>
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod<TReturn>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod``1(System.Func{``0})
+    name: CallAsyncMethod(Of TReturn)
+    nameWithType: BaseService.CallAsyncMethod(Of TReturn)
+    fullName: Sorted.PRO.SDK.Shared.BaseService.CallAsyncMethod(Of TReturn)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TReturn
+    nameWithType: TReturn
+    fullName: TReturn
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Interfaces.IEndpoints
+  isExternal: true
+- uid: Sorted.PRO.SDK.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Interfaces.ILogger
+  isExternal: true
+- uid: System.Net.Http.HttpClient
+  commentId: T:System.Net.Http.HttpClient
+  isExternal: true
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.#ctor
+  name: WebHooksService
+  nameWithType: WebHooksService.WebHooksService
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.WebHooksService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IEndpoints
+  nameWithType: IEndpoints
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IEndpoints
+- uid: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: IHttpClientFactory
+  nameWithType: IHttpClientFactory
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.IHttpClientFactory
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ILogger
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ILogger
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents
+  name: GetConsignmentEvents
+  nameWithType: WebHooksService.GetConsignmentEvents
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEvents
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  name: GetConsignmentEvents(ConsignmentEventRequest)
+  nameWithType: IWebHooksService.GetConsignmentEvents(ConsignmentEventRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+    name: GetConsignmentEvents
+    nameWithType: IWebHooksService.GetConsignmentEvents
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+    name: GetConsignmentEvents
+    nameWithType: IWebHooksService.GetConsignmentEvents
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks
+  name: ConsignmentEventRequest
+  nameWithType: ConsignmentEventRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks
+  name: ConsignmentEventPayloadResponse
+  nameWithType: ConsignmentEventPayloadResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks
+  commentId: N:Sorted.PRO.SDK.DataTypes.Webhooks
+  name: Sorted.PRO.SDK.DataTypes.Webhooks
+  nameWithType: Sorted.PRO.SDK.DataTypes.Webhooks
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync
+  name: GetConsignmentEventsAsync
+  nameWithType: WebHooksService.GetConsignmentEventsAsync
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  isExternal: true
+  name: GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  nameWithType: IWebHooksService.GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: IWebHooksService.GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetConsignmentEventsAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetConsignmentEventsAsync
+    nameWithType: IWebHooksService.GetConsignmentEventsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetConsignmentEventsAsync
+    nameWithType: IWebHooksService.GetConsignmentEventsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ConsignmentEventPayloadResponse>
+  nameWithType: Task<ConsignmentEventPayloadResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse>
+  nameWithType.vb: Task(Of ConsignmentEventPayloadResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse)
+  name.vb: Task(Of ConsignmentEventPayloadResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+    name: ConsignmentEventPayloadResponse
+    nameWithType: ConsignmentEventPayloadResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+    name: ConsignmentEventPayloadResponse
+    nameWithType: ConsignmentEventPayloadResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventPayloadResponse
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents
+  name: GetConsignmentStateEvents
+  nameWithType: WebHooksService.GetConsignmentStateEvents
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEvents
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  name: GetConsignmentStateEvents(ConsignmentStateEventRequest)
+  nameWithType: IWebHooksService.GetConsignmentStateEvents(ConsignmentStateEventRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+    name: GetConsignmentStateEvents
+    nameWithType: IWebHooksService.GetConsignmentStateEvents
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+    name: ConsignmentStateEventRequest
+    nameWithType: ConsignmentStateEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest)
+    name: GetConsignmentStateEvents
+    nameWithType: IWebHooksService.GetConsignmentStateEvents
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEvents
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+    name: ConsignmentStateEventRequest
+    nameWithType: ConsignmentStateEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks
+  name: ConsignmentStateEventRequest
+  nameWithType: ConsignmentStateEventRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<ConsignmentPayload>
+  nameWithType: List<ConsignmentPayload>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload>
+  nameWithType.vb: List(Of ConsignmentPayload)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload)
+  name.vb: List(Of ConsignmentPayload)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+    name: ConsignmentPayload
+    nameWithType: ConsignmentPayload
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+    name: ConsignmentPayload
+    nameWithType: ConsignmentPayload
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync
+  name: GetConsignmentStateEventsAsync
+  nameWithType: WebHooksService.GetConsignmentStateEventsAsync
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentStateEventsAsync
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  isExternal: true
+  name: GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary<String, String>)
+  nameWithType: IWebHooksService.GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest, System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: IWebHooksService.GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetConsignmentStateEventsAsync(ConsignmentStateEventRequest, Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetConsignmentStateEventsAsync
+    nameWithType: IWebHooksService.GetConsignmentStateEventsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+    name: ConsignmentStateEventRequest
+    nameWithType: ConsignmentStateEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetConsignmentStateEventsAsync
+    nameWithType: IWebHooksService.GetConsignmentStateEventsAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentStateEventsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+    name: ConsignmentStateEventRequest
+    nameWithType: ConsignmentStateEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentStateEventRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<ConsignmentPayload>>
+  nameWithType: Task<List<ConsignmentPayload>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload>>
+  nameWithType.vb: Task(Of List(Of ConsignmentPayload))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload))
+  name.vb: Task(Of List(Of ConsignmentPayload))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+    name: ConsignmentPayload
+    nameWithType: ConsignmentPayload
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+    name: ConsignmentPayload
+    nameWithType: ConsignmentPayload
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentPayload
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary
+  name: GetConsignmentEventSummary
+  nameWithType: WebHooksService.GetConsignmentEventSummary
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummary
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  name: GetConsignmentEventSummary(ConsignmentEventRequest)
+  nameWithType: IWebHooksService.GetConsignmentEventSummary(ConsignmentEventRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+    name: GetConsignmentEventSummary
+    nameWithType: IWebHooksService.GetConsignmentEventSummary
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest)
+    name: GetConsignmentEventSummary
+    nameWithType: IWebHooksService.GetConsignmentEventSummary
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummary
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+  commentId: T:Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+  parent: Sorted.PRO.SDK.DataTypes.Webhooks
+  name: EventSummaryResponse
+  nameWithType: EventSummaryResponse
+  fullName: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+- uid: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync*
+  commentId: Overload:Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync
+  name: GetConsignmentEventSummaryAsync
+  nameWithType: WebHooksService.GetConsignmentEventSummaryAsync
+  fullName: Sorted.PRO.SDK.Webhooks.WebHooksService.GetConsignmentEventSummaryAsync
+- uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService
+  isExternal: true
+  name: GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  nameWithType: IWebHooksService.GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary<String, String>)
+  fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary<System.String, System.String>)
+  nameWithType.vb: IWebHooksService.GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+  fullName.vb: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: GetConsignmentEventSummaryAsync(ConsignmentEventRequest, Dictionary(Of String, String))
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetConsignmentEventSummaryAsync
+    nameWithType: IWebHooksService.GetConsignmentEventSummaryAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync(Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest,System.Collections.Generic.Dictionary{System.String,System.String})
+    name: GetConsignmentEventSummaryAsync
+    nameWithType: IWebHooksService.GetConsignmentEventSummaryAsync
+    fullName: Sorted.PRO.SDK.Interfaces.Webhooks.IWebHooksService.GetConsignmentEventSummaryAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+    name: ConsignmentEventRequest
+    nameWithType: ConsignmentEventRequest
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.ConsignmentEventRequest
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse}
+  commentId: T:System.Threading.Tasks.Task{Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<EventSummaryResponse>
+  nameWithType: Task<EventSummaryResponse>
+  fullName: System.Threading.Tasks.Task<Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse>
+  nameWithType.vb: Task(Of EventSummaryResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse)
+  name.vb: Task(Of EventSummaryResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+    name: EventSummaryResponse
+    nameWithType: EventSummaryResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+    name: EventSummaryResponse
+    nameWithType: EventSummaryResponse
+    fullName: Sorted.PRO.SDK.DataTypes.Webhooks.EventSummaryResponse
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,745 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  id: DeleteOrderPackagesRequest
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  children:
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackagesRequest
+  nameWithType: DeleteOrderPackagesRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeleteOrderPackagesRequest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+    startLine: 8
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Delete  Order Packages Request", "Used to delete  packages from an order")]
+
+      public class DeleteOrderPackagesRequest
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Delete  Order Packages Request", "Used to delete  packages from an order")>
+
+      Public Class DeleteOrderPackagesRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Delete  Order Packages Request
+    - type: System.String
+      value: Used to delete  packages from an order
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor
+  commentId: M:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackagesRequest()
+  nameWithType: DeleteOrderPackagesRequest.DeleteOrderPackagesRequest()
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.DeleteOrderPackagesRequest()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+    startLine: 13
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: public DeleteOrderPackagesRequest()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})
+  id: '#ctor(System.String,System.Collections.Generic.IEnumerable{System.String})'
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  langs:
+  - csharp
+  - vb
+  name: DeleteOrderPackagesRequest(String, IEnumerable<String>)
+  nameWithType: DeleteOrderPackagesRequest.DeleteOrderPackagesRequest(String, IEnumerable<String>)
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.DeleteOrderPackagesRequest(System.String, System.Collections.Generic.IEnumerable<System.String>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: public DeleteOrderPackagesRequest(string orderReference, IEnumerable<string> packageReferences)
+    parameters:
+    - id: orderReference
+      type: System.String
+    - id: packageReferences
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Sub New(orderReference As String, packageReferences As IEnumerable(Of String))
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor*
+  nameWithType.vb: DeleteOrderPackagesRequest.DeleteOrderPackagesRequest(String, IEnumerable(Of String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.DeleteOrderPackagesRequest(System.String, System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: DeleteOrderPackagesRequest(String, IEnumerable(Of String))
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference
+  id: OrderReference
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  langs:
+  - csharp
+  - vb
+  name: OrderReference
+  nameWithType: DeleteOrderPackagesRequest.OrderReference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OrderReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference identifier of the order (as assigned by Sorted).", true, PropertyCollectionType.Single)]
+
+      public string OrderReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference identifier of the order (as assigned by Sorted).", True, PropertyCollectionType.Single)>
+
+      Public Property OrderReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference identifier of the order (as assigned by Sorted).
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences
+  id: OrderPackageReferences
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest
+  langs:
+  - csharp
+  - vb
+  name: OrderPackageReferences
+  nameWithType: DeleteOrderPackagesRequest.OrderPackageReferences
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: OrderPackageReferences
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/DeleteOrderPackagesRequest.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("A list of package references (as assigned by Sorted). Each referenced package will be deleted from the referenced order.", true, PropertyCollectionType.Collection)]
+
+      public List<string> OrderPackageReferences { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("A list of package references (as assigned by Sorted). Each referenced package will be deleted from the referenced order.", True, PropertyCollectionType.Collection)>
+
+      Public Property OrderPackageReferences As List(Of String)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: A list of package references (as assigned by Sorted). Each referenced package will be deleted from the referenced order.
+    - type: System.Boolean
+      value: true
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  commentId: N:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  name: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  nameWithType: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.#ctor
+  name: DeleteOrderPackagesRequest
+  nameWithType: DeleteOrderPackagesRequest.DeleteOrderPackagesRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.DeleteOrderPackagesRequest
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  name: IEnumerable<String>
+  nameWithType: IEnumerable<String>
+  fullName: System.Collections.Generic.IEnumerable<System.String>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference
+  name: OrderReference
+  nameWithType: DeleteOrderPackagesRequest.OrderReference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderReference
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences
+  name: OrderPackageReferences
+  nameWithType: DeleteOrderPackagesRequest.OrderPackageReferences
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.DeleteOrderPackagesRequest.OrderPackageReferences
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<String>
+  nameWithType: List<String>
+  fullName: System.Collections.Generic.List<System.String>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of System.String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,461 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest
+  id: AllocateAllConsignmentsWithServiceGroupRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  langs:
+  - csharp
+  - vb
+  name: AllocateAllConsignmentsWithServiceGroupRequest
+  nameWithType: AllocateAllConsignmentsWithServiceGroupRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAllConsignmentsWithCarrierServiceGroupRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AllocateAllConsignmentsWithServiceGroupRequest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAllConsignmentsWithCarrierServiceGroupRequest.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nA request to allocate consignments with a specified service group.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Allocate All Consignments With Service Group Request", "Contains details of consignments to be allocated with a specified service group.")]
+
+      public class AllocateAllConsignmentsWithServiceGroupRequest : AllocateAllConsignmentsRequest
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Allocate All Consignments With Service Group Request", "Contains details of consignments to be allocated with a specified service group.")>
+
+      Public Class AllocateAllConsignmentsWithServiceGroupRequest
+          Inherits AllocateAllConsignmentsRequest
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest
+  inheritedMembers:
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShipByDate
+  - Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShippingLocationReference
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Allocate All Consignments With Service Group Request
+    - type: System.String
+      value: Contains details of consignments to be allocated with a specified service group.
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  id: MpdCarrierServiceGroupReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest
+  langs:
+  - csharp
+  - vb
+  name: MpdCarrierServiceGroupReference
+  nameWithType: AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/AllocateAllConsignmentsWithCarrierServiceGroupRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MpdCarrierServiceGroupReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/AllocateAllConsignmentsWithCarrierServiceGroupRequest.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the MPD carrier service group reference.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the service group to allocate with.", false, PropertyCollectionType.Single)]
+
+      public string MpdCarrierServiceGroupReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe reference of the service group to allocate with.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the service group to allocate with.", False, PropertyCollectionType.Single)>
+
+      Public Property MpdCarrierServiceGroupReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the service group to allocate with.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: AllocateAllConsignmentsRequest
+  nameWithType: AllocateAllConsignmentsRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShipByDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShipByDate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest
+  name: ShipByDate
+  nameWithType: AllocateAllConsignmentsRequest.ShipByDate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShipByDate
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShippingLocationReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShippingLocationReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest
+  name: ShippingLocationReference
+  nameWithType: AllocateAllConsignmentsRequest.ShippingLocationReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsRequest.ShippingLocationReference
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  name: MpdCarrierServiceGroupReference
+  nameWithType: AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.AllocateAllConsignmentsWithServiceGroupRequest.MpdCarrierServiceGroupReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

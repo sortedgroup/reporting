@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Security.ISecurityService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Security.ISecurityService
+  id: ISecurityService
+  parent: Sorted.PRO.SDK.Interfaces.Security
+  children:
+  - Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut
+  - Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync
+  langs:
+  - csharp
+  - vb
+  name: ISecurityService
+  nameWithType: ISecurityService
+  fullName: Sorted.PRO.SDK.Interfaces.Security.ISecurityService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Security/ISecurityService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ISecurityService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Security/ISecurityService.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Security
+  namespace: Sorted.PRO.SDK.Interfaces.Security
+  summary: "\nSorted.PRO Security Service.\nProvides operations for signing in and out of Sorted.PRO\n"
+  example: []
+  syntax:
+    content: public interface ISecurityService
+    content.vb: Public Interface ISecurityService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut
+  id: SignOut
+  parent: Sorted.PRO.SDK.Interfaces.Security.ISecurityService
+  langs:
+  - csharp
+  - vb
+  name: SignOut()
+  nameWithType: ISecurityService.SignOut()
+  fullName: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Security/ISecurityService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SignOut
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Security/ISecurityService.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Security
+  namespace: Sorted.PRO.SDK.Interfaces.Security
+  summary: "\nSigns the user out of Sorted.PRO\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void SignOut()
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub SignOut
+  overload: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync
+  commentId: M:Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync
+  id: SignOutAsync
+  parent: Sorted.PRO.SDK.Interfaces.Security.ISecurityService
+  langs:
+  - csharp
+  - vb
+  name: SignOutAsync()
+  nameWithType: ISecurityService.SignOutAsync()
+  fullName: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync()
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Security/ISecurityService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SignOutAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Security/ISecurityService.cs
+    startLine: 19
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Security
+  namespace: Sorted.PRO.SDK.Interfaces.Security
+  summary: "\nSigns the user out of Sorted.PRO\n"
+  example: []
+  syntax:
+    content: Task SignOutAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SignOutAsync As Task
+  overload: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Security
+  commentId: N:Sorted.PRO.SDK.Interfaces.Security
+  name: Sorted.PRO.SDK.Interfaces.Security
+  nameWithType: Sorted.PRO.SDK.Interfaces.Security
+  fullName: Sorted.PRO.SDK.Interfaces.Security
+- uid: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut
+  name: SignOut
+  nameWithType: ISecurityService.SignOut
+  fullName: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOut
+- uid: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync
+  name: SignOutAsync
+  nameWithType: ISecurityService.SignOutAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Security.ISecurityService.SignOutAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Address
+  id: Address
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor
+  - Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType)
+  - Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType,System.String)
+  - Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType
+  - Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference
+  langs:
+  - csharp
+  - vb
+  name: Address
+  nameWithType: Address
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Address
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nA consignment contact address.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Address", "Details of an address")]
+
+      public sealed class Address : Address, ICacheable, ICacheable<object>
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Address", "Details of an address")>
+
+      Public NotInheritable Class Address
+          Inherits Address
+          Implements ICacheable, ICacheable(Of Object)
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+  - Sorted.PRO.SDK.DataTypes.Common.Address
+  implements:
+  - Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  - Sorted.PRO.SDK.Shared.Interfaces.ICacheable{System.Object}
+  inheritedMembers:
+  - Sorted.PRO.SDK.DataTypes.Common.Address.Contact
+  - Sorted.PRO.SDK.DataTypes.Common.Address.CompanyName
+  - Sorted.PRO.SDK.DataTypes.Common.Address.ShippingLocationReference
+  - Sorted.PRO.SDK.DataTypes.Common.Address.CustomerName
+  - Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine1
+  - Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine2
+  - Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine3
+  - Sorted.PRO.SDK.DataTypes.Common.Address.Town
+  - Sorted.PRO.SDK.DataTypes.Common.Address.Region
+  - Sorted.PRO.SDK.DataTypes.Common.Address.Postcode
+  - Sorted.PRO.SDK.DataTypes.Common.Address.Country
+  - Sorted.PRO.SDK.DataTypes.Common.Address.RegionCode
+  - Sorted.PRO.SDK.DataTypes.Common.Address.SpecialInstructions
+  - Sorted.PRO.SDK.DataTypes.Common.Address.LatLong
+  - Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeArea
+  - Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeDistrict
+  - Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeSector
+  - Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeUnit
+  - Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+  - Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheDate
+  - Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheSource
+  - Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.IsCached
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Address
+    - type: System.String
+      value: Details of an address
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor
+  commentId: M:Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  langs:
+  - csharp
+  - vb
+  name: Address()
+  nameWithType: Address.Address()
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.Address()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.DataTypes.Consignments.Address\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Address()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType,System.String)
+  commentId: M:Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType,System.String)
+  id: '#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType,System.String)'
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  langs:
+  - csharp
+  - vb
+  name: Address(Address, ConsignmentAddressType, String)
+  nameWithType: Address.Address(Address, ConsignmentAddressType, String)
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.Address(Sorted.PRO.SDK.DataTypes.Common.Address, Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType, System.String)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.DataTypes.Consignments.Address\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Address(Address baseAddress, ConsignmentAddressType addressType, string shopLocationReference)
+    parameters:
+    - id: baseAddress
+      type: Sorted.PRO.SDK.DataTypes.Common.Address
+      description: The base address.
+    - id: addressType
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+      description: Type of the address.
+    - id: shopLocationReference
+      type: System.String
+      description: The shop location reference.
+    content.vb: Public Sub New(baseAddress As Address, addressType As ConsignmentAddressType, shopLocationReference As String)
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType)
+  commentId: M:Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType)
+  id: '#ctor(Sorted.PRO.SDK.DataTypes.Common.Address,Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType)'
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  langs:
+  - csharp
+  - vb
+  name: Address(Address, ConsignmentAddressType)
+  nameWithType: Address.Address(Address, ConsignmentAddressType)
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.Address(Sorted.PRO.SDK.DataTypes.Common.Address, Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+    startLine: 40
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nInitializes a new instance of the <xref href=\"Sorted.PRO.SDK.DataTypes.Consignments.Address\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public Address(Address baseAddress, ConsignmentAddressType addressType)
+    parameters:
+    - id: baseAddress
+      type: Sorted.PRO.SDK.DataTypes.Common.Address
+      description: The base address.
+    - id: addressType
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+      description: Type of the address.
+    content.vb: Public Sub New(baseAddress As Address, addressType As ConsignmentAddressType)
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType
+  id: AddressType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  langs:
+  - csharp
+  - vb
+  name: AddressType
+  nameWithType: Address.AddressType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: AddressType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+    startLine: 76
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nDefines the purpose of the contact address\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [JsonConverter(typeof(StringEnumConverter))]
+
+      [DataContractItem("The type of address, e.g. Origin, Destination", false, PropertyCollectionType.Single)]
+
+      public ConsignmentAddressType AddressType { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+    content.vb: >-
+      <DataMember>
+
+      <JsonConverter(GetType(StringEnumConverter))>
+
+      <DataContractItem("The type of address, e.g. Origin, Destination", False, PropertyCollectionType.Single)>
+
+      Public Property AddressType As ConsignmentAddressType
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Newtonsoft.Json.Converters.StringEnumConverter
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The type of address, e.g. Origin, Destination
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference
+  id: ShopLocationReference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  langs:
+  - csharp
+  - vb
+  name: ShopLocationReference
+  nameWithType: Address.ShopLocationReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ShopLocationReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Address.cs
+    startLine: 88
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nGets or sets the shop location reference where this address\nforms part of a journey with a Pickup or DropOff service.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The shop location reference (if applicable)", false, PropertyCollectionType.Single)]
+
+      public string ShopLocationReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe shop location reference.\n"
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The shop location reference (if applicable)", False, PropertyCollectionType.Single)>
+
+      Public Property ShopLocationReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The shop location reference (if applicable)
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: BaseCacheableEntity
+  nameWithType: BaseCacheableEntity
+  fullName: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Address
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Address
+  nameWithType: Address
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  name: ICacheable
+  nameWithType: ICacheable
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable{System.Object}
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ICacheable{System.Object}
+  parent: Sorted.PRO.SDK.Shared.Interfaces
+  definition: Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+  name: ICacheable<Object>
+  nameWithType: ICacheable<Object>
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable<System.Object>
+  nameWithType.vb: ICacheable(Of Object)
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ICacheable(Of System.Object)
+  name.vb: ICacheable(Of Object)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+    name: ICacheable
+    nameWithType: ICacheable
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+    name: ICacheable
+    nameWithType: ICacheable
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.Contact
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.Contact
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: Contact
+  nameWithType: Address.Contact
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.Contact
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.CompanyName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.CompanyName
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: CompanyName
+  nameWithType: Address.CompanyName
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.CompanyName
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.ShippingLocationReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.ShippingLocationReference
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: ShippingLocationReference
+  nameWithType: Address.ShippingLocationReference
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.ShippingLocationReference
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.CustomerName
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.CustomerName
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: CustomerName
+  nameWithType: Address.CustomerName
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.CustomerName
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine1
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine1
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: AddressLine1
+  nameWithType: Address.AddressLine1
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine1
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine2
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine2
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: AddressLine2
+  nameWithType: Address.AddressLine2
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine2
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine3
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine3
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: AddressLine3
+  nameWithType: Address.AddressLine3
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.AddressLine3
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.Town
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.Town
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: Town
+  nameWithType: Address.Town
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.Town
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.Region
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.Region
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: Region
+  nameWithType: Address.Region
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.Region
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.Postcode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.Postcode
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: Postcode
+  nameWithType: Address.Postcode
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.Postcode
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.Country
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.Country
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: Country
+  nameWithType: Address.Country
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.Country
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.RegionCode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.RegionCode
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: RegionCode
+  nameWithType: Address.RegionCode
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.RegionCode
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.SpecialInstructions
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.SpecialInstructions
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: SpecialInstructions
+  nameWithType: Address.SpecialInstructions
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.SpecialInstructions
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.LatLong
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.LatLong
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: LatLong
+  nameWithType: Address.LatLong
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.LatLong
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeArea
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeArea
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: PostcodeArea
+  nameWithType: Address.PostcodeArea
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeArea
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeDistrict
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeDistrict
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: PostcodeDistrict
+  nameWithType: Address.PostcodeDistrict
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeDistrict
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeSector
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeSector
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: PostcodeSector
+  nameWithType: Address.PostcodeSector
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeSector
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeUnit
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeUnit
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: PostcodeUnit
+  nameWithType: Address.PostcodeUnit
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.PostcodeUnit
+- uid: Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+  commentId: M:Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+  parent: Sorted.PRO.SDK.DataTypes.Common.Address
+  name: DefaultCacheDurationInMinutes()
+  nameWithType: Address.DefaultCacheDurationInMinutes()
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes()
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+    name: DefaultCacheDurationInMinutes
+    nameWithType: Address.DefaultCacheDurationInMinutes
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+    name: DefaultCacheDurationInMinutes
+    nameWithType: Address.DefaultCacheDurationInMinutes
+    fullName: Sorted.PRO.SDK.DataTypes.Common.Address.DefaultCacheDurationInMinutes
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheDate
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheDate
+  parent: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+  name: CacheDate
+  nameWithType: BaseCacheableEntity.CacheDate
+  fullName: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheDate
+- uid: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheSource
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheSource
+  parent: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+  name: CacheSource
+  nameWithType: BaseCacheableEntity.CacheSource
+  fullName: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.CacheSource
+- uid: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.IsCached
+  commentId: P:Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.IsCached
+  parent: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity
+  name: IsCached
+  nameWithType: BaseCacheableEntity.IsCached
+  fullName: Sorted.PRO.SDK.DataTypes.Common.BaseCacheableEntity.IsCached
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: Sorted.PRO.SDK.Shared.Interfaces
+  commentId: N:Sorted.PRO.SDK.Shared.Interfaces
+  name: Sorted.PRO.SDK.Shared.Interfaces
+  nameWithType: Sorted.PRO.SDK.Shared.Interfaces
+  fullName: Sorted.PRO.SDK.Shared.Interfaces
+- uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+  commentId: T:Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+  name: ICacheable<T>
+  nameWithType: ICacheable<T>
+  fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable<T>
+  nameWithType.vb: ICacheable(Of T)
+  fullName.vb: Sorted.PRO.SDK.Shared.Interfaces.ICacheable(Of T)
+  name.vb: ICacheable(Of T)
+  spec.csharp:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+    name: ICacheable
+    nameWithType: ICacheable
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Sorted.PRO.SDK.Shared.Interfaces.ICacheable`1
+    name: ICacheable
+    nameWithType: ICacheable
+    fullName: Sorted.PRO.SDK.Shared.Interfaces.ICacheable
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Address
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: Address
+  nameWithType: Address
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.Address.#ctor
+  name: Address
+  nameWithType: Address.Address
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.Address
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: ConsignmentAddressType
+  nameWithType: ConsignmentAddressType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.ConsignmentAddressType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType
+  name: AddressType
+  nameWithType: Address.AddressType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.AddressType
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference
+  name: ShopLocationReference
+  nameWithType: Address.ShopLocationReference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Address.ShopLocationReference

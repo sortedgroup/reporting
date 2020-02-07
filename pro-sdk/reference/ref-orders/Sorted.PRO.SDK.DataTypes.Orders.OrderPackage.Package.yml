@@ -1,0 +1,1295 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  commentId: T:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  id: Package
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  children:
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor(Sorted.PRO.SDK.DataTypes.Common.Weight,Sorted.PRO.SDK.DataTypes.Common.Dimensions,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor(System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value
+  - Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight
+  langs:
+  - csharp
+  - vb
+  name: Package
+  nameWithType: Package
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Package
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 11
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Package", "Represents details of a package to create as part of the pack process")]
+
+      public class Package
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Package", "Represents details of a package to create as part of the pack process")>
+
+      Public Class Package
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Package
+    - type: System.String
+      value: Represents details of a package to create as part of the pack process
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor
+  commentId: M:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor
+  id: '#ctor'
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Package()
+  nameWithType: Package.Package()
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Package()
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 16
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: public Package()
+    content.vb: Public Sub New
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor(Sorted.PRO.SDK.DataTypes.Common.Weight,Sorted.PRO.SDK.DataTypes.Common.Dimensions,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})
+  commentId: M:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor(Sorted.PRO.SDK.DataTypes.Common.Weight,Sorted.PRO.SDK.DataTypes.Common.Dimensions,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})
+  id: '#ctor(Sorted.PRO.SDK.DataTypes.Common.Weight,Sorted.PRO.SDK.DataTypes.Common.Dimensions,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})'
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Package(Weight, Dimensions, List<Item>, List<MetaData>)
+  nameWithType: Package.Package(Weight, Dimensions, List<Item>, List<MetaData>)
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Package(Sorted.PRO.SDK.DataTypes.Common.Weight, Sorted.PRO.SDK.DataTypes.Common.Dimensions, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item>, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.MetaData>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: public Package(Weight weight, Dimensions dimensions, List<Item> items, List<MetaData> metadata = null)
+    parameters:
+    - id: weight
+      type: Sorted.PRO.SDK.DataTypes.Common.Weight
+    - id: dimensions
+      type: Sorted.PRO.SDK.DataTypes.Common.Dimensions
+    - id: items
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item}
+    - id: metadata
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+    content.vb: Public Sub New(weight As Weight, dimensions As Dimensions, items As List(Of Item), metadata As List(Of MetaData) = Nothing)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor*
+  nameWithType.vb: Package.Package(Weight, Dimensions, List(Of Item), List(Of MetaData))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Package(Sorted.PRO.SDK.DataTypes.Common.Weight, Sorted.PRO.SDK.DataTypes.Common.Dimensions, System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item), System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.MetaData))
+  name.vb: Package(Weight, Dimensions, List(Of Item), List(Of MetaData))
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor(System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})
+  commentId: M:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor(System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})
+  id: '#ctor(System.String,System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item},System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData})'
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Package(String, List<Item>, List<MetaData>)
+  nameWithType: Package.Package(String, List<Item>, List<MetaData>)
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Package(System.String, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item>, System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.MetaData>)
+  type: Constructor
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: .ctor
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 30
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: public Package(string packageSizeReference, List<Item> items, List<MetaData> metadata = null)
+    parameters:
+    - id: packageSizeReference
+      type: System.String
+    - id: items
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item}
+    - id: metadata
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+    content.vb: Public Sub New(packageSizeReference As String, items As List(Of Item), metadata As List(Of MetaData) = Nothing)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor*
+  nameWithType.vb: Package.Package(String, List(Of Item), List(Of MetaData))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Package(System.String, System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item), System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.MetaData))
+  name.vb: Package(String, List(Of Item), List(Of MetaData))
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions
+  id: Dimensions
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Dimensions
+  nameWithType: Package.Dimensions
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Dimensions
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 38
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The dimensions of the package. This is required unless the PackageSizeReference property is set.", false, PropertyCollectionType.Single)]
+
+      public Dimensions Dimensions { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Dimensions
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The dimensions of the package. This is required unless the PackageSizeReference property is set.", False, PropertyCollectionType.Single)>
+
+      Public Property Dimensions As Dimensions
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The dimensions of the package. This is required unless the PackageSizeReference property is set.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight
+  id: Weight
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Weight
+  nameWithType: Package.Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Weight
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The weight of the package. If not provided then this will be derived from the combined weights of the selected items.", false, PropertyCollectionType.Single)]
+
+      public Weight Weight { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Weight
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The weight of the package. If not provided then this will be derived from the combined weights of the selected items.", False, PropertyCollectionType.Single)>
+
+      Public Property Weight As Weight
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The weight of the package. If not provided then this will be derived from the combined weights of the selected items.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference
+  id: PackageSizeReference
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: PackageSizeReference
+  nameWithType: Package.PackageSizeReference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageSizeReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 46
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of a pre-existing package size to be used instead of specifying dimensions explicitly.", false, PropertyCollectionType.Single)]
+
+      public string PackageSizeReference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of a pre-existing package size to be used instead of specifying dimensions explicitly.", False, PropertyCollectionType.Single)>
+
+      Public Property PackageSizeReference As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of a pre-existing package size to be used instead of specifying dimensions explicitly.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items
+  id: Items
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Items
+  nameWithType: Package.Items
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Items
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 50
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Details of the items to select as part of the pack process.", PropertyCollectionType.Collection)]
+
+      public List<Item> Items { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Details of the items to select as part of the pack process.", PropertyCollectionType.Collection)>
+
+      Public Property Items As List(Of Item)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Details of the items to select as part of the pack process.
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData
+  id: MetaData
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: MetaData
+  nameWithType: Package.MetaData
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: MetaData
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 54
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Optional metadata relating to the package", PropertyCollectionType.Collection)]
+
+      [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+
+      public List<MetaData> MetaData { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Optional metadata relating to the package", PropertyCollectionType.Collection)>
+
+      <JsonProperty(NullValueHandling:=NullValueHandling.Ignore)>
+
+      Public Property MetaData As List(Of MetaData)
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Optional metadata relating to the package
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 1
+  - type: Newtonsoft.Json.JsonPropertyAttribute
+    ctor: Newtonsoft.Json.JsonPropertyAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: NullValueHandling
+      type: Newtonsoft.Json.NullValueHandling
+      value: 1
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value
+  id: Value
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: Package.Value
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Value
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 59
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The monetary value of the package", false, PropertyCollectionType.Single)]
+
+      public Money Value { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Money
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The monetary value of the package", False, PropertyCollectionType.Single)>
+
+      Public Property Value As Money
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The monetary value of the package
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference
+  id: Reference
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: Package.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Reference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 63
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference for this package. If the package does not already exist this property is not required", false, PropertyCollectionType.Single)]
+
+      public string Reference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference for this package. If the package does not already exist this property is not required", False, PropertyCollectionType.Single)>
+
+      Public Property Reference As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference for this package. If the package does not already exist this property is not required
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer
+  id: PackageReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: PackageReferenceProvidedByCustomer
+  nameWithType: Package.PackageReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PackageReferenceProvidedByCustomer
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 67
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("Optional reference for this package for your use.", false, PropertyCollectionType.Single)]
+
+      public string PackageReferenceProvidedByCustomer { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("Optional reference for this package for your use.", False, PropertyCollectionType.Single)>
+
+      Public Property PackageReferenceProvidedByCustomer As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: Optional reference for this package for your use.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description
+  id: Description
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: Package.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Description
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 71
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The package description", false, PropertyCollectionType.Single)]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The package description", False, PropertyCollectionType.Single)>
+
+      Public Property Description As String
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The package description
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode
+  id: Barcode
+  parent: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package
+  langs:
+  - csharp
+  - vb
+  name: Barcode
+  nameWithType: Package.Barcode
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Barcode
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Orders/OrderPackage/Package.cs
+    startLine: 75
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Orders
+  namespace: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The barcode details for the package", false, PropertyCollectionType.Single)]
+
+      public Barcode Barcode { get; set; }
+    parameters: []
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Common.Barcode
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The barcode details for the package", False, PropertyCollectionType.Single)>
+
+      Public Property Barcode As Barcode
+  overload: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The barcode details for the package
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  commentId: N:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  name: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  nameWithType: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.#ctor
+  name: Package
+  nameWithType: Package.Package
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Package
+- uid: Sorted.PRO.SDK.DataTypes.Common.Weight
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Weight
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Weight
+  nameWithType: Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Weight
+- uid: Sorted.PRO.SDK.DataTypes.Common.Dimensions
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Dimensions
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Dimensions
+  nameWithType: Dimensions
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Dimensions
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Item>
+  nameWithType: List<Item>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item>
+  nameWithType.vb: List(Of Item)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item)
+  name.vb: List(Of Item)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item
+    name: Item
+    nameWithType: Item
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item
+    name: Item
+    nameWithType: Item
+    fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackageItem.Item
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+  commentId: T:System.Collections.Generic.List{Sorted.PRO.SDK.DataTypes.Common.MetaData}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<MetaData>
+  nameWithType: List<MetaData>
+  fullName: System.Collections.Generic.List<Sorted.PRO.SDK.DataTypes.Common.MetaData>
+  nameWithType.vb: List(Of MetaData)
+  fullName.vb: System.Collections.Generic.List(Of Sorted.PRO.SDK.DataTypes.Common.MetaData)
+  name.vb: List(Of MetaData)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MetaData
+    name: MetaData
+    nameWithType: MetaData
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MetaData
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Sorted.PRO.SDK.DataTypes.Common.MetaData
+    name: MetaData
+    nameWithType: MetaData
+    fullName: Sorted.PRO.SDK.DataTypes.Common.MetaData
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Sorted.PRO.SDK.DataTypes.Common
+  commentId: N:Sorted.PRO.SDK.DataTypes.Common
+  name: Sorted.PRO.SDK.DataTypes.Common
+  nameWithType: Sorted.PRO.SDK.DataTypes.Common
+  fullName: Sorted.PRO.SDK.DataTypes.Common
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions
+  name: Dimensions
+  nameWithType: Package.Dimensions
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Dimensions
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight
+  name: Weight
+  nameWithType: Package.Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Weight
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference
+  name: PackageSizeReference
+  nameWithType: Package.PackageSizeReference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageSizeReference
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items
+  name: Items
+  nameWithType: Package.Items
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Items
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData
+  name: MetaData
+  nameWithType: Package.MetaData
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.MetaData
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value
+  name: Value
+  nameWithType: Package.Value
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Value
+- uid: Sorted.PRO.SDK.DataTypes.Common.Money
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Money
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Money
+  nameWithType: Money
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Money
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference
+  name: Reference
+  nameWithType: Package.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Reference
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer
+  name: PackageReferenceProvidedByCustomer
+  nameWithType: Package.PackageReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.PackageReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description
+  name: Description
+  nameWithType: Package.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Description
+- uid: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode
+  name: Barcode
+  nameWithType: Package.Barcode
+  fullName: Sorted.PRO.SDK.DataTypes.Orders.OrderPackage.Package.Barcode
+- uid: Sorted.PRO.SDK.DataTypes.Common.Barcode
+  commentId: T:Sorted.PRO.SDK.DataTypes.Common.Barcode
+  parent: Sorted.PRO.SDK.DataTypes.Common
+  name: Barcode
+  nameWithType: Barcode
+  fullName: Sorted.PRO.SDK.DataTypes.Common.Barcode

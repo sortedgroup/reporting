@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<blockquote>
+<p>Example MetaData array</p>
+</blockquote>
+<pre><code class="lang-json">&quot;MetaData&quot;: [
+   {
+      &quot;KeyValue&quot;: &quot;Picked_On&quot;,
+      &quot;StringValue&quot;: &quot;Jalen Ramsey&quot;,
+      &quot;DateTimeValue&quot;: &quot;2019-06-04T00:00:00+01:00&quot;
+   }
+],
+</code></pre>
+<pre><code class="lang-xml">  &lt;MetaData&gt;
+    &lt;MetaData&gt;
+      &lt;KeyValue xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Picked_On&lt;/KeyValue&gt;
+      &lt;StringValue xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot; /&gt;Jalen Ramsey&lt;/StringValue&gt;
+      &lt;DateTimeValue xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;2019-06-04T00:00:00+01:00&lt;/DateTimeValue&gt;
+    &lt;/MetaData&gt;
+  &lt;/MetaData&gt;
+</code></pre>
+<p>PRO's Consignments object (and its related objects - Delivery Options, Pickup Options and Orders) includes a <code>MetaData</code> array. This array can be used to record additional data about the consignment in custom fields.</p>
+<p>The <code>MetaData</code> array has two parts - the <code>KeyValue</code> and the metadata values. The <code>KeyValue</code> is the name of the property, while the metadata values are the data items themselves. The fields that should be used to store this data varies depending on the data types being stored.</p>
+<p>Metadata values can be stored in the following fields:</p>
+<ul>
+<li><code>StringValue</code> - used to store data as a string.</li>
+<li><code>IntValue</code> - used to store data as an integer.</li>
+<li><code>DecimalValue</code> - used to store data as a decimal.</li>
+<li><code>DateTimeValue</code> - used to store data as a DateTimeOffset.</li>
+<li><code>BoolValue</code> - used to store data as a Boolean (true/false).</li>
+</ul>
+<p>Each metadata object can contain multiple data items, but can only contain one data item of each type. For example, a <code>MetaData</code> array containing a <code>StringValue</code> and a <code>BoolValue</code> would be valid, but a <code>MetaData</code> array containing two <code>StringValue</code> keys would not.</p>
+<h3 id="example">Example</h3>
+<p>The example to the right shows a <code>MetaData</code> array that is being used to store a consignment's picking data. The <code>StringValue</code> property is being used to record the name of the picker, and the <code>DateTimeValue</code> is being used to record the date and time that the consignment was picked.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_metadata.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

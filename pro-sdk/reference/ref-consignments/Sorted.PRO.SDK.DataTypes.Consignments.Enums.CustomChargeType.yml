@@ -1,0 +1,355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  id: CustomChargeType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.DisountRebate
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Duty
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Excise
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Insurance
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Others
+  - Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.SalesTax
+  langs:
+  - csharp
+  - vb
+  name: CustomChargeType
+  nameWithType: CustomChargeType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: CustomChargeType
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 10
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  summary: "\nThe type of charges applied to a package.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Custom Charge Type", "The type of charge applied to a package.")]
+
+      public enum CustomChargeType
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Custom Charge Type", "The type of charge applied to a package.")>
+
+      Public Enum CustomChargeType
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Custom Charge Type
+    - type: System.String
+      value: The type of charge applied to a package.
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Others
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Others
+  id: Others
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  langs:
+  - csharp
+  - vb
+  name: Others
+  nameWithType: CustomChargeType.Others
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Others
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Others
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Others = 0
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+    content.vb: >-
+      <EnumMember>
+
+      Others = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.SalesTax
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.SalesTax
+  id: SalesTax
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  langs:
+  - csharp
+  - vb
+  name: SalesTax
+  nameWithType: CustomChargeType.SalesTax
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.SalesTax
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SalesTax
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 17
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [Display(Name = "Sales Tax")]
+
+      [EnumMember]
+
+      SalesTax = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+    content.vb: >-
+      <Display(Name:="Sales Tax")>
+
+      <EnumMember>
+
+      SalesTax = 1
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Sales Tax
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Duty
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Duty
+  id: Duty
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  langs:
+  - csharp
+  - vb
+  name: Duty
+  nameWithType: CustomChargeType.Duty
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Duty
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Duty
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Duty = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+    content.vb: >-
+      <EnumMember>
+
+      Duty = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Excise
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Excise
+  id: Excise
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  langs:
+  - csharp
+  - vb
+  name: Excise
+  nameWithType: CustomChargeType.Excise
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Excise
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Excise
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Excise = 3
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+    content.vb: >-
+      <EnumMember>
+
+      Excise = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Insurance
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Insurance
+  id: Insurance
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  langs:
+  - csharp
+  - vb
+  name: Insurance
+  nameWithType: CustomChargeType.Insurance
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.Insurance
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Insurance
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [EnumMember]
+
+      Insurance = 4
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+    content.vb: >-
+      <EnumMember>
+
+      Insurance = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.DisountRebate
+  commentId: F:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.DisountRebate
+  id: DisountRebate
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  langs:
+  - csharp
+  - vb
+  name: DisountRebate
+  nameWithType: CustomChargeType.DisountRebate
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType.DisountRebate
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DisountRebate
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/Enums/CustomChargeType.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  syntax:
+    content: >-
+      [Display(Name = "Discount/Rebate")]
+
+      [EnumMember]
+
+      DisountRebate = 5
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+    content.vb: >-
+      <Display(Name:="Discount/Rebate")>
+
+      <EnumMember>
+
+      DisountRebate = 5
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: Discount/Rebate
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.Enums
+  name: CustomChargeType
+  nameWithType: CustomChargeType
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.Enums.CustomChargeType

@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest
+  id: UpdateItemRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  children:
+  - Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference
+  langs:
+  - csharp
+  - vb
+  name: UpdateItemRequest
+  nameWithType: UpdateItemRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest
+  type: Class
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/UpdateItemRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdateItemRequest
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/UpdateItemRequest.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  summary: "\nRequest used to update the details of an individual item\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Update item request", "Used to update an item")]
+
+      public class UpdateItemRequest : BaseItem
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Update item request", "Used to update an item")>
+
+      Public Class UpdateItemRequest
+          Inherits BaseItem
+  inheritance:
+  - System.Object
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  inheritedMembers:
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Sku
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Model
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Description
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.CountryOfOrigin
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationCode
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Weight
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Dimensions
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Value
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ItemReferenceProvidedByCustomer
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Barcode
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.MetaData
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Quantity
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Unit
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationKeyWords
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Status
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassification
+  - Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassificationDetails
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Update item request
+    - type: System.String
+      value: Used to update an item
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference
+  id: Reference
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: UpdateItemRequest.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference
+  type: Property
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Consignments/UpdateItemRequest.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: Reference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Consignments/UpdateItemRequest.cs
+    startLine: 14
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Consignments
+  namespace: Sorted.PRO.SDK.DataTypes.Consignments
+  syntax:
+    content: >-
+      [DataMember]
+
+      [DataContractItem("The reference of the item. Set by Electio.", false, PropertyCollectionType.Single)]
+
+      public string Reference { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember>
+
+      <DataContractItem("The reference of the item. Set by Electio.", False, PropertyCollectionType.Single)>
+
+      Public Property Reference As String
+  overload: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractItem.#ctor(System.String,System.Boolean,Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType)
+    arguments:
+    - type: System.String
+      value: The reference of the item. Set by Electio.
+    - type: System.Boolean
+      value: false
+    - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.Enums.PropertyCollectionType
+      value: 0
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: BaseItem
+  nameWithType: BaseItem
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Sku
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Sku
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Sku
+  nameWithType: BaseItem.Sku
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Sku
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Model
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Model
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Model
+  nameWithType: BaseItem.Model
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Model
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Description
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Description
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Description
+  nameWithType: BaseItem.Description
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Description
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.CountryOfOrigin
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.CountryOfOrigin
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: CountryOfOrigin
+  nameWithType: BaseItem.CountryOfOrigin
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.CountryOfOrigin
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationCode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationCode
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: HarmonisationCode
+  nameWithType: BaseItem.HarmonisationCode
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationCode
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Weight
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Weight
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Weight
+  nameWithType: BaseItem.Weight
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Weight
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Dimensions
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Dimensions
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Dimensions
+  nameWithType: BaseItem.Dimensions
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Dimensions
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Value
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Value
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Value
+  nameWithType: BaseItem.Value
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Value
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ItemReferenceProvidedByCustomer
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ItemReferenceProvidedByCustomer
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: ItemReferenceProvidedByCustomer
+  nameWithType: BaseItem.ItemReferenceProvidedByCustomer
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ItemReferenceProvidedByCustomer
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Barcode
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Barcode
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Barcode
+  nameWithType: BaseItem.Barcode
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Barcode
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.MetaData
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.MetaData
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: MetaData
+  nameWithType: BaseItem.MetaData
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.MetaData
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Quantity
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Quantity
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Quantity
+  nameWithType: BaseItem.Quantity
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Quantity
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Unit
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Unit
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Unit
+  nameWithType: BaseItem.Unit
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Unit
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationKeyWords
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationKeyWords
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: HarmonisationKeyWords
+  nameWithType: BaseItem.HarmonisationKeyWords
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.HarmonisationKeyWords
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Status
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Status
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: Status
+  nameWithType: BaseItem.Status
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.Status
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassification
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassification
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: ContentClassification
+  nameWithType: BaseItem.ContentClassification
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassification
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassificationDetails
+  commentId: P:Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassificationDetails
+  parent: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem
+  name: ContentClassificationDetails
+  nameWithType: BaseItem.ContentClassificationDetails
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.BaseItem.ContentClassificationDetails
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference*
+  commentId: Overload:Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference
+  name: Reference
+  nameWithType: UpdateItemRequest.Reference
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdateItemRequest.Reference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Example </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Example ">
+    <meta name="generator" content="docfx 2.43.3.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<blockquote>
+<p>Pack Order Endpoint</p>
+</blockquote>
+<pre><code>POST https://api.electioapp.com/orders/{orderReference}/pack
+</code></pre>
+<blockquote>
+<p>Example Pack Order Request</p>
+</blockquote>
+<pre><code class="lang-json">{
+  &quot;OrderReference&quot;: &quot;EO-000-002-0TT&quot;,
+  &quot;OrderReferenceProvidedByCustomer&quot;: &quot;MyOrderRef001&quot;,
+  &quot;GenerateReturn&quot;: false,
+  &quot;Packages&quot;: [
+    {
+      &quot;Dimensions&quot;: {
+        &quot;Unit&quot;: &quot;Cm&quot;,
+        &quot;Width&quot;: 15.4,
+        &quot;Length&quot;: 21.7,
+        &quot;Height&quot;: 10.0
+      },
+      &quot;Weight&quot;: {
+        &quot;Value&quot;: 1.3,
+        &quot;Unit&quot;: &quot;Kg&quot;
+      },
+      &quot;PackageSizeReference&quot;: &quot;&quot;,
+      &quot;Items&quot;: [
+        {
+          &quot;Sku&quot;: &quot;SKU093434&quot;,
+          &quot;Quantity&quot;: 1
+        }
+      ]
+    }
+  ],
+  &quot;MetaData&quot;: [
+    {
+      &quot;KeyValue&quot;: &quot;SampleKey&quot;,
+      &quot;StringValue&quot;: &quot;SampleValue&quot;
+    }
+  ]
+}
+</code></pre>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;PackOrderRequest xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.PackOrders&quot;&gt;
+  &lt;OrderReference&gt;EO-000-002-0TT&lt;/OrderReference&gt;
+  &lt;OrderReferenceProvidedByCustomer&gt;MyOrderRef001&lt;/OrderReferenceProvidedByCustomer&gt;
+  &lt;GenerateReturn&gt;false&lt;/GenerateReturn&gt;
+  &lt;Packages&gt;
+    &lt;Package&gt;
+      &lt;Dimensions&gt;
+        &lt;Unit xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Cm&lt;/Unit&gt;
+        &lt;Width xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;15.4&lt;/Width&gt;
+        &lt;Length xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;21.7&lt;/Length&gt;
+        &lt;Height xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;10&lt;/Height&gt;
+      &lt;/Dimensions&gt;
+      &lt;Weight&gt;
+        &lt;Value xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;1.3&lt;/Value&gt;
+        &lt;Unit xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Kg&lt;/Unit&gt;
+      &lt;/Weight&gt;
+      &lt;PackageSizeReference /&gt;
+      &lt;Items&gt;
+        &lt;Item&gt;
+          &lt;Sku&gt;SKU093434&lt;/Sku&gt;
+        &lt;/Item&gt;
+      &lt;/Items&gt;
+    &lt;/Package&gt;
+  &lt;/Packages&gt;
+&lt;/PackOrderRequest&gt;
+</code></pre>
+<blockquote>
+<p>Example Pack Order Response</p>
+</blockquote>
+<pre><code class="lang-json">{
+  &quot;Results&quot;: [
+    {
+      &quot;Result&quot;: &quot;ConsignmentCreated&quot;,
+      &quot;ApiLinks&quot;: [
+        {
+          &quot;Rel&quot;: &quot;Consignment&quot;,
+          &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-05B-MQ4&quot;
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;PackOrderResponse xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.PackOrders&quot;&gt;
+  &lt;Results&gt;
+    &lt;PackOrderResult&gt;
+      &lt;Result&gt;ConsignmentCreated&lt;/Result&gt;
+      &lt;ApiLinks&gt;
+        &lt;ApiLink&gt;
+          &lt;Rel xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;Consignment&lt;/Rel&gt;
+          &lt;Href xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;https://api.electioapp.com/consignments/EC-000-05B-MQ4&lt;/Href&gt;
+        &lt;/ApiLink&gt;
+      &lt;/ApiLinks&gt;
+    &lt;/PackOrderResult&gt;
+  &lt;/Results&gt;
+&lt;/PackOrderResponse&gt;
+</code></pre>
+<p>Once your order is created, you'll need to use the <strong><a href="https://docs.electioapp.com/#/api/PackOrder">Pack Order</a></strong> endpoint to create consignments from it.</p>
+<p>It's important to understand the difference between a consignment and an order when using <strong>Pack Order</strong>:</p>
+<ul>
+<li>An <strong>order</strong> is a collection of items that is to be transported to the same destination on behalf of the same customer.</li>
+<li>A <strong>consignment</strong> is a collection of packages that is to be transported to the same destination, on behalf of the same customer, <em>from the same origin, on the same day, and by the same carrier</em>.</li>
+</ul>
+<p>This means that orders can contain items that will not ship from the same location, but consignments cannot. Similarly, orders can contain items that will ship from the same location but at different times (for example, because one of the items a customer has purchased is out of stock).</p>
+<p>The <strong>Pack Order</strong> endpoint enables you to take those items on an order that share an origin and are to be shipped together, and generate a shippable consignment from them. You will need to send one <strong>Pack Order</strong> request per consignment that you want to create from the order.</p>
+<aside class="info">
+  As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. The necklace and bracelet are located in warehouse A, and the coat and hat in warehouse B. This would likely break down to:
+<ul>
+<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
+<li>Two consignments - One with a single item for the package containing the necklace and bracelet, and another with separate packages for the coat and hat.</li>
+<li>A single order comprising the customer's entire purchase.</li>
+</ul>
+<p>In this example, you would need to run <strong>Pack Order</strong> twice - once for each consignment.</p>
+</aside>
+<p>To make a <strong>Pack Order</strong> request, send a GET request to <code>https://api.electioapp.com/orders/{orderReference}/pack</code>. The body of the request can contain various properties that are used when creating the consignment, but at a minimum should contain the <code>{orderReference}</code> of the associated order and details of at least one <code>{item}</code> (and its accompanying <code>{package}</code>). The items and packages listed make up the consignment.</p>
+<aside class="note">
+  The <strong>Pack Order</strong> request's <code>OrderReferenceProvidedByCustomer</code> field enables you to provide a custom reference for the consignment that the request generates. 
+  
+  If you add a custom reference to your <strong>Pack Order</strong> request, then PRO uses this value as the consignment's custom reference, as opposed to any <code>OrderReferenceProvidedByCustomer</code> you may have provided when creating the order. 
+  
+  If you do not add a custom reference to your <strong>Pack Order</strong> request, then PRO uses the existing order's <code>OrderReferenceProvidedByCustomer</code> (where provided) as the consignment's custom reference.
+</aside>
+<p>Once SortedPRO has received a <strong>Pack Order</strong> request, it creates the consignment and returns the relevant <code>{consignmentReference}</code>.</p>
+<h3 id="example">Example</h3>
+<p>The example to the right shows a <strong>Pack Order</strong> request to create a consignment with one package containing a single item from order <em>EO-000-002-0TT</em>. PRO creates the consignment and responds with a <code>{consignmentReference}</code> of <em>EC-000-05B-MQ4</em>.</p>
+<aside class="note">
+  For full reference information on the <strong>Pack Order</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/PackOrder">Pack Order</a></strong> page of the API reference.
+</aside>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_pack_orders.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

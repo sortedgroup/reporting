@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  id: LegacyLabelFormat
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  children:
+  - Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.GIF
+  - Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PDF
+  - Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PNG
+  - Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPL
+  - Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPLII
+  langs:
+  - csharp
+  - vb
+  name: LegacyLabelFormat
+  nameWithType: LegacyLabelFormat
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  type: Enum
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: LegacyLabelFormat
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+    startLine: 12
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  summary: "\n<p>The format in which the label should be generated.</p> \n<p><strong>Note:</strong> This data type is <em>now deprecated</em>. Please use <xref href=\"Sorted.PRO.SDK.DataTypes.Labels.LabelFormat\" data-throw-if-not-resolved=\"false\"></xref> with <a href=\"Sorted.PRO.SDK.Interfaces.Labels.ILabelService.html\">ILabelService</a> instead.</p>\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [DataContractType("Label Format", "The format in which you want the label to be generated.")]
+
+      [Obsolete("Use Sorted.Pro.SDK.DataTypes.Labels.LabelFormat with ILabelService")]
+
+      public enum LegacyLabelFormat
+    content.vb: >-
+      <DataContract>
+
+      <DataContractType("Label Format", "The format in which you want the label to be generated.")>
+
+      <Obsolete("Use Sorted.Pro.SDK.DataTypes.Labels.LabelFormat with ILabelService")>
+
+      Public Enum LegacyLabelFormat
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType
+    ctor: Sorted.PRO.SDK.Shared.Attributes.Documentation.DataContractType.#ctor(System.String,System.String)
+    arguments:
+    - type: System.String
+      value: Label Format
+    - type: System.String
+      value: The format in which you want the label to be generated.
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use Sorted.Pro.SDK.DataTypes.Labels.LabelFormat with ILabelService
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PDF
+  commentId: F:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PDF
+  id: PDF
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  langs:
+  - csharp
+  - vb
+  name: PDF
+  nameWithType: LegacyLabelFormat.PDF
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PDF
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PDF
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+    startLine: 18
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "PDF")]
+
+      PDF = 0
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="PDF")>
+
+      PDF = 0
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: PDF
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PNG
+  commentId: F:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PNG
+  id: PNG
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  langs:
+  - csharp
+  - vb
+  name: PNG
+  nameWithType: LegacyLabelFormat.PNG
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.PNG
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: PNG
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+    startLine: 20
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "PNG")]
+
+      PNG = 1
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="PNG")>
+
+      PNG = 1
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: PNG
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.GIF
+  commentId: F:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.GIF
+  id: GIF
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  langs:
+  - csharp
+  - vb
+  name: GIF
+  nameWithType: LegacyLabelFormat.GIF
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.GIF
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: GIF
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "GIF")]
+
+      GIF = 2
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="GIF")>
+
+      GIF = 2
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: GIF
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPL
+  commentId: F:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPL
+  id: ZPL
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  langs:
+  - csharp
+  - vb
+  name: ZPL
+  nameWithType: LegacyLabelFormat.ZPL
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPL
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ZPL
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+    startLine: 24
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "ZPL")]
+
+      ZPL = 3
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="ZPL")>
+
+      ZPL = 3
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: ZPL
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPLII
+  commentId: F:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPLII
+  id: ZPLII
+  parent: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  langs:
+  - csharp
+  - vb
+  name: ZPLII
+  nameWithType: LegacyLabelFormat.ZPLII
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat.ZPLII
+  type: Field
+  source:
+    remote:
+      path: Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: ZPLII
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.DataTypes.Labels/LegacyLabelFormat.cs
+    startLine: 26
+  assemblies:
+  - Sorted.PRO.SDK.DataTypes.Labels
+  namespace: Sorted.PRO.SDK.DataTypes.Labels
+  syntax:
+    content: >-
+      [EnumMember]
+
+      [Display(Name = "ZPLII")]
+
+      ZPLII = 4
+    return:
+      type: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+    content.vb: >-
+      <EnumMember>
+
+      <Display(Name:="ZPLII")>
+
+      ZPLII = 4
+  attributes:
+  - type: System.Runtime.Serialization.EnumMemberAttribute
+    ctor: System.Runtime.Serialization.EnumMemberAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DisplayAttribute
+    ctor: System.ComponentModel.DataAnnotations.DisplayAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: ZPLII
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: LabelFormat
+  nameWithType: LabelFormat
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LabelFormat
+- uid: Sorted.PRO.SDK.DataTypes.Labels
+  commentId: N:Sorted.PRO.SDK.DataTypes.Labels
+  name: Sorted.PRO.SDK.DataTypes.Labels
+  nameWithType: Sorted.PRO.SDK.DataTypes.Labels
+  fullName: Sorted.PRO.SDK.DataTypes.Labels
+- uid: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  commentId: T:Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat
+  parent: Sorted.PRO.SDK.DataTypes.Labels
+  name: LegacyLabelFormat
+  nameWithType: LegacyLabelFormat
+  fullName: Sorted.PRO.SDK.DataTypes.Labels.LegacyLabelFormat

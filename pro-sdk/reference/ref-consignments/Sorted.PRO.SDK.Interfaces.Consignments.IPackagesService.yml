@@ -1,0 +1,351 @@
+### YamlMime:ManagedReference
+items:
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  commentId: T:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  id: IPackagesService
+  parent: Sorted.PRO.SDK.Interfaces.Consignments
+  children:
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  - Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  langs:
+  - csharp
+  - vb
+  name: IPackagesService
+  nameWithType: IPackagesService
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  type: Interface
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: IPackagesService
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 9
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nRepresents the actions provided by the Packages services\n"
+  example: []
+  syntax:
+    content: public interface IPackagesService
+    content.vb: Public Interface IPackagesService
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  id: UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  langs:
+  - csharp
+  - vb
+  name: UpdatePackage(UpdatePackageRequest)
+  nameWithType: IPackagesService.UpdatePackage(UpdatePackageRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdatePackage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 15
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nUpdates the package.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void UpdatePackage(UpdatePackageRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+      description: The request.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub UpdatePackage(request As UpdatePackageRequest)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  id: UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  langs:
+  - csharp
+  - vb
+  name: UpdatePackageAsync(UpdatePackageRequest)
+  nameWithType: IPackagesService.UpdatePackageAsync(UpdatePackageRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync(Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: UpdatePackageAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 22
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nUpdates the package.\n"
+  example: []
+  syntax:
+    content: Task UpdatePackageAsync(UpdatePackageRequest request)
+    parameters:
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function UpdatePackageAsync(request As UpdatePackageRequest) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  id: DeletePackage(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  langs:
+  - csharp
+  - vb
+  name: DeletePackage(String)
+  nameWithType: IPackagesService.DeletePackage(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeletePackage
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 28
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nDeletes the package.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Deprecated Use Async equivalent")]
+
+      void DeletePackage(string packageReference)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: The package reference.
+    content.vb: >-
+      <Obsolete("Deprecated Use Async equivalent")>
+
+      Sub DeletePackage(packageReference As String)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Deprecated Use Async equivalent
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  id: DeletePackageAsync(System.String)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  langs:
+  - csharp
+  - vb
+  name: DeletePackageAsync(String)
+  nameWithType: IPackagesService.DeletePackageAsync(String)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: DeletePackageAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 35
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nDeletes the package.\n"
+  example: []
+  syntax:
+    content: Task DeletePackageAsync(string packageReference)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: The package reference.
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function DeletePackageAsync(packageReference As String) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  id: SetCustomerProvidedReference(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  langs:
+  - csharp
+  - vb
+  name: SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: IPackagesService.SetCustomerProvidedReference(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetCustomerProvidedReference
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 42
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nSet the reference provided by customer on the specified package.\n"
+  example: []
+  syntax:
+    content: void SetCustomerProvidedReference(string packageReference, ReferenceProvidedByCustomerRequest request)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: The package reference.
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+      description: The request.
+    content.vb: Sub SetCustomerProvidedReference(packageReference As String, request As ReferenceProvidedByCustomerRequest)
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference*
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  commentId: M:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  id: SetCustomerProvidedReferenceAsync(System.String,Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  parent: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService
+  langs:
+  - csharp
+  - vb
+  name: SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)
+  nameWithType: IPackagesService.SetCustomerProvidedReferenceAsync(String, ReferenceProvidedByCustomerRequest)
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync(System.String, Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest)
+  type: Method
+  source:
+    remote:
+      path: Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+      branch: doc-comments
+      repo: git@bitbucket.org:mpdelectio/sorted.pro.sdk.git
+    id: SetCustomerProvidedReferenceAsync
+    path: ../../sorted.pro.sdk/Sorted.PRO.SDK.Interfaces.Consignments/IPackagesService.cs
+    startLine: 49
+  assemblies:
+  - Sorted.PRO.SDK.Interfaces.Consignments
+  namespace: Sorted.PRO.SDK.Interfaces.Consignments
+  summary: "\nAsynchronously set the reference provided by customer on the specified package.\n"
+  example: []
+  syntax:
+    content: Task SetCustomerProvidedReferenceAsync(string packageReference, ReferenceProvidedByCustomerRequest request)
+    parameters:
+    - id: packageReference
+      type: System.String
+      description: The package reference.
+    - id: request
+      type: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+      description: The request.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetCustomerProvidedReferenceAsync(packageReference As String, request As ReferenceProvidedByCustomerRequest) As Task
+  overload: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync*
+references:
+- uid: Sorted.PRO.SDK.Interfaces.Consignments
+  commentId: N:Sorted.PRO.SDK.Interfaces.Consignments
+  name: Sorted.PRO.SDK.Interfaces.Consignments
+  nameWithType: Sorted.PRO.SDK.Interfaces.Consignments
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage
+  name: UpdatePackage
+  nameWithType: IPackagesService.UpdatePackage
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackage
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: UpdatePackageRequest
+  nameWithType: UpdatePackageRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.UpdatePackageRequest
+- uid: Sorted.PRO.SDK.DataTypes.Consignments
+  commentId: N:Sorted.PRO.SDK.DataTypes.Consignments
+  name: Sorted.PRO.SDK.DataTypes.Consignments
+  nameWithType: Sorted.PRO.SDK.DataTypes.Consignments
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync
+  name: UpdatePackageAsync
+  nameWithType: IPackagesService.UpdatePackageAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.UpdatePackageAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage
+  name: DeletePackage
+  nameWithType: IPackagesService.DeletePackage
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync
+  name: DeletePackageAsync
+  nameWithType: IPackagesService.DeletePackageAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.DeletePackageAsync
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference
+  name: SetCustomerProvidedReference
+  nameWithType: IPackagesService.SetCustomerProvidedReference
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReference
+- uid: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  commentId: T:Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+  parent: Sorted.PRO.SDK.DataTypes.Consignments
+  name: ReferenceProvidedByCustomerRequest
+  nameWithType: ReferenceProvidedByCustomerRequest
+  fullName: Sorted.PRO.SDK.DataTypes.Consignments.ReferenceProvidedByCustomerRequest
+- uid: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync*
+  commentId: Overload:Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync
+  name: SetCustomerProvidedReferenceAsync
+  nameWithType: IPackagesService.SetCustomerProvidedReferenceAsync
+  fullName: Sorted.PRO.SDK.Interfaces.Consignments.IPackagesService.SetCustomerProvidedReferenceAsync
