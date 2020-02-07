@@ -1,87 +1,101 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Quick Start </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Quick Start ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="quick-start">Quick Start</h1>
 
-<p>Ready to get started with the SortedPRO SDK? This page explains how to set the SDK up and create a simple app to create, allocate, get labels for, and manifest a consignment.</p>
-<p>This page is based on PRO's <strong>Classic</strong> workflow. For more information on this workflow, see the <a href="https://sorted-pro-flows-demo.herokuapp.com/#classic-flow">PRO Call Flow</a> docs.</p>
-<hr>
-<h2 id="sample-application">Sample Application</h2>
-<p>This guide is intended to be used in conjunction with the Classic Flow sample application, available from [LINK HERE]. This app shows the <strong>Classic</strong> PRO workflow implemented using the PRO SDK.</p>
-<h2 id="downloading-the-sdk">Downloading the SDK</h2>
-<p>The PRO SDK is available as a collection of NuGet packages. For information on the specific packages you need for your project, see the SDK reference docs and the SDK Architecture section of the About the SDK page.</p>
-<p>Alternatively, you can reference the master package set, <code>Sorted.PRO.SDK</code>. This package set references all of PRO's &quot;mini-SDKs&quot;, enabling you to consume the entire SDK with minimal package references and without requiring knowledge of its individual services.</p>
-<blockquote>
-<p><span class="note-header">More Information:</span></p>
-<p>For help on consuming packages from NuGet, see the <a href="https://docs.microsoft.com/en-us/nuget/consume-packages/overview-and-workflow">NuGet documentation</a>.</p>
-</blockquote>
-<h2 id="configuration">Configuration</h2>
-<p>Many of the SDK's services require an <code>apiKey</code> as a dependency. The sample application uses an extension method called <code>RegisterApiKeyDependentService</code> to register those services that are dependent on an <code>apiKey</code>. The method is defined in <code>RegistrationHelper.cs</code> as follows:</p>
-<pre><code class="lang-c#">public static class RegistrationHelper
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Quick Start </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Quick Start ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="quick-start">Quick Start</h1>
+
+            <p>Ready to get started with the SortedPRO SDK? This page explains how to set the SDK up and create a simple
+              app to create, allocate, get labels for, and manifest a consignment.</p>
+            <p>This page is based on PRO's <strong>Classic</strong> workflow. For more information on this workflow, see
+              the <a href="https://sorted-pro-flows-demo.herokuapp.com/#classic-flow">PRO Call Flow</a> docs.</p>
+            <hr>
+            <h2 id="sample-application">Sample Application</h2>
+            <p>This guide is intended to be used in conjunction with the Classic Flow sample application, available from
+              [LINK HERE]. This app shows the <strong>Classic</strong> PRO workflow implemented using the PRO SDK.</p>
+            <h2 id="downloading-the-sdk">Downloading the SDK</h2>
+            <p>The PRO SDK is available as a collection of NuGet packages. For information on the specific packages you
+              need for your project, see the SDK reference docs and the SDK Architecture section of the About the SDK
+              page.</p>
+            <p>Alternatively, you can reference the master package set, <code>Sorted.PRO.SDK</code>. This package set
+              references all of PRO's &quot;mini-SDKs&quot;, enabling you to consume the entire SDK with minimal package
+              references and without requiring knowledge of its individual services.</p>
+            <blockquote>
+              <p><span class="note-header">More Information:</span></p>
+              <p>For help on consuming packages from NuGet, see the <a
+                  href="https://docs.microsoft.com/en-us/nuget/consume-packages/overview-and-workflow">NuGet
+                  documentation</a>.</p>
+            </blockquote>
+            <h2 id="configuration">Configuration</h2>
+            <p>Many of the SDK's services require an <code>apiKey</code> as a dependency. The sample application uses an
+              extension method called <code>RegisterApiKeyDependentService</code> to register those services that are
+              dependent on an <code>apiKey</code>. The method is defined in <code>RegistrationHelper.cs</code> as
+              follows:</p>
+            <pre><code class="lang-c#">public static class RegistrationHelper
     {
         /// &lt;summary&gt;
         /// Registers a service that is dependent on an API key
@@ -108,9 +122,10 @@
         }
     }
 </code></pre>
-<p>Note that this is part of the sample application provided, rather than the SDK itself.</p>
-<p><code>RegisterApiKeyDependentService</code> is then called in <code>ApplicationContainer.cs</code>, once for every service that needs to be registered in order for the app to run.</p>
-<pre><code class="lang-java">/// &lt;summary&gt;
+            <p>Note that this is part of the sample application provided, rather than the SDK itself.</p>
+            <p><code>RegisterApiKeyDependentService</code> is then called in <code>ApplicationContainer.cs</code>, once
+              for every service that needs to be registered in order for the app to run.</p>
+            <pre><code class="lang-java">/// &lt;summary&gt;
 /// Register the Sorted.PRO services
 /// &lt;/summary&gt;
 /// &lt;param name=&quot;configuration&quot;&gt;The &lt;see cref=&quot;IConfigurationRoot&quot;/&gt; used to get app configuration&lt;/param&gt;
@@ -127,12 +142,19 @@ private void RegisterServices(IConfigurationRoot configuration)
 }
 
 </code></pre>
-<h2 id="creating-a-consignment">Creating a Consignment</h2>
-<p>Many of PRO's key workflows require you to create a consignment object as an initial step. The <code>CreateConsignmentSample.cs</code> sample application file demonstrates how to create a consignment using the SDK.</p>
-<p>In the PRO SDK, consignments are created by sending a <code>CreateConsignmentRequest</code> object to the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> endpoint via the <code>IConsignmentService.CreateConsignmentAsync(request)</code> method. The basic steps to create a consignment via the SDK are:</p>
-<ol>
-<li><p>Create a new instance of the <code>IConsignmentService</code>. In the sample application, this is done via dependency injection.</p>
-<pre><code class="lang-java">public class CreateConsignmentSample : ICreateConsignmentSample
+            <h2 id="creating-a-consignment">Creating a Consignment</h2>
+            <p>Many of PRO's key workflows require you to create a consignment object as an initial step. The
+              <code>CreateConsignmentSample.cs</code> sample application file demonstrates how to create a consignment
+              using the SDK.</p>
+            <p>In the PRO SDK, consignments are created by sending a <code>CreateConsignmentRequest</code> object to the
+              <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> endpoint via the
+              <code>IConsignmentService.CreateConsignmentAsync(request)</code> method. The basic steps to create a
+              consignment via the SDK are:</p>
+            <ol>
+              <li>
+                <p>Create a new instance of the <code>IConsignmentService</code>. In the sample application, this is
+                  done via dependency injection.</p>
+                <pre><code class="lang-java">public class CreateConsignmentSample : ICreateConsignmentSample
 {
     private readonly IConsignmentService _consignmentService;
     private readonly ISortedConfiguration _configuration;
@@ -145,10 +167,14 @@ private void RegisterServices(IConfigurationRoot configuration)
         _configuration = configuration;
 }
 </code></pre>
-</li>
-<li><p>Create a new <code>CreateConsignmentRequest</code>. This object contains the details of the consignment to be created. For details on the structure of the <code>CreateConsignmentRequest</code>, see SDK REFERENCE LINK HERE.</p>
-<p>The example below shows a simple consignment request for an outbound shipment containing a single package.</p>
-<pre><code class="lang-java">public CreateConsignmentRequest BuildCreateConsignmentRequest(string postcode)
+              </li>
+              <li>
+                <p>Create a new <code>CreateConsignmentRequest</code>. This object contains the details of the
+                  consignment to be created. For details on the structure of the <code>CreateConsignmentRequest</code>,
+                  see SDK REFERENCE LINK HERE.</p>
+                <p>The example below shows a simple consignment request for an outbound shipment containing a single
+                  package.</p>
+                <pre><code class="lang-java">public CreateConsignmentRequest BuildCreateConsignmentRequest(string postcode)
 {   
     var createConsignmentRequest = new CreateConsignmentRequest
     {
@@ -195,11 +221,21 @@ private void RegisterServices(IConfigurationRoot configuration)
     return createConsignmentRequest;
 }
 </code></pre>
-</li>
-<li><p>Use the <code>IConsignmentService.CreateConsignmentAsync(request)</code> method to pass the <code>CreateConsignmentRequest</code> to the <a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> API endpoint . PRO creates the consignment based on the details in the <code>CreateConsignmentRequest</code>and returns an <code>apiLink</code> detailing the consignment's reference and a link to the full consignment details.</p>
-</li>
-<li><p>Extract the consignment reference from the API's response. PRO consignment references are a unique identifier for each consignment in the system, and have the format <code>EC-XXX-XXX-XXX</code>. The code sample below uses a regular expression to extract the consignment reference from the API's response.</p>
-<pre><code class="lang-java">private static string ExtractConsignmentReference(ApiLink apiLink)
+              </li>
+              <li>
+                <p>Use the <code>IConsignmentService.CreateConsignmentAsync(request)</code> method to pass the
+                  <code>CreateConsignmentRequest</code> to the <a
+                    href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a> API endpoint . PRO
+                  creates the consignment based on the details in the <code>CreateConsignmentRequest</code>and returns
+                  an <code>apiLink</code> detailing the consignment's reference and a link to the full consignment
+                  details.</p>
+              </li>
+              <li>
+                <p>Extract the consignment reference from the API's response. PRO consignment references are a unique
+                  identifier for each consignment in the system, and have the format <code>EC-XXX-XXX-XXX</code>. The
+                  code sample below uses a regular expression to extract the consignment reference from the API's
+                  response.</p>
+                <pre><code class="lang-java">private static string ExtractConsignmentReference(ApiLink apiLink)
 {
     var href = apiLink.Href;
     var regex = new Regex(&quot;EC-[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}$&quot;);
@@ -212,28 +248,43 @@ private void RegisterServices(IConfigurationRoot configuration)
     return match.Value;
 }
 </code></pre>
-</li>
-</ol>
-<h2 id="allocating-a-consignment">Allocating a Consignment</h2>
-<p>Once you've created a consignment, it must be allocated to a carrier service. PRO has multiple allocation endpoints, giving you the flexibility to allocate to carriers using whatever criteria suits you best.</p>
-<p>This example and the <code>AllocateConsignmentSample.cs</code> sample application file demonstrates how to allocate a consignment using the <strong>Allocate With Default Rules</strong> endpoint, which allocates the consignment to the cheapest service that meets your organisation's allocation rules. For more information on PRO's other allocation options, see the <a href="https://docs.electioapp.com/#/api/AllocateConsignment">API Reference</a>.</p>
-<blockquote>
-<p><span class="note-header">Note:</span></p>
-<p>In the context of SortedPRO, <strong>allocation</strong> is the process of selecting the carrier service that will be used to deliver the consignment.</p>
-</blockquote>
-<p>In the PRO SDK, consignments can be allocated by passing a consignment reference to the <a href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocate Consignment</a> endpoint via the <code>IConsignmentAllocationService.AllocateConsignmentAsync(reference)</code> method. The basic steps to allocate a consignment via the SDK are:</p>
-<ol>
-<li><p>Create a new instance of the <code>IConsignmentAllocationService</code>. In the sample application, this is done via dependency injection.</p>
-<pre><code class="lang-java">private readonly IConsignmentAllocationService _consignmentAllocationService;
+              </li>
+            </ol>
+            <h2 id="allocating-a-consignment">Allocating a Consignment</h2>
+            <p>Once you've created a consignment, it must be allocated to a carrier service. PRO has multiple allocation
+              endpoints, giving you the flexibility to allocate to carriers using whatever criteria suits you best.</p>
+            <p>This example and the <code>AllocateConsignmentSample.cs</code> sample application file demonstrates how
+              to allocate a consignment using the <strong>Allocate With Default Rules</strong> endpoint, which allocates
+              the consignment to the cheapest service that meets your organisation's allocation rules. For more
+              information on PRO's other allocation options, see the <a
+                href="https://docs.electioapp.com/#/api/AllocateConsignment">API Reference</a>.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span></p>
+              <p>In the context of SortedPRO, <strong>allocation</strong> is the process of selecting the carrier
+                service that will be used to deliver the consignment.</p>
+            </blockquote>
+            <p>In the PRO SDK, consignments can be allocated by passing a consignment reference to the <a
+                href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocate Consignment</a> endpoint via the
+              <code>IConsignmentAllocationService.AllocateConsignmentAsync(reference)</code> method. The basic steps to
+              allocate a consignment via the SDK are:</p>
+            <ol>
+              <li>
+                <p>Create a new instance of the <code>IConsignmentAllocationService</code>. In the sample application,
+                  this is done via dependency injection.</p>
+                <pre><code class="lang-java">private readonly IConsignmentAllocationService _consignmentAllocationService;
 
 public AllocateConsignmentSample(IConsignmentAllocationService consignmentAllocationService)
 {
     _consignmentAllocationService = consignmentAllocationService;
 }
 </code></pre>
-</li>
-<li><p>Use the <code>IConsignmentAllocationService.AllocateConsignmentAsync(reference)</code> method to pass a consignment reference to the <a href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocate Consignment</a> API endpoint.</p>
-<pre><code class="lang-java">public async Task&lt;AllocationSummary&gt; AllocateConsignment(string consignmentReference)
+              </li>
+              <li>
+                <p>Use the <code>IConsignmentAllocationService.AllocateConsignmentAsync(reference)</code> method to pass
+                  a consignment reference to the <a
+                    href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocate Consignment</a> API endpoint.
+                </p>
+                <pre><code class="lang-java">public async Task&lt;AllocationSummary&gt; AllocateConsignment(string consignmentReference)
 {
     return await OperationHelper.Execute(async () =&gt;
     {
@@ -246,10 +297,15 @@ public AllocateConsignmentSample(IConsignmentAllocationService consignmentAlloca
     });
 }
 </code></pre>
-<p>PRO allocates the consignment and returns an <code>AllocationSummary</code>, which contains links to the consignment resource that was allocated, a summary of the carrier service that the consignment was allocated to, a link to the relevant package labels, and a <code>ConsignmentLegs</code> array indicating how many legs the shipment will need.</p>
-</li>
-<li><p>Read the <code>AllocationSummary</code> object to find the details of the carrier name, reference, service and service name.</p>
-<pre><code class="lang-java">private static void WriteAllocationSummary(AllocationSummary summary)
+                <p>PRO allocates the consignment and returns an <code>AllocationSummary</code>, which contains links to
+                  the consignment resource that was allocated, a summary of the carrier service that the consignment was
+                  allocated to, a link to the relevant package labels, and a <code>ConsignmentLegs</code> array
+                  indicating how many legs the shipment will need.</p>
+              </li>
+              <li>
+                <p>Read the <code>AllocationSummary</code> object to find the details of the carrier name, reference,
+                  service and service name.</p>
+                <pre><code class="lang-java">private static void WriteAllocationSummary(AllocationSummary summary)
 {
     WriteProperty(&quot;Carrier name&quot;, summary.CarrierName);
     WriteProperty(&quot;Carrier reference&quot;, summary.CarrierReference);
@@ -263,27 +319,37 @@ private static void WriteProperty(string property, string value)
     Console.WriteLine($&quot;Property '{property}' has value '{value}'&quot;);
 }
 </code></pre>
-</li>
-</ol>
-<p>Once allocated, the consignment's status changes to <em>Allocated</em>.</p>
-<h2 id="getting-consignment-labels">Getting Consignment Labels</h2>
-<p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The next step in the process is to retrieve those delivery labels. This example and the <code>GetLabelsSample.cs</code> sample application file demonstrates how to retrieve labels using the <code>LabelService</code>.</p>
-<p>The basic steps to get consignment labels via the SDK are:</p>
-<ol>
-<li><p>Create a new instance of the <code>ILabelService</code>. In the sample application, this is done via dependency injection.</p>
-<pre><code class="lang-java">private readonly ILabelService _labelService;
+              </li>
+            </ol>
+            <p>Once allocated, the consignment's status changes to <em>Allocated</em>.</p>
+            <h2 id="getting-consignment-labels">Getting Consignment Labels</h2>
+            <p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The
+              next step in the process is to retrieve those delivery labels. This example and the
+              <code>GetLabelsSample.cs</code> sample application file demonstrates how to retrieve labels using the
+              <code>LabelService</code>.</p>
+            <p>The basic steps to get consignment labels via the SDK are:</p>
+            <ol>
+              <li>
+                <p>Create a new instance of the <code>ILabelService</code>. In the sample application, this is done via
+                  dependency injection.</p>
+                <pre><code class="lang-java">private readonly ILabelService _labelService;
 
 public GetLabelsSample(ILabelService labelService)
 {
     _labelService = labelService;
 }
 </code></pre>
-</li>
-<li><p>Use the <code>ConsignmentAllocationService.AllocateConsignmentAsync(reference, format)</code> method to pass a <code>consignmentReference</code>, a <code>labelFormat</code> and a <code>resolution</code> (in dots per inch) to the <a href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocate Consignment</a> API endpoint.</p>
-</li>
-</ol>
-<p>In the example below, PRO will respond by sending label data for the relevant <code>consignmentReference</code> as a PDF with a resolution of 203 dpi.</p>
-<pre><code>```java
+              </li>
+              <li>
+                <p>Use the <code>ConsignmentAllocationService.AllocateConsignmentAsync(reference, format)</code> method
+                  to pass a <code>consignmentReference</code>, a <code>labelFormat</code> and a <code>resolution</code>
+                  (in dots per inch) to the <a href="https://docs.electioapp.com/#/api/AllocateConsignment">Allocate
+                    Consignment</a> API endpoint.</p>
+              </li>
+            </ol>
+            <p>In the example below, PRO will respond by sending label data for the relevant
+              <code>consignmentReference</code> as a PDF with a resolution of 203 dpi.</p>
+            <pre><code>```java
 public async Task GetLabels(string consignmentReference, bool open = true)
 {
     await OperationHelper.Execute(async () =&gt;
@@ -300,9 +366,10 @@ public async Task GetLabels(string consignmentReference, bool open = true)
 ```
 PRO returns a `GetLabelsResponse` containing all package labels associated with the specified consignment as a base64-encoded byte array in the format requested. 
 </code></pre>
-<ol start="3">
-<li><p>Save the file to disk or to a remote location.</p>
-<pre><code class="lang-java">private static string SaveFile(byte[] contents, string consignmentReference)
+            <ol start="3">
+              <li>
+                <p>Save the file to disk or to a remote location.</p>
+                <pre><code class="lang-java">private static string SaveFile(byte[] contents, string consignmentReference)
 {
     try
     {
@@ -319,29 +386,44 @@ PRO returns a `GetLabelsResponse` containing all package labels associated with 
     }
 }    
 </code></pre>
-</li>
-</ol>
-<h2 id="manifesting-a-consignment">Manifesting a Consignment</h2>
-<p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're ready to manifest it. The <code>ManifestSample.cs</code> sample application file demonstrates how to manifest a consignment using the SDK.</p>
-<blockquote>
-<p><span class="note-header">Note:</span></p>
-<p>In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the consignment in question needs to be collected from the shipper.</p>
-</blockquote>
-<p>In the PRO SDK, consignments are manifested by sending a <code>ManifestConsignmentsRequest</code> object to the <a href="https://docs.electioapp.com/#/api/ManifestConsignments">Manifest Consignments</a> endpoint via the <code>IConsignmentService.ManifestConsignmentsAsync(request)</code> method. The basic steps to manifest a consignment via the SDK are:</p>
-<ol>
-<li><p>Create a new instance of <code>IConsignmentService</code>. In the sample application, this is done via dependency injection.</p>
-<pre><code class="lang-java">private readonly IConsignmentService _consignmentService;
+              </li>
+            </ol>
+            <h2 id="manifesting-a-consignment">Manifesting a Consignment</h2>
+            <p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're
+              ready to manifest it. The <code>ManifestSample.cs</code> sample application file demonstrates how to
+              manifest a consignment using the SDK.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span></p>
+              <p>In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the
+                consignment in question needs to be collected from the shipper.</p>
+            </blockquote>
+            <p>In the PRO SDK, consignments are manifested by sending a <code>ManifestConsignmentsRequest</code> object
+              to the <a href="https://docs.electioapp.com/#/api/ManifestConsignments">Manifest Consignments</a> endpoint
+              via the <code>IConsignmentService.ManifestConsignmentsAsync(request)</code> method. The basic steps to
+              manifest a consignment via the SDK are:</p>
+            <ol>
+              <li>
+                <p>Create a new instance of <code>IConsignmentService</code>. In the sample application, this is done
+                  via dependency injection.</p>
+                <pre><code class="lang-java">private readonly IConsignmentService _consignmentService;
 
 public ManifestSample(IConsignmentService consignmentService)
 {
     _consignmentService = consignmentService;
 }
 </code></pre>
-</li>
-<li><p>Construct a new <code>ManifestConsignmentsRequest</code>. This object contains the references of the consignments to be manifested. For details on the structure of the <code>ManifestConsignmentsRequest</code>, see LINK HERE.</p>
-</li>
-<li><p>Use the <code>IConsignmentService.ManifestConsignmentsAsync(request)</code> method to pass the <code>ManifestConsignmentsRequest</code> to the <a href="https://docs.electioapp.com/#/api/ManifestConsignments">Manifest Consignments</a> endpoint.</p>
-<pre><code class="lang-java">public async Task ManifestConsignment(string consignmentReference)
+              </li>
+              <li>
+                <p>Construct a new <code>ManifestConsignmentsRequest</code>. This object contains the references of the
+                  consignments to be manifested. For details on the structure of the
+                  <code>ManifestConsignmentsRequest</code>, see LINK HERE.</p>
+              </li>
+              <li>
+                <p>Use the <code>IConsignmentService.ManifestConsignmentsAsync(request)</code> method to pass the
+                  <code>ManifestConsignmentsRequest</code> to the <a
+                    href="https://docs.electioapp.com/#/api/ManifestConsignments">Manifest Consignments</a> endpoint.
+                </p>
+                <pre><code class="lang-java">public async Task ManifestConsignment(string consignmentReference)
 {
     await OperationHelper.Execute(async () =&gt;
     {
@@ -356,10 +438,12 @@ public ManifestSample(IConsignmentService consignmentService)
         JsonSampler.SummariseToJson(result);
     });
 </code></pre>
-<p>PRO attempts to manifest all of the consignments in the request, and returns a message indicating how many consignments could be manifested.</p>
-</li>
-<li><p>View the results of the operation.</p>
-<pre><code class="lang-java">private static void PrintResults(IEnumerable&lt;WithMessage&lt;string&gt;&gt; manifestResponse)
+                <p>PRO attempts to manifest all of the consignments in the request, and returns a message indicating how
+                  many consignments could be manifested.</p>
+              </li>
+              <li>
+                <p>View the results of the operation.</p>
+                <pre><code class="lang-java">private static void PrintResults(IEnumerable&lt;WithMessage&lt;string&gt;&gt; manifestResponse)
 {
     foreach (var result in manifestResponse)
     {
@@ -367,45 +451,48 @@ public ManifestSample(IConsignmentService consignmentService)
     }
 }
 </code></pre>
-</li>
-</ol>
-<p>We have only scratched the surface of what you can do with the PRO SDK in this tutorial. Read on to learn how to manage orders, quotes, and delivery options.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/flows/docfx_project/pro-sdk/articles/quick-start.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+              </li>
+            </ol>
+            <p>We have only scratched the surface of what you can do with the PRO SDK in this tutorial. Read on to learn
+              how to manage orders, quotes, and delivery options.</p>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/flows/docfx_project/pro-sdk/articles/quick-start.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>

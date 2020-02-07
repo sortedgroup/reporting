@@ -1,278 +1,285 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Get Assigned Shipping Locations </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Get Assigned Shipping Locations ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="get-assigned-shipping-locations">Get Assigned Shipping Locations</h1>
 
-<p>Returns the list of shipping location with which the current user's account has been linked</p>
-<p><code>GET https://api.electioapp.com/shippinglocations/assigned</code></p>
-<h2 id="request">Request</h2>
-<div class="tab">
-    <button class="requestTabLinks" onclick="openRequestTab(event, 'headers')">Headers</button>
-    <button class="requestTabLinks" onclick="openRequestTab(event, 'path')" id="defaultRequest">Path (delete if not required)</button>
-    <button class="requestTabLinks" onclick="openRequestTab(event, 'body')">Body (delete if not required)</button>
-</div>
-<div id="headers" class="requestTabContent">
-<table>
-    <tr>
-        <th>Key</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>ocp-apim-subscription-key</td>
-        <td>Your API key. Must be provided with all requests</td>
-    </tr>
-    <tr>
-        <td>Accept</td>
-        <td>Specify what type of response you want to receive, either JSON or XML</td>
-    </tr>
-    <tr>
-        <td>Content-Type</td>
-        <td>Specify what type of content you are sending, either JSON or XML</td>
-    </tr>
-    <tr>
-        <td>electio-api-version</td>
-        <td>The version of the API to use, currently 1.1</td>
-    </tr>
-</table>
-<div class="copyheader">
-    
-<h3>Example</h3>
-<div class="copybutton" onclick="CopyToClipboard('headerExample')">Click to Copy</div>
-</div>
-<div id="headerExample" class="copycontent" onclick="CopyToClipboard('headerExample')">
-<pre><code class="lang-json">ocp-apim-subscription-key: [qwerrtyuiioop0987654321]
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Get Assigned Shipping Locations </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Get Assigned Shipping Locations ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="get-assigned-shipping-locations">Get Assigned Shipping Locations</h1>
+
+            <p>Returns the list of shipping location with which the current user's account has been linked</p>
+            <p><code>GET https://api.electioapp.com/shippinglocations/assigned</code></p>
+            <h2 id="request">Request</h2>
+            <div class="tab">
+              <button class="requestTabLinks" onclick="openRequestTab(event, 'headers')">Headers</button>
+              <button class="requestTabLinks" onclick="openRequestTab(event, 'path')" id="defaultRequest">Path (delete
+                if not required)</button>
+              <button class="requestTabLinks" onclick="openRequestTab(event, 'body')">Body (delete if not
+                required)</button>
+            </div>
+            <div id="headers" class="requestTabContent">
+              <table>
+                <tr>
+                  <th>Key</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>ocp-apim-subscription-key</td>
+                  <td>Your API key. Must be provided with all requests</td>
+                </tr>
+                <tr>
+                  <td>Accept</td>
+                  <td>Specify what type of response you want to receive, either JSON or XML</td>
+                </tr>
+                <tr>
+                  <td>Content-Type</td>
+                  <td>Specify what type of content you are sending, either JSON or XML</td>
+                </tr>
+                <tr>
+                  <td>electio-api-version</td>
+                  <td>The version of the API to use, currently 1.1</td>
+                </tr>
+              </table>
+              <div class="copyheader">
+
+                <h3>Example</h3>
+                <div class="copybutton" onclick="CopyToClipboard('headerExample')">Click to Copy</div>
+              </div>
+              <div id="headerExample" class="copycontent" onclick="CopyToClipboard('headerExample')">
+                <pre><code class="lang-json">ocp-apim-subscription-key: [qwerrtyuiioop0987654321]
 content-type: application/json
 accept: application/json
 electio-api-version: 1.1
 </code></pre>
-</div>
-</div>
-<div id="path" class="requestTabContent">
-<table>
-    <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Validation</th>
-        <th>Occurrence</th>
-    </tr>
-    <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Validation</th>
-        <th>Occurrence</th>
-    </tr>
-</table> 
-<div class="copyheader">
-<h3 id="example">Example</h3>
-<div class="copybutton" onclick="CopyToClipboard('pathExample')">Click to Copy</div>
-</div>
-<div id="pathExample" class="copycontent" onclick="CopyToClipboard('pathExample')">
-<pre><code>[Example endpoint path in here]
+              </div>
+            </div>
+            <div id="path" class="requestTabContent">
+              <table>
+                <tr>
+                  <th>Property</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Validation</th>
+                  <th>Occurrence</th>
+                </tr>
+                <tr>
+                  <th>Property</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Validation</th>
+                  <th>Occurrence</th>
+                </tr>
+              </table>
+              <div class="copyheader">
+                <h3 id="example">Example</h3>
+                <div class="copybutton" onclick="CopyToClipboard('pathExample')">Click to Copy</div>
+              </div>
+              <div id="pathExample" class="copycontent" onclick="CopyToClipboard('pathExample')">
+                <pre><code>[Example endpoint path in here]
 </code></pre>
-</div>
-</div>
-<div id="body" class="requestTabContent">
-<table>
-    <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Validation</th>
-        <th>Occurrence</th>
-    </tr>
-    <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Validation</th>
-        <th>Occurrence</th>
-    </tr>
-</table> 
-<div class="copyheader">
-<h3 id="example-1">Example</h3>
-<div class="copybutton" onclick="CopyToClipboard('bodyExample')">Click to Copy</div>
-</div>
-<div id="bodyExample" class="copycontent" onclick="CopyToClipboard('bodyExample')">
-<pre><code>[Example request body in here]
+              </div>
+            </div>
+            <div id="body" class="requestTabContent">
+              <table>
+                <tr>
+                  <th>Property</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Validation</th>
+                  <th>Occurrence</th>
+                </tr>
+                <tr>
+                  <th>Property</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Validation</th>
+                  <th>Occurrence</th>
+                </tr>
+              </table>
+              <div class="copyheader">
+                <h3 id="example-1">Example</h3>
+                <div class="copybutton" onclick="CopyToClipboard('bodyExample')">Click to Copy</div>
+              </div>
+              <div id="bodyExample" class="copycontent" onclick="CopyToClipboard('bodyExample')">
+                <pre><code>[Example request body in here]
 </code></pre>
-</div>
-</div>
-<h2 id="responses">Responses</h2>
-<div class="tab">
-  <button class="responseTabLinks" onclick="openCity(event, '200')" id="defaultResponse">200 (OK)</button>
-  <button class="responseTabLinks" onclick="openCity(event, '404')">404 (Not Found)</button>
-</div>
-<div id="200" class="responseTabContent">
-<table>
-    <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Occurrence</th>
-    </tr>
-    <tr>
-        <td>Property</td>
-        <td>Type</td>
-        <td>Description</td>
-        <td>Occurrence</td>
-    </tr> 
-</table> 
-<div class="copyheader">
-    
-<h3>Example</h3>
-<div class="copybutton" onclick="CopyToClipboard('200example')">Click to Copy</div>
-</div>
-<div id="200example" class="copycontent" onclick="CopyToClipboard('200example')">
-<pre><code>[Example 200 response]
+              </div>
+            </div>
+            <h2 id="responses">Responses</h2>
+            <div class="tab">
+              <button class="responseTabLinks" onclick="openCity(event, '200')" id="defaultResponse">200 (OK)</button>
+              <button class="responseTabLinks" onclick="openCity(event, '404')">404 (Not Found)</button>
+            </div>
+            <div id="200" class="responseTabContent">
+              <table>
+                <tr>
+                  <th>Property</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Occurrence</th>
+                </tr>
+                <tr>
+                  <td>Property</td>
+                  <td>Type</td>
+                  <td>Description</td>
+                  <td>Occurrence</td>
+                </tr>
+              </table>
+              <div class="copyheader">
+
+                <h3>Example</h3>
+                <div class="copybutton" onclick="CopyToClipboard('200example')">Click to Copy</div>
+              </div>
+              <div id="200example" class="copycontent" onclick="CopyToClipboard('200example')">
+                <pre><code>[Example 200 response]
 </code></pre>
-</div>
-</div>
-<div id="404" class="responseTabContent">
-<table>
-    <tr>
-        <th>Property</th>
-        <th>Type</th>
-        <th>Description</th>
-        <th>Occurrence</th>
-    </tr>
-    <tr>
-        <td>Code</td>
-        <td>string</td>
-        <td>The PRO error code returned. Note that this is an internal code, and not a HTTP status code</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Message</td>
-        <td>string</td>
-        <td>An explanation of the error code</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>CorrelationId</td>
-        <td>string</td>
-        <td>A unique identifier for the individual error</td>
-        <td>1</td>
-    </tr>
-</table>
-<div class="copyheader">
-    
-<h3>Example</h3>
-<div class="copybutton" onclick="CopyToClipboard('400example')">Click to Copy</div>
-</div>
-<div id="400example" class="copycontent" onclick="CopyToClipboard('400example')">
-<pre><code class="lang-json">{
+              </div>
+            </div>
+            <div id="404" class="responseTabContent">
+              <table>
+                <tr>
+                  <th>Property</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th>Occurrence</th>
+                </tr>
+                <tr>
+                  <td>Code</td>
+                  <td>string</td>
+                  <td>The PRO error code returned. Note that this is an internal code, and not a HTTP status code</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>Message</td>
+                  <td>string</td>
+                  <td>An explanation of the error code</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>CorrelationId</td>
+                  <td>string</td>
+                  <td>A unique identifier for the individual error</td>
+                  <td>1</td>
+                </tr>
+              </table>
+              <div class="copyheader">
+
+                <h3>Example</h3>
+                <div class="copybutton" onclick="CopyToClipboard('400example')">Click to Copy</div>
+              </div>
+              <div id="400example" class="copycontent" onclick="CopyToClipboard('400example')">
+                <pre><code class="lang-json">{
   &quot;Code&quot;: &quot;SampleErrorCode&quot;,
   &quot;Message&quot;: &quot;Item {reference} not found&quot;,
   &quot;CorrelationId&quot;: &quot;f94c7dbc-c542-40b9-b6da-bd98aa110939&quot;
 }
 </code></pre>
-</div>
-<!-- Include for tab and copy scripts. DO NOT DELETE THE BELOW -->
-<script src="../../scripts/requesttabs.js"></script>
-<script src="../../scripts/responsetabs.js"></script>
-<script src="../../scripts/copy.js"></script>
-</div></article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/shippingLocations/getAssignedShippingLocations.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
               </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+              <!-- Include for tab and copy scripts. DO NOT DELETE THE BELOW -->
+              <script src="../../scripts/requesttabs.js"></script>
+              <script src="../../scripts/responsetabs.js"></script>
+              <script src="../../scripts/copy.js"></script>
             </div>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/shippingLocations/getAssignedShippingLocations.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
+            </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>

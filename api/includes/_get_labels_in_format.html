@@ -1,144 +1,163 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Examples </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Examples ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
 
-<div class="tab">
-    <button class="staticTabButton">Get Labels in Format Endpoint</button>
-    <div class="copybutton" onclick="CopyToClipboard('GLFEndpoint')">Click to Copy</div>
-</div>
-<div id="GLFEndpoint" class="staticTabContent" onclick="CopyToClipboard('GLFEndpoint')">
-<pre><code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Examples </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Examples ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+
+            <div class="tab">
+              <button class="staticTabButton">Get Labels in Format Endpoint</button>
+              <div class="copybutton" onclick="CopyToClipboard('GLFEndpoint')">Click to Copy</div>
+            </div>
+            <div id="GLFEndpoint" class="staticTabContent" onclick="CopyToClipboard('GLFEndpoint')">
+              <pre><code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}
 </code></pre>
-</div>
-<p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The next step in the process is to retrieve those delivery labels via the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Label in Format</a></strong> endpoint.</p>
-<p>The <strong>Get Labels in Format</strong> endpoint takes a <code>{consignmentReference}</code> and <code>{labelFormat}</code> as path parameters. PRO returns all package labels associated with that consignment as a base64-encoded byte array in the format requested.</p>
-<p><strong>Get Labels in Format</strong> can return labels as <code>pdf</code>, <code>zpl</code> and <code>zplii</code> file types. We recommend that, when integrating PRO with your system, you make the <code>{labelFormat}</code> field a parameter, so you can easily return labels in an alternative format if required.</p>
-<blockquote>
-<p><span class="note-header">Note:</span>
-For full reference information on the <strong>Get Labels in Format</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of the API reference.</p>
-</blockquote>
-<h3 id="examples">Examples</h3>
-<p>The example shows a request to get PDF labels for a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. The file data in the response has been truncated for clarity.</p>
-<p>You would next need to decode the file's Base64 in order to view the label itself. If you are unsure how to do so, see the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN docs</a></strong> for more information.</p>
-<div class="tab">
-    <button class="staticTabButton">Example Get Labels in Format Request</button>
-    <div class="copybutton" onclick="CopyToClipboard('GLFRequest')">Click to Copy</div>
-</div>
-<div id="GLFRequest" class="staticTabContent" onclick="CopyToClipboard('GLFRequest')">
-<pre><code>GET https://api.electioapp.com/labels/EC-000-05B-MMA/pdf
+            </div>
+            <p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The
+              next step in the process is to retrieve those delivery labels via the <strong><a
+                  href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Label in Format</a></strong> endpoint.
+            </p>
+            <p>The <strong>Get Labels in Format</strong> endpoint takes a <code>{consignmentReference}</code> and
+              <code>{labelFormat}</code> as path parameters. PRO returns all package labels associated with that
+              consignment as a base64-encoded byte array in the format requested.</p>
+            <p><strong>Get Labels in Format</strong> can return labels as <code>pdf</code>, <code>zpl</code> and
+              <code>zplii</code> file types. We recommend that, when integrating PRO with your system, you make the
+              <code>{labelFormat}</code> field a parameter, so you can easily return labels in an alternative format if
+              required.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                For full reference information on the <strong>Get Labels in Format</strong> endpoint, see the <strong><a
+                    href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of
+                the API reference.</p>
+            </blockquote>
+            <h3 id="examples">Examples</h3>
+            <p>The example shows a request to get PDF labels for a consignment with a
+              <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. The file data in the response has been
+              truncated for clarity.</p>
+            <p>You would next need to decode the file's Base64 in order to view the label itself. If you are unsure how
+              to do so, see the <strong><a
+                  href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN
+                  docs</a></strong> for more information.</p>
+            <div class="tab">
+              <button class="staticTabButton">Example Get Labels in Format Request</button>
+              <div class="copybutton" onclick="CopyToClipboard('GLFRequest')">Click to Copy</div>
+            </div>
+            <div id="GLFRequest" class="staticTabContent" onclick="CopyToClipboard('GLFRequest')">
+              <pre><code>GET https://api.electioapp.com/labels/EC-000-05B-MMA/pdf
 </code></pre>
-</div>
-<div class="tab">
-    <button class="staticTabButton">Example Get Labels in Format Response</button>
-    <div class="copybutton" onclick="CopyToClipboard('GLFResponse')">Click to Copy</div>
-</div>
-<div id="GLFResponse" class="staticTabContent" onclick="CopyToClipboard('GLFResponse')">
-<pre><code class="lang-json">{
+            </div>
+            <div class="tab">
+              <button class="staticTabButton">Example Get Labels in Format Response</button>
+              <div class="copybutton" onclick="CopyToClipboard('GLFResponse')">Click to Copy</div>
+            </div>
+            <div id="GLFResponse" class="staticTabContent" onclick="CopyToClipboard('GLFResponse')">
+              <pre><code class="lang-json">{
   &quot;File&quot;: &quot;SlZCRVJpMHhMalFLSmRQcjZ ... [truncated for brevity] ... TVRrNU9ERUtKU1ZGVDBZPQ==&quot;,
   &quot;ContentType&quot;: &quot;application/pdf&quot;
 }
 </code></pre>
-</div>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/includes/_get_labels_in_format.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
             </div>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/includes/_get_labels_in_format.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
+            </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>

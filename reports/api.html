@@ -1,210 +1,251 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>API Overview </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="API Overview ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" src="../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="api-overview">API Overview</h1>
 
-<p>The <strong>API Overview</strong> enables you to get an overview of your organisation's API calls, including call volumes and ATUs used.</p>
-<p>It comprises an API data table, an <strong>API Requests by Company Name</strong> bar chart, an <strong>ATU Total Company</strong> pie chart, and an <strong>API Requests by IntervalDate and CustomerName</strong> line graph.</p>
-<a href="../images/reports/api2.png" target="_blank">
-    <img src="../images/reports/api2.png">
-</a>
-<h2 id="report-filters">Report Filters</h2>
-<p>The <strong>API Overview</strong> report offers the following report-wide filters:</p>
-<ul>
-<li><strong>Date</strong> - enables you to select only those calls that were made within a given date range.</li>
-<li><strong>Company Name</strong> - where applicable, enables you to select only those calls that were made by a particular company within your group. You can select multiple companies if required.</li>
-</ul>
-<a href="../images/reports/api-left-filter2.png" target="_blank">
-    <img src="../images/reports/api-left-filter2.png">
-</a>
-<h2 id="api-requests-by-company-name">API Requests by Company Name</h2>
-<p>The <strong>API Requests by Company Name</strong> chart shows how many requests each of your companies has made.</p>
-<a href="../images/reports/api-custname2.png" target="_blank">
-    <img src="../images/reports/api-custname2.png">
-</a>
-<h3 id="visual-filters">Visual Filters</h3>
-<p>You can filter the companies displayed on the <strong>API Requests by Company Name</strong> visual as follows:</p>
-<ul>
-<li><strong>API Requests</strong> (<a href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by number of API requests made. For example, if you were to filter on <em>is greater than 5000000</em>, then only those companies who had made more than 5,000,000 API requests would be displayed.</li>
-<li><strong>Company Name</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a> and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>) - enables you to select one or more companies to view.</li>
-</ul>
-<h3 id="more-options">More Options</h3>
-<p>The following options are available from the <strong>More Options</strong> menu:</p>
-<ul>
-<li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
-<li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
-<li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
-<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
-<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
-<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort by</a> CustomerName / API Requests</li>
-</ul>
-<p>You can also view the records that the visual's data was generated from by right-clicking on it and selecting <strong>View Records</strong> from the pop-up menu.</p>
-<h3 id="viewing-data">Viewing Data</h3>
-<a href="../images/reports/api-custname-data.png" target="_blank">
-    <img src="../images/reports/api-custname-data.png">
-</a>
-<p>The <strong>API Requests by Company Name</strong> chart's <strong>Show Data</strong> option displays the number of API requests that each of your businesses has made.</p>
-<h2 id="atu-total-company">ATU Total Company</h2>
-<p>The <strong>ATU Total Company</strong> chart shows the proportion of your total ATU consumption that each of your companies has incurred.</p>
-<a href="../images/reports/api-atu.png" target="_blank">
-    <img src="../images/reports/api-atu.png">
-</a>
-<p>Hover your mouse pointer over the chart to view the ATUs used by each individual company.</p>
-<a href="../images/reports/api-atu-highlight.png" target="_blank">
-    <img src="../images/reports/api-atu-highlight.png">
-</a>
-<h3 id="visual-filters-1">Visual Filters</h3>
-<p>You can filter the companies displayed on the <strong>ATU Total Company</strong> visual as follows:</p>
-<ul>
-<li><strong>ATU Total</strong> (<a href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by number of ATUs consumed. For example, if you were to filter on <em>is greater than 5000000</em>, then only those companies who had consumed more than 5,000,000 ATUs would be displayed.</li>
-<li><strong>Customer Name</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a> and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>) - enables you to select one or more companies to view.</li>
-</ul>
-<h3 id="more-options-1">More Options</h3>
-<p>The following options are available from the <strong>More Options</strong> menu:</p>
-<ul>
-<li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
-<li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
-<li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
-<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
-<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
-<li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort by</a> CustomerName / ATU Total</li>
-</ul>
-<p>You can also view the records that the visual's data was generated from by right-clicking on it and selecting <strong>View Records</strong> from the pop-up menu.</p>
-<h3 id="viewing-data-1">Viewing Data</h3>
-<a href="../images/reports/api-atu-data.png" target="_blank">
-    <img src="../images/reports/api-atu-data.png">
-</a>
-<p>The <strong>ATU Total Company</strong> chart's <strong>Show Data</strong> option displays the ATUs consumed by each of your businesses.</p>
-<h2 id="api-requests-over-time-by-company">API Requests Over Time by Company</h2>
-<p>The <strong>API Requests Over Time by Company</strong> chart shows how the total number of API requests made by each of your companies has changed over time. Each line represents one of your companies.</p>
-<a href="../images/reports/api-requests2.png" target="_blank">
-    <img src="../images/reports/api-requests2.png">
-</a>
-<p>Hover your mouse over the chart to view the total number of API requests made by each company for a given <code>IntervalDate</code>.</p>
-<a href="../images/reports/api-requests-highlight2.png" target="_blank">
-    <img src="../images/reports/api-requests-highlight2.png">
-</a>
-<h3 id="visual-filters-2">Visual Filters</h3>
-<ul>
-<li><strong>API Requests</strong> (<a href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by number of API requests made on a given day. For example, if you were to filter on <em>is greater than 100000</em>, then any data points in which the company had made 100000 or fewer API requests on that day would be ignored. In this example, the y-axis of the graph is effectively skewed so that it starts at 100000 rather than 0.</li>
-<li><strong>Company Name</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a> and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a> - enables you to select one or more companies to view.</li>
-<li><strong>Calendar Date</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a>, <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>, and <a href="/reports/filters-options.html#using-relative-date-filters">Relative Date</a>) - enables you to select specific dates or date ranges to view.</li>
-</ul>
-<h3 id="more-options-2">More Options</h3>
-<p>The following options are available from the <strong>More Options</strong> menu:</p>
-<ul>
-<li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
-<li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
-<li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
-<li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
-</ul>
-<h3 id="viewing-data-2">Viewing Data</h3>
-<a href="../images/reports/api-requests-data.png" target="_blank">
-    <img src="../images/reports/api-requests-data.png">
-</a>
-<p>The <strong>API Requests Over Time by Company</strong> chart's <strong>Show Data</strong> option displays the API requests made by each of your businesses, broken down by date.</p>
-</article>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>API Overview </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="API Overview ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../styles/docfx.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <meta property="docfx:navrel" content="../toc.html">
+  <meta property="docfx:tocrel" content="toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+              <img id="logo" src="../images/logo.png" height="35" width="95" alt="">
+            </a>
           </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/flows/docfx_project/reports/api.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
               </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="api-overview">API Overview</h1>
+
+            <p>The <strong>API Overview</strong> enables you to get an overview of your organisation's API calls,
+              including call volumes and ATUs used.</p>
+            <p>It comprises an API data table, an <strong>API Requests by Company Name</strong> bar chart, an
+              <strong>ATU Total Company</strong> pie chart, and an <strong>API Requests by IntervalDate and
+                CustomerName</strong> line graph.</p>
+            <a href="../images/reports/api2.png" target="_blank">
+              <img src="../images/reports/api2.png">
+            </a>
+            <h2 id="report-filters">Report Filters</h2>
+            <p>The <strong>API Overview</strong> report offers the following report-wide filters:</p>
+            <ul>
+              <li><strong>Date</strong> - enables you to select only those calls that were made within a given date
+                range.</li>
+              <li><strong>Company Name</strong> - where applicable, enables you to select only those calls that were
+                made by a particular company within your group. You can select multiple companies if required.</li>
+            </ul>
+            <a href="../images/reports/api-left-filter2.png" target="_blank">
+              <img src="../images/reports/api-left-filter2.png">
+            </a>
+            <h2 id="api-requests-by-company-name">API Requests by Company Name</h2>
+            <p>The <strong>API Requests by Company Name</strong> chart shows how many requests each of your companies
+              has made.</p>
+            <a href="../images/reports/api-custname2.png" target="_blank">
+              <img src="../images/reports/api-custname2.png">
+            </a>
+            <h3 id="visual-filters">Visual Filters</h3>
+            <p>You can filter the companies displayed on the <strong>API Requests by Company Name</strong> visual as
+              follows:</p>
+            <ul>
+              <li><strong>API Requests</strong> (<a
+                  href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by
+                number of API requests made. For example, if you were to filter on <em>is greater than 5000000</em>,
+                then only those companies who had made more than 5,000,000 API requests would be displayed.</li>
+              <li><strong>Company Name</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a>
+                and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>) - enables you to select
+                one or more companies to view.</li>
+            </ul>
+            <h3 id="more-options">More Options</h3>
+            <p>The following options are available from the <strong>More Options</strong> menu:</p>
+            <ul>
+              <li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
+              <li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
+              <li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
+              <li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
+              <li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
+              <li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
+              <li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort by</a> CustomerName /
+                API Requests</li>
+            </ul>
+            <p>You can also view the records that the visual's data was generated from by right-clicking on it and
+              selecting <strong>View Records</strong> from the pop-up menu.</p>
+            <h3 id="viewing-data">Viewing Data</h3>
+            <a href="../images/reports/api-custname-data.png" target="_blank">
+              <img src="../images/reports/api-custname-data.png">
+            </a>
+            <p>The <strong>API Requests by Company Name</strong> chart's <strong>Show Data</strong> option displays the
+              number of API requests that each of your businesses has made.</p>
+            <h2 id="atu-total-company">ATU Total Company</h2>
+            <p>The <strong>ATU Total Company</strong> chart shows the proportion of your total ATU consumption that each
+              of your companies has incurred.</p>
+            <a href="../images/reports/api-atu.png" target="_blank">
+              <img src="../images/reports/api-atu.png">
+            </a>
+            <p>Hover your mouse pointer over the chart to view the ATUs used by each individual company.</p>
+            <a href="../images/reports/api-atu-highlight.png" target="_blank">
+              <img src="../images/reports/api-atu-highlight.png">
+            </a>
+            <h3 id="visual-filters-1">Visual Filters</h3>
+            <p>You can filter the companies displayed on the <strong>ATU Total Company</strong> visual as follows:</p>
+            <ul>
+              <li><strong>ATU Total</strong> (<a
+                  href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by
+                number of ATUs consumed. For example, if you were to filter on <em>is greater than 5000000</em>, then
+                only those companies who had consumed more than 5,000,000 ATUs would be displayed.</li>
+              <li><strong>Customer Name</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a>
+                and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>) - enables you to select
+                one or more companies to view.</li>
+            </ul>
+            <h3 id="more-options-1">More Options</h3>
+            <p>The following options are available from the <strong>More Options</strong> menu:</p>
+            <ul>
+              <li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
+              <li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
+              <li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
+              <li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
+              <li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Descending</a></li>
+              <li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort Ascending</a></li>
+              <li><a href="/reports/filters-options.html#sort-descending--ascending--sort-by">Sort by</a> CustomerName /
+                ATU Total</li>
+            </ul>
+            <p>You can also view the records that the visual's data was generated from by right-clicking on it and
+              selecting <strong>View Records</strong> from the pop-up menu.</p>
+            <h3 id="viewing-data-1">Viewing Data</h3>
+            <a href="../images/reports/api-atu-data.png" target="_blank">
+              <img src="../images/reports/api-atu-data.png">
+            </a>
+            <p>The <strong>ATU Total Company</strong> chart's <strong>Show Data</strong> option displays the ATUs
+              consumed by each of your businesses.</p>
+            <h2 id="api-requests-over-time-by-company">API Requests Over Time by Company</h2>
+            <p>The <strong>API Requests Over Time by Company</strong> chart shows how the total number of API requests
+              made by each of your companies has changed over time. Each line represents one of your companies.</p>
+            <a href="../images/reports/api-requests2.png" target="_blank">
+              <img src="../images/reports/api-requests2.png">
+            </a>
+            <p>Hover your mouse over the chart to view the total number of API requests made by each company for a given
+              <code>IntervalDate</code>.</p>
+            <a href="../images/reports/api-requests-highlight2.png" target="_blank">
+              <img src="../images/reports/api-requests-highlight2.png">
+            </a>
+            <h3 id="visual-filters-2">Visual Filters</h3>
+            <ul>
+              <li><strong>API Requests</strong> (<a
+                  href="/reports/filters-options.html#using-numerical-filters">Numerical</a>) - enables you to filter by
+                number of API requests made on a given day. For example, if you were to filter on <em>is greater than
+                  100000</em>, then any data points in which the company had made 100000 or fewer API requests on that
+                day would be ignored. In this example, the y-axis of the graph is effectively skewed so that it starts
+                at 100000 rather than 0.</li>
+              <li><strong>Company Name</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a>
+                and <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a> - enables you to select
+                one or more companies to view.</li>
+              <li><strong>Calendar Date</strong> (<a href="/reports/filters-options.html#using-basic-filters">Basic</a>,
+                <a href="/reports/filters-options.html#using-advanced-filters">Advanced</a>, and <a
+                  href="/reports/filters-options.html#using-relative-date-filters">Relative Date</a>) - enables you to
+                select specific dates or date ranges to view.</li>
+            </ul>
+            <h3 id="more-options-2">More Options</h3>
+            <p>The following options are available from the <strong>More Options</strong> menu:</p>
+            <ul>
+              <li><a href="/reports/filters-options.html#open-comments">Open Comments</a></li>
+              <li><a href="/reports/filters-options.html#export-data">Export Data</a></li>
+              <li><a href="/reports/filters-options.html#show-data">Show Data</a></li>
+              <li><a href="/reports/filters-options.html#spotlight">Spotlight</a></li>
+            </ul>
+            <h3 id="viewing-data-2">Viewing Data</h3>
+            <a href="../images/reports/api-requests-data.png" target="_blank">
+              <img src="../images/reports/api-requests-data.png">
+            </a>
+            <p>The <strong>API Requests Over Time by Company</strong> chart's <strong>Show Data</strong> option displays
+              the API requests made by each of your businesses, broken down by date.</p>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/flows/docfx_project/reports/api.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../styles/docfx.js"></script>
+  <script type="text/javascript" src="../styles/main.js"></script>
+</body>
+
 </html>

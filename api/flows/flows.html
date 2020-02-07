@@ -1,135 +1,163 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PRO Call Flows </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PRO Call Flows ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="pro-call-flows">PRO Call Flows</h1>
 
-<p>Ready to get started with SortedPRO? This guide explains some common use cases for PRO's APIs, helping you to see what PRO can do for your business.</p>
-<p>We will cover:</p>
-<ul>
-<li><p><strong>Creating and manifesting a consignment</strong></p>
-<p>The <strong><a href="/api/flows/classic_flow.html">Classic</a></strong> flow is a simple flow to create a consignment, allocate it to a carrier service using criteria of your choosing, retrieve delivery labels, and confirm the delivery with the carrier.</p>
-</li>
-<li><p><strong>Offering and using delivery options</strong></p>
-<p>The <strong><a href="/api/flows/consumer_options_flow.html">Consumer Options</a></strong> flow is used when you want to present delivery options to your customer at point of purchase. PRO creates and allocates consignments based on the options the customer selects.</p>
-</li>
-<li><p><strong>Offering and using pickup options</strong></p>
-<p>The <strong><a href="/api/flows/consumer_options_pickup_flow.html">Consumer Options Pickup</a></strong> flow is similar to the <strong>Consumer Options</strong> flow, but used when offering delivery to a pickup/drop-off (PUDO) location rather than home delivery.</p>
-</li>
-<li><p><strong>Creating a pack order flow from a PRO order</strong></p>
-<p>The <strong><a href="/api/flows/order_flex_flow.html">Order Flex</a></strong> flow is used when you can't guarantee that all parts of a customer's order will be picked, packed and dispatched from the same place at the same time. PRO can generate multiple consignments from a single customer order where required.</p>
-</li>
-<li><p><strong>Using delivery options to create a pack order flow</strong></p>
-<p>The <strong><a href="/api/flows/consumer_options_flex_flow.html">Consumer Options Flex</a></strong> flow is used when you can't guarantee that all parts of a customer's order will be picked, packed and dispatched from the same place at the same time, and you want to present delivery options to your customer at point of purchase.</p>
-</li>
-<li><p><strong>Obtaining and selecting delivery quotes</strong></p>
-<p>The <strong><a href="/api/flows/quotes_flow.html">Quotes</a></strong> flow is used to obtain a full list of potential delivery services for a consignment. It is often used to validate a consignment's detail or to enable a customer service operator to get manual quotes for a customer.</p>
-</li>
-</ul>
-<blockquote>
-<p><span class="note-header">Note:</span>
-This guide is intended as a primer for PRO. If you're already familiar with the basics of PRO, or you just need reference info for PRO's APIs, see the <a href="https://docs.electioapp.com/#/api">API reference</a>.</p>
-<p>Sample requests and responses are available in both <strong>JSON</strong> and <strong>XML</strong>. To switch between the two, use the tabs at the top of the right-hand panel.</p>
-</blockquote>
-</article>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>PRO Call Flows </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="PRO Call Flows ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
           </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/flows.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
               </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="pro-call-flows">PRO Call Flows</h1>
+
+            <p>Ready to get started with SortedPRO? This guide explains some common use cases for PRO's APIs, helping
+              you to see what PRO can do for your business.</p>
+            <p>We will cover:</p>
+            <ul>
+              <li>
+                <p><strong>Creating and manifesting a consignment</strong></p>
+                <p>The <strong><a href="/api/flows/classic_flow.html">Classic</a></strong> flow is a simple flow to
+                  create a consignment, allocate it to a carrier service using criteria of your choosing, retrieve
+                  delivery labels, and confirm the delivery with the carrier.</p>
+              </li>
+              <li>
+                <p><strong>Offering and using delivery options</strong></p>
+                <p>The <strong><a href="/api/flows/consumer_options_flow.html">Consumer Options</a></strong> flow is
+                  used when you want to present delivery options to your customer at point of purchase. PRO creates and
+                  allocates consignments based on the options the customer selects.</p>
+              </li>
+              <li>
+                <p><strong>Offering and using pickup options</strong></p>
+                <p>The <strong><a href="/api/flows/consumer_options_pickup_flow.html">Consumer Options
+                      Pickup</a></strong> flow is similar to the <strong>Consumer Options</strong> flow, but used when
+                  offering delivery to a pickup/drop-off (PUDO) location rather than home delivery.</p>
+              </li>
+              <li>
+                <p><strong>Creating a pack order flow from a PRO order</strong></p>
+                <p>The <strong><a href="/api/flows/order_flex_flow.html">Order Flex</a></strong> flow is used when you
+                  can't guarantee that all parts of a customer's order will be picked, packed and dispatched from the
+                  same place at the same time. PRO can generate multiple consignments from a single customer order where
+                  required.</p>
+              </li>
+              <li>
+                <p><strong>Using delivery options to create a pack order flow</strong></p>
+                <p>The <strong><a href="/api/flows/consumer_options_flex_flow.html">Consumer Options Flex</a></strong>
+                  flow is used when you can't guarantee that all parts of a customer's order will be picked, packed and
+                  dispatched from the same place at the same time, and you want to present delivery options to your
+                  customer at point of purchase.</p>
+              </li>
+              <li>
+                <p><strong>Obtaining and selecting delivery quotes</strong></p>
+                <p>The <strong><a href="/api/flows/quotes_flow.html">Quotes</a></strong> flow is used to obtain a full
+                  list of potential delivery services for a consignment. It is often used to validate a consignment's
+                  detail or to enable a customer service operator to get manual quotes for a customer.</p>
+              </li>
+            </ul>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                This guide is intended as a primer for PRO. If you're already familiar with the basics of PRO, or you
+                just need reference info for PRO's APIs, see the <a href="https://docs.electioapp.com/#/api">API
+                  reference</a>.</p>
+              <p>Sample requests and responses are available in both <strong>JSON</strong> and <strong>XML</strong>. To
+                switch between the two, use the tabs at the top of the right-hand panel.</p>
+            </blockquote>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/flows/flows.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>

@@ -1,85 +1,88 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Example </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Example ">
     <meta name="generator" content="docfx 2.43.3.0">
-    
+
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../../../styles/docfx.css">
     <link rel="stylesheet" href="../../../styles/main.css">
     <meta property="docfx:navrel" content="../../../toc.html">
     <meta property="docfx:tocrel" content="../../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
 
-<blockquote>
-<p>Get Quotes by Consignment Reference Endpoint</p>
-</blockquote>
-<pre><code>GET https://api.electioapp.com/quotes/consignment/{consignmentReference}
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+        <header>
+
+            <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../../../index.html">
+                            <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <form class="navbar-form navbar-right" role="search" id="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="search-query" placeholder="Search"
+                                    autocomplete="off">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+            <div class="subnav navbar navbar-default">
+                <div class="container hide-when-search" id="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div role="main" class="container body-content hide-when-search">
+
+            <div class="sidenav hide-when-search">
+                <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+                    aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+                <div class="sidetoggle collapse" id="sidetoggle">
+                    <div id="sidetoc"></div>
+                </div>
+            </div>
+            <div class="article row grid-right">
+                <div class="col-md-10">
+                    <article class="content wrap" id="_content" data-uid="">
+
+                        <blockquote>
+                            <p>Get Quotes by Consignment Reference Endpoint</p>
+                        </blockquote>
+                        <pre><code>GET https://api.electioapp.com/quotes/consignment/{consignmentReference}
 </code></pre>
-<blockquote>
-<p>Example Get Quotes by Consignment Reference Request</p>
-</blockquote>
-<pre><code>https://api.electioapp.com/quotes/consignment/EC-000-05B-1CM
+                        <blockquote>
+                            <p>Example Get Quotes by Consignment Reference Request</p>
+                        </blockquote>
+                        <pre><code>https://api.electioapp.com/quotes/consignment/EC-000-05B-1CM
 </code></pre>
-<blockquote>
-<p>Example Get Quotes by Consignment Reference Response</p>
-</blockquote>
-<pre><code class="lang-json">{
+                        <blockquote>
+                            <p>Example Get Quotes by Consignment Reference Response</p>
+                        </blockquote>
+                        <pre><code class="lang-json">{
     &quot;QuoteRequestReference&quot;: &quot;6f9c7ee5-a97e-4df9-bc07-aa3f00e99316&quot;,
     &quot;Quotes&quot;: [
         {
@@ -359,7 +362,7 @@
     ]
 }
 </code></pre>
-<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+                        <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;QuoteResult xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Quotes&quot;&gt;
     &lt;QuoteRequestReference&gt;ef3b878b-930e-4a8d-8990-aa70009c9ecb&lt;/QuoteRequestReference&gt;
     &lt;Quotes&gt;
@@ -590,50 +593,66 @@
     &lt;/UnqualifiedServices&gt;
 &lt;/QuoteResult&gt;
 </code></pre>
-<p>Once you've created your consignment, you'll need to use the <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong> endpoint to get some delivery quotes for it.</p>
-<p><strong>Get Quotes by Consignment Reference</strong> returns quotes based on the details of an existing consignment. Specifically, it takes a <code>{consignmentReference}</code> as a path parameter and returns an array of <code>{Quotes}</code> for that consignment, as well as a list of services that were unable to quote for the consignment.</p>
-<p>Each <code>{Quote}</code> object contains details on carrier service, dates, addresses, and price, amongst other information. Pay particular attention to the <code>{quoteReference}</code>, as you'll need this when you select a quote in the next step.</p>
-<aside class="note">
-  For full reference information on the <strong>Get Quotes by Consignment Reference</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes by Consignment Reference</a></strong> page of the API reference.
-</aside>
-<h3 id="example">Example</h3>
-<p>The example to the right shows a <strong>Get Quotes by Consignment Reference</strong> request and its accompanying response. In this case, SortedPRO has returned two quotes for the service. The next step in the process is to select one of those quotes.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_get_quotes_by_con_ref.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+                        <p>Once you've created your consignment, you'll need to use the <strong><a
+                                    href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes
+                                    by Consignment Reference</a></strong> endpoint to get some delivery quotes for it.
+                        </p>
+                        <p><strong>Get Quotes by Consignment Reference</strong> returns quotes based on the details of
+                            an existing consignment. Specifically, it takes a <code>{consignmentReference}</code> as a
+                            path parameter and returns an array of <code>{Quotes}</code> for that consignment, as well
+                            as a list of services that were unable to quote for the consignment.</p>
+                        <p>Each <code>{Quote}</code> object contains details on carrier service, dates, addresses, and
+                            price, amongst other information. Pay particular attention to the
+                            <code>{quoteReference}</code>, as you'll need this when you select a quote in the next step.
+                        </p>
+                        <aside class="note">
+                            For full reference information on the <strong>Get Quotes by Consignment Reference</strong>
+                            endpoint, see the <strong><a
+                                    href="https://docs.electioapp.com/#/api/GetQuotesbyConsignmentReference">Get Quotes
+                                    by Consignment Reference</a></strong> page of the API reference.
+                        </aside>
+                        <h3 id="example">Example</h3>
+                        <p>The example to the right shows a <strong>Get Quotes by Consignment Reference</strong> request
+                            and its accompanying response. In this case, SortedPRO has returned two quotes for the
+                            service. The next step in the process is to select one of those quotes.</p>
+                    </article>
+                </div>
+
+                <div class="hidden-sm col-md-2" role="complementary">
+                    <div class="sideaffix">
+                        <div class="contribution">
+                            <ul class="nav">
+                                <li>
+                                    <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/flows/includes/_get_quotes_by_con_ref.md/#L1"
+                                        class="contribution-link">Improve this Doc</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                            <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                        </nav>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
+
+        <footer>
+            <div class="grad-bottom"></div>
+            <div class="footer">
+                <div class="container">
+                    <span class="pull-right">
+                        <a href="#top">Back to top</a>
+                    </span>
+
+                    <span>Generated by <strong>DocFX</strong></span>
+                </div>
+            </div>
+        </footer>
     </div>
-    
+
     <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../../styles/docfx.js"></script>
     <script type="text/javascript" src="../../../styles/main.js"></script>
-  </body>
+</body>
+
 </html>

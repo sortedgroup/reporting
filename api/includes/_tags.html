@@ -1,141 +1,156 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Scenarios </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Scenarios ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
 
-<p>Allocation tags enable you to filter out carrier services that would not be suitable for a particular consignment. Tagged shipments can only be allocated to those carrier services that have a matching tag. You can still allocate untagged shipments to a carrier service that has tags.</p>
-<p>To associate tags with carrier services, use the <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/carrierservices/">Carrier Services</a> &gt; [select carrier service] &gt; Allocation Rules &gt; Allocation Filtering Tags</strong> panel of the SortedPRO UI.</p>
-<p>For example, a retailer might use the UI to add a <code>Flammables</code> tag to all the carrier services that they wanted to use for flammable products. They would then add the <code>Flammables</code> tag to all consignments containing flammable products. PRO would only allocate those consignments tagged as <code>Flammables</code> to a consignment in the pre-approved <code>Flammables</code> list.</p>
-<h3 id="scenarios">Scenarios</h3>
-<p>Suppose that you set your carrier services up in the following way:</p>
-<ul>
-<li>You tag Carrier Service A with <code>Alcohol</code></li>
-<li>You tag Carrier Service B with <code>Flammables</code></li>
-<li>You tag Carrier Service C with <code>Alcohol</code> and <code>Flammables</code></li>
-<li>You tag Carrier Service D with <code>Oil</code></li>
-<li>You don't add any tags to Carrier Service E</li>
-</ul>
-<p>This configuration would produce the following results:</p>
-<ul>
-<li><strong>Consignment with no tags</strong> - A B C D and E are returned</li>
-<li><strong>Consignment tagged with</strong> <code>Alcohol</code> - A and C are returned</li>
-<li><strong>Consignment tagged with</strong> <code>Flammables</code> - B and C are returned</li>
-<li><strong>Consignment tagged with</strong> <code>Alcohol</code> <strong>and</strong> <code>Flammables</code> - C is returned</li>
-<li><strong>Consignment tagged with</strong> <code>Alcohol</code><strong>,</strong> <code>Flammables</code><strong>, and</strong> <code>Oil</code> - No services are returned</li>
-</ul>
-<h3 id="example">Example</h3>
-<p>The example shows a <code>tags</code> property for a consignment that contains flammable materials, oil and alcohol.</p>
-<div class="tab">
-    <button class="staticTabButton">Example Tags array</button>
-    <div class="copybutton" onclick="CopyToClipboard('tagsExample')">Click to Copy</div>
-</div>
-<div id="tagsExample" class="staticTabContent" onclick="CopyToClipboard('tagsExample')">
-<pre><code class="lang-json">&quot;Tags&quot;: [
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Scenarios </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Scenarios ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+
+            <p>Allocation tags enable you to filter out carrier services that would not be suitable for a particular
+              consignment. Tagged shipments can only be allocated to those carrier services that have a matching tag.
+              You can still allocate untagged shipments to a carrier service that has tags.</p>
+            <p>To associate tags with carrier services, use the <strong>Settings &gt; <a
+                  href="https://www.electioapp.com/Configuration/carrierservices/">Carrier Services</a> &gt; [select
+                carrier service] &gt; Allocation Rules &gt; Allocation Filtering Tags</strong> panel of the SortedPRO
+              UI.</p>
+            <p>For example, a retailer might use the UI to add a <code>Flammables</code> tag to all the carrier services
+              that they wanted to use for flammable products. They would then add the <code>Flammables</code> tag to all
+              consignments containing flammable products. PRO would only allocate those consignments tagged as
+              <code>Flammables</code> to a consignment in the pre-approved <code>Flammables</code> list.</p>
+            <h3 id="scenarios">Scenarios</h3>
+            <p>Suppose that you set your carrier services up in the following way:</p>
+            <ul>
+              <li>You tag Carrier Service A with <code>Alcohol</code></li>
+              <li>You tag Carrier Service B with <code>Flammables</code></li>
+              <li>You tag Carrier Service C with <code>Alcohol</code> and <code>Flammables</code></li>
+              <li>You tag Carrier Service D with <code>Oil</code></li>
+              <li>You don't add any tags to Carrier Service E</li>
+            </ul>
+            <p>This configuration would produce the following results:</p>
+            <ul>
+              <li><strong>Consignment with no tags</strong> - A B C D and E are returned</li>
+              <li><strong>Consignment tagged with</strong> <code>Alcohol</code> - A and C are returned</li>
+              <li><strong>Consignment tagged with</strong> <code>Flammables</code> - B and C are returned</li>
+              <li><strong>Consignment tagged with</strong> <code>Alcohol</code> <strong>and</strong>
+                <code>Flammables</code> - C is returned</li>
+              <li><strong>Consignment tagged with</strong> <code>Alcohol</code><strong>,</strong>
+                <code>Flammables</code><strong>, and</strong> <code>Oil</code> - No services are returned</li>
+            </ul>
+            <h3 id="example">Example</h3>
+            <p>The example shows a <code>tags</code> property for a consignment that contains flammable materials, oil
+              and alcohol.</p>
+            <div class="tab">
+              <button class="staticTabButton">Example Tags array</button>
+              <div class="copybutton" onclick="CopyToClipboard('tagsExample')">Click to Copy</div>
+            </div>
+            <div id="tagsExample" class="staticTabContent" onclick="CopyToClipboard('tagsExample')">
+              <pre><code class="lang-json">&quot;Tags&quot;: [
    &quot;Flammables&quot;,
    &quot;Oil&quot;,
    &quot;Alcohol&quot;
 ]
 </code></pre>
-</div>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/includes/_tags.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
             </div>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/includes/_tags.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
+            </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>

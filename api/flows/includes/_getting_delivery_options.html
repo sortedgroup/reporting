@@ -1,80 +1,82 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Example </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Example ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../../favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
 
-<blockquote>
-<p>Delivery Options Endpoint</p>
-</blockquote>
-<pre><code>POST https://api.electioapp.com/deliveryoptions
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Example </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Example ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../../styles/docfx.css">
+  <link rel="stylesheet" href="../../../styles/main.css">
+  <meta property="docfx:navrel" content="../../../toc.html">
+  <meta property="docfx:tocrel" content="../../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../index.html">
+              <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+
+            <blockquote>
+              <p>Delivery Options Endpoint</p>
+            </blockquote>
+            <pre><code>POST https://api.electioapp.com/deliveryoptions
 </code></pre>
-<blockquote>
-<p>Example Delivery Options Request</p>
-</blockquote>
-<pre><code class="lang-json">{  
+            <blockquote>
+              <p>Example Delivery Options Request</p>
+            </blockquote>
+            <pre><code class="lang-json">{  
   &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;Your Reference&quot;,
   &quot;DeliveryDate&quot;: &quot;2019-06-19T00:00:00+00:00&quot;,
   &quot;GuaranteedOnly&quot;: false,
@@ -228,7 +230,7 @@
   &quot;Direction&quot;: &quot;Outbound&quot;
 }
 </code></pre>
-<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;DeliveryOptionsRequest xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.DeliveryOptions&quot;&gt;
   &lt;ShippingDate xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Consignments&quot;&gt;2019-06-17T00:00:00+00:00&lt;/ShippingDate&gt;
   &lt;Packages xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Consignments&quot;&gt;
@@ -406,10 +408,10 @@
   &lt;GuaranteedOnly&gt;false&lt;/GuaranteedOnly&gt;
 &lt;/DeliveryOptionsRequest&gt;
 </code></pre>
-<blockquote>
-<p>Example Delivery Options Response</p>
-</blockquote>
-<pre><code class="lang-json">{
+            <blockquote>
+              <p>Example Delivery Options Response</p>
+            </blockquote>
+            <pre><code class="lang-json">{
     &quot;DeliveryOptions&quot;: [
         {
             &quot;Reference&quot;: &quot;EDO-000-6DX-6XP&quot;,
@@ -488,7 +490,7 @@
     ]
 }    
 </code></pre>
-<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+            <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;DeliveryOptionsResponse xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.DeliveryOptions&quot;&gt;
     &lt;DeliveryOptions&gt;
         &lt;DeliveryOption&gt;
@@ -566,83 +568,119 @@
     &lt;/DeliveryOptions&gt;
 &lt;/DeliveryOptionsResponse&gt;
 </code></pre>
-<aside class="info">
-  In the context of SortedPRO, a "delivery option" refers to a combination of a carrier service, delivery date and time window.
-<p>For example, suppose that you use the <strong>Delivery Options</strong> endpoint to request delivery options for a particular consignment, and the response indicates the following:</p>
-<ul>
-<li>Carrier X could deliver the consignment between 9 and 5 on Monday.</li>
-<li>Carrier Y could deliver the consignment on Monday between 9 and 12 or Tuesday between 9 and 12</li>
-<li>Carrier Z could deliver the consignment on Monday between 9 and 1 or Monday between 1 and 5</li>
-</ul>
-<p>In this case, there are five available delivery options: one for Carrier X and two each for Carriers Y and Z.</p>
-</aside> 
-<p>The <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> endpoint takes the details of an as-yet-nonexistent consignment and returns a single available carrier service for each delivery option. PRO always returns the cheapest carrier service for each option, unless using the cheapest service would conflict with existing business rules. This data can be used to offer delivery promise choices (such as dates and timeslots) to your customer.</p>
-<p>At a minimum, PRO requires you to send package, origin address and destination address data in order to return delivery options. However, there are lots of other properties you can send when getting delivery options, including:</p>
-<ul>
-<li>Your own consignment reference.</li>
-<li>The consignment's source.</li>
-<li>Shipping and delivery dates.</li>
-<li>Customs documentation.</li>
-<li>The consignment's direction of travel.</li>
-<li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For more information on using metadata in PRO, see the <strong><a href="#metadata">Metadata</a></strong> section.</li>
-<li>Tags. Allocation tags enable you to filter the list carrier services that a particular consignment could be allocated to. For more information on allocation tags, see the <strong><a href="#tags">Tags</a></strong> section.</li>
-</ul>
-<p>Providing extra information can help you to improve the relevance of the options returned.</p>
-<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your organisation's shipping locations, see the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page of the API reference.</p>
-<p>The <strong>Delivery Options</strong> endpoint returns an array of <code>{DeliveryOptions}</code> objects. Each <code>{DeliveryOptions}</code> object contains details of a particular delivery option that is available to take a consignment with the details you passed in the request, including:</p>
-<ul>
-<li><strong>Reference</strong> - A unique identifier for the delivery option, used when selecting delivery options in the next step.</li>
-<li><strong>Dates and Delivery Windows</strong></li>
-<li><strong>Carrier Service</strong></li>
-<li><strong>Price (cost)</strong></li>
-<li><strong>Allocation Cutoff</strong> - The option's expiry time. If the option is not used by this time, it is rendered invalid. This value is usually set by the carrier, but can be configured manually via the <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/ShippingLocations">Shipping Locations</a> &gt; [Select Location] &gt; Collection Calendar</strong> page of the PRO UI.</li>
-<li><strong>Operational Cutoff</strong> - 	The operational cut off date as specified by the fulfilling shipping location.</li>
-<li><strong>Service Direction</strong></li>
-</ul>
-<aside class="note">
-  For full reference information on the <strong>Delivery Options</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> page of the API reference.
-</aside>
-<h3 id="example">Example</h3>
-<p>The example to the right shows a request to get delivery options for a fairly standard consignment. The API has returned two delivery options, both for Carrier X: one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-19</em> and one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-20</em>.</p>
-<p>Both of these options have a time window starting at 00:00 and ending at 23:59. In practice, the carrier is offering to make the delivery at some point on either the 19th or 20th of June (as selected by the customer), but isn't offering a more specific timeslot on that service.</p>
-<p>Note the <code>{Reference}</code> for each delivery option. When the customer selects their preferred delivery option you will need to pass the relevant <code>{Reference}</code> back to PRO via the <strong>Select Option</strong> endpoint.</p>
-<p>At this point, you would present some or all of the options returned to your customer via your site or app. In the next step, we'll see how to handle the choice the customer makes.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_getting_delivery_options.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            <aside class="info">
+              In the context of SortedPRO, a "delivery option" refers to a combination of a carrier service, delivery
+              date and time window.
+              <p>For example, suppose that you use the <strong>Delivery Options</strong> endpoint to request delivery
+                options for a particular consignment, and the response indicates the following:</p>
+              <ul>
+                <li>Carrier X could deliver the consignment between 9 and 5 on Monday.</li>
+                <li>Carrier Y could deliver the consignment on Monday between 9 and 12 or Tuesday between 9 and 12</li>
+                <li>Carrier Z could deliver the consignment on Monday between 9 and 1 or Monday between 1 and 5</li>
+              </ul>
+              <p>In this case, there are five available delivery options: one for Carrier X and two each for Carriers Y
+                and Z.</p>
+            </aside>
+            <p>The <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong>
+              endpoint takes the details of an as-yet-nonexistent consignment and returns a single available carrier
+              service for each delivery option. PRO always returns the cheapest carrier service for each option, unless
+              using the cheapest service would conflict with existing business rules. This data can be used to offer
+              delivery promise choices (such as dates and timeslots) to your customer.</p>
+            <p>At a minimum, PRO requires you to send package, origin address and destination address data in order to
+              return delivery options. However, there are lots of other properties you can send when getting delivery
+              options, including:</p>
+            <ul>
+              <li>Your own consignment reference.</li>
+              <li>The consignment's source.</li>
+              <li>Shipping and delivery dates.</li>
+              <li>Customs documentation.</li>
+              <li>The consignment's direction of travel.</li>
+              <li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For
+                more information on using metadata in PRO, see the <strong><a href="#metadata">Metadata</a></strong>
+                section.</li>
+              <li>Tags. Allocation tags enable you to filter the list carrier services that a particular consignment
+                could be allocated to. For more information on allocation tags, see the <strong><a
+                    href="#tags">Tags</a></strong> section.</li>
+            </ul>
+            <p>Providing extra information can help you to improve the relevance of the options returned.</p>
+            <p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must
+              include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your
+              organisation's shipping locations, see the <strong><a
+                  href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page
+              of the API reference.</p>
+            <p>The <strong>Delivery Options</strong> endpoint returns an array of <code>{DeliveryOptions}</code>
+              objects. Each <code>{DeliveryOptions}</code> object contains details of a particular delivery option that
+              is available to take a consignment with the details you passed in the request, including:</p>
+            <ul>
+              <li><strong>Reference</strong> - A unique identifier for the delivery option, used when selecting delivery
+                options in the next step.</li>
+              <li><strong>Dates and Delivery Windows</strong></li>
+              <li><strong>Carrier Service</strong></li>
+              <li><strong>Price (cost)</strong></li>
+              <li><strong>Allocation Cutoff</strong> - The option's expiry time. If the option is not used by this time,
+                it is rendered invalid. This value is usually set by the carrier, but can be configured manually via the
+                <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/ShippingLocations">Shipping
+                    Locations</a> &gt; [Select Location] &gt; Collection Calendar</strong> page of the PRO UI.</li>
+              <li><strong>Operational Cutoff</strong> - The operational cut off date as specified by the fulfilling
+                shipping location.</li>
+              <li><strong>Service Direction</strong></li>
+            </ul>
+            <aside class="note">
+              For full reference information on the <strong>Delivery Options</strong> endpoint, see the <strong><a
+                  href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> page of the API
+              reference.
+            </aside>
+            <h3 id="example">Example</h3>
+            <p>The example to the right shows a request to get delivery options for a fairly standard consignment. The
+              API has returned two delivery options, both for Carrier X: one with an
+              <code>{estimatedDeliveryDate}</code> of <em>2019-06-19</em> and one with an
+              <code>{estimatedDeliveryDate}</code> of <em>2019-06-20</em>.</p>
+            <p>Both of these options have a time window starting at 00:00 and ending at 23:59. In practice, the carrier
+              is offering to make the delivery at some point on either the 19th or 20th of June (as selected by the
+              customer), but isn't offering a more specific timeslot on that service.</p>
+            <p>Note the <code>{Reference}</code> for each delivery option. When the customer selects their preferred
+              delivery option you will need to pass the relevant <code>{Reference}</code> back to PRO via the
+              <strong>Select Option</strong> endpoint.</p>
+            <p>At this point, you would present some or all of the options returned to your customer via your site or
+              app. In the next step, we'll see how to handle the choice the customer makes.</p>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/flows/includes/_getting_delivery_options.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../../styles/main.js"></script>
+</body>
+
 </html>

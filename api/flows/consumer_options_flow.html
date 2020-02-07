@@ -1,148 +1,194 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Consumer Options Flow </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Consumer Options Flow ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="consumer-options-flow">Consumer Options Flow</h1>
 
-<p>
-   <a href="../../images/Flow2.png" target="_blank">
-      <img src="../../images/Flow2.png" class="noborder">
-   </a>
-</p>
-<p>The <strong>Consumer Options</strong> flow enables you to provide real-time delivery choices - including delivery date, time, and carrier brand - to your customer at point of purchase. After the customer has chosen their preferred option, PRO can create a consignment based on their details, and allocate that consignment to a carrier service based on the customers choice.</p>
-<p>The <strong>Consumer Options</strong> flow is most useful to your business if:</p>
-<ul>
-<li>You want to present your customer with a dynamic checkout that offers delivery timeslot options.</li>
-<li>You operate a single warehouse / fulfilment centre.</li>
-<li>You develop and configure your own e-commerce platform.</li>
-</ul>
-<p>There are four steps to the flow:</p>
-<ol>
-<li><strong>Get delivery options</strong> - Use the <a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a> endpoint to request a list of available delivery options for the (as yet uncreated) consignment that the customer's order will generate.</li>
-<li><strong>Select delivery option</strong> - Use the <a href="https://docs.electioapp.com/#/api/SelectOption">Select Option</a> endpoint to tell PRO which option the customer selected. At this point, PRO has all the information it needs to create and allocate a consignment.</li>
-<li><strong>Get the consignment's labels</strong> - Use the <a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a> endpoint to get the delivery label for your consignment.</li>
-<li><strong>Manifest the consignment</strong> - Use the <a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments from Query</a> endpoint to confirm the consignment with the selected carrier. At this point, the consignment is ready to ship.</li>
-</ol>
-<p>This section gives more detail on each step of the flow and provides worked examples.</p>
-<hr>
-<h2 id="step-1-getting-delivery-options">Step 1: Getting Delivery Options</h2>
-<div class="tab">
-    <button class="staticTabButton">Delivery Options Endpoint</button>
-    <div class="copybutton" onclick="CopyToClipboard('DelOptionsEndpoint')">Click to Copy</div>
-</div>
-<div id="DelOptionsEndpoint" class="staticTabContent" onclick="CopyToClipboard('DelOptionsEndpoint')">
-<pre><code>POST https://api.electioapp.com/deliveryoptions
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Consumer Options Flow </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Consumer Options Flow ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="consumer-options-flow">Consumer Options Flow</h1>
+
+            <p>
+              <a href="../../images/Flow2.png" target="_blank">
+                <img src="../../images/Flow2.png" class="noborder">
+              </a>
+            </p>
+            <p>The <strong>Consumer Options</strong> flow enables you to provide real-time delivery choices - including
+              delivery date, time, and carrier brand - to your customer at point of purchase. After the customer has
+              chosen their preferred option, PRO can create a consignment based on their details, and allocate that
+              consignment to a carrier service based on the customers choice.</p>
+            <p>The <strong>Consumer Options</strong> flow is most useful to your business if:</p>
+            <ul>
+              <li>You want to present your customer with a dynamic checkout that offers delivery timeslot options.</li>
+              <li>You operate a single warehouse / fulfilment centre.</li>
+              <li>You develop and configure your own e-commerce platform.</li>
+            </ul>
+            <p>There are four steps to the flow:</p>
+            <ol>
+              <li><strong>Get delivery options</strong> - Use the <a
+                  href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a> endpoint to request a
+                list of available delivery options for the (as yet uncreated) consignment that the customer's order will
+                generate.</li>
+              <li><strong>Select delivery option</strong> - Use the <a
+                  href="https://docs.electioapp.com/#/api/SelectOption">Select Option</a> endpoint to tell PRO which
+                option the customer selected. At this point, PRO has all the information it needs to create and allocate
+                a consignment.</li>
+              <li><strong>Get the consignment's labels</strong> - Use the <a
+                  href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a> endpoint to get
+                the delivery label for your consignment.</li>
+              <li><strong>Manifest the consignment</strong> - Use the <a
+                  href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments from
+                  Query</a> endpoint to confirm the consignment with the selected carrier. At this point, the
+                consignment is ready to ship.</li>
+            </ol>
+            <p>This section gives more detail on each step of the flow and provides worked examples.</p>
+            <hr>
+            <h2 id="step-1-getting-delivery-options">Step 1: Getting Delivery Options</h2>
+            <div class="tab">
+              <button class="staticTabButton">Delivery Options Endpoint</button>
+              <div class="copybutton" onclick="CopyToClipboard('DelOptionsEndpoint')">Click to Copy</div>
+            </div>
+            <div id="DelOptionsEndpoint" class="staticTabContent" onclick="CopyToClipboard('DelOptionsEndpoint')">
+              <pre><code>POST https://api.electioapp.com/deliveryoptions
 </code></pre>
-</div>  
-<p>The <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> endpoint takes the details of an as-yet-nonexistent consignment and returns a single available carrier service for each delivery option. PRO always returns the cheapest carrier service for each option, unless using the cheapest service would conflict with existing business rules. This data can be used to offer delivery promise choices (such as dates and timeslots) to your customer.</p>
-<blockquote>
-<p><span class="note-header">Note:</span>
-In the context of SortedPRO, a &quot;delivery option&quot; refers to a combination of a carrier service, delivery date and time window.</p>
-<p>For example, suppose that you use the <strong>Delivery Options</strong> endpoint to request delivery options for a particular consignment, and the response indicates the following:</p>
-<ul>
-<li>Carrier X could deliver the consignment between 9 and 5 on Monday.</li>
-<li>Carrier Y could deliver the consignment on Monday between 9 and 12 or Tuesday between 9 and 12</li>
-<li>Carrier Z could deliver the consignment on Monday between 9 and 1 or Monday between 1 and 5</li>
-</ul>
-<p>In this case, there are five available delivery options: one for Carrier X and two each for Carriers Y and Z.</p>
-</blockquote>
-<p>At a minimum, PRO requires you to send package, origin address and destination address data in order to return delivery options. However, there are lots of other properties you can send when getting delivery options, including:</p>
-<ul>
-<li>Your own consignment reference.</li>
-<li>The consignment's source.</li>
-<li>Shipping and delivery dates.</li>
-<li>Customs documentation.</li>
-<li>The consignment's direction of travel.</li>
-<li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For more information on using metadata in PRO, see the <strong><a href="/api/flows/moreInfo.html#metadata">Metadata</a></strong> section of the <strong>More Information</strong> page.</li>
-<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment could be allocated to. For more information on allocation tags, see the <strong><a href="/api/flows/moreInfo.html#tags">Tags</a></strong> section of the <strong>More Information</strong> page.</li>
-</ul>
-<p>Providing extra information can help you to improve the relevance of the options returned.</p>
-<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your organisation's shipping locations, see the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page of the API reference.</p>
-<p>The <strong>Delivery Options</strong> endpoint returns an array of <code>{DeliveryOptions}</code> objects. Each <code>{DeliveryOptions}</code> object contains details of a particular delivery option that is available to take a consignment with the details you passed in the request, including:</p>
-<ul>
-<li><strong>Reference</strong> - A unique identifier for the delivery option, used when selecting delivery options in the next step.</li>
-<li><strong>Dates and Delivery Windows</strong></li>
-<li><strong>Carrier Service</strong></li>
-<li><strong>Price (cost)</strong></li>
-<li><strong>Allocation Cutoff</strong> - The option's expiry time. If the option is not used by this time, it is rendered invalid. This value is usually set by the carrier, but can be configured manually via the <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/ShippingLocations">Shipping Locations</a> &gt; [Select Location] &gt; Collection Calendar</strong> page of the PRO UI.</li>
-<li><strong>Operational Cutoff</strong> - 	The operational cut off date as specified by the fulfilling shipping location.</li>
-<li><strong>Service Direction</strong></li>
-</ul>
-<blockquote>
-<p><span class="note-header">Note:</span>
-For full reference information on the <strong>Delivery Options</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> page of the API reference.</p>
-</blockquote>
-<h3 id="get-delivery-options-example">Get Delivery Options Example</h3>
-<p>The example shows a request to get delivery options for a fairly standard consignment. The API has returned two delivery options, both for Carrier X: one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-19</em> and one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-20</em>.</p>
-<div class="tab">
-    <button class="staticTabButton">Example Delivery Options Request</button>
-    <div class="copybutton" onclick="CopyToClipboard('DelOptionsRequest')">Click to Copy</div>
-</div>
-<div id="DelOptionsRequest" class="staticTabContent" onclick="CopyToClipboard('DelOptionsRequest')">
-<pre><code class="lang-json">{  
+            </div>
+            <p>The <strong><a href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong>
+              endpoint takes the details of an as-yet-nonexistent consignment and returns a single available carrier
+              service for each delivery option. PRO always returns the cheapest carrier service for each option, unless
+              using the cheapest service would conflict with existing business rules. This data can be used to offer
+              delivery promise choices (such as dates and timeslots) to your customer.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                In the context of SortedPRO, a &quot;delivery option&quot; refers to a combination of a carrier service,
+                delivery date and time window.</p>
+              <p>For example, suppose that you use the <strong>Delivery Options</strong> endpoint to request delivery
+                options for a particular consignment, and the response indicates the following:</p>
+              <ul>
+                <li>Carrier X could deliver the consignment between 9 and 5 on Monday.</li>
+                <li>Carrier Y could deliver the consignment on Monday between 9 and 12 or Tuesday between 9 and 12</li>
+                <li>Carrier Z could deliver the consignment on Monday between 9 and 1 or Monday between 1 and 5</li>
+              </ul>
+              <p>In this case, there are five available delivery options: one for Carrier X and two each for Carriers Y
+                and Z.</p>
+            </blockquote>
+            <p>At a minimum, PRO requires you to send package, origin address and destination address data in order to
+              return delivery options. However, there are lots of other properties you can send when getting delivery
+              options, including:</p>
+            <ul>
+              <li>Your own consignment reference.</li>
+              <li>The consignment's source.</li>
+              <li>Shipping and delivery dates.</li>
+              <li>Customs documentation.</li>
+              <li>The consignment's direction of travel.</li>
+              <li>Metadata. PRO metadata enables you to record additional data about a consignment in custom fields. For
+                more information on using metadata in PRO, see the <strong><a
+                    href="/api/flows/moreInfo.html#metadata">Metadata</a></strong> section of the <strong>More
+                  Information</strong> page.</li>
+              <li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment
+                could be allocated to. For more information on allocation tags, see the <strong><a
+                    href="/api/flows/moreInfo.html#tags">Tags</a></strong> section of the <strong>More
+                  Information</strong> page.</li>
+            </ul>
+            <p>Providing extra information can help you to improve the relevance of the options returned.</p>
+            <p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must
+              include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your
+              organisation's shipping locations, see the <strong><a
+                  href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page
+              of the API reference.</p>
+            <p>The <strong>Delivery Options</strong> endpoint returns an array of <code>{DeliveryOptions}</code>
+              objects. Each <code>{DeliveryOptions}</code> object contains details of a particular delivery option that
+              is available to take a consignment with the details you passed in the request, including:</p>
+            <ul>
+              <li><strong>Reference</strong> - A unique identifier for the delivery option, used when selecting delivery
+                options in the next step.</li>
+              <li><strong>Dates and Delivery Windows</strong></li>
+              <li><strong>Carrier Service</strong></li>
+              <li><strong>Price (cost)</strong></li>
+              <li><strong>Allocation Cutoff</strong> - The option's expiry time. If the option is not used by this time,
+                it is rendered invalid. This value is usually set by the carrier, but can be configured manually via the
+                <strong>Settings &gt; <a href="https://www.electioapp.com/Configuration/ShippingLocations">Shipping
+                    Locations</a> &gt; [Select Location] &gt; Collection Calendar</strong> page of the PRO UI.</li>
+              <li><strong>Operational Cutoff</strong> - The operational cut off date as specified by the fulfilling
+                shipping location.</li>
+              <li><strong>Service Direction</strong></li>
+            </ul>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                For full reference information on the <strong>Delivery Options</strong> endpoint, see the <strong><a
+                    href="https://docs.electioapp.com/#/api/DeliveryOptions">Delivery Options</a></strong> page of the
+                API reference.</p>
+            </blockquote>
+            <h3 id="get-delivery-options-example">Get Delivery Options Example</h3>
+            <p>The example shows a request to get delivery options for a fairly standard consignment. The API has
+              returned two delivery options, both for Carrier X: one with an <code>{estimatedDeliveryDate}</code> of
+              <em>2019-06-19</em> and one with an <code>{estimatedDeliveryDate}</code> of <em>2019-06-20</em>.</p>
+            <div class="tab">
+              <button class="staticTabButton">Example Delivery Options Request</button>
+              <div class="copybutton" onclick="CopyToClipboard('DelOptionsRequest')">Click to Copy</div>
+            </div>
+            <div id="DelOptionsRequest" class="staticTabContent" onclick="CopyToClipboard('DelOptionsRequest')">
+              <pre><code class="lang-json">{  
   &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;Your Reference&quot;,
   &quot;DeliveryDate&quot;: &quot;2019-06-19T00:00:00+00:00&quot;,
   &quot;GuaranteedOnly&quot;: false,
@@ -296,13 +342,13 @@ For full reference information on the <strong>Delivery Options</strong> endpoint
   &quot;Direction&quot;: &quot;Outbound&quot;
 }
 </code></pre>
-</div>
-<div class="tab">
-    <button class="staticTabButton">Example Delivery Options Response</button>
-    <div class="copybutton" onclick="CopyToClipboard('DelOptionsResponse')">Click to Copy</div>
-</div>
-<div id="DelOptionsResponse" class="staticTabContent" onclick="CopyToClipboard('DelOptionsResponse')">
-<pre><code class="lang-json">{
+            </div>
+            <div class="tab">
+              <button class="staticTabButton">Example Delivery Options Response</button>
+              <div class="copybutton" onclick="CopyToClipboard('DelOptionsResponse')">Click to Copy</div>
+            </div>
+            <div id="DelOptionsResponse" class="staticTabContent" onclick="CopyToClipboard('DelOptionsResponse')">
+              <pre><code class="lang-json">{
     &quot;DeliveryOptions&quot;: [
         {
             &quot;Reference&quot;: &quot;EDO-000-6DX-6XP&quot;,
@@ -381,43 +427,64 @@ For full reference information on the <strong>Delivery Options</strong> endpoint
     ]
 }    
 </code></pre>
-</div>  
-<p>Both of these options have a time window starting at 00:00 and ending at 23:59. In practice, the carrier is offering to make the delivery at some point on either the 19th or 20th of June (as selected by the customer), but isn't offering a more specific timeslot on that service.</p>
-<p>Note the <code>{Reference}</code> for each delivery option. When the customer selects their preferred delivery option you will need to pass the relevant <code>{Reference}</code> back to PRO via the <strong>Select Option</strong> endpoint.</p>
-<p>At this point, you would present some or all of the options returned to your customer via your site or app. In the next step, we'll see how to handle the choice the customer makes.</p>
-<hr>
-<h2 id="step-2-selecting-a-delivery-option">Step 2: Selecting a Delivery Option</h2>
-<div class="tab">
-    <button class="staticTabButton">Select Option Endpoint</button>
-    <div class="copybutton" onclick="CopyToClipboard('selectOptionEndpoint')">Click to Copy</div>
-</div>
-<div id="selectOptionEndpoint" class="staticTabContent" onclick="CopyToClipboard('selectOptionEndpoint')">
-<pre><code>POST https://api.electioapp.com/deliveryoptions/select/{deliveryOptionReference}
+            </div>
+            <p>Both of these options have a time window starting at 00:00 and ending at 23:59. In practice, the carrier
+              is offering to make the delivery at some point on either the 19th or 20th of June (as selected by the
+              customer), but isn't offering a more specific timeslot on that service.</p>
+            <p>Note the <code>{Reference}</code> for each delivery option. When the customer selects their preferred
+              delivery option you will need to pass the relevant <code>{Reference}</code> back to PRO via the
+              <strong>Select Option</strong> endpoint.</p>
+            <p>At this point, you would present some or all of the options returned to your customer via your site or
+              app. In the next step, we'll see how to handle the choice the customer makes.</p>
+            <hr>
+            <h2 id="step-2-selecting-a-delivery-option">Step 2: Selecting a Delivery Option</h2>
+            <div class="tab">
+              <button class="staticTabButton">Select Option Endpoint</button>
+              <div class="copybutton" onclick="CopyToClipboard('selectOptionEndpoint')">Click to Copy</div>
+            </div>
+            <div id="selectOptionEndpoint" class="staticTabContent" onclick="CopyToClipboard('selectOptionEndpoint')">
+              <pre><code>POST https://api.electioapp.com/deliveryoptions/select/{deliveryOptionReference}
 </code></pre>
-</div>  
-<p>Once the customer has selected an available option, you'll need to record their choice in SortedPRO via the <strong><a href="https://docs.electioapp.com/#/api/SelectOption">Select Option</a></strong> endpoint. The <strong>Select Option</strong> endpoint takes the <code>{deliveryOptionReference}</code> of the selected option as a path parameter.</p>
-<p>Once it has received the selected <code>{deliveryOptionReference}</code>, PRO has all the information it needs to create and allocate a consignment. The consignment details were passed as part of the original request to get delivery options, and the <code>{deliveryOptionReference}</code> passed to the <strong>Select Option</strong> endpoint confirms the required delivery promise.</p>
-<p>PRO creates and allocates a consignment with the selected details, and returns links to the consignment resource that was allocated, a summary of the carrier service that the consignment was allocated to, a link to the relevant package labels, and a <code>ConsignmentLegs</code> array indicating how many legs the shipment will need. Where a shipment would need multiple legs to complete, the <code>ConsignmentLegs</code> array shows tracking details for each individual leg.</p>
-<blockquote>
-<p><span class="note-header">Note:</span>
-For full reference information on the <strong>Select Option</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/SelectOption">Select Option</a></strong> page of the API reference.</p>
-</blockquote>
-<h3 id="select-option-example">Select Option Example</h3>
-<p>The example shows a request to select a delivery option that has a <code>{deliveryOptionReference}</code> of <em>EDO-000-6DX-6XP</em>. PRO creates a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMQ</em>, which it then  allocates to the carrier service associated with delivery option <em>EDO-000-6DX-6XP</em>. PRO then returns the relevant <code>{consignmentReference}</code> and label link, enabling you to get labels for and manifest the consignment.</p>
-<div class="tab">
-    <button class="staticTabButton">Example Select Option Request</button>
-    <div class="copybutton" onclick="CopyToClipboard('selectOptionRequest')">Click to Copy</div>
-</div>
-<div id="selectOptionRequest" class="staticTabContent" onclick="CopyToClipboard('selectOptionRequest')">
-<pre><code>POST https://api.electioapp.com/deliveryoptions/select/EDO-000-6DX-6XP
+            </div>
+            <p>Once the customer has selected an available option, you'll need to record their choice in SortedPRO via
+              the <strong><a href="https://docs.electioapp.com/#/api/SelectOption">Select Option</a></strong> endpoint.
+              The <strong>Select Option</strong> endpoint takes the <code>{deliveryOptionReference}</code> of the
+              selected option as a path parameter.</p>
+            <p>Once it has received the selected <code>{deliveryOptionReference}</code>, PRO has all the information it
+              needs to create and allocate a consignment. The consignment details were passed as part of the original
+              request to get delivery options, and the <code>{deliveryOptionReference}</code> passed to the
+              <strong>Select Option</strong> endpoint confirms the required delivery promise.</p>
+            <p>PRO creates and allocates a consignment with the selected details, and returns links to the consignment
+              resource that was allocated, a summary of the carrier service that the consignment was allocated to, a
+              link to the relevant package labels, and a <code>ConsignmentLegs</code> array indicating how many legs the
+              shipment will need. Where a shipment would need multiple legs to complete, the
+              <code>ConsignmentLegs</code> array shows tracking details for each individual leg.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                For full reference information on the <strong>Select Option</strong> endpoint, see the <strong><a
+                    href="https://docs.electioapp.com/#/api/SelectOption">Select Option</a></strong> page of the API
+                reference.</p>
+            </blockquote>
+            <h3 id="select-option-example">Select Option Example</h3>
+            <p>The example shows a request to select a delivery option that has a <code>{deliveryOptionReference}</code>
+              of <em>EDO-000-6DX-6XP</em>. PRO creates a consignment with a <code>{consignmentReference}</code> of
+              <em>EC-000-05B-MMQ</em>, which it then allocates to the carrier service associated with delivery option
+              <em>EDO-000-6DX-6XP</em>. PRO then returns the relevant <code>{consignmentReference}</code> and label
+              link, enabling you to get labels for and manifest the consignment.</p>
+            <div class="tab">
+              <button class="staticTabButton">Example Select Option Request</button>
+              <div class="copybutton" onclick="CopyToClipboard('selectOptionRequest')">Click to Copy</div>
+            </div>
+            <div id="selectOptionRequest" class="staticTabContent" onclick="CopyToClipboard('selectOptionRequest')">
+              <pre><code>POST https://api.electioapp.com/deliveryoptions/select/EDO-000-6DX-6XP
 </code></pre>
-</div>   
-<div class="tab">
-    <button class="staticTabButton">Example Select Option Response</button>
-    <div class="copybutton" onclick="CopyToClipboard('selectOptionResponse')">Click to Copy</div>
-</div>
-<div id="selectOptionResponse" class="staticTabContent" onclick="CopyToClipboard('selectOptionResponse')">
-<pre><code class="lang-json">{
+            </div>
+            <div class="tab">
+              <button class="staticTabButton">Example Select Option Response</button>
+              <div class="copybutton" onclick="CopyToClipboard('selectOptionResponse')">Click to Copy</div>
+            </div>
+            <div id="selectOptionResponse" class="staticTabContent" onclick="CopyToClipboard('selectOptionResponse')">
+              <pre><code class="lang-json">{
     &quot;StatusCode&quot;: 200,
     &quot;ApiLinks&quot;: [
         {
@@ -447,83 +514,118 @@ For full reference information on the <strong>Select Option</strong> endpoint, s
     &quot;CarrierServiceName&quot;: &quot;Tracked 48 Signed For&quot;
 }
 </code></pre>
-</div> 
-<hr>
-<h2 id="step-3-getting-a-package-label">Step 3: Getting a Package Label</h2>
-<div class="tab">
-    <button class="staticTabButton">Get Labels in Format Endpoint</button>
-    <div class="copybutton" onclick="CopyToClipboard('GLFEndpoint')">Click to Copy</div>
-</div>
-<div id="GLFEndpoint" class="staticTabContent" onclick="CopyToClipboard('GLFEndpoint')">
-<pre><code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}
+            </div>
+            <hr>
+            <h2 id="step-3-getting-a-package-label">Step 3: Getting a Package Label</h2>
+            <div class="tab">
+              <button class="staticTabButton">Get Labels in Format Endpoint</button>
+              <div class="copybutton" onclick="CopyToClipboard('GLFEndpoint')">Click to Copy</div>
+            </div>
+            <div id="GLFEndpoint" class="staticTabContent" onclick="CopyToClipboard('GLFEndpoint')">
+              <pre><code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}
 </code></pre>
-</div>
-<p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The next step in the process is to retrieve those delivery labels via the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Label in Format</a></strong> endpoint.</p>
-<p>The <strong>Get Labels in Format</strong> endpoint takes a <code>{consignmentReference}</code> and <code>{labelFormat}</code> as path parameters. PRO returns all package labels associated with that consignment as a base64-encoded byte array in the format requested.</p>
-<p><strong>Get Labels in Format</strong> can return labels as <code>pdf</code>, <code>zpl</code> and <code>zplii</code> file types. We recommend that, when integrating PRO with your system, you make the <code>{labelFormat}</code> field a parameter, so you can easily return labels in an alternative format if required.</p>
-<blockquote>
-<p><span class="note-header">Note:</span>
-For full reference information on the <strong>Get Labels in Format</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of the API reference.</p>
-</blockquote>
-<h3 id="get-labels-in-format-example">Get Labels in Format Example</h3>
-<p>The example shows a request to get PDF labels for a consignment with a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. The file data in the response has been truncated for clarity.</p>
-<p>You would next need to decode the file's Base64 in order to view the label itself. If you are unsure how to do so, see the <strong><a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN docs</a></strong> for more information.</p>
-<div class="tab">
-    <button class="staticTabButton">Example Get Labels in Format Request</button>
-    <div class="copybutton" onclick="CopyToClipboard('GLFRequest')">Click to Copy</div>
-</div>
-<div id="GLFRequest" class="staticTabContent" onclick="CopyToClipboard('GLFRequest')">
-<pre><code>GET https://api.electioapp.com/labels/EC-000-05B-MMA/pdf
+            </div>
+            <p>When a consignment is allocated, SortedPRO generates labels for each package in that consignment. The
+              next step in the process is to retrieve those delivery labels via the <strong><a
+                  href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Label in Format</a></strong> endpoint.
+            </p>
+            <p>The <strong>Get Labels in Format</strong> endpoint takes a <code>{consignmentReference}</code> and
+              <code>{labelFormat}</code> as path parameters. PRO returns all package labels associated with that
+              consignment as a base64-encoded byte array in the format requested.</p>
+            <p><strong>Get Labels in Format</strong> can return labels as <code>pdf</code>, <code>zpl</code> and
+              <code>zplii</code> file types. We recommend that, when integrating PRO with your system, you make the
+              <code>{labelFormat}</code> field a parameter, so you can easily return labels in an alternative format if
+              required.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                For full reference information on the <strong>Get Labels in Format</strong> endpoint, see the <strong><a
+                    href="https://docs.electioapp.com/#/api/GetLabelsinFormat">Get Labels in Format</a></strong> page of
+                the API reference.</p>
+            </blockquote>
+            <h3 id="get-labels-in-format-example">Get Labels in Format Example</h3>
+            <p>The example shows a request to get PDF labels for a consignment with a
+              <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. The file data in the response has been
+              truncated for clarity.</p>
+            <p>You would next need to decode the file's Base64 in order to view the label itself. If you are unsure how
+              to do so, see the <strong><a
+                  href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN
+                  docs</a></strong> for more information.</p>
+            <div class="tab">
+              <button class="staticTabButton">Example Get Labels in Format Request</button>
+              <div class="copybutton" onclick="CopyToClipboard('GLFRequest')">Click to Copy</div>
+            </div>
+            <div id="GLFRequest" class="staticTabContent" onclick="CopyToClipboard('GLFRequest')">
+              <pre><code>GET https://api.electioapp.com/labels/EC-000-05B-MMA/pdf
 </code></pre>
-</div>
-<div class="tab">
-    <button class="staticTabButton">Example Get Labels in Format Response</button>
-    <div class="copybutton" onclick="CopyToClipboard('GLFResponse')">Click to Copy</div>
-</div>
-<div id="GLFResponse" class="staticTabContent" onclick="CopyToClipboard('GLFResponse')">
-<pre><code class="lang-json">{
+            </div>
+            <div class="tab">
+              <button class="staticTabButton">Example Get Labels in Format Response</button>
+              <div class="copybutton" onclick="CopyToClipboard('GLFResponse')">Click to Copy</div>
+            </div>
+            <div id="GLFResponse" class="staticTabContent" onclick="CopyToClipboard('GLFResponse')">
+              <pre><code class="lang-json">{
   &quot;File&quot;: &quot;SlZCRVJpMHhMalFLSmRQcjZ ... TVRrNU9ERUtKU1ZGVDBZPQ==&quot;,
   &quot;ContentType&quot;: &quot;application/pdf&quot;
 }
 </code></pre>
-</div>
-<hr>
-<h2 id="step-4-manifesting-the-consignment">Step 4: Manifesting the Consignment</h2>
-<div class="tab">
-    <button class="staticTabButton">Manifest Consignments From Query Endpoint</button>
-    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryEndpoint')">Click to Copy</div>
-</div>
-<div id="ManifestQueryEndpoint" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryEndpoint')">
-<pre><code>PUT https://api.electioapp.com/consignments/manifestFromQuery
+            </div>
+            <hr>
+            <h2 id="step-4-manifesting-the-consignment">Step 4: Manifesting the Consignment</h2>
+            <div class="tab">
+              <button class="staticTabButton">Manifest Consignments From Query Endpoint</button>
+              <div class="copybutton" onclick="CopyToClipboard('ManifestQueryEndpoint')">Click to Copy</div>
+            </div>
+            <div id="ManifestQueryEndpoint" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryEndpoint')">
+              <pre><code>PUT https://api.electioapp.com/consignments/manifestFromQuery
 </code></pre>
-</div>
-<p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're ready to manifest it. To manifest a consignment, use the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> endpoint.</p>
-<blockquote>
-<p><span class="note-header">More Information:</span>
-In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the consignment in question needs to be collected from the shipper.</p>
-</blockquote>
-<p>The <strong>Manifest Consignments From Query</strong> endpoint enables you to use a query to select consignments to be manifested. You can select consignments via the following criteria:</p>
-<ul>
-<li><code>ShippingLocationReference</code> - The shipping location that the consignment will ship from. For information on how to obtain a list of your organisation's shipping locations and their references, see the <a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a> page of the API reference.</li>
-<li><code>States</code> - The state that the consignments should be in. All the consignments you provide in the request should be in a state of either <em>Allocated</em> or <em>Manifest Failed</em>. If you attempt to manifest a consignment that is not in one of these states then PRO returns an error.</li>
-<li><code>Carriers</code> - The carriers that the consignments are allocated to.</li>
-<li><code>LabelsPrinted</code> - Whether or not the labels for the consignments have already been printed.</li>
-<li><code>ShippingDate</code> - The date that the consignment is scheduled to ship.</li>
-<li><code>ShippingDateRanges</code>- A range of scheduled shipping dates.</li>
-</ul>
-<p>Once PRO has attempted to add the consignments to the manifest queue, the <strong>Manifest Consignments From Query</strong> endpoint returns a <code>Message</code> indicating how many consignments met the terms of the query and how many it was able to queue. It also returns a <code>FailedConsignments</code> array listing the <code>consignmentReferences</code> of those consignments that PRO was unable to queue for manifest.</p>
-<blockquote>
-<p><span class="note-header">Note:</span>
-For full reference information on the <strong>Manifest Consignments From Query</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From Query</a></strong> page of the API Reference.</p>
-</blockquote>
-<h3 id="manifest-consignments-from-query-example">Manifest Consignments From Query Example</h3>
-<p>The example shows a request to manifest all consignments that are allocated to Carrier X, shipping from a location with the <code>ShippingLocationReference</code> <em>Location1</em>, and have already had their labels printed. The response indicates that PRO found 10 consignments meeting these criteria, and that all 10 were successfully queued for manifest.</p>
-<div class="tab">
-    <button class="staticTabButton">Example Manifest Consignments From Query Request</button>
-    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryRequest')">Click to Copy</div>
-</div>
-<div id="ManifestQueryRequest" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryRequest')">
-<pre><code class="lang-json">{
+            </div>
+            <p>Once you've created a consignment, allocated it to a carrier service and printed labels for it, you're
+              ready to manifest it. To manifest a consignment, use the <strong><a
+                  href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest Consignments From
+                  Query</a></strong> endpoint.</p>
+            <blockquote>
+              <p><span class="note-header">More Information:</span>
+                In the context of SortedPRO, the term &quot;manifest&quot; refers to advising the carrier that the
+                consignment in question needs to be collected from the shipper.</p>
+            </blockquote>
+            <p>The <strong>Manifest Consignments From Query</strong> endpoint enables you to use a query to select
+              consignments to be manifested. You can select consignments via the following criteria:</p>
+            <ul>
+              <li><code>ShippingLocationReference</code> - The shipping location that the consignment will ship from.
+                For information on how to obtain a list of your organisation's shipping locations and their references,
+                see the <a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a> page
+                of the API reference.</li>
+              <li><code>States</code> - The state that the consignments should be in. All the consignments you provide
+                in the request should be in a state of either <em>Allocated</em> or <em>Manifest Failed</em>. If you
+                attempt to manifest a consignment that is not in one of these states then PRO returns an error.</li>
+              <li><code>Carriers</code> - The carriers that the consignments are allocated to.</li>
+              <li><code>LabelsPrinted</code> - Whether or not the labels for the consignments have already been printed.
+              </li>
+              <li><code>ShippingDate</code> - The date that the consignment is scheduled to ship.</li>
+              <li><code>ShippingDateRanges</code>- A range of scheduled shipping dates.</li>
+            </ul>
+            <p>Once PRO has attempted to add the consignments to the manifest queue, the <strong>Manifest Consignments
+                From Query</strong> endpoint returns a <code>Message</code> indicating how many consignments met the
+              terms of the query and how many it was able to queue. It also returns a <code>FailedConsignments</code>
+              array listing the <code>consignmentReferences</code> of those consignments that PRO was unable to queue
+              for manifest.</p>
+            <blockquote>
+              <p><span class="note-header">Note:</span>
+                For full reference information on the <strong>Manifest Consignments From Query</strong> endpoint, see
+                the <strong><a href="https://docs.electioapp.com/#/api/ManifestConsignmentsFromQuery">Manifest
+                    Consignments From Query</a></strong> page of the API Reference.</p>
+            </blockquote>
+            <h3 id="manifest-consignments-from-query-example">Manifest Consignments From Query Example</h3>
+            <p>The example shows a request to manifest all consignments that are allocated to Carrier X, shipping from a
+              location with the <code>ShippingLocationReference</code> <em>Location1</em>, and have already had their
+              labels printed. The response indicates that PRO found 10 consignments meeting these criteria, and that all
+              10 were successfully queued for manifest.</p>
+            <div class="tab">
+              <button class="staticTabButton">Example Manifest Consignments From Query Request</button>
+              <div class="copybutton" onclick="CopyToClipboard('ManifestQueryRequest')">Click to Copy</div>
+            </div>
+            <div id="ManifestQueryRequest" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryRequest')">
+              <pre><code class="lang-json">{
   &quot;ShippingLocationReferences&quot;: [
     &quot;Location1&quot;
   ],
@@ -536,58 +638,61 @@ For full reference information on the <strong>Manifest Consignments From Query</
   &quot;LabelsPrinted&quot;: true
 }
 </code></pre>
-</div>
-<div class="tab">
-    <button class="staticTabButton">Example Manifest Consignments From Query Response</button>
-    <div class="copybutton" onclick="CopyToClipboard('ManifestQueryResponse')">Click to Copy</div>
-</div>
-<div id="ManifestQueryResponse" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryResponse')">
-<pre><code class="lang-json">{
+            </div>
+            <div class="tab">
+              <button class="staticTabButton">Example Manifest Consignments From Query Response</button>
+              <div class="copybutton" onclick="CopyToClipboard('ManifestQueryResponse')">Click to Copy</div>
+            </div>
+            <div id="ManifestQueryResponse" class="staticTabContent" onclick="CopyToClipboard('ManifestQueryResponse')">
+              <pre><code class="lang-json">{
   &quot;Message&quot;: &quot;Query found 10 consignment(s). 10 successfully queued to manifest. 0 failed to be added to the queue&quot;
 }
 </code></pre>
-</div>
-<h2 id="next-steps">Next Steps</h2>
-<p>The next section explains a similar call flow that enables you to offer pickup options (aka click-and-collect) rather than home delivery timeslots.</p>
-<script src="../../scripts/requesttabs.js"></script>
-<script src="../../scripts/responsetabs.js"></script>
-<script src="../../scripts/copy.js"></script>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/consumer_options_flow.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
             </div>
+            <h2 id="next-steps">Next Steps</h2>
+            <p>The next section explains a similar call flow that enables you to offer pickup options (aka
+              click-and-collect) rather than home delivery timeslots.</p>
+            <script src="../../scripts/requesttabs.js"></script>
+            <script src="../../scripts/responsetabs.js"></script>
+            <script src="../../scripts/copy.js"></script>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/flows/consumer_options_flow.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
+            </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>

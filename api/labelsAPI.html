@@ -1,151 +1,178 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Labels API </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Labels API ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" src="../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="labels-api">Labels API</h1>
 
-<p><code>https://api.electioapp.com/labels/</code></p>
-<ul>
-<li><a href="/api/labels/getLabels.html">Get Labels</a></li>
-<li><a href="/api/labels/getLabelsInFormat.html">Get Labels in Format</a></li>
-<li><a href="/api/labels/getPackageLabel.html">Get Package Label</a></li>
-<li><a href="/api/labels/getPackageLabelInFormat.html">Get Package Label in Format</a></li>
-</ul>
-<hr>
-<p>SortedPRO can generate despatch labels for all of its carriers, enabling PRO customers to download labels without having to request them directly from the carrier. The <strong>Labels</strong> API enables you to get labels for a specific consignment or an individual package within a consignment.</p>
-<p>Getting labels is a key part of all PRO workflows, as an unlabelled consignment cannot be dispatched. Labels are usually retrieved after a consignment has been allocated but before it has been manifested.</p>
-<blockquote>
-<p><span class="note-header">Note: </span></p>
-<p>You can only retrieve labels for consignments that have been allocated to a carrier. If you attempt to return labels for an unallocated consignment, PRO returns an error.</p>
-</blockquote>
-<h2 id="endpoints">Endpoints</h2>
-<p>The Labels API has four endpoints:</p>
-<ul>
-<li><a href="/api/labels/getLabels.html">Get Labels</a> - <code>GET https://api.electioapp.com/labels/{consignmentReference}</code> <br> Returns labels for the specified consignment.</li>
-<li><a href="/api/labels/getLabelsInFormat.html">Get Labels in Format</a> - <code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}</code> <br> Returns labels for the specified consignment in the specified format.</li>
-<li><a href="/api/labels/getPackageLabel.html">Get Package Label</a> - <code>GET https://api.electioapp.com/labels/package/{consignmentReference}/{packageReference}</code> <br> Returns the label for the specified package.</li>
-<li><a href="/api/labels/getPackageLabelInFormat.html">Get Package Label in Format</a> - <code>GET https://api.electioapp.com/labels/package/{consignmentReference}/{packageReference}/{labelFormat}</code> <br> Returns the label for the specified package in the specified format.</li>
-</ul>
-<h3 id="parameters">Parameters</h3>
-<p>The Labels API accepts the following parameters:</p>
-<ul>
-<li><strong>Consignment Reference</strong> - Used by all Labels endpoints. A unique identifier for a PRO consignment. Each <code>{consignmentReference}</code> takes the format EC-xxx-xxx-xxx, where x is an alphanumeric character.</li>
-<li><strong>Package Reference</strong> - Used by the <strong>Get Package Label</strong> and <strong>Get Package Label in Format</strong> endpoints. A unique identifier for a PRO package. Each <code>{packageReference}</code> takes the format EP-xxx-xxx-xxx, where x is an alphanumeric character.</li>
-<li><strong>Label Format</strong> - Used by the <strong>Get Labels in Format</strong> and <strong>Get Package Label in Format</strong> endpoints. The label format required. This must be one of PRO's supported formats: PDF, PNG, ZPL or ZPLII.</li>
-</ul>
-<h3 id="response">Response</h3>
-<p>All Labels endpoints return a labels object. The labels object has two properties:</p>
-<ul>
-<li><code>File</code> - A base64-encoded byte array representing the file content.</li>
-<li><code>ContentType</code> - The content type of the file (as specified in the <strong>Label Format</strong> parameter, where applicable).</li>
-</ul>
-<p><strong>Example</strong></p>
-<pre><code class="lang-json">{
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Labels API </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Labels API ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../styles/docfx.css">
+  <link rel="stylesheet" href="../styles/main.css">
+  <meta property="docfx:navrel" content="../toc.html">
+  <meta property="docfx:tocrel" content="toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.html">
+              <img id="logo" src="../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="labels-api">Labels API</h1>
+
+            <p><code>https://api.electioapp.com/labels/</code></p>
+            <ul>
+              <li><a href="/api/labels/getLabels.html">Get Labels</a></li>
+              <li><a href="/api/labels/getLabelsInFormat.html">Get Labels in Format</a></li>
+              <li><a href="/api/labels/getPackageLabel.html">Get Package Label</a></li>
+              <li><a href="/api/labels/getPackageLabelInFormat.html">Get Package Label in Format</a></li>
+            </ul>
+            <hr>
+            <p>SortedPRO can generate despatch labels for all of its carriers, enabling PRO customers to download labels
+              without having to request them directly from the carrier. The <strong>Labels</strong> API enables you to
+              get labels for a specific consignment or an individual package within a consignment.</p>
+            <p>Getting labels is a key part of all PRO workflows, as an unlabelled consignment cannot be dispatched.
+              Labels are usually retrieved after a consignment has been allocated but before it has been manifested.</p>
+            <blockquote>
+              <p><span class="note-header">Note: </span></p>
+              <p>You can only retrieve labels for consignments that have been allocated to a carrier. If you attempt to
+                return labels for an unallocated consignment, PRO returns an error.</p>
+            </blockquote>
+            <h2 id="endpoints">Endpoints</h2>
+            <p>The Labels API has four endpoints:</p>
+            <ul>
+              <li><a href="/api/labels/getLabels.html">Get Labels</a> -
+                <code>GET https://api.electioapp.com/labels/{consignmentReference}</code> <br> Returns labels for the
+                specified consignment.</li>
+              <li><a href="/api/labels/getLabelsInFormat.html">Get Labels in Format</a> -
+                <code>GET https://api.electioapp.com/labels/{consignmentReference}/{labelFormat}</code> <br> Returns
+                labels for the specified consignment in the specified format.</li>
+              <li><a href="/api/labels/getPackageLabel.html">Get Package Label</a> -
+                <code>GET https://api.electioapp.com/labels/package/{consignmentReference}/{packageReference}</code>
+                <br> Returns the label for the specified package.</li>
+              <li><a href="/api/labels/getPackageLabelInFormat.html">Get Package Label in Format</a> -
+                <code>GET https://api.electioapp.com/labels/package/{consignmentReference}/{packageReference}/{labelFormat}</code>
+                <br> Returns the label for the specified package in the specified format.</li>
+            </ul>
+            <h3 id="parameters">Parameters</h3>
+            <p>The Labels API accepts the following parameters:</p>
+            <ul>
+              <li><strong>Consignment Reference</strong> - Used by all Labels endpoints. A unique identifier for a PRO
+                consignment. Each <code>{consignmentReference}</code> takes the format EC-xxx-xxx-xxx, where x is an
+                alphanumeric character.</li>
+              <li><strong>Package Reference</strong> - Used by the <strong>Get Package Label</strong> and <strong>Get
+                  Package Label in Format</strong> endpoints. A unique identifier for a PRO package. Each
+                <code>{packageReference}</code> takes the format EP-xxx-xxx-xxx, where x is an alphanumeric character.
+              </li>
+              <li><strong>Label Format</strong> - Used by the <strong>Get Labels in Format</strong> and <strong>Get
+                  Package Label in Format</strong> endpoints. The label format required. This must be one of PRO's
+                supported formats: PDF, PNG, ZPL or ZPLII.</li>
+            </ul>
+            <h3 id="response">Response</h3>
+            <p>All Labels endpoints return a labels object. The labels object has two properties:</p>
+            <ul>
+              <li><code>File</code> - A base64-encoded byte array representing the file content.</li>
+              <li><code>ContentType</code> - The content type of the file (as specified in the <strong>Label
+                  Format</strong> parameter, where applicable).</li>
+            </ul>
+            <p><strong>Example</strong></p>
+            <pre><code class="lang-json">{
   &quot;File&quot;: &quot;SlZCRVJpMHhMalFLSmRQcjZl ... VRrNU9ERUtKU1ZGVDBZPQ==&quot;,
   &quot;ContentType&quot;: &quot;application/pdf&quot;
 }
 </code></pre>
-<h2 id="using-the-label-data">Using the Label Data</h2>
-<p>Once you have obtained the raw label data, you will need to perform some processing in order to use it. For example methods to read the data, write it to disk, and automatically open the label file so it can be printed and applied to the relevant package, see the <a href="/../pro-sdk/reference/ref-labels/index.html">Labels SDK documentation</a>.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/flows/docfx_project/api/labelsAPI.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            <h2 id="using-the-label-data">Using the Label Data</h2>
+            <p>Once you have obtained the raw label data, you will need to perform some processing in order to use it.
+              For example methods to read the data, write it to disk, and automatically open the label file so it can be
+              printed and applied to the relevant package, see the <a
+                href="/../pro-sdk/reference/ref-labels/index.html">Labels SDK documentation</a>.</p>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/flows/docfx_project/api/labelsAPI.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../styles/docfx.js"></script>
+  <script type="text/javascript" src="../styles/main.js"></script>
+</body>
+
 </html>

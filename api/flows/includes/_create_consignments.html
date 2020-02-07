@@ -1,80 +1,82 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Example </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Example ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../../favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
 
-<blockquote>
-<p>Create Consignment Endpoint</p>
-</blockquote>
-<pre><code>POST https://api.electioapp.com/consignments
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Example </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Example ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../../styles/docfx.css">
+  <link rel="stylesheet" href="../../../styles/main.css">
+  <meta property="docfx:navrel" content="../../../toc.html">
+  <meta property="docfx:tocrel" content="../../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../index.html">
+              <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+
+            <blockquote>
+              <p>Create Consignment Endpoint</p>
+            </blockquote>
+            <pre><code>POST https://api.electioapp.com/consignments
 </code></pre>
-<blockquote>
-<p>Example Create Consignment Request</p>
-</blockquote>
-<pre><code class="lang-json">{
+            <blockquote>
+              <p>Example Create Consignment Request</p>
+            </blockquote>
+            <pre><code class="lang-json">{
   &quot;ConsignmentReferenceProvidedByCustomer&quot;: &quot;MYCONS-098998&quot;,
   &quot;Source&quot;: &quot;Api&quot;,
   &quot;MetaData&quot;: [
@@ -232,7 +234,7 @@
   &quot;Direction&quot;: &quot;Outbound&quot;
 }
 </code></pre>
-<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+            <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;CreateConsignmentRequest xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Consignments&quot;&gt;
   &lt;Packages&gt;
     &lt;Package&gt;
@@ -417,17 +419,17 @@
   &lt;Source&gt;Api&lt;/Source&gt;
 &lt;/CreateConsignmentRequest&gt;
 </code></pre>
-<blockquote>
-<p>Example Create Consignment Response</p>
-</blockquote>
-<pre><code class="lang-json">[
+            <blockquote>
+              <p>Example Create Consignment Response</p>
+            </blockquote>
+            <pre><code class="lang-json">[
   {
     &quot;Rel&quot;: &quot;Link&quot;,
     &quot;Href&quot;: &quot;https://api.electioapp.com/consignments/EC-000-05B-MMA&quot;
   }
 ]
 </code></pre>
-<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+            <pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;ArrayOfApiLink xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ApiLink&gt;
         &lt;Rel xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Common&quot;&gt;detail&lt;/Rel&gt;
@@ -435,78 +437,113 @@
     &lt;/ApiLink&gt;
 &lt;/ArrayOfApiLink&gt;
 </code></pre>
-<p>The first step toward manifesting a consignment is to create that consignment in SortedPRO.</p>
-<aside class="info">
-  In the context of PRO, the term <strong>"consignment"</strong> refers to a collection of one or more packages that are shipped from the same origin address, to the same destination address, on behalf of the same Sorted customer, using the same carrier service, on the same day.
-  
-  A <strong>package</strong> is an <strong>item</strong> or a collection of items, wrapped or contained together for shipment. Each package can contain one or more items. 
-<p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects to ship them in the same package. As such, this sales order would break down to:</p>
-<ul>
-<li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
-<li>Three packages - One containing the necklace and bracelet, one containing the coat, and one containing the hat.</li>
-<li>A single consignment corresponding to everything on the order.</li>
-</ul>
-</aside>
-<p>Consignments are created using the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> endpoint, which takes information about new consignments, adds them to the database, and returns a link to the newly-created consignment, including its <code>{consignmentReference}</code>.</p>
-<p>The <code>{consignmentReference}</code> is a unique identifier for that consignment within PRO, and is a required parameter for many of PRO's API requests. Each PRO <code>{consignmentReference}</code> takes the format <code>EC-xxx-xxx-xxx</code>, where <code>x</code> is an alphanumeric character.</p>
-<p>As a minimum, the <strong>Create Consignments</strong> endpoint requires you to send package weights and dimensions, origin address, and destination address data. You can either specify package weights and dimension via the <code>Weight</code> and <code>Dimensions</code> properties, or by supplying a <code>PackageSizeReference</code>.</p>
-<aside class="info">
-  A <code>PackageSizeReference</code> is a unique identifier for a pre-defined, standardised package size. To configure standard package sizes, use the <strong><a href="https://www.electioapp.com/Configuration/packagingsizes">Configuration > Packaging Sizes</a></strong> page of the PRO UI.  
-</aside>
-<p>However, there are lots of other properties you can send when creating a consignment, including:</p>
-<ul>
-<li>Your own consignment reference.</li>
-<li>The consignment's source.</li>
-<li>Shipping and delivery dates.</li>
-<li>Customs documentation.</li>
-<li>The consignment's direction of travel.</li>
-<li>Metadata. PRO metadata enables you to us custom fields to record additional data about a consignment. For more information on using metadata in PRO, see the <strong><a href="#metadata">Metadata</a></strong> section.</li>
-<li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment could be allocated to. For more information on allocation tags, see the <strong><a href="#tags">Tags</a></strong> section.</li>
-</ul>
-<p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your organisation's shipping locations, see the <strong><a href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page of the API reference.</p>
-<p>To edit an existing consignment, use the <strong><a href="https://docs.electioapp.com/#/api/UpdateConsignment">Update Consignments</a></strong> endpoint. For more information on updating consignments, see the <a href="#updating-consignments">Updating Consignments</a> section.</p>
-<aside class="note">
-  For full reference information on the <strong>Create Consignment</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> page of the API reference.
-</aside>
-<h3 id="example">Example</h3>
-<p>The example to the right shows the creation of a fairly standard consignment. In this case, we have an outbound consignment comprising a single package with a single item inside it.</p>
-<p>After receiving the request, PRO returns a <code>{consignmentReference}</code> of <em>EC-000-05B-MMA</em>. At this point, you should store the <code>{consignmentReference}</code>, as many of PRO's endpoints take <code>{consignmentReference}</code> as a parameter.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/flows/includes/_create_consignments.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            <p>The first step toward manifesting a consignment is to create that consignment in SortedPRO.</p>
+            <aside class="info">
+              In the context of PRO, the term <strong>"consignment"</strong> refers to a collection of one or more
+              packages that are shipped from the same origin address, to the same destination address, on behalf of the
+              same Sorted customer, using the same carrier service, on the same day.
+
+              A <strong>package</strong> is an <strong>item</strong> or a collection of items, wrapped or contained
+              together for shipment. Each package can contain one or more items.
+              <p>As an example, suppose that a clothing retailer has received a customer order for a necklace, a
+                bracelet, a coat, and a hat. As the necklace and bracelet are both physically small, the retailer elects
+                to ship them in the same package. As such, this sales order would break down to:</p>
+              <ul>
+                <li>Four items - The necklace, the bracelet, the coat, and the hat.</li>
+                <li>Three packages - One containing the necklace and bracelet, one containing the coat, and one
+                  containing the hat.</li>
+                <li>A single consignment corresponding to everything on the order.</li>
+              </ul>
+            </aside>
+            <p>Consignments are created using the <strong><a
+                  href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> endpoint,
+              which takes information about new consignments, adds them to the database, and returns a link to the
+              newly-created consignment, including its <code>{consignmentReference}</code>.</p>
+            <p>The <code>{consignmentReference}</code> is a unique identifier for that consignment within PRO, and is a
+              required parameter for many of PRO's API requests. Each PRO <code>{consignmentReference}</code> takes the
+              format <code>EC-xxx-xxx-xxx</code>, where <code>x</code> is an alphanumeric character.</p>
+            <p>As a minimum, the <strong>Create Consignments</strong> endpoint requires you to send package weights and
+              dimensions, origin address, and destination address data. You can either specify package weights and
+              dimension via the <code>Weight</code> and <code>Dimensions</code> properties, or by supplying a
+              <code>PackageSizeReference</code>.</p>
+            <aside class="info">
+              A <code>PackageSizeReference</code> is a unique identifier for a pre-defined, standardised package size.
+              To configure standard package sizes, use the <strong><a
+                  href="https://www.electioapp.com/Configuration/packagingsizes">Configuration > Packaging
+                  Sizes</a></strong> page of the PRO UI.
+            </aside>
+            <p>However, there are lots of other properties you can send when creating a consignment, including:</p>
+            <ul>
+              <li>Your own consignment reference.</li>
+              <li>The consignment's source.</li>
+              <li>Shipping and delivery dates.</li>
+              <li>Customs documentation.</li>
+              <li>The consignment's direction of travel.</li>
+              <li>Metadata. PRO metadata enables you to us custom fields to record additional data about a consignment.
+                For more information on using metadata in PRO, see the <strong><a href="#metadata">Metadata</a></strong>
+                section.</li>
+              <li>Tags. Allocation tags enable you to filter the list of carrier services that a particular consignment
+                could be allocated to. For more information on allocation tags, see the <strong><a
+                    href="#tags">Tags</a></strong> section.</li>
+            </ul>
+            <p>Either the consignment's <code>origin</code> address, its <code>destination</code> address, or both, must
+              include a valid <code>ShippingLocationReference</code>. For information on how to obtain a list of your
+              organisation's shipping locations, see the <strong><a
+                  href="https://docs.electioapp.com/#/api/GetShippingLocations">Get Shipping Locations</a></strong> page
+              of the API reference.</p>
+            <p>To edit an existing consignment, use the <strong><a
+                  href="https://docs.electioapp.com/#/api/UpdateConsignment">Update Consignments</a></strong> endpoint.
+              For more information on updating consignments, see the <a href="#updating-consignments">Updating
+                Consignments</a> section.</p>
+            <aside class="note">
+              For full reference information on the <strong>Create Consignment</strong> endpoint, see the <strong><a
+                  href="https://docs.electioapp.com/#/api/CreateConsignment">Create Consignment</a></strong> page of the
+              API reference.
+            </aside>
+            <h3 id="example">Example</h3>
+            <p>The example to the right shows the creation of a fairly standard consignment. In this case, we have an
+              outbound consignment comprising a single package with a single item inside it.</p>
+            <p>After receiving the request, PRO returns a <code>{consignmentReference}</code> of
+              <em>EC-000-05B-MMA</em>. At this point, you should store the <code>{consignmentReference}</code>, as many
+              of PRO's endpoints take <code>{consignmentReference}</code> as a parameter.</p>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/flows/includes/_create_consignments.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../../styles/main.js"></script>
+</body>
+
 </html>

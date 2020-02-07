@@ -1,112 +1,136 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Labels </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Labels ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../../favicon.ico">
-    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../../styles/docfx.css">
-    <link rel="stylesheet" href="../../../styles/main.css">
-    <meta property="docfx:navrel" content="../../../toc.html">
-    <meta property="docfx:tocrel" content="../../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
-<h1 id="labels">Labels</h1>
 
-<ul>
-<li><a href="/pro-sdk/reference/ref-labels/Sorted.PRO.SDK.DataTypes.Labels.html">Data Types (Sorted.PRO.SDK.DataTypes.Labels)</a></li>
-<li><a href="/pro-sdk/reference/ref-labels/Sorted.PRO.SDK.Interfaces.Labels.html">Interfaces (Sorted.PRO.SDK.Interfaces.Labels)</a></li>
-<li><a href="/pro-sdk/reference/ref-labels/Sorted.PRO.SDK.Labels.html">Service (Sorted.PRO.SDK.Labels)</a></li>
-</ul>
-<hr>
-<p>SortedPRO can generate despatch labels for all of its carriers, enabling PRO customers to download labels without having to request them directly from the carrier. The <strong>LabelService</strong> enables you to get labels for a specific consignment or an individual package within a consignment.</p>
-<p>Getting labels is a key part of all PRO workflows, as an unlabelled consignment cannot be dispatched. Labels are usually retrieved after a consignment has been allocated but before it has been manifested.</p>
-<blockquote>
-<p><span class="note-header">Note: </span></p>
-<p>You can only retrieve labels for consignments that have been allocated to a carrier. If you attempt to return labels for an unallocated consignment, PRO returns an error.</p>
-</blockquote>
-<h2 id="methods">Methods</h2>
-<p>The labels service has two methods:</p>
-<ul>
-<li><code>GetConsignmentLabelsAsync</code> - Returns the labels for all packages in the specified consignment, in the specified format and resolution.</li>
-<li><code>GetPackageLabelAsync</code> - Returns the label for an individual package, in the specified format and resolution.</li>
-</ul>
-<h3 id="parameters">Parameters</h3>
-<p>Both of these methods require the following parameters:</p>
-<ul>
-<li><code>consignmentReference</code> - The unique reference of the consignment you want to get labels for. PRO consignment references take the format <code>EC-XXX-XXX-XXX</code>.
-<blockquote>
-<p><span class="note-header">Note:</span></p>
-<p>The <code>consignmentReference</code> is initially returned when creating a consignment via the <a href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.Consignments.ConsignmentService.html#Sorted_PRO_SDK_Consignments_ConsignmentService_CreateConsignmentAsync_Sorted_PRO_SDK_DataTypes_Consignments_CreateConsignmentRequest_">Consignments.CreateConsignmentAsync</a> method. Alternatively, you can obtain a <code>consignmentReference</code> by making a call to the <a href="https://docs.electioapp.com/#/api/GetConsignmentsReferences">Get Consignments Reference</a> API.</p>
-</blockquote>
-</li>
-<li><code>labelFormat</code> - The label format required. This must be one of PRO's supported formats. PRO's list of supported formats is defined in the <a href="/Sorted.PRO.SDK.DataTypes.Labels.LabelFormat.html">LabelFormat</a> enum.</li>
-<li><code>resolution</code> - The resolution of the label.</li>
-</ul>
-<p>The <code>GetPackageLabelAsync</code> method also requires a <code>packageReference</code> property. This is the unique reference of the package you want to get a label for, and takes the format <code>EP-XXX-XXX-XXX</code>. The specified package must be part of the specified consignment.</p>
-<h3 id="response">Response</h3>
-<p>Both <strong>LabelService</strong> methods return a <code>GetLabelsResponse</code>. The <code>GetLabelsResponse</code> has two properties:</p>
-<ul>
-<li><code>File</code> - A base64-encoded byte array representing the file content.</li>
-<li><code>ContentType</code> - The content type of the file (as specified in the calling method's <code>labelFormat</code> parameter).</li>
-</ul>
-<h2 id="using-the-label-data">Using the Label Data</h2>
-<p>Once you have obtained the raw label data, you will need to perform some processing in order to use it. The below example shows sample methods to read the data, write it to disk, and automatically open the label file so it can be printed and applied to the relevant package.</p>
-<pre><code class="lang-c#">/// &lt;summary&gt;
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Labels </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Labels ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../../favicon.ico">
+  <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../../styles/docfx.css">
+  <link rel="stylesheet" href="../../../styles/main.css">
+  <meta property="docfx:navrel" content="../../../toc.html">
+  <meta property="docfx:tocrel" content="../../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../../index.html">
+              <img id="logo" src="../../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+            <h1 id="labels">Labels</h1>
+
+            <ul>
+              <li><a href="/pro-sdk/reference/ref-labels/Sorted.PRO.SDK.DataTypes.Labels.html">Data Types
+                  (Sorted.PRO.SDK.DataTypes.Labels)</a></li>
+              <li><a href="/pro-sdk/reference/ref-labels/Sorted.PRO.SDK.Interfaces.Labels.html">Interfaces
+                  (Sorted.PRO.SDK.Interfaces.Labels)</a></li>
+              <li><a href="/pro-sdk/reference/ref-labels/Sorted.PRO.SDK.Labels.html">Service (Sorted.PRO.SDK.Labels)</a>
+              </li>
+            </ul>
+            <hr>
+            <p>SortedPRO can generate despatch labels for all of its carriers, enabling PRO customers to download labels
+              without having to request them directly from the carrier. The <strong>LabelService</strong> enables you to
+              get labels for a specific consignment or an individual package within a consignment.</p>
+            <p>Getting labels is a key part of all PRO workflows, as an unlabelled consignment cannot be dispatched.
+              Labels are usually retrieved after a consignment has been allocated but before it has been manifested.</p>
+            <blockquote>
+              <p><span class="note-header">Note: </span></p>
+              <p>You can only retrieve labels for consignments that have been allocated to a carrier. If you attempt to
+                return labels for an unallocated consignment, PRO returns an error.</p>
+            </blockquote>
+            <h2 id="methods">Methods</h2>
+            <p>The labels service has two methods:</p>
+            <ul>
+              <li><code>GetConsignmentLabelsAsync</code> - Returns the labels for all packages in the specified
+                consignment, in the specified format and resolution.</li>
+              <li><code>GetPackageLabelAsync</code> - Returns the label for an individual package, in the specified
+                format and resolution.</li>
+            </ul>
+            <h3 id="parameters">Parameters</h3>
+            <p>Both of these methods require the following parameters:</p>
+            <ul>
+              <li><code>consignmentReference</code> - The unique reference of the consignment you want to get labels
+                for. PRO consignment references take the format <code>EC-XXX-XXX-XXX</code>.
+                <blockquote>
+                  <p><span class="note-header">Note:</span></p>
+                  <p>The <code>consignmentReference</code> is initially returned when creating a consignment via the <a
+                      href="/../pro-sdk/ref-consignments/Sorted.PRO.SDK.Consignments.ConsignmentService.html#Sorted_PRO_SDK_Consignments_ConsignmentService_CreateConsignmentAsync_Sorted_PRO_SDK_DataTypes_Consignments_CreateConsignmentRequest_">Consignments.CreateConsignmentAsync</a>
+                    method. Alternatively, you can obtain a <code>consignmentReference</code> by making a call to the <a
+                      href="https://docs.electioapp.com/#/api/GetConsignmentsReferences">Get Consignments Reference</a>
+                    API.</p>
+                </blockquote>
+              </li>
+              <li><code>labelFormat</code> - The label format required. This must be one of PRO's supported formats.
+                PRO's list of supported formats is defined in the <a
+                  href="/Sorted.PRO.SDK.DataTypes.Labels.LabelFormat.html">LabelFormat</a> enum.</li>
+              <li><code>resolution</code> - The resolution of the label.</li>
+            </ul>
+            <p>The <code>GetPackageLabelAsync</code> method also requires a <code>packageReference</code> property. This
+              is the unique reference of the package you want to get a label for, and takes the format
+              <code>EP-XXX-XXX-XXX</code>. The specified package must be part of the specified consignment.</p>
+            <h3 id="response">Response</h3>
+            <p>Both <strong>LabelService</strong> methods return a <code>GetLabelsResponse</code>. The
+              <code>GetLabelsResponse</code> has two properties:</p>
+            <ul>
+              <li><code>File</code> - A base64-encoded byte array representing the file content.</li>
+              <li><code>ContentType</code> - The content type of the file (as specified in the calling method's
+                <code>labelFormat</code> parameter).</li>
+            </ul>
+            <h2 id="using-the-label-data">Using the Label Data</h2>
+            <p>Once you have obtained the raw label data, you will need to perform some processing in order to use it.
+              The below example shows sample methods to read the data, write it to disk, and automatically open the
+              label file so it can be printed and applied to the relevant package.</p>
+            <pre><code class="lang-c#">/// &lt;summary&gt;
 /// Opens a label
 /// &lt;/summary&gt;
 /// &lt;param name=&quot;response&quot;&gt;The &lt;see cref=&quot;GetLabelsResponse&quot;/&gt; containing the label data&lt;/param&gt;
@@ -150,42 +174,44 @@ private static string SaveFile(byte[] contents, string consignmentReference)
     }
 }
 </code></pre>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/flows/docfx_project/pro-sdk/reference/ref-labels/index.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/flows/docfx_project/pro-sdk/reference/ref-labels/index.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../../styles/main.js"></script>
+</body>
+
 </html>

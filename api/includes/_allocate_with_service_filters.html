@@ -1,95 +1,111 @@
 ﻿<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
-  
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Example </title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Example ">
-    <meta name="generator" content="docfx 2.43.3.0">
-    
-    <link rel="shortcut icon" href="../../favicon.ico">
-    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../../styles/docfx.css">
-    <link rel="stylesheet" href="../../styles/main.css">
-    <meta property="docfx:navrel" content="../../toc.html">
-    <meta property="docfx:tocrel" content="../toc.html">
-    
-    
-    
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
-    <div id="wrapper">
-      <header>
-        
-        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="../../index.html">
-                <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <form class="navbar-form navbar-right" role="search" id="search">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
-                </div>
-              </form>
-            </div>
-          </div>
-        </nav>        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div role="main" class="container body-content hide-when-search">
-        
-        <div class="sidenav hide-when-search">
-          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
-          <div class="sidetoggle collapse" id="sidetoggle">
-            <div id="sidetoc"></div>
-          </div>
-        </div>
-        <div class="article row grid-right">
-          <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="">
 
-<blockquote>
-<p>Allocate With Service Filters Endpoint</p>
-</blockquote>
-<pre><code>PUT https://api.electioapp.com/allocation/allocateConsignmentsWithServiceFilters
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Example </title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="title" content="Example ">
+  <meta name="generator" content="docfx 2.43.3.0">
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+  <link rel="stylesheet" href="../../styles/docfx.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <meta property="docfx:navrel" content="../../toc.html">
+  <meta property="docfx:tocrel" content="../toc.html">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target="#affix" data-offset="120">
+  <div id="wrapper">
+    <header>
+
+      <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../index.html">
+              <img id="logo" src="../../images/logo.png" height="35" width="95" alt="">
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="navbar-form navbar-right" role="search" id="search">
+              <div class="form-group">
+                <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="subnav navbar navbar-default">
+        <div class="container hide-when-search" id="breadcrumb">
+          <ul class="breadcrumb">
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div role="main" class="container body-content hide-when-search">
+
+      <div class="sidenav hide-when-search">
+        <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false"
+          aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+        <div class="sidetoggle collapse" id="sidetoggle">
+          <div id="sidetoc"></div>
+        </div>
+      </div>
+      <div class="article row grid-right">
+        <div class="col-md-10">
+          <article class="content wrap" id="_content" data-uid="">
+
+            <blockquote>
+              <p>Allocate With Service Filters Endpoint</p>
+            </blockquote>
+            <pre><code>PUT https://api.electioapp.com/allocation/allocateConsignmentsWithServiceFilters
 </code></pre>
-<p>To allocate one or more consignments via service filters, use the <strong><a href="https://docs.electioapp.com/#/api/AllocateWithServiceFilters">Allocate With Service Filters</a></strong> endpoint. The <strong>Allocate With Service Filters</strong> endpoint enables you to filter the list of available services as part of your allocation API call.</p>
-<aside class="note">
-  The <strong>Allocate With Service Filters</strong> endpoint does not bypass any existing allocation rules that your organisation may have set up. Rather, it is a means of filtering carrier services within the list of services permitted by those rules.
-</aside>
-<p>The <strong>Allocate With Service Filters</strong> request body can contain an array of one or more <code>{consignmentReference}</code>s to be allocated, and a <code>filters</code> object indicating the filter conditions to be used.</p>
-<p>The attributes in the <code>filters</code> array can contain the following:</p>
-<ul>
-<li>A <code>ServiceDirection</code> property indicating whether the consignment should be allocated to an <em>inbound</em> or <em>outbound</em> carrier service.</li>
-<li>An (optional) Boolean <code>IsPickup</code> property indicating whether pick-up services should be included.</li>
-<li>An (optional) Boolean <code>IsDropOff</code> property indicating whether drop-off services should be included.</li>
-</ul>
-<p>Once the request is received, SortedPRO attempts to allocate the consignments to the cheapest service that meets the criteria set out in the <code>filters</code> array. It then returns an array of Allocation Summaries, one for each allocated consignment.</p>
-<aside class="note">
-  For full reference information on the <strong>Allocate With Service Filters</strong> endpoint, see the <strong><a href="https://docs.electioapp.com/#/api/AllocateWithServiceFilters">Allocate With Service Filters</a></strong> page of the API reference. 
-</aside>
-<blockquote>
-<p>Example Allocate With Service Filters Request</p>
-</blockquote>
-<pre><code class="lang-json">PUT https://api.electioapp.com/allocation/allocateConsignmentsWithServiceFilters
+            <p>To allocate one or more consignments via service filters, use the <strong><a
+                  href="https://docs.electioapp.com/#/api/AllocateWithServiceFilters">Allocate With Service
+                  Filters</a></strong> endpoint. The <strong>Allocate With Service Filters</strong> endpoint enables you
+              to filter the list of available services as part of your allocation API call.</p>
+            <aside class="note">
+              The <strong>Allocate With Service Filters</strong> endpoint does not bypass any existing allocation rules
+              that your organisation may have set up. Rather, it is a means of filtering carrier services within the
+              list of services permitted by those rules.
+            </aside>
+            <p>The <strong>Allocate With Service Filters</strong> request body can contain an array of one or more
+              <code>{consignmentReference}</code>s to be allocated, and a <code>filters</code> object indicating the
+              filter conditions to be used.</p>
+            <p>The attributes in the <code>filters</code> array can contain the following:</p>
+            <ul>
+              <li>A <code>ServiceDirection</code> property indicating whether the consignment should be allocated to an
+                <em>inbound</em> or <em>outbound</em> carrier service.</li>
+              <li>An (optional) Boolean <code>IsPickup</code> property indicating whether pick-up services should be
+                included.</li>
+              <li>An (optional) Boolean <code>IsDropOff</code> property indicating whether drop-off services should be
+                included.</li>
+            </ul>
+            <p>Once the request is received, SortedPRO attempts to allocate the consignments to the cheapest service
+              that meets the criteria set out in the <code>filters</code> array. It then returns an array of Allocation
+              Summaries, one for each allocated consignment.</p>
+            <aside class="note">
+              For full reference information on the <strong>Allocate With Service Filters</strong> endpoint, see the
+              <strong><a href="https://docs.electioapp.com/#/api/AllocateWithServiceFilters">Allocate With Service
+                  Filters</a></strong> page of the API reference.
+            </aside>
+            <blockquote>
+              <p>Example Allocate With Service Filters Request</p>
+            </blockquote>
+            <pre><code class="lang-json">PUT https://api.electioapp.com/allocation/allocateConsignmentsWithServiceFilters
 
 {
   &quot;ConsignmentReferences&quot;: [
@@ -104,7 +120,7 @@
   }
 }
 </code></pre>
-<pre><code class="lang-xml">PUT https://api.electioapp.com/allocation/allocateConsignmentsWithServiceFilters
+            <pre><code class="lang-xml">PUT https://api.electioapp.com/allocation/allocateConsignmentsWithServiceFilters
 
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;AllocateConsignmentsWithServiceFiltersRequest xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns=&quot;http://electioapp.com/schemas/v1.1/MPD.Electio.SDK.DataTypes.Consignments&quot;&gt;
@@ -120,44 +136,47 @@
   &lt;/Filters&gt;
 &lt;/AllocateConsignmentsWithServiceFiltersRequest&gt;
 </code></pre>
-<h3 id="example">Example</h3>
-<p>The example to the right shows a request to allocate three consignments to an outbound, drop-off carrier service.</p>
-</article>
-          </div>
-          
-          <div class="hidden-sm col-md-2" role="complementary">
-            <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/andywalton7/doc-centre/blob/master/docfx_project/api/includes/_allocate_with_service_filters.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
-              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
-              </nav>
+            <h3 id="example">Example</h3>
+            <p>The example to the right shows a request to allocate three consignments to an outbound, drop-off carrier
+              service.</p>
+          </article>
+        </div>
+
+        <div class="hidden-sm col-md-2" role="complementary">
+          <div class="sideaffix">
+            <div class="contribution">
+              <ul class="nav">
+                <li>
+                  <a href="https://github.com/sortedgroup/sortedgroup.github.io/blob/master/docfx_project/api/includes/_allocate_with_service_filters.md/#L1"
+                    class="contribution-link">Improve this Doc</a>
+                </li>
+              </ul>
             </div>
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+            </nav>
           </div>
         </div>
       </div>
-      
-      <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>
     </div>
-    
-    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../../styles/docfx.js"></script>
-    <script type="text/javascript" src="../../styles/main.js"></script>
-  </body>
+
+    <footer>
+      <div class="grad-bottom"></div>
+      <div class="footer">
+        <div class="container">
+          <span class="pull-right">
+            <a href="#top">Back to top</a>
+          </span>
+
+          <span>Generated by <strong>DocFX</strong></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+  <script type="text/javascript" src="../../styles/docfx.js"></script>
+  <script type="text/javascript" src="../../styles/main.js"></script>
+</body>
+
 </html>
